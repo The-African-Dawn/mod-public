@@ -8,6 +8,7 @@ state={
 	history={
 		owner = USR
 		add_core_of = USR
+		victory_points = { 60 50 }
 		buildings = {
 			military_base = 1
 			infrastructure = 3
