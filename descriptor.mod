@@ -1,9 +1,9 @@
-name="AFRICA MAP"
+name="AFRICAN DAWN"
 tags={
 	"Map"
 	"Utilities"
 }
-picture="blank_map_template_5632x2048.jpg"
+picture="thumbnail.png"
 supported_version="1.14.*"
 replace_path="history/countries"
 replace_path="gfx/flags/small"
