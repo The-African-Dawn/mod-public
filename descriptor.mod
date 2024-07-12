@@ -4,7 +4,6 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.png"
-supported_version="1.14.*"
 replace_path="history/countries"
 replace_path="gfx/flags/small"
 replace_path="gfx/flags/medium"
@@ -47,3 +46,5 @@ replace_path="common/units/codenames_operatives"
 replace_path="common/technology_sharing"
 replace_path="common/operations"
 replace_path="gfx/train_gfx_database"
+supported_version="1.14.7"
+remote_file_id="3287787321"
