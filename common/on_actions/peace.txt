@@ -100,7 +100,7 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly_RUS = {
+	on_daily_RUS = {
 		effect = {
 			if = {
 				limit = {
@@ -164,7 +164,7 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly_USR = {
+	on_daily_USR = {
 		effect = {
 			if = {
 				limit = {
@@ -260,7 +260,7 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly_FRN = {
+	on_daily_FRN = {
 		effect = {
 			if = {
 				limit = {

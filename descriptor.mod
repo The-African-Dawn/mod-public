@@ -1,7 +1,8 @@
 name="AFRICAN DAWN"
+version="0.0.1"
 tags={
+	"Gameplay"
 	"Map"
-	"Utilities"
 }
 picture="thumbnail.png"
 replace_path="history/countries"
