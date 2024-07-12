@@ -1,0 +1,63 @@
+BRK_historic_plan = {
+	name = "Burkinabe Reconquista"
+	desc = ""
+
+	allowed = {
+		original_tag = BRK
+	}
+	enable = {
+		is_historical_focus_on = yes
+
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		BRK_luck_favors_the_bold
+		BRK_land_of_the_strong
+		BRK_fight_against_terror
+		BRK_gathering_clouds
+		BRK_will_for_freedom
+		BRK_economical_struggle
+		BRK_malaria_vaccination
+		BRK_african_farms
+		BRK_general_mobilization
+		
+		
+		BRK_warriors_of_the_shadows
+		BRK_sahel_forces
+		BRK_security_memorandum
+		BRK_foreign_market
+		BRK_sahel_cooperation
+		BRK_huge_investment
+		BRK_united_front
+		
+		BRK_motherland_or_death
+		BRK_sahel_confederation
+		BRK_turning_point
+		BRK_expel_french_diplomats
+		BRK_no_more_welcome
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

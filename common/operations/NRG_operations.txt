@@ -1,0 +1,166 @@
+# interrogate_cultists = {
+# 	icon = GFX_raid_trotskys_villa
+# 	name = interrogate_cultists
+# 	desc = interrogate_cultists_desc
+# 	days = 180
+
+# 	priority = 11
+
+# 	allowed = {
+# 		original_tag = NRG
+# 	}
+# 	available = { 
+# 		has_completed_focus = NRG_identify_the_cultists
+# 	}
+# 	visible = {
+# 		has_completed_focus = NRG_identify_the_cultists
+# 		FROM = { tag = NRG }
+# 	}
+# 	operatives = 1
+
+# 	on_start = {  # SCOPE_OPERATION
+		
+# 	}
+
+# 	outcome_modifiers = { operation_outcome }
+# 	cost_modifiers = { operation_cost }
+# 	risk_modifiers = { operation_risk }
+
+# 	risk_chance = 0.0
+# 	experience = 5
+# 	# outcome is an effect that runs when the operation has completed
+# 	outcome_execute = { # SCOPE_OPERATION
+# 		hidden_effect = {
+# 			ROOT = { set_country_flag = has_completed_interrogate_cultists }
+# 		}
+# 		ROOT = { 
+# 			swap_ideas = {
+# 				add_idea = NRG_black_axe_cult_5
+# 				remove_idea = NRG_black_axe_cult_4
+# 			}
+# 		}
+# 	}
+
+# 	outcome_extra_chance = 0.0
+
+# 	phases = { #infiltration 
+# 		infiltrate_military_seduction = { base = 100 }
+# 	}
+# 	phases = { 
+# 		infiltrate_military_bribe = { base = 100 }
+# 	}
+# 	phases = { 
+# 		exfiltration_go_to_ground = { base = 100 }
+# 	}
+# }
+
+# destroy_their_bases = {
+# 	icon = GFX_raid_trotskys_villa
+# 	name = destroy_their_bases
+# 	desc = destroy_their_bases_desc
+# 	days = 270
+
+# 	priority = 11
+
+# 	allowed = {
+# 		original_tag = NRG
+# 	}
+# 	available = { 
+# 		has_completed_focus = NRG_strike_their_bases
+# 		has_country_flag = has_completed_interrogate_cultists
+# 	}
+# 	visible = {
+# 		has_completed_focus = NRG_strike_their_bases
+# 		FROM = { tag = NRG }
+# 	}
+
+# 	operatives = 1
+
+# 	on_start = {  # SCOPE_OPERATION
+		
+# 	}
+
+# 	outcome_modifiers = { operation_outcome }
+# 	cost_modifiers = { operation_cost }
+# 	risk_modifiers = { operation_risk }
+
+# 	risk_chance = 0.0
+# 	experience = 5
+# 	# outcome is an effect that runs when the operation has completed
+# 	outcome_execute = { # SCOPE_OPERATION
+# 		hidden_effect = {
+# 			ROOT = { set_country_flag = has_completed_destroy_their_bases }
+# 		}
+# 		ROOT = { 
+# 			swap_ideas = {
+# 				add_idea = NRG_black_axe_cult_6
+# 				remove_idea = NRG_black_axe_cult_5
+# 			}
+# 		}
+# 	}
+
+# 	outcome_extra_chance = 0.0
+
+# 	phases = { #infiltration 
+# 		infiltrate_military_bribe = { base = 100 }
+# 	}
+# 	phases = { 
+# 		targeted_sabotage_burn_storage = { base = 100 }
+# 	}
+# 	phases = { 
+# 		exfiltration_go_to_ground = { base = 100 }
+# 	}
+# }
+
+# end_their_leaders = {
+# 	icon = GFX_raid_trotskys_villa
+# 	name = end_their_leaders
+# 	desc = end_their_leaders_desc
+# 	days = 360
+
+# 	priority = 11
+
+# 	allowed = {
+# 		original_tag = NRG
+# 	}
+# 	available = { 
+# 		has_completed_focus = NRG_strike_their_bases
+# 		has_country_flag = has_completed_destroy_their_bases
+# 	}
+# 	visible = {
+# 		has_completed_focus = NRG_strike_their_bases
+# 		has_country_flag = has_completed_destroy_their_bases
+# 		FROM = { tag = NRG }
+# 	}
+
+# 	operatives = 1
+
+# 	on_start = {  # SCOPE_OPERATION
+		
+# 	}
+
+# 	outcome_modifiers = { operation_outcome }
+# 	cost_modifiers = { operation_cost }
+# 	risk_modifiers = { operation_risk }
+
+# 	risk_chance = 0.0
+# 	experience = 5
+# 	# outcome is an effect that runs when the operation has completed
+# 	outcome_execute = { # SCOPE_OPERATION
+# 		ROOT = { 
+# 			remove_ideas = NRG_black_axe_cult_6
+# 		}
+# 	}
+
+# 	outcome_extra_chance = 0.0
+
+# 	phases = { #infiltration 
+# 		infiltrate_military_seduction = { base = 100 }
+# 	}
+# 	phases = { 
+# 		coordinated_strike_direct_units = { base = 100 }
+# 	}
+# 	phases = { 
+# 		exfiltration_go_to_ground = { base = 100 }
+# 	}
+# }

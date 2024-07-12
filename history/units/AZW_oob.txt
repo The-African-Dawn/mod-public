@@ -1,0 +1,187 @@
+
+division_template = {
+	name = "Infantry Regiment"
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+	}
+}
+division_template = {
+	name = "Mobile Regiment"
+
+	regiments={
+		light_infantry_opol_on_guntruck={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+	}
+}
+division_template = {
+	name = "Captured BTR Group"
+
+	regiments={
+		infantry_on_btr={ x=0 y=0 }
+	}
+}
+division_template = {
+	name = "Captured tanks group"
+
+	regiments={
+		light_armor_unit={ x=0 y=0 }
+	}
+}
+
+
+units = {
+	division= {	
+		name = "Infantry Regiment"
+		location = 2260
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1641
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1949
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 31
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Mobile Regiment"
+		location = 2883
+		division_template = "Mobile Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Mobile Regiment"
+		location = 219
+		division_template = "Mobile Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 303
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 4829
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1132
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 2895
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 163
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 2831
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1073
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 771
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Captured BTR Group"
+		location = 2380
+		division_template = "Captured BTR Group"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 2478
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1251
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 432
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1411
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Infantry Regiment"
+		location = 1927
+		division_template = "Infantry Regiment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Captured tanks group"
+		location = 2478
+		division_template = "Captured tanks group"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+}

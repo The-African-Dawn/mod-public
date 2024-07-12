@@ -1,0 +1,573 @@
+
+division_template = {
+	name = "Compagnie de chars légers du groupe mobile"
+
+	regiments={
+		light_armor_unit={ x=0 y=0 }
+		light_armor_unit={ x=0 y=1 }
+		light_armor_unit={ x=0 y=2 }
+		infantry_on_jeep={ x=1 y=0 }
+	}
+}
+division_template = {
+	name = "Compagnie de chars moyens du groupe mobile"
+
+	regiments={
+		medium_armor_unit={ x=0 y=0 }
+		infantry_on_jeep={ x=1 y=0 }
+	}
+}
+division_template = {
+	name = "Сompagnie d'infanterie du groupe mobile"
+
+	regiments={
+		infantry_on_jeep={ x=0 y=0 }
+		infantry_on_jeep={ x=0 y=1 }
+		infantry_on_jeep={ x=0 y=2 }
+	}
+}
+division_template = {
+	name = "Compagnie mécanisée du groupe mobile"
+
+	regiments={
+		infantry_on_btr={ x=0 y=0 }
+		infantry_on_btr={ x=0 y=1 }
+		infantry_on_btr={ x=0 y=2 }
+	}
+}
+division_template = {
+	name = "Ganda Koy"
+	is_locked = yes
+	priority = 0
+	override_model = MLL_light_infantry_opol_alt_0_entity
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "Ganda Iso"
+	is_locked = yes
+	priority = 0
+	override_model = MLL_light_infantry_opol_alt_0_entity
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "Gatia"
+	is_locked = yes
+	priority = 0
+
+	regiments={
+		light_infantry_opol_on_guntruck={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+		light_infantry_opol_on_guntruck={ x=1 y=1 }
+	}
+}
+division_template = {
+	name = "MPSA"
+	override_model = MLL_light_infantry_opol_alt_1_entity
+	is_locked = yes
+	priority = 0
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+	}
+}
+division_template = {
+	name = "FPA"
+	is_locked = yes
+	priority = 0
+	override_model = MLL_light_infantry_opol_alt_1_entity
+
+	regiments={
+		infantry={ x=0 y=0 }
+		infantry={ x=0 y=1 }
+		infantry={ x=0 y=2 }
+		infantry={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "MAA-Plateforme"
+	is_locked = yes
+	priority = 0
+	override_model = MLL_light_infantry_opol_alt_1_entity
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "MDP"
+	is_locked = yes
+	priority = 0
+	override_model = MLL_light_infantry_opol_alt_1_entity
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+	}
+}
+division_template = {
+	name = "MSA"
+	is_locked = yes
+	priority = 0
+	override_model = MLL_light_infantry_opol_alt_0_entity
+
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+	}
+}
+
+units = {
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars légers du groupe mobile"
+		location = 2456
+		division_template = "Compagnie de chars légers du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 2468
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "MLL" creator = "RUS" amount = 8 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1822
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 2951
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 2456
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars légers du groupe mobile"
+		location = 1471
+		division_template = "Compagnie de chars légers du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 280
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "MLL" creator = "RUS" amount = 4 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 4824
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1471
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 280
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 1654
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "MLL" creator = "RUS" amount = 5 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1836
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1654
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 136
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 720
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "MLL" creator = "RUS" amount = 5 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1875
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1875
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Сompagnie d'infanterie du groupe mobile"
+		location = 720
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 2929
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "MLL" creator = "RUS" amount = 5 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1845
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 2929
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Сompagnie d'infanterie du groupe mobile"
+		location = 233
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 4959
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "MLL" creator = "RUS" amount = 5 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 2259
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 4823
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Сompagnie d'infanterie du groupe mobile"
+		location = 2259
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 233
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "MLL" creator = "RUS" amount = 5 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 4823
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 3037
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Сompagnie d'infanterie du groupe mobile"
+		location = 4964
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	#mobile group start
+	division= {	
+		name = "Compagnie de chars moyens du groupe mobile"
+		location = 411
+		division_template = "Compagnie de chars moyens du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "MLL" creator = "RUS" amount = 5 } }
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 570
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Compagnie mécanisée du groupe mobile"
+		location = 1692
+		division_template = "Compagnie mécanisée du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Сompagnie d'infanterie du groupe mobile"
+		location = 411
+		division_template = "Сompagnie d'infanterie du groupe mobile"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	# mobile group end
+	
+	### plateforme militia start
+	division= {	
+		name = "Сompagnie d'Gatia"
+		location = 1636
+		division_template = "Gatia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Сompagnie d'Gatia"
+		location = 972
+		division_template = "Gatia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda Koy"
+		location = 4825
+		division_template = "Ganda Koy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda Koy"
+		location = 4825
+		division_template = "Ganda Koy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda Koy"
+		location = 4833
+		division_template = "Ganda Koy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda Koy"
+		location = 2949
+		division_template = "Ganda Koy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda Iso"
+		location = 1414
+		division_template = "Ganda Iso"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda ISO"
+		location = 969
+		division_template = "Ganda Iso"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Ganda Iso"
+		location = 969
+		division_template = "Ganda Iso"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "MAA-Plateforme"
+		location = 378
+		division_template = "MAA-Plateforme"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "MAA-Plateforme"
+		location = 1102
+		division_template = "MAA-Plateforme"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "MAA-Plateforme"
+		location = 4828
+		division_template = "MAA-Plateforme"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "MAA-Plateforme"
+		location = 1102
+		division_template = "MAA-Plateforme"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "MPSA"
+		location = 2501
+		division_template = "MPSA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "FPA"
+		location = 1845
+		division_template = "FPA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "FPA"
+		location = 2047
+		division_template = "FPA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "FPA"
+		location = 2047
+		division_template = "FPA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "MDP"
+		location = 2949
+		division_template = "MDP"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "MSA"
+		location = 1997
+		division_template = "MSA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "MSA"
+		location = 1710
+		division_template = "MSA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "MSA"
+		location = 1904
+		division_template = "MSA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "MSA"
+		location = 2882
+		division_template = "MSA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

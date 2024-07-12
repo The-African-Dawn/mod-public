@@ -1,0 +1,31 @@
+
+state={
+	id=5
+	name="STATE_5"
+	resources={
+		steel=5.000
+		oil=10.000
+		aluminium=7.000
+	}
+
+	history={
+		owner = GBI
+		add_core_of = GBI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+
+		}
+		victory_points = { 755 15 }
+	}
+
+	provinces={
+		755 1694 2463 3543 3544 5000 5003 5004 
+	}
+	manpower=2000000 
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

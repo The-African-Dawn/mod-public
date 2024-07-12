@@ -1,0 +1,13 @@
+
+animation = {
+	name = "cascavel_move_animation"
+	file = "cascavel_move.anim"
+}
+animation = {
+	name = "cascavel_idle_animation"
+	file = "cascavel_idle.anim"
+}
+animation = {
+	name = "cascavel_attack_animation"
+	file = "cascavel_attack.anim"
+}

@@ -1,0 +1,23 @@
+state={
+	id=28
+	name="STATE_28"
+	provinces={
+		1765 
+	}
+	state_category = rural
+	manpower=150
+	history={
+		owner = FRN
+		add_core_of = FRN
+		victory_points = { 1765 50 }
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=15
+}

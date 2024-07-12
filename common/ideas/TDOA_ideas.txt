@@ -1,0 +1,2927 @@
+ideas = {
+	hidden_ideas = {
+		ai_secret_buffs = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				supply_factor = 0.25
+				out_of_supply_factor = -0.2
+				supply_consumption_factor = -0.2
+				attrition = -0.2
+				army_org_factor = 0.15
+				initiative_factor = 0.15
+				pocket_penalty = -0.2
+			}
+		}
+	}
+	country = {
+		africa_in_fire = {
+			picture = idea_africa_in_fire
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.25
+				offence = -0.25
+				defence = -0.25
+				army_org_factor = -0.25
+				conscription = -0.015
+				surrender_limit = -0.25
+			}
+		}
+		no_time_to_wait = {
+			picture = idea_no_time_to_wait
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		extreme_poverty = {
+			picture = idea_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		LIV_ghost_of_the_past = {
+			picture = idea_LIV_ghost_of_the_past
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+			}
+		}
+		LIV_libyan_fire = {
+			picture = idea_LIV_libyan_fire
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.15
+				political_power_cost = 0.25
+				political_power_gain = -0.25
+			}
+		}
+		ISS_holy_jihad = {
+			picture = idea_ISS_holy_jihad
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 1
+				war_support_factor = 1
+				supply_factor = 0.35
+				supply_consumption_factor = -0.35
+				army_fuel_consumption_factor = -0.35
+				out_of_supply_factor = -0.35
+				defence = 0.35
+			}
+		}
+		ISS_improvised_explosives = {
+			picture = idea_ISS_improvised_explosives
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				defence = 0.2
+				max_dig_in = 10
+			}
+		}
+		ISS_fanatical_suicide_bombers = {
+			picture = idea_ISS_fanatical_suicide_bombers
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.15
+				army_strength_factor = -0.05
+				army_org_factor = -0.1
+			}
+		}
+		ISS_mujahedin_of_the_sahel = {
+			picture = idea_ISS_mujahedin_of_the_sahel
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.5
+				cas_damage_reduction = 0.5
+				equipment_capture_factor = 0.1
+			}
+		}
+		BRK_political_instability = {
+			picture = idea_BRK_political_instability
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = -0.1
+				stability_factor = -0.15
+				resistance_target = 0.4
+				compliance_growth = -0.1
+				custom_modifier_tooltip = political_instability_initiate_resistance
+			}
+		}
+		BRK_revolutionary_zeal = {
+			picture = idea_BRK_revolutionary_zeal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				breakthrough_factor = 0.5
+				army_org_factor = 0.3
+				army_org_regain = 0.2
+			}
+		}
+		BRK_focus_on_effectiveness = {
+			picture = idea_BRK_focus_on_effectiveness
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		BRK_focus_on_security = {
+			picture = idea_BRK_focus_on_security
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		BRK_focus_on_mass_army = {
+			picture = idea_BRK_focus_on_effectiveness
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		BRK_focus_on_professional_army = {
+			picture = idea_BRK_focus_on_security
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				surrender_limit = -0.1
+				stability_factor = 0.1
+				required_garrison_factor = -0.15
+				resistance_activity = -0.05
+				decryption_factor = 0.1
+			}
+		}
+		BRK_total_eradication = {
+			picture = idea_BRK_total_eradication
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 0.1
+			}
+			targeted_modifier = {
+				tag = ISS
+				attack_bonus_against = 0.1
+			}
+		}
+		BRK_preemptive_strikes = {
+			picture = idea_BRK_preemptive_strikes
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				required_garrison_factor = -0.15
+				resistance_activity = -0.15
+			}
+		}
+		BRK_land_of_free_idea = {
+			name = BRK_land_of_the_strong
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				land_reinforce_rate = 0.05
+				max_surrender_limit_offset = 0.1
+			}
+		}
+		CHD_fighting_in_your_name = {
+			picture = idea_CHD_fighting_in_your_name
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 0.05
+				war_support_factor = 0.15
+			}
+		}
+		CHD_fighting_in_your_name_2 = {
+			picture = CHD_fighting_in_your_name
+			name = CHD_fighting_in_your_name
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 0.1
+				war_support_factor = 0.2
+				stability_factor = 0.15
+				conscription_factor = 0.1
+			}
+		}
+		NIG_extreme_poverty = {
+			picture = idea_NIG_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = -0.05
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		NIG_extreme_poverty_2 = {
+			picture = NIG_extreme_poverty
+			name = NIG_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		NIG_extreme_poverty_3 = {
+			picture = NIG_extreme_poverty
+			name = NIG_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		NIG_extreme_poverty_4 = {
+			picture = NIG_extreme_poverty
+			name = NIG_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		NIG_chinese_contractors_idea = {
+			name = NIG_chinese_oil_contract
+			picture = NIG_chinese_contractors_idea
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+		NIG_extreme_poverty_5 = {
+			picture = NIG_extreme_poverty
+			name = NIG_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		NIG_doesnt_have_needed_amount_of_professionals = {
+			picture = NIG_doesnt_have_needed_amount_of_professionals
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				command_power_gain_mult = -0.5
+				max_command_power = -20
+				training_time_factor = 0.15
+				experience_gain_army_factor = -0.25
+			}
+		}
+		NIG_local_instability = {
+			picture = NIG_local_instability
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+				fundamentalism_drift = 0.03
+			}
+		}
+		NIG_local_instability_1 = {
+			name = NIG_local_instability
+			picture = NIG_local_instability
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				fundamentalism_drift = 0.03
+			}
+		}
+		NIG_will_of_the_people_idea = {
+			name = NIG_will_of_the_people
+			picture = NIG_will_of_the_people
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				panafricanism_drift = 0.05
+				political_power_factor = 0.1
+			}
+		}
+		NIG_uranium_mining = {
+			picture = NIG_uranium_mining
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				monthly_population = -0.1
+				civilian_factory_use = -1
+			}
+		}
+		NIG_uranium_mining_2 = {
+			name = NIG_uranium_mining
+			picture = NIG_uranium_mining
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.25
+				monthly_population = -0.1
+				civilian_factory_use = -1
+			}
+		}
+		NIG_low_finances_for_education = {
+			picture = NIG_low_finances_for_education
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+		MLL_priv_univer = {
+			picture = MLL_priv_univer
+			name = MLL_expand_the_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		MLL_temp_ban_parties = {
+			picture = MLL_temp_ban_parties
+			name = MLL_temporary_ban_on_political_parties
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.3
+				panafricanism_drift = 0.02
+				stability_factor = -0.05
+			}
+		}
+		MLL_stable_regime = {
+			name = MLL_temporary_ban_on_political_parties
+			picture = MLL_stable_regime
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				resistance_target = -0.25
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				civilian_intel_to_others = -15
+			}
+		}
+		MLL_end_cigarette_smuggling_idea = {
+			picture = MLL_end_cigarette_smuggling_idea
+			name = MLL_end_cigarette_smuggling
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.01
+				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.1
+			}
+		}
+		MLL_russian_influence = {
+			picture = idea_MLL_russian_influence
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.25
+				drift_defence_factor = 0.2
+			}
+		}
+		MLL_extreme_poverty = {
+			picture = idea_MLL_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				stability_factor = -0.2
+			}
+		}
+		MLL_extreme_poverty_1 = {
+			picture = MLL_extreme_poverty
+			name = MLL_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
+		MLL_extreme_poverty_2 = {
+			picture = MLL_extreme_poverty
+			name = MLL_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				stability_factor = -0.1
+			}
+		}
+		MLL_extreme_poverty_3 = {
+			picture = MLL_extreme_poverty
+			name = MLL_extreme_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		MLL_values_of_the_past = {
+			picture = idea_MLL_values_of_the_past
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				panafricanism_drift = 0.05
+				surrender_limit = 0.1
+				max_surrender_limit_offset = 0.1
+			}
+		}
+		MLL_low_confidence_between_soldiers_and_officers = {
+			picture = idea_MLL_low_confidence_between_soldiers_and_officers
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_morale_factor = -0.25
+				army_org_factor = -0.15
+				offence = -0.1
+			}
+		}
+		MLL_increasing_our_military_potential_idea = {
+			picture = MLL_increasing_our_military_potential_idea
+			name = MLL_increasing_our_military_potential
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.3
+				experience_gain_army_factor = 0.25
+				training_time_army_factor = -0.3
+				minimum_training_level = -0.25
+			}
+		}
+		MLL_assault_on_azawad = {
+			picture = MLL_assault_on_azawad
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = AZW
+				attack_bonus_against = 0.2
+			}
+		}
+		
+		MLL_russian_help_in_goldmining = {
+			picture = MLL_russian_help_in_goldmining
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+		MLL_grain_supplies_from_russland = {
+			picture = MLL_grain_supplies_from_russland
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.003
+				consumer_goods_factor = -0.1
+			}
+		}
+		NIG_construction_safety_measures_idea = {
+			picture = NIG_construction_safety_measures_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.001
+				industrial_capacity_factory = -0.125
+			}
+		}
+		MLL_support_the_anti_colonial_movement_idea = {
+			name = MLL_support_the_anti_colonial_movement
+			picture = MLL_support_the_anti_colonial_movement_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				panafricanism_drift = 0.05
+				defensive_war_stability_factor = 0.1
+				offensive_war_stability_factor = 0.3
+			}
+		}
+		MLL_bank_sector_is_bad = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.75
+				consumer_goods_factor = 0.15
+				civilian_factory_use = 1
+			}
+		}
+		MLL_bank_sector_is_bad_2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		MLL_low_confidence_between_soldiers_and_officers_2 = {
+			name = MLL_low_confidence_between_soldiers_and_officers
+			picture = MLL_low_confidence_between_soldiers_and_officers
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_morale_factor = -0.15
+				army_org_factor = -0.1
+				offence = -0.1
+			}
+		}
+		MLL_rural_and_goldmining_economy = {
+			picture = idea_MLL_rural_and_goldmining_economy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = -0.25
+				stability_factor = -0.1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		MLL_rural_and_goldmining_economy_2 = {
+			picture = MLL_rural_and_goldmining_economy
+			name = MLL_rural_and_goldmining_economy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = -0.25
+				consumer_goods_expected_value = -0.15
+			}
+		}
+		MLL_rural_and_goldmining_economy_3 = {
+			picture = MLL_rural_and_goldmining_economy
+			name = MLL_rural_and_goldmining_economy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = -0.25
+				consumer_goods_expected_value = -0.2
+				political_power_factor = 0.1
+			}
+		}
+		MLL_popular_panafricanist_government = {
+			picture = MLL_popular_panafricanist_government
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 0.1
+				max_surrender_limit_offset = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				panafricanism_drift = 0.1
+			}
+		}
+		MLL_ecowas_sanctions = {
+			picture = idea_MLL_ecowas_sanctions
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				panafricanism_drift = -0.06
+			}
+		}
+		MLL_radicalist_propaganda = {
+			picture = idea_MLL_radicalist_propaganda
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fundamentalism_drift = 0.03
+				stability_factor = -0.05
+				political_power_factor = -0.25
+			}
+		}
+		AZW_help_of_neighbours = {
+			picture = AZW_help_of_neighbours
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.1
+				land_reinforce_rate = 0.15
+				training_time_army_factor = -0.15
+			}
+		}
+		MLL_sahara_vastness = {
+			name = MLL_vastness_of_sahara
+			picture = MLL_sahara_vastness
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.5
+				army_attack_factor = 0.05
+			}
+		}
+		MLL_final_showdown_idea = {
+			name = MLL_final_showdown
+			picture = MLL_final_showdown_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				army_strength_factor = 0.05
+				army_attack_factor = 0.05
+				refit_speed = 0.1
+			}
+		}
+		FRN_indecisive_leadership = {
+			picture = idea_FRN_indecisive_leadership
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {					
+				political_power_cost = 0.3
+				political_power_gain = -0.15
+				send_volunteer_divisions_required = 0.1
+			}
+		}
+		FRN_in_the_shadow_of_the_sun = {
+			picture = idea_FRN_in_the_shadow_of_the_sun
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.10
+				max_command_power = 20
+			}
+		}
+		FRN_established_connections = {
+			picture = idea_FRN_established_connections
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				trade_opinion_factor = 0.35
+				opinion_gain_monthly_factor = 0.3
+				send_volunteer_factor = 0.3
+			}
+		}
+		FRN_exhausting_bureaucracy = {
+			picture = idea_FRN_exhausting_bureaucracy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.10
+				political_power_cost  = 0.10
+				political_advisor_cost_factor = 0.5
+				stability_factor = -0.055
+				command_power_gain_mult = -0.5
+			}
+		}
+		RUS_african_initiative = {
+			picture = idea_RUS_african_initiative
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = 0.25
+				opinion_gain_monthly_factor = 0.5
+				panafricanism_acceptance = 100
+			}
+		}
+		# RUS_memory_of_the_past = {
+		# 	picture = idea_RUS_memory_of_the_past
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+		# 	modifier = {
+		# 		send_volunteer_divisions_required = -1
+		# 		send_volunteers_tension = -1
+		# 		send_volunteer_size = 100
+		# 	}
+		# }
+		RUS_rising_sun = {
+			picture = idea_RUS_rising_sun
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteers_tension = -1
+				air_range_factor = 0.1
+				political_power_gain = 1
+			}
+		}
+		RUS_the_strongest_ministry = {
+			picture = idea_RUS_the_strongest_ministry
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		RUS_fighter_of_the_black_continent = {
+			picture = idea_RUS_the_strongest_ministry
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.25
+				air_superiority_bonus_in_combat = 0.1
+			}
+		}
+		RUS_black_army_soldiers = {
+			picture = idea_RUS_the_strongest_ministry
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				initiative_factor = 0.15
+				max_planning_factor = 0.15
+			}
+		}
+		RUS_the_call_of_africa = {
+			picture = idea_RUS_the_strongest_ministry
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 250
+				refit_speed = 0.05
+			}
+		}
+		RUS_the_call_of_africa_2 = {
+			picture = RUS_the_call_of_africa
+			name = RUS_the_call_of_africa
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 500
+				refit_speed = 0.1
+			}
+		}
+
+		RUS_brotherhood_of_svinyi = {
+			picture = RUS_the_call_of_africa
+			name = RUS_brotherhood_of_lead
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				special_forces_cap_flat = 25
+				coordination_bonus = 0.05
+			}
+		}
+		RUS_experience_of_ukraine = {
+			picture = RUS_the_call_of_africa
+			name = RUS_our_latest_experience
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				breakthrough_factor = 0.3
+			}
+		}
+		RUS_against_baddies_1 = {
+			picture = RUS_the_call_of_africa
+			name = RUS_against_baddies
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				minimum_training_level = -0.05
+				max_training = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+		RUS_against_baddies_2 = {
+			picture = RUS_the_call_of_africa
+			name = RUS_against_baddies
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				minimum_training_level = -0.05
+				max_training = 0.05
+				training_time_army_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = JNA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ISS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AZW
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		TNS_state_of_emergency = {
+			picture = idea_TNS_state_of_emergency
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.10			
+				drift_defence_factor = 0.3
+			}
+		}
+		ALJ_gas_deposits = {
+			picture = idea_ALJ_gas_deposits
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.10
+			}
+		}
+		ALL_the_great_maghreb = {
+			picture = idea_ALL_the_great_maghreb
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				panafricanism_drift = 0.01
+				political_power_factor = 0.02
+				opinion_gain_monthly_same_ideology_factor = 0.3	
+			}
+		}
+		LBR_american_connections = {
+			picture = idea_LBR_american_connections
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				francocentrism_drift = 0.05
+				panafricanism_acceptance = -75
+				panafricanism_drift = -0.05
+			}
+		}
+		SLR_useless_wealth = {
+			picture = idea_SLR_useless_wealth
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.02
+				political_power_cost = 0.03
+			}
+		}
+		SLR_energy_problem = {
+			picture = idea_SLR_energy_problem
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				production_speed_buildings_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+		NRG_food_safety_idea = {
+			picture = NRG_food_safety_idea
+			name = NRG_food_safety
+			modifier = {
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		GVN_transitional_government = {
+			picture = idea_GVN_transitional_government
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.255
+			}
+		}
+		GBI_interservice_conflict = {
+			picture = idea_GBI_interservice_conflict
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army_factor = -0.075
+				political_power_gain = -0.05
+				promote_cost_factor = 0.25
+			}
+		}
+		SNG_focus_on_fishing = {
+			picture = idea_SNG_focus_on_fishing
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		GMB_agricultural_effort = {
+			picture = idea_GMB_agricultural_effort
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		MRV_high_alert = {
+			picture = idea_MRV_high_alert
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.075
+				army_org_factor = 0.05
+			}
+		}
+		KOT_economical_boost = {
+			picture = idea_MRV_high_alert
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		KOT_mass_unemployment = {
+			picture = idea_MRV_high_alert
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+		KOT_dialog_reforms_and_concession = {
+			picture = idea_MRV_high_alert
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.25
+			}
+		}
+		MALI_CONFLICT_AZW_2015_convention = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = mali_2015_conventions
+			targeted_modifier = {
+				tag = MLL
+				attack_bonus_against = -0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		MALI_CONFLICT_MLL_2015_convention = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = mali_2015_conventions
+			targeted_modifier = {
+				tag = AZW
+				attack_bonus_against = -0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		BRK_valute_collapse = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.15
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+			}
+		}
+		BRK_valute_collapse_1 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_valute_collapse
+			picture = BRK_valute_collapse
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+		BRK_valute_collapse_2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_valute_collapse
+			picture = BRK_valute_collapse
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		BRK_valute_collapse_3 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_valute_collapse
+			picture = BRK_valute_collapse
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		BRK_valute_collapse_4 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_valute_collapse
+			picture = BRK_valute_collapse
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		BRK_eastern_giants_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_eastern_giants
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.15
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		BRK_european_business_idea = {
+			picture = BRK_european_business
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_european_business
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_oil_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.2
+				production_speed_fuel_silo_factor = 0.2
+			}
+		}
+		BRK_medical_catastrophy = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.25
+				recruitable_population_factor = -0.3
+			}
+		}
+		BRK_medical_catastrophy_1 = {
+			name = BRK_medical_catastrophy
+			picture = BRK_medical_catastrophy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				monthly_population = -0.2
+				recruitable_population_factor = -0.2
+			}
+		}
+		BRK_medical_usage_western_medicine = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.2
+			}
+		}
+		BRK_medical_catastrophy_2 = {
+			name = BRK_medical_catastrophy
+			picture = BRK_medical_catastrophy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				monthly_population = -0.1
+				recruitable_population_factor = -0.1
+			}
+		}
+		BRK_encourage_mining_idea = {
+			name = BRK_encourage_mining
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				local_resources_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+		BRK_usage_of_export_and_import = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				min_export = 0.1
+				conversion_cost_mil_to_civ_factor = -0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		BRK_destroyed_education_system = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.35
+			}
+		}
+		BRK_destroyed_education_system_1 = {
+			name = BRK_destroyed_education_system
+			picture = BRK_destroyed_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = -0.3
+			}
+		}
+		BRK_destroyed_education_system_2 = {
+			name = BRK_destroyed_education_system
+			picture = BRK_destroyed_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.25
+			}
+		}
+		BRK_destroyed_education_system_3 = {
+			name = BRK_destroyed_education_system
+			picture = BRK_destroyed_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+		BRK_destroyed_education_system_4 = {
+			name = BRK_destroyed_education_system
+			picture = BRK_destroyed_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.15
+			}
+		}
+		BRK_destroyed_education_system_5 = {
+			name = BRK_destroyed_education_system
+			picture = BRK_destroyed_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		BRK_destroyed_education_system_6 = {
+			name = BRK_destroyed_education_system
+			picture = BRK_destroyed_education_system
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+		BRK_international_pressure = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				drift_defence_factor = -0.35
+				pragmatism_drift = 0.1
+				francocentrism_drift = 0.1
+			}
+		}
+		BRK_new_constitution = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.35
+				political_power_factor = 0.1
+				resistance_target = -0.15
+			}
+		}
+		BRK_sahel_unity_anticolonialism = {
+			picture = BRK_sahel_unity_anticolonialism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				francocentrism_drift = -0.1
+			}
+		}
+		BRK_protect_the_churches_idea = {
+			name = BRK_protect_the_churches
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fundamentalism_drift = -0.1
+				drift_defence_factor = 0.1
+				resistance_activity = -0.15
+			}
+		}
+		BRK_international_pressure_2 = {
+			name = BRK_international_pressure
+			picture = BRK_international_pressure
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = -0.15
+				pragmatism_drift = 0.05
+				francocentrism_drift = 0.05
+			}
+		}
+		BRK_french_control = {
+			name = BRK_french_mandate
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				francocentrism_drift = 0.05
+			}
+			targeted_modifier = {
+				tag = FRN
+				cic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+		BRK_french_control_2 = {
+			name = BRK_french_mandate
+			picture = BRK_french_control
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				francocentrism_drift = 0.05
+				political_power_factor = 0.15
+				fuel_gain_factor_from_states = 0.5
+			}
+			targeted_modifier = {
+				tag = FRN
+				cic_to_target_factor = 0.35
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+		BRK_french_subsidies = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
+				production_speed_rail_way_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BRK_european_subsidies = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = BRK_french_subsidies
+			modifier = {
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
+				production_speed_rail_way_factor = 0.15
+				industrial_capacity_factory = 0.15
+				global_building_slots_factor = 0.2
+			}
+		}
+		BRK_green_beretes_idea = {
+			name = BRK_french_in_leg
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.25
+				war_support_factor = -0.1
+				drift_defence_factor = -0.1
+				max_command_power_mult = -0.15
+				experience_gain_army = 0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		BRK_international_support = {
+			picture = BRK_international_pressure
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.35
+				pragmatism_drift = 0.1
+				francocentrism_drift = 0.1
+				fundamentalism_drift = -0.1
+			}
+		}
+		BRK_work_for_the_good_idea = {
+			name = BRK_work_for_the_good
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+		BRK_fallen_government = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.2
+				offence = -0.5
+				army_morale_factor = -0.5
+			}
+		}
+		BRK_fallen_government_2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = BRK_fallen_government
+			modifier = {
+				stability_factor = -0.35
+				political_power_factor = -0.4
+				offence = -0.5
+				army_morale_factor = -0.5
+			}
+		}
+		BRK_russian_economic_group_idea = {
+			name = BRK_russian_economic_group
+			picture = MLL_russian_influence
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industry_repair_factor = 0.1
+			}
+		}
+		BRK_return_of_corporations_idea = {
+			name = BRK_return_of_corporations
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.3
+				stability_factor = -0.1
+				political_power_factor = -0.15
+			}
+		}
+		BRK_timed_effect_against_terror = {
+			picture = BRK_timed_effect_against_terror
+			name = BRK_strike_the_demons_lair
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = JNA
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ISS
+				attack_bonus_against = 0.1
+			}
+		}
+		BRK_timed_effect_national_satellite_programe = {
+			picture = BRK_timed_effect_national_satellite_programe
+			name = BRK_national_space_program
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.35
+			}
+		}
+		BRK_cabinet_shuffles_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		BRK_voice_of_the_streets = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.01
+				panafricanism_drift = 0.03
+				pragmatism_drift = 0.03
+				drift_defence_factor = 0.1
+				political_power_factor = 0.15
+			}
+		}
+		BRK_remembering_sankara = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.1
+				mobilization_speed = 0.15
+				conscription_factor = 0.1
+			}
+		}
+		BRK_nationalisation_of_sugar_business = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				civilian_factory_use = -1
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		BRK_support_local_languages = {
+			picture = BRK_support_local_languages
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.25
+				panafricanism_drift = 0.05
+			}
+		}
+		BRK_panafricanism_unity_of_sahel = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				panafricanism_drift = 0.1
+				panafricanism_acceptance = 100
+			}
+		}
+		BRK_unified_volutary = {
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				is_in_faction_with = BRK
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		BRK_future_for_the_young_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_future_for_the_young
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		BRK_putins_prize_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_putins_prize
+			modifier = {
+				research_speed_factor = 0.05
+				panafricanism_drift = 0.01
+			}
+		}
+		BRK_bright_future_ahead_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+			name = BRK_bright_future_ahead
+			modifier = {
+				drift_defence_factor = 1
+			}
+		}
+		BRK_broke_ISS_supply_ways = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_fuel_consumption_factor = 0.3
+				army_fuel_capacity_factor = -0.15
+				supply_factor = -0.1
+			}
+		}
+		CHD_military_council = {
+			# стартовый орган
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.35
+				drift_defence_factor = 0.15
+				war_support_factor = 0.05
+				improve_relations_maintain_cost_factor = 0.5
+			}
+		}
+		CHD_FACT_separatism = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.5
+				resistance_target = 0.25
+				resistance_activity = 0.3
+				pragmatism_drift = -0.03
+			}
+		}
+		CHD_FACT_separatism_1 = {
+			picture = CHD_FACT_separatism
+			allowed_civil_war = {
+				always = yes
+			}
+			name = CHD_FACT_separatism
+			idea = CHD_FACT_separatism
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.25
+				resistance_target = 0.25
+				resistance_activity = 0.3
+				pragmatism_drift = -0.03
+			}
+		}
+		CHD_FACT_separatism_2 = {
+			picture = CHD_FACT_separatism
+			allowed_civil_war = {
+				always = yes
+			}
+			name = CHD_FACT_separatism
+			idea = CHD_FACT_separatism
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.2
+				resistance_target = 0.2
+				resistance_activity = 0.25
+				pragmatism_drift = -0.03
+			}
+		}
+		CHD_FACT_separatism_3 = {
+			picture = CHD_FACT_separatism
+			allowed_civil_war = {
+				always = yes
+			}
+			name = CHD_FACT_separatism
+			idea = CHD_FACT_separatism
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.1
+				resistance_target = 0.2
+				resistance_activity = 0.15
+			}
+		}
+		CHD_multipolar_policy = {
+			picture = CHD_multipolar_policy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+		CHD_national_transitional_council_fake = {
+			# фейк!!!
+			picture = CHD_national_transitional_council
+			name = CHD_national_transitional_council
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.2
+				drift_defence_factor = 0.05
+				improve_relations_maintain_cost_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+		}
+		AFR_ineffective_antiterror_tactics = {
+			picture = idea_AFR_ineffective_antiterror_tactics
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				breakthrough_factor = -0.2
+				army_armor_attack_factor = -0.7
+				mechanized_attack_factor = -0.7
+				motorized_attack_factor = -0.7
+				coordination_bonus = -0.1
+				resistance_target = 0.2
+				experience_gain_army_factor = 0.5
+			}
+		}
+		CHD_humanitarian_problems = {
+			picture = idea_CHD_humanitarian_problems
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		CHD_humanitarian_problems_1 = {
+			picture = idea_CHD_humanitarian_problems
+			name = CHD_humanitarian_problems
+			picture = CHD_humanitarian_problems
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		CHD_humanitarian_problems_2 = {
+			picture = idea_CHD_humanitarian_problems
+			name = CHD_humanitarian_problems
+			picture = CHD_humanitarian_problems
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		CHD_humanitarian_problems_3 = {
+			picture = idea_CHD_humanitarian_problems
+			name = CHD_humanitarian_problems
+			picture = CHD_humanitarian_problems
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
+			}
+		}
+		CHD_gathering_food_idea = {
+			picture = CHD_gathering_food_idea
+			name = CHD_gathering_food
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.15
+			}
+		}
+		CHD_find_jobs_for_our_people_idea = {
+			picture = CHD_find_jobs_for_our_people_idea
+			name = CHD_find_jobs_for_our_people
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_oil_factor = 0.15
+			}
+		}
+		CHD_combating_poverty_idea = {
+			picture = CHD_combating_poverty_idea
+			name = CHD_combating_poverty
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		CHD_making_army_bigger = {
+			picture = CHD_making_army_bigger_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_army_factor = -0.25
+				minimum_training_level = -0.15
+			}
+		}
+		CHD_intervene_in_tribal_conflicts_idea = {
+			picture = CHD_intervene_in_tribal_conflicts_idea
+			name = CHD_intervene_in_tribal_conflicts
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		CHD_loyal_army = {
+			picture = CHD_making_army_bigger_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_command_power = 20
+				refit_speed = 0.05
+				field_officer_promotion_penalty = -0.2
+				grant_medal_cost_factor = -0.2
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		CHD_fight_ter = {
+			picture = idea_BRK_total_eradication
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				breakthrough_factor = 0.1
+				coordination_bonus = 0.1
+			}
+			targeted_modifier = {
+				tag = BHK
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ISS
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = JNA
+				attack_bonus_against = 0.1
+			}
+		}
+		NIG_fighting_crime_idea = {
+			name = NIG_fighting_crime
+			picture = NIG_fighting_crime
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = ISS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BHK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		NIG_attacks_on_oil_pipelines = {
+			picture = NIG_attacks_on_oil_pipelines
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				country_resource_oil = -3
+				stability_factor = -0.05
+			}
+		}
+		NIG_eumpm_mission = {
+			picture = NIG_eumpm_mission
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				experience_gain_army = 0.1
+				army_defence_factor = 0.05
+				political_power_factor = -0.1
+				francocentrism_drift = 0.02
+			}
+		}
+		NIG_diplomatic_office_idea = {
+			name = NIG_diplomatic_office
+			picture = NIG_diplomatic_office_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.25
+			}
+		}
+		NIG_chinese_help = {
+			name = NIG_chinese_wealth
+			picture = NIG_chinese_help
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.1
+				experience_loss_factor = -0.1
+				panafricanism_drift = 0.01
+			}
+		}
+		NIG_anti_imperialist_action_idea = {
+			name = NIG_anti_imperialist_action_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				francocentrism_drift = -0.1
+				initiative_factor = 0.1
+				pocket_penalty = -0.15
+			}
+		}
+		NIG_supply_friends_with_oil = {
+			picture = NIG_supply_friends_with_oil
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = panafricanism
+				NOT = {
+					has_war_with = NIG
+				}
+			}
+			modifier = {
+				base_fuel_gain = 50
+			}
+		}
+		NIG_save_our_resources = {
+			picture = NIG_save_our_resources
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		CHD_NIG_truboprovod = {
+			picture = CHD_NIG_truboprovod
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_war_with = NIG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.2
+				max_fuel_factor = 0.1
+				base_fuel_gain = 50
+			}
+		}
+		NIG_CHD_truboprovod = {
+			picture = CHD_NIG_truboprovod
+			name = CHD_NIG_truboprovod
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_war_with = CHD
+				}
+			}
+			modifier = {
+				political_power_gain = 0.2
+				max_fuel_factor = 0.15
+			}
+		}
+		NIG_CHD_building_truboprovod = {
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				NOT = {
+					has_war_with = NIG
+				}
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		NIG_chinese_experts = {
+			picture = NIG_chinese_experts
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		NIG_surrounded_by_opportunities_idea = {
+			name = NIG_surrounded_by_opportunities
+			picture = NIG_surrounded_by_opportunities_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				conscription_factor = 0.1
+			}
+		}
+		NIG_onwards_to_prosperity_idea = {
+			name = NIG_onwards_to_prosperity
+			picture = NIG_onwards_to_prosperity
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				conscription_factor = 0.2
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+				pocket_penalty = -0.2
+			}
+		}
+		NIG_explosive_economic_growth_idea = {
+			name = NIG_explosive_economic_growth
+			picture = NIG_explosive_economic_growth_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industry_free_repair_factor = 0.15
+				production_oil_factor = 0.15
+				political_power_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		NIG_russian_intel_specialists = {
+			picture = NIG_russian_intel_specialists
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recon_factor = 0.1
+				army_intel_to_others = -0.1
+				encryption_factor = 0.1
+			}
+		}
+		NIG_russian_specialists_in_army = {
+			picture = NIG_russian_specialists_in_army
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				air_superiority_bonus_in_combat = 0.05
+				army_strength_factor = 0.03
+				army_speed_factor = 0.05
+			}
+		}
+		NIG_preferential_electricity_rates_idea = {
+			picture = NIG_preferential_electricity_rates_idea
+			name = NIG_preferential_electricity_rates
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.05
+				political_power_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+		NIG_disloyal_army = {
+			picture = NIG_disloyal_army
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.25
+			}
+		}
+		NIG_oil_trolling = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = -0.15
+				max_fuel_factor = -0.3
+				fuel_cost = 50
+				base_fuel_gain_factor = -0.25
+			}
+		}
+		NIG_guarding_the_border_idea = {
+			name = NIG_guarding_the_border
+			picture = NIG_guarding_the_border
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_training = 0.15
+				planning_speed = 0.15
+				terrain_penalty_reduction = 0.15
+			}
+		}
+		CHD_loyal_administration_idea = {
+			name = CHD_loyal_administration
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.005
+				political_power_factor = 0.1
+			}
+		}
+		CHD_socialism_without_border = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				resistance_target = -0.2
+				panafricanism_drift = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				surrender_limit = 0.1
+			}
+		}
+		tdoa_humanitarian_aid_costs = {
+			picture = idea_tdoa_humanitarian_aid_costs
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = 0.5
+			}
+		}
+		tdoa_reduction_of_trade_duties = {
+			picture = idea_tdoa_reduction_of_trade_duties
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.2
+			}
+		}
+		MLL_kura_biometrics = {
+			picture = idea_MLL_kura_biometrics
+			modifier = {
+				research_speed_factor = 0.03
+			}
+		}
+		NRG_black_axe_cult = {
+			picture = idea_NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.35
+				panafricanism_drift = 0.01
+				drift_defence_factor = -0.1
+				political_power_cost = 1
+			}
+		}
+		NRG_black_axe_cult_1 = {
+			picture = NRG_black_axe_cult
+			name = NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				panafricanism_drift = 0.01
+				drift_defence_factor = -0.05
+				political_power_cost = 1
+			}
+		}
+		NRG_black_axe_cult_2 = {
+			picture = NRG_black_axe_cult
+			name = NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				drift_defence_factor = -0.05
+				political_power_cost = 1
+			}
+		}
+		NRG_black_axe_cult_3 = {
+			picture = NRG_black_axe_cult
+			name = NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.2
+				political_power_cost = 1
+			}
+		}
+		NRG_black_axe_cult_4 = {
+			picture = NRG_black_axe_cult
+			name = NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.15
+				political_power_cost = 1
+			}
+		}
+		NRG_black_axe_cult_5 = {
+			picture = NRG_black_axe_cult
+			name = NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_cost = 1
+			}
+		}
+		NRG_black_axe_cult_6 = {
+			picture = NRG_black_axe_cult
+			name = NRG_black_axe_cult
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				political_power_cost = 1
+			}
+		}
+				
+		NRG_broken_mechanism = {
+			picture = NRG_broken_mechanism
+			name = NRG_broken_mechanism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.35
+				local_resources = -0.3
+				production_speed_buildings_factor = -0.3
+				political_power_cost = 3
+				industrial_capacity_factory = -0.3
+				production_oil_factor = -0.3
+				consumer_goods_factor = 0.1
+			}
+		}
+		NRG_broken_mechanism_1 = {
+			picture = NRG_broken_mechanism
+			name = NRG_broken_mechanism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				local_resources = -0.2
+				production_speed_buildings_factor = -0.2
+				political_power_cost = 2
+				industrial_capacity_factory = -0.2
+				production_oil_factor = -0.2
+				consumer_goods_factor = 0.08
+			}
+		}
+		NRG_broken_mechanism_2 = {
+			picture = NRG_broken_mechanism
+			name = NRG_broken_mechanism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+				local_resources = -0.15
+				production_speed_buildings_factor = -0.15
+				political_power_cost = 1.5
+				industrial_capacity_factory = -0.15
+				production_oil_factor = -0.15
+				consumer_goods_factor = 0.06
+			}
+		}
+		NRG_broken_mechanism_3 = {
+			picture = NRG_broken_mechanism
+			name = NRG_broken_mechanism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				local_resources = -0.10
+				production_speed_buildings_factor = -0.10
+				political_power_cost = 1.0
+				industrial_capacity_factory = -0.10
+				production_oil_factor = -0.10
+				consumer_goods_factor = 0.04
+			}
+		}
+		NRG_broken_mechanism_4 = {
+			picture = NRG_broken_mechanism
+			name = NRG_broken_mechanism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				local_resources = -0.05
+				production_speed_buildings_factor = -0.05
+				political_power_cost = 0.5
+				industrial_capacity_factory = -0.05
+				production_oil_factor = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		NRG_fight_against_baddies = {
+			picture = NRG_fight_against_baddies
+			targeted_modifier = {
+				tag = BHK
+				attack_bonus_against = 0.1
+			}
+		}
+		NRG_big_narcotraffic = {
+			picture = NRG_big_narcotraffic
+			modifier = {
+				stability_factor = -0.1
+				army_org_factor = -0.03
+				supply_factor = -0.05
+			}
+		}
+		NRG_oath_of_secrecy = {
+			picture = NRG_oath_of_secrecy
+			targeted_modifier = {
+				tag = BHK
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		NRG_anti_sahel = {
+			picture = NRG_anti_sahel
+			available = {
+				NOT = { has_government = panafricanism }
+			}
+			modifier = {
+				panafricanism_drift = -0.03
+				panafricanism_acceptance = -75
+				stability_factor = 0.05
+				
+			}
+		}
+		NRG_broke_BHK_supply_ways = {
+			picture = NRG_broke_BHK_supply_ways
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_fuel_consumption_factor = 0.3
+				army_fuel_capacity_factor = -0.15
+				supply_factor = -0.1
+			}
+		}
+		NRG_disappearances_of_journalists = {
+			picture = idea_NRG_disappearances_of_journalists
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		NRG_stealing_of_oil_in_high_ranks = {
+			picture = NRG_stealing_of_oil_in_high_ranks
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				max_fuel_factor = -0.3
+				army_fuel_consumption_factor = 0.15
+			}
+		}
+		NRG_leaders_of_free_africa = {
+			picture = NRG_leaders_of_free_africa
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				NOT = { has_government = panafricanism }
+			}
+			modifier = {
+
+				stability_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_morale_factor = 0.05
+				initiative_factor = 0.05
+				pocket_penalty = -0.05
+				operation_infiltrate_cost = -0.15
+			}
+		}
+
+		SAHEL_confederation = {
+			picture = SAHEL_confederation
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.15
+				army_morale_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SAHEL_exited_franc_zone = {
+			picture = SAHEL_exited_franc_zone
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.25
+				stability_factor = 0.05
+				panafricanism_drift = 0.01
+				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		SAHEL_morocco_atlantic_initiative = {
+			picture = SAHEL_morocco_atlantic_initiative
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				if = {
+					limit = {
+						tag = MRK
+					}
+					NOT = { has_war_with = NIG }
+					else = {
+						NOT = { has_war_with = MRK }
+					}
+				}
+			}
+			modifier = {
+				political_power_cost = -0.25
+				stability_factor = 0.02
+				production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
+		SAHEL_togo_ports = {
+			picture = SAHEL_togo_ports
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				if = {
+					limit = {
+						tag = TGG
+					}
+					NOT = { has_war_with = MLL }
+					else = {
+						NOT = { has_war_with = TGG }
+					}
+				}
+			}
+			modifier = {
+				political_power_cost = -0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+		SAHEL_sahel_own_currency = {
+			picture = SAHEL_sahel_own_currency
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = 0.1
+				panafricanism_drift = 0.05
+				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}
+		SAHEL_exited_ecowas = {
+			picture = SAHEL_exited_ecowas
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.05
+				francocentrism_drift = -0.05
+				pragmatism_drift = -0.05
+			}
+		}
+		SAHEL_energy_autonomy_idea = {
+			picture = SAHEL_energy_autonomy_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fuel_cost = -50
+				army_fuel_consumption_factor = -0.15
+				civilian_factory_use = -2
+			}
+		}
+		SAHEL_food_security_idea = {
+			picture = SAHEL_food_security_idea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_stability_factor = 0.15
+				war_support_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		SAHEL_agriculture_cooperation = {
+			picture = SAHEL_agriculture_cooperation
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				#production_cost_industrial_complex_factor = -0.1
+				production_cost_infrastructure_factor = -0.1
+			}
+		}
+		SAHEL_industrial_cooperation = {
+			picture = SAHEL_industrial_cooperation
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_cost_industrial_complex_factor = -0.1
+				#production_cost_infrastructure_factor = -0.1
+			}
+		}
+		SAHEL_anti_terror = {
+			picture = SAHEL_anti_terror
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				OR = {
+					has_war_with = BHK
+					has_war_with = ISS
+				}
+			}
+			targeted_modifier = {
+				tag = BHK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ISS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		SAHEL_range_against_neocolonialists = {
+			picture = SAHEL_range_against_neocolonialists
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_command_power = 25
+				minimum_training_level = -0.1
+				coordination_bonus = 0.03
+				breakthrough_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		USR_paint_them_black_idea = {
+			picture = USR_paint_them_black_idea
+			name = USR_paint_them_black
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				special_forces_cap_flat = 10
+				training_time_factor = -0.15
+				air_superiority_bonus_in_combat = 0.15
+			}
+		}
+		USR_american_support_in_africa = {
+			picture = USR_american_support_in_africa
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			modifier = {
+				drift_defence_factor = 0.1
+				stability_factor = 0.05
+				command_power_gain_mult = 0.25
+			}
+		}
+		USR_army_help_of_US = {
+			picture = USR_army_help_of_US
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			modifier = {
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+			}
+		}
+		USR_expanding_instructors_contingent = {
+			picture = USR_army_help_of_US
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			modifier = {
+				experience_gain_army = 0.1
+				land_reinforce_rate = 0.15
+				max_training = 0.15
+				training_time_factor = -0.1
+			}
+		}
+		USR_help_because_we_won_battle_for_ecowas = {
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
+				recon_factor = 0.2
+			}
+		}
+		USR_hand_of_freedom_idea = {
+			picture = USR_hand_of_freedom_idea
+			name = USR_hand_of_freedom
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				org_loss_at_low_org_factor = -0.2
+				org_loss_when_moving = -0.1
+				special_forces_cap = 1
+				planning_speed = 0.2
+				army_morale_factor = 0.15
+				army_org_regain = 0.1
+			}
+		}
+		USR_mogadishu_memory_idea = {
+			name = USR_mogadishu_memory
+			picture = USR_mogadishu_memory
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				special_forces_attack_factor = -0.15
+				special_forces_defence_factor = -0.15
+				army_morale_factor = -0.1
+			}
+		}
+		USR_race_against_china_idea = {
+			name = USR_race_against_china
+			picture = USR_race_against_china
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		USR_interagency_conflict_idea = {
+			name = USR_interagency_conflict
+			picture = USR_interagency_conflict
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.25
+				coordination_bonus = -0.1
+				command_power_gain_mult = -0.2
+			}
+		}
+		RUS_genstaff_baffs = {
+			picture = RUS_genstaff_baffs
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				supply_consumption_factor = -0.1
+				supply_factor = 0.15
+				out_of_supply_factor = -0.1
+				attrition = -0.1
+			}
+		}
+		RUS_antiterror_things = {
+			picture = RUS_antiterror_things
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				army_attack_speed_factor = 0.05
+				army_core_defence_factor = 0.04
+				army_strength_factor = 0.04
+			}
+		}
+		RUS_together_against_imperialism = {
+			picture = RUS_together_against_imperialism
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_strength_factor = 0.03
+			}
+			targeted_modifier = {
+				tag = FRN
+				attack_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = USR
+				attack_bonus_against = 0.05
+			}
+		}
+		RUS_establish_mutual_understanding_idea = {
+			picture = RUS_establish_mutual_understanding_idea
+			name = RUS_establish_mutual_understanding
+			modifier = {
+				political_power_cost = -0.15
+			}
+		}
+		RUS_russia_and_sahel_against_terror = {
+			picture = RUS_russia_and_sahel_against_terror
+			name = RUS_establish_mutual_understanding
+			modifier = {
+				army_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = ISR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		RUS_our_immense_experience_idea = {
+			picture = RUS_our_immense_experience_idea
+			name = RUS_our_immense_experience
+			modifier = {
+				experience_loss_factor = -0.15
+				initiative_factor = 0.1
+				land_night_attack = 0.25
+			}
+		}
+		RUS_russian_humanitarian_aid = {
+			picture = idea_tdoa_humanitarian_aid_costs
+			available = {
+				has_government = panafricanism
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		RUS_access_to_glonass_idea = {
+			name = RUS_access_to_glonass
+			available = {
+				has_government = panafricanism
+			}
+			modifier = {
+				recon_factor = 0.15
+				planning_speed = 0.25
+			}
+		}
+		RUS_brothers_with_russia = {
+			available = {
+				has_government = panafricanism
+			}
+			modifier = {
+				stability_factor = 0.1
+				initiative_factor = 0.04
+				army_morale_factor = 0.03
+			}
+		}
+		RUS_elephant_of_freedom_idea = {
+			picture = RUS_elephant_of_freedom_idea
+			name = RUS_elephant_of_freedom
+			available = {
+				has_war = yes
+			}
+			modifier = {
+				army_defence_factor = 0.1
+				coordination_bonus = 0.05
+				air_cas_present_factor = 0.15
+				cas_damage_reduction = 0.2
+			}
+			equipment_bonus = {
+				category_fb = {
+					air_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+		USR_desert_resolve_idea = {
+			picture = USR_desert_resolve_idea
+			name = USR_desert_resolve
+			available = {
+				has_war = yes
+			}
+			modifier = {
+				army_speed_factor = 0.1
+				army_attack_factor = 0.1
+				supply_consumption_factor = -0.1
+				recon_factor = 0.2
+				planning_speed = 0.1
+			}
+		}
+		FRN_operation_dipodidae_idea = {
+			picture = FRN_operation_dipodidae_idea
+			name = FRN_operation_dipodidae
+			available = {
+				has_war = yes
+			}
+			modifier = {
+				breakthrough_factor = 0.1
+				initiative_factor = 0.1
+				army_morale_factor = 0.1
+				terrain_penalty_reduction = 0.2
+				max_planning_factor = 0.15
+			}
+		}
+	}
+}

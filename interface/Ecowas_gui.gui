@@ -1,0 +1,39 @@
+guiTypes = {
+
+	
+	
+	containerWindowType = {
+		name = "Ecowas_Choosing_Side_GUI"
+		size = { width = 300 height = 370 }
+		position = { x = 100 y = 0 }
+		moveable = no
+
+
+		iconType = {
+			name = "Ecowas_Choosing_Side_GUI_Fon"
+			spriteType = "GFX_Ecowas_Choosing_Side_GUI_Fon"
+			position = { x = 0 y = -175 }
+		}
+		
+		
+				iconType = {
+			name = "Ecowas_Choosing_Side_GUI_ProgressBar"
+			spriteType = "GFX_Ecowas_Choosing_Side_GUI_ProgressBar"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "NOV_election_bar_support_tt"
+		}
+		
+		instantTextboxType = {
+			name = "Ecowas_Choosing_Side_GUI_ProgressBar_Text_Left"
+			position = { x = 225 y = 340 }
+			font = "hoi_18mbs"
+			text = ECOWAS_choosing_title
+			maxWidth = 300
+			format = left
+			alwaystransparent = yes
+		}
+		
+
+	}
+
+}

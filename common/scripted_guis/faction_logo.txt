@@ -1,0 +1,21 @@
+scripted_gui = {
+	faction_logo = {
+		window_name = "faction_logo_gui"
+		parent_window_token = politics_tab
+		context_type = player_context
+		visible = {
+			always = yes
+		}
+		properties = {
+			faction_logo_icon = {
+				image = "[faction_logo_scripted_gui_loc]"
+			}
+		}
+		triggers = {
+			nofactionname_visible = {
+				is_in_faction = no
+			}
+		}
+	}
+
+}

@@ -1,0 +1,36 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+defined_text = {
+	name = corruption_gui_level_text
+	text = {
+		trigger = {
+			has_idea = high_corruption
+		}
+		localization_key = "corruption_level_high"
+	}
+	text = {
+		trigger = {
+			has_idea = low_corruption
+		}
+		localization_key = "corruption_level_low"
+	}
+	text = {
+		trigger = {
+			has_idea = med_corruption
+		}
+		localization_key = "corruption_level_med"
+	}
+	text = {
+		trigger = {
+			has_idea = extr_corruption
+		}
+		localization_key = "corruption_level_extr"
+	}
+}

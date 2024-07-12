@@ -1,0 +1,2381 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2022.9.30.6
+		picture = "GFX_select_date_1936"
+		default_country = "BRK"
+		default = yes
+		
+	 
+		
+
+						"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+												"LIV" = {
+	     	minor = yes
+			history = "LIV_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			LIV_ghost_of_the_past
+			LIV_libyan_fire
+			LIV_ghost_of_the_past
+			}
+			focuses = {
+			LIV_libyan_eagle
+			LIV_fight_for_inheritance
+			LIV_ghost_of_the_past
+			}
+		}
+
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+
+
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+
+										"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+												"MLL" = {
+	     	minor = yes
+			history = "MLL_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			MLL_extreme_poverty
+			MLL_values_of_the_past
+			MLL_ecowas_sanctions
+			}
+			focuses = {
+			MLL_suppress_french_sprouts
+			MLL_rescue_of_mali
+			MLL_support_the_anti_colonial_movement
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+
+		
+										"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+										"NIG" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			NIG_local_instability
+			NIG_attacks_on_oil_pipelines
+			NIG_disloyal_army
+			}
+			focuses = {
+			NIG_strengthen_pipeline_protection
+			NIG_social_instability
+			NIG_face_of_judgement
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+										"CHD" = {
+	     	minor = yes
+			history = "CHD_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			CHD_fighting_in_your_name
+			CHD_humanitarian_problems
+			CHD_FACT_separatism
+			}
+			focuses = {
+			CHD_increasing_protection_of_government_buildings
+			CHD_legacy_of_my_father
+			CHD_avoiding_the_humanitarian_catastrophe
+			}
+		}
+
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+												"BRK" = {
+	     	minor = yes
+			history = "BRK_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			BRK_political_instability
+			BRK_revolutionary_zeal
+			BRK_focus_on_professional_army
+			}
+			focuses = {
+			BRK_luck_favors_the_bold
+			BRK_expel_french_diplomats
+			BRK_bright_future_ahead
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+
+
+
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+		
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"GVN" = {
+	     	minor = yes
+			history = "NIG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			africa_in_fire
+			no_time_to_wait
+			africa_in_fire
+			}
+			focuses = {
+			naval_effort
+			aviation_effort
+			UNI_their_last_ally5
+			}
+		}
+								"NRG" = {
+	     	minor = yes
+			history = "NRG_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			NRG_black_axe_cult
+			NRG_oath_of_secrecy
+			NRG_broken_mechanism
+			}
+			focuses = {
+			NRG_bound_by_crime
+			NRG_leader_of_the_free_africa
+			NRG_menace_in_the_shadows
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		"USR" = {
+	     	major = yes
+			history = "USR_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			USR_mogadishu_memory_idea
+			USR_race_against_china_idea
+			USR_desert_resolve_idea
+			}
+			focuses = {
+			USR_old_world_blues
+			USR_hand_of_freedom
+			USR_world_policeman
+			}
+		}
+		
+		"FRN" = {
+	     	major = yes
+			history = "FRN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			FRN_indecisive_leadership
+			FRN_exhausting_bureaucracy
+			FRN_in_the_shadow_of_the_sun
+			}
+			focuses = {
+			FRN_reinforcements_from_the_mainland
+			FRN_hand_of_foreign_legion
+			FRN_righteous_hammer
+			}
+		}
+		
+				
+		"RUS" = {
+	     	major = yes
+			history = "RUS_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			RUS_together_against_imperialism
+			RUS_elephant_of_freedom_idea
+			#RUS_memory_of_the_past
+			RUS_rising_sun
+			}
+			focuses = {
+			RUS_our_immense_experience
+			RUS_our_sun_shines_brighter
+			RUS_new_requests
+			}
+		}
+		
+				"FRN" = {
+	     	major = yes
+			history = "LIV_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+			LIV_ghost_of_the_past
+			LIV_libyan_fire
+			LIV_ghost_of_the_past
+			}
+			focuses = {
+			LIV_libyan_eagle
+			LIV_fight_for_inheritance
+			LIV_ghost_of_the_past
+			}
+		}
+		
+
+
+		
+
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

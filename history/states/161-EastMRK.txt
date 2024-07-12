@@ -1,0 +1,24 @@
+
+state={
+	id=161
+	name="STATE_161"
+
+	history={
+		owner = MRK
+		add_core_of = MRK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		128 647 1126 1239 1278 2114 2427 2545 2618 2622 
+	}
+	manpower=9909898
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

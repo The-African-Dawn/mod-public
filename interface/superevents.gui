@@ -1,0 +1,96 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "superevents"
+		position = { x = 0 y = 0}	
+		size = { width = 600 height= 536 }
+		orientation = center
+		origo = center
+		fade_time = 6000
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "background"		
+			quadTextureSprite ="GFX_supereventsbg"
+		}
+
+		iconType = {
+			name = "supereventsbg_test"		
+			quadTextureSprite ="GFX_supereventsbg_test"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "superevents_great_african_war"
+			quadTextureSprite ="GFX_superevents_great_african_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="superevents_overlay"
+			spriteType = "GFX_supereventsshade"
+			position = { x= 19 y = 327 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "superevents_title"
+			position = { x = 0 y = 37 }
+			font = "hoi_36header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsTitle]"
+			maxWidth = 600
+			maxHeight = 500
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "superevents_quote"
+			position = { x = 59 y = 336 }
+			font = "hoi_18mbs"
+			format = RIGHT
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsBody]"
+			maxWidth = 500
+			maxHeight = 500
+			fixedsize = yes
+		}
+
+		iconType ={ #pre-integrated
+			name ="superevents_frame"
+			spriteType = "GFX_superevents_frame"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		buttonType ={
+			name ="superevents_button"
+			spriteType = "GFX_supereventsbutton"
+			position = { x= 119 y = 452 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+		
+		instantTextboxType = {
+			name = "superevents_remark"
+			position = { x = 103 y = 474 }
+			font = "hoi_30header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsRemark]"
+			maxWidth = 400
+			maxHeight = 500
+			fixedsize = yes
+		}
+
+	}
+}

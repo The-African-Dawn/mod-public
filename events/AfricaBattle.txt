@@ -1,0 +1,1175 @@
+add_namespace = ab
+country_event = {
+	id = ab.1
+	title = ab.1.t
+	desc = ab.1.desc
+	is_triggered_only = yes
+	option = {
+		name = ab.1.a
+		FROM = {
+			country_event = {
+				id = ab.2
+				days = 2
+			}
+		}
+		add_political_power = -100
+		ai_chance = {
+			base = -45
+			modifier = {
+				factor = 0
+				has_political_power > 75
+				has_opinion = {
+					target = FROM
+					value > 70
+				}
+			}
+		}
+	}
+	option = {
+		name = ab.1.b
+		FROM = {
+			country_event = {
+				id = ab.3
+				days = 2
+			}
+		}
+		add_political_power = -50
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 45
+				has_opinion = {
+					target = FROM
+					value > 35
+				}
+			}
+		}
+	}
+	option = {
+		name = ab.1.c
+		FROM = {
+			country_event = {
+				id = ab.4
+				days = 2
+			}
+		}
+		add_political_power = -25
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 45
+				has_opinion = {
+					target = FROM
+					value > -9
+				}
+			}
+		}
+	}
+	option = {
+		name = ab.1.d
+		FROM = {
+			country_event = {
+				id = ab.5
+				days = 2
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_opinion = {
+					target = FROM
+					value < -10
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ab.2
+	title = ab.2.t
+	desc = ab.2.desc
+	is_triggered_only = yes
+	option = {
+		name = ab.2.a
+		if = {
+			limit = {
+				FROM = {
+					tag = RUS
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = ak_0
+				amount = 500
+				producer = RUS
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = USR
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = M16_0
+				amount = 500
+				producer = USR
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					tag = FRN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = FAMAS_1
+				amount = 500
+				producer = FRN
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = ab.3
+	title = ab.3.t
+	desc = ab.3.desc
+	is_triggered_only = yes
+	option = {
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 75
+		}
+		name = ab.3.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = ab.4
+	title = ab.4.t
+	desc = ab.4.desc
+	is_triggered_only = yes
+	option = {
+		name = ab.4.a
+		add_political_power = 100
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = ab.5
+	title = ab.5.t
+	desc = ab.5.desc
+	is_triggered_only = yes
+	option = {
+		name = ab.5.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = ab.6
+	title = ab.6.t
+	desc = ab.6.desc
+	is_triggered_only = yes
+	option = {
+		name = ab.6.a
+		add_political_power = -150
+		add_to_variable = {
+			BRK.amountofweapons_on_uprise = 550
+		}
+		add_to_variable = {
+			BRK.amountofsupply_on_uprise = 25
+		}
+		ai_chance = {
+			base = 200
+		}
+	}
+	option = {
+		name = ab.6.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+news_event = {
+	id = ab.7
+	title = ab.7.t
+	desc = ab.7.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_ab_7
+	option = {
+		set_global_flag = gvinea_political_conflict_started
+		name = ab.7.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	id = ab.8
+	title = ab.8.t
+	desc = {
+		text = ab.8.desc.a
+		trigger = {
+			SNG = {
+				has_government = panafricanism
+			}
+		}
+	}
+	desc = {
+		text = ab.8.desc.b
+	}
+	picture = GFX_ab_8
+	is_triggered_only = yes
+	major = yes
+	option = {
+		set_global_flag = senegal_political_conflict_started
+		name = ab.8.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	id = ab.9
+	title = ab.9.t
+	desc = ab.9.desc
+	is_triggered_only = yes
+	picture = GFX_ab_9
+	major = yes
+	option = {
+		set_global_flag = bisau_political_conflict_started
+		name = ab.9.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	id = ab.10
+	title = ab.10.t
+	desc = ab.10.desc
+	is_triggered_only = yes
+	picture = GFX_ab_10
+	major = yes
+	option = {
+		name = ab.10.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	id = ab.11
+	title = ab.11.title
+	picture = GFX_ab_11
+	desc = {
+		text = ab.11.desc.a
+		trigger = {
+			SNG = {
+				has_government = panafricanism
+			}
+		}
+	}
+	desc = {
+		text = ab.11.desc.b
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = ab.11.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	id = ab.12
+	title = ab.12.t
+	desc = ab.12.desc
+	is_triggered_only = yes
+	picture = GFX_ab_12
+	major = yes
+	option = {
+		name = ab.12.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	#cw1
+	id = ab.13
+	title = ab.13.t
+	desc = ab.13.desc
+	is_triggered_only = yes
+	picture = GFX_ab_13
+	major = yes
+	option = {
+		name = ab.13.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	#cw2
+	id = ab.14
+	title = ab.14.t
+	desc = ab.14.desc
+	is_triggered_only = yes
+	picture = GFX_ab_14
+	major = yes
+	option = {
+		name = ab.14.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	#cw3
+	id = ab.15
+	title = ab.15.t
+	desc = ab.15.desc
+	is_triggered_only = yes
+	picture = GFX_ab_15
+	major = yes
+	option = {
+		name = ab.15.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+news_event = {
+	#france_leaves_before_big_war
+	id = ab.16
+	title = ab.16.t
+	desc = ab.16.desc
+	is_triggered_only = yes
+	fire_only_once = no
+	picture = GFX_ab_17
+	major = yes
+	option = {
+		name = ab.16.a
+		if = {
+			limit = {
+				33 = {
+					is_owned_by = FRN
+				}
+			}
+			33 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = BRK
+			}
+			BRK = {
+				transfer_state = 33
+			}
+		}
+		if = {
+			limit = {
+				32 = {
+					is_owned_by = FRN
+				}
+			}
+			35 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = MLL
+			}
+			32 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = MLL
+			}
+			MLL = {
+				transfer_state = 32
+				transfer_state = 35
+			}
+		}
+		if = {
+			limit = {
+				36 = {
+					is_owned_by = FRN
+				}
+			}
+			36 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = NIG
+			}
+			41 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = NIG
+			}
+			NIG = {
+				transfer_state = 41
+				transfer_state = 36
+			}
+		}
+		if = {
+			limit = {
+				31 = {
+					is_owned_by = FRN
+				}
+				SNG = {
+					is_in_faction_with = MLL
+				}
+			}
+			31 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = SNG
+			}
+			SNG = {
+				transfer_state = 31
+			}
+		}
+		if = {
+			limit = {
+				37 = {
+					is_owned_by = FRN
+				}
+				SNG = {
+					is_in_faction_with = MLL
+				}
+			}
+			37 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = CHD
+			}
+			38 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = CHD
+			}
+			39 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = CHD
+			}
+			40 = {
+				teleport_armies = {
+					limit = {
+						tag = FRN
+					}
+					to_state = 28
+				}
+				remove_core_of = FRN
+				add_core_of = CHD
+			}
+			CHD = {
+				transfer_state = 37
+				transfer_state = 38
+				transfer_state = 39
+				transfer_state = 40
+			}
+		}
+		trigger = {
+			tag = FRN
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = ab.16.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+			}
+		}
+	}
+}
+
+news_event = {
+	#america_leaves_before_big_war
+	id = ab.17
+	title = ab.17.t
+	desc = ab.17.desc
+	is_triggered_only = yes
+	fire_only_once = no
+	picture = GFX_ab_16
+	major = yes
+	option = {
+		name = ab.17.a
+		trigger = {
+			tag = USR
+		}
+		if = {
+			limit = {
+				44 = {
+					is_owned_by = USR
+				}
+			}
+			44 = {
+				teleport_armies = {
+					limit = {
+						tag = USR
+					}
+					to_state = 47
+				}
+				remove_core_of = USR
+				add_core_of = MLL
+			}
+			MLL = {
+				transfer_state = 44
+			}
+		}
+		if = {
+			limit = {
+				48 = {
+					is_owned_by = USR
+				}
+			}
+			48 = {
+				teleport_armies = {
+					limit = {
+						tag = USR
+					}
+					to_state = 47
+				}
+				remove_core_of = USR
+				add_core_of = NIG
+			}
+			49 = {
+				teleport_armies = {
+					limit = {
+						tag = USR
+					}
+					to_state = 47
+				}
+				remove_core_of = USR
+				add_core_of = NIG
+			}
+			NIG = {
+				transfer_state = 49
+				transfer_state = 48
+			}
+		}
+		if = {
+			limit = {
+				43 = {
+					is_owned_by = USR
+				}
+				SNG = {
+					is_in_faction_with = MLL
+				}
+			}
+			43 = {
+				teleport_armies = {
+					limit = {
+						tag = USR
+					}
+					to_state = 47
+				}
+				remove_core_of = USR
+				add_core_of = SNG
+			}
+			SNG = {
+				transfer_state = 43
+			}
+		}
+		if = {
+			limit = {
+				51 = {
+					is_owned_by = USR
+				}
+				CHD = {
+					is_in_faction_with = MLL
+				}
+			}
+			51 = {
+				teleport_armies = {
+					limit = {
+						tag = USR
+					}
+					to_state = 47
+				}
+				remove_core_of = USR
+				add_core_of = CHD
+			}
+			CHD = {
+				transfer_state = 51
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = ab.17.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = USR
+			}
+		}
+	}
+}
+
+news_event = {
+	#france_joins_big_war
+	id = ab.18
+	title = ab.18.t
+	desc = ab.18.desc
+	is_triggered_only = yes
+	fire_only_once = no
+	picture = GFX_ab_18
+	major = yes
+	trigger = {
+		NOT = { has_war_with = MLL }
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						tag = MLL
+					}
+				}
+				FRN = {
+					declare_war_on = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = NRG
+						is_in_faction_with = NRG
+					}
+				}
+				give_military_access = FRN
+			}
+			NRG = { add_to_faction = FRN }
+		}
+	}
+
+	option = {
+		name = ab.18.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.18.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.18.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}
+
+news_event = {
+	#usa_joins_big_war
+	id = ab.19
+	title = ab.19.t
+	desc = ab.19.desc
+	is_triggered_only = yes
+	fire_only_once = no
+	picture = GFX_ab_19
+	major = yes
+	trigger = {
+		NOT = { has_war_with = MLL }
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						tag = MLL
+					}
+				}
+				USR = {
+					declare_war_on = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = NRG
+						is_in_faction_with = NRG
+					}
+				}
+				give_military_access = USR
+			}
+			NRG = { add_to_faction = USR }
+		}
+	}
+	option = {
+		name = ab.19.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.19.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.19.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}
+
+news_event = {
+	#russia_joins_big_war
+	id = ab.20
+	title = ab.20.t
+	desc = ab.20.desc
+	is_triggered_only = yes
+	fire_only_once = no
+	picture = GFX_ab_20
+	major = yes
+	trigger = {
+		NOT = { has_war_with = USR }
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = NRG
+						tag = NRG
+						tag = FRN
+						tag = USR
+					}
+				}
+				RUS = {
+					declare_war_on = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = MLL
+						is_in_faction_with = MLL
+					}
+				}
+				give_military_access = RUS
+			}
+			if = {
+				limit = {
+					BRK = { is_faction_leader = yes }
+				}
+				BRK = { add_to_faction = RUS }
+			}
+			if = {
+				limit = {
+					MLL = { is_faction_leader = yes }
+				}
+				MLL = { add_to_faction = RUS }
+			}
+		}
+	}
+	option = {
+		name = ab.20.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.20.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.20.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}
+
+news_event = {
+	#cw3
+	id = ab.21
+	title = ab.21.t
+	desc = ab.21.desc
+	is_triggered_only = yes
+	picture = GFX_ab_21
+	major = yes
+	option = {
+		name = ab.21.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.21.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.21.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}
+
+news_event = {
+	#cw3
+	id = ab.22
+	title = ab.22.t
+	desc = ab.22.desc
+	is_triggered_only = yes
+	picture = GFX_ab_22
+	major = yes
+	option = {
+		name = ab.22.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.22.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.22.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}
+
+news_event = {
+	#cw3
+	id = ab.22
+	title = ab.22.t
+	desc = ab.22.desc
+	is_triggered_only = yes
+	picture = GFX_ab_22
+	major = yes
+	option = {
+		name = ab.22.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.22.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.22.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}
+
+news_event = {
+	#cw3
+	id = ab.23
+	title = ab.23.t
+	desc = ab.23.desc
+	is_triggered_only = yes
+	picture = GFX_ab_23
+	major = yes
+	option = {
+		name = ab.23.a
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	option = {
+		name = ab.23.b
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			OR = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = ab.23.c
+		ai_chance = {
+			base = 1
+		}
+		trigger = {
+			NOT = {
+				tag = FRN
+				tag = USR
+				is_in_faction_with = NRG
+				tag = NRG
+				tag = MLL
+				tag = RUS
+				is_in_faction_with = MLL
+			}
+		}
+	}
+}

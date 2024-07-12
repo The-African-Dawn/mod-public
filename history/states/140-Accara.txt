@@ -1,0 +1,30 @@
+
+state={
+	id=140
+	name="STATE_140"
+
+	history={
+		owner = GNN
+		add_core_of = GNN
+		victory_points = {
+			4886 50 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+		}
+		victory_points = {
+			3165 15
+		}
+	}
+
+	provinces={
+		3165 4886 
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

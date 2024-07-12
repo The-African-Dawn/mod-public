@@ -1,0 +1,33 @@
+﻿focus_tree = {
+	id = NRG_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NRG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = NRG_new_old_challenges
+	shared_focus = NIG_industrial_effort
+	shared_focus = NIG_army_effort
+	#shared_focus = ECOWAS_ecowas_cooperation
+}
+
+focus_tree = {
+	id = NRG_expanding_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NRG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = NRG_new_old_challenges
+	shared_focus = NIG_industrial_effort
+	shared_focus = NIG_army_effort
+	#shared_focus = ECOWAS_ecowas_cooperation
+}

@@ -1,0 +1,58 @@
+scripted_gui = {
+
+	TDOA_State_Info_Screen = {
+		context_type = player_context
+		window_name = "TDOA_State_Info_Screen"
+		visible = { has_country_flag = TDOA_State_Info_Screen_Visible }
+		dynamic_lists = {
+			tabs = {
+				array = State_Info_top_tab_array
+				entry_container = "State_Info_Tabs_Entry"
+				value = tab_value
+			}
+		}
+		
+		triggers = {
+			tab_button_visible = {
+				if = {
+					limit = {
+						check_variable = { State_Info_Tab = tab_value }
+					}
+					set_temp_variable = { tab_frame = 1 }
+					set_temp_variable = { tab_icon_y = 10 }
+				}
+				else = {
+					set_temp_variable = { tab_frame = 2 }
+					set_temp_variable = { tab_icon_y = 16 }
+				}
+			}
+		}
+		
+		properties = {
+			placate = 			{ image = "[GET_PLACATE]" }
+			tab_button = {
+				frame = tab_frame
+			}
+			tab_icon = {
+				image = "GFX_State_Info_Tabs_Icon_[?tab_value]"
+				y = tab_icon_y
+				frame = tab_frame
+			}
+			tab_text= {
+				y = tab_icon_y
+			}
+		}
+		
+		effects = {
+			tab_button_click = {
+				set_variable = { State_Info_Tab = tab_value }
+			}	
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = TDOA_State_Info_Screen_Visible
+			}
+		}
+	}
+}

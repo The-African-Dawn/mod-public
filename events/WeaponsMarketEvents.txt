@@ -1,0 +1,193 @@
+add_namespace = market
+country_event = {
+	id = market.1
+	title = market.1.t
+	desc = market.1.desc
+	is_triggered_only = yes
+	
+	immediate = { log = "[ROOT.GetName] _MARKET_ [?market_bought_old_market_tab_selected] - [?market_bought_old_popup_selected_offert] - [?market_bought_old_popup_selected_amount]" }
+	
+	option = {
+		name = market.1.a
+		if = {
+			limit = {
+				check_variable = {
+					market_bought_old_market_tab_selected = 0
+				}
+			}
+			meta_effect = {
+				text = {
+					add_equipment_to_stockpile = {
+						type = [eqtype]
+						amount = [amountofthings]
+						producer = RUS
+					}
+				}
+				eqtype = "[offer_type_rus]"
+				amountofthings = "[?market_bought_old_popup_selected_amount]"
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					market_bought_old_market_tab_selected = 1
+				}
+			}
+			meta_effect = {
+				text = {
+					add_equipment_to_stockpile = {
+						type = [eqtype]
+						amount = [amountofthings]
+						producer = USR
+					}
+				}
+				eqtype = "[offer_type_USR]"
+				amountofthings = "[?market_bought_old_popup_selected_amount]"
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					market_bought_old_market_tab_selected = 2
+				}
+			}
+			meta_effect = {
+				text = {
+					add_equipment_to_stockpile = {
+						type = [eqtype]
+						amount = [amountofthings]
+						producer = FRN
+					}
+				}
+				eqtype = "[offer_type_frn]"
+				amountofthings = "[?market_bought_old_popup_selected_amount]"
+			}
+		}
+		clr_country_flag = buyed_weapons_not_delivered
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = market.2
+	title = market.2.t
+	desc = market.2.desc
+	is_triggered_only = yes
+	option = {
+		name = market.2.a
+		if = {
+			limit = {
+				check_variable = {
+					black_market_selected_type = 0
+				}
+			}
+			random_list = {
+				25 = {
+					add_equipment_to_stockpile = {
+						type = waterpipe_rifle
+						amount = 500
+						#producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = ak_0
+						amount = 500
+						producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = ak_1
+						amount = 500
+						producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = M16_0
+						amount = 500
+						producer = USR
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = qbz_0
+						amount = 500
+						producer = CHN
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					black_market_selected_type = 1
+				}
+			}
+			random_list = {
+				35 = {
+					add_equipment_to_stockpile = {
+						type = ATGM_equipment_rpg7
+						amount = 50
+						producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = ATGM_equipment_9k111
+						amount = 50
+						producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = ATGM_equipment_hj8
+						amount = 50
+						producer = CHN
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					black_market_selected_type = 2
+				}
+			}
+			random_list = {
+				35 = {
+					add_equipment_to_stockpile = {
+						type = manpads_equipment_strela
+						amount = 50
+						producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = manpads_equipment_igla
+						amount = 50
+						producer = RUS
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = manpads_equipment_fim92
+						amount = 50
+						producer = USR
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = manpads_equipment_fn6
+						amount = 50
+						producer = CHN
+					}
+				}
+			}
+		}
+		clr_country_flag = black_market_already_bought
+	}
+}

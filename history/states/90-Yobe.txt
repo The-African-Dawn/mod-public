@@ -1,0 +1,40 @@
+
+state={
+	id=90
+	name="STATE_90"
+	resources={
+		steel=5
+	}
+	history={
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1769 5 
+		}
+		victory_points = {
+			4952 3 
+		}
+		BHK = {
+			set_province_controller = 1413
+			set_province_controller = 1516
+			set_province_controller = 2425
+			set_province_controller = 1023
+			set_province_controller = 2527
+			set_province_controller = 1511
+
+		}
+
+	}
+
+	provinces={
+		413 825 1023 1413 1511 1516 1769 2425 2527 3055 4946 4948 4950 4951 4952 4953 
+	}
+	manpower=19034523
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

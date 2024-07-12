@@ -1,0 +1,18 @@
+
+state={
+	id=135
+	name="STATE_135"
+
+	#history={
+	#	owner = KMR
+	#	add_core_of = KMR
+	#}
+
+	provinces={
+		1991
+	}
+	state_category = rural
+	manpower=333333
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

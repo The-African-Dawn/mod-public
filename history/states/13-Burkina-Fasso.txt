@@ -1,0 +1,37 @@
+
+state={
+	id=13
+	name="STATE_13"
+	resources={
+		steel=4.000
+	}
+	
+	history={
+		owner = BRK
+		add_core_of = BRK
+		victory_points = {
+			4844 5 
+		}
+		victory_points = {
+			4836 5 
+		}
+		victory_points = {
+			277 2 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		set_variable = { amount_of_gold = 0.19 }
+	}
+
+	provinces={
+		277 476 1681 1956 4836 4841 4843 4844 4845 4848 4955 4956 4957 4958 4960 4996 
+	}
+	manpower=2346808
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

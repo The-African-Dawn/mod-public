@@ -1,0 +1,17 @@
+﻿l_english:
+ #EVENTS#
+ MRK.1.t:0 "Mauritania holds military exercises on the border with Mali"
+ MRK.1.desc:0 ""
+ MRK.1.a:0 "They are asking for a conflict!"
+ 
+ MRK.2.t:0 "Tension on the Moroccan-Sahrawi border is rising!"
+ MRK.2.desc:0 "\n"
+ MRK.2.a:0 "Another point of tension"
+ 
+ MRK.3.t:0 "Tension on the Moroccan-Sahrawi border is easing!"
+ MRK.3.desc:0 "This is an event about everything being cool, detente."
+ MRK.3.a:0 "Hurrayyyyyy"
+ 
+ MRK.4.t:0 "Military conflict between Morocco and the Sahrawi Republic!"
+ MRK.4.desc:0 "This is an event about everything being bad, war."
+ MRK.4.a:0 "Noooooooo"

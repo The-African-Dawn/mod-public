@@ -1,0 +1,487 @@
+characters = {
+	NRG_Muhammadu_Buhari = {
+		name = NRG_Muhammadu_Buhari
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/Portrait_NRG_Muhammad_Bukhari.dds"
+			}
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = {
+				large = "gfx/leaders/NRG/Portrait_NRG_Muhammad_Bukhari.dds"
+			}
+		}
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	NRG_Bola_Tinubu = {
+		name = NRG_Bola_Tinubu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/Portrait_NRG_Bola_Tinubu.dds"
+			}
+		}
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	NRG_Julius_Abure = {
+		name = NRG_Julius_Abure
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Julius_Abure.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	NRG_Atiku_Abubakar = {
+		name = NRG_Atiku_Abubakar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Atiku_Abubakar.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	NRG_Bashir_Magashi = {
+		name = NRG_Bashir_Magashi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/Portrait_NRG_Bashir_Magashi.dds"
+				small = "gfx/leaders/NRG/Portrait_NRG_Bashir_Magashi_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			visible = {
+				NOT = {
+					has_country_flag = NRG_Bashir_Magashi_resined
+				}
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = bashir_magashi
+			ledger = army
+			visible = {
+				NOT = {
+					has_country_flag = NRG_Bashir_Magashi_resined
+				}
+			}
+			available = {
+				NOT = {
+					has_country_flag = NRG_Bashir_Magashi_resined
+				}
+			}
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				hardened_officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Mohammed_Badaru_Abubakar = {
+		name = NRG_Mohammed_Badaru_Abubakar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Mohammed_Badaru_Abubakar.dds"
+				small = "gfx/leaders/NRG/NRG_Mohammed_Badaru_Abubakar_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			visible = {
+				has_country_flag = NRG_Bashir_Magashi_resined
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NRG_Mohammed_Badaru_Abubakar
+			ledger = army
+			available = {
+				has_country_flag = NRG_Bashir_Magashi_resined
+			}
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				hardened_officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Lucky_Irabor = {
+		name = NRG_Lucky_Irabor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Lucky_Irabor.dds"
+				small = "gfx/leaders/NRG/NRG_Lucky_Irabor_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			visible = {
+				NOT = { has_country_flag = NRG_Lucky_Irabor_resined }
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NRG_Lucky_Irabor
+			ledger = army
+			available = {
+				NOT = { has_country_flag = NRG_Lucky_Irabor_resined }
+			}
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Christopher_Musa = {
+		name = NRG_Christopher_Musa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Christopher_Gwabin_Musa.dds"
+				small = "gfx/leaders/NRG/NRG_Christopher_Gwabin_Musa_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NRG_Christopher_Musa
+			ledger = army
+			available = {
+				has_country_flag = NRG_Lucky_Irabor_resined
+			}
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				army_CombinedArms_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Taoreed_Lagbaja = {
+		name = NRG_Taoreed_Lagbaja
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Taoreed_Lagbaja.dds"
+				small = "gfx/leaders/NRG/NRG_Taoreed_Lagbaja_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				expert_delegator
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NRG_Taoreed_Lagbaja
+			ledger = army
+			available = {
+				has_country_flag = NRG_Lucky_Irabor_resined
+			}
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Alexander_Ogomudia = {
+		name = NRG_Alexander_Ogomudia
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Alexander_Ogomudia.dds"
+				small = "gfx/leaders/NRG/NRG_Alexander_Ogomudia_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NRG_Alexander_Ogomudia
+			ledger = army
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Hassan_Abubakar = {
+		name = NRG_Hassan_Abubakar
+		portraits = {
+			army = {
+				large = "gfx/leaders/NRG/NRG_Hassan_Abubakar.dds"
+				small = "gfx/leaders/NRG/NRG_Hassan_Abubakar_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NRG_Hassan_Abubakar
+			ledger = air
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Hilary_Nzan = {
+		name = NRG_Hilary_Nzan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Hilary_Nzan.dds"
+				small = "gfx/leaders/NRG/NRG_Hilary_Nzan_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				urban_assault_specialist
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NRG_Hilary_Nzan
+			ledger = army
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Onyema_Nwachukwu = {
+		name = NRG_Onyema_Nwachukwu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_Onyema_Nwachukwu.dds"
+				small = "gfx/leaders/NRG/NRG_Onyema_Nwachukwu_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NRG_JE_Osifo = {
+		name = NRG_JE_Osifo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_JE_Osifo.dds"
+				small = "gfx/leaders/NRG/NRG_JE_Osifo_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	NRG_WM_Dangana = {
+		name = NRG_WM_Dangana
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRG/NRG_WM_Dangana.dds"
+				small = "gfx/leaders/NRG/NRG_WM_Dangana_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NRG_Ali_Lamine_Zeine = {
+		name = NRG_Ali_Lamine_Zeine
+		portraits = {
+			army = {
+				small = "gfx/leaders/NRG/NRG_Ali_Lamine_Zeine.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NRG_Ali_Lamine_Zeine
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				MLL_minister_of_economy
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Lateef_Fagbemi = {
+		name = NRG_Lateef_Fagbemi
+		portraits = {
+			army = {
+				small = "gfx/leaders/NRG/NRG_Lateef_Fagbemi.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NRG_Lateef_Fagbemi
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				MLL_minister_of_justice
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Lateef_Fagbemi = {
+		name = NRG_Lateef_Fagbemi
+		portraits = {
+			army = {
+				small = "gfx/leaders/NRG/NRG_Lateef_Fagbemi.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NRG_Lateef_Fagbemi
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				MLL_minister_of_justice
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NRG_Saidu_Ahmed_Alkali = {
+		name = NRG_Saidu_Ahmed_Alkali
+		portraits = {
+			army = {
+				small = "gfx/leaders/NRG/NRG_Saidu_Ahmed_Alkali.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NRG_Saidu_Ahmed_Alkali
+			allowed = {
+				original_tag = NRG
+			}
+			traits = {
+				MLL_minister_of_justice
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

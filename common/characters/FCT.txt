@@ -1,0 +1,34 @@
+characters = {
+	FCT_Mahamat_Mahdi_Ali = {
+		name = FCT_Mahamat_Mahdi_Ali
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FCT/Mahamat_Mahdi_Ali.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	FCT_Rachid_Mahamat_Tahir = {
+		name = FCT_Rachid_Mahamat_Tahir
+		portraits = {
+			army = {
+				large = "gfx/leaders/FCT/Rachid_Mahamat_Tahir.dds"
+				small = "gfx/leaders/FCT/Rachid_Mahamat_Tahir_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				commando
+				media_personality
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

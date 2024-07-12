@@ -1,0 +1,9 @@
+bases_control_amount = {
+	enable = { always = yes }
+	icon = GFX_idea_MJR_bases_control_amount
+	
+	political_power_gain = political_power_gain_bases_controlled
+	air_range_factor = air_range_factor_bases_controlled
+	coordination_bonus = coordination_bonus_bases_controlled
+	initiative_factor = initiative_factor_bases_controlled
+}

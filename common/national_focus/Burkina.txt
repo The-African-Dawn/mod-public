@@ -1,0 +1,16 @@
+﻿focus_tree = {
+	id = BRK_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = BRK
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = BRK_general_mobilization
+	shared_focus = BRK_economical_struggle
+	shared_focus = BRK_luck_favors_the_bold
+	shared_focus = SAHEL_sahel_cooperation
+}

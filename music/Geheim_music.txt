@@ -1,0 +1,6 @@
+music_station = "geheim_station"
+
+	music = {
+	song = "great_african_war"
+	chance = { factor = 0 }}
+	

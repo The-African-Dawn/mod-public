@@ -1,0 +1,20 @@
+state={
+	id=45
+	name="STATE_45"
+	provinces={
+		1099 
+	}
+	state_category = metropolis
+	history={
+		owner = USR
+		add_core_of = USR
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	local_supplies=15
+}

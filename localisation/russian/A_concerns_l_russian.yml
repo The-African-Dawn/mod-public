@@ -1,0 +1,37 @@
+﻿l_russian:
+ DAC_no_create:0"Африканский корпус не создан"
+ disarmed_nation_mjr:0"Малый Контингент"
+ volunteer_only_mjr:0"Ограниченное Присутствие"
+ limited_conscription_mjr:0"Расширенное Присутствие"
+ extensive_conscription_mjr:0"Полномасштабное Присутствие"
+ 
+ civilian_economy_mjr:0"Слабая Вовлечённость"
+ low_economic_mobilisation_mjr:0"Ограниченная Вовлечённость"
+ partial_economic_mobilisation_mjr:0"Сильная Вовлечённость"
+ war_economy_mjr:0"Полномасштабная Вовлечённость"
+ 
+ extensive_conscription_fun:0"Глобальный Джихад"
+ war_economy_fun:0"Теневая Экономика"
+
+ SU:0"ОКБ Сухой"
+ Lockheed_concern:0"Lockheed Martin"
+ dassault_concern:0"Dassault Group"
+ china_concern:0"Chengdu Aircraft Industry Group"
+ 
+ podpol_tank_production:0 "Подпольное производство бронетехника"
+ podpol_mat_production:0 "Подпольное производство стрелкового оружия"
+ podpol_industry:0 "Подпольные строительные мастерские"
+ podpol_oil:0 "Подпольные ресурсодобывающие компании"
+ 
+    TNS_state_of_emergency:"Чрезвычайное положение"
+    ALJ_gas_deposits:"Газовые месторождения"
+    ALL_the_great_maghreb:"Великий магриб"
+    LBR_american_connections:"Связь с Америкой"
+    SLR_useless_wealth:"Бесполезное богатство"
+    SLR_energy_problem:"Энергетическая проблема"
+    GVN_transitional_government:"Переходное правительство"
+    GBI_interservice_conflict:"Межведомственный конфликт"
+    GMB_agricultural_effort:"Усилия в развитии СХ"
+    LIV_ghost_of_the_past:"Призрак прошлого"
+    LIV_libyan_fire:"Ливийский пожар"
+    MRV_high_alert:"Армия на готове"

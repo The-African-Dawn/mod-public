@@ -1,0 +1,30 @@
+
+state={
+	id=153
+	name="STATE_153"
+
+	history={
+		owner = GVN
+		add_core_of = GVN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		victory_points = {
+			2081 5 
+		}
+		victory_points = {
+			3059 4 
+		}
+	}
+
+	provinces={
+		349 1134 2081 2235 3059 3079 4910 4911 
+	}
+	manpower=2164282
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

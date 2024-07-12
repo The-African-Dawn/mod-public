@@ -1,0 +1,103 @@
+
+add_namespace = RUS
+
+news_event = { 
+	id = RUS.1
+	title = RUS.1.t
+	desc = RUS.1.desc
+	
+	picture = GFX_RUS_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { 
+		name = RUS.1.a
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = RUS.2
+	title = RUS.2.t
+	desc = RUS.2.desc
+	
+	picture = GFX_RUS_2
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { 
+		custom_effect_tooltip = focus_tree_changes
+		name = RUS.2.a
+		ai_chance = { factor = 5 }
+	}
+}
+
+news_event = { 
+	id = RUS.3
+	title = RUS.3.t
+	desc = RUS.3.desc
+	
+	picture = GFX_RUS_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = RUS.3.a
+		trigger = {
+			OR = {
+				tag = FRA
+				tag = USA
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = RUS.3.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRA
+					tag = USA
+				}
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = RUS.4
+	title = RUS.4.t
+	desc = RUS.4.desc
+	
+	picture = GFX_RUS_4
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { 
+		name = RUS.4.a
+		ai_chance = { factor = 5 }
+		add_dynamic_modifier = {
+			modifier = Corpus_training_modifier
+		}
+	}
+}
+
+country_event = { 
+	id = RUS.5
+	title = RUS.5.t
+	desc = RUS.5.desc
+	
+	picture = GFX_RUS_5
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { 
+		name = RUS.5.a
+		ai_chance = { factor = 5 }
+			BRK = {country_event = {id = RUS.4}}
+			MLL = {country_event = {id = RUS.4}}
+			CRR = {country_event = {id = RUS.4}}
+	}
+}
+

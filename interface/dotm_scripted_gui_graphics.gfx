@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_chita_small_custom_gui_opener"
+		texturefile = "gfx/interface/bottom_gui/chita_small_custom_gui_opener.dds"
+		noOfFrames = 2
+	}
+	
+
+	
+}

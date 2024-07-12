@@ -1,0 +1,27 @@
+
+state={
+	id=89
+	name="STATE_89"
+	resources={
+		aluminium = 11 
+		oil = 6
+	}
+	history={
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			2242 4 
+		}
+	}
+	state_category = town
+	provinces={
+		46 324 497 542 567 1780 2159 2242 2322 3130 
+	}
+	manpower=12406239
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

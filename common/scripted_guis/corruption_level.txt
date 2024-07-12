@@ -1,0 +1,24 @@
+scripted_gui = {
+	corruption = {
+		window_name = "corruption_gui"
+		parent_window_token = politics_tab
+		context_type = player_context
+		visible = {
+			always = yes
+		}
+		triggers = {
+			corruption_icon_low_visible = {
+				has_idea = low_corruption
+			}
+			corruption_icon_med_visible = {
+				has_idea = med_corruption
+			}
+			corruption_icon_high_visible = {
+				has_idea = high_corruption
+			}
+			corruption_icon_extr_visible = {
+				has_idea = extr_corruption
+			}
+		}
+	}
+}

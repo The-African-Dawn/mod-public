@@ -1,0 +1,30 @@
+
+state={
+	id=148
+	name="STATE_148"
+
+	history={
+		owner = KOT
+		add_core_of = KOT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			3167 5 
+		}
+		victory_points = {
+			4893 3 
+		}
+		
+	}
+
+	provinces={
+		526 629 2006 2144 2387 2420 3167 4893 4894 
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

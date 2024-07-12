@@ -1,0 +1,48 @@
+characters = {
+	KMR_Paul_Biya = {
+		name = KMR_Paul_Biya
+		portraits = {
+			civilian = { large = "gfx/leaders/KMR/Portrait_KMR_Paul_Biya.dds" }
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = { large = "gfx/leaders/KMR/Portrait_KMR_Paul_Biya.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
+	
+	
+	KMR_Joseph_Beti_Assomo = {
+		name = KMR_Joseph_Beti_Assomo
+		portraits = {
+			civilian = { large = "gfx/leaders/KMR/Portrait_KMR_Joseph_Beti_Assomo.dds" 
+			small = "gfx/advisors/Portrait_KMR_Joseph_Beti_Assomo.dds"}
+			army = { large = "gfx/leaders/KMR/Portrait_KMR_Joseph_Beti_Assomo.dds" }
+	    }
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = joseph_beti_assomo
+			ledger = army
+			allowed = {
+				original_tag = KMR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

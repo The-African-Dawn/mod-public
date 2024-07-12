@@ -1,0 +1,33 @@
+﻿focus_tree = {
+	id = NIG_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NIG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = NIG_too_many_problems
+	shared_focus = NIG_inflation_out_of_control
+	shared_focus = NIG_fighting_crime
+	shared_focus = SAHEL_sahel_cooperation
+}
+
+focus_tree = {
+	id = NIG_expanding_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NIG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = NIG_too_many_problems
+	shared_focus = NIG_inflation_out_of_control
+	shared_focus = NIG_fighting_crime
+	shared_focus = SAHEL_sahel_cooperation
+}

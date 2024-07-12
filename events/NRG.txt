@@ -1,0 +1,187 @@
+﻿
+add_namespace = NRG
+
+country_event = { 
+	id = NRG.1
+	title = NRG.1.t
+	desc = NRG.1.desc
+	
+	picture = GFX_NRG_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = NRG.1.a
+		ai_chance = { factor = 5 }
+		set_country_flag = Nigerian_Corruption_Final_Push
+		clr_country_flag = Nigerian_Corruption_Started
+		
+		custom_effect_tooltip = focus_tree_changes
+	}
+}
+	
+news_event = { 
+	id = NRG.2
+	title = NRG.2.t
+	desc = NRG.2.desc
+	picture = GFX_NRG_2
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = NRG.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = NRG.3
+	title = NRG.3.t
+	desc = NRG.3.desc
+	picture = GFX_NRG_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	immediate = { news_event = { id = NRG.4 days = 30 random_days = 30 }}
+	option = { 
+		name = NRG.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = NRG.4
+	title = NRG.4.t
+	desc = NRG.4.desc
+	picture = GFX_NRG_2
+	is_triggered_only = yes
+	#fire_only_once = yes
+	major = yes
+	option = { 
+		name = NRG.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { 
+	id = NRG.5
+	title = NRG.5.t
+	desc = NRG.5.desc
+	
+	picture = GFX_NRG_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = NRG.5.a
+		ai_chance = { factor = 5 }
+		news_event = { id = NRG.6 days = 1 }
+	}
+}
+
+
+news_event = { 
+	id = NRG.7
+	title = NRG.7.t
+	desc = NRG.7.desc
+	picture = GFX_NRG_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { 
+		name = NRG.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = NRG.8
+	title = NRG.8.t
+	desc = NRG.8.desc
+	picture = GFX_NRG_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = { 
+		name = NRG.8.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { 
+	id = NRG.9
+	title = NRG.9.t
+	desc = NRG.9.desc
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = NRG
+		date > 2023.1.1
+		date < 2024.1.1
+	}
+	
+	option = { 
+		name = NRG.9.a
+		promote_character = NRG_Bola_Tinubu
+		set_politics = {
+			ruling_party = pragmatism
+			last_election = "2023.2.25"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		retire_character = NRG_Muhammadu_Buhari
+		
+		hidden_effect = {
+			news_event = { id = political.34 hours = 1 }
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = NRG.9.b
+		set_politics = {
+			ruling_party = francocentrism
+			last_election = "2023.2.25"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		retire_character = NRG_Muhammadu_Buhari
+		hidden_effect = {
+			news_event = { id = political.34 hours = 1 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = NRG.10
+	title = NRG.10.t
+	desc = NRG.10.desc
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = NRG.10.a
+		add_popularity = {
+			ideology = pragmatism
+			popularity = -0.05
+		}
+		add_stability = -0.02
+		add_war_support = -0.05
+		ai_chance = { factor = 5 }
+	}
+} 
+
+country_event = { 
+	id = NRG.11
+	title = NRG.11.t
+	desc = NRG.11.desc
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = NRG.11.a
+		set_country_flag = NRG_Bashir_Magashi
+		retire_character = NRG_Bashir_Magashi
+		remove_ideas = NRG_stealing_of_oil_in_high_ranks
+		ai_chance = { factor = 5 }
+	}
+} 

@@ -1,0 +1,43 @@
+guiTypes = {
+	containerWindowType = {
+		name = "corruption_gui"
+		position = { x = 0 y = 230 } 
+		size = { width = 100 height = 100 }
+		clipping = no
+		# костыль связанный с тем, что нельзя сделать в тултипах скриптовую локу
+		iconType = {
+			name = "corruption_icon_low"
+			position = { x = 290 y = 219 }
+			spriteType = "GFX_low_corruption"
+			pdx_tooltip = "corruption_level_tt_low"
+		}
+		iconType = {
+			name = "corruption_icon_med"
+			position = { x = 290 y = 219 }
+			spriteType = "GFX_med_corruption"
+			pdx_tooltip = "corruption_level_tt_med"
+		}
+		iconType = {
+			name = "corruption_icon_high"
+			position = { x = 290 y = 219 }
+			spriteType = "GFX_high_corruption"
+			pdx_tooltip = "corruption_level_tt_high"
+		}
+		iconType = {
+			name = "corruption_icon_extr"
+			position = { x = 290 y = 219 }
+			spriteType = "GFX_extr_corruption"
+			pdx_tooltip = "corruption_level_tt_extr"
+		}
+		instantTextboxType = {
+			name = "corruption_type"
+			position = { x = 370 y = 220 }
+			font = "hoi_18mbs"
+			text = "[corruption_gui_level_text]"
+			maxWidth = 140
+			maxHeight = 90
+			multiline = yes
+			format = center
+		}
+	} 
+}

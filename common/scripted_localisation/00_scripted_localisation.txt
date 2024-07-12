@@ -1,0 +1,1565 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+defined_text = {
+	name = offer_script_loc
+	text = {
+		trigger = {
+			check_variable = {
+				v = 1
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_oil_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 2
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_alum_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 3
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_rub_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 4
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_volf_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 5
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_steel_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 6
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_chromium_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 7
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_pmc_light_wag_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 8
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_pmc_med_wag_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 9
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_pmc_heavy_wag_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_light_tank_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_medium_tank_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_btr_80
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 13
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_bmp_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 14
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_tigers_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 15
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_mi24_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 16
+			}
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = offer_su25_rus
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 1
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_oil_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 2
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_alum_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 3
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_rub_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 4
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_volf_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 5
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_steel_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 6
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_chromium_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 7
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_pmc_light_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 8
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_pmc_med_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 9
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_pmc_heavy_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_light_tank_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_medium_tank_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_btr_stryker
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 13
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_bmp_bradley
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 14
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_hmmwv_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 15
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_reaper_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 16
+			}
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = offer_apache_usa
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 1
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_oil_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 2
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_alum_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 3
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_rub_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 4
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_volf_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 5
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_steel_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 6
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_chromium_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 7
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_pmc_light_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 8
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_pmc_med_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 9
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_pmc_heavy_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_light_tank_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_medium_tank_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_btr_vab
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 13
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_bmp_vbci
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 14
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_acmat_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 15
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_bayraktar_fra
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 16
+			}
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = offer_mirage_fra
+	}
+}
+defined_text = {
+	name = offer_script_icon
+	text = {
+		trigger = {
+			check_variable = {
+				v = 1
+			}
+		}
+		localization_key = "GFX_decision_oil_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 2
+			}
+		}
+		localization_key = "GFX_decision_aluminium_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 3
+			}
+		}
+		localization_key = "GFX_decision_rubber_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 4
+			}
+		}
+		localization_key = "GFX_decision_tungsten_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 5
+			}
+		}
+		localization_key = "GFX_decision_steel_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 6
+			}
+		}
+		localization_key = "GFX_decision_chromium_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 7
+			}
+		}
+		localization_key = "GFX_decision_ak47_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 8
+			}
+		}
+		localization_key = "GFX_decision_ak74_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 9
+			}
+		}
+		localization_key = "GFX_decision_fagot_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+		}
+		localization_key = "GFX_decision_pt76_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+		}
+		localization_key = "GFX_decision_t55_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+		}
+		localization_key = "GFX_decision_btr80_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 13
+			}
+		}
+		localization_key = "GFX_decision_bmp1_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 14
+			}
+		}
+		localization_key = "GFX_decision_gaztigr_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 15
+			}
+		}
+		localization_key = "GFX_decision_mi24_buy"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 16
+			}
+		}
+		localization_key = "GFX_decision_su25_buy"
+	}
+}
+
+
+defined_text = {
+	name = offer_tags
+	text = {
+		trigger = {
+			check_variable = {
+				market_tab_selected = 0
+			}
+		}
+		localization_key = "RUS"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_tab_selected = 1
+			}
+		}
+		localization_key = "USR"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_tab_selected = 2
+			}
+		}
+		localization_key = "FRN"
+	}
+}
+
+defined_text = {
+	name = offer_tags_FLAG
+	text = {
+		trigger = {
+			check_variable = {
+				market_tab_selected_popup = 0
+			}
+		}
+		localization_key = "[RUS.GetFlag]"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_tab_selected_popup = 1
+			}
+		}
+		localization_key = "[USR.GetFlag]"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_tab_selected_popup = 2
+			}
+		}
+		localization_key = "[FRN.GetFlag]"
+	}
+}
+
+defined_text = {
+	name = offer_script_loc_alt
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 1
+			}
+		}
+		localization_key = offer_oil
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 2
+			}
+		}
+		localization_key = offer_alum
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 3
+			}
+		}
+		localization_key = offer_rub
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 4
+			}
+		}
+		localization_key = offer_volf
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 5
+			}
+		}
+		localization_key = offer_steel
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 6
+			}
+		}
+		localization_key = offer_chromium
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 7
+			}
+		}
+		localization_key = offer_pmc_light
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 8
+			}
+		}
+		localization_key = offer_pmc_med
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 9
+			}
+		}
+		localization_key = offer_pmc_heavy
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 10
+			}
+		}
+		localization_key = offer_light_tank
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 11
+			}
+		}
+		localization_key = offer_main_tank
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 12
+			}
+		}
+		localization_key = offer_btr
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 13
+			}
+		}
+		localization_key = offer_bmp
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 14
+			}
+		}
+		localization_key = offer_broneavto
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 15
+			}
+			check_variable = { market_tab_selected_popup = 0 }
+		}
+		localization_key = offer_helicopter
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 15
+			}
+			check_variable = { market_tab_selected_popup = 1 }
+		}
+		localization_key = offer_bpla
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 15
+			}
+			check_variable = { market_tab_selected_popup = 2 }
+		}
+		localization_key = offer_bpla
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 16
+			}
+			check_variable = { market_tab_selected_popup = 0 }
+		}
+		localization_key = offer_plane
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 16
+			}
+			check_variable = { market_tab_selected_popup = 1 }
+		}
+		localization_key = offer_helicopter
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				popup_selected_offert = 16
+			}
+			check_variable = { market_tab_selected_popup = 2 }
+		}
+		localization_key = offer_plane
+	}
+}
+
+defined_text = {
+	name = check_trig_already_buying
+	text = {
+		trigger = {
+			meta_trigger = { 
+				text = { 
+					check_variable = { total_market_buying_[ID] > 0 }
+				} 
+				ID = "[?v]"
+			} 
+		}
+		localization_key = "already_buying_tt"
+	}
+}
+
+defined_text = {
+	name = check_trig_already_buying_country_name
+	text = {
+		trigger = {
+			meta_trigger = { 
+				text = { 
+					check_variable = { total_market_buying_[ID] > 0 }
+					check_variable = { buying_[ID]_from = 0 } 
+				} 
+				ID = "[?v]"
+			} 
+		}
+		localization_key = "RUS"
+	}
+	text = {
+		trigger = {
+			meta_trigger = { 
+				text = { 
+					check_variable = { total_market_buying_[ID] > 0 }
+					check_variable = { buying_[ID]_from = 1 } 
+				} 
+				ID = "[?v]"
+			} 
+		}
+		localization_key = "USR"
+	}
+	text = {
+		trigger = {
+			meta_trigger = { 
+				text = { 
+					check_variable = { total_market_buying_[ID] > 0 }
+					check_variable = { buying_[ID]_from = 2 } 
+				} 
+				ID = "[?v]"
+			} 
+		}
+		localization_key = "FRN"
+	}
+}
+
+defined_text = {
+	name = check_trig_opinion
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = {
+						market_tab_selected = 0
+					}
+					RUS = {
+						has_opinion = {
+							target = ROOT
+							value < -49
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						market_tab_selected = 1
+					}
+					USR = {
+						has_opinion = {
+							target = ROOT
+							value < -49
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						market_tab_selected = 2
+					}
+					FRN = {
+						has_opinion = {
+							target = ROOT
+							value < -49
+						}
+					}
+				}
+			}
+		}
+		localization_key = "bad_opinion_tt"
+	}
+}
+
+defined_text = {
+	name = getmaininfomodal
+	text = {
+		trigger = {
+			check_variable = { popup_selected_offert > 6 }
+		}
+		localization_key = "weapons_trade_tt"
+	}
+	text = {
+		localization_key = "resource_trade_tt"
+	}
+}
+
+
+defined_text = {
+	name = offer_type_rus
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 7
+			}
+		}
+		localization_key = "ak_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 8
+			}
+		}
+		localization_key = "ak_1"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 9	
+			}
+		}
+		localization_key = "ATGM_equipment_9k111"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 10
+			}
+		}
+		localization_key = "light_tank_equipment_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 11
+			}
+		}
+		localization_key = "modern_tank_equipment_type69"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 12
+			}
+		}
+		localization_key = "armored_support_vehicle_equipment_x_3"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 13
+			}
+		}
+		localization_key = "infantry_armored_transport_equipment_x"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 14
+			}
+		}
+		localization_key = "mrap_car_equipment"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 15
+			}
+		}
+		localization_key = "attack_helicopter_airframe_0_ru"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 16
+			}
+		}
+		localization_key = "cas_airframe_0_ru"
+	}
+}
+
+defined_text = {
+	name = offer_type_usa
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 7
+			}
+		}
+		localization_key = "M16_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 8
+			}
+		}
+		localization_key = "M16_1"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 9	
+			}
+		}
+		localization_key = "ATGM_equipment_tow"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 10
+			}
+		}
+		localization_key = "light_tank_equipment_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 11
+			}
+		}
+		localization_key = "modern_tank_equipment_m60"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 12
+			}
+		}
+		localization_key = "armored_support_vehicle_equipment_x_3"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 13
+			}
+		}
+		localization_key = "infantry_armored_transport_equipment_x_3"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 14
+			}
+		}
+		localization_key = "mrap_car_equipment"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 15
+			}
+		}
+		localization_key = "uav_airframe_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 16
+			}
+		}
+		localization_key = "attack_helicopter_airframe_0_us"
+	}
+}
+
+defined_text = {
+	name = offer_type_frn
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 7
+			}
+		}
+		localization_key = "FAMAS_1"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 8
+			}
+		}
+		localization_key = "FAMAS_2"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 9	
+			}
+		}
+		localization_key = "ATGM_equipment_milan"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 10
+			}
+		}
+		localization_key = "light_tank_equipment_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 11
+			}
+		}
+		localization_key = "modern_tank_equipment_leopard1"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 12
+			}
+		}
+		localization_key = "armored_support_vehicle_equipment_x_3"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 13
+			}
+		}
+		localization_key = "infantry_armored_transport_equipment_x_2"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 14
+			}
+		}
+		localization_key = "mrap_car_equipment"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 15
+			}
+		}
+		localization_key = "uav_airframe_0"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				market_bought_old_popup_selected_offert = 16
+			}
+		}
+		localization_key = "fighter_airframe_0_fr"
+	}
+}
+
+defined_text = {
+	name = africabattle_action_ask
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+		}
+		localization_key = action_ask_for_help_RUS
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+		}
+		localization_key = action_ask_for_help_USA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+		}
+		localization_key = action_ask_for_help_FRN
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				v = 20
+			}
+		}
+		localization_key = action_get_russian_manpower
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 21
+			}
+		}
+		localization_key = action_get_russian_soldiers_regulars
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 22
+			}
+		}
+		localization_key = action_get_russian_soldiers_specials
+	}
+
+
+}
+
+defined_text = {
+	name = africabattle_action_button_name
+	text = {
+		trigger = {
+			check_variable = {
+				v > 9
+			}
+			check_variable = {
+				v < 20
+			}
+		}
+		localization_key = action_button_ask
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 20
+			}
+		}
+		localization_key = action_button_russian_manpower_pp
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 21
+			}
+		}
+		localization_key = action_button_russian_soldiers_regulars_pp
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 22
+			}
+		}
+		localization_key = action_button_russian_soldiers_specials_pp
+	}
+}
+
+defined_text = {
+	name = africabattle_action_button_tt
+	text = {
+		trigger = {
+			check_variable = {
+				v > 9
+			}
+			check_variable = {
+				v < 20
+			}
+		}
+		localization_key = africabattle_action_button_tt_9_20
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 20
+			}
+		}
+		localization_key = africabattle_action_button_tt_russian_manpower
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 21
+			}
+		}
+		localization_key = africabattle_action_button_tt_russian_soldiers_regulars
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 22
+			}
+		}
+		localization_key = africabattle_action_button_tt_russian_soldiers_specials
+	}
+}
+
+defined_text = {
+	name = africabattle_action_button_tt_6_months
+	text = {
+		trigger = {
+			check_variable = {
+				v > 9
+			}
+			check_variable = {
+				v < 20
+			}
+			has_country_flag = asked_big_country_help_less_than_6_mnth
+		}
+		localization_key = africabattle_action_button_tt_9_20_already_asked
+	}
+}
+
+defined_text = {
+	name = africabattle_action_button_tt_9_20_relations
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+			RUS = { has_opinion = { target = ROOT value > -9 } }
+		}
+		localization_key = africabattle_action_button_tt_9_20_relations_rus_yes
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+			RUS = { has_opinion = { target = ROOT value < -10 } }
+		}
+		localization_key = africabattle_action_button_tt_9_20_relations_rus_no
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+			USR = { has_opinion = { target = ROOT value > -9 } }
+		}
+		localization_key = africabattle_action_button_tt_9_20_relations_usr_yes
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+			USR = { has_opinion = { target = ROOT value < -10 } }
+		}
+		localization_key = africabattle_action_button_tt_9_20_relations_usr_no
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+			FRN = { has_opinion = { target = ROOT value > -9 } }
+		} 
+		localization_key = africabattle_action_button_tt_9_20_relations_frn_yes
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+			FRN = { has_opinion = { target = ROOT value < -10 } }
+		}
+		localization_key = africabattle_action_button_tt_9_20_relations_frn_no
+	}
+}
+
+
+defined_text = {
+	name = africabattle_action_ask
+	text = {
+		trigger = {
+			check_variable = {
+				v = 10
+			}
+		}
+		localization_key = action_ask_for_help_RUS
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 11
+			}
+		}
+		localization_key = action_ask_for_help_USA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 12
+			}
+		}
+		localization_key = action_ask_for_help_FRN
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				v = 20
+			}
+		}
+		localization_key = action_get_russian_manpower
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 21
+			}
+		}
+		localization_key = action_get_russian_soldiers_regulars
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				v = 22
+			}
+		}
+		localization_key = action_get_russian_soldiers_specials
+	}
+
+
+}
+
+defined_text = {
+	name = chad_gov_name
+	text = {
+		trigger = {
+			CHD = { has_elections = no }
+		}
+		localization_key = CHD_national_transitional_council_1
+	}
+	text = {
+		localization_key = CHD_national_transitional_council_2
+	}
+}
+
+defined_text = {
+	name = chad_gov_desc
+	text = {
+		trigger = {
+			CHD = { has_elections = no }
+		}
+		localization_key = CHD_national_transitional_council_1_d
+	}
+	text = {
+		localization_key = CHD_national_transitional_council_2_d
+	}
+}
+
+defined_text = {
+	name = sahel_confederation_names
+	text = {
+		trigger = {
+			BRK = { is_in_faction_with = MLL }
+		}
+		localization_key = sahel_2_desc_brk
+	}
+	text = {
+		localization_key = sahel_2_desc_none
+	}
+}

@@ -1,0 +1,33 @@
+﻿focus_tree = {
+	id = MLL_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MLL
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = MLL_firm_authority
+	shared_focus = MLL_brics_help
+	shared_focus = MLL_control_secured
+	shared_focus = SAHEL_sahel_cooperation
+}
+
+focus_tree = {
+	id = MLL_expanding_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MLL
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = MLL_firm_authority
+	shared_focus = MLL_brics_help
+	shared_focus = MLL_control_secured
+	shared_focus = SAHEL_sahel_cooperation
+}

@@ -1,0 +1,99 @@
+
+opinion_modifiers = {
+	BRK_sahel_economical_friendship = {
+		value = 10
+	}
+	BRK_ecovas_economical_friendship = {
+		value = 10
+	}
+	BRK_democratization = {
+		value = 35
+	}
+	BRK_embracing_relations_with_sahel = {
+		value = 35
+	}
+	BRK_cote_d_ivour_incident = {
+		value = -15
+	}
+	BRK_cote_d_ivour_incident_2 = {
+		value = -45
+	}
+	BRK_cote_d_ivour_incident_3 = {
+		value = -45
+	}
+	BRK_gave_bases_to_russia = {
+		value = 45
+	}
+	BRK_anti_france_1 = {
+		value = -45
+	}
+	BRK_anti_france_2 = {
+		value = -30
+	}
+	BRK_anti_france_3 = {
+		value = -10
+	}
+	disagreed_to_alliance_invite = {
+		value = -20
+	}
+	BRK_RUS_friendship_1000 = {
+		value = 15
+	}
+	BRK_RUS_friendship_1001 = {
+		value = 30
+	}
+	BRK_RUS_friendship_1002 = {
+		value = 10
+	}
+	MLL_captured_soldiers = {
+		value = -20
+	}
+	MLL_captured_soldiers_free = {
+		value = 10
+	}
+	MLL_international_ties = {
+		value = 50
+	}
+	MLL_cocacola = {
+		value = -5
+	}
+	MLL_MVR_denied_ask = {
+		value = -25
+	}
+	CHD_friends_with_NIG = {
+		value = 25
+	}
+	CHD_friends_with_sahel = {
+		value = 25
+	}
+	CHD_friends_with_ecowas = {
+		value = 25
+	}
+	CHD_visit = {
+		value = 35
+	}
+	NIG_taking_our_oil_for_free = {
+		value = -25
+	}
+	BNN_closed_oil_for_us = {
+		value = -35
+	}
+	CHD_NIG_agreed = {
+		value = 15
+	}
+	CHD_NIG_disagreed = {
+		value = -15
+	}
+	NRG_anti_sahel_policy = {
+		value = -20
+	}
+	NRG_close_borders_with_niger = {
+		value = -45
+	}
+	ECOWAS_unity = {
+		value = 10
+	}
+	RUS_SAHEL_FRIENDS_HOOORAY = {
+		value = 35
+	}
+}

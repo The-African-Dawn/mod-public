@@ -1,0 +1,39 @@
+guiTypes = {
+
+	
+	
+	containerWindowType = {
+		name = "Nigerian_Corruption_GUI"
+		size = { width = 300 height = 300 }
+		position = { x = 100 y = 0 }
+		moveable = no
+
+
+		iconType = {
+			name = "Nigerian_Corruption_GUI_Fon"
+			spriteType = "GFX_Nigerian_Corruption_GUI_Fon"
+			position = { x = 0 y = -175 }
+		}
+		
+		
+				iconType = {
+			name = "Nigerian_Corruption_GUI_ProgressBar"
+			spriteType = "GFX_Nigerian_Corruption_GUI_ProgressBar"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "NOV_election_bar_support_tt"
+		}
+		
+		instantTextboxType = {
+			name = "Nigerian_Corruption_GUI_ProgressBar_Text_Left"
+			position = { x = 225 y = 280 }
+			font = "hoi_18mbs"
+			text = nigerian_corruption_title
+			maxWidth = 300
+			format = left
+			alwaystransparent = yes
+		}
+		
+
+	}
+
+}

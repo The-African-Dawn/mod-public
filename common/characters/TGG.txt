@@ -1,0 +1,65 @@
+characters = {
+	TGG_Faure = {
+		name = TGG_Faure
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TGG/Portrait_TGG_For_Gnassingbe.dds"
+			}
+			army = {
+				large = "gfx/leaders/TGG/Portrait_TGG_For_Gnassingbe.dds"
+			}
+		}
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	TGG_Salifou_Tikpi_Atchadam = {
+		name = TGG_Salifou_Tikpi_Atchadam
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TGG/TGG_Salifou_Tikpi_Atchadam.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	TGG_Atcha_Mohammed_Titikpina = {
+		name = TGG_Atcha_Mohammed_Titikpina
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TGG/Portrait_TGG_Atcha_Mohammed_Titikpina.dds"
+				small = "gfx/advisors/Portrait_TGG_Atcha_Mohammed_Titikpina.dds"
+			}
+			army = {
+				large = "gfx/leaders/TGG/Portrait_TGG_Atcha_Mohammed_Titikpina.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = atcha_mohammed_titikpina
+			ledger = army
+			allowed = {
+				original_tag = TGG
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

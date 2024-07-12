@@ -1,0 +1,69 @@
+ideas = {
+
+
+	hidden_ideas = {
+
+		Tech_perev_idea = {
+			picture = idea_africa_in_fire
+			allowed_civil_war = {always = yes}
+			modifier = {
+
+			}
+				equipment_bonus = {
+						spec_oborud_equipment_0 = {
+							build_cost_ic = 1
+							defense = 1
+							soft_attack = 1
+							instant = yes
+						}
+				}
+		}
+		generic_rpg7_fuse = {
+			equipment_bonus = {
+				ATGM_equipment_rpg7 = {
+					soft_attack = 0.15
+					defense = 0.25
+				}
+			}
+		}
+		generic_rpg7_7b1 = {
+			equipment_bonus = {
+				ATGM_equipment_rpg7 = {
+					ap_attack = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		generic_rpg7_pg7 = {
+			equipment_bonus = {
+				ATGM_equipment_rpg7 = {
+					ap_attack = 0.1
+					hard_attack = 0.05
+				}
+			}
+		}
+		generic_rpg7_pg7b = {
+			equipment_bonus = {
+				ATGM_equipment_rpg7 = {
+					ap_attack = 0.1
+					build_cost_ic = 0.05
+					hard_attack = 0.1
+				}
+			}
+		}
+		generic_rpg7_pg7b2 = {
+			equipment_bonus = {
+				ATGM_equipment_rpg7 = {
+					ap_attack = 0.01
+					build_cost_ic = 0.05
+					defense = 0.2
+				}
+			}
+		}
+		
+	}
+
+	country = {
+		
+	}
+}

@@ -1,0 +1,80 @@
+sub_units = {
+	# Small airframe
+	uav_airwing = {
+		sprite = uav_plane
+		priority = 1
+		active = yes
+		type = cas
+		need = { uav_airframe = 1 }
+		categories = { category_fb }
+		land_air_wing_size = 10
+	}
+	light_airwing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = cas
+		need = { light_cas_airframe = 1 }
+		categories = { category_fb }
+		land_air_wing_size = 10
+	}
+	
+	mcs_airwing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { fighter_airframe = 1 }
+		categories = { category_fb }
+		land_air_wing_size = 10
+	}
+	
+	cas_airwing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = cas
+		need = { cas_airframe = 1 }
+		categories = { category_fb }
+		land_air_wing_size = 10
+	}
+	
+	strategic_airwing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = strategic_bomber
+		need = { strategic_plane_airframe = 1 }
+		categories = { category_fb }
+		land_air_wing_size = 1
+	}
+	
+	transport_airwing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = air_transport
+		need = { transport_plane_airframe = 1 }
+		land_air_wing_size = 100
+	}
+	
+	transport_helicopter_wing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = air_transport
+		need = { transport_helicopter_airframe = 1 }
+		land_air_wing_size = 20
+	}
+	
+	attack_helicopter_wing = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = cas
+		need = { attack_helicopter_airframe = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 20
+	}
+
+}

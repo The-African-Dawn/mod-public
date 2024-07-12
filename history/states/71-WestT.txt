@@ -1,0 +1,24 @@
+
+state={
+	id=71
+	name="STATE_71"
+
+	history={
+		owner = JNA
+		add_core_of = JNA
+		add_core_of = MLL
+		add_core_of = AZW
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	state_category = rural
+	provinces={
+		155 885 1402 1525 1614 1687 1757 1812 1977 2001 2013 2399 2599 2809 2859 2868 2892 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

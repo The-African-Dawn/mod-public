@@ -1,0 +1,43 @@
+
+state={
+	id=61
+	name="STATE_61"
+
+	history={
+		victory_points = {
+			1026 4 
+		}
+		victory_points = {
+			1412 1 
+		}
+		victory_points = {
+			2949 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		owner = MLL
+		add_core_of = MLL
+		JNA = {
+			set_province_controller = 11
+
+		}
+		ISS = {
+			set_province_controller = 1412
+			set_province_controller = 1026
+			set_province_controller = 4968
+			set_province_controller = 4969
+		}
+
+	}
+
+	provinces={
+		11 1026 1412 2259 2949 4823 4824 4825 4833 4871 4968 4969 
+	}
+	manpower=2031330
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

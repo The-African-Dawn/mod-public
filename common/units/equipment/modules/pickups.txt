@@ -1,0 +1,563 @@
+equipment_modules = {
+	ffw_mg_dshk = {
+		abbreviation = "dshk"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 5
+			hard_attack = 1
+			ap_attack = 1
+			build_cost_ic = 0.69
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 1
+	}
+	ffw_mg_pk = {
+		abbreviation = "pkm"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 4
+			hard_attack = 0
+			ap_attack = 0
+			build_cost_ic = 0.43
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 1
+	}
+	ffw_mg_kord = {
+		abbreviation = "kord"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 6
+			hard_attack = 2
+			ap_attack = 2
+			build_cost_ic = 0.911
+		}
+		dismantle_cost_ic = 0.69
+
+		xp_cost = 2
+	}
+	ffw_aa_zpu4 = {
+		abbreviation = "zpu4"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type = {
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 8
+			hard_attack = 1
+			ap_attack = 2
+			reliability = -0.5
+			build_cost_ic = 1.5
+			air_attack = 15
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 3
+	}
+	ffw_aa_zpu23_2 = {
+		abbreviation = "zpu232"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type = {
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 7
+			hard_attack = 3
+			ap_attack = 2
+			reliability = -0.5
+			build_cost_ic = 2.3
+			air_attack = 19
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 3
+	}
+	ffw_pk_with_ags = {
+		abbreviation = "mgags"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 10
+			hard_attack = 0
+			ap_attack = 0
+			reliability = -0.05
+			build_cost_ic = 1.25
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 2
+	}
+	ffw_ags = {
+		abbreviation = "ags"
+		category = fast_firing_weapons
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			artillery
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 8
+			hard_attack = 0
+			ap_attack = 0
+			build_cost_ic = 0.75
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 1
+	}
+
+
+	### Antitank and artillery guns
+
+	hwp_spg9 = {
+		abbreviation = "spg"
+		category = heavy_weapons
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}
+		add_stats = {
+			soft_attack = 1
+			hard_attack = 3
+			reliability = -0.30
+			ap_attack = 11
+			build_cost_ic = 1.2
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 2
+	}
+	hwp_howitzer_artillery = {
+		abbreviation = "how"
+		category = heavy_weapons
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 20
+			hard_attack = 0
+			reliability = -0.99
+			ap_attack = 1
+			build_cost_ic = 9
+		}
+		dismantle_cost_ic = 11
+
+		xp_cost = 3
+	}
+	hwp_antitank_gun = {
+		abbreviation = "ata"
+		category = heavy_weapons
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = {
+			anti_air
+			artillery
+		}
+		add_stats = {
+			soft_attack = 1
+			hard_attack = 3
+			ap_attack = 9
+			build_cost_ic = 2
+			reliability = -0.69
+		}
+		dismantle_cost_ic = 1
+
+		xp_cost = 3
+	}
+    # MLRS, Mortars etc
+	mortar_82 = {
+		abbreviation = "mor82"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_tank
+			anti_air
+			
+		}
+		add_stats = {
+			soft_attack = 12.5
+			hard_attack = 0
+			ap_attack = 0
+			build_cost_ic = 5
+			reliability = -0.25
+		}
+		dismantle_cost_ic = 2
+
+		xp_cost = 1
+	}
+	mortar_120 = {
+		abbreviation = "mor120"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_tank
+			anti_air
+			
+		}
+		add_stats = {
+			soft_attack = 16.5
+			hard_attack = 0.5
+			ap_attack = 0.5
+			build_cost_ic = 6.9
+			reliability = -0.50
+		}
+		dismantle_cost_ic = 7.8
+
+		xp_cost = 1
+	}
+	nonguided_mlrs = {
+		abbreviation = "nmlrs"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = artillery
+		forbid_equipment_type = {
+			anti_tank
+			anti_air
+			
+		}
+		add_stats = {
+			soft_attack = 13.7
+			hard_attack = 1
+			ap_attack = 1
+			build_cost_ic = 12
+			reliability = -0.78
+		}
+		dismantle_cost_ic = 12
+
+		xp_cost = 3
+	}
+	atgm = {
+		abbreviation = "atgm"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type = {
+			artillery
+			anti_air
+			
+		}
+		add_stats = {
+			soft_attack = 0.5
+			hard_attack = 4
+			ap_attack = 6
+			build_cost_ic = 3
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 2
+		xp_cost = 1
+	}
+	aagm = {
+		abbreviation = "aagm"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type = {
+			artillery
+			
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 0
+			hard_attack = 0
+			ap_attack = 0
+			air_attack = 19
+			build_cost_ic = 3.5
+			reliability = -0.10
+		}
+		dismantle_cost_ic = 2.6
+
+		xp_cost = 1
+	}
+	atgm_pair = {
+		abbreviation = "atgm2"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type = {
+			artillery
+			anti_air
+			
+		}
+		add_stats = {
+			soft_attack = 0
+			hard_attack = 0
+			ap_attack = 0
+			air_attack = 25
+			build_cost_ic = 7.8
+			reliability = -0.20
+		}
+		dismantle_cost_ic = 6.9
+
+		xp_cost = 3
+	}
+	aagm_pair = {
+		abbreviation = "aagm2"
+		category = fire_systems
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type = {
+			artillery
+			
+			anti_tank
+		}
+		add_stats = {
+			soft_attack = 1.5
+			hard_attack = 8
+			ap_attack = 12
+			build_cost_ic = 9.11
+			reliability = -0.20
+		}
+		dismantle_cost_ic = 4
+
+		xp_cost = 3
+	}
+
+
+
+	#####################
+	#### Suspensions ####
+	#####################
+	ressor_suspension = {
+		abbreviation = "resp"
+		category = car_suspension
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.15
+			maximum_speed = -3.5
+
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 1
+	}
+	pruzh_suspension = {
+		abbreviation = "pruzh"
+		category = car_suspension
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = -0.10
+			maximum_speed = 4
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 1
+	}
+
+
+	#####################
+	####    Armours  ####
+	#####################
+	no_armor_lol = {
+		abbreviation = "noarm"
+		category = car_no_armor
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.05
+			maximum_speed = 0.5
+		}
+
+
+		xp_cost = 1
+	}
+	only_gunner = {
+		abbreviation = "gunarmor"
+		category = car_armor
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = -0.05
+			defense = 2
+			maximum_speed = -0.5
+			build_cost_ic = 0.78
+		}
+		dismantle_cost_ic = 0.75
+
+		xp_cost = 1
+	}
+	only_cabin = {
+		abbreviation = "cabar"
+		category = car_armor
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			defense = 2
+			build_cost_ic = 0.5
+			maximum_speed = -0.5
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 1
+	}
+	full_armor = {
+		abbreviation = "fular"
+		category = car_armor
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = -0.25
+			maximum_speed = -2
+			defense = 16
+			build_cost_ic = 4.5
+		}
+		dismantle_cost_ic = 0.5
+
+		xp_cost = 2
+	}
+
+	##############################
+	####    Gasoline and etc  ####
+	##############################
+	petrol_engine = {
+		abbreviation = "petrol"
+		category = car_engine
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			fuel_consumption = 2
+			build_cost_ic = 2
+			reliability = 0.25
+			breakthrough = 1
+		}
+		multiply_stats = {
+			breakthrough = 0.15	
+			build_cost_ic = 0.15
+		}
+
+		xp_cost = 1
+	}
+	gas_engine = {
+		abbreviation = "gas"
+		category = car_engine
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			fuel_consumption = 1
+			build_cost_ic = 4
+			reliability = 0.10
+		}
+		multiply_stats = {
+			breakthrough = 0.15	
+			build_cost_ic = 0.10
+		}
+
+		xp_cost = 1
+	}
+	diesel_engine = {
+		abbreviation = "diesel"
+		category = car_engine
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 4 
+			fuel_consumption = 2
+			reliability = 0.25
+		}
+
+		xp_cost = 1
+	}
+
+
+	#################
+	## 	TYRES #######
+	#################
+	tyre_std = {
+		abbreviation = "tyre1"
+		category = tyres
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+
+		}
+		
+
+		xp_cost = 1
+	}
+	tyre_noprot = {
+		abbreviation = "tyre2"
+		category = tyres
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			fuel_consumption = 8
+			build_cost_ic = 2
+			reliability = -0.25
+			maximum_speed = 25
+			
+		}
+		dismantle_cost_ic = 2
+
+		xp_cost = 1
+	}
+	tyre_more_prohod = {
+		abbreviation = "tyre3"
+		category = tyres
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			fuel_consumption = 1.25
+			reliability = 0.35
+			maximum_speed = -3.5
+			build_cost_ic = 2
+		}
+		dismantle_cost_ic = 2
+
+		xp_cost = 1
+	}
+	tracked_t = {
+		abbreviation = "tyre4"
+		category = tyres
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			fuel_consumption = 5.5
+			breakthrough = 4
+			defense = 4
+			build_cost_ic = 12
+		}
+		dismantle_cost_ic = 22
+		xp_cost = 1
+	}
+}

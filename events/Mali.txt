@@ -1,0 +1,28 @@
+﻿
+add_namespace = MLL
+	
+news_event = { 
+	id = MLL.1
+	title = MLL.1.t
+	desc = {
+		text = MLL.1.d.a
+		trigger = {
+			FROM = { tag = MLL }
+		}
+	}
+	desc = {
+		text = MLL.1.d.b
+		trigger = {
+			FROM = { tag = AZW }
+		}
+	}
+	
+	picture = GFX_MLL_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = MLL.1.a
+		ai_chance = { factor = 1 }
+	}
+}

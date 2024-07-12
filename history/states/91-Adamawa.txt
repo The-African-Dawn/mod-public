@@ -1,0 +1,28 @@
+
+state={
+	id=91
+	name="STATE_91"
+
+	history={
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		BHK = {
+			set_province_controller = 2503
+			set_province_controller = 2017
+			set_province_controller = 830
+			set_province_controller = 1140
+
+		}
+	}
+	state_category = town
+	provinces={
+		627 830 1140 2017 2391 2503 
+	}
+	manpower=23284372
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

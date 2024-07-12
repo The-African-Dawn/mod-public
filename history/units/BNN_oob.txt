@@ -1,0 +1,145 @@
+division_template = {
+	name = "Bataillon Interarmes"
+
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		engineer={ x=0 y=1 }
+		logistics_company={ x=0 y=2 }
+	}
+	regiments={
+		infantry_on_btr={ x=0 y=0 }
+		infantry_on_btr={ x=0 y=1 }
+		infantry={ x=1 y=0 }
+		infantry={ x=1 y=1 }
+		infantry={ x=2 y=0 }
+	}
+}
+division_template = {
+	name = "Bataillon Commando Parachutiste"
+
+	support={
+		signal_company={ x=0 y=0 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+	}
+}
+division_template = {
+	name = "Bataillon d’Intervention Motorisé"
+
+	support={
+		atgm_support_unit={ x=0 y=0 }
+		howitzer_support_unit={ x=0 y=1 }
+		engineer={ x=0 y=2 }
+		signal_company={ x=0 y=3 }
+	}
+	regiments={
+		infantry_on_jeep={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+		light_infantry_opol_on_guntruck={ x=1 y=1 }
+		light_infantry_opol_on_guntruck={ x=1 y=2 }
+		light_infantry_opol_on_guntruck={ x=2 y=0 }
+		light_infantry_opol_on_guntruck={ x=2 y=1 }
+		light_infantry_opol_on_guntruck={ x=2 y=2 }
+		light_infantry_opol_on_guntruck={ x=3 y=0 }
+	}
+}
+division_template = {
+	name = "Groupement Blindé"
+
+	support={
+		signal_company={ x=0 y=0 }
+	}
+	regiments={
+		light_armor_unit={ x=0 y=0 }
+		light_armor_unit={ x=0 y=1 }
+		light_armor_unit={ x=0 y=2 }
+		light_armor_unit={ x=1 y=0 }
+		light_armor_unit={ x=1 y=1 }
+		light_armor_unit={ x=1 y=2 }
+	}
+}
+
+units = {
+	division= {	
+		location = 4874
+		name = "1er bataillon commando parachutiste"
+		division_template = "Bataillon Commando Parachutiste"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4878
+		name = "1er bataillon d’intervention motorisé"
+		division_template = "Bataillon d’Intervention Motorisé"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4877
+		name = "1er groupement blindé"
+		division_template = "Groupement Blindé"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "BNN" creator = "RUS" amount = 18 } }
+	}
+	
+	division= {	
+		location = 107
+		name = "1er bataillon interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 457
+		name = "2e bataillon interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 2459
+		name = "3e bataillon interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4878
+		name = "7e bataillon interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4877
+		name = "8e bataillon interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = { 
+		amount = 7
+		type = a_M8_Greyhound_equipment
+		producer = USR
+	}
+	add_equipment_to_stockpile = { 
+		amount = 3
+		type = light_tank_equipment_0
+		producer = FRN
+	}
+}

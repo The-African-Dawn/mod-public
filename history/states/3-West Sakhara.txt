@@ -1,0 +1,30 @@
+
+state={
+	id=3
+	name="STATE_3"
+	resources={
+		steel=7
+	}
+	history={
+		owner = MRK
+		add_core_of = MRK
+		add_core_of = WSR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		victory_points = {
+			2492 7
+		}
+	}
+
+	provinces={
+		193 194 503 631 656 722 741 1095 1280 1472 1713 1729 1786 2250 2303 2330 2492 2719 2723 2730 2732 2740 2756 2778 2792 2799 2804 4925 
+	}
+	manpower=532634
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

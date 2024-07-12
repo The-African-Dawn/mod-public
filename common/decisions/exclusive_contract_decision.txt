@@ -1,0 +1,865 @@
+exclusive_contract_decision = {
+
+	contract_trade_russian_transport_helicopter = {
+		icon = GFX_decision_mi24_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = transport_helicopter_airframe_0
+				amount = 15
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 1
+			}
+
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_russian_giazint = {
+		icon = GFX_decision_fagot_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = howitzer_equipment_giatsint
+				amount = 200
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 1
+			}
+
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_russian_gaz_tiger = {
+		icon = GFX_decision_gaztigr_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = mrap_car_equipment
+				amount = 150
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 2
+			}
+
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_russian_t_62 = {
+		icon = GFX_decision_pt76_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = modern_tank_equipment_t62
+				amount = 75
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 2
+			}
+
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_russian_mig_21 = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_0_ru
+				amount = 15
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_russian_t_72 = {
+		icon = GFX_decision_t55_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 2
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = modern_tank_equipment_t72
+				amount = 50
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 3
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_3_favors
+	}
+	
+	contract_trade_russian_mig_29 = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 2
+			}
+		}
+		visible = {
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_1_ru
+				amount = 15
+				producer = RUS
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 3
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_3_favors
+	}
+	
+	contract_trade_chinese_armored_car_mrap = {
+		icon = GFX_decision_gaztigr_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = mrap_car_equipment
+				amount = 150
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_chinese_gc_45 = {
+		icon = GFX_decision_fagot_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = howitzer_equipment_gc45
+				amount = 200
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_chinese_helicopter_transport = {
+		icon = GFX_decision_mi24_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = transport_helicopter_airframe_0
+				amount = 15
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_chinese_light_tanks = {
+		icon = GFX_decision_pt76_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_0
+				amount = 50
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_chinese_drones = {
+		icon = GFX_decision_buy_drones
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = uav_airframe_0
+				amount = 20
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_chinese_j_7 = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_0_ru
+				amount = 15
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_chinese_jf_17  = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_chinese_favors > 2
+			}
+		}
+		visible = {
+			check_variable = {
+				african_chinese_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_1_ru
+				amount = 15
+				producer = CHN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_chinese_favors
+				value = 3
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_3_favors
+	}
+	
+	contract_trade_american_helicopter_transport = {
+		icon = GFX_decision_mi24_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = transport_helicopter_airframe_0
+				amount = 15
+				producer = USR
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_american_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_american_m_119 = {
+		icon = GFX_decision_fagot_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = transport_helicopter_airframe_0
+				amount = 15
+				producer = USR
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_american_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_american_special_equipment = {
+		icon = GFX_decision_ak74_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = howitzer_equipment_m119
+				amount = 200
+				producer = USR
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_american_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_american_embraer_supertucano = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = light_cas_airframe_0
+				amount = 20
+				producer = USR
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_american_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_american_viper = {
+		icon = GFX_decision_mi24_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_american_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = attack_helicopter_airframe_0_fr
+				amount = 15
+				producer = USR
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_american_favors
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_american_f_16 = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_american_favors > 2
+			}
+		}
+		visible = {
+			check_variable = {
+				african_american_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_1_us
+				amount = 15
+				producer = USR
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_american_favors
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_3_favors
+	}
+	
+	contract_trade_french_hk_416 = {
+		icon = GFX_decision_ak47_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = FAMAS_2
+				amount = 750
+				producer = FRN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_french_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_french_special_equipment = {
+		icon = GFX_decision_ak74_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = spec_oborud_equipment_0
+				amount = 450
+				producer = FRN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_french_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_french_trf_1 = {
+		icon = GFX_decision_fagot_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = howitzer_equipment_trf1
+				amount = 150
+				producer = FRN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_french_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_french_siai_marchetti = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = light_cas_airframe_0
+				amount = 20
+				producer = FRN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_french_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_trade_french_eurocopter_tiger = {
+		icon = GFX_decision_mi24_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_french_favors > 1
+			}
+		}
+		visible = {
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = attack_helicopter_airframe_0_fr
+				amount = 15
+				producer = FRN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_french_favors
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_2_favors
+	}
+	
+	contract_trade_french_mirage_f1 = {
+		icon = GFX_decision_su25_buy
+		fire_only_once = no
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		visible = {
+			check_variable = {
+				african_french_favors > 0
+			}
+		}
+		days_remove = 30
+		remove_effect = { 
+			add_equipment_to_stockpile = {
+				type = cas_airframe_0_fr
+				amount = 15
+				producer = FRN
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_french_favors
+				value = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_3_favors
+	}
+	
+}

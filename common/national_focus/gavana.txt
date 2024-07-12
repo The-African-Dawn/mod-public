@@ -1,0 +1,902 @@
+﻿focus_tree = {
+	id = united_mandate_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GVN
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = -1150 y = 600 }
+
+
+
+	
+focus = {
+	id = industrial_effort
+	icon = GFX_goal_generic_production
+	x = 17
+	y = 0
+	cost = 7.2
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1
+			uses = 1
+			category = industry
+		}
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+
+focus = {
+	id = construction_effort
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = {
+		focus = industrial_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = -1
+	y = 1
+	relative_position_id = industrial_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+focus = {
+	id = production_effort
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = industrial_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 1
+	y = 1
+	relative_position_id = industrial_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = construction_effort_2
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = {
+		focus = construction_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = construction_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+focus = {
+	id = production_effort_2
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = production_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = production_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+focus = {
+	id = infrastructure_effort
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = {
+		focus = construction_effort_2
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = construction_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = production_effort_3
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = production_effort_2
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = production_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = infrastructure_effort_2
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = {
+		focus = infrastructure_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = infrastructure_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = construction_effort_3
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = {
+		focus = infrastructure_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 2
+	y = 1
+	relative_position_id = infrastructure_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = extra_tech_slot
+	icon = GFX_focus_research
+	prerequisite = {
+		focus = infrastructure_effort_2
+	}
+	prerequisite = {
+		focus = construction_effort_3
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 1
+	y = 1
+	relative_position_id = infrastructure_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = army_effort
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 25
+	y = 0
+	offset = {
+		x = -10
+		y = 0
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	cost = 7.2
+	available_if_capitulated = yes
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+		FOCUS_FILTER_ARMY_XP
+	}
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+focus = {
+	id = equipment_effort
+	icon = GFX_goal_generic_small_arms
+	prerequisite = {
+		focus = army_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -1
+	y = 1
+	relative_position_id = army_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+focus = {
+	id = motorization_effort
+	icon = GFX_goal_generic_army_motorized
+	prerequisite = {
+		focus = army_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	bypass = {
+		has_tech = motorised_infantry
+	}
+	x = 1
+	y = 1
+	relative_position_id = army_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = motorized_bonus
+			bonus = 3
+			technology = motorised_infantry
+		}
+	}
+}
+
+focus = {
+	id = doctrine_effort
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {
+		focus = equipment_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+		FOCUS_FILTER_ARMY_XP
+	}
+	prerequisite = {
+		focus = motorization_effort
+	}
+	x = 0
+	y = 3
+	relative_position_id = army_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+focus = {
+	id = equipment_effort_2
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = {
+		focus = doctrine_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -2
+	y = 1
+	relative_position_id = doctrine_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+focus = {
+	id = mechanization_effort
+	icon = GFX_goal_generic_build_tank
+	prerequisite = {
+		focus = doctrine_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 2
+	y = 1
+	relative_position_id = doctrine_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = motorized_bonus
+			ahead_reduction = 2
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+
+focus = {
+	id = doctrine_effort_2
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {
+		focus = doctrine_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 0
+	y = 2
+	relative_position_id = doctrine_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+focus = {
+	id = equipment_effort_3
+	icon = GFX_goal_generic_army_artillery2
+	prerequisite = {
+		focus = equipment_effort_2
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 0
+	y = 2
+	relative_position_id = equipment_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			ahead_reduction = 2
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+focus = {
+	id = armor_effort
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = {
+		focus = mechanization_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 0
+	y = 2
+	relative_position_id = mechanization_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1
+			uses = 2
+			category = armor
+		}
+	}
+}
+
+focus = {
+	id = special_forces
+	icon = GFX_goal_generic_special_forces
+	prerequisite = {
+		focus = equipment_effort_3
+	}
+	prerequisite = {
+		focus = doctrine_effort_2
+	}
+	prerequisite = {
+		focus = armor_effort
+	}
+	allow_branch = {
+		NOT = {
+			has_government = fundamentalism
+		}
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 2
+	y = 1
+	relative_position_id = equipment_effort_3
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = special_forces
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 1
+			uses = 1
+			technology = paratroopers
+			technology = paratroopers2
+			technology = marines
+			technology = marines2
+			technology = tech_mountaineers
+			technology = tech_mountaineers2
+		}
+	}
+}
+
+focus = {
+	id = fight_against_terrorism
+	icon = GFX_goal_generic_special_forces
+	prerequisite = {
+		focus = special_forces
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 0
+	y = 1
+	relative_position_id = special_forces
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = special_forces
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 1
+			uses = 1
+			technology = paratroopers
+			technology = paratroopers2
+			technology = marines
+			technology = marines2
+			technology = tech_mountaineers
+			technology = tech_mountaineers2
+		}
+	}
+}
+
+focus = {
+	id = war_against_terror
+	icon = GFX_goal_generic_special_forces
+	prerequisite = {
+		focus = fight_against_terrorism
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 0
+	y = 1
+	relative_position_id = fight_against_terrorism
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_ideas = special_forces
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 1
+			uses = 1
+			technology = paratroopers
+			technology = paratroopers2
+			technology = marines
+			technology = marines2
+			technology = tech_mountaineers
+			technology = tech_mountaineers2
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_generic_focus
+	icon = GFX_goal_generic_demand_territory
+	x = 2
+	y = 0
+	allow_branch = {
+		has_government = fundamentalism
+	}
+	cost = 7.2
+	available_if_capitulated = yes
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+
+focus = {
+	id = fundamentalists_embrace_caliphate
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = fundamentalists_generic_focus
+	}
+	x = 1
+	y = 1
+	relative_position_id = fundamentalists_generic_focus
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = fundamentalists_caliphate_idea
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_sharia_right
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = fundamentalists_generic_focus
+	}
+	x = -1
+	y = 1
+	relative_position_id = fundamentalists_generic_focus
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = sharia_right_idea
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_spiritual_leadership
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = fundamentalists_sharia_right
+	}
+	x = 0
+	y = 1
+	relative_position_id = fundamentalists_sharia_right
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = sharia_right_idea
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_islamic_life_state
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = fundamentalists_spiritual_leadership
+	}
+	x = 0
+	y = 1
+	relative_position_id = fundamentalists_spiritual_leadership
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = islamic_state_of_life
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_islamic_economy
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = fundamentalists_islamic_life_state
+	}
+	x = 0
+	y = 1
+	relative_position_id = fundamentalists_islamic_life_state
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = fundamentalists_islamic_economy_idea
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_mujaheeds
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = fundamentalists_embrace_caliphate
+	}
+	x = 0
+	y = 1
+	relative_position_id = fundamentalists_embrace_caliphate
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = recruit_mujaheeds
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_jihad
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = fundamentalists_mujaheeds
+	}
+	x = 0
+	y = 1
+	relative_position_id = fundamentalists_mujaheeds
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = fundamentalists_jihad_idea
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_islamic_youth
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = fundamentalists_jihad
+	}
+	x = 0
+	y = 1
+	relative_position_id = fundamentalists_jihad
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = islamic_youth
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_international_islamists
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = fundamentalists_jihad
+	}
+	x = 2
+	y = 1
+	relative_position_id = fundamentalists_jihad
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = islamists_all_around_the_world
+			days = 1095
+		}
+	}
+}
+
+focus = {
+	id = fundamentalists_defend_ummas
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = fundamentalists_islamic_economy
+		focus = fundamentalists_islamic_youth
+		focus = fundamentalists_international_islamists
+	}
+	x = 1
+	y = 1
+	relative_position_id = fundamentalists_islamic_economy
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = fundamentalists_islamic_economy_idea
+			days = 1095
+		}
+	}
+}
+
+
+
+
+
+}
+		

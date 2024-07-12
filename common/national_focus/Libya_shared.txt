@@ -1,0 +1,438 @@
+﻿
+	shared_focus = {
+		id = LIV_libyan_eagle
+		icon = GFX_goal_LIV_libyan_eagle
+		cost = 5.8
+		x = 8
+		y = 0
+		ai_will_do = {factor = 1}
+			completion_reward = {
+				add_stability = 0.05
+				add_war_support = 0.1
+				add_political_power = 50
+				add_command_power = 50
+				add_manpower = 18127
+			}
+    }
+	
+	shared_focus = {
+		id = LIV_through_the_fire_and_the_flames
+		icon = GFX_goal_LIV_through_the_fire_and_the_flames
+		cost = 5.8
+		relative_position_id = LIV_libyan_eagle
+		prerequisite = {focus = LIV_libyan_eagle}
+		x = -1
+		y = 1
+		ai_will_do = {factor = 1}
+			completion_reward = {
+				add_stability = 0.05
+				add_war_support = 0.1
+				add_political_power = 50
+				add_command_power = 50
+				add_manpower = 18127
+			}
+    }
+	
+	shared_focus = {
+		id = LIV_ghost_of_the_past
+		icon = GFX_goal_LIV_ghost_of_the_past_anim
+		cost = 5.8
+		relative_position_id = LIV_libyan_eagle
+		prerequisite = {focus = LIV_libyan_eagle}
+		x = 1
+		y = 1
+		ai_will_do = {factor = 1}
+			completion_reward = {
+				add_stability = 0.05
+				add_war_support = 0.1
+				add_political_power = 50
+				add_command_power = 50
+				add_manpower = 18127
+			}
+    }
+	
+
+	
+	shared_focus = {
+		id = LIV_fight_for_inheritance
+		icon = GFX_goal_LIV_fight_for_inheritance
+		cost = 5.8
+		relative_position_id = LIV_through_the_fire_and_the_flames
+		prerequisite = {focus = LIV_through_the_fire_and_the_flames}
+		prerequisite = {focus = LIV_ghost_of_the_past}
+		x = 1
+		y = 2
+		ai_will_do = {factor = 1}
+			completion_reward = {
+				add_stability = 0.05
+				add_war_support = 0.1
+				add_political_power = 50
+				add_command_power = 50
+				add_manpower = 18127
+			}
+    }
+	
+#	shared_focus = {
+#		id = LIV_call_for_help
+#		icon = GFX_goal_LIV_call_for_help
+#		cost = 5.8
+#		relative_position_id = LIV_fight_for_inheritance
+#		prerequisite = {focus = LIV_fight_for_inheritance}
+#		mutually_exclusive = {focus = LIV_opening_russian_consulate}
+#		x = -3
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#		shared_focus = {
+#		id = LIV_our_ties
+#		icon = GFX_goal_LIV_call_for_help
+#		cost = 5.8
+#		relative_position_id = LIV_call_for_help
+#		prerequisite = {focus = LIV_call_for_help}
+#		x = -2
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_opening_russian_embassy
+#		icon = GFX_goal_LIV_call_for_help
+#		cost = 5.8
+#		relative_position_id = LIV_fight_for_inheritance
+#		prerequisite = {focus = LIV_fight_for_inheritance}
+#		mutually_exclusive = {focus = LIV_call_for_help}
+#		x = 3
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_path_to_stability
+#		icon = GFX_goal_LIV_call_for_help
+#		cost = 5.8
+#		relative_position_id = LIV_opening_russian_embassy
+#		prerequisite = {focus = LIV_opening_russian_embassy}
+#		x = 2
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#		shared_focus = {
+#		id = LIV_national_committee
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_call_for_help
+#		prerequisite = {focus = LIV_call_for_help
+#		focus = LIV_opening_russian_consulate}
+#		x = 3
+#		y = 4
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#
+#	shared_focus = {
+#		id = LIV_meeting_of_three
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_national_committee
+#		prerequisite = {focus = LIV_national_committee}
+#		x = -4
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#		shared_focus = {
+#		id = LIV_a_new_alliance
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_meeting_of_three
+#		prerequisite = {focus = LIV_meeting_of_three}
+#		x = -2
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_stabilizing_the_economy
+#		icon = GFX_goal_LIV_libyan_eagle
+#		cost = 5.8
+#		x = 18
+#		y = 0
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_largest_oil_producer
+#		icon = GFX_goal_LIV_libyan_eagle
+#		cost = 5.8
+#		relative_position_id = LIV_stabilizing_the_economy
+#		prerequisite = {focus = LIV_stabilizing_the_economy}
+#		x = 0
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#		shared_focus = {
+#		id = LIV_suppress_oil_smuggling
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_largest_oil_producer
+#		prerequisite = {focus = LIV_largest_oil_producer}
+#		x = -2
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#		shared_focus = {
+#		id = LIV_unexplored_resources
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_largest_oil_producer
+#		prerequisite = {focus = LIV_largest_oil_producer}
+#		x = 2
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#				shared_focus = {
+#		id = LIV_stock_market_reopening
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_largest_oil_producer
+#		prerequisite = {focus = LIV_largest_oil_producer}
+#		x = 0
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	
+#	
+#			shared_focus = {
+#		id = LIV_trans_saharan_corridor
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_stock_market_reopening
+#		prerequisite = {focus = LIV_stock_market_reopening}
+#		x = 0
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	
+#	
+#	
+#	shared_focus = {
+#		id = LIV_eternal_conflict
+#		icon = GFX_goal_LIV_eternal_conflict
+#		cost = 5.8
+#		x = 28
+#		y = 0
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_libyan_national_army
+#		icon = GFX_goal_LIV_fight_against_terrorism
+#		cost = 5.8
+#		relative_position_id = LIV_eternal_conflict
+#		prerequisite = {focus = LIV_eternal_conflict}
+#		x = 0
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_russian_tank_delivery
+#		icon = GFX_goal_LIV_fight_against_terrorism
+#		cost = 5.8
+#		relative_position_id = LIV_libyan_national_army
+#		prerequisite = {focus = LIV_libyan_national_army}
+#		x = 1
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_fight_against_terrorism
+#		icon = GFX_goal_LIV_fight_against_terrorism
+#		cost = 5.8
+#		relative_position_id = LIV_eternal_conflict
+#		prerequisite = {focus = LIV_eternal_conflict}
+#		x = 2
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#	shared_focus = {
+#		id = LIV_fear_and_terror
+#		icon = GFX_goal_LIV_fear_and_terror
+#		cost = 5.8
+#		relative_position_id = LIV_fight_against_terrorism
+#		prerequisite = {focus = LIV_fight_against_terrorism}
+#		x = 1
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#				shared_focus = {
+#		id = LIV_crushing_the_gangs
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_eternal_conflict
+#		prerequisite = {focus = LIV_eternal_conflict}
+#		x = -2
+#		y = 1
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	
+#					shared_focus = {
+#		id = LIV_illegal_migration
+#		icon = GFX_goal_LIV_meeting_of_three
+#		cost = 5.8
+#		relative_position_id = LIV_crushing_the_gangs
+#		prerequisite = {focus = LIV_crushing_the_gangs}
+#		x = -1
+#		y = 2
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+		

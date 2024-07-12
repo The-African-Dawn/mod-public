@@ -1,0 +1,12 @@
+characters = {
+	BHK_Ibrahim_Bakoura = {
+		name = BHK_Ibrahim_Bakoura
+		portraits = {
+			civilian = { large = "gfx/leaders/BHK/random_guy.dds" }
+	    }
+		country_leader = {
+			ideology = fundamentalism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+}

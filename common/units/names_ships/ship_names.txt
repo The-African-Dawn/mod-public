@@ -1,0 +1,15 @@
+﻿##### YUGOSLAVIA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+YUG_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	type = ship		
+
+	prefix = "KB "
+	fallback_name = "Razarac %d"					
+
+	unique = {											
+		"Dubrovnik" "Split" "Beograd" "Zagreb" "Ljubljana" "Kotor" "Pula" "Triglav" "Biokovo" "Durmitor" "Ucka" "Koper" "Nada" 
+		"Golesnica" "Cer" 
+	}
+}

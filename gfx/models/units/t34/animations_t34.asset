@@ -1,0 +1,13 @@
+
+animation = {
+	name = "t34_attack_animation"
+	file = "t34_attack.anim"
+}
+animation = {
+	name = "t34_idle_animation"
+	file = "t34_idle.anim"
+}
+animation = {
+	name = "t34_move_animation"
+	file = "t34_move.anim"
+}

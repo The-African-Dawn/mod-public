@@ -1,0 +1,31 @@
+
+state={
+	id=56
+	name="STATE_56"
+
+	history={
+
+		victory_points = {
+			720 2 
+		}
+		victory_points = {
+			2047 15
+		}
+		
+		owner = MLL
+		add_core_of = MLL
+		add_core_of = AZW
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+		}
+	}
+	state_category = rural
+	provinces={
+		411 720 1875 2047 2268 2501 2910 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

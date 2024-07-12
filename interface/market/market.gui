@@ -1,0 +1,456 @@
+guiTypes = {
+	containerWindowType = {
+		name = "market_tab_rew"
+		position = { x = 0 y = 210 } 
+		size = { width = 550 height = 100%% }
+		verticalScrollbar = "right_vertical_slider"
+		clipping = yes
+		background = {
+			name = "Background"
+			# spriteType ="GFX_tiled_plain_bg"
+			position = { x = 0 y = -10 }
+			quadTextureSprite = "GFX_tiled_window_1b_border"
+		}
+		containerWindowType = {
+			name = "filter_countries"
+			position = { x = 20 y = -35 } 
+			size = { width = 96%% height = 60 }
+			buttonType = {
+				name = "sort_country_RUS"
+				position = {x=0 y=0}
+				quadTextureSprite ="GFX_TRADE_resource_btn"
+				clicksound = click_scroll
+			}
+			iconType = {
+				name = "country_flag_RUS"
+				position = { x = 24 y = 10 }
+				spriteType = "GFX_flag_small2"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "country_flag_RUS_over"
+				position = { x = 24 y = 10 }
+				spriteType = "GFX_major_country_flag_overlay"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "sort_country_USA"
+				position = {x=100 y=0}
+				quadTextureSprite ="GFX_TRADE_resource_btn"
+				clicksound = click_scroll
+			}
+			iconType = {
+				name = "country_flag_USA"
+				position = { x = 124 y = 10 }
+				spriteType = "GFX_flag_small2"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "country_flag_USA_over"
+				position = { x = 124 y = 10 }
+				spriteType = "GFX_major_country_flag_overlay"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "sort_country_FRA"
+				position = {x=200 y=0}
+				quadTextureSprite ="GFX_TRADE_resource_btn"
+				clicksound = click_scroll
+			}
+			iconType = {
+				name = "country_flag_FRA"
+				position = { x = 224 y = 10 }
+				spriteType = "GFX_flag_small2"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "country_flag_FRA_over"
+				position = { x = 224 y = 10 }
+				spriteType = "GFX_major_country_flag_overlay"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "polpower_amount"
+			position = { x = 420 y = -30 }	
+			size = { width = 100 height = 35 }
+			
+			background = {
+				name = "Background" 
+				# spriteType ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+				quadTextureSprite = "console_background"
+			}
+			ButtonType = {
+				name = "ppspending"
+				position = { x = 0 y = 0 }
+				size = { width = 100 height = 35 }
+				textureFile = ""
+				buttonText = "market_pp_spending" 
+				buttonFont = "hoi_18mbs" 
+				pdx_tooltip = PPSPENDING_TT
+				fixedsize = yes
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "polpower_get"
+			position = { x = 320 y = -30 } 
+			size = { width = 100 height = 35 }
+			
+			background = {
+				name = "Background" 
+				# spriteType ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+				quadTextureSprite = "console_background"
+			}
+			ButtonType = {
+				name = "ppgetting"
+				position = { x = 0 y = 0 }
+				size = { width = 100 height = 35 }
+				textureFile = ""
+				buttonText = "market_pp_getting" 
+				buttonFont = "hoi_18mbs" 
+				pdx_tooltip = PPSGETTING_TT
+				fixedsize = yes
+				format = center
+			}
+		}
+		gridboxtype = { 
+			name = "market_offers"
+			position = { x = 0 y = 20 }
+			size = { width = 98%% height = 100%% }
+			slotsize = { width = 500 height = 50 }
+			max_slots_vertical = 999 
+			max_slots_horizontal = 1
+		}
+	}
+	containerWindowType = {
+		name = "market_offer_entry"
+		position = { x = 7 y = 0 }	
+		size = { width = 500 height = 40 }
+
+		background = {
+			name = "Background" 
+			# spriteType ="GFX_tiled_plain_bg"
+			alwaystransparent = yes
+			quadTextureSprite = "GFX_tiled_window_small_small"
+		}
+		iconType = {
+			name = "icon_offer"
+			position = {x=2 y=5}
+			quadTextureSprite ="GFX_decision_oil"
+		}
+		instantTextBoxType = {
+			name ="offer_name"
+			position = { x = 40 y = 10 }
+			font = "hoi_18mbs"
+			text = "offer_name"
+			format = left
+			maxWidth = 300
+			maxHeight = 24
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "start_imports_market"
+			position = {x=310 y=2}
+			spriteType = "GFX_button_148x34"
+			clicksound = click_scroll
+			pdx_tooltip = MARKET_BUY_TT
+			buttonText = "market_start_offer"
+			buttonFont = "hoi_20bs"
+		}
+		buttonType = {
+			name = "cancel_imports" 
+			position = {x=460 y=4}
+			quadTextureSprite ="GFX_cancel_import_button"
+			clicksound = click_scroll
+			pdx_tooltip = "market_tooltip_close_offer"
+		}
+	} 
+	containerWindowType = {
+		name = "market_buy_modal_window"
+		position = { x = -225 y = -160 }
+		size = { width = 500 height = 500 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		show_sound = pop_up
+		hide_sound = menu_close_window
+		click_to_front = yes
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+		
+		iconType =
+		{
+			name ="diplo_popup_header_bg"
+			spriteType = "GFX_diplo_popup_header_bg"
+			position = { x= 3 y = 8 }
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "title"
+			position = { x = 25 y = 20 }
+			font = "hoi_20b" 
+			text = "market_popup_name"
+			maxWidth = 450
+			maxHeight = 20
+			format = center
+		}
+		instantTextboxType = {
+			name = "switch"
+			position = { x = 20 y = 40 }
+			font = "hoi_18b"
+			text = "[offer_script_loc_alt]"
+			maxWidth = 450
+			maxHeight = 20
+			format = center
+		}
+		iconType = {
+			name = "country_flag_ROOT"
+			position = { x = 20 y = 30 }
+			spriteType = "GFX_flag_small2"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "country_flag_ROOT_over"
+			position = { x = 20 y = 30 }
+			spriteType = "GFX_major_country_flag_overlay"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "country_flag_trader"
+			position = { x = 435 y = 30 }
+			spriteType = "GFX_flag_small2"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "country_flag_trader_over"
+			position = { x = 435 y = 30 }
+			spriteType = "GFX_major_country_flag_overlay"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name ="diplo_popup_bottom"
+			spriteType = "GFX_diplo_popup_bottom"
+			position = { x= 3 y = 439 }
+		}
+
+		buttonType = {
+			name = "buybuttonclick"
+			position = { x=350 y =452}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "SEND"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+		}
+		buttonType = {
+			name = "cancel_button"
+			position = { x=25 y =452}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "CANCEL"
+			buttonFont = "hoi_18mbs"
+			shortcut = "ESCAPE"
+		}
+		containerWindowType = {
+			name = "select_amount_container"
+			position = { x = 7 y = 80 }	
+			size = { width = 100%% height = 300 }
+			instantTextboxType = {
+				name = "desc"
+				position = { x = 25 y = 5 }
+				font = "hoi_18mbs" 
+				text = "market_select_amount_desc"
+				maxWidth = 450
+				maxHeight = 40
+				format = center
+			}
+			buttonType = {
+				name = "imports_amount_title" 
+				size = { width = 200 height = 40 }
+				position = {x=150 y=30}
+				buttonFont = "hoi_20b"
+				buttonText = "import_selector_title"
+				clicksound = click_scroll
+				quadTextureSprite = "console_background"
+			}
+			buttonType = {
+				name = "add_more_button"
+				position = { x=360 y =38}
+				quadTextureSprite ="GFX_add_one"
+				pdx_tooltip = ADD_MORE_MODAL_TT
+			}
+			buttonType = {
+				name = "remove_more_button"
+				position = { x=115 y =38}
+				quadTextureSprite ="GFX_subtract_one"
+				pdx_tooltip = REMOVE_MORE_MODAL_TT
+			}
+			instantTextboxType = {
+				name = "which_will_cost_desc"
+				position = { x = 25 y = 75 }
+				font = "hoi_18mbs" 
+				text = "which_will_cost_desc"
+				maxWidth = 450
+				maxHeight = 40
+				format = center
+			}
+			buttonType = {
+				name = "cost_title" 
+				size = { width = 200 height = 40 }
+				position = {x=150 y=100}
+				buttonFont = "hoi_20b"
+				buttonText = "cost_amount_title"
+				clicksound = click_scroll
+				quadTextureSprite = "console_background"
+			}
+			instantTextboxType = {
+				name = "main_info_desc"
+				position = { x = 25 y = 150 }
+				font = "hoi_18mbs"
+				text = "[getmaininfomodal]"
+				maxWidth = 450
+				maxHeight = 200
+				format = center
+			}
+		}
+	} 
+	containerWindowType = {
+		name = "blackmarket_tab_rew"
+		position = { x = 0 y = 200 } 
+		size = { width = 550 height = 100%% }
+		clipping = no
+		background = {
+			name = "Background"
+			# spriteType ="GFX_tiled_plain_bg"
+			quadTextureSprite = "GFX_tiled_window_1b_border"
+		}
+		# Здесь можно было делать грид
+		## но не нужно
+		containerWindowType = {
+			name = "polpower_get"
+			position = { x = 320 y = -30 } 
+			size = { width = 100 height = 35 }
+			
+			background = {
+				name = "Background" 
+				# spriteType ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+				quadTextureSprite = "console_background"
+			}
+			ButtonType = {
+				name = "ppgetting"
+				position = { x = 0 y = 0 }
+				size = { width = 100 height = 35 }
+				textureFile = ""
+				buttonText = "market_pp_getting" 
+				buttonFont = "hoi_18mbs" 
+				pdx_tooltip = PPSGETTING_TT
+				fixedsize = yes
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "black_market_entry_1"
+			position = { x = 20 y = 15 }	
+			size = { width = 500 height = 40 }
+
+			background = {
+				name = "Background" 
+				# spriteType ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+				quadTextureSprite = "GFX_tiled_window_small_small"
+			}
+			instantTextBoxType = {
+				name ="offer_name"
+				position = { x = 10 y = 10 }
+				font = "hoi_18mbs"
+				text = "bm_offer_1"
+				
+				format = left
+				maxWidth = 300
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "bm_1"
+				position = {x=345 y=2}
+				spriteType = "GFX_button_148x34"
+				clicksound = click_scroll
+				buttonText = "bm_1_cost"
+				buttonFont = "hoi_20bs"
+				pdx_tooltip = "bm_offer_1_tt"
+			}
+		}
+		containerWindowType = {
+			name = "black_market_entry_2"
+			position = { x = 20 y = 60 }	
+			size = { width = 500 height = 40 }
+
+			background = {
+				name = "Background" 
+				# spriteType ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+				quadTextureSprite = "GFX_tiled_window_small_small"
+			}
+			instantTextBoxType = {
+				name ="offer_name"
+				position = { x = 10 y = 10 }
+				font = "hoi_18mbs"
+				text = "bm_offer_2"
+				
+				format = left
+				maxWidth = 300
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "bm_2"
+				position = {x=345 y=2}
+				spriteType = "GFX_button_148x34"
+				clicksound = click_scroll
+				buttonText = "bm_2_cost"
+				buttonFont = "hoi_20bs"
+				pdx_tooltip = "bm_offer_2_tt"
+			}
+		}
+		containerWindowType = {
+			name = "black_market_entry_3"
+			position = { x = 20 y = 105 }	
+			size = { width = 500 height = 40 }
+
+			background = {
+				name = "Background" 
+				# spriteType ="GFX_tiled_plain_bg"
+				alwaystransparent = yes
+				quadTextureSprite = "GFX_tiled_window_small_small"
+			}
+			instantTextBoxType = {
+				name ="offer_name"
+				position = { x = 10 y = 10 }
+				font = "hoi_18mbs"
+				text = "bm_offer_3"
+				
+				format = left
+				maxWidth = 300
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "bm_3"
+				position = {x=345 y=2}
+				spriteType = "GFX_button_148x34"
+				clicksound = click_scroll
+				buttonText = "bm_3_cost"
+				buttonFont = "hoi_20bs"
+				pdx_tooltip = "bm_offer_3_tt"
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+capital = 145
+set_technology = {
+	Rifle_pizods = 1
+	AK_tech = 1
+	handmade_artillery_tech = 1
+	howitzer_d30_tech = 1
+	tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1
+	handmade_atgm_tech = 1
+	atgm_rpg7_tech = 1
+	handmade_manpads_tech = 1
+	manpads_strela_tech = 1
+	basic_train = 1
+	tech_specnaz = 1
+	
+	tech_mrap = 1
+	tech_ural = 1
+	tech_ifv_1  = 1
+	tech_lav_1 = 1
+}
+starting_train_buffer = 5
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+give_military_access = FRN
+
+set_convoys = 3
+set_research_slots = 2
+set_stability = 0.45
+set_war_support = 0.35
+set_oob = "KOT_oob"
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+	gulf_of_guinea_piracy
+	KOT_dialog_reforms_and_concession
+	KOT_economical_boost
+	KOT_mass_unemployment
+}
+
+recruit_character = KOT_Alassane
+recruit_character = KOT_Tene_Birahima_Ouattara
+recruit_character = KOT_Achy_Ekissi
+set_politics = {
+	ruling_party = francocentrism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	SNG_focus_on_fishing
+}
+
+set_popularities = {
+	francocentrism = 45
+	pragmatism = 45
+	panafricanism = 10
+}

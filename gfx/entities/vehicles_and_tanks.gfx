@@ -1,0 +1,304 @@
+objectTypes = {
+	pdxmesh = {
+		name = "cascavel_mesh"
+		file = "gfx/models/units/cascavel/cascavel.mesh"
+		
+		animation = { id = "idle"			type = "cascavel_idle_animation" }
+		animation = { id = "move"			type = "cascavel_move_animation" }
+		animation = { id = "attack"			type = "cascavel_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "wma301_mesh"
+		file = "gfx/models/units/wma301/wma301.mesh"
+		
+		animation = { id = "idle"			type = "wma301_idle_animation" }
+		animation = { id = "move"			type = "wma301_move_animation" }
+		animation = { id = "attack"			type = "wma301_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "greyhound_mesh"
+		file = "gfx/models/units/greyhound/greyhound.mesh"
+
+		animation = { id = "attack"			type = "greyhound_attack_animation" }
+		animation = { id = "idle"			type = "greyhound_idle_animation" }
+		animation = { id = "move"			type = "greyhound_moving_animation" }
+		scale = 1.2
+	}
+	pdxmesh = {
+		name = "aml90_mesh"
+		file = "gfx/models/units/aml90/aml90.mesh"
+		
+		animation = { id = "idle"			type = "aml90_idle_animation" }
+		animation = { id = "move"			type = "aml90_move_animation" }
+		animation = { id = "attack"			type = "aml90_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "supply_toyota_1_mesh"
+		file = "gfx/models/units/toyota/supply_toyota_1.mesh"
+
+		animation = { id = "move" type = "train_locomotive_1_idle" }
+		animation = { id = "idle" type = "train_locomotive_1_moving" }
+		scale = 1
+	}
+	pdxmesh = {
+		name = "tb2_mesh"
+		file = "gfx/models/units/tb2/tb2.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "ah64_mesh"
+		file = "gfx/models/units/ah64/ah64.mesh"
+		animation = { id = "idle" type = "ah64_idle_animation" }	
+
+		scale = 0.45
+	}
+	pdxmesh = {
+		name = "mi817_mesh"
+		file = "gfx/models/units/mi8/mi817.mesh"
+		animation = { id = "idle" type = "mi17_idle_animation" }	
+
+		scale = 0.45
+	}
+	pdxmesh = {
+		name = "uh60_mesh"
+		file = "gfx/models/units/uh60/uh60.mesh"
+		animation = { id = "idle" type = "uh60_idle_animation" }	
+
+		scale = 0.45
+	}
+	pdxmesh = {
+		name = "mi24_mesh"
+		file = "gfx/models/units/mi24/mi24.mesh"
+		animation = { id = "idle" type = "mi24_anim_animation" }	
+
+		scale = 0.45
+	}
+	pdxmesh = {
+		name = "supply_toyota_2_mesh"
+		file = "gfx/models/units/toyota/supply_toyota_2.mesh"
+
+		animation = { id = "move" type = "train_locomotive_1_idle" }
+		animation = { id = "idle" type = "train_locomotive_1_moving" }
+		scale = 1
+	}
+	pdxmesh = {
+		name = "supply_toyota_3_mesh"
+		file = "gfx/models/units/toyota/supply_toyota_3.mesh"
+
+		animation = { id = "move" type = "train_locomotive_1_idle" }
+		animation = { id = "idle" type = "train_locomotive_1_moving" }
+		scale = 1
+	}
+	pdxmesh = {
+		name = "supply_truck_01_mesh"
+		file = "gfx/models/units/toyota/supply_truck_01.mesh"
+
+		animation = { id = "move" type = "train_locomotive_1_idle" }
+		animation = { id = "idle" type = "train_locomotive_1_moving" }
+		scale = 1
+	}
+	pdxmesh = {
+		name = "toyota_mesh"
+		file = "gfx/models/units/toyota/toyota.mesh"
+		
+		animation = { id = "idle"			type = "toyota_idle_animation" }
+		animation = { id = "move"			type = "toyota_move_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "ISS_toyota_mesh"
+		file = "gfx/models/units/toyota/ISS_toyota.mesh"
+		
+		animation = { id = "idle"			type = "toyota_idle_animation" }
+		animation = { id = "move"			type = "toyota_move_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "NIG_gendarm_toyota_mesh"
+		file = "gfx/models/units/toyota/NIG_gendarm_toyota.mesh"
+		
+		animation = { id = "idle"			type = "toyota_idle_animation" }
+		animation = { id = "move"			type = "toyota_move_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "NIG_toyota_mesh"
+		file = "gfx/models/units/toyota/NIG_toyota.mesh"
+		
+		animation = { id = "idle"			type = "toyota_idle_animation" }
+		animation = { id = "move"			type = "toyota_move_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "BRK_toyota_mesh"
+		file = "gfx/models/units/toyota/BRK_toyota.mesh"
+		
+		animation = { id = "idle"			type = "toyota_idle_animation" }
+		animation = { id = "move"			type = "toyota_move_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "BRK_cascavel_mesh"
+		file = "gfx/models/units/cascavel/BRK_cascavel.mesh"
+		
+		animation = { id = "idle"			type = "cascavel_idle_animation" }
+		animation = { id = "move"			type = "cascavel_move_animation" }
+		animation = { id = "attack"			type = "cascavel_attack_animation" }
+		scale = 1.0
+	}
+	# T-62 так еще и с бровями
+	# Брежнева
+	pdxmesh = {
+		name = "t62m_mesh"
+		file = "gfx/models/units/t62/t62.mesh"
+		
+		animation = { id = "idle"			type = "t62_idle_animation" }
+		animation = { id = "move"			type = "t62_move_animation" }
+		animation = { id = "attack"			type = "t62_attack_animation" }
+		
+		scale = 1.5
+	}
+	# T-34 это супер
+	pdxmesh = {
+		name = "t34_mesh"
+		file = "gfx/models/units/t34/t34.mesh"
+		
+		animation = { id = "idle"			type = "t34_idle_animation" }
+		animation = { id = "move"			type = "t34_move_animation" }
+		animation = { id = "attack"			type = "t34_attack_animation" }
+		
+		scale = 1.5
+	}
+	# ВИКЕРС ЭТО ПЛОХО
+	pdxmesh = {
+		name = "vickers_mesh"
+		file = "gfx/models/units/vickers/vickers.mesh"
+		
+		animation = { id = "idle"			type = "vickers_idle_animation" }
+		animation = { id = "move"			type = "vickers_move_animation" }
+		animation = { id = "attack"			type = "vickers_attack_animation" }
+		
+		scale = 1.5
+	}
+	# T-72
+	pdxmesh = {
+		name = "t72_mesh"
+		file = "gfx/models/units/t72/t72.mesh"
+		
+		animation = { id = "idle"			type = "t72_idle_animation" }
+		animation = { id = "move"			type = "t72_moving_animation" }
+		animation = { id = "attack"			type = "t72b_attack_animation" }
+		
+		scale = 1.5
+	}
+	# T-90
+	pdxmesh = {
+		name = "t90_mesh"
+		file = "gfx/models/units/t90/t90.mesh"
+		
+		animation = { id = "idle"			type = "t90_idle_animation" }
+		animation = { id = "move"			type = "t90_moving_animation" }
+		animation = { id = "attack"			type = "t90_attack_animation" }
+		
+		scale = 1.5
+	}
+	# T-69 ( T-54 ) 
+	pdxmesh = {
+		name = "type69_mesh"
+		file = "gfx/models/units/type69/t69.mesh"
+		
+		animation = { id = "idle"			type = "type69_idle_animation" }
+		animation = { id = "move"			type = "type69_move_animation" }
+		animation = { id = "attack"			type = "type69_attack_animation" }
+		
+		scale = 1.75
+	}
+	# Абрамс
+	# Одна из первых модификаций
+	pdxmesh = {
+		name = "abrams_mesh"
+		file = "gfx/models/units/m1a1/abrams.mesh"
+		
+		animation = { id = "idle"			type = "abrams_idle_animation" }
+		animation = { id = "move"			type = "abrams_move_animation" }
+		animation = { id = "attack"			type = "abrams_attack_animation" }
+		
+		scale = 1.5
+	}
+	# бэха
+	# пэршая
+	pdxmesh = {
+		name = "bmp1_mesh"
+		file = "gfx/models/units/bmp1/bmp1.mesh"
+		
+		animation = { id = "idle"			type = "bmp1_idle_animation" }
+		animation = { id = "move"			type = "bmp1_move_animation" }
+		animation = { id = "attack"			type = "bmp1_attack_animation" }
+		
+		scale = 1.1
+	}
+	# бэтэр 60
+	pdxmesh = {
+		name = "btr60_mesh"
+		file = "gfx/models/units/btr60/btr60.mesh"
+		
+		animation = { id = "idle"			type = "btr60_idle_animation" }
+		animation = { id = "move"			type = "btr60_move_animation" }
+		animation = { id = "attack"			type = "btr60_idle_animation" }
+		
+		scale = 1.1
+	}
+	pdxmesh = {
+		name = "generic_plane_light_mesh"
+		file = "gfx/models/units/planes/generic_plane_light.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "BRK_plane_light_mesh"
+		file = "gfx/models/units/planes/BRK_plane_light.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "SIAI_260_mesh"
+		file = "gfx/models/units/siai_260/SIAI_260.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "NRG_plane_light_mesh"
+		file = "gfx/models/units/planes/NRG_light_plane.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "su25_mesh"
+		file = "gfx/models/units/su25/su25.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "a10_mesh"
+		file = "gfx/models/units/a10/a10.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "mig29_mesh"
+		file = "gfx/models/units/mig29/mig29.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "f16_mesh"
+		file = "gfx/models/units/f16/f16.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "mirage2000_mesh"
+		file = "gfx/models/units/mirage2000/mirage2000.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "mig21_mesh"
+		file = "gfx/models/units/mig21/mig21.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+}

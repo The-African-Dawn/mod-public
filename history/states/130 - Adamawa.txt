@@ -1,0 +1,22 @@
+
+state={
+	id=130
+	name="STATE_130"
+	resources={
+		oil = 11
+	}
+	history={
+		owner = KMR
+		add_core_of = KMR
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	state_category = rural
+	provinces={
+		37 502 1040 1211 1632 2482 3151 
+	}
+	manpower=3453482
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

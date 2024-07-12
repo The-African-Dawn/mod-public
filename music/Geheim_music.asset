@@ -1,0 +1,5 @@
+#########EVENTS###########
+music = {
+	name = "great_african_war"
+	file = "great_african_war.ogg"
+}

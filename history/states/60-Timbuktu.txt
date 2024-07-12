@@ -1,0 +1,27 @@
+state={
+	id=60
+	name="STATE_60"
+	provinces={
+		1252 1663 1836 4827 
+	}
+	history={
+		victory_points = { 1836 3 }
+		owner = JNA
+		add_core_of = JNA
+		add_core_of = MLL
+		add_core_of = AZW
+		buildings = {
+			infrastructure = 1
+		}
+		
+		MLL = {
+			set_province_controller = 1252
+			set_province_controller = 1836
+		}
+
+	}
+	state_category = rural
+	manpower=78324
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

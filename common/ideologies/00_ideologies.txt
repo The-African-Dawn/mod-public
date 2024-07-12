@@ -1,0 +1,173 @@
+ideologies = {
+
+	francocentrism = {
+
+		types = {
+
+			francocentrism_sub = {
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+		}
+
+		color = { 78 91 137 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_host_government_in_exile = yes
+
+		modifiers = {
+			ai_focus_defense_factor = 1
+		}
+
+		faction_modifiers = {
+		}
+		#ai_democratic = yes # uses the democratic AI behaviour
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.35 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+	}
+
+
+	panafricanism = {
+
+		types = {
+
+
+			panafricanism_sub = {
+			}
+			
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+		}
+
+		color = { 80 20 20 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+	
+		ai_communist = yes # uses the commie AI behaviour
+		ai_ideology_wanted_units_factor = 1.35
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_threshold_factor = 0.5
+			lend_lease_tension = 0.50
+			ai_focus_defense_factor = 1
+		}
+
+		faction_modifiers = {
+
+		}
+
+	}
+
+	fundamentalism = {
+
+		types = {
+
+			fundamentalism_sub = {
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+		}
+
+		color = { 0 0 0  }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+				can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			ai_focus_aggressive_factor = 1
+			ai_badass_factor = 1
+			ai_badass_factor = 1
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.35
+	}
+
+	pragmatism = {
+
+		types = {
+
+			pragmatism_sub = {
+			}
+			
+			rus_pragmatism_sub = {
+			color = { 30 60 30 } 
+			can_be_randomly_selected = no
+			}
+			
+			usa_pragmatism_sub = {
+			color = { 30 30 60 } 
+			can_be_randomly_selected = no
+			}
+			сhina_pragmatism_sub = {
+				can_be_randomly_selected = no
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+		}
+
+		color = { 111 111 111 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+				can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		modifiers = {
+			ai_focus_defense_factor = 1
+		}
+
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes 
+		ai_ideology_wanted_units_factor = 1.35
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=166
+	name="STATE_166"
+
+	history={
+		owner = MRV
+		add_core_of = MRV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			2937 2
+		}
+		victory_points = {
+			1950 2
+		}
+	}
+
+	provinces={
+		270 402 408 521 588 592 683 909 967 1270 1481 1515 1543 1574 1950 2292 2329 2373 2583 2842 2858 2870 2906 2937 
+	}
+	manpower=44543
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,153 @@
+save_burkina_faso_education = {
+	literacy_efforts = {
+		icon = GFX_decision_burkina_education
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+			OR = {
+				has_idea = BRK_destroyed_education_system_1
+				has_idea = BRK_destroyed_education_system
+			}
+			NOT = { has_country_flag = BRK_already_fixing_education }
+		}
+		days_remove = 180
+		remove_effect = { 
+			clr_country_flag = BRK_already_fixing_education
+			BRK_upgrade_educational_system = yes
+		}
+		complete_effect = { 
+			set_country_flag = BRK_already_fixing_education
+			
+		}
+		ai_will_do = {base = 2}
+		cost = 150
+	}
+	attract_foreign_specialists = {
+		icon = GFX_decision_burkina_education
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+		}
+		available = {
+			OR = {
+				has_war = no
+				has_completed_focus = BRK_social_development
+				has_completed_focus = BRK_foreign_education
+			}
+			NOT = { has_country_flag = BRK_already_fixing_education }
+		}
+		days_remove = 230
+		remove_effect = { 
+			clr_country_flag = BRK_already_fixing_education
+			BRK_upgrade_educational_system = yes
+		}
+		complete_effect = { 
+			set_country_flag = BRK_already_fixing_education
+			
+		}
+		ai_will_do = {base = 2}
+		cost = 100
+	}
+	invest_into_school_building = {
+		icon = GFX_decision_burkina_education
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			NOT = { has_country_flag = BRK_already_fixing_education }
+		}
+		days_remove = 360
+		remove_effect = { 
+			clr_country_flag = BRK_already_fixing_education
+			BRK_upgrade_educational_system = yes
+		}
+		complete_effect = { 
+			set_country_flag = BRK_already_fixing_education
+			
+		}
+		modifier = { 
+			civilian_factory_use = 1
+			consumer_goods_expected_value = 0.1
+			industry_free_repair_factor = -0.3
+		}
+		ai_will_do = {base = 2}
+		cost = 50
+	}
+	send_army_into_school_constructions = {
+		icon = GFX_decision_burkina_education
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+		}
+		available = {
+			has_war = no
+			has_manpower > 1000
+			NOT = { has_country_flag = BRK_already_fixing_education }
+		}
+		days_remove = 360
+		remove_effect = { 
+			clr_country_flag = BRK_already_fixing_education
+			add_manpower = 1000
+			BRK_upgrade_educational_system = yes
+		}
+		complete_effect = { 
+			set_country_flag = BRK_already_fixing_education
+			add_manpower = -1000
+			
+		}
+		modifier = { 
+			army_org_factor = -0.3
+		}
+		ai_will_do = {base = 2}
+		cost = 50
+	}
+	teach_soldier = {
+		icon = GFX_decision_burkina_education
+		fire_only_once = yes
+		visible = {
+		}
+		available = {
+			NOT = { has_country_flag = BRK_already_fixing_education }
+		}
+		days_remove = 180
+		remove_effect = { 
+			clr_country_flag = BRK_already_fixing_education
+			add_to_variable = { BRK_army_army_org_factor = 0.05 }
+			custom_effect_tooltip = BRK_modify_situation_in_army_teach_soldier
+			BRK_upgrade_educational_system = yes
+		}
+		complete_effect = { 
+			set_country_flag = BRK_already_fixing_education
+		}
+		modifier = { 
+		}
+		ai_will_do = {base = 2}
+		cost = 100
+	}
+	ideological_education = {
+		icon = GFX_decision_burkina_education
+		fire_only_once = yes
+		modifier = {
+			panafricanism_drift = 0.02
+			drift_defence_factor = 0.25
+		}
+		remove_trigger = {
+			NOT = { has_government = panafricanism }
+		}
+		available = {
+			has_government = panafricanism
+		}
+		visible = {
+			has_government = panafricanism
+		}
+		days_remove = -1
+		visible = {
+		}
+		available = {
+		}
+		ai_will_do = {base = 2}
+		cost = 100
+	}
+}

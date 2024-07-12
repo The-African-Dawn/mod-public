@@ -1,0 +1,150 @@
+default = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	army = {
+		male = {
+			"GFX_Portrait_ALL_Generic_land_1"
+			"GFX_Portrait_ALL_Generic_land_2"
+			"GFX_Portrait_ALL_Generic_land_3"
+			"GFX_Portrait_ALL_Generic_land_4"
+		}
+	}	
+
+	operative = {
+		male = {
+			"GFX_Portrait_ALL_Generic_land_1"
+			"GFX_Portrait_ALL_Generic_land_2"
+			"GFX_Portrait_ALL_Generic_land_3"
+			"GFX_Portrait_ALL_Generic_land_4"
+		}
+		female = {
+			"GFX_Portrait_ALL_Generic_land_1"
+			"GFX_Portrait_ALL_Generic_land_2"
+			"GFX_Portrait_ALL_Generic_land_3"
+			"GFX_Portrait_ALL_Generic_land_4"
+		}
+	}
+	male = {
+		"GFX_Portrait_ALL_Generic_land_1"
+			"GFX_Portrait_ALL_Generic_land_2"
+			"GFX_Portrait_ALL_Generic_land_3"
+			"GFX_Portrait_ALL_Generic_land_4"
+	}
+	female = {
+		"GFX_Portrait_ALL_Generic_land_1"
+			"GFX_Portrait_ALL_Generic_land_2"
+			"GFX_Portrait_ALL_Generic_land_3"
+			"GFX_Portrait_ALL_Generic_land_4"
+	}
+}
+
+ISS = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	army = {
+		male = {
+			"GFX_Portrait_ISS_Generic_land_1"
+		}
+	}	
+
+	operative = {
+		male = {
+			"GFX_Portrait_ISS_Generic_land_1"
+		}
+		female = {
+			"GFX_Portrait_ISS_Generic_land_1"
+		}
+	}
+	male = {
+		"GFX_Portrait_ISS_Generic_land_1"
+	}
+	female = {
+		"GFX_Portrait_ISS_Generic_land_1"
+	}
+}
+
+RUS = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	army = {
+		male = {
+			"GFX_Portrait_RUS_Generic_land_1"
+			"GFX_Portrait_RUS_Generic_land_2"
+			"GFX_Portrait_RUS_Generic_land_3"
+		}
+	}	
+
+	operative = {
+		male = {
+			"GFX_Portrait_RUS_Generic_land_1"
+			"GFX_Portrait_RUS_Generic_land_2"
+			"GFX_Portrait_RUS_Generic_land_3"
+		}
+		female = {
+			"GFX_Portrait_RUS_Generic_land_1"
+			"GFX_Portrait_RUS_Generic_land_2"
+			"GFX_Portrait_RUS_Generic_land_3"
+		}
+	}
+	male = {
+		"GFX_Portrait_RUS_Generic_land_1"
+		"GFX_Portrait_RUS_Generic_land_2"
+		"GFX_Portrait_RUS_Generic_land_3"
+	}
+	female = {
+		"GFX_Portrait_RUS_Generic_land_1"
+		"GFX_Portrait_RUS_Generic_land_2"
+		"GFX_Portrait_RUS_Generic_land_3"
+	}
+}
+
+USR = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	army = {
+		male = {
+			"GFX_Portrait_USR_Generic_land_1"
+			"GFX_Portrait_USR_Generic_land_2"
+			"GFX_Portrait_USR_Generic_land_3"
+		}
+	}	
+
+	operative = {
+		male = {
+			"GFX_Portrait_USR_Generic_agent"
+		}
+		female = {
+			"GFX_Portrait_USR_Generic_agent"
+		}
+	}
+	male = {
+		"GFX_Portrait_USR_Generic_land_1"
+		"GFX_Portrait_USR_Generic_land_2"
+		"GFX_Portrait_USR_Generic_land_3"
+	}
+	female = {
+		"GFX_Portrait_USR_Generic_land_1"
+		"GFX_Portrait_USR_Generic_land_2"
+		"GFX_Portrait_USR_Generic_land_3"
+	}
+}

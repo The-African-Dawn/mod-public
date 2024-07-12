@@ -1,0 +1,37 @@
+characters = {
+	FRN_Bruno_Baratz = {
+		name = FRN_Bruno_Baratz
+		portraits = {
+			civilian = { large = "gfx/leaders/FRN/Portrait_FRN_Bruno_Baratz.dds" }
+			army = { large = "gfx/leaders/FRN/Portrait_FRN_Bruno_Baratz.dds" }
+	    }
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	FRN_Eric_Hautecloque_Raysz = {
+		name = FRN_Eric_Hautecloque_Raysz
+		portraits = {
+			civilian = { large = "gfx/leaders/FRN/Portrait_FRN_Eric_Hautecloque_Raysz.dds" }
+			army = { large = "gfx/leaders/FRN/Portrait_FRN_Eric_Hautecloque_Raysz.dds" }
+	    }
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

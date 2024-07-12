@@ -1,0 +1,27 @@
+
+state={
+	id=149
+	name="STATE_149"
+
+	history={
+		owner = LBR
+		add_core_of = LBR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+		}
+		victory_points = {
+			4897 50 
+		}
+	}
+
+	provinces={
+		4897 4896
+	}
+	manpower=2950109
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

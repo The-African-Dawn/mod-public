@@ -1,0 +1,149 @@
+
+division_template = {
+	name = "Garnison regiments"
+	regiments={
+		infantry={ x=0 y=0 }
+		infantry={ x=0 y=1 }
+	}
+	support = {
+		manpads_support_unit={ x=0 y=0 }
+		#atgm_support_unit ={ x=0 y=1 }
+		#howitzer_support_unit = {x=0 y=2}
+	}
+}
+division_template = {
+	name = "GIGN regiment"
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=0 y=3 }
+		speznaz={ x=0 y=4 }
+
+	}
+}
+division_template = {
+	name = "Mechanized Force regiment"
+	regiments={
+		infantry_on_bmp={ x=0 y=0 }
+		infantry_on_bmp={ x=0 y=1 }
+		infantry_on_btr={ x=0 y=2 }
+		infantry_on_btr={ x=0 y=3 }		
+		light_armor_unit={ x=1 y=0 }
+
+	}
+	support = {
+		manpads_support_unit={ x=0 y=0 }
+		#atgm_support_unit ={ x=0 y=1 }
+		#howitzer_support_unit = {x=0 y=2}
+	}
+}
+
+units = {
+	division= {	
+		name = "Mechanized Force regiment 101"
+		location = 284
+		division_template = "Mechanized Force regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "GIGN regiment 101"
+		location = 284
+		division_template = "GIGN regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "GIGN regiment NZD"
+		location = 1720
+		division_template = "GIGN regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "GIGN regiment PRN"
+		location = 1765
+		division_template = "GIGN regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 1765
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 3178
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 2485
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 405
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 284
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 551
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 1994
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 60
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Garnison regiments"
+		location = 15
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division= {	
+		name = "Garnison regiments"
+		location = 2085
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+			division= {	
+		name = "Garnison regiments"
+		location = 1720
+		division_template = "Garnison regiments"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	
+}

@@ -1,0 +1,56 @@
+capital = 155
+set_technology = {
+	Rifle_pizods = 1
+	AK_tech = 1
+	handmade_artillery_tech = 1
+	howitzer_d30_tech = 1
+	tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1
+	handmade_atgm_tech = 1
+	atgm_rpg7_tech = 1
+	handmade_manpads_tech = 1
+	manpads_strela_tech = 1
+	basic_train = 1
+	tech_specnaz = 1
+	
+		tech_mrap = 1
+	tech_ural = 1
+	tech_ifv_1  = 1
+	tech_lav_1 = 1
+}
+starting_train_buffer = 5
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+set_convoys = 3
+set_research_slots = 2
+set_stability = 0.3
+set_war_support = 0.4
+recruit_character = SNG_Macky
+recruit_character = SNG_Amadou_Ba
+recruit_character = SNG_Bassirou_Diomaye_Faye
+set_politics = {
+	ruling_party = francocentrism
+	last_election = "2019.2.24"
+	election_frequency = 61
+	elections_allowed = yes
+}
+
+give_military_access = FRN
+give_military_access = USR
+
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+	SNG_focus_on_fishing
+}
+
+set_popularities = {
+	francocentrism = 35
+	pragmatism = 11
+	panafricanism = 54
+}
+
+set_oob = "SNG_oob"
+set_air_oob = "SNGL_air_oob"

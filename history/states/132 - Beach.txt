@@ -1,0 +1,21 @@
+
+state={
+	id=132
+	name="STATE_132"
+
+	history={
+		owner = KMR
+		add_core_of = KMR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	state_category = rural
+	provinces={
+		286 1120 1431 3197 
+	}
+	manpower=5264643
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

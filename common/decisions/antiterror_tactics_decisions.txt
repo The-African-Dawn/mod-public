@@ -1,0 +1,116 @@
+antiterror_tactics_decision_category = {
+	antiterror_training_their_soldiers = {
+		icon = GFX_decision_antiterror_decisions_icon
+		fire_only_once = yes
+		days_remove = 90
+		available = { 
+			check_variable = {
+				army_experience > 49
+			}
+		}
+		complete_effect = {
+			army_experience = -50
+		}
+		remove_effect = { 
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_supply_factor value = 0.1 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_coordination_bonus value = 0.05 }
+			set_country_flag = antiterror_training_their_soldiers
+		}
+		ai_will_do = {base = 100}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_50_army_xp
+	}
+	antiterror_analysing_the_tactics = {
+		icon = GFX_decision_antiterror_decisions_icon
+		fire_only_once = yes
+		days_remove = 90
+		available = { 
+			check_variable = {
+				army_experience > 49
+			}
+			has_country_flag = antiterror_training_their_soldiers
+		}
+		complete_effect = {
+			army_experience = -50
+		}
+		remove_effect = { 
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_resistance_target value = -0.1 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_breakthrough_factor value = 0.05 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_special_forces_attack_factor value = 0.1 }
+			set_country_flag = antiterror_analysing_the_tactics
+		}
+		ai_will_do = {base = 100}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_50_army_xp
+	}
+	antiterror_ukrainian_experience = {
+		icon = GFX_decision_antiterror_decisions_icon
+		fire_only_once = yes
+		days_remove = 90
+		available = { 
+			check_variable = {
+				army_experience > 49
+			}
+			has_country_flag = antiterror_analysing_the_tactics
+		}
+		complete_effect = {
+			army_experience = -50
+		}
+		remove_effect = { 
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_recon_factor_bonus value = 0.1 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_land_doctrine_cost_factor value = -0.1 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_army_strength_factor value = 0.1 }
+			set_country_flag = antiterror_ukrainian_experience
+		}
+		ai_will_do = {base = 100}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_50_army_xp
+	}
+	antiterror_teaching_how_to_maintain_guns = {
+		icon = GFX_decision_antiterror_decisions_icon
+		fire_only_once = yes
+		days_remove = 90
+		available = { 
+			check_variable = {
+				army_experience > 49
+			}
+			has_country_flag = antiterror_ukrainian_experience
+		}
+		complete_effect = {
+			army_experience = -50
+		}
+		remove_effect = { 
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_army_speed_factor value = 0.05 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_initiative_factor value = 0.1 }
+			set_country_flag = antiterror_teaching_how_to_maintain_guns
+		}
+		ai_will_do = {base = 100}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_50_army_xp
+	}
+	antiterror_cooperative_missions = {
+		icon = GFX_decision_antiterror_decisions_icon
+		fire_only_once = yes
+		days_remove = 90
+		available = { 
+			check_variable = {
+				army_experience > 49
+			}
+			has_country_flag = antiterror_teaching_how_to_maintain_guns
+		}
+		complete_effect = {
+			army_experience = -50
+		}
+		remove_effect = { 
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_army_attack_factor value = 0.05 }
+			add_to_variable = { var = AFR_ineffective_antiterror_tactics_ground_attack_factor value = 0.1 }
+		}
+		ai_will_do = {base = 100}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_50_army_xp
+	}
+	
+	
+
+
+}

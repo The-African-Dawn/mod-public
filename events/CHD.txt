@@ -1,0 +1,248 @@
+﻿add_namespace = chd
+
+country_event = { 
+	id = chd.1
+	title = chd.1.t
+	desc = chd.1.desc
+	
+	picture = GFX_CHD_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = chd.1.a
+		every_owned_state = {
+			limit = {
+				is_controlled_by = CHD
+				has_state_flag = chad_resistance_fact
+			}
+			add_resistance = -1
+		}
+		add_political_power = 50
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = chd.2
+	title = chd.2.t
+	desc = chd.2.desc
+	
+	picture = GFX_CHD_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = chd.2.a
+		add_political_power = 50
+		custom_effect_tooltip = CHD_modify_CHD_national_transitional_council_CHD_2
+		add_to_variable = { CHD_national_transitional_council_stability_factor = 0.1 }
+		add_to_variable = { CHD_national_transitional_council_political_power_factor = 0.1 }
+		custom_effect_tooltip = CHD_modify_CHD_big_tent_politics_CHD_2
+		add_to_variable = { CHD_big_tent_politics_pragmatism_drift = 0.01 }
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = chd.3
+	title = chd.3.t
+	desc = chd.3.desc
+	
+	picture = GFX_CHD_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			news_event = chd.4
+		}
+	}
+	option = { 
+		name = chd.3.a
+		add_popularity = {
+			ideology = panafricanism
+			popularity = -0.15
+		}
+		set_country_flag = destroyed_leftist_opposition
+		set_party_name = {
+			ideology = panafricanism
+			long_name = CHD_pragmatism_party_leftist_long
+			name = CHD_pragmatism_party_leftist
+		}
+		add_country_leader_role = {
+			character = CHD_Mahamat_Idriss
+			promote_leader = yes
+			country_leader = {
+				ideology = panafricanism_sub
+				expire = "3000.1.1.1"
+				traits = {  }
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+news_event = {
+	id = chd.4
+	title = chd.4.t
+	desc = chd.4.desc
+	picture = GFX_CHD_6
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = chd.4.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = { tag = CHD }
+		}
+	}
+	option = {
+		name = chd.4.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			tag = CHD
+		}
+	}
+}
+
+news_event = {
+	id = chd.5
+	title = chd.5.t
+	desc = chd.5.desc
+	picture = GFX_CHD_4
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = chd.5.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = {
+	id = chd.6
+	title = chd.6.t
+	desc = chd.6.desc
+	picture = GFX_CHD_5
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = chd.6.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = {
+	id = chd.7
+	title = chd.7.t
+	desc = chd.7.desc
+	picture = GFX_CHD_7
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = chd.7.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = {
+	id = chd.8
+	title = chd.8.t
+	desc = chd.8.desc
+	picture = GFX_CHD_8
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = chd.8.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			OR = {
+				is_in_faction_with = CHD
+				tag = CHD
+			}
+		}
+	}
+	option = {
+		name = chd.8.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			OR = {
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = chd.8.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = {
+				is_in_faction_with = NRG
+				is_in_faction_with = CHD
+				tag = CHD
+				tag = NRG
+			}
+		}
+	}
+}
+news_event = {
+	id = chd.9
+	title = chd.9.t
+	desc = chd.9.desc
+	picture = GFX_CHD_8
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = chd.9.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			OR = {
+				is_in_faction_with = MLL
+				tag = MLL
+			}
+		}
+	}
+	option = {
+		name = chd.9.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			OR = {
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = {
+		name = chd.9.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = {
+				is_in_faction_with = NRG
+				is_in_faction_with = MLL
+				tag = MLL
+				tag = NRG
+			}
+		}
+	}
+}

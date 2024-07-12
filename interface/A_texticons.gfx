@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_light_infantry_opol_icon_small"
+		texturefile = "gfx/texticons/opol.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_light_infantry_opol_on_guntruck_icon_small"
+		texturefile = "gfx/texticons/opol_on_guntruck.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_infantry_on_jeep_icon_small"
+		texturefile = "gfx/texticons/jeep.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_infantry_on_bmp_icon_small"
+		texturefile = "gfx/texticons/bmp.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_unit_infantry_on_btr_icon_small"
+		texturefile = "gfx/texticons/infantry_on_btr.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_speznaz_icon_small"
+		texturefile = "gfx/texticons/zpez.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+}

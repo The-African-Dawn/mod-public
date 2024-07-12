@@ -1,0 +1,13 @@
+
+air_wings = {
+	48 = {
+		uav_airframe_0 = { owner = "USR" creator = "USR" amount = 10 } 
+	}
+	45 = {
+		transport_plane_airframe_0 = { owner = "USR" creator = "USR" amount = 10 } 
+		transport_plane_airframe_0 = { owner = "USR" creator = "USR" amount = 10 } 
+		transport_plane_airframe_0 = { owner = "USR" creator = "USR" amount = 6 } 
+		transport_helicopter_airframe_0 = { owner = "USR" creator = "USR" amount = 10 } 
+		uav_airframe_0 = { owner = "USR" creator = "USR" amount = 10 } 
+	}
+}

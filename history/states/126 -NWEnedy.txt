@@ -1,0 +1,22 @@
+
+state={
+	id=126
+	name="STATE_126"
+
+	history={
+		owner = CHD
+		add_core_of = CHD
+				buildings = {
+			infrastructure = 1
+
+		}
+		set_state_flag  = chad_resistance_fact
+	}
+	state_category = rural
+	provinces={
+		96 252 896 910 1327 1474 2580 2864 2890 
+	}
+	manpower=43435
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

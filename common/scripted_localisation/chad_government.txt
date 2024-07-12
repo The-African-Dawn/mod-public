@@ -1,0 +1,11 @@
+defined_text = {
+	name = CHD_name_of_government
+	text = {
+		trigger = {
+			check_variable = {
+				CHD = { check_variable = { current_government_leader = 0 } }
+			}
+		}
+		localization_key = "CHD_Kebzabo_Government"
+	}
+}

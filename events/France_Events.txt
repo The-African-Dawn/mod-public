@@ -1,0 +1,49 @@
+
+add_namespace = FRN
+	
+country_event = { 
+	id = FRN.1
+	title = FRN.1.t
+	desc = FRN.1.desc
+	
+	picture = GFX_FRN_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = FRN.1.a
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = FRN.1.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = FRN.2
+	title = FRN.2.t
+	desc = FRN.2.desc
+	major = yes
+	picture = GFX_FRN_2
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			FRN = {
+				add_ideas = disarmed_nation_mjr
+				add_ideas = civilian_economy_mjr
+			}
+		}
+	}
+	option = { 
+		name = FRN.2.a
+		ai_chance = { factor = 5 }
+		unlock_national_focus = FRN_operation_barkhan
+		trigger = { tag = FRN }
+	}
+	option = { 
+		name = FRN.2.a
+		ai_chance = { factor = 5 }
+		trigger = { NOT = { tag = FRN } }
+	}
+}

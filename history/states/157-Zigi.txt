@@ -1,0 +1,24 @@
+
+state={
+	id=157
+	name="STATE_157"
+
+	history={
+		owner = SNG
+		add_core_of = SNG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+
+	}
+
+	provinces={
+		172 448 1097 1398 2992 4913 
+	}
+	manpower=2164282
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

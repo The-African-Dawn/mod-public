@@ -1,0 +1,121 @@
+ecomag_choosing_sides_decision = {
+	ecomag_time_has_come = {
+		icon = GFX_decision_political_pressure
+		days_mission_timeout = 800
+		is_good = no
+		fire_only_once = yes
+		#activation = { has_global_flag = ECOWAS_choosing_major_started}
+		available = { always = no }
+		timeout_effect = {	
+			if = {limit = {check_variable = { global.ecowas_choosing_points > 49} tag = NRG} news_event = {id = ecowas.1} clr_global_flag = ECOWAS_choosing_major_started set_global_flag = ecowas_battle_win_fra}
+			else_if = {limit = {check_variable = { global.ecowas_choosing_points < 50} tag = NRG} news_event = {id = ecowas.2} clr_global_flag = ECOWAS_choosing_major_started set_global_flag = ecowas_battle_win_usa}
+			set_global_flag = ecowas_battle_complete
+		}
+		ai_will_do = {factor = 0}
+	}
+	ask_for_french_investitions = {
+		icon = GFX_decision_tdoa_french_influence
+		fire_only_once = no
+		#days_re_enable = 10
+		visible = {
+			NOT = { 
+				tag = USR
+				tag = FRN
+			}
+		}
+		available = {
+			NOT = {
+			has_decision = ask_for_american_investitions
+			}
+		}
+		days_remove = 270
+		remove_effect = { 
+			random_list = {
+				10 = {
+					add_stability = 0.05
+				}
+				10 = {
+					add_political_power = 100
+				}
+				10 = {
+					army_experience = 25
+				}
+				10 = {
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 1
+					}
+				}
+				10 = {
+					add_to_variable = { african_french_favors = 1 }
+					custom_effect_tooltip = african_french_favors_1_tt
+				}
+			}
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_choosing_points
+				value = 2
+  
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 50
+	}
+	ask_for_american_investitions = {
+		icon = GFX_decision_tdoa_american_influence
+		fire_only_once = no
+		#days_re_enable = 10
+		visible = {
+			NOT = { 
+				tag = USR
+				tag = FRN
+			}
+		}
+		available = {
+			NOT = {
+			has_decision = ask_for_french_investitions
+			}
+		}
+		days_remove = 270
+		remove_effect = { 
+			random_list = {
+				10 = {
+					add_stability = 0.05
+				}
+				10 = {
+					add_political_power = 100
+				}
+				10 = {
+					army_experience = 25
+				}
+				10 = {
+					random_owned_controlled_state = {
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 1
+					}
+				}
+				10 = {
+					add_to_variable = { african_american_favors = 1 }
+					custom_effect_tooltip = african_american_favors_1_tt
+				}
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = global.ecowas_choosing_points
+				value = 2
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 50
+	}
+}

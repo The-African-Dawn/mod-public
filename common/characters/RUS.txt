@@ -1,0 +1,102 @@
+characters = {
+	
+
+	RUS_General_Afkurov = {
+		name = RUS_General_Afkurov
+		portraits = {
+			civilian = { large = "gfx/leaders/RUS/Portrait_RUS_General_Afkurov.dds" }
+			army = { large = "gfx/leaders/RUS/Portrait_RUS_General_Afkurov.dds" }
+	    }
+		country_leader = {
+			ideology = rus_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
+	
+	RUS_General_Chernyshev = {
+		name = RUS_General_Chernyshev
+		portraits = {
+			civilian = { large = "gfx/leaders/RUS/Portrait_RUS_General_Chernyshev.dds" }
+			army = { large = "gfx/leaders/RUS/Portrait_RUS_General_Chernyshev.dds" }
+	    }
+		country_leader = {
+			ideology = rus_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
+	
+	RUS_Artyom_Kureev = {
+		name = RUS_Artyom_Kureev
+		portraits = {
+			army = {
+				small = "gfx/leaders/RUS/Portrait_RUS_Artyom_Kureev_advisor.dds"
+			}
+	    }
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Artyom_Kureev
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				RUS_editor_in_chief
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	RUS_Anna_Zamaraeva = {
+		name = RUS_Anna_Zamaraeva
+		portraits = {
+			army = {
+				small = "gfx/leaders/RUS/Portrait_RUS_Anna_Zamaraeva_advisor.dds"
+			}
+	    }
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Anna_Zamaraeva
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				RUS_correspondent
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	RUS_Alena_GPT_advisor = {
+		name = RUS_Alena_GPT_advisor
+		portraits = {
+			army = {
+				small = "gfx/leaders/RUS/Portrait_RUS_Alena_GPT_advisor.dds"
+			}
+	    }
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Alena_GPT_advisor
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				has_completed_focus = freedom_to_african_people
+			}
+			traits = {
+				RUS_artificial_intelligence
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+}

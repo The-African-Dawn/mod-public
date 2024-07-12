@@ -1,0 +1,26 @@
+
+state={
+	id=110
+	name="STATE_110"
+
+	history={
+		owner = CHD
+		add_core_of = CHD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			4864 50
+		}
+	}
+	state_category = metropolis
+	provinces={
+		4864 
+	}
+	manpower=1360000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,107 @@
+spriteTypes = {
+
+			
+			spriteType = {
+		name = "GFX_Portrait_ALL_Generic_land_1"
+		texturefile = "gfx/leaders/ALL/Portrait_ALL_Generic_land_1.dds"
+	}
+	spriteType = {
+	name = "GFX_Portrait_ALL_Generic_land_1_small" 
+	texturefile = "gfx/interface/advisors/Portrait_ALL_Generic_land_1_small.dds" 
+}
+	
+				spriteType = {
+		name = "GFX_Portrait_ALL_Generic_land_2"
+		texturefile = "gfx/leaders/ALL/Portrait_ALL_Generic_land_2.dds"
+	}
+	spriteType = {
+	name = "GFX_Portrait_ALL_Generic_land_2_small" 
+	texturefile = "gfx/interface/advisors/Portrait_ALL_Generic_land_2_small.dds" 
+}
+	
+				spriteType = {
+		name = "GFX_Portrait_ALL_Generic_land_3"
+		texturefile = "gfx/leaders/ALL/Portrait_ALL_Generic_land_3.dds"
+	}
+	spriteType = {
+	name = "GFX_Portrait_ALL_Generic_land_3_small" 
+	texturefile = "gfx/interface/advisors/Portrait_ALL_Generic_land_3_small.dds" 
+}
+	
+				spriteType = {
+		name = "GFX_Portrait_ALL_Generic_land_4"
+		texturefile = "gfx/leaders/ALL/Portrait_ALL_Generic_land_4.dds"
+	}
+	spriteType = {
+	name = "GFX_Portrait_ALL_Generic_land_4_small" 
+	texturefile = "gfx/interface/advisors/Portrait_ALL_Generic_land_4_small.dds" 
+}
+	
+	
+	spriteType = {
+		name = "GFX_Portrait_ISS_Generic_land_1"
+		texturefile = "gfx/leaders/ALL/Portrait_ISS_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ISS_Generic_land_1_small" 
+		texturefile = "gfx/interface/advisors/Portrait_ISS_Generic_land_1_small.dds" 
+	}
+
+	
+	
+	spriteType = {
+		name = "GFX_Portrait_RUS_Generic_land_1"
+		texturefile = "gfx/leaders/RUS/generics/Portrait_RUS_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_Generic_land_1_small" 
+		texturefile = "gfx/leaders/RUS/generics/Portrait_RUS_Generic_land_1_smal.dds" 
+	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_Generic_land_2"
+		texturefile = "gfx/leaders/RUS/generics/Portrait_RUS_Generic_land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_Generic_land_2_small" 
+		texturefile = "gfx/leaders/RUS/generics/Portrait_RUS_Generic_land_2_small.dds" 
+	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_Generic_land_3"
+		texturefile = "gfx/leaders/RUS/generics/Portrait_RUS_Generic_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_Generic_land_3_small" 
+		texturefile = "gfx/leaders/RUS/generics/Portrait_RUS_Generic_land_3_small.dds" 
+	}
+
+	
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_land_1"
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_land_1_small" 
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_land_1_smal.dds" 
+	}
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_land_2"
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_land_2_small" 
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_land_2_small.dds" 
+	}
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_land_3"
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_land_3_small" 
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_land_3_small.dds" 
+	}
+	spriteType = {
+		name = "GFX_Portrait_USR_Generic_agent" 
+		texturefile = "gfx/leaders/USR/generics/Portrait_USR_Generic_agent.dds" 
+	}
+
+}

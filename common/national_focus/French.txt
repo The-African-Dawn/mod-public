@@ -1,0 +1,15 @@
+﻿focus_tree = {
+	id = FRN_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRN
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = FRN_operation_barkhan
+	shared_focus = FRN_operation_dipodidae
+
+}

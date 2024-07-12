@@ -1,0 +1,771 @@
+characters = {
+	MLL_Assimi = {
+		name = MLL_Assimi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Assimi_Goita.dds"
+			}
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Assimi_Goita.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			desc = MLL_Assimi_desc
+			expire = "3000.1.1.1"
+		}
+	}
+	MLL_Sadio_Kamara = {
+		name = MLL_Sadio_Kamara
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Sadio_Kamara.dds"
+				small = "gfx/advisors/Portrait_MLL_Sadio_Kamara.dds"
+			}
+			army = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Sadio_Kamara.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Sadio_Kamara
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				hardened_officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Modibo_Kone = {
+		name = MLL_Modibo_Kone
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Modibo_Kone.dds"
+				small = "gfx/leaders/MLL/Modibo_Kone_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Modibo_Kone
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_specsluzhbist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Maiga_Chogel = {
+		name = MLL_Maiga_Chogel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLL/Maiga_Chogel.dds"
+				small = "gfx/leaders/MLL/Maiga_Chogel_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Modibo_Kone
+			allowed = {
+				original_tag = MLL
+			}
+			available = {
+				NOT = { has_country_flag = MLL_Maiga_Chogel_pension }
+			}
+			traits = {
+				BRK_premier_minister
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Felix_Diallo = {
+		name = MLL_Felix_Diallo
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Felix_Diallo.dds"
+				small = "gfx/leaders/MLL/Felix_Diallo_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = MLL_Felix_Diallo
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Keba_Sangare = {
+		name = MLL_Keba_Sangare
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Keba_Sangare.dds"
+				small = "gfx/leaders/MLL/Keba_Sangare_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	MLL_Famouke_Camara = {
+		name = MLL_Famouke_Camara
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Famouke_Camara.dds"
+				small = "gfx/leaders/MLL/Famouke_Camara_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = MLL_Famouke_Camara
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				BRK_gendarmerie_leader
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Oumar_Traore = {
+		name = MLL_Oumar_Traore
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Oumar_Traore.dds"
+				small = "gfx/leaders/MLL/Oumar_Traore_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill =3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = MLL_Oumar_Traore
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Alou_Boi_Diarra_advisor = {
+		name = MLL_Alou_Boi_Diarra_advisor
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Alou_Boi_Diarra.dds"
+				small = "gfx/leaders/MLL/Alou_Boi_Diarra_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			ledger = air
+			idea_token = MLL_Alou_Boi_Diarra_advisor
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Brahima_Diabate = {
+		name = MLL_Brahima_Diabate
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Brahima_Diabate.dds"
+				small = "gfx/leaders/MLL/Brahima_Diabate_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = MLL_Brahima_Diabate
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MLL_Abdoulaye_Coulibaly = {
+		name = MLL_Abdoulaye_Coulibaly
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Abdoulaye_Coulibaly.dds"
+				small = "gfx/leaders/MLL/Abdoulaye_Coulibaly_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MLL_Mamadou_Massaoule = {
+		name = MLL_Mamadou_Massaoule
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Mamadou_Massaoule.dds"
+				small = "gfx/leaders/MLL/Mamadou_Massaoule_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = MLL_Brahima_Diabate
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				army_CombinedArms_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Moustaph_Sangare = {
+		name = MLL_Moustaph_Sangare
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Moustaph_Sangare.dds"
+				small = "gfx/leaders/MLL/Moustaph_Sangare_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				paratrooper
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = MLL_Brahima_Diabate
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				air_airborne_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Abass_Dambele = {
+		name = MLL_Abass_Dambele
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Abass_Dambele.dds"
+				small = "gfx/leaders/MLL/Abass_Dambele_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trickster
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MLL_Issa_Bagayoko = {
+		name = MLL_Issa_Bagayoko
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Issa_Bagayoko.dds"
+				small = "gfx/leaders/MLL/Issa_Bagayoko_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bearer_of_artillery
+			}
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	MLL_Oumari_Diarra = {
+		name = MLL_Oumari_Diarra
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Oumari_Diarra.dds"
+				small = "gfx/leaders/MLL/Oumari_Diarra_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MLL_Harouna_Samake = {
+		name = MLL_Harouna_Samake
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Harouna_Samake.dds"
+				small = "gfx/leaders/MLL/Harouna_Samake_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = MLL_Harouna_Samake
+			allowed = {
+				original_tag = MLL
+			}
+			available = {
+				has_completed_focus = MLL_increasing_our_military_potential
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Modibo_Kone = {
+		name = MLL_Modibo_Kone
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Modibo_Kone.dds"
+				small = "gfx/leaders/MLL/Modibo_Kone_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Modibo_Kone
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_specsluzhbist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Abdulai_Maiga = {
+		name = MLL_Abdulai_Maiga
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Portrait_MLL_Abdulai_Maiga.dds"
+				small = "gfx/leaders/MLL/Portrait_MLL_Abdulai_Maiga_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Abdulai_Maiga
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				BRK_minister_of_territorial_control
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Bourema_Kansaye = {
+		name = MLL_Bourema_Kansaye
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Bourema_Kansaye.dds"
+				small = "gfx/leaders/MLL/Bourema_Kansaye_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Bourema_Kansaye
+			allowed = {
+				original_tag = MLL
+			}
+			available = {
+				has_completed_focus = MLL_expansion_of_private_universities
+			}
+			traits = {
+				MLL_minister_of_high_education
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Amadou_Sy_Savane = {
+		name = MLL_Amadou_Sy_Savane
+		portraits = {
+			army = {
+				small = "gfx/leaders/MLL/Amadou_Sy_Savane.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Amadou_Sy_Savane
+			allowed = {
+				original_tag = MLL
+			}
+			available = {
+				has_completed_focus = MLL_expand_the_education_system
+			}
+			traits = {
+				MLL_minister_of_national_education
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Dembele_Madina_Sissoko = {
+		name = MLL_Dembele_Madina_Sissoko
+		portraits = {
+			army = {
+				small = "gfx/leaders/MLL/Dembele_Madina_Sissoko.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Dembele_Madina_Sissoko
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_minister_of_infrastructure_and_transport
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Ismael_Wage = {
+		name = MLL_Ismael_Wage
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Ismael_Wage.dds"
+				small = "gfx/leaders/MLL/Ismael_Wage_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Ismael_Wage
+			allowed = {
+				original_tag = MLL
+			}
+			available = {
+				has_completed_focus = MLL_contact_with_the_people
+			}
+			traits = {
+				MLL_minister_of_peace
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Ismael_Wage = {
+		name = MLL_Ismael_Wage
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/Ismael_Wage.dds"
+				small = "gfx/leaders/MLL/Ismael_Wage_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Ismael_Wage
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_minister_of_peace
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MLL_Ikassa_Maiga = {
+		name = MLL_Ikassa_Maiga
+		portraits = {
+			army = {
+				small = "gfx/leaders/MLL/MLL_Ikassa_Maiga.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Ikassa_Maiga
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_minister_of_repairing
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Ikassa_Maiga = {
+		name = MLL_Ikassa_Maiga
+		portraits = {
+			army = {
+				small = "gfx/leaders/MLL/MLL_Ikassa_Maiga.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Ikassa_Maiga
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_minister_of_repairing
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Mahamadu_Kassoge = {
+		name = MLL_Mahamadu_Kassoge
+		portraits = {
+			army = {
+				small = "gfx/leaders/MLL/Mahamadu_Kassoge.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Mahamadu_Kassoge
+			allowed = {
+				original_tag = MLL
+			}
+			traits = {
+				MLL_minister_of_justice
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_Alusseni_Sanou = {
+		name = MLL_Alusseni_Sanou
+		portraits = {
+			army = {
+				small = "gfx/leaders/MLL/Alusseni_Sanou.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MLL_Alusseni_Sanou
+			allowed = {
+				original_tag = MLL
+			}
+			available = {
+				has_completed_focus = MLL_reevaluate_the_franc
+			}
+			traits = {
+				MLL_minister_of_economy
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MLL_El_Hadj_Gamou = {
+		name = MLL_El_Hadj_Gamou
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLL/El_Hadj_Gamou.dds"
+				small = "gfx/leaders/MLL/El_Hadj_Gamou_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

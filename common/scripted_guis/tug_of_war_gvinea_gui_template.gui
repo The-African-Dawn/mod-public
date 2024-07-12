@@ -1,0 +1,67 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "Tug_Of_War_Gvinea_GUI"
+		position = { x = 0 y = 0}	
+		size = { width = 300 height= 400 }
+		orientation = center
+		origo = center
+		click_to_front = no
+		
+
+		iconType = {
+			name = "Tug_Of_War_Gvinea_GUI_Fon"
+			spriteType = "GFX_Tug_Of_War_Gvinea_GUI_Fon"
+			position = { x = 0 y = 300 }
+			alwaystransparent = yes
+			
+		}
+		
+
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 0 y = 5 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "novgorod_gui_localisation_1"
+			maxWidth = 500
+			maxHeight = 200
+			#fixedsize = yes
+		}
+
+
+
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_ProgressBar"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_IdeologyBar"
+			position = { x = 100 y = 300 }
+		}
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Ecowas_Flag"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Ecowas_Flag"
+			position = { x = 0 y = 300 }
+			alwaystransparent = yes
+			
+		}
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Gvinea_Flag"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Gvinea_Flag"
+			position = { x = 0 y = 300 }
+			alwaystransparent = yes
+			
+		}
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Sahel_Flag"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Sahel_Flag"
+			position = { x = 0 y = 300 }
+			alwaystransparent = yes
+			
+		}
+		
+
+	}
+	
+}

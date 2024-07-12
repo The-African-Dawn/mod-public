@@ -1,0 +1,47 @@
+on_actions = {
+	on_startup = {
+        effect = {
+			CHN = {
+				news_event = { id = news_africa.1 days = 16 }
+				news_event = { id = news_africa.2 days = 22 }
+				news_event = { id = news_africa.3 days = 32 }
+				news_event = { id = news_africa.4 days = 32 }
+				news_event = { id = news_africa.5 days = 33 }
+				news_event = { id = news_africa.6 days = 46 }
+				
+				## 2023 -debug -crash_data_log
+				news_event = { id = news_africa.7 days = 93 }
+				news_event = { id = news_africa.8 days = 100 }
+				news_event = { id = news_africa.10 days = 161 }
+				news_event = { id = news_africa.11 days = 186 }
+				news_event = { id = news_africa.12 days = 197 }
+				news_event = { id = news_africa.13 days = 217 }
+				news_event = { id = news_africa.14 days = 280 }
+				news_event = { id = news_africa.15 days = 301 }
+				#news_event = { id = news_africa.16 days = 326 }
+				news_event = { id = news_africa.17 days = 334 }
+				news_event = { id = news_africa.18 days = 344 }
+				#news_event = { id = news_africa.19 days = 355 }
+				news_event = { id = news_africa.20 days = 372 }
+				#news_event = { id = news_africa.21 days = 373 }
+				#news_event = { id = news_africa.22 days = 429 }
+				news_event = { id = news_africa.23 days = 447 }
+				news_event = { id = news_africa.24 days = 456 }
+				## 2024
+				news_event = { id = news_africa.25 days = 458 }
+				news_event = { id = news_africa.26 days = 469 }
+				news_event = { id = news_africa.27 days = 505 }
+				#news_event = { id = news_africa.28 days = 524 }
+				news_event = { id = news_africa.29 days = 583 }
+				#news_event = { id = news_africa.30 days = 588 }
+				#news_event = { id = news_africa.31 days = 590 }
+				news_event = { id = news_africa.32 days = 593 }
+				news_event = { id = news_africa.33 days = 593 }
+				news_event = { id = news_africa.34 days = 597 }
+				news_event = { id = news_africa.35 days = 597 }
+				
+				
+			}
+		}
+	}
+}

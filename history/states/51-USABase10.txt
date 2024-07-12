@@ -1,0 +1,21 @@
+state={
+	id=51
+	name="STATE_51"
+	provinces={
+		2983 
+	}
+	state_category = rural
+	history={
+		owner = USR
+		add_core_of = USR
+		victory_points = { 2983 5 }
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	local_supplies=15
+}

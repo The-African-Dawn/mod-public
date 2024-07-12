@@ -1,0 +1,181 @@
+division_template = {
+	name = "Djixat Brigade"
+
+	regiments = {
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "Motorized Djixat Regiment"
+
+	regiments = {
+		light_infantry_opol_on_guntruck={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+		light_infantry_opol_on_guntruck={ x=1 y=1 }
+		light_infantry_opol_on_guntruck={ x=1 y=2 }
+		light_infantry_opol_on_guntruck={ x=1 y=3 }
+		
+		light_infantry_opol_on_guntruck={ x=2 y=0 }
+		light_infantry_opol_on_guntruck={ x=2 y=1 }
+		light_infantry_opol_on_guntruck={ x=2 y=2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "Motorized Djixat Regiment"
+		location = 241
+		division_template = "Motorized Djixat Regiment"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 241
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 3040
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 200
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 62
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 2017
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 1140
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 830
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 2425
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 1516
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 1413
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 1023
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 2527
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 1511
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 3000
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 231
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 2058
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Djixat Brigade"
+		location = 3060
+		division_template = "Djixat Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {	
+	add_equipment_to_stockpile = {
+		type = waterpipe_rifle
+		amount = 20000
+		producer = ISS
+	}
+	add_equipment_to_stockpile = {
+		type = ATGM_equipment_handmade
+		amount = 500
+		producer = ISS
+	}
+	add_equipment_to_stockpile = {
+		type = manpads_equipment_handmade
+		amount = 500
+		producer = ISS
+	}
+	add_equipment_to_stockpile = {
+		type = howitzer_equipment_handmade
+		amount = 500
+		producer = ISS
+	}
+}

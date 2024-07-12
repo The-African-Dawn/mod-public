@@ -1,0 +1,13 @@
+
+animation = {
+	name = "type69_attack_animation"
+	file = "type69_attack.anim"
+}
+animation = {
+	name = "type69_idle_animation"
+	file = "type69_idle.anim"
+}
+animation = {
+	name = "type69_move_animation"
+	file = "type69_move.anim"
+}

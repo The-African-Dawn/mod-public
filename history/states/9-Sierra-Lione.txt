@@ -1,0 +1,29 @@
+state={
+	id=9
+	name="STATE_9"
+	provinces={
+		195 431 1346 1682 1748 1996 2169 3110 
+	}
+	resources={
+		steel=10
+		aluminium = 10
+	}
+	manpower=8093425
+	history={
+		set_variable = { amount_of_diamonds = 0.68 }
+		owner = SLR
+		add_core_of = SLR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			1346 50 
+		}
+	}
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,14 @@
+characters = {
+	TNS_Kais_Said = {
+		name = TNS_Kais_Said
+		portraits = {
+			civilian = { large = "gfx/leaders/TNS/Portrait_TNS_Kais_Said.dds" }
+			army = { large = "gfx/leaders/TNS/Portrait_TNS_Kais_Said.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
+}

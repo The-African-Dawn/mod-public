@@ -1,0 +1,27 @@
+
+state={
+	id=171
+	name="STATE_171"
+
+	history={
+		owner = ALJ
+		add_core_of = ALJ
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 2
+		}
+		victory_points = {
+			4928 15 
+		}
+	}
+
+	provinces={
+		461 576 776 1677 1876 2089 2218 2606 4928 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

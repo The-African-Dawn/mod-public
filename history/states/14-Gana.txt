@@ -1,0 +1,26 @@
+
+state={
+	id=14
+	name="STATE_14"
+
+	history={
+		owner = GNN
+		add_core_of = GNN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			2113 5
+		}
+	}
+
+	provinces={
+		220 659 1039 2113 2402 4892 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

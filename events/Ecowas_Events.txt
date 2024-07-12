@@ -1,0 +1,29 @@
+﻿add_namespace = ecowas
+
+news_event = {
+	id = ecowas.1
+	title = ecowas.1.t
+	desc = ecowas.1.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		ai_chance = { factor = 1 }
+		name = ecowas.1.a
+		set_global_flag = ecowas_chose_france
+	}
+}
+
+news_event = {
+	id = ecowas.2
+	title = ecowas.2.t
+	desc = ecowas.2.desc
+	picture = GFX_ecowas_2
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		ai_chance = { factor = 1 }
+		name = ecowas.2.a
+		set_global_flag = ecowas_chose_america
+	}
+}

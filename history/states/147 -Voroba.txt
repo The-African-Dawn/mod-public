@@ -1,0 +1,38 @@
+
+state={
+	id=147
+	name="STATE_147"
+	resources={
+		steel=17
+	}
+	history={
+		owner = KOT
+		add_core_of = KOT
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		ISS = {
+			set_province_controller = 2537
+			set_province_controller = 3080
+
+		}
+		victory_points = {
+			1350 4 
+		}
+		victory_points = {
+			3071 2 
+		}
+		
+	}
+
+	provinces={
+		94 998 1350 2447 2535 3071 3114 3125 3080 2537
+	}
+	manpower=8940245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

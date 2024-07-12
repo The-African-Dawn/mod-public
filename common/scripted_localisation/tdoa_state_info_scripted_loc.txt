@@ -1,0 +1,507 @@
+defined_text = {
+	name = Close_Button_Text
+
+	text = {
+		trigger = { tag = BRK }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_BRK
+	}
+	text = {
+		trigger = { tag = MLL }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_MLL
+	}
+
+	text = {
+		trigger = { tag = NIG }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_NIG
+	}
+
+	text = {
+		trigger = { tag = LIV }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_LIV
+	}
+
+	text = {
+		trigger = { tag = CHD }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_CHD
+	}
+
+	text = {
+		trigger = { tag = SNG }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_SNG
+	}
+		text = {
+		trigger = { tag = RUS }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_RUS
+	}
+	
+		text = {
+		trigger = { tag = USR }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_USR
+	}
+		text = {
+		trigger = { tag = FRN }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_FRN
+	}
+		text = {
+		trigger = { tag = NRG }
+		localization_key = TDOA_STATE_INFO_EXIT_BUTTON_TEXT_NRG
+	}
+}
+
+defined_text = {
+	name = GET_PLACATE
+
+	text = {
+		trigger = { tag = BRK }
+		localization_key = "GFX_TDOA_State_Info_Placate_BRK"
+	}
+	
+	text = {
+		trigger = { tag = MLL }
+		localization_key = "GFX_TDOA_State_Info_Placate_MLL"
+	}
+	
+	text = {
+		trigger = { tag = NIG }
+		localization_key = "GFX_TDOA_State_Info_Placate_NIG"
+	}
+	
+	text = {
+		trigger = { tag = LIV }
+		localization_key = "GFX_TDOA_State_Info_Placate_LIV"
+	}
+	
+		text = {
+		trigger = { tag = CHD }
+		localization_key = "GFX_TDOA_State_Info_Placate_CHD"
+	}
+	
+		text = {
+		trigger = { tag = SNG }
+		localization_key = "GFX_TDOA_State_Info_Placate_SNG"
+	}
+			text = {
+		trigger = { tag = RUS }
+		localization_key = "GFX_TDOA_State_Info_Placate_RUS"
+	}
+	
+			text = {
+		trigger = { tag = FRN }
+		localization_key = "GFX_TDOA_State_Info_Placate_FRN"
+	}
+	
+		text = {
+		trigger = { tag = USR }
+		localization_key = "GFX_TDOA_State_Info_Placate_USR"
+	}
+			text = {
+		trigger = { tag = NRG }
+		localization_key = "GFX_TDOA_State_Info_Placate_NRG"
+	}
+}
+
+
+
+defined_text = {
+	name = State_Info_Title
+	text = {
+		trigger = {
+			check_variable = { State_Info_Tab = 2 }
+		}
+		localization_key = "[Get_Guide_Text_Pack]"
+	}
+	text = {
+		trigger = {
+			check_variable = { State_Info_Tab = 3 }
+		}
+		localization_key = "[Get_Disclaimer_Text_Pack]"
+	}
+
+	text = {
+		trigger = {
+			original_tag = BRK
+		}
+		localization_key = "[Get_Localised_Text_BRK]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = MLL
+		}
+		localization_key = "[Get_Localised_Text_MLL]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = NIG
+		}
+		localization_key = "[Get_Localised_Text_NIG]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = LIV
+		}
+		localization_key = "[Get_Localised_Text_LIV]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = CHD
+		}
+		localization_key = "[Get_Localised_Text_CHD]"
+	}
+	
+		text = {
+		trigger = {
+			original_tag = SNG
+		}
+		localization_key = "[Get_Localised_Text_SNG]"
+	}
+	
+		text = {
+		trigger = {
+			original_tag = FRN
+		}
+		localization_key = "[Get_Localised_Text_FRN]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = USR
+		}
+		localization_key = "[Get_Localised_Text_USR]"
+	}
+	
+		text = {
+		trigger = {
+			original_tag = NRG
+		}
+		localization_key = "[Get_Localised_Text_NRG]"
+	}
+	
+			text = {
+		trigger = {
+			original_tag = RUS
+		}
+		localization_key = "[Get_Localised_Text_RUS]"
+	}
+	
+}
+
+
+	defined_text = {
+		name = Get_Localised_Text_BRK
+		text = {
+			localization_key = BRK_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_MLL
+		text = {
+			localization_key = MLL_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_NIG
+		text = {
+			localization_key = NIG_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_LIV
+		text = {
+			localization_key = LIV_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_CHD
+		text = {
+			localization_key = CHD_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_SNG
+		text = {
+			localization_key = SNG_State_Info_Text.1
+		}
+	}
+	
+		defined_text = {
+		name = Get_Localised_Text_FRN
+		text = {
+			localization_key = FRN_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_USR
+		text = {
+			localization_key = USR_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_NRG
+		text = {
+			localization_key = NRG_State_Info_Text.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_RUS
+		text = {
+			localization_key = RUS_State_Info_Text.1
+		}
+	}
+
+
+defined_text = {
+	name = State_Info_Body
+	
+	text = {
+		trigger = {
+			check_variable = { State_Info_Tab = 2 }
+		}
+		localization_key = "[Get_Guide_Text_Pack_Desc]"
+	}
+	text = {
+		trigger = {
+			check_variable = { State_Info_Tab = 3 }
+		}
+		localization_key = "[Get_Disclaimer_Text_Pack_Desc]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = BRK
+		}
+		localization_key = "[Get_Localised_Text_desc_BRK]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = MLL
+		}
+		localization_key = "[Get_Localised_Text_desc_MLL]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = NIG
+		}
+		localization_key = "[Get_Localised_Text_desc_NIG]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = LIV
+		}
+		localization_key = "[Get_Localised_Text_desc_LIV]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = CHD
+		}
+		localization_key = "[Get_Localised_Text_desc_CHD]"
+	}
+	
+		text = {
+		trigger = {
+			original_tag = SNG
+		}
+		localization_key = "[Get_Localised_Text_desc_SNG]"
+	}
+	
+		text = {
+		trigger = {
+			original_tag = FRN
+		}
+		localization_key = "[Get_Localised_Text_desc_FRN]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = USR
+		}
+		localization_key = "[Get_Localised_Text_desc_USR]"
+	}
+	
+	text = {
+		trigger = {
+			original_tag = NRG
+		}
+		localization_key = "[Get_Localised_Text_desc_NRG]"
+	}
+	
+		text = {
+		trigger = {
+			original_tag = RUS
+		}
+		localization_key = "[Get_Localised_Text_desc_RUS]"
+	}
+	
+}
+
+
+	defined_text = {
+		name = Get_Localised_Text_desc_BRK
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = BRK_State_Info_Text_desc.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_desc_MLL
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = MLL_State_Info_Text_desc.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_desc_NIG
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = NIG_State_Info_Text_desc.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_desc_LIV
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = LIV_State_Info_Text_desc.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_desc_CHD
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = CHD_State_Info_Text_desc.1
+		}
+	}
+
+		defined_text = {
+		name = Get_Localised_Text_desc_SNG
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = SNG_State_Info_Text_desc.1
+		}
+	}
+	
+		defined_text = {
+		name = Get_Localised_Text_desc_FRN
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = FRN_State_Info_Text_desc.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_desc_USR
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = USR_State_Info_Text_desc.1
+		}
+	}
+	
+	defined_text = {
+		name = Get_Localised_Text_desc_NRG
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = NRG_State_Info_Text_desc.1
+		}
+	}
+
+		defined_text = {
+		name = Get_Localised_Text_desc_RUS
+		text = {
+			trigger = {
+				check_variable = { State_Info_Selected = 1 }
+			}
+			localization_key = RUS_State_Info_Text_desc.1
+		}
+	}
+
+defined_text = {
+	name = State_Info_Tab_Title
+	text = {
+		trigger = {
+			check_variable = { tab_value = 1 }
+		}
+		localization_key = "State_Info_Tab_State"
+	}
+	text = {
+		trigger = {
+			check_variable = { tab_value = 2 }
+		}
+		localization_key = "State_Info_Tab_Guide"
+	}
+	text = {
+		trigger = {
+			check_variable = { tab_value = 3 }
+		}
+		localization_key = "State_Info_Tab_Disclaimer"
+	}
+}
+
+
+defined_text = {
+	name = Get_Guide_Text_Pack
+	text = {
+		localization_key = State_Info_Guide_Text_Pack.1
+	}
+}
+
+defined_text = {
+	name = Get_Guide_Text_Pack_Desc
+	text = {
+		trigger = {
+			check_variable = { State_Info_Selected = 1 }
+		}
+		localization_key = State_Info_Guide_Text_Pack_desc.1
+	}
+}
+
+
+defined_text = {
+	name = Get_Disclaimer_Text_Pack
+	text = {
+		localization_key = State_Info_Development_Text_Pack.1
+	}
+}
+
+defined_text = {
+	name = Get_Disclaimer_Text_Pack_Desc
+	text = {
+		localization_key = State_Info_Development_Text_Pack_desc.1
+	}
+}
+

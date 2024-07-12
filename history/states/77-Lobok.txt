@@ -1,0 +1,22 @@
+
+state={
+	id=77
+	name="STATE_77"
+
+	history={
+		owner = CRR
+		add_core_of = CRR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+		}
+	}
+state_category = rural
+	provinces={
+		434 1495 3185 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

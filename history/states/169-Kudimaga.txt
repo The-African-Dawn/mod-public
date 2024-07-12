@@ -1,0 +1,32 @@
+
+state={
+	id=169
+	name="STATE_169"
+	resources={
+		steel=7
+	}
+	history={
+		set_variable = { amount_of_gold = 0.07 }
+		owner = MRV
+		add_core_of = MRV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			2120 3
+		}
+		victory_points = {
+			2945 4
+		}
+	}
+
+	provinces={
+		398 460 568 684 938 1197 1265 1435 1802 2120 2869 2887 2888 2924 2933 2945 
+	}
+	manpower=94543
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

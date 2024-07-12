@@ -1,0 +1,27 @@
+
+state={
+	id=101
+	name="STATE_101"
+
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+		}
+		victory_points = {
+			4873 15
+		}
+	}
+
+	provinces={
+		4873 
+	}
+	state_category = metropolis
+	manpower=1110000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

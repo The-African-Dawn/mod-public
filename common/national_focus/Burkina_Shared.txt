@@ -1,0 +1,2967 @@
+﻿shared_focus = {
+	id = BRK_general_mobilization
+	icon = GFX_goal_BRK_general_mobilization
+	cost = 4.3
+	available = {
+		has_completed_focus = BRK_luck_favors_the_bold
+	}
+	search_filters = {
+		FOCUS_FILTER_MANPOWER
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 48
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			BRK.BRK.BRK_army_conscription_factor = 0.2
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_mobilisation
+		custom_effect_tooltip = BRK_general_mobilization_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_warriors_of_the_shadows
+	icon = GFX_goal_BRK_warriors_of_the_shadows
+	cost = 5.2
+	relative_position_id = BRK_general_mobilization
+	prerequisite = {
+		focus = BRK_general_mobilization
+	}
+	available = {
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+			name = "Agence Nationale de Renseignement"
+			icon = GFX_intelligence_agency_logo_brk
+		}
+		custom_effect_tooltip = BRK_warriors_of_the_shadows_tt
+		add_stability = 0.02
+		add_war_support = 0.02
+	}
+}
+
+shared_focus = {
+	id = BRK_informational_forces
+	icon = GFX_goal_BRK_informational_forces
+	cost = 4.3
+	relative_position_id = BRK_burkina_sat1
+	prerequisite = {
+		focus = BRK_burkina_sat1
+	}
+	available = {
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	upgrade_intelligence_agency = upgrade_crypto_strength
+	upgrade_intelligence_agency = upgrade_form_department
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_decryption_boost
+	upgrade_intelligence_agency = upgrade_commando_training
+	}
+}
+
+shared_focus = {
+	id = BRK_national_space_program
+	icon = GFX_goal_BRK_national_space_program
+	cost = 4.3
+	relative_position_id = BRK_warriors_of_the_shadows
+	prerequisite = {
+		focus = BRK_warriors_of_the_shadows
+	}
+	available = {
+		has_tech = radar_1
+		has_tech = computer_3
+		has_air_experience > 50
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		air_experience = -50
+		add_political_power = 100
+		add_war_support = 0.05
+		add_timed_idea = {
+			idea = BRK_timed_effect_national_satellite_programe
+			days = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_burkina_sat1
+	icon = GFX_goal_BRK_burkina_sat1
+	cost = 4.3
+	relative_position_id = BRK_national_space_program
+	prerequisite = {
+		focus = BRK_national_space_program
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_AIR_XP
+		FOCUS_FILTER_RESEARCH
+	}
+	available = {
+		has_tech = radar_5
+		has_tech = civil_electronics_4
+		has_tech = millitary_electronics_4
+		has_air_experience > 150
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.2
+		}
+		air_experience = -150
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_burkina_sat1
+	}
+}
+
+shared_focus = {
+	id = BRK_security_memorandum
+	icon = GFX_goal_BRK_security_memorandum
+	cost = 4.3
+	relative_position_id = BRK_general_mobilization
+	prerequisite = {
+		focus = BRK_general_mobilization
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	available = {
+		has_army_experience > 25
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -25
+		add_to_variable = {
+			BRK.BRK.BRK_army_conscription_factor = 0.2
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_out_of_supply_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_strength_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_memorandum
+	}
+}
+
+shared_focus = {
+	id = BRK_our_alliance
+	icon = GFX_goal_BRK_our_alliance
+	cost = 4.3
+	relative_position_id = BRK_security_memorandum
+	prerequisite = {
+		focus = BRK_security_memorandum
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_army_experience > 50
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		army_experience = -50
+		add_to_variable = {
+			BRK.BRK.BRK_army_conscription_factor = 0.1
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_out_of_supply_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_strength_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_alliance
+		set_country_flag = RUS_friend
+		custom_effect_tooltip = BRK_RUS_Friend_tt
+		add_dynamic_modifier = {
+			modifier = Corpus_training_modifier
+		}
+		add_equipment_to_stockpile = {
+			type = ak_2
+			amount = 1000
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_eyes_in_the_skies
+	icon = GFX_goal_BRK_eyes_in_the_skies
+	cost = 4.3
+	relative_position_id = BRK_our_alliance
+	prerequisite = {
+		focus = BRK_our_alliance
+	}
+	prerequisite = {
+		focus = BRK_national_space_program
+	}
+	available = {
+		has_air_experience > 50
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_AIR_XP
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		air_experience = -50
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.02
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_eyes_in_the_skies
+	}
+}
+
+shared_focus = {
+	id = BRK_security_measures
+	icon = GFX_goal_BRK_security_measures
+	cost = 4.3
+	relative_position_id = BRK_eyes_in_the_skies
+	prerequisite = {
+		focus = BRK_eyes_in_the_skies
+	}
+	available = {
+		has_army_experience > 75
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -75
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_out_of_supply_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_security_measures
+	}
+}
+
+shared_focus = {
+	id = BRK_expand_the_gendarmerie
+	icon = GFX_goal_BRK_expand_the_gendarmerie
+	cost = 4.3
+	relative_position_id = BRK_security_measures
+	prerequisite = {
+		focus = BRK_security_measures
+	}
+	available = {
+		has_army_experience > 100
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -100
+		division_template = {
+			name = "Gendarmerie Crack Unit"
+			priority = 0
+			template_counter = 0
+			regiments = {
+				light_infantry_opol_on_guntruck={ x=0 y=0 }
+				light_infantry_opol_on_guntruck={ x=0 y=1 }
+				light_infantry_opol_on_guntruck={ x=0 y=2 }
+				light_infantry_opol_on_guntruck={ x=0 y=3 }
+				light_infantry_opol_on_guntruck={ x=1 y=0 }
+				light_infantry_opol_on_guntruck={ x=2 y=1 }
+				light_infantry_opol_on_guntruck={ x=3 y=2 }
+				light_infantry_opol_on_guntruck={ x=4 y=3 }
+			}
+		}
+		98 = {
+			create_unit = {
+				division = "name = \"Gendarmerie Crack Unit\" division_template = \"Gendarmerie Crack Unit\" start_experience_factor = 0.1"
+				owner = BRK
+				count = 3
+			}
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.08
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_expand_the_gendarmerie
+	}
+}
+
+shared_focus = {
+	id = BRK_culture_of_sport
+	icon = GFX_goal_BRK_culture_of_sport
+	cost = 4.3
+	relative_position_id = BRK_our_alliance
+	prerequisite = {
+		focus = BRK_our_alliance
+	}
+	available = {
+		has_army_experience > 75
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -75
+		add_to_variable = {
+			BRK.BRK.BRK_army_conscription_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.02
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_strength_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.03
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_culture_of_sport
+	}
+}
+
+shared_focus = {
+	id = BRK_special_ops
+	icon = GFX_goal_BRK_special_ops
+	cost = 4.3
+	available = {
+		has_army_experience > 100
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	relative_position_id = BRK_culture_of_sport
+	prerequisite = {
+		focus = BRK_culture_of_sport
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -100
+		add_to_variable = {
+			BRK.BRK_army_special_forces_training_time_factor = -0.1
+		}
+		add_to_variable = {
+			BRK.BRK_army_special_forces_cap_flat = 5
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_special_ops
+	}
+}
+
+shared_focus = {
+	id = BRK_cobra
+	icon = GFX_goal_BRK_cobra
+	cost = 4.3
+	relative_position_id = BRK_special_ops
+	prerequisite = {
+		focus = BRK_special_ops
+	}
+	x = 0
+	y = 2
+	available = {
+		has_army_experience > 100
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -100
+		add_to_variable = {
+			BRK.BRK_army_special_forces_no_supply_grace = 48
+		}
+		add_to_variable = {
+			BRK.BRK_army_special_forces_out_of_supply_factor = -0.3
+		}
+		division_template = {
+			name = "Cobra Unit"
+			priority = 2
+			override_model = BRK_speznaz_alt_0_entity
+			regiments = {
+				speznaz = {
+					x = 0
+					y = 0
+				}
+				speznaz = {
+					x = 0
+					y = 1
+				}
+				speznaz = {
+					x = 0
+					y = 2
+				}
+				speznaz = {
+					x = 1
+					y = 0
+				}
+				speznaz = {
+					x = 1
+					y = 1
+				}
+				speznaz = {
+					x = 1
+					y = 2
+				}
+				speznaz = {
+					x = 2
+					y = 0
+				}
+				speznaz = {
+					x = 2
+					y = 1
+				}
+				speznaz = {
+					x = 2
+					y = 2
+				}
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = spec_oborud_equipment
+			amount = 250
+		}
+		98 = {
+			create_unit = {
+				division = "name = \"Cobra Unit\" division_template = \"Cobra Unit\" start_experience_factor = 0.3"
+				owner = BRK
+				count = 1
+			}
+		}
+		add_equipment_to_stockpile = {
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_cobra
+	}
+}
+
+shared_focus = {
+	id = BRK_traditional_wrestling
+	icon = GFX_goal_BRK_traditional_wrestling
+	cost = 4.3
+	relative_position_id = BRK_culture_of_sport
+	prerequisite = {
+		focus = BRK_culture_of_sport
+	}
+	available = {
+		has_army_experience > 75
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -75
+		add_to_variable = {
+			BRK.BRK.BRK_army_conscription_factor = 0.02
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.02
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_strength_factor = 0.02
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.02
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_traditional_wrestling
+	}
+}
+
+shared_focus = {
+	id = BRK_sahel_forces
+	icon = GFX_goal_BRK_sahel_forces
+	cost = 4.3
+	relative_position_id = BRK_general_mobilization
+	prerequisite = {
+		focus = BRK_general_mobilization
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.1
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.1
+		}
+		add_to_variable = {
+			BRK.BRK_army_out_of_supply_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.1
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_sahel_forces
+	}
+}
+
+shared_focus = {
+	id = BRK_united_front
+	icon = GFX_goal_BRK_united_front
+	cost = 1.5
+	relative_position_id = BRK_sahel_forces
+	prerequisite = {
+		focus = BRK_sahel_forces
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		NIG = {
+			has_country_leader = {
+				character = NIG_Abdourahamane_Tchiani
+				ruling_only = yes
+			}
+		}
+		BRK = {
+			has_country_leader = {
+				character = BRK_Ibrahim_Traore
+				ruling_only = yes
+			}
+		}
+		MLL = {
+			has_country_leader = {
+				character = MLL_Assimi
+				ruling_only = yes
+			}
+		}
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_out_of_supply_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_united_front
+		create_faction = AGS
+		add_to_faction = MLL
+		add_to_faction = NIG
+		news_event = {
+			id = BRK.15
+		}
+		custom_effect_tooltip = BRK_united_front_interv_tt
+		hidden_effect = {
+			NIG = {
+				set_variable = {
+					africa_status = 2
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_experience_exchange
+	icon = GFX_goal_BRK_experience_exchange
+	cost = 4.3
+	relative_position_id = BRK_united_front
+	prerequisite = {
+		focus = BRK_united_front
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		has_army_experience > 75
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -75
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.1
+		}
+		add_to_variable = {
+			BRK.BRK_army_out_of_supply_factor = -0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = -0.05
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_experience_exchange
+	}
+}
+
+shared_focus = {
+	id = BRK_coordinated_actions
+	icon = GFX_goal_BRK_coordinated_actions
+	cost = 4.3
+	relative_position_id = BRK_united_front
+	prerequisite = {
+		focus = BRK_united_front
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		has_army_experience > 75
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = -75
+		add_to_variable = {
+			BRK.BRK_army_army_org_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_army_attack_factor = 0.05
+		}
+		add_to_variable = {
+			BRK.BRK_army_unit_upkeep_attrition_factor = 0.1
+		}
+		custom_effect_tooltip = BRK_modify_situation_in_army_BRK_coordinated_actions
+	}
+}
+
+shared_focus = {
+	id = BRK_suppress_the_separatists
+	icon = GFX_goal_BRK_suppress_the_separatists
+	cost = 4.3
+	relative_position_id = BRK_coordinated_actions
+	prerequisite = {
+		focus = BRK_coordinated_actions
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = BRK
+					is_in_faction_with = BRK
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					has_active_resistance = yes
+				}
+				add_resistance = -30
+				add_resistance_target = -5
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_strike_the_demons_lair
+	icon = GFX_goal_BRK_strike_the_demons_lair
+	cost = 4.3
+	relative_position_id = BRK_coordinated_actions
+	prerequisite = {
+		focus = BRK_coordinated_actions
+	}
+	search_filters = {
+		FOCUS_FILTER_ARMY_XP
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = BRK_timed_effect_against_terror
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_economical_struggle
+	icon = GFX_goal_BRK_economical_struggle
+	cost = 6.5
+	x = 32
+	y = 0
+	available = {
+		has_completed_focus = BRK_luck_favors_the_bold
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_valute_collapse_1
+			remove_idea = BRK_valute_collapse
+		}
+		set_country_flag = {
+			flag = BRK_valute_things
+			days = 360
+			value = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_photovoltaic_plant
+	icon = GFX_goal_BRK_photovoltaic_plant
+	cost = 4.3
+	relative_position_id = BRK_economical_struggle
+	prerequisite = {
+		focus = BRK_economical_struggle
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		13 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_foreign_market
+	icon = GFX_goal_BRK_foreign_market
+	cost = 2.9
+	relative_position_id = BRK_economical_struggle
+	prerequisite = {
+		focus = BRK_economical_struggle
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_usage_of_export_and_import
+	}
+}
+
+shared_focus = {
+	id = BRK_sahel_cooperation
+	icon = GFX_goal_BRK_sahel_cooperation
+	cost = 4.3
+	relative_position_id = BRK_foreign_market
+	prerequisite = {
+		focus = BRK_foreign_market
+	}
+	mutually_exclusive = {
+		focus = BRK_ecowas_cooperation
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -1
+	y = 1
+	available = {
+		NOT = {
+			has_completed_focus = BRK_french_mandate
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.03
+		every_country = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = NIG
+					tag = MRV
+					tag = CHD
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BRK_sahel_economical_friendship
+			}
+			BRK = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = BRK_sahel_economical_friendship
+				}
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = BRK_more_golden_mines
+	icon = GFX_goal_BRK_more_golden_mines
+	cost = 4.3
+	relative_position_id = BRK_economical_struggle
+	prerequisite = {
+		focus = BRK_economical_struggle
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	available = {
+		25 = { is_controlled_by = BRK }
+	}
+	x = 9
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		25 = {
+			add_to_variable = {
+				amount_of_gold = 0.2
+			}
+		}
+		custom_effect_tooltip = BRK_more_golden_mines_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_prohibit_artisanal_mining
+	icon = GFX_goal_BRK_prohibit_artisanal_mining
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	cost = 4.3
+	relative_position_id = BRK_eastern_giants
+	prerequisite = {
+		focus = BRK_sahel_cooperation
+	}
+	prerequisite = {
+		focus = BRK_eastern_giants
+	}
+	mutually_exclusive = {
+		focus = BRK_encourage_mining
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = BRK_russian_economic_group
+	icon = GFX_goal_BRK_russian_economic_group
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_POLITICAL
+	}
+	cost = 4.3
+	relative_position_id = BRK_prohibit_artisanal_mining
+	prerequisite = {
+		focus = BRK_prohibit_artisanal_mining
+	}
+	prerequisite = {
+		focus = BRK_factories_construction
+	}
+	available = {
+		has_completed_focus = BRK_diplomatic_offices
+	}
+	mutually_exclusive = {
+		focus = BRK_return_of_corporations
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = industry
+		}
+		add_ideas = BRK_russian_economic_group_idea
+
+		add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_ecowas_cooperation
+	icon = GFX_goal_BRK_ecowas_cooperation
+	cost = 4.3
+	relative_position_id = BRK_foreign_market
+	prerequisite = {
+		focus = BRK_foreign_market
+	}
+	mutually_exclusive = {
+		focus = BRK_sahel_cooperation
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		NOT = {
+			has_completed_focus = BRK_exiting_ecowas
+		}
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 0
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = francocentrism
+			popularity = 0.05
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					tag = BNN
+					tag = TGG
+					tag = GNN
+					tag = KOT
+					tag = LBR
+					tag = SLR
+					tag = GBI
+					tag = SNG
+					tag = GMB
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BRK_ecovas_economical_friendship
+			}
+			BRK = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = BRK_ecovas_economical_friendship
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_work_for_the_good
+	icon = GFX_goal_BRK_work_for_the_good
+	cost = 4.3
+	relative_position_id = BRK_ecowas_cooperation
+	prerequisite = {
+		focus = BRK_ecowas_cooperation
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_work_for_the_good_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_return_of_corporations
+	icon = GFX_goal_BRK_return_of_corporations
+	cost = 4.3
+	relative_position_id = BRK_work_for_the_good
+	prerequisite = {
+		focus = BRK_work_for_the_good
+	}
+	prerequisite = {
+		focus = BRK_factories_construction
+	}
+	available = {
+		has_completed_focus = BRK_dreams_of_elections
+	}
+	mutually_exclusive = {
+		focus = BRK_russian_economic_group
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = industry
+		}
+		add_ideas = BRK_return_of_corporations_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_ghana_railway
+	icon = GFX_goal_BRK_ghana_railway
+	cost = 4.3
+	relative_position_id = BRK_sahel_cooperation
+	prerequisite = {
+		focus = BRK_sahel_cooperation
+		focus = BRK_ecowas_cooperation
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		build_railway = {
+			level = 3
+			start_province = 476
+			target_province = 220
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_factories_construction
+	icon = GFX_goal_BRK_factories_construction
+	cost = 4.3
+	relative_position_id = BRK_ghana_railway
+	prerequisite = {
+		focus = BRK_ghana_railway
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_african_farms
+	icon = GFX_goal_BRK_african_farms
+	cost = 4.3
+	relative_position_id = BRK_economical_struggle
+	prerequisite = {
+		focus = BRK_economical_struggle
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = brk.2
+		add_timed_idea = {
+			idea = BRK_strawberry_farms_boom
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_malaria_vaccination
+	icon = GFX_goal_BRK_malaria_vaccination
+	cost = 4.3
+	relative_position_id = BRK_economical_struggle
+	prerequisite = {
+		focus = BRK_economical_struggle
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_medical_catastrophy_1
+			remove_idea = BRK_medical_catastrophy
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_western_science
+	icon = GFX_goal_BRK_western_science
+	cost = 4.3
+	relative_position_id = BRK_malaria_vaccination
+	prerequisite = {
+		focus = BRK_malaria_vaccination
+	}
+	mutually_exclusive = {
+		focus = BRK_rebuilding_our_healthcare
+	}
+	available = {
+		has_completed_focus = BRK_social_development
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = BRK_medical_catastrophy_1
+		add_timed_idea = {
+			idea = BRK_medical_usage_western_medicine
+			days = 360
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_rebuilding_our_healthcare
+	icon = GFX_goal_BRK_rebuilding_our_healthcare
+	cost = 4.3
+	relative_position_id = BRK_malaria_vaccination
+	prerequisite = {
+		focus = BRK_malaria_vaccination
+	}
+	mutually_exclusive = {
+		focus = BRK_western_science
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_medical_catastrophy_2
+			remove_idea = BRK_medical_catastrophy_1
+		}
+		add_stability = 0.03
+	}
+}
+
+shared_focus = {
+	id = BRK_russian_doctors
+	icon = GFX_goal_BRK_russian_doctors
+	cost = 4.3
+	relative_position_id = BRK_rebuilding_our_healthcare
+	prerequisite = {
+		focus = BRK_rebuilding_our_healthcare
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	available = {
+		has_completed_focus = BRK_russian_embassy
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = BRK_medical_catastrophy_2
+	}
+}
+
+shared_focus = {
+	id = BRK_huge_investment
+	icon = GFX_goal_BRK_huge_investment
+	cost = 4.3
+	relative_position_id = BRK_african_farms
+	prerequisite = {
+		focus = BRK_african_farms
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	available = {
+		NOT = {
+			has_country_flag = BRK_valute_things
+		}
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_valute_collapse_2
+			remove_idea = BRK_valute_collapse_1
+		}
+		set_country_flag = {
+			flag = BRK_valute_things
+			days = 360
+			value = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_eastern_giants
+	icon = GFX_goal_BRK_eastern_giants
+	cost = 4.3
+	relative_position_id = BRK_huge_investment
+	prerequisite = {
+		focus = BRK_huge_investment
+	}
+	mutually_exclusive = {
+		focus = BRK_european_business
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	available = {
+		NOT = {
+			has_country_flag = BRK_valute_things
+		}
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_valute_collapse_3
+			remove_idea = BRK_valute_collapse_2
+		}
+		add_ideas = BRK_eastern_giants_idea
+		set_country_flag = {
+			flag = BRK_valute_things
+			days = 360
+			value = 1
+		}
+		
+		add_to_variable = { african_chinese_favors = 1 }
+		custom_effect_tooltip = african_chinese_favors_1_tt
+	}
+	
+
+}
+
+shared_focus = {
+	id = BRK_european_business
+	icon = GFX_goal_BRK_european_business
+	cost = 4.3
+	relative_position_id = BRK_huge_investment
+	prerequisite = {
+		focus = BRK_huge_investment
+	}
+	mutually_exclusive = {
+		focus = BRK_eastern_giants
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	available = {
+		NOT = {
+			has_country_flag = BRK_valute_things
+		}
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_valute_collapse_3
+			remove_idea = BRK_valute_collapse_2
+		}
+		add_ideas = BRK_european_business_idea
+		set_country_flag = {
+			flag = BRK_valute_things
+			days = 360
+			value = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_encourage_mining
+	icon = GFX_goal_BRK_encourage_mining
+	cost = 4.3
+	relative_position_id = BRK_european_business
+	prerequisite = {
+		focus = BRK_european_business
+	}
+	prerequisite = {
+		focus = BRK_western_science
+	}
+	mutually_exclusive = {
+		focus = BRK_prohibit_artisanal_mining
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_encourage_mining_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_economic_growth
+	icon = GFX_goal_BRK_economic_growth
+	cost = 4.3
+	relative_position_id = BRK_eastern_giants
+	prerequisite = {
+		focus = BRK_eastern_giants
+		focus = BRK_european_business
+	}
+	available = {
+		NOT = {
+			has_country_flag = BRK_valute_things
+		}
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_valute_collapse_4
+			remove_idea = BRK_valute_collapse_3
+		}
+		set_country_flag = {
+			flag = BRK_valute_things
+			days = 360
+			value = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_expand_the_import
+	icon = GFX_goal_BRK_expand_the_import
+	cost = 4.3
+	relative_position_id = BRK_economic_growth
+	prerequisite = {
+		focus = BRK_economic_growth
+	}
+	mutually_exclusive = {
+		focus = BRK_strengthen_the_local_market
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = BRK_valute_collapse_4
+		every_owned_state = {
+			add_state_modifier = {
+				modifier = {
+					local_resources = 0.25
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_strengthen_the_local_market
+	icon = GFX_goal_BRK_strengthen_the_local_market
+	cost = 4.3
+	relative_position_id = BRK_economic_growth
+	prerequisite = {
+		focus = BRK_economic_growth
+	}
+	mutually_exclusive = {
+		focus = BRK_expand_the_import
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = BRK_valute_collapse_4
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_luck_favors_the_bold
+	icon = GFX_goal_BRK_luck_favors_the_bold
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	cost = 0.2
+	x = 14
+	y = 0
+	available = {
+		date < "2022.10.5"
+	}
+	bypass = {
+		date > "2022.10.5"
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = BRK.1
+	}
+}
+
+shared_focus = {
+	id = BRK_land_of_the_strong
+	icon = GFX_goal_BRK_land_of_the_strong
+	cost = 1.5
+	relative_position_id = BRK_luck_favors_the_bold
+	prerequisite = {
+		focus = BRK_luck_favors_the_bold
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = BRK.14
+	}
+}
+
+shared_focus = {
+	id = BRK_fight_against_terror
+	icon = GFX_goal_BRK_fight_against_terror
+	cost = 1.5
+	relative_position_id = BRK_luck_favors_the_bold
+	prerequisite = {
+		focus = BRK_luck_favors_the_bold
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = BRK.5
+	}
+}
+
+shared_focus = {
+	id = BRK_gathering_clouds
+	icon = GFX_goal_BRK_gathering_clouds
+	cost = 2.9
+	relative_position_id = BRK_land_of_the_strong
+	prerequisite = {
+		focus = BRK_land_of_the_strong
+	}
+	prerequisite = {
+		focus = BRK_fight_against_terror
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		98 = {
+			create_unit = {
+				division = "name = \"Volunteers\" division_template = \"VDP\" start_experience_factor = 0.01"
+				owner = BRK
+				count = 6
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_will_for_freedom
+	icon = GFX_goal_BRK_will_for_freedom
+	cost = 2.9
+	relative_position_id = BRK_gathering_clouds
+	prerequisite = {
+		focus = BRK_gathering_clouds
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 75
+		add_popularity = {
+			ideology = pragmatism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = francocentrism
+			popularity = 0.15
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_dreams_of_elections
+	icon = GFX_goal_BRK_power_of_democracy
+	cost = 4.3
+	relative_position_id = BRK_will_for_freedom
+	prerequisite = {
+		focus = BRK_will_for_freedom
+	}
+	mutually_exclusive = {
+		focus = BRK_motherland_or_death
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		has_country_flag = BRK_third_coup_success
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	select_effect = {
+		set_variable = {
+			africa_status = 1
+		}
+		if = {
+			limit = {
+				is_in_faction_with = MLL
+			}
+			MLL = {
+				set_faction_leader = yes
+			}
+			leave_faction = yes
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = MLL
+				has_completed_focus = BRK_united_front
+			}
+			country_event = {
+				id = ab.6
+				days = 5
+			}
+		}
+	}
+	completion_reward = {
+		hidden_effect = {
+			country_event = {
+				id = BRK.13
+				days = 180
+			}
+			if = {
+				limit = {
+					has_completed_focus = BRK_united_front
+				}
+				country_event = {
+					id = BRK.39
+					days = 5
+				}
+			}
+		}
+		custom_effect_tooltip = BRK_dreams_of_elections_1_tt
+		remove_ideas = BRK_fallen_government_2
+		add_stability = 0.1
+		set_popularities = {
+			pragmatism = 49
+			francocentrism = 36
+			panafricanism = 15
+		}
+		custom_effect_tooltip = BRK_dreams_of_elections_2_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_light_breath
+	icon = GFX_goal_BRK_light_breath
+	cost = 4.3
+	relative_position_id = BRK_dreams_of_elections
+	prerequisite = {
+		focus = BRK_dreams_of_elections
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		has_country_flag = first_elections_happened
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+			ideology = var:current_party_ideology_group
+			popularity = 0.05
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = USR
+					tag = FRN
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BRK_democratization
+			}
+			BRK = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = BRK_democratization
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_power_of_democracy
+	icon = GFX_goal_BRK_national_elections
+	cost = 4.3
+	relative_position_id = BRK_light_breath
+	prerequisite = {
+		focus = BRK_light_breath
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		NOT = {
+			has_war_with = ISS
+		}
+		26 = {
+			is_fully_controlled_by = BRK
+		}
+		25 = {
+			is_fully_controlled_by = BRK
+		}
+		13 = {
+			is_fully_controlled_by = BRK
+		}
+		27 = {
+			is_fully_controlled_by = BRK
+		}
+	}
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		hidden_effect = {
+			remove_ideas = BRK_political_instability
+			add_timed_idea = {
+				idea = BRK_political_instability
+				days = 180
+			}
+		}
+		custom_effect_tooltip = BRK_power_of_democracy_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_voice_of_the_free_world
+	icon = GFX_goal_BRK_voice_of_america
+	cost = 4.3
+	relative_position_id = BRK_power_of_democracy
+	prerequisite = {
+		focus = BRK_power_of_democracy
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = BRK_international_pressure
+		add_ideas = BRK_international_support
+	}
+}
+
+shared_focus = {
+	id = BRK_french_mandate
+	icon = GFX_goal_BRK_french_mandate
+	cost = 4.3
+	relative_position_id = BRK_light_breath
+	prerequisite = {
+		focus = BRK_light_breath
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = -0.1
+		add_ideas = BRK_french_control
+	}
+}
+
+shared_focus = {
+	id = BRK_green_berets
+	icon = GFX_goal_BRK_green_berets
+	cost = 4.3
+	relative_position_id = BRK_french_mandate
+	prerequisite = {
+		focus = BRK_french_mandate
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_green_beretes_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_benefits_for_metal_extraction
+	icon = GFX_goal_BRK_benefits_for_metal_extraction
+	cost = 4.3
+	relative_position_id = BRK_french_mandate
+	prerequisite = {
+		focus = BRK_french_mandate
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_french_control_2
+			remove_idea = BRK_french_control
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_social_development
+	icon = GFX_goal_BRK_social_development
+	cost = 4.3
+	relative_position_id = BRK_light_breath
+	prerequisite = {
+		focus = BRK_light_breath
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		BRK_upgrade_educational_system = yes
+		add_stability = 0.05
+		add_command_power = 25
+	}
+}
+
+shared_focus = {
+	id = BRK_the_extending_hand
+	icon = GFX_goal_BRK_the_extending_hand
+	cost = 4.3
+	relative_position_id = BRK_social_development
+	prerequisite = {
+		focus = BRK_social_development
+	}
+	prerequisite = {
+		focus = BRK_benefits_for_metal_extraction
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_french_subsidies
+	}
+}
+
+shared_focus = {
+	id = BRK_firm_handshake
+	icon = GFX_goal_BRK_firm_handshake
+	cost = 4.3
+	relative_position_id = BRK_the_extending_hand
+	prerequisite = {
+		focus = BRK_the_extending_hand
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_european_subsidies
+			remove_idea = BRK_french_subsidies
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_motherland_or_death
+	icon = GFX_goal_BRK_motherland_or_death
+	cost = 4.3
+	relative_position_id = BRK_will_for_freedom
+	prerequisite = {
+		focus = BRK_will_for_freedom
+	}
+	mutually_exclusive = {
+		focus = BRK_dreams_of_elections
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		if = {
+			limit = {
+				NOT = {
+					tag = BRK
+				}
+				original_tag = BRK
+			}
+			has_civil_war = no
+		}
+		else = {
+			has_country_flag = BRK_third_coup_detat_failed
+		}
+	}
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = panafricanism
+			popularity = 0.15
+		}
+		custom_effect_tooltip = BRK_motherland_or_death_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_exiting_ecowas
+	icon = GFX_goal_BRK_exiting_ecowas
+	cost = 4.3
+	relative_position_id = BRK_motherland_or_death
+	prerequisite = {
+		focus = BRK_motherland_or_death
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = BRK_international_pressure_2
+			remove_idea = BRK_international_pressure
+		}
+		add_popularity = {
+			ideology = francocentrism
+			popularity = -0.15
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_our_new_constitution
+	icon = GFX_goal_BRK_our_new_constitution
+	cost = 4.3
+	relative_position_id = BRK_exiting_ecowas
+	prerequisite = {
+		focus = BRK_exiting_ecowas
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_ideas = BRK_new_constitution
+	}
+}
+
+shared_focus = {
+	id = BRK_development_of_cooperation
+	icon = GFX_goal_BRK_development_of_cooperation
+	cost = 4.3
+	relative_position_id = BRK_exiting_ecowas
+	prerequisite = {
+		focus = BRK_exiting_ecowas
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = MLL
+			modifier = BRK_embracing_relations_with_sahel
+		}
+		add_opinion_modifier = {
+			target = NIG
+			modifier = BRK_embracing_relations_with_sahel
+		}
+		MLL = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_embracing_relations_with_sahel
+			}
+			add_opinion_modifier = {
+				target = NIG
+				modifier = BRK_embracing_relations_with_sahel
+			}
+		}
+		NIG = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_embracing_relations_with_sahel
+			}
+			add_opinion_modifier = {
+				target = MLL
+				modifier = BRK_embracing_relations_with_sahel
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_diplomatic_offices
+	icon = GFX_goal_BRK_diplomatic_offices
+	cost = 4.3
+	relative_position_id = BRK_development_of_cooperation
+	prerequisite = {
+		focus = BRK_development_of_cooperation
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = RUS
+			modifier = BRK_RUS_friendship_1000
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_RUS_friendship_1000
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_russian_embassy
+	icon = GFX_goal_BRK_russian_embassy
+	cost = 4.3
+	relative_position_id = BRK_diplomatic_offices
+	prerequisite = {
+		focus = BRK_diplomatic_offices
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = RUS
+			modifier = BRK_RUS_friendship_1001
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_RUS_friendship_1001
+			}
+		}
+			add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_foreign_education
+	icon = GFX_goal_BRK_foreign_education
+	cost = 4.3
+	relative_position_id = BRK_russian_embassy
+	prerequisite = {
+		focus = BRK_russian_embassy
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = BRK_future_for_the_young
+	icon = GFX_goal_BRK_future_for_the_young
+	cost = 4.3
+	relative_position_id = BRK_foreign_education
+	prerequisite = {
+		focus = BRK_foreign_education
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_future_for_the_young_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_healthcare_and_sovereignty
+	icon = GFX_goal_BRK_healthcare_and_sovereignty
+	cost = 4.3
+	relative_position_id = BRK_future_for_the_young
+	prerequisite = {
+		focus = BRK_future_for_the_young
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		has_completed_focus = BRK_russian_doctors
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = BRK_lessons_of_friendship
+	icon = GFX_goal_BRK_lessons_of_friendship
+	cost = 4.3
+	relative_position_id = BRK_diplomatic_offices
+	prerequisite = {
+		focus = BRK_diplomatic_offices
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		BRK_upgrade_educational_system = yes
+		add_opinion_modifier = {
+			target = RUS
+			modifier = BRK_RUS_friendship_1002
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_RUS_friendship_1002
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_putins_prize
+	icon = GFX_goal_BRK_putins_prize
+	cost = 4.3
+	relative_position_id = BRK_lessons_of_friendship
+	prerequisite = {
+		focus = BRK_lessons_of_friendship
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_putins_prize_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_bright_future_ahead
+	icon = GFX_goal_BRK_bright_future_ahead
+	cost = 4.3
+	relative_position_id = BRK_putins_prize
+	prerequisite = {
+		focus = BRK_putins_prize
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		NOT = {
+			OR = {
+				has_idea = BRK_political_instability
+				has_idea = BRK_international_pressure_2
+			}
+		}
+	}
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_bright_future_ahead_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_voice_of_lies
+	icon = GFX_goal_BRK_voice_of_lies
+	cost = 4.3
+	relative_position_id = BRK_development_of_cooperation
+	prerequisite = {
+		focus = BRK_development_of_cooperation
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.05
+		remove_ideas = BRK_international_pressure_2
+	}
+}
+
+shared_focus = {
+	id = BRK_politics_in_our_lives
+	icon = GFX_goal_BRK_politics_in_our_lives
+	cost = 4.3
+	relative_position_id = BRK_voice_of_lies
+	prerequisite = {
+		focus = BRK_voice_of_lies
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = BRK_voice_of_the_streets
+			days = 175
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_our_hero
+	icon = GFX_goal_BRK_our_hero
+	cost = 4.3
+	relative_position_id = BRK_politics_in_our_lives
+	prerequisite = {
+		focus = BRK_politics_in_our_lives
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_remembering_sankara
+	}
+}
+
+shared_focus = {
+	id = BRK_hearing_the_people
+	icon = GFX_goal_BRK_hearing_the_people
+	cost = 4.3
+	relative_position_id = BRK_our_hero
+	prerequisite = {
+		focus = BRK_our_hero
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		NOT = {
+			has_war_with = ISS
+		}
+		OR = {
+			AND = {
+				has_country_flag = BRK_prepared_for_elections
+				has_completed_focus = BRK_our_new_constitution
+			}
+			has_country_leader_with_trait = the_new_sankara
+		}
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = BRK_political_instability
+	}
+}
+
+shared_focus = {
+	id = BRK_sahel_confederation
+	icon = GFX_goal_BRK_sahel_confederation
+	cost = 4.3
+	relative_position_id = BRK_motherland_or_death
+	prerequisite = {
+		focus = BRK_motherland_or_death
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		BRK = {
+			add_ideas = BRK_sahel_unity_anticolonialism
+		}
+		MLL = {
+			add_ideas = BRK_sahel_unity_anticolonialism
+		}
+		NIG = {
+			add_ideas = BRK_sahel_unity_anticolonialism
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_question_of_elections
+	icon = GFX_goal_BRK_question_of_elections
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	cost = 4.3
+	relative_position_id = BRK_motherland_or_death
+	prerequisite = {
+		focus = BRK_motherland_or_death
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = BRK.16
+	}
+}
+
+shared_focus = {
+	id = BRK_example_of_unity
+	icon = GFX_goal_BRK_example_of_unity
+	cost = 4.3
+	relative_position_id = BRK_sahel_confederation
+	prerequisite = {
+		focus = BRK_sahel_confederation
+	}
+	prerequisite = {
+		focus = BRK_development_of_cooperation
+	}
+	prerequisite = {
+		focus = BRK_question_of_elections
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	available = {
+		is_in_faction_with = NIG
+		is_in_faction_with = MLL
+	}
+	x = 3
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = CHD
+					tag = NIG
+					tag = BRK
+					tag = MLL
+					tag = MRV
+				}
+			}
+			add_timed_idea = {
+				idea = BRK_panafricanism_unity_of_sahel
+				days = 720
+			}
+		}
+	}
+}
+
+# shared_focus = {
+# 	id = BRK_sahel_summit
+# 	icon = GFX_goal_BRK_sahel_summit
+# 	cost = 4.3
+# 	relative_position_id = BRK_example_of_unity
+# 	prerequisite = {
+# 		focus = BRK_example_of_unity
+# 	}
+# 	search_filters = {
+# 		FOCUS_FILTER_POLITICAL
+# 	}
+# 	available = {
+# 		is_in_faction_with = NIG
+# 		is_in_faction_with = MLL
+# 		MRV = {
+# 			OR = {
+# 				panafricanism > 0.2
+# 				has_government = panafricanism
+# 			}
+# 		}
+# 		CHD = {
+# 			OR = {
+# 				panafricanism > 0.2
+# 				has_government = panafricanism
+# 			}
+# 		}
+# 	}
+# 	bypass = {
+# 		OR = {
+# 			CHD = {
+# 				is_in_faction_with = BRK
+# 			}
+# 			MRV = {
+# 				is_in_faction_with = BRK
+# 			}
+# 		}
+# 	}
+# 	x = 0
+# 	y = 2
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# 	completion_reward = {
+# 		news_event = BRK.29
+# 		MRV = {
+# 			country_event = {
+# 				id = BRK.30
+# 				hours = 1
+# 			}
+# 		}
+# 		CHD = {
+# 			country_event = {
+# 				id = BRK.30
+# 				hours = 1
+# 			}
+# 		}
+# 	}
+# }
+
+# shared_focus = {
+# 	id = BRK_single_currency
+# 	icon = GFX_goal_BRK_single_currency
+# 	cost = 4.3
+# 	relative_position_id = BRK_sahel_summit
+# 	prerequisite = {
+# 		focus = BRK_sahel_summit
+# 	}
+# 	search_filters = {
+# 		FOCUS_FILTER_POLITICAL
+# 	}
+# 	x = 0
+# 	y = 2
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# 	completion_reward = {
+# 		every_country = {
+# 			limit = {
+# 				OR = {
+# 					tag = BRK
+# 					is_in_faction_with = BRK
+# 				}
+# 			}
+# 			add_ideas = BRK_unified_volutary
+# 		}
+# 	}
+# }
+
+shared_focus = {
+	id = BRK_protect_the_churches
+	icon = GFX_goal_BRK_protect_the_churches
+	cost = 4.3
+	relative_position_id = BRK_sahel_confederation
+	prerequisite = {
+		focus = BRK_sahel_confederation
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_protect_the_churches_idea
+		add_stability = 0.05
+		add_popularity = {
+			ideology = var:current_party_ideology_group
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_a_question_for_ivory_coast
+	icon = GFX_goal_BRK_a_question_for_ivory_coast
+	cost = 4.3
+	relative_position_id = BRK_protect_the_churches
+	prerequisite = {
+		focus = BRK_protect_the_churches
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = BRK.18
+		custom_effect_tooltip = BRK_a_question_for_ivory_coast_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_cabinet_reshuffle
+	icon = GFX_goal_BRK_cabinet_reshuffle
+	cost = 4.3
+	relative_position_id = BRK_a_question_for_ivory_coast
+	prerequisite = {
+		focus = BRK_a_question_for_ivory_coast
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 120
+		add_ideas = BRK_cabinet_shuffles_idea
+	}
+}
+
+shared_focus = {
+	id = BRK_turning_point
+	icon = GFX_goal_BRK_turning_point
+	cost = 4.3
+	relative_position_id = BRK_sahel_confederation
+	prerequisite = {
+		focus = BRK_sahel_confederation
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = BRK_nationalisation_of_sugar_business
+			days = 360
+		}
+		news_event = BRK.25
+		add_opinion_modifier = {
+			target = FRN
+			modifier = BRK_anti_france_3
+		}
+		FRN = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_anti_france_3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_chinese_support
+	icon = GFX_goal_BRK_chinese_support
+	cost = 4.3
+	relative_position_id = BRK_turning_point
+	prerequisite = {
+		focus = BRK_turning_point
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 100
+		}
+		add_equipment_to_stockpile = {
+			type = qbz_0
+			amount = 300
+			producer = CHN
+		}
+		add_to_variable = { african_chinese_favors = 1 }
+		custom_effect_tooltip = african_chinese_favors_1_tt
+		set_country_flag = CHI_friend
+		custom_effect_tooltip = BRK_CHN_Friend_tt
+	}
+}
+
+shared_focus = {
+	id = BRK_expel_french_diplomats
+	icon = GFX_goal_BRK_expel_french_diplomats
+	cost = 4.3
+	relative_position_id = BRK_turning_point
+	prerequisite = {
+		focus = BRK_turning_point
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 120
+		add_opinion_modifier = {
+			target = FRN
+			modifier = BRK_anti_france_2
+		}
+		FRN = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_anti_france_2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_no_more_welcome
+	icon = GFX_goal_BRK_no_more_welcome
+	cost = 4.3
+	relative_position_id = BRK_expel_french_diplomats
+	prerequisite = {
+		focus = BRK_expel_french_diplomats
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+		news_event = BRK.26
+		country_event = BRK.27
+		set_global_flag = BRK_FRN_leave_mil_bases
+		add_opinion_modifier = {
+			target = FRN
+			modifier = BRK_anti_france_1
+		}
+		FRN = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_anti_france_1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BRK_french_espionage
+	icon = GFX_goal_BRK_french_espionage
+	cost = 4.3
+	relative_position_id = BRK_no_more_welcome
+	prerequisite = {
+		focus = BRK_no_more_welcome
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = BRK_question_of_language
+	icon = GFX_goal_BRK_question_of_language
+	cost = 4.3
+	relative_position_id = BRK_french_espionage
+	prerequisite = {
+		focus = BRK_french_espionage
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = BRK.28
+	}
+}

@@ -1,0 +1,694 @@
+on_actions = {
+	# country
+	on_new_term_election = {
+		#####
+	}
+	
+	on_daily_RUS = {
+		effect = {
+			set_variable =  { political_power_gain_bases_controlled = 0.05 }
+			set_variable =  { air_range_factor_bases_controlled = 0.02 }
+			set_variable =  { coordination_bonus_bases_controlled = 0.005 }
+			set_variable =  { initiative_factor_bases_controlled = 0.005 }
+			
+			multiply_variable = { political_power_gain_bases_controlled = num_owned_states }
+			multiply_variable = { air_range_factor_bases_controlled = num_owned_states }
+			multiply_variable = { coordination_bonus_bases_controlled = num_owned_states }
+			multiply_variable = { initiative_factor_bases_controlled = num_owned_states }
+		}
+	}
+	
+	on_daily_USR = {
+		effect = {
+			set_variable =  { political_power_gain_bases_controlled = 0.05 }
+			set_variable =  { air_range_factor_bases_controlled = 0.02 }
+			set_variable =  { coordination_bonus_bases_controlled = 0.005 }
+			set_variable =  { initiative_factor_bases_controlled = 0.005 }
+			
+			multiply_variable = { political_power_gain_bases_controlled = num_owned_states }
+			multiply_variable = { air_range_factor_bases_controlled = num_owned_states }
+			multiply_variable = { coordination_bonus_bases_controlled = num_owned_states }
+			multiply_variable = { initiative_factor_bases_controlled = num_owned_states }
+		}
+	}
+	
+	on_daily_FRN = {
+		effect = {
+			set_variable =  { political_power_gain_bases_controlled = 0.05 }
+			set_variable =  { air_range_factor_bases_controlled = 0.02 }
+			set_variable =  { coordination_bonus_bases_controlled = 0.005 }
+			set_variable =  { initiative_factor_bases_controlled = 0.005 }
+			
+			multiply_variable = { political_power_gain_bases_controlled = num_owned_states }
+			multiply_variable = { air_range_factor_bases_controlled = num_owned_states }
+			multiply_variable = { coordination_bonus_bases_controlled = num_owned_states }
+			multiply_variable = { initiative_factor_bases_controlled = num_owned_states }
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			RUS = {
+				set_variable =  { political_power_gain_bases_controlled = 0.05 }
+				set_variable =  { air_range_factor_bases_controlled = 0.02 }
+				set_variable =  { coordination_bonus_bases_controlled = 0.005 }
+				set_variable =  { initiative_factor_bases_controlled = 0.005 }
+				
+				multiply_variable = { political_power_gain_bases_controlled = num_owned_states }
+				multiply_variable = { air_range_factor_bases_controlled = num_owned_states }
+				multiply_variable = { coordination_bonus_bases_controlled = num_owned_states }
+				multiply_variable = { initiative_factor_bases_controlled = num_owned_states }
+				add_dynamic_modifier = {
+					modifier = bases_control_amount
+					scope = RUS
+				}
+			}
+			USR = {
+				set_variable =  { political_power_gain_bases_controlled = 0.05 }
+				set_variable =  { air_range_factor_bases_controlled = 0.02 }
+				set_variable =  { coordination_bonus_bases_controlled = 0.005 }
+				set_variable =  { initiative_factor_bases_controlled = 0.005 }
+				
+				multiply_variable = { political_power_gain_bases_controlled = num_owned_states }
+				multiply_variable = { air_range_factor_bases_controlled = num_owned_states }
+				multiply_variable = { coordination_bonus_bases_controlled = num_owned_states }
+				multiply_variable = { initiative_factor_bases_controlled = num_owned_states }
+
+				add_dynamic_modifier = {
+					modifier = bases_control_amount
+					scope = USR
+				}
+			}
+			FRN = {
+				set_variable =  { political_power_gain_bases_controlled = 0.05 }
+				set_variable =  { air_range_factor_bases_controlled = 0.02 }
+				set_variable =  { coordination_bonus_bases_controlled = 0.005 }
+				set_variable =  { initiative_factor_bases_controlled = 0.005 }
+				
+				multiply_variable = { political_power_gain_bases_controlled = num_owned_states }
+				multiply_variable = { air_range_factor_bases_controlled = num_owned_states }
+				multiply_variable = { coordination_bonus_bases_controlled = num_owned_states }
+				multiply_variable = { initiative_factor_bases_controlled = num_owned_states }
+
+				add_dynamic_modifier = {
+					modifier = bases_control_amount
+					scope = FRN
+				}
+			}
+		}
+	}
+
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+	
+	on_capitulation_immediate = {
+		effect = { 
+			if = {
+				limit = {
+					ROOT = { tag = CHD }
+					FROM = { tag = FCT }
+				}
+				FCT = { set_cosmetic_tag = CHD }
+				else_if = {
+					limit = {
+						ROOT = { tag = FCT }
+						FROM = { tag = CHD }
+					}
+					every_state = {
+						limit = {
+							is_core_of = FCT
+						}
+						remove_core_of = FCT
+					}
+				}
+			}
+		}
+	}
+
+	# our ace is killed by no name
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+
+	# our ace died in accident
+	# country, FROM = ace
+	on_ace_killed_on_accident = {
+
+	}
+
+	# enemy ace is killed by our non name
+	# country, FROM = enemy ace
+	on_non_ace_killed_other_ace = {
+
+	}
+
+	# During justifying wargoals
+	# triggered daily, so make sure there is a sink somewhere not firing events
+	# country, FROM = target nation
+	on_justifying_wargoal_pulse = {
+
+		random_events = {
+			100 = war_justification.1
+			100 = war_justification.2
+			100 = war_justification.3
+			100 = war_justification.4
+			100 = war_justification.5
+			100 = war_justification.6
+			100 = war_justification.7
+			100 = war_justification.8
+			100 = war_justification.9
+			100 = war_justification.10
+			100 = war_justification.11
+			100 = war_justification.12
+			100 = war_justification.13
+			100 = war_justification.14
+			100 = war_justification.15
+			100 = war_justification.16
+			100 = war_justification.17
+			100 = war_justification.18
+			100 = war_justification.19
+			17000 = 0
+		}
+	}
+
+	on_wargoal_expire = {
+		random_events = {
+			100 = war_justification.301
+		}
+	}
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+	#ROOT is capitulated country, FROM is winner.
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { market_tab_selected = 0 }
+				set_variable = { market_current_selected_frame_RUS = 2 }
+				add_dynamic_modifier = { modifier = hidden_market_affirs_trigger }
+			}
+			add_to_array = {
+				global.market_offers = 1
+			}
+			add_to_array = {
+				global.market_offers = 2
+			}
+			add_to_array = {
+				global.market_offers = 3
+			}
+			add_to_array = {
+				global.market_offers = 4
+			}
+			add_to_array = {
+				global.market_offers = 5
+			}
+			add_to_array = {
+				global.market_offers = 6
+			}
+			add_to_array = {
+				global.market_offers = 7 
+			}
+			add_to_array = {
+				global.market_offers = 8
+			}
+			add_to_array = {
+				global.market_offers = 9
+			}
+			add_to_array = {
+				global.market_offers = 10
+			}
+			add_to_array = {
+				global.market_offers = 11
+			}
+			add_to_array = {
+				global.market_offers = 12
+			}
+			add_to_array = {
+				global.market_offers = 13
+			}
+			add_to_array = {
+				global.market_offers = 14
+			}
+			add_to_array = {
+				global.market_offers = 15
+			}
+			add_to_array = {
+				global.market_offers = 16
+			}
+			set_variable = { global.default_buying_amount_1 = 1 }
+			set_variable = { global.default_buying_amount_2 = 1 }
+			set_variable = { global.default_buying_amount_3 = 1 }
+			set_variable = { global.default_buying_amount_4 = 1 }
+			set_variable = { global.default_buying_amount_5 = 1 }
+			set_variable = { global.default_buying_amount_6 = 1 }
+			set_variable = { global.default_buying_amount_7 = 100 }
+			set_variable = { global.default_buying_amount_8 = 100 }
+			set_variable = { global.default_buying_amount_9 = 10 }
+
+			set_variable = { global.default_buying_amount_10 = 4 }
+			set_variable = { global.default_buying_amount_11 = 4 }
+			set_variable = { global.default_buying_amount_12 = 4 }
+			set_variable = { global.default_buying_amount_13 = 9 }
+			set_variable = { global.default_buying_amount_14 = 10 }
+			set_variable = { global.default_buying_amount_15 = 1 }
+			set_variable = { global.default_buying_amount_16 = 1 }
+			
+			set_variable = { global.country_0_costper1_1 = 1.5 }
+			set_variable = { global.country_0_costper1_2 = 1.6 }
+			set_variable = { global.country_0_costper1_3 = 2 }
+			set_variable = { global.country_0_costper1_4 = 1.6 }
+			set_variable = { global.country_0_costper1_5 = 1.8 }
+			set_variable = { global.country_0_costper1_6 = 2 }
+			set_variable = { global.country_0_costper1_7 = 0.30 }
+			set_variable = { global.country_0_costper1_8 = 0.45 }
+			set_variable = { global.country_0_costper1_9 = 1.1 }
+
+			set_variable = { global.country_0_costper1_10 = 5.3 }
+			set_variable = { global.country_0_costper1_11 = 7.4 }
+			set_variable = { global.country_0_costper1_12 = 4.5 }
+			set_variable = { global.country_0_costper1_13 = 5 }
+			set_variable = { global.country_0_costper1_14 = 2.7 }
+			set_variable = { global.country_0_costper1_15 = 125 }
+			set_variable = { global.country_0_costper1_16 = 200 }
+			
+			set_variable = { global.country_1_costper1_1 = 1.4 }
+			set_variable = { global.country_1_costper1_2 = 1.8 }
+			set_variable = { global.country_1_costper1_3 = 1.8 }
+			set_variable = { global.country_1_costper1_4 = 2 }
+			set_variable = { global.country_1_costper1_5 = 1.4 }
+			set_variable = { global.country_1_costper1_6 = 1.8 }
+			set_variable = { global.country_1_costper1_7 = 0.45 }
+			set_variable = { global.country_1_costper1_8 = 0.55 }
+			set_variable = { global.country_1_costper1_9 = 1.35 }
+			
+
+			set_variable = { global.country_1_costper1_10 = 5.1 }
+			set_variable = { global.country_1_costper1_11 = 8 }
+			set_variable = { global.country_1_costper1_12 = 5 }
+			set_variable = { global.country_1_costper1_13 = 5.5 }
+			set_variable = { global.country_1_costper1_14 = 3 }
+			set_variable = { global.country_1_costper1_15 = 100 }
+			set_variable = { global.country_1_costper1_16 = 200 }
+			
+			set_variable = { global.country_2_costper1_1 = 1.8 }
+			set_variable = { global.country_2_costper1_2 = 1.9 }
+			set_variable = { global.country_2_costper1_3 = 1.7 }
+			set_variable = { global.country_2_costper1_4 = 1.6 }
+			set_variable = { global.country_2_costper1_5 = 1.7 }
+			set_variable = { global.country_2_costper1_6 = 1.4 }
+			set_variable = { global.country_2_costper1_7 = 0.55 }
+			set_variable = { global.country_2_costper1_8 = 0.65 }
+			set_variable = { global.country_2_costper1_9 = 1.55 }
+
+			set_variable = { global.country_2_costper1_10 = 5.1 }
+			set_variable = { global.country_2_costper1_11 = 7.6 }
+			set_variable = { global.country_2_costper1_12 = 4.7 }
+			set_variable = { global.country_2_costper1_13 = 5.8 }
+			set_variable = { global.country_2_costper1_14 = 2.0 }
+			set_variable = { global.country_2_costper1_15 = 75 }
+			set_variable = { global.country_2_costper1_16 = 259 }
+			
+			set_variable = { global.bm_cost_1 = 150 }
+			set_variable = { global.bm_cost_2 = 100 }
+			set_variable = { global.bm_cost_3 = 100 }
+			
+			
+			# battle for africa
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = RUS
+							tag = FRN
+							tag = USR
+							tag = CHN
+							has_government = fundamentalism
+							has_country_flag = international_blockade
+						}
+					}
+					any_country = {
+						has_government = fundamentalism
+						has_war_with = PREV
+					}
+				}
+				# 10-19 - РЕЗЕРВ ПОД ЗАПРОСЫ НА БОРЬБУ С ТЕРРОРОМ
+				add_to_array = {
+					possible_actions_country = 10
+				}
+				add_to_array = {
+					possible_actions_country = 11
+				}
+				add_to_array = {
+					possible_actions_country = 12
+				}
+				# ТО ЧТО НАЧИНАЕТСЯ С ЦИФРЫ 2 ( т.е. 21, 204, 2821 ) РЕЗЕРВ ПОД РОССИЮ
+				# ТО ЧТО НАЧИНАЕТСЯ С ЦИФРЫ 3 РЕЗЕРВ ПОД ФРАНКА
+				# ТО ЧТО НАЧИНАЕТСЯ С ЦИФРЫ 4 РЕЗЕРВ ПОД США
+				# ТО ЧТО НАЧИНАЕТСЯ С ЦИФРЫ 5 РЕЗЕРВ ПОД ЭКОВАС
+				# ТО ЧТО НАЧИНАЕТСЯ С ЦИФРЫ 6 РЕЗЕРВ ПОД АГС
+			}
+			every_country = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { africa_status = 2 }
+			}
+			every_country = {
+				limit = {
+					OR = { 
+						has_government = francocentrism
+						is_in_faction_with = NRG
+						tag = NRG
+					}
+				}
+				set_variable = { africa_status = 3 }
+			}
+		}
+	}
+	
+	on_join_faction = { 
+		effect = { 
+			if = {
+				limit = {
+					FROM = { check_variable = { africa_status = 2 }  }
+				}
+				ROOT = { set_variable = { africa_status = 2 } }
+			}
+			if = {
+				limit = {
+					FROM = { check_variable = { africa_status = 3 } }
+				}
+				ROOT = { set_variable = { africa_status = 3 } }
+			}
+		} 
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tungsten > 0
+						oil > 0
+						steel > 0
+						rubber > 0
+						chromium > 0
+						aluminium > 0
+						any_state = {
+							AND = {
+								is_controlled_by = PREV
+								check_variable = { THIS.amount_of_gold > 0 }
+							}
+						}
+						any_state = {
+							AND = {
+								is_controlled_by = PREV
+								check_variable = { THIS.amount_of_diamonds > 0 }
+							}
+						}
+						any_state = {
+							AND = {
+								is_controlled_by = PREV
+								check_variable = { THIS.amount_of_uran > 0 }
+							}
+						}
+					}
+				}
+				calculate_amount_of_getting_pp = yes
+				add_political_power = amountofmonthlygettingppmarket
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tungsten > 0
+						oil > 0
+						steel > 0
+						rubber > 0
+						chromium > 0
+						aluminium > 0
+						any_state = {
+							AND = {
+								is_controlled_by = PREV
+								check_variable = { THIS.amount_of_gold > 0 }
+							}
+						}
+						any_state = {
+							AND = {
+								is_controlled_by = PREV
+								check_variable = { THIS.amount_of_diamonds > 0 }
+							}
+						}
+						any_state = {
+							AND = {
+								is_controlled_by = PREV
+								check_variable = { THIS.amount_of_uran > 0 }
+							}
+						}
+					}
+				}
+				calculate_amount_of_getting_pp = yes
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { has_government = fundamentalism }
+					ROOT = { 
+						NOT = { 
+							is_in_array = { possible_actions_country = 10 } 
+							OR = {
+								tag = RUS
+								tag = FRN
+								tag = USR
+								tag = CHN
+								has_government = fundamentalism
+								has_country_flag = international_blockade
+							}
+						}
+					}
+				}
+				ROOT = {
+					add_to_array = {
+						possible_actions_country = 10
+					}
+					add_to_array = {
+						possible_actions_country = 11
+					}
+					add_to_array = {
+						possible_actions_country = 12
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = { has_government = fundamentalism }
+						FROM = { 
+							NOT = { 
+								is_in_array = { possible_actions_country = 10 } 
+								OR = {
+									tag = RUS
+									tag = FRN
+									tag = USR
+									tag = CHN
+									has_government = fundamentalism
+									has_country_flag = international_blockade
+								}
+							}
+						}
+					}
+					FROM = {
+						add_to_array = {
+							possible_actions_country = 10
+						}
+						add_to_array = {
+							possible_actions_country = 11
+						}
+						add_to_array = {
+							possible_actions_country = 12
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_peace = {
+		effect = { 
+			if = {
+				limit = {
+					has_idea = ai_secret_buffs
+				}
+				remove_ideas = ai_secret_buffs
+			}
+		}
+	}
+	
+	on_monthly = { 
+		effect = {
+			set_variable = { thismonthtakemoney = amountofmonthlyspendingppmarket }
+			multiply_variable = { thismonthtakemoney = -1 }
+			add_political_power = var:thismonthtakemoney
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+		}
+	}
+
+
+
+	# From is owner country
+	on_army_leader_daily = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { random < 0.02 }
+					NOT = { has_trait = sick }
+					set_temp_variable = { temp = sum_unit_terrain_modifier@sickness_chance }
+					divide_temp_variable = { temp = num_units }
+					check_variable = { temp > 0.75 }
+					NOT = { has_unit_leader_flag = recently_sick }
+				}
+				add_timed_unit_leader_trait = {
+					trait = sick
+					days = 30
+				}
+				unit_leader_event = { id = generic.17 }
+			}
+		}
+	}
+
+	# From is owner country
+	on_army_leader_won_combat = {
+		effect = {
+			if = {
+				limit = {
+					set_temp_variable = { chance = 0.001 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor }
+					multiply_temp_variable = { chance = factor }
+					check_variable = { random < chance }
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+				unit_leader_event = { id = generic.18 }
+			}
+		}
+	}
+
+	# From is owner country
+	on_army_leader_lost_combat = {
+		effect = {
+			if = {
+				limit = {
+					set_temp_variable = { chance = 0.005 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor }
+					multiply_temp_variable = { chance = factor }
+					check_variable = { random < chance }
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+				unit_leader_event = { id = generic.18 }
+			}
+		}
+	}
+
+	on_army_leader_promoted = {
+		effect = {
+			add_timed_unit_leader_trait = {
+				trait = recently_promoted
+				days = 100
+			}
+		}
+	}
+
+	# root country that paradrops
+	# scope state that is paradroped into
+	# from scope state that the paradrop started
+
+	on_ruling_party_change = {
+		# temp var old_ideology_token is available for effects
+		effect = {
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 0.5 }
+				set_compliance = new_compliance
+			}
+		}
+	}
+
+	on_unit_leader_promote_from_ranks_veteran = { #Unit leader scope, FROM is unit
+		effect = {
+			FROM = {
+				add_random_valid_trait_from_unit = {
+					character = ROOT
+				}
+			}
+			set_unit_leader_flag = field_promotion_achievement
+		}
+	}
+
+	on_unit_leader_promote_from_ranks_green = { #Unit leader scope, FROM is unit
+		effect = {
+			set_unit_leader_flag = field_promotion_achievement
+		}
+	}
+}

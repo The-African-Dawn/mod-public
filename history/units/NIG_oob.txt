@@ -1,0 +1,261 @@
+division_template = {
+	name = "Bataillon d'Infanterie Interarmes"
+
+	regiments = {
+		infantry_on_jeep={ x=0 y=0 }
+		infantry_on_jeep={ x=0 y=1 }
+		infantry_on_jeep={ x=0 y=2 }
+		light_armor_unit={ x=0 y=3 }
+		infantry_on_jeep={ x=1 y=0 }
+		infantry_on_jeep={ x=1 y=1 }
+		infantry_on_jeep={ x=1 y=2 }
+		light_armor_unit={ x=1 y=3 }
+		infantry_on_jeep={ x=2 y=0 }
+		infantry_on_jeep={ x=2 y=1 }
+		infantry_on_jeep={ x=2 y=2 }
+		infantry_on_jeep={ x=3 y=0 }
+		infantry_on_jeep={ x=3 y=1 }
+		infantry_on_jeep={ x=3 y=2 }
+	}
+}
+division_template = {
+	name = "Compagnie d'opérations Spéciales"
+
+	regiments = {
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+	}
+	
+}
+division_template = {
+	name = "Gendarmerie Nationale"
+
+	regiments = {
+		light_infantry_opol_on_guntruck={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+		light_infantry_opol_on_guntruck={ x=1 y=1 }
+		light_infantry_opol_on_guntruck={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "Garde Nationale"
+
+	regiments = {
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+	}
+}
+units = {
+	division= {	
+		name = "12 Bataillon d'Infanterie Interarmes"
+		location = 2276
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "13 Bataillon d'Infanterie Interarmes"
+		location = 5022
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "22 Bataillon d'Infanterie Interarmes"
+		location = 5011
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "23 Bataillon d'Infanterie Interarmes"
+		location = 5008
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "24 Bataillon d'Infanterie Interarmes"
+		location = 5020
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "32 Bataillon d'Infanterie Interarmes"
+		location = 19
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "33 Bataillon d'Infanterie Interarmes"
+		location = 85
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "42 Bataillon d'Infanterie Interarmes"
+		location = 266
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "43 Bataillon d'Infanterie Interarmes"
+		location = 325
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "52 Bataillon d'Infanterie Interarmes"
+		location = 2015
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "53 Bataillon d'Infanterie Interarmes"
+		location = 5012
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "62 Bataillon d'Infanterie Interarmes"
+		location = 5012
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "63 Bataillon d'Infanterie Interarmes"
+		location = 5016
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "72 Bataillon d'Infanterie Interarmes"
+		location = 2996
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "73 Bataillon d'Infanterie Interarmes"
+		location = 5016
+		division_template = "Bataillon d'Infanterie Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "1 Compagnie d'opérations Spéciales"
+		location = 2276
+		division_template = "Compagnie d'opérations Spéciales"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "2 Compagnie d'opérations Spéciales"
+		location = 662
+		division_template = "Compagnie d'opérations Spéciales"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Gendarmerie Nationale"
+		location = 2487
+		division_template = "Gendarmerie Nationale"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Gendarmerie Nationale"
+		location = 5011
+		division_template = "Gendarmerie Nationale"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Gendarmerie Nationale"
+		location = 5020
+		division_template = "Gendarmerie Nationale"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Gendarmerie Nationale"
+		location = 5010
+		division_template = "Gendarmerie Nationale"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Gendarmerie Nationale"
+		location = 1570
+		division_template = "Gendarmerie Nationale"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Gendarmerie Nationale"
+		location = 1381
+		division_template = "Gendarmerie Nationale"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Garde Nationale"
+		location = 2984
+		division_template = "Garde Nationale"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Garde Nationale"
+		location = 1381
+		division_template = "Garde Nationale"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Garde Nationale"
+		location = 662
+		division_template = "Garde Nationale"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Garde Nationale"
+		location = 2487
+		division_template = "Garde Nationale"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Garde Nationale"
+		location = 1570
+		division_template = "Garde Nationale"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Garde Nationale"
+		location = 2984
+		division_template = "Garde Nationale"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+
+}

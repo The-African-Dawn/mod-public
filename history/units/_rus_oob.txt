@@ -1,0 +1,24 @@
+
+division_template = {
+	name = "Garnizon Bazy"
+	is_locked = yes
+	regiments={
+		infantry={ x=0 y=0 }
+		infantry={ x=0 y=1 }
+		infantry={ x=0 y=2 }
+	}
+	support = {
+		manpads_support_unit={ x=0 y=0 }
+		atgm_support_unit ={ x=0 y=1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "Garnizon regiments"
+		location = 5044
+		division_template = "Garnizon Bazy"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}

@@ -1,0 +1,27 @@
+	
+state={
+	id=151
+	name="STATE_151"
+
+	history={
+		owner = GVN
+		add_core_of = GVN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 3
+			air_base = 2
+		}
+		victory_points = {
+			4901 50 
+		}
+	}
+
+	provinces={
+		4901 
+	}
+	manpower=5164282
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

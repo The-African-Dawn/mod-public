@@ -1,0 +1,138 @@
+mavritania_conflict_decision = {
+
+	mauritanie_time_of_change = {
+		icon = GFX_decision_time_of_change
+		days_mission_timeout = 725
+		is_good = no
+		fire_only_once = yes
+		allowed = { tag = MLL }
+		activation = { has_global_flag = Mauritanie_Tensions_Started}
+		available = { has_global_flag = Mauritanie_War_Inevitable}
+		timeout_effect = {	
+		add_stability = 0.1
+		clr_global_flag = Mauritanie_Tensions_Started
+		MLL = {news_event = {id = MLL.3}}
+		}
+		complete_effect = {
+			MLL = {
+				declare_war_on = {
+					target = MRV
+					type = annex_everything
+				}
+			}
+		MLL = {news_event = {id = MLL.4}}
+		clr_global_flag = Mauritanie_Tensions_Started 
+		}
+		ai_will_do = {factor = 0}
+	}
+	
+	mauritanie_time_of_change_mrv = {
+		icon = GFX_decision_time_of_change
+		days_mission_timeout = 725
+		is_good = no
+		fire_only_once = yes
+		allowed = { tag = MRV }
+		activation = { has_global_flag = Mauritanie_Tensions_Started}
+		available = { has_global_flag = Mauritanie_War_Inevitable}
+		timeout_effect = {	
+		add_stability = 0.1
+		clr_global_flag = Mauritanie_Tensions_Started
+		}
+		complete_effect = {
+		MLL = {
+				declare_war_on = {
+					target = MRV
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {factor = 0}
+	}
+	
+	mauritanie_war_has_come_decision = {
+		icon = GFX_decision_tdoa_french_influence
+		fire_only_once = yes
+		visible = {
+			check_variable = { global.mauritanie_stress_points > 99 }
+		}
+		complete_effect = { 
+			set_global_flag = Mauritanie_War_Inevitable
+		}
+		ai_will_do = {base = 2}
+
+	}
+	
+	mauritanie_increase_the_tension = {
+		icon = GFX_decision_increasing_tension
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+		}
+		days_remove = 60
+		remove_effect = { 
+			add_political_power = 50
+			add_stability = -0.005
+		}
+		complete_effect = { 
+		
+			add_to_variable = {
+				var = global.mauritanie_stress_points
+				value = 15
+			}
+			clamp_variable = {
+				var = global.mauritanie_stress_points
+				min = 0
+				max = 100
+			}
+
+		}
+		ai_will_do = {
+			base = 2
+			modifier = {
+				add = 999
+				check_variable = {
+					global.mauritanie_stress_points < 60
+				}
+			}
+		}
+		cost = 35
+	}
+	mauritanie_decrease_the_tension = {
+		icon = GFX_decision_decreasing_tension
+		fire_only_once = no
+		#days_re_enable = 10
+		visible = {
+			
+		}
+		days_remove = 60
+		remove_effect = { 
+
+					add_political_power = 25
+			add_stability = 0.01
+		}
+		complete_effect = { 
+			
+			subtract_from_variable = {
+				var = global.mauritanie_stress_points
+				value = 10
+			}
+			clamp_variable = {
+				var = global.mauritanie_stress_points
+				min = 0
+				max = 100
+			}
+
+		}
+		ai_will_do = {
+			base = 2
+			modifier = {
+				add = 999
+				check_variable = {
+					global.mauritanie_stress_points > 60
+				}
+			}
+		}
+		cost = 45
+	}
+
+}

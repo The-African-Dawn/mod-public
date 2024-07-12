@@ -1,0 +1,26 @@
+
+state={
+	id=24
+	name="STATE_24"
+
+	history={
+		owner = BLK
+		add_core_of = CRR
+		add_core_of = BLK
+		buildings = {
+			infrastructure = 1
+		}
+		CRR = {
+			set_province_controller = 105
+			set_province_controller = 1231
+			
+		}
+	}
+	state_category = rural
+	provinces={
+		105 1231 1337 3120 
+	}
+	manpower=56300
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=27
+	name="STATE_27"
+
+	history={
+		owner = BRK
+		add_core_of = BRK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			294 5 
+		}
+		victory_points = {
+			1437 10 
+		}
+		victory_points = {
+			1877 3 
+		}
+		victory_points = {
+			4837 1 
+		}
+		ISS = {
+			set_province_controller = 1877
+			set_province_controller = 4842
+
+		}
+
+	}
+
+	provinces={
+		294 557 1437 1877 2428 3030 4837 4838 4842 4847 4995 5041 5043 
+	}
+	manpower=2559399
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

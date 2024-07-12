@@ -1,0 +1,23 @@
+
+state={
+	id=189
+	name="STATE_189"
+
+	history={
+		owner = MRV
+		add_core_of = MRV
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+
+	provinces={
+		5047
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=15
+}

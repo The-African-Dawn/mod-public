@@ -1,0 +1,43 @@
+capital = 71
+set_technology = {
+	Rifle_pizods = 1
+		AK_tech = 1
+}
+set_convoys = 3
+
+declare_war_on = {
+	target = MLL
+	type = annex_everything
+}
+declare_war_on = {
+	target = AZW
+	type = annex_everything
+}
+
+set_oob = "JNA_oob"
+starting_train_buffer = 5
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+set_research_slots = 2
+set_stability = -0.93
+set_war_support = -0.67
+
+add_ideas = {
+extensive_conscription_fun
+war_economy_fun
+}
+
+set_politics = {
+	ruling_party = fundamentalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+recruit_character = JNA_Iyad_Ag_Ghali
+
+set_popularities = {
+	fundamentalism = 100
+}
+

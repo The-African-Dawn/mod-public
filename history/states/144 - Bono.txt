@@ -1,0 +1,34 @@
+
+state={
+	id=144
+	name="STATE_144"
+	resources={
+		tungsten = 14
+		aluminium = 8 
+	}
+	history={
+		owner = GNN
+		add_core_of = GNN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			4890 10 
+		}		
+		victory_points = {
+			4887 15 
+		}
+		
+	}
+
+	provinces={
+		890 4783 4789 4887 4888 4889 4890 4891 
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

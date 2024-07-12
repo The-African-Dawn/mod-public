@@ -1,0 +1,30 @@
+
+state={
+	id=98
+	name="STATE_98"
+	resources={
+		steel=1
+		tungsten = 4
+	}
+	history={
+		owner = BRK
+		add_core_of = BRK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+		}
+		victory_points = {
+			4846 30
+		}
+		set_variable = { amount_of_gold = 0.19 }
+	}
+	state_category = metropolis
+	provinces={
+		4846 
+	}
+	manpower=2684390
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

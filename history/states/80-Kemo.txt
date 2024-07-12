@@ -1,0 +1,24 @@
+
+state={
+	id=80
+	name="STATE_80"
+
+	history={
+		owner = CRR
+		add_core_of = CRR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			424 2
+		}
+	}
+	state_category = rural
+	provinces={
+		424 1130 3166 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

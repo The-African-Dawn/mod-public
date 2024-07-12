@@ -1,0 +1,42 @@
+characters = {
+
+	AZW_Bilyal_ag_Asherif = {
+		name = AZW_Bilyal_ag_Asherif
+		portraits = {
+			civilian = { large = "gfx/leaders/AZW/Bilyal_ag_Asherif.dds" }
+	    }
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	AZW_Hasan_ag_Fagga = {
+		name = AZW_Hasan_ag_Fagga
+		portraits = {
+			army = { large = "gfx/leaders/AZW/Hasan_ag_Fagga.dds" small="gfx/leaders/AZW/Hasan_ag_Fagga_advisor.dds" }
+	    }
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AZW_Hasan_ag_Fagga
+			ledger = army
+			allowed = {
+				original_tag = AZW
+			}
+			traits = {
+				army_chief_morale_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

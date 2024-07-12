@@ -1,0 +1,178 @@
+corpus_training_decision = {
+	corpus_training_their_soldiers = {
+		icon = GFX_decision_corpus_chevron
+		fire_only_once = no
+		days_remove = 180
+		complete_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_org
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_org
+				max = 0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	corpus_analysing_the_tactics = {
+		icon = GFX_decision_corpus_chevron
+		fire_only_once = no
+		days_remove = 180
+		complete_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_max_planning
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_max_planning
+				max = 0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	corpus_ukrainian_experience = {
+		icon = GFX_decision_corpus_chevron
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			RUS = { has_completed_focus = RUS_our_immense_experience }
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_offence
+				value = 0.005
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_offence
+				max = 0.05
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+		}
+
+		complete_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_offence
+				value = 0.005
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_offence
+				max = 0.05
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	corpus_teaching_how_to_maintain_guns = {
+		icon = GFX_decision_corpus_chevron
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			#has_country_flag = corpus_teaching_how_to_maintain_guns_available
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_equipment_capture
+				value = -0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_equipment_capture
+				min = -0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_equipment_capture
+				value = -0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_equipment_capture
+				min = -0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	corpus_cooperative_missions = {
+		icon = GFX_decision_corpus_chevron
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			#has_country_flag = corpus_cooperative_missions_available
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_strength_factor
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_strength_factor
+				max = 0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_strength_factor
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_strength_factor
+				max = 0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	corpus_special_forces_training = {
+		icon = GFX_decision_corpus_chevron
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			has_completed_focus = RUS_brotherhood_of_lead
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_special_forces_cap
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_special_forces_cap
+				max = 0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.sahel_russian_training_special_forces_cap
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.sahel_russian_training_special_forces_cap
+				max = 0.1
+			}
+			custom_effect_tooltip = corpus_spirit_improvement
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	
+
+
+}

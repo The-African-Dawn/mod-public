@@ -1,0 +1,38 @@
+
+state={
+	id=57
+	name="STATE_57"
+
+	history={
+		victory_points = {
+			2478 5 
+		}
+		victory_points = {
+			2883 3 
+		}
+		victory_points = {
+			432 2 
+		}
+		victory_points = {
+			1411 1 
+		}
+		set_variable = { amount_of_uran = 0.50 } 			
+
+		owner = AZW
+		add_core_of = AZW
+		add_core_of = MLL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+
+	provinces={
+		303 432 737 810 1251 1411 1959 2012 2478 2836 2860 2883 4829 4830 
+	}
+	state_category = rural
+	manpower=65638
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

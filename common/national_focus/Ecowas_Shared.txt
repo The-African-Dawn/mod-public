@@ -1,0 +1,745 @@
+﻿joint_focus = {
+	id = ECOWAS_ecowas_cooperation
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	x = 1
+	y = 1
+	cost = 7.2
+	offset = {
+		x = 16
+		y = 7
+		trigger = {
+			has_focus_tree = NRG_initial_tree
+		}
+	}
+	available = {
+		if = {
+			limit = {
+				tag = NRG
+			}
+			is_in_faction = yes
+			OR = {
+				is_in_faction_with = LBR
+				is_in_faction_with = GNN
+				is_in_faction_with = TGG
+				is_in_faction_with = BNN
+			}
+		}
+		else = {
+			is_in_faction_with = NRG
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 1
+			is_historical_focus_on = yes
+		}
+	}
+	completion_reward = {
+		add_political_power = 50
+		set_global_flag = ECOWAS_choosing_major_started
+		unlock_decision_category_tooltip = ecomag_choosing_sides_decision
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_step_in_our_future
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_ecowas_cooperation
+	prerequisite = {
+		focus = ECOWAS_ecowas_cooperation
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_our_old_friend
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	mutually_exclusive = {
+		focus = ECOWAS_a_new_horizon
+	}
+	x = -1
+	y = 1
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_a_new_horizon
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	mutually_exclusive = {
+		focus = ECOWAS_our_old_friend
+	}
+	x = 1
+	y = 1
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_energy_autonomy
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = -3
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_food_security
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_energy_autonomy
+	prerequisite = {
+		focus = ECOWAS_energy_autonomy
+	}
+	x = -1
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_moroccan_ports
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = 3
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_togo_ports
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_moroccan_ports
+	prerequisite = {
+		focus = ECOWAS_moroccan_ports
+	}
+	x = 1
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_rage_against_the_colonialism
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = 9
+	y = 7
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_rage_against_the_colonialism
+	prerequisite = {
+		focus = ECOWAS_rage_against_the_colonialism
+	}
+	x = -2
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_fight_against_terrorism
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = 7
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_joint_forces_against_terrorism
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_fight_against_terrorism
+	prerequisite = {
+		focus = ECOWAS_fight_against_terrorism
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_raids_against_terrorism
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_joint_forces_against_terrorism
+	prerequisite = {
+		focus = ECOWAS_joint_forces_against_terrorism
+	}
+	x = -1
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_dynamics_of_the_global_south
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = 10
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_scientific_conference
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_dynamics_of_the_global_south
+	prerequisite = {
+		focus = ECOWAS_dynamics_of_the_global_south
+	}
+	x = 1
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_visa_war
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = -6
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_russian_partners
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_visa_war
+	prerequisite = {
+		focus = ECOWAS_visa_war
+	}
+	x = -1
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_chinese_investitions
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_visa_war
+	prerequisite = {
+		focus = ECOWAS_visa_war
+	}
+	x = 1
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_exiting_ecowas
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = 0
+	y = 3
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_fighting_the_sanctions
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_exiting_ecowas
+	prerequisite = {
+		focus = ECOWAS_exiting_ecowas
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_exiting_the_franc_zone
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_fighting_the_sanctions
+	prerequisite = {
+		focus = ECOWAS_fighting_the_sanctions
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_sahel_currency
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_exiting_the_franc_zone
+	prerequisite = {
+		focus = ECOWAS_exiting_the_franc_zone
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_agricultural_collaboration
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_step_in_our_future
+	prerequisite = {
+		focus = ECOWAS_step_in_our_future
+	}
+	x = -10
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_industrial_collaboration
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_agricultural_collaboration
+	prerequisite = {
+		focus = ECOWAS_agricultural_collaboration
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}
+
+joint_focus = {
+	id = ECOWAS_research_collaboration
+	icon = GFX_goal_ECOWAS_ecowas_cooperation
+	relative_position_id = ECOWAS_industrial_collaboration
+	prerequisite = {
+		focus = ECOWAS_industrial_collaboration
+	}
+	x = 1
+	y = 2
+	cost = 7.2
+	available = {
+		NORDIC_basic_available_trigger = yes
+		has_stability > 0.5
+		has_war_support > 0.25
+	}
+	joint_trigger = {
+		NORDIC_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		air_experience = 25
+		navy_experience = 25
+		army_experience = 25
+		add_command_power = 25
+		add_ideas = {
+			NORDIC_command_ns
+		}
+	}
+}

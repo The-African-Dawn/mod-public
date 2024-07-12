@@ -1,0 +1,17 @@
+
+animation = {
+	name = "bird_eagle_01_idle_flap_anim"
+	file = "bird_eagle_01_idle_flap.anim"
+}
+animation = {
+	name = "bird_eagle_01_idle_glide_anim"
+	file = "bird_eagle_01_idle_glide.anim"
+}
+animation = {
+	name = "eagle_01_frame_idle_2_anim"
+	file = "eagle_01_frame_idle_2.anim"
+}
+animation = {
+	name = "eagle_01_frame_idle_1_anim"
+	file = "eagle_01_frame_idle_1.anim"
+}

@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = TDOA_State_Info_Screen_Visible
+				add_to_array = { State_Info_top_tab_array = 1 }					
+				add_to_array = { State_Info_top_tab_array = 2 }
+				add_to_array = { State_Info_top_tab_array = 3 }
+				set_variable = { State_Info_Tab = 1 }
+				set_variable = { State_Info_Selected = 1 }
+			}
+		}
+	}
+}

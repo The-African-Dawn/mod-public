@@ -1,0 +1,12 @@
+defined_text = {
+	name = GetSupereventsRemark
+	
+	text = {
+		trigger = {
+			has_global_flag = SE_great_african_war
+		}
+		localization_key = SE_great_african_war_remark
+	}
+	
+	
+}

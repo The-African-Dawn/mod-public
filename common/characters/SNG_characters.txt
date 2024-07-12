@@ -1,0 +1,41 @@
+characters = {
+	SNG_Macky = {
+		name = SNG_Macky
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNG/Portrait_SNG_Maki_Sal.dds"
+			}
+			army = {
+				large = "gfx/leaders/SNG/Portrait_SNG_Maki_Sal.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	SNG_Bassirou_Diomaye_Faye = {
+		name = SNG_Bassirou_Diomaye_Faye
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNG/SNG_Bassirou_Diomaye_Faye.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	SNG_Amadou_Ba = {
+		name = SNG_Amadou_Ba
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNG/SNG_Amadou_Ba.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+}

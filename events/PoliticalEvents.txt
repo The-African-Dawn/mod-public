@@ -1,0 +1,70 @@
+﻿add_namespace = political
+country_event = {
+	id = political.31
+	title = political.31.t
+	desc = political.31.desc
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	option = {
+		name = political.31.a
+		add_to_array = {
+			array = global.orderCountries_1_RUS
+			value = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = political.32
+	title = political.31.t
+	desc = political.31.desc
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	option = {
+		name = political.31.a
+	}
+}
+
+news_event = {
+	id = political.33
+	title = political.31.t
+	desc = political.31.desc
+	picture = GFX_report_event_journalists_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = political.31.a
+		every_country = {
+			limit = {
+				is_in_faction_with = MLL
+				tag = MLL
+			}
+			FRN = {
+				declare_war_on = {
+					target = PREV
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = political.34
+	title = political.34.t
+	desc = political.34.desc
+	picture = GFX_news_36
+	is_triggered_only = yes
+	option = {
+		name = political.34.a
+		trigger = {
+			tag = FROM
+		}
+	}
+	option = {
+		name = political.34.b
+		trigger = {
+			NOT = { tag = FROM }
+		}
+	}
+}

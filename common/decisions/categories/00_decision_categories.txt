@@ -1,0 +1,429 @@
+
+civil_unrest_sng_category = {
+	icon = GFX_decision_category_military_operation
+	picture = GFX_decision_category_generic_arms_trade
+	priority = 1
+	
+	allowed = {
+		original_tag = SNG
+	}
+	visible = {
+
+	}	
+}
+
+mali_separatism_agreements = {
+	icon = GFX_decision_category_great_war_begins_category_sprite
+	priority = 1
+	
+	allowed = {
+		OR = {
+			tag = AZW
+			tag = MLL
+		}
+	}
+	visible = {
+		MLL = {
+			OR = {
+				has_war_with = AZW
+				has_war_with = JNA
+				has_war_with = ISS
+			}
+		}
+	}	
+}
+
+general_corruption_growth = {
+	priority = 2
+	icon = GFX_decision_category_corruption
+	picture = GFX_decision_category_general_corruption_growth_banner
+	allowed = {
+		NOT = {
+			tag = RUS
+			tag = FRN
+			tag = USR
+			tag = CHN
+		}
+	}
+	visible = {
+
+	}	
+}
+
+chad_war_with_resistance = {
+	priority = 5
+	icon = GFX_decision_category_chad_war_with_resistance_sprite
+	picture = GFX_decision_category_chad_insurgency_banner
+	allowed = {
+		tag = CHD
+	}
+	visible = {
+		NOT = { has_country_flag = CHD_finished_separatists has_war_with = FCT }
+		any_state = {
+			has_state_flag = chad_resistance_fact
+		}
+	}	
+}
+
+chad_first_free_and_fair_eletions = { # or not so free and fair
+	priority = 90
+	icon = GFX_decision_category_chad_first_free_and_fair_eletions_sprite
+	allowed = {
+		tag = CHD
+	}
+	visible = {
+		NOT = { has_country_flag = CHD_first_elections_complete }
+	}	
+}
+
+save_burkina_faso_education = {
+	icon = GFX_decision_category_burkina_education
+	picture = GFX_decision_category_pciture_burkina_education
+	priority = 1
+	
+	allowed = {
+		tag = BRK
+	}
+	visible = {
+		OR = {
+			has_idea = BRK_destroyed_education_system_6
+			has_idea = BRK_destroyed_education_system_5
+			has_idea = BRK_destroyed_education_system_4
+			has_idea = BRK_destroyed_education_system_3
+			has_idea = BRK_destroyed_education_system_2
+			has_idea = BRK_destroyed_education_system_1
+			has_idea = BRK_destroyed_education_system
+		}
+	}
+}
+
+burkina_faso_politics = {
+	icon = GFX_decision_category_burkina_education
+	priority = 100
+	
+	allowed = {
+		tag = BRK
+	}
+	visible = {
+	}
+}
+
+general_army_purposes = {
+	icon = GFX_decision_category_general_army_purposes
+	priority = 5
+	
+	allowed = {
+		NOT = {
+			OR = {
+				tag = FRN
+				tag = RUS
+				tag = USA
+			}
+		}
+	}
+	visible = {
+	}	
+}
+
+general_outer_politics = {
+	icon = GFX_decision_category_military_operation
+	priority = 10
+	
+	allowed = {
+	}
+	visible = {
+	}	
+}
+
+
+ecomag_choosing_sides_decision = {
+	scripted_gui = Ecowas_Choosing_Side_GUI
+	icon = GFX_decision_category_ecomag_choosing_decision_icon
+	picture = GFX_african_ecowas_influence_choice
+	priority = 1
+	visible_when_empty = yes
+	allowed = {
+				#OR = {
+				#tag = FRN
+				#tag = USR
+				#tag = NRG
+				#is_in_faction_with = NRG
+				#}
+	}
+	visible = {
+			OR = {
+				tag = FRN
+				tag = USR
+				tag = NRG
+				is_in_faction_with = NRG
+				}
+				
+	}
+	
+}
+
+
+exclusive_contract_decision = {
+	icon = GFX_decision_category_exclusive_contract
+	picture = GFX_exclusive_contract_decision
+	priority = 1
+	visible_when_empty = yes
+	allowed = {
+		NOT = {
+			OR = {
+				tag = FRN
+				tag = USR
+				tag = RUS
+				tag = CHN
+			}
+		}
+	}
+	
+}
+
+mavritania_conflict_decision = {
+	scripted_gui = Mauritanie_Tensions_GUI
+	icon = GFX_decision_category_mavritania_conflict_icon
+	picture = GFX_decision_category_mavritania_conflict
+	priority = 2
+	
+	allowed = {
+		OR = {
+			tag = MLL
+			tag = MRV
+		}
+	}
+	visible = {
+		has_global_flag = Mauritanie_Tensions_Started
+	}
+
+}
+
+ecowas_unity_decision = {
+	scripted_gui = Ecowas_Unity_GUI
+	icon = GFX_decision_category_ecowas_unity_decision_sprite
+	picture = GFX_decision_category_ecowas_unity_decision_banner
+	priority = 1
+	visible_when_empty = yes
+	allowed = {
+				OR = {
+				tag = FRN
+				tag = USR
+				tag = NRG
+				is_in_faction_with = NRG
+			}
+	}
+	visible = {
+		AND = {
+				OR = {
+				tag = FRN
+				tag = USR
+				tag = NRG
+				is_in_faction_with = NRG
+			}
+			#has_global_flag = ecowas_unity_restoration_starts
+		}
+	}
+	
+}
+
+nigerian_corruption_decision = {
+	scripted_gui = Nigerian_Corruption_GUI
+	icon = GFX_decision_category_nigerian_corruption_decision_sprite
+	picture = GFX_decision_category_nigerian_corruption_decision_banner
+	visible_when_empty = yes
+	priority = 100
+	
+	allowed = {
+		tag = NRG
+	}
+	visible = {
+		has_country_flag = Nigerian_Corruption_Started
+	}
+}
+
+saharan_conflict_decision = {
+	scripted_gui = Saharan_Conflict_GUI
+	icon = GFX_decision_category_saharan_conflict_decision_sprite
+	picture = GFX_decision_category_saharan_conflict_decision_banner
+	priority = 1
+	
+	allowed = {
+		OR = {
+			tag = WSR
+			tag = MRK
+		}
+	}
+	visible = {
+		has_global_flag = Saharan_Tensions_Started
+	}
+	
+}
+
+corpus_training_decision = {
+	scripted_gui = Corpus_Training_GUI
+	icon = GFX_decision_category_corpus_training_decision_sprite
+	picture = GFX_decision_category_corpus_training_decision_banner
+	priority = 1
+	
+	allowed = {
+		tag = RUS
+	}
+	visible = {
+		
+	}
+	
+}
+
+berets_training_decision = {
+	scripted_gui = Berets_Training_GUI
+	icon = GFX_decision_category_berets_training_decision_sprite
+	picture = GFX_decision_category_berets_training_decision_banner
+	priority = 1
+	
+	allowed = {
+		tag = FRN
+	}
+	visible = {
+		
+	}
+	
+}
+
+antiterror_tactics_decision_category = {
+	icon = GFX_decision_category_antiterror_tactics_decision_category_sprite
+	picture = GFX_decision_category_antiterror_tactics_decision_category_banner
+	priority = 1
+	
+	allowed = {
+		OR = {
+			tag = BRK
+			tag = MLL
+			tag = CHD
+			tag = NIG
+			tag = NRG
+		}
+	}
+	visible = {
+		has_dynamic_modifier = { modifier = AFR_antiterror_experience scope = ROOT }
+	}
+	
+}
+
+tug_of_war_gvinea_category = {
+	scripted_gui = Tug_Of_War_Gvinea_GUI
+	icon = GFX_decision_category_tug_of_war_gvinea_category_sprite
+	#picture = GFX_decision_category_tug_of_war_gvinea_category_banner
+	priority = 99
+	
+	allowed = {
+		AND = {
+			NOT = { tag = GBI }
+			NOT = { tag = SNG }
+			OR = {
+				tag = GVN
+				tag = BRK
+				tag = MLL
+				tag = NIG
+				tag = CHD
+				is_in_faction_with = NRG
+				is_in_faction_with = BRK
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	visible = {
+	has_global_flag = gvinea_political_conflict_started	
+	NOT = { has_global_flag = senegal_political_conflict_ended }	
+	}
+	
+}
+
+tug_of_war_senegal_category = {
+	scripted_gui = Tug_Of_War_Senegal_GUI
+	icon = GFX_decision_category_tug_of_war_senegal_category_sprite
+	#picture = GFX_decision_category_tug_of_war_gvinea_category_banner
+	priority = 99
+	
+	allowed = {
+		AND = {
+			NOT = { tag = GBI }
+			NOT = { tag = GVN }
+			OR = {
+				tag = SNG
+				tag = BRK
+				tag = MLL
+				tag = NIG
+				tag = CHD
+				is_in_faction_with = NRG
+				is_in_faction_with = BRK
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	visible = {
+	has_global_flag = senegal_political_conflict_started	
+	NOT = { has_global_flag = senegal_political_conflict_ended }
+	}
+	
+}
+
+tug_of_war_bisau_category = {
+	scripted_gui = Tug_Of_War_Bisau_GUI
+	icon = GFX_decision_category_tug_of_war_bisau_category_sprite
+	#picture = GFX_decision_category_tug_of_war_gvinea_category_banner
+	priority = 99
+	
+	allowed = {
+		AND = {
+			NOT = { tag = SNG }
+			NOT = { tag = GVN }
+			OR = {
+				tag = GBI
+				tag = BRK
+				tag = MLL
+				tag = NIG
+				tag = CHD
+				is_in_faction_with = NRG
+				is_in_faction_with = BRK
+				is_in_faction_with = MLL
+			}
+		}
+	}
+	visible = {
+	has_global_flag = bisau_political_conflict_started	
+	NOT = { has_global_flag = bisau_political_conflict_ended }	
+	}
+	
+}
+
+great_war_begins_category = {
+	#scripted_gui = Tug_Of_War_Senegal_GUI
+	icon = GFX_decision_category_great_war_begins_category_sprite
+	picture = GFX_decision_category_great_war_begins_category_banner
+	priority = 100
+	
+	allowed = {
+		OR = {
+			tag = NRG
+			tag = MLL
+			tag = BRK
+		}
+	}
+	visible = {
+		date > 2027.1.1 
+	}
+	
+}
+
+battle_for_africa_decision = {
+	scripted_gui = battle_for_afrika
+	icon = GFX_decision_category_battle_for_africa_decision_category_sprite
+	priority = 1000
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+	}
+	
+}

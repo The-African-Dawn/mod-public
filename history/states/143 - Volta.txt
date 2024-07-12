@@ -1,0 +1,32 @@
+
+state={
+	id=143
+	name="STATE_143"
+	resources={
+		steel=20
+		aluminium = 9 
+		oil = 11
+	}
+	history={
+		owner = GNN
+		add_core_of = GNN
+		buildings = {
+			air_base=1
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			3147 7
+		}
+	}
+
+	provinces={
+		793 1382 2394 3147 
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

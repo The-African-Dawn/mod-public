@@ -1,0 +1,76 @@
+
+entity = {
+	name = "bird_eagle_01_entity"
+	pdxmesh = "bird_eagle_01_mesh"
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle_flap_animation"
+		chance = 1
+		looping = no
+		next_state = idle
+		animation_blend_time = 0.0
+	}
+	state = {
+		name = "idle"
+		animation = "idle_glide_animation"
+		chance = 5
+		looping = no
+		next_state = idle
+		animation_blend_time = 0.0
+	}
+
+}
+
+entity = {
+	name = "eagle_01_frame_entity"
+	pdxmesh = "eagle_01_frame_mesh"
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle_1_animation"
+		chance = 5
+		looping = no
+		next_state = idle
+	}
+	state = {
+		name = "idle"
+		animation = "idle_2_animation"
+		chance = 5
+		looping = no
+		next_state = idle
+	}
+
+	attach = { eagle_01 = bird_eagle_01_entity }
+
+}
+
+entity = {
+	name = "hippo_01_entity"
+	pdxmesh = "hippo_01_mesh"
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle_1_anim"
+		event = { trigger_once = yes sound = { soundeffect = "hippo_idle" } }
+		looping = yes
+		animation_blend_time = 0.0
+	}
+}
+
+entity = {
+	name = "croc_entity"
+	pdxmesh = "croc_mesh"
+
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle_1_anim"
+		looping = yes
+		animation_blend_time = 0.0
+	}
+}
+

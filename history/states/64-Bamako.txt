@@ -1,0 +1,39 @@
+
+state={
+	id=64
+	name="STATE_64"
+
+	history={
+		owner = MLL
+		add_core_of = MLL
+		victory_points = {
+			1656 50 
+		}
+		victory_points = {
+			68 2 
+		}
+		victory_points = {
+			2549 3 
+		}
+		
+		JNA = {
+			set_province_controller = 68
+
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+
+	}
+
+	provinces={
+		68 90 922 1029 1656 1822 2409 2456 2468 2549 2951 4992 4993 4994 
+	}
+	manpower=4227411
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

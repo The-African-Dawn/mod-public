@@ -1,0 +1,40 @@
+﻿add_namespace = superevents
+
+country_event = { #test event
+	id = superevents.0
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_test
+	}
+
+	hidden = yes
+	
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = superevents.0.a
+	}
+}
+
+country_event = {
+	id = superevents.001
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_great_african_war
+		play_song = great_african_war
+	}
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = yes
+	option = {
+		name = superevents.0.a
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=82
+	name="STATE_82"
+
+	history={
+		owner = BLK
+		add_core_of = CRR
+		add_core_of = BLK
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1183 1
+		}
+	}
+	state_category = rural
+	provinces={
+		49 1183 2443 3100 3106 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

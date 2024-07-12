@@ -1,0 +1,5 @@
+
+animation = {
+	name = "hippo_idle_anim"
+	file = "hippo_idle.anim"
+}

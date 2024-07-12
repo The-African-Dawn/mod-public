@@ -1,0 +1,15 @@
+
+animation = {
+	name = "aml90_attack_animation"
+	file = "aml90_attack.anim"
+}
+
+animation = {
+	name = "aml90_idle_animation"
+	file = "aml90_idle.anim"
+}
+
+animation = {
+	name = "aml90_move_animation"
+	file = "aml90_move.anim"
+}

@@ -1,0 +1,168 @@
+berets_training_decision = {
+	berets_training_their_soldiers = {
+		icon = GFX_decision_green_berets
+		fire_only_once = no
+		days_remove = 180
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_org
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_org
+				max = 0.1
+			}
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	berets_analysing_the_tactics = {
+		icon = GFX_decision_green_berets
+		fire_only_once = no
+		days_remove = 180
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_max_planning
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_max_planning
+				max = 0.1
+			}
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	berets_ukrainian_experience = {
+		icon = GFX_decision_green_berets
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			has_completed_focus = FRN_exchanging_experience
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_offence
+				value = 0.005
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_offence
+				max = 0.05
+			}
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_offence
+				value = 0.005
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_offence
+				max = 0.05
+			}
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	berets_teaching_how_to_maintain_guns = {
+		icon = GFX_decision_green_berets
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			has_completed_focus = FRN_expand_the_training_program
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_equipment_capture
+				value = -0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_equipment_capture
+				min = -0.1
+			}
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_equipment_capture
+				value = -0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_equipment_capture
+				min = -0.1
+			}
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	berets_special_forces_training = {
+		icon = GFX_decision_green_berets
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			has_completed_focus = FRN_hand_of_foreign_legion
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_special_forces_cap
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_special_forces_cap
+				max = 0.1
+			}
+			add_command_power = 10
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_special_forces_cap
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_special_forces_cap
+				max = 0.1
+			}
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+	berets_cooperative_missions = {
+		icon = GFX_decision_green_berets
+		fire_only_once = no
+		days_remove = 180
+		available = {
+			has_completed_focus = FRN_righteous_hammer
+		}
+		remove_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_strength_factor
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_strength_factor
+				max = 0.1
+			}
+			add_command_power = 10
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = global.ecowas_french_training_strength_factor
+				value = 0.01
+			}
+			clamp_variable = {
+				var = global.ecowas_french_training_strength_factor
+				max = 0.1
+			}
+			add_command_power = 10
+		}
+		ai_will_do = {base = 100}
+		cost = 50
+	}
+
+	
+
+
+}

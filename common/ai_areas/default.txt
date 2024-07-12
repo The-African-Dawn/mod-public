@@ -1,0 +1,7 @@
+areas = {
+	africa = {
+		continents = {
+			africa
+		}
+	}
+}

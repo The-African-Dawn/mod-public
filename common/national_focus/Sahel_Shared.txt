@@ -1,0 +1,574 @@
+﻿joint_focus = {
+	id = SAHEL_sahel_cooperation
+	icon = GFX_goal_BRK_united_front
+	x = 1
+	y = 1
+	cost = 1.5
+	offset = {
+		x = 67
+		y = -1
+		trigger = {
+			has_focus_tree = BRK_initial_tree
+		}
+	}
+	offset = {
+		x = 41
+		y = -1
+		trigger = {
+			has_focus_tree = MLL_initial_tree
+		}
+	}
+	offset = {
+		x = 58
+		y = -1
+		trigger = {
+			has_focus_tree = NIG_initial_tree
+		}
+	}
+	available = {
+		OR = {
+			BRK = { NOT = { has_completed_focus = BRK_united_front has_government = panafricanism } }
+			date > 2023.10.30
+		}
+		NIG = {
+			has_country_leader = {
+				character = NIG_Abdourahamane_Tchiani
+				ruling_only = yes
+			}
+		}
+	}
+	bypass = {
+		if = {
+			limit = {
+				tag = BRK
+			}
+			is_in_faction = yes
+			OR = {
+				is_in_faction_with = MLL
+				is_in_faction_with = NIG
+				is_in_faction_with = MRV
+				is_in_faction_with = CHD
+			}
+		}
+		else = {
+			is_in_faction_with = BRK
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 1
+			is_historical_focus_on = yes
+		}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = { 
+					is_in_faction_with MLL
+				}
+			}
+			create_faction = AGS
+			MLL = { add_to_faction = NIG }
+		}
+	}
+}
+
+joint_focus = {
+	id = SAHEL_energy_autonomy
+	icon = GFX_goal_SAHEL_energy_autonomy
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	available = {
+		NOT = {
+			has_war_with = NRG
+		}
+	}
+	bypass = {
+		has_war_with = NRG
+	}
+	x = -3
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		set_country_flag = SAHEL_energy_autonomy_done
+		custom_effect_tooltip = SAHEL_on_war_with_ECOWAS
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = SAHEL_energy_autonomy_idea
+				days = 180
+			}
+		}
+	}
+}
+
+joint_focus = {
+	id = SAHEL_food_security
+	icon = GFX_goal_SAHEL_fighting_the_sanctions
+	relative_position_id = SAHEL_energy_autonomy
+	prerequisite = {
+		focus = SAHEL_energy_autonomy
+	}
+	available = {
+		NOT = {
+			has_war_with = NRG
+		}
+	}
+	bypass = {
+		has_war_with = NRG
+	}
+	x = -1
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		set_country_flag = SAHEL_food_security_done
+		custom_effect_tooltip = SAHEL_on_war_with_ECOWAS
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = SAHEL_food_security_idea
+				days = 180
+			}
+		}
+	}
+}
+
+joint_focus = {
+	id = SAHEL_moroccan_ports
+	icon = GFX_goal_SAHEL_moroccan_ports
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	x = 3
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+		NOT = { has_war_with = MRK }
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward_joint_originator = {
+		MRK = { country_event = { id = sahel.3 days = 1 } }
+	}
+	completion_reward = {
+		custom_effect_tooltip = if_they_agree
+		show_ideas_tooltip = SAHEL_morocco_atlantic_initiative
+	}
+}
+
+joint_focus = {
+	id = SAHEL_togo_ports
+	icon = GFX_goal_SAHEL_togo_ports
+	relative_position_id = SAHEL_moroccan_ports
+	prerequisite = {
+		focus = SAHEL_moroccan_ports
+	}
+	x = 1
+	y = 2
+	cost = 4.3
+	available = {
+		SAHEL_basic_available_trigger = yes
+		NOT = { has_war_with = TGG }
+	}
+	completion_reward_joint_originator = {
+		TGG = { country_event = { id = sahel.5 days = 1 } }
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		custom_effect_tooltip = if_they_agree_2
+		show_ideas_tooltip = SAHEL_togo_ports
+	}
+}
+
+joint_focus = {
+	id = SAHEL_rage_against_the_colonialism
+	icon = GFX_goal_SAHEL_rage_against_the_colonialism
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	x = 9
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		add_ideas = SAHEL_range_against_neocolonialists
+	}
+}
+
+joint_focus = {
+	id = SAHEL_fight_against_terrorism
+	icon = GFX_goal_SAHEL_fight_against_terrorism
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	available = {
+		OR = {
+			has_war_with = BHK
+			has_war_with = ISS
+		}
+	}
+	x = 7
+	y = 3
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		add_ideas = SAHEL_anti_terror
+	}
+}
+
+
+joint_focus = {
+	id = SAHEL_dynamics_of_the_global_south
+	icon = GFX_goal_SAHEL_dynamics_of_the_global_south
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	x = 11
+	y = 3
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward_joint_originator = {
+		news_event = sahel.7
+	}
+	completion_reward = {
+		add_command_power = 25
+		add_political_power = 100
+		add_stability = 0.035
+	}
+}
+
+joint_focus = {
+	id = SAHEL_visa_war
+	icon = GFX_goal_SAHEL_visa_war
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	bypass = {
+		has_war_with = NRG
+	}
+	available = {
+		NOT = { has_war_with = NRG }
+	}
+	x = -6
+	y = 3
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward_joint_originator = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+
+joint_focus = {
+	id = SAHEL_russian_partners
+	icon = GFX_goal_SAHEL_russian_partners
+	relative_position_id = SAHEL_visa_war
+	prerequisite = {
+		focus = SAHEL_visa_war
+	}
+	x = -1
+	y = 3
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		add_to_variable = { african_russian_favors = 2 }
+		custom_effect_tooltip = african_russian_favors_2_tt
+	}
+}
+
+joint_focus = {
+	id = SAHEL_chinese_investitions
+	icon = GFX_goal_SAHEL_chinese_investitions
+	relative_position_id = SAHEL_visa_war
+	prerequisite = {
+		focus = SAHEL_visa_war
+	}
+	x = 1
+	y = 3
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		add_to_variable = { african_chinese_favors = 2 }
+		custom_effect_tooltip = african_chinese_favors_2_tt
+	}
+}
+
+joint_focus = {
+	id = SAHEL_exiting_ecowas
+	icon = GFX_goal_SAHEL_exiting_ecowas
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_sahel_cooperation
+	}
+	x = 0
+	y = 1
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	bypass = {
+		has_war_with = NRG
+	}
+	completion_reward_joint_originator = {
+		news_event = sahel.1
+	}
+	completion_reward = {
+		add_ideas = SAHEL_exited_ecowas
+	}
+}
+
+joint_focus = {
+	id = SAHEL_exiting_the_franc_zone
+	icon = GFX_goal_SAHEL_exiting_the_franc_zone
+	relative_position_id = SAHEL_sahel_confederation
+	prerequisite = {
+		focus = SAHEL_sahel_confederation
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = NIG
+					AND = {
+						tag = BRK
+						is_in_faction_with = MLL
+					}
+				}
+			}
+			add_ideas = SAHEL_exited_franc_zone
+			else = {
+				custom_effect_tooltip = SAHEL_all_countries_in_confederation
+				show_ideas_tooltip = SAHEL_exited_franc_zone
+			}
+		}
+		add_political_power = 50
+	}
+}
+
+joint_focus = {
+	id = SAHEL_sahel_currency
+	icon = GFX_goal_SAHEL_sahel_currency
+	relative_position_id = SAHEL_exiting_the_franc_zone
+	prerequisite = {
+		focus = SAHEL_exiting_the_franc_zone
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = NIG
+					AND = {
+						tag = BRK
+						is_in_faction_with = MLL
+					}
+				}
+			}
+			add_ideas = SAHEL_exited_franc_zone
+			swap_ideas = {
+				add_idea = SAHEL_sahel_own_currency
+				remove_idea = SAHEL_exited_franc_zone
+			}
+			else = {
+				custom_effect_tooltip = SAHEL_all_countries_in_confederation
+				swap_ideas = {
+					add_idea = SAHEL_sahel_own_currency
+					remove_idea = SAHEL_exited_franc_zone
+				}
+			}
+		}
+		add_political_power = 100
+	}
+}
+
+joint_focus = {
+	id = SAHEL_sahel_confederation
+	icon = GFX_goal_SAHEL_sahel_confederation
+	relative_position_id = SAHEL_exiting_ecowas
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward_joint_originator = {
+		news_event = sahel.2
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = NIG
+					AND = {
+						tag = BRK
+						is_in_faction_with = MLL
+					}
+				}
+			}
+			add_ideas = SAHEL_confederation
+			else = {
+				custom_effect_tooltip = SAHEL_all_countries_in_confederation
+				show_ideas_tooltip = SAHEL_confederation
+			}
+		}
+		add_stability = 0.05
+	}
+}
+
+joint_focus = {
+	id = SAHEL_agricultural_collaboration
+	icon = GFX_goal_SAHEL_agricultural_collaboration
+	relative_position_id = SAHEL_sahel_cooperation
+	prerequisite = {
+		focus = SAHEL_exiting_ecowas
+	}
+	x = -10
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		add_ideas = SAHEL_agriculture_cooperation
+	}
+}
+
+joint_focus = {
+	id = SAHEL_industrial_collaboration
+	icon = GFX_goal_SAHEL_industrial_collaboration
+	relative_position_id = SAHEL_agricultural_collaboration
+	prerequisite = {
+		focus = SAHEL_agricultural_collaboration
+	}
+	x = 0
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward = {
+		add_ideas = SAHEL_industrial_cooperation
+	}
+}
+
+joint_focus = {
+	id = SAHEL_research_collaboration
+	icon = GFX_goal_SAHEL_research_collaboration
+	relative_position_id = SAHEL_industrial_collaboration
+	prerequisite = {
+		focus = SAHEL_industrial_collaboration
+	}
+	x = 1
+	y = 2
+	cost = 7.2
+	available = {
+		SAHEL_basic_available_trigger = yes
+	}
+	joint_trigger = {
+		SAHEL_basic_joint_trigger = yes
+	}
+	completion_reward_joint_originator = {
+		add_research_slot = 1
+	}
+	completion_reward = {
+		add_to_tech_sharing_group = sahel_research
+	}
+}

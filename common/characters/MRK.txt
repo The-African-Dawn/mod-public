@@ -1,0 +1,14 @@
+characters = {
+	MRK_Aziz_Ahannush = {
+		name = MRK_Aziz_Ahannush
+		portraits = {
+			civilian = { large = "gfx/leaders/MRK/Portrait_MRK_Aziz_Ahannush.dds" }
+			army = { large = "gfx/leaders/MRK/Portrait_MRK_Aziz_Ahannush.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+
+}

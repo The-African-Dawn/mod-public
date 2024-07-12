@@ -1,0 +1,24 @@
+music = {
+	name = "This_Is_Africa"
+	file = "This_Is_Africa.ogg"
+}
+
+music = {
+	name = "African"
+	file = "African.ogg"
+}
+
+music = {
+	name = "Africa"
+	file = "Africa.ogg"
+}
+
+music = {
+	name = "Safari"
+	file = "Safari.ogg"
+}
+
+music = {
+	name = "percussion"
+	file = "percussion.ogg"
+}

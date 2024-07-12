@@ -1,0 +1,30 @@
+
+state={
+	id=15
+	name="STATE_15"
+
+	history={
+		owner = KOT
+		add_core_of = KOT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			915 15 
+		}
+		victory_points = {
+			395 5 
+		}
+		
+	}
+
+	provinces={
+		395 749 915 3133 3141 3146 
+	}
+	manpower=4634545
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

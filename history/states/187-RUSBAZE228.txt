@@ -1,0 +1,21 @@
+
+state={
+	id=187
+	name="STATE_187"
+
+	history={
+		owner = BRK
+		add_core_of = BRK
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		5042
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=15
+}

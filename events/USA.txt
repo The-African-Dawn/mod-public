@@ -1,0 +1,462 @@
+
+add_namespace = USR
+	
+news_event = { 
+	id = USR.1
+	title = USR.1.t
+	desc = USR.1.desc
+	picture = GFX_USA_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = USR.1.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = { 
+		name = USR.1.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = { 
+		name = USR.1.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = { 
+		name = USR.1.d
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = pragmatism_sub
+		}
+	}
+	option = { 
+		name = USR.1.f
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = rus_pragmatism_sub
+		}
+	}
+	option = { 
+		name = USR.1.g
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = usa_pragmatism_sub
+		}
+	}
+}
+
+country_event = { 
+	id = USR.2
+	title = USR.2.t
+	desc = USR.2.desc
+	
+	picture = GFX_USA_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.2.a
+		add_political_power = 15
+		ai_chance = { factor = 5 }
+	}
+}
+
+
+country_event = { 
+	id = USR.3
+	title = USR.3.t
+	desc = USR.3.desc
+	
+	picture = GFX_USA_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.3.a
+		add_ideas = volunteer_only_mjr
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.4
+	title = USR.4.t
+	desc = USR.4.desc
+	
+	picture = GFX_USA_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.4.a
+		division_template={
+			name = "Armored Battalion"
+			support={
+				mot_recon={ x=0 y=0 }
+				atgm_support_unit={ x=0 y=1 }
+				signal_company={ x=0 y=2 }
+				maintenance_company={ x=0 y=3 }
+				field_hospital={ x=0 y=4 }
+			}
+			regiments={
+				medium_armor_unit={ x=0 y=0 }
+				medium_armor_unit={ x=0 y=1 }
+				medium_armor_unit={ x=0 y=2 }
+				medium_armor_unit={ x=0 y=3 }
+				medium_armor_unit={ x=1 y=0 }
+				infantry_on_bmp={ x=2 y=0 }
+				infantry_on_bmp={ x=2 y=1 }
+				infantry_on_bmp={ x=2 y=2 }
+				infantry_on_bmp={ x=3 y=0 }
+			}
+		}
+		43 = {
+			create_unit = {
+				division = "name = \"1st Armored Battalion of 1st Armored Brigade\" division_template = \"Armored Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.45"
+				owner = USR
+			}
+			create_unit = {
+				division = "name = \"2nd Armored Battalion of 1st Armored Brigade\" division_template = \"Armored Battalion\" start_experience_factor = 0.2 start_equipment_factor = 0.45"
+				owner = USR
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.5
+	title = USR.5.t
+	desc = USR.5.desc
+	
+	picture = GFX_USA_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.5.a
+		division_template={
+			name = "Delta Force"
+			support={
+				atgm_support_unit={ x=0 y=0 }
+				signal_company={ x=0 y=1 }
+				field_hospital={ x=0 y=2 }
+				mot_recon={ x=0 y=3 }
+			}
+			regiments={
+				speznaz={ x=0 y=0 }
+				speznaz={ x=0 y=1 }
+				speznaz={ x=1 y=0 }
+				speznaz={ x=1 y=1 }
+			}
+		}
+		47 = {
+			create_unit = {
+				division = "name = \"Delta Force\" division_template = \"Delta Force\" start_experience_factor = 1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.6
+	title = USR.6.t
+	desc = USR.6.desc
+	
+	picture = GFX_USA_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.6.a
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					tag = BNN
+					tag = MRV
+					tag = KOT
+				}
+			}
+			add_ideas = USR_american_support_in_africa
+		}
+		add_political_power = 75
+		ai_chance = { factor = 5 }
+	}
+}
+
+news_event = { 
+	id = USR.7
+	title = USR.7.t
+	desc = USR.7.desc
+	picture = GFX_USA_7
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = USR.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = { 
+		name = USR.7.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = { 
+		name = USR.7.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = { 
+		name = USR.7.d
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = pragmatism_sub
+		}
+	}
+	option = { 
+		name = USR.7.f
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = rus_pragmatism_sub
+		}
+	}
+	option = { 
+		name = USR.7.g
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = usa_pragmatism_sub
+		}
+	}
+}
+
+country_event = { 
+	id = USR.8
+	title = USR.8.t
+	desc = USR.8.desc
+	
+	picture = GFX_USA_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.8.a
+		every_country = {
+			limit = {
+				OR = {
+					tag = BNN
+					tag = MRV
+					tag = KOT
+					tag = MRK
+					tag = TNS
+				}
+			}
+			add_ideas = USR_army_help_of_US
+			give_military_access = USR
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.9
+	title = USR.9.t
+	desc = USR.9.desc
+	
+	picture = GFX_USA_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.9.a
+		add_ideas = USR_expanding_instructors_contingent
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.10
+	title = USR.10.t
+	desc = USR.10.desc
+	
+	picture = GFX_USA_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.10.a
+		add_ideas = low_economic_mobilisation_mjr
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.11
+	title = USR.11.t
+	desc = USR.11.desc
+	
+	picture = GFX_USA_11
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.11.a
+		hidden_effect = {
+			load_oob = "USR_focus_USR_additional_funding"
+		}
+		custom_effect_tooltip = USR_additional_funding_tt
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.12
+	title = USR.12.t
+	desc = USR.12.desc
+	
+	picture = GFX_USA_12
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.12.a
+		division_template={
+			name="USMC"
+			support={
+				mot_recon={ x=0 y=0 }
+				howitzer_support_unit={ x=0 y=1 }
+				atgm_support_unit={ x=0 y=2 }
+				signal_company={ x=0 y=3 }
+			}
+			regiments={
+				infantry_on_btr={ x=0 y=0 }
+				infantry_on_btr={ x=0 y=1 }
+				infantry_on_btr={ x=0 y=2 }
+				infantry_on_btr={ x=0 y=3 }
+				infantry_on_btr={ x=1 y=0 }
+				infantry_on_btr={ x=1 y=1 }
+				infantry_on_btr={ x=1 y=2 }
+				infantry_on_btr={ x=1 y=3 }
+				infantry_on_btr={ x=2 y=0 }
+				infantry_on_btr={ x=2 y=1 }
+				infantry_on_btr={ x=2 y=2 }
+				infantry_on_btr={ x=2 y=3 }
+				infantry_on_btr={ x=3 y=0 }
+				infantry_on_btr={ x=3 y=1 }
+			}
+		}
+		47 = {
+			create_unit = {
+				division = "name = \"1st Battalion, 1st Marines\" division_template = \"USMC\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+			create_unit = {
+				division = "name = \"2nd Battalion, 1st Marines\" division_template = \"USMC\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+			create_unit = {
+				division = "name = \"3rd Battalion, 1st Marines\" division_template = \"USMC\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.13
+	title = USR.13.t
+	desc = USR.13.desc
+	
+	picture = GFX_USA_13
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.13.a
+		division_template={
+			name="Rangers"
+			support={
+				atgm_support_unit={ x=0 y=0 }
+				howitzer_support_unit={ x=0 y=1 }
+				mot_recon={ x=0 y=2 }
+				signal_company={ x=0 y=3 }
+			}
+			regiments={
+				speznaz={ x=0 y=0 }
+				speznaz={ x=0 y=1 }
+				speznaz={ x=0 y=2 }
+				speznaz={ x=0 y=3 }
+				speznaz={ x=1 y=0 }
+				speznaz={ x=1 y=1 }
+				speznaz={ x=1 y=2 }
+				speznaz={ x=2 y=0 }
+			}
+		}
+		43 = {
+			create_unit = {
+				division = "name = \"1st Ranger Battalion\" division_template = \"Rangers\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+			create_unit = {
+				division = "name = \"2nd Ranger Battalion\" division_template = \"Rangers\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+			create_unit = {
+				division = "name = \"3rd Ranger Battalion\" division_template = \"Rangers\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = USR
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.14
+	title = USR.14.t
+	desc = USR.14.desc
+	
+	picture = GFX_USA_14
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.14.a
+		hidden_effect = {
+			load_oob = "USR_focus_USR_get_to_the_choppers"
+		}
+		custom_effect_tooltip = USR_get_to_the_choppers_tt
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { 
+	id = USR.15
+	title = USR.15.t
+	desc = USR.15.desc
+	
+	picture = GFX_USA_15
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = USR.15.a
+		add_political_power = 25
+		ai_chance = { factor = 5 }
+	}
+}

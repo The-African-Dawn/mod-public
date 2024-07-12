@@ -1,0 +1,36 @@
+
+state={
+	id=16
+	name="STATE_16"
+
+	history={
+		owner = TGG
+		add_core_of = TGG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			1596 1
+		}
+		victory_points = {
+			5033 2
+		}
+		victory_points = {
+			3066 1
+		}
+		victory_points = {
+			845 2
+		}
+		
+	}
+
+	provinces={
+		191 845 1596 3066 4884 4885 5033 5037 5038 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

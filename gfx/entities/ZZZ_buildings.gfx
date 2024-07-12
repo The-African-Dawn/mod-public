@@ -1,0 +1,6 @@
+objectTypes = {
+	pdxmesh = {
+		name = "building_military_base"
+		file = "gfx/models/buildings/military_base.mesh"
+	}
+}

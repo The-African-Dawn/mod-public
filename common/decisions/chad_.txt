@@ -1,0 +1,330 @@
+chad_first_free_and_fair_eletions = {
+	first_election_happen = {
+		activation = {
+			always = yes
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		fire_only_once = yes
+		priority = 10
+		cancel_trigger = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		icon = GFX_decision_first_election_happen
+		is_good = yes
+		days_mission_timeout = 583
+		timeout_effect = {
+			set_country_flag = CHD_first_elections_complete
+			add_stability = 0.2
+			add_war_support = 0.1
+			if = {
+				limit = {
+					OR = {
+						check_variable = { party_popularity@pragmatism > party_popularity@panafricanism }
+						check_variable = { party_popularity@francocentrism > party_popularity@panafricanism }
+						has_country_flag = destroyed_leftist_opposition
+					}
+
+				}
+				set_politics = {
+					ruling_party = pragmatism
+					elections_allowed = yes
+					last_election = "2024.05.06"
+					election_frequency = 60
+				}
+				news_event = chd.5
+				else = {
+					set_politics = {
+						ruling_party = panafricanism
+						elections_allowed = yes
+						last_election = "2024.05.06"
+						election_frequency = 60
+					}
+					hidden_effect = {
+						load_focus_tree = {
+							tree = CHD_initial_tree
+							keep_completed = yes
+						}
+						mark_focus_tree_layout_dirty = yes
+					}
+					news_event = chd.6
+					remove_ideas = CHD_fighting_in_your_name
+				}
+			}
+			### надо сделать
+		}
+	}
+	destroy_diallo = {
+		fire_only_once = yes
+		priority = 3
+		available = {
+			date > 2024.02.24
+		}
+		cost = 0
+		icon = GFX_decision_destroy_diallo
+		days_remove = 3
+		remove_effect = { 
+			country_event = chd.3
+			add_political_power = 75
+			
+			add_popularity = {
+				ideology = pragmatism
+				popularity = 0.05
+			}
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+}
+chad_war_with_resistance = {
+	rebellion_of_fact = {
+		activation = {
+			any_state = {
+				resistance > 70
+				has_state_flag = chad_resistance_fact
+				is_owned_by = CHD
+			}
+			
+		}
+		available = {
+			hidden_trigger = {
+				all_state = {
+					is_owned_by = CHD
+					OR = { resistance < 70 NOT = { has_state_flag = chad_resistance_fact } }
+				}
+			}
+		}
+		fire_only_once = yes
+		priority = 10
+		cancel_trigger = {
+			all_state = {
+				is_owned_by = CHD
+				OR = { resistance < 70 NOT = { has_state_flag = chad_resistance_fact } }
+			}
+		}
+		icon = GFX_decision_rebellion_of_fact
+		is_good = no
+		days_mission_timeout = 180
+		timeout_effect = {
+			custom_effect_tooltip = rebellion_of_fact_tt
+
+			every_state = {
+				limit = {
+					resistance > 45
+					has_state_flag = chad_resistance_fact
+				}
+				FCT = {
+					transfer_state = PREV
+				}
+			}
+			FCT = {
+				division_template = {
+					name = "Rebels"
+					regiments={
+						light_infantry_opol={ x=0 y=0 }
+						light_infantry_opol={ x=0 y=1 }
+						light_infantry_opol={ x=0 y=2 }
+						light_infantry_opol={ x=1 y=0 }
+						light_infantry_opol={ x=1 y=1 }
+						light_infantry_opol={ x=1 y=2 }
+						light_infantry_opol={ x=2 y=0 }
+						light_infantry_opol={ x=2 y=1 }
+						light_infantry_opol={ x=2 y=2 }
+					}
+				}
+
+				division_template = {
+					name = "Tank Rebel Squad"
+					regiments={
+						medium_armor_unit={ x=0 y=0 }
+						infantry_on_jeep={ x=1 y=0 }
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = FCT
+				}
+				create_unit = {
+					division = "name = \"Rebels\" division_template = \"Rebels\" start_experience_factor = 0.1 start_equipment_factor = 0.75"
+					count = 1
+					owner = FCT
+				}
+				FCT = {
+					if = {
+						limit = {
+							NOT = { has_country_flag = created_tanks_division }
+						}
+						PREV = {
+							create_unit = {
+								division = "name = \"Tank Rebel Squad\" division_template = \"Tank Rebel Squad\" start_experience_factor = 0.1 start_equipment_factor = 0.75 force_equipment_variants = { modern_tank_equipment_type69 = { owner = "FCT" creator = "CHN" amount = 2 } }"
+								count = 1
+								owner = FCT
+							}
+						}
+						set_country_flag = created_tanks_division
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CHD
+				}
+				add_core_of = FCT
+			}
+			FCT = {
+				declare_war_on = {
+					target = CHD
+					type = annex_everything
+				}
+			}
+			add_stability = -0.1
+		}
+	}
+	resistance_grow_in_states = {
+		state_target = yes
+		target_array = CHD.core_states
+		on_map_mode = decision_view_only
+		cancel_trigger = {
+			FROM  = { has_state_flag = chad_resistance_beaten  }
+		}
+		available = {
+			if = {
+				limit = {
+					THIS = { tag = CHD }
+				}
+				OR = { has_country_flag = CHD_finished_separatists has_war_with = FCT }
+			}
+			else = {
+				has_state_flag = chad_resistance_beaten
+			}
+		}
+		priority = 5
+		activation = {
+			NOT = { has_country_flag = CHD_finished_separatists }
+			FROM = { NOT = { has_state_flag = chad_resistance_beaten } }
+			NOT = { has_war_with = FCT }
+		}
+		is_good = no
+		days_mission_timeout = 180
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_state_flag = chad_resistance_fact
+					has_state_flag = chad_resistance_beaten
+				}
+				any_neighbor_state = { is_controlled_by = CHD has_state_flag = chad_resistance_fact } 
+			}
+		}
+		targets_dynamic = yes
+		icon = GFX_decision_resistance_grow_in_states
+		timeout_effect = {
+			FROM = { set_state_flag = chad_resistance_fact }
+			custom_effect_tooltip = resistance_grow_in_states_tt
+			FROM = {
+				set_resistance = 10
+				set_compliance = 50
+			}
+			add_stability = -0.02
+		}
+	}
+	
+	stop_resistance_in_state = {
+		state_target = yes
+		target_array = CHD.core_states
+		target_trigger = {
+			FROM = {
+				any_neighbor_state = { has_state_flag = chad_resistance_fact }
+				NOT = { has_state_flag = chad_resistance_fact } 
+				NOT = { has_state_flag = chad_resistance_beaten }
+				is_controlled_by = CHD
+			}
+		}
+		fire_only_once = no
+		priority = 4
+		available = {
+			divisions_in_state = {
+				size > 0
+				state = FROM
+			}
+			check_variable = {
+				political_power > 24
+			}
+			check_variable = {
+				command_power > 4
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		
+		icon = GFX_decision_stop_resistance_in_state
+		complete_effect = {
+			hidden_effect = {add_political_power = -25 add_command_power = -5}
+			FROM = {
+				set_state_flag = {
+					flag = chad_resistance_beaten
+					days = 180
+					value = 1
+				}
+			}
+			custom_effect_tooltip = stop_resistance_in_state_tt
+			add_stability = 0.01
+		}
+		ai_will_do = {
+			base = 50
+		}
+		custom_cost_trigger = { political_power > 24 }
+		custom_cost_trigger = { command_power > 4 }
+		custom_cost_text = decision_cost_25_p_25_c
+	}
+	make_resistance_lower_in_state = {
+		state_target = yes
+		target_array = CHD.core_states
+		target_trigger = {
+			FROM  = { has_state_flag = chad_resistance_fact is_controlled_by = CHD }
+			
+		}
+		fire_only_once = no
+		days_re_enable = 50
+		priority = 3
+		available = {
+			divisions_in_state = {
+				size > 0
+				state = FROM
+			}
+			check_variable = {
+				political_power > 49
+			}
+			check_variable = {
+				command_power > 15
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		
+		icon = GFX_decision_make_resistance_lower
+		days_remove = 50
+		complete_effect = {
+			hidden_effect = {add_political_power = -50 add_command_power = -15}
+		}
+		remove_effect = { 
+			add_resistance = -10
+			add_stability = 0.035
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				FROM = { resistance > 50 }
+			}
+		}
+		custom_cost_trigger = { political_power > 49 }
+		custom_cost_trigger = { command_power > 15 }
+		custom_cost_text = decision_cost_50_p_15_c
+	}
+}

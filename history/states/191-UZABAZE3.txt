@@ -1,0 +1,23 @@
+
+state={
+	id=191
+	name="STATE_191"
+
+	history={
+		owner = BNN
+		add_core_of = BNN
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+
+	provinces={
+		5045
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=15
+}

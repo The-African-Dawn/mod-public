@@ -1,0 +1,27 @@
+
+state={
+	id=156
+	name="STATE_156"
+	resources={
+		steel=7
+	}
+	history={
+		owner = SNG
+		add_core_of = SNG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		26 1983 2541 2925 2927 2941 4914 4915 4916 
+	}
+	manpower=10964282
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

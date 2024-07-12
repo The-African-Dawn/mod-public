@@ -1,0 +1,48 @@
+BRK_situation_in_army = {
+	enable = { always = yes }
+
+	icon = GFX_idea_BRK_army_of_burkina_faso
+	
+	heat_attrition_factor = BRK.BRK_army_heat_attrition_factor
+	unit_upkeep_attrition_factor = BRK.BRK_army_unit_upkeep_attrition_factor
+	out_of_supply_factor = BRK.BRK_army_out_of_supply_factor
+	truck_attrition_factor = BRK.BRK_army_truck_attrition_factor
+	recon_factor = BRK.BRK_army_recon_factor
+	army_org_factor = BRK.BRK_army_army_org_factor
+	army_strength_factor = BRK.BRK_army_army_strength_factor
+	army_attack_factor = BRK.BRK_army_army_attack_factor
+	conscription_factor = BRK.BRK_army_conscription_factor
+	special_forces_training_time_factor = BRK.BRK_army_special_forces_training_time_factor
+	special_forces_cap_flat = BRK.BRK_army_special_forces_cap_flat
+	special_forces_no_supply_grace = BRK.BRK_army_special_forces_no_supply_grace
+	special_forces_out_of_supply_factor = BRK.BRK_army_special_forces_out_of_supply_factor
+}
+
+
+
+
+AFR_antiterror_experience = {
+	enable = { always = yes }
+
+	icon = GFX_idea_AFR_antiterror_experience
+	
+	breakthrough_factor = AFR_ineffective_antiterror_tactics_breakthrough_factor
+	army_armor_attack_factor = AFR_ineffective_antiterror_tactics_army_armor_attack_factor
+	coordination_bonus = AFR_ineffective_antiterror_tactics_coordination_bonus
+	recon_factor = AFR_ineffective_antiterror_tactics_recon_factor_bonus
+	resistance_target = AFR_ineffective_antiterror_tactics_resistance_target
+	supply_consumption_factor = AFR_ineffective_antiterror_tactics_supply_consumption_factor
+	training_time_factor = AFR_ineffective_antiterror_tactics_training_time_factor
+	experience_gain_army_factor = AFR_ineffective_antiterror_tactics_experience_gain_army_unit_factor
+	supply_factor = AFR_ineffective_antiterror_tactics_supply_factor
+	
+	heat_attrition_factor = AFR_ineffective_antiterror_tactics_heat_attrition_factor
+	unit_upkeep_attrition_factor = AFR_ineffective_antiterror_tactics_heat_unit_upkeep_attrition_factor
+	land_doctrine_cost_factor = AFR_ineffective_antiterror_tactics_land_doctrine_cost_factor
+	army_strength_factor = AFR_ineffective_antiterror_tactics_army_strength_factor
+	army_attack_factor = AFR_ineffective_antiterror_tactics_army_attack_factor
+	ground_attack_factor = AFR_ineffective_antiterror_tactics_ground_attack_factor
+	special_forces_attack_factor = AFR_ineffective_antiterror_tactics_special_forces_attack_factor
+	
+	army_speed_factor = AFR_ineffective_antiterror_tactics_army_speed_factor
+}

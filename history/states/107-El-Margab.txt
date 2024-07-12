@@ -1,0 +1,35 @@
+
+state={
+	id=107
+	name="STATE_107"
+	resources={
+		steel=3
+	}
+	history={
+		owner = DLG
+		add_core_of = DLG
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			924 10 
+		}
+		LIV = {
+			set_province_controller = 2437
+			set_province_controller = 332
+
+		}
+
+	}
+
+	provinces={
+		332 924 1295 1591 2437 2632 2661 4979 4981 4983 4985 4988 
+	}
+	manpower=632202
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

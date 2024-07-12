@@ -1,0 +1,66 @@
+guiTypes = {
+
+	
+	
+	containerWindowType = {
+		name = "Tug_Of_War_Senegal_GUI"
+		size = { width = 300 height = 410 }
+		position = { x = 100 y = 0 }
+		moveable = no
+
+
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Fon"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Fon"
+			position = { x = 0 y = -18 }
+		}
+		
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_ProgressBar"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_ProgressBar"
+			position = { x = 4 y = 282 }
+			pdx_tooltip = "NOV_election_bar_support_tt"
+		}
+		
+		#instantTextboxType = {
+		#	name = "Tug_Of_War_Senegal_GUI_ProgressBar_Text"
+		#	position = { x = 150 y = 390 }
+		#	font = "hoi_18mbs"
+		#	text = SENEGAL_choosing_title
+		#	maxWidth = 300
+		#	format = left
+		#	alwaystransparent = yes
+		#}
+		
+		instantTextboxType = {
+			name = "Tug_Of_War_Senegal_GUI_ProgressBar_Text_Points"
+			position = { x = 230 y = 389 }
+			font = "hoi_18mbs"
+			text = SENEGAL_choosing_title_points
+			maxWidth = 300
+			format = left
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Ecowas_Flag"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Ecowas_Flag"
+			position = { x = 10 y = 325 }
+		}
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Senegal_Flag"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Senegal_Flag"
+			position = { x = 205 y = 325 }
+		}
+		
+		iconType = {
+			name = "Tug_Of_War_Senegal_GUI_Sahel_Flag"
+			spriteType = "GFX_Tug_Of_War_Senegal_GUI_Sahel_Flag"
+			position = { x = 392 y = 325 }
+		}
+
+	}
+
+}

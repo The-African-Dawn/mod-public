@@ -1,0 +1,49 @@
+capital = 140
+set_technology = {
+	Rifle_pizods = 1
+	AK_tech = 1
+	handmade_artillery_tech = 1
+	howitzer_d30_tech = 1
+	tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1
+	handmade_atgm_tech = 1
+	atgm_rpg7_tech = 1
+	handmade_manpads_tech = 1
+	manpads_strela_tech = 1
+	basic_train = 1
+	tech_specnaz = 1
+}
+starting_train_buffer = 5
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+
+give_military_access = USR
+
+set_convoys = 3
+set_research_slots = 2
+set_stability = 0.69
+set_war_support = 0.46
+set_oob = "_GENERIC_OOB"
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+	gulf_of_guinea_piracy
+}
+
+set_politics = {
+	ruling_party = pragmatism
+	last_election = "2020.12.7"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+recruit_character = GNN_HAHA_SKUF
+recruit_character = GNN_Dominic_Nitiwul
+recruit_character = GNN_Ivor_Kobina_Greenstreet
+set_popularities = {
+	pragmatism = 51
+	francocentrism = 47
+	panafricanism = 2
+}

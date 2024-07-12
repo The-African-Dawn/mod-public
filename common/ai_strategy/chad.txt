@@ -1,0 +1,39 @@
+
+chad_fight_against_separatists = {
+	allowed = {
+		tag = CHD
+	}
+	enable = {
+		NOT = { has_country_flag = CHD_finished_separatists }
+        tag = CHD
+	}
+	abort = {
+		has_country_flag = CHD_finished_separatists
+	}
+
+    ai_strategy = {
+        type = put_unit_buffers
+        ratio = 0.7
+        states = {
+            124
+            126
+            122
+            123
+            22
+            125
+            127
+            120
+            121
+            119
+            117
+            116
+            115
+            114
+            118
+            111
+            113
+            112
+        }
+        subtract_fronts_from_need = yes
+    }
+}

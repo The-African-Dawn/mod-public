@@ -1,0 +1,61 @@
+spriteTypes = {
+####CHITA
+	spriteType = {
+		name = "GFX_CHT_Viktor_Zolotov"
+		textureFile = "gfx/interface/chita_gui/CHT_Viktor_Zolotov.dds"
+	}
+	spriteType = {
+		name = "GFX_CHT_Alexei_Navalny"
+		textureFile = "gfx/interface/chita_gui/CHT_Alexei_Navalny.dds"
+	}
+	spriteType = {
+		name = "GFX_CHT_Murder_Zolotov_GUI_Bar_Frame"
+		textureFile = "gfx/interface/chita_gui/CHT_Murder_Zolotov_GUI_Bar_Frame.dds"
+	}
+	spriteType = {
+		name = "GFX_CHT_Murder_Zolotov_GUI_Bar_Tick"
+		textureFile = "gfx/interface/chita_gui/CHT_Murder_Zolotov_GUI_Bar_Tick.dds"
+	}
+	spriteType = {
+		name = "GFX_rosgvardiya_fon"
+		textureFile = "gfx/interface/chita_gui/rosgvardiya_fon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_button_press"
+		textureFile = "gfx/interface/chita_gui/decision_button_press.dds"
+	}
+	progressbartype = {
+		name = "GFX_CHT_Murder_Zolotov_GUI_Bar"
+		textureFile1 = "gfx/interface/chita_gui/CHT_Murder_Zolotov_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/chita_gui/CHT_Murder_Zolotov_GUI_Bar_bg.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 554
+			y = 30
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+
+
+####NOVGOROD
+	spriteType = {
+		name = "GFX_Novgorod_Stalinist_Party_GUI_Fon"
+		textureFile = "gfx/interface/novgorod_gui/Novgorod_Stalinist_Party_GUI_Fon.dds"
+	}
+	progressbartype = {
+		name = "GFX_Novgorod_Stalinist_Party_GUI_IdeologyBar"
+		textureFile1 = "gfx/interface/novgorod_gui/Novgorod_Stalinist_Party_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/novgorod_gui/Novgorod_Stalinist_Party_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 311
+			y = 344
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+}

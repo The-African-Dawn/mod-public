@@ -1,0 +1,439 @@
+great_war_begins_category = {
+	great_war_begins_ecowas_start = {
+		icon = GFX_decision_great_war_begins
+		fire_only_once = yes
+		days_remove = 90
+		war_with_on_remove = BRK
+		war_with_on_remove = MLL
+		war_with_on_remove = NRG
+		war_with_on_remove = CHD
+		visible = {
+			is_faction_leader = yes
+			tag = NRG
+			NOT = {
+				has_global_flag = great_war_begins
+			}
+		}
+		available = {
+			date > 2027.1.1
+			is_faction_leader = yes
+			NOT = {
+				has_global_flag = great_war_begins
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_will_start_terrible_war_tooltip
+			set_global_flag = great_war_begins
+			news_event = {
+				id = ab.16
+				random_days = 60
+			}
+			news_event = {
+				id = ab.17
+				random_days = 60
+			}
+		}
+		remove_effect = {
+			set_global_flag = great_war_begins_global_flag
+			FRN = {
+				news_event = {
+					id = ab.18
+					days = 7
+					random_days = 2
+				}
+			}
+			USR = {
+				news_event = {
+					id = ab.19
+					days = 14
+					random_days = 2
+				}
+			}
+			RUS = {
+				news_event = {
+					id = ab.20
+					days = 21
+					random_days = 2
+				}
+			}
+			every_country = {
+				add_ai_strategy = {
+					type = ignore_army_incompetence
+					value = 100
+				}
+			}
+			custom_effect_tooltip = you_will_start_terrible_war_off_tooltip
+			hidden_effect = {
+				declare_war_on = {
+					target = BRK
+					type = puppet_wargoal_focus
+				}
+			}
+			hidden_effect = {
+				declare_war_on = {
+					target = MLL
+					type = puppet_wargoal_focus
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = superevents.001
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = SNG
+				limit = {
+					has_government = panafricanism
+				}
+				if = {
+					limit = {
+						BRK = {
+							is_faction_leader = yes
+						}
+					}
+					BRK = {
+						add_to_faction = PREV
+					}
+				}
+				if = {
+					limit = {
+						MLL = {
+							is_faction_leader = yes
+						}
+					}
+					MLL = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = SNG
+				limit = {
+					has_government = francocentrism
+				}
+				if = {
+					limit = {
+						NRG = {
+							is_faction_leader = yes
+						}
+					}
+					NRG = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GBI
+				limit = {
+					has_government = panafricanism
+				}
+				if = {
+					limit = {
+						BRK = {
+							is_faction_leader = yes
+						}
+					}
+					BRK = {
+						add_to_faction = PREV
+					}
+				}
+				if = {
+					limit = {
+						MLL = {
+							is_faction_leader = yes
+						}
+					}
+					MLL = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GBI
+				limit = {
+					has_government = francocentrism
+				}
+				if = {
+					limit = {
+						NRG = {
+							is_faction_leader = yes
+						}
+					}
+					NRG = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GVN
+				limit = {
+					has_government = panafricanism
+				}
+				if = {
+					limit = {
+						BRK = {
+							is_faction_leader = yes
+						}
+					}
+					BRK = {
+						add_to_faction = PREV
+					}
+				}
+				if = {
+					limit = {
+						MLL = {
+							is_faction_leader = yes
+						}
+					}
+					MLL = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GVN
+				limit = {
+					has_government = francocentrism
+				}
+				if = {
+					limit = {
+						NRG = {
+							is_faction_leader = yes
+						}
+					}
+					NRG = {
+						add_to_faction = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				date > 2027.3.3
+				add = 100
+				factor = 100
+			}
+		}
+	}
+	great_war_begins_sahel_start = {
+		icon = GFX_decision_great_war_begins
+		fire_only_once = yes
+		days_remove = 90
+		war_with_on_remove = NRG
+		war_with_on_remove = BNN
+		war_with_on_remove = TGG
+		war_with_on_remove = GNN
+		war_with_on_remove = KOT
+		war_with_on_remove = LBR
+		war_with_on_remove = SLR
+		visible = {
+			is_faction_leader = yes
+			OR = {
+				tag = BRK
+				tag = MLL
+			}
+			NOT = {
+				has_global_flag = great_war_begins
+			}
+		}
+		available = {
+			date > 2027.1.1
+			is_faction_leader = yes
+						NOT = {
+				has_global_flag = great_war_begins
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_will_start_terrible_war_tooltip
+			set_global_flag = great_war_begins_global_flag
+			news_event = {
+				id = NRG.4
+				days = 30
+				random_days = 30
+			}
+			FRN = {
+				news_event = {
+					id = ab.16
+					random_days = 60
+				}
+			}
+			USR = {
+				news_event = {
+					id = ab.17
+					random_days = 60
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = you_will_start_terrible_war_off_tooltip
+			FRN = {
+				news_event = {
+					id = ab.18
+					days = 7
+					random_days = 2
+				}
+			}
+			USR = {
+				news_event = {
+					id = ab.19
+					days = 14
+					random_days = 2
+				}
+			}
+			RUS = {
+				news_event = {
+					id = ab.20
+					days = 21
+					random_days = 2
+				}
+			}
+			hidden_effect = {
+				declare_war_on = {
+					target = NRG
+					type = topple_government
+				}
+			}
+			#hidden_effect = {play_song = "great_african_war"}
+			hidden_effect = {
+				country_event = {
+					id = superevents.001
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = SNG
+				limit = {
+					has_government = panafricanism
+				}
+				if = {
+					limit = {
+						BRK = {
+							is_faction_leader = yes
+						}
+					}
+					BRK = {
+						add_to_faction = PREV
+					}
+				}
+				if = {
+					limit = {
+						MLL = {
+							is_faction_leader = yes
+						}
+					}
+					MLL = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = SNG
+				limit = {
+					has_government = francocentrism
+				}
+				if = {
+					limit = {
+						NRG = {
+							is_faction_leader = yes
+						}
+					}
+					NRG = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GBI
+				limit = {
+					has_government = panafricanism
+				}
+				if = {
+					limit = {
+						BRK = {
+							is_faction_leader = yes
+						}
+					}
+					BRK = {
+						add_to_faction = PREV
+					}
+				}
+				if = {
+					limit = {
+						MLL = {
+							is_faction_leader = yes
+						}
+					}
+					MLL = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GBI
+				limit = {
+					has_government = francocentrism
+				}
+				if = {
+					limit = {
+						NRG = {
+							is_faction_leader = yes
+						}
+					}
+					NRG = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GVN
+				limit = {
+					has_government = panafricanism
+				}
+				if = {
+					limit = {
+						BRK = {
+							is_faction_leader = yes
+						}
+					}
+					BRK = {
+						add_to_faction = PREV
+					}
+				}
+				if = {
+					limit = {
+						MLL = {
+							is_faction_leader = yes
+						}
+					}
+					MLL = {
+						add_to_faction = PREV
+					}
+				}
+			}
+			every_country_with_original_tag = {
+				original_tag_to_check = GVN
+				limit = {
+					has_government = francocentrism
+				}
+				if = {
+					limit = {
+						NRG = {
+							is_faction_leader = yes
+						}
+					}
+					NRG = {
+						add_to_faction = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				date > 2027.3.13
+				add = 100
+				factor = 100
+			}
+		}
+	}
+}

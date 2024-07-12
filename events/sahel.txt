@@ -1,0 +1,259 @@
+﻿
+add_namespace = sahel
+
+news_event = { 
+	id = sahel.1
+	title = sahel.1.t
+	desc = sahel.1.desc
+	major = yes
+	is_triggered_only = yes
+	picture = GFX_sahel_1
+	
+	option = { 
+		name = sahel.1.a
+		trigger = {
+			OR = {
+				is_in_faction_with = MLL
+				tag = MLL
+				has_government = panafricanism
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = sahel.1.b
+		trigger = {
+			OR = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = { 
+		name = sahel.1.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+				is_in_faction_with = MLL
+				tag = MLL
+				has_government = panafricanism
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = sahel.2
+	title = sahel.2.t
+	desc = sahel.2.desc
+	major = yes
+	picture = GFX_sahel_2
+	is_triggered_only = yes
+	
+	option = { 
+		name = sahel.2.a
+		trigger = {
+			OR = {
+				is_in_faction_with = MLL
+				tag = MLL
+				has_government = panafricanism
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = sahel.2.b
+		trigger = {
+			OR = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = { 
+		name = sahel.2.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+				is_in_faction_with = MLL
+				tag = MLL
+				has_government = panafricanism
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { 
+	id = sahel.3
+	title = sahel.3.t
+	desc = sahel.3.desc
+	
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = sahel.3.a
+		every_country = {
+			limit = {
+				OR = {
+					tag = MRK
+					is_in_faction_with = MLL
+				}
+
+			}
+			add_ideas = SAHEL_morocco_atlantic_initiative
+		}
+		news_event = sahel.4
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = sahel.3.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+news_event = { 
+	id = sahel.4
+	title = sahel.4.t
+	desc = sahel.4.desc
+	major = yes
+	is_triggered_only = yes
+	picture = GFX_sahel_3
+	option = { 
+		name = sahel.4.a
+		trigger = {
+			OR = {
+				is_in_faction_with = MLL
+				tag = MLL
+				tag = MRK
+				has_government = panafricanism
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = sahel.4.b
+		trigger = {
+			OR = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = { 
+		name = sahel.4.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+				is_in_faction_with = MLL
+				tag = MLL
+				has_government = panafricanism
+				tag = MRK
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { 
+	id = sahel.5
+	title = sahel.5.t
+	desc = sahel.5.desc
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = sahel.5.a
+		every_country = {
+			limit = {
+				OR = {
+					tag = TGG
+					is_in_faction_with = MLL
+				}
+
+			}
+			add_ideas = SAHEL_togo_ports
+		}
+		news_event = sahel.6
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = sahel.5.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+news_event = { 
+	id = sahel.6
+	title = sahel.6.t
+	desc = sahel.6.desc
+	picture = GFX_sahel_4
+	major = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = sahel.6.a
+		ai_chance = { factor = 5 }
+	}
+}
+
+news_event = { 
+	id = sahel.7
+	title = sahel.7.t
+	desc = sahel.7.desc
+	major = yes
+	is_triggered_only = yes
+	picture = GFX_sahel_5
+	option = { 
+		name = sahel.7.a
+		trigger = {
+			OR = {
+				is_in_faction_with = MLL
+				tag = MLL
+				tag = MRK
+				has_government = panafricanism
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = sahel.7.b
+		trigger = {
+			OR = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = { 
+		name = sahel.7.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = NRG
+				tag = NRG
+				has_government = francocentrism
+				is_in_faction_with = MLL
+				tag = MLL
+				has_government = panafricanism
+				tag = MRK
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=176
+	name="STATE_176"
+
+	history={
+		owner = ALJ
+		add_core_of = ALJ
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		2 7 139 505 600 610 661 726 1108 1338 1370 1433 1561 1804 1887 1906 1908 1992 2035 2306 2313 2375 2543 2682 2685 2703 2714 2726 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

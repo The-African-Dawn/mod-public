@@ -1,0 +1,185 @@
+scripted_gui = {
+	battle_for_afrika = {
+		window_name = "battle_for_afrika_rew"
+		context_type = decision_category
+		visible = {
+			
+		}
+		dynamic_lists = {
+			possible_actions = {
+				array = possible_actions_country
+				entry_container = possible_action_entry
+			}
+		}
+		properties = {
+            africa_status_brk = {
+                frame = BRK.africa_status
+            }
+            africa_status_mll = {
+                frame = MLL.africa_status
+            }
+            africa_status_nig = {
+                frame = NIG.africa_status
+            }
+            africa_status_nrg = {
+                frame = NRG.africa_status
+            }
+            africa_status_bnn = {
+                frame = BNN.africa_status
+            }
+            africa_status_tgg = {
+                frame = TGG.africa_status
+            }
+            africa_status_gnn = {
+                frame = GNN.africa_status
+            }
+            africa_status_kot = {
+                frame = KOT.africa_status
+            }
+            africa_status_lbr = {
+                frame = LBR.africa_status
+            }
+            africa_status_gvn = {
+                frame = GVN.africa_status
+            }
+            africa_status_slr = {
+                frame = SLR.africa_status
+            }
+            africa_status_gbi = {
+                frame = GBI.africa_status
+            }
+            africa_status_sng = {
+                frame = SNG.africa_status
+            }
+            africa_status_mrv = {
+                frame = MRV.africa_status
+            }
+            africa_status_chd = {
+                frame = CHD.africa_status
+            }
+            africa_status_kmr = {
+                frame = KMR.africa_status
+            }
+		}
+		effects = {
+			send_action_click = {
+				# Запросы по терроризму
+				if = {
+					limit = {
+						check_variable = {
+							v = 10
+						}
+					}
+					RUS = {
+						country_event = { id = ab.1 days = 1 }
+					}
+					set_country_flag = {
+						flag = asked_big_country_help_less_than_6_mnth
+						days = 180
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							v = 11
+						}
+					}
+					USR = {
+						country_event = { id = ab.1 days = 1 }
+					}
+					set_country_flag = {
+						flag = asked_big_country_help_less_than_6_mnth
+						days = 180
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							v = 12
+						}
+					}
+					FRN = {
+						country_event = { id = ab.1 days = 1 }
+					}
+					set_country_flag = {
+						flag = asked_big_country_help_less_than_6_mnth
+						days = 180
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							v = 20
+						}
+					}
+					add_manpower = 500
+					add_political_power = -150
+				}
+				if = {
+					limit = {
+						check_variable = {
+							v = 21
+						}
+					}
+					if = {
+						limit = {
+							NOT = { has_template = "Motostrelkovaya brigada" }
+						}
+						division_template = { # v rabote
+							name = "Motostrelkovaya brigada"
+							is_locked = yes
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+							}
+							support = {
+								military_police = { x = 0 y = 0 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							v = 22
+						}
+					}
+					add_manpower = 500
+				}
+			}
+			
+			#African_Battle_GUI_close_button_click = {
+			#	clr_country_flag = CHT_Murder_Investigation_GUI_visible_flag
+			#}
+		}
+		#african_battle_GUI_close_button
+		#triggers = {
+		#	send_action_click_enabled = {
+		#		if = {
+		#			limit = {
+		#				check_variable = {
+		#					v > 9
+		#				}
+		#				check_variable = {
+		#					v < 20
+		#				}
+		#			}
+		#			NOT = { has_country_flag = asked_big_country_help_less_than_6_mnth }
+		#		}
+		#		else_if = {
+		#			limit = {
+		#				check_variable = {
+		#					v = 20
+		#				}
+		#			}
+		#			has_political_power > 149
+		#		}
+		#	}
+		#}
+	}
+}

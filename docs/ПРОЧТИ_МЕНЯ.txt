@@ -1,0 +1,9 @@
+## Как установить African-Dawn?
+
+0. Распакуйте содержимое архива куда-нибудь.
+1. Скопируйте папку afrika_dawn, файл generate_path.bat и файл afrika_dawn.mod в папку %UserProfile%/Documents/Paradox Interactive/Hearts of Iron IV/mods (скопируйте и вставьте в проводник данный путь)
+2.1 Запустите файл generate_path.bat 
+
+ИЛИ
+
+2.2 Отредактируйте файл afrika_dawn.mod, указав в path ПОЛНЫЙ путь до папки afrika_dawn (Пример: path="C:/Users/sepera_okeq/Desktop/test/afrika_dawn")

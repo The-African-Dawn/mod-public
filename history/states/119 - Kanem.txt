@@ -1,0 +1,20 @@
+
+state={
+	id=119
+	name="STATE_119"
+
+	history={
+		owner = CHD
+		add_core_of = CHD
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	state_category = rural
+	provinces={
+		171 1330 1367 2954 2975 2991 
+	}
+	manpower=1360000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

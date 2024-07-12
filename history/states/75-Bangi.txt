@@ -1,0 +1,24 @@
+
+state={
+	id=75
+	name="STATE_75"
+
+	history={
+		victory_points = { 4831 50 }
+		owner = CRR
+		add_core_of = CRR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+	state_category = metropolis
+	provinces={
+		4831
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

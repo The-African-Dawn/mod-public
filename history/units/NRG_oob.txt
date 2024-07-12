@@ -1,0 +1,547 @@
+division_template = {
+	name = "Armour Battalion"
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		atgm_support_unit={ x=0 y=1 }
+		mot_recon={ x=0 y=2 }
+		engineer={ x=0 y=3 }
+		signal_company={ x=0 y=4 }
+	}
+	regiments={
+		light_armor_unit={ x=0 y=0 }
+		light_armor_unit={ x=0 y=1 }
+		light_armor_unit={ x=0 y=2 }
+		light_armor_unit={ x=0 y=3 }
+		medium_armor_unit={ x=1 y=0 }
+		medium_armor_unit={ x=1 y=1 }
+		medium_armor_unit={ x=1 y=2 }
+		medium_armor_unit={ x=1 y=3 }
+		medium_armor_unit={ x=2 y=0 }
+		infantry_on_jeep={ x=3 y=0 }
+		infantry_on_jeep={ x=3 y=1 }
+		infantry_on_jeep={ x=3 y=2 }
+	}
+}
+
+division_template = {
+	name = "Brigade Garrison"
+	support={
+		signal_company={ x=0 y=0 }
+		engineer={ x=0 y=1 }
+	}
+	priority = 0
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+		light_infantry_opol={ x=3 y=0 }
+		light_infantry_opol={ x=3 y=1 }
+		light_infantry_opol={ x=3 y=2 }
+	}
+}
+
+division_template = {
+	name = "Infantry Battalion"
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		engineer={ x=0 y=1 }
+		atgm_support_unit={ x=0 y=2 }
+		manpads_support_unit={ x=0 y=3 }
+		mot_recon={ x=0 y=4 }
+	}
+	regiments={
+		infantry={ x=0 y=0 }
+		infantry={ x=0 y=1 }
+		infantry={ x=0 y=2 }
+		infantry={ x=1 y=0 }
+		infantry={ x=1 y=1 }
+		infantry={ x=1 y=2 }
+		infantry={ x=2 y=0 }
+		infantry={ x=2 y=1 }
+		infantry={ x=2 y=2 }
+		infantry={ x=3 y=0 }
+	}
+}
+
+division_template = {
+	name = "Motorized Battalion"
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		engineer={ x=0 y=1 }
+		atgm_support_unit={ x=0 y=2 }
+		signal_company={ x=0 y=3 }
+		mot_recon={ x=0 y=4 }
+	}
+	regiments={
+		infantry_on_btr={ x=0 y=0 }
+		infantry_on_btr={ x=0 y=1 }
+		infantry_on_btr={ x=0 y=2 }
+		infantry_on_btr={ x=1 y=0 }
+		infantry_on_btr={ x=1 y=1 }
+		infantry_on_btr={ x=1 y=2 }
+		infantry_on_btr={ x=2 y=0 }
+		infantry_on_btr={ x=2 y=1 }
+		infantry_on_btr={ x=2 y=2 }
+		infantry_on_btr={ x=3 y=0 }
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade Garrison"
+	priority = 0
+	support={
+		engineer={ x=0 y=0 }
+		mot_recon={ x=0 y=1 }
+		signal_company={ x=0 y=2 }
+	}
+	regiments={
+		infantry_on_jeep={ x=0 y=0 }
+		infantry_on_jeep={ x=0 y=1 }
+		infantry_on_jeep={ x=0 y=2 }
+		infantry_on_jeep={ x=1 y=0 }
+		infantry_on_jeep={ x=1 y=1 }
+		infantry_on_jeep={ x=1 y=2 }
+		infantry_on_jeep={ x=2 y=0 }
+		infantry_on_jeep={ x=2 y=1 }
+		infantry_on_jeep={ x=2 y=2 }
+		infantry_on_jeep={ x=3 y=0 }
+		infantry_on_jeep={ x=3 y=1 }
+		infantry_on_jeep={ x=3 y=2 }
+	}
+}
+
+division_template = {
+	name = "Recc Batalion"
+	support={
+		mot_recon={ x=0 y=0 }
+		signal_company={ x=0 y=1 }
+	}
+	regiments={
+		infantry_on_bmp={ x=0 y=0 }
+		infantry_on_jeep={ x=0 y=1 }
+		light_armor_unit={ x=1 y=0 }
+		light_armor_unit={ x=1 y=1 }
+	}
+}
+
+division_template = {
+	name = "Special Operation Battalion"
+	support={
+		mot_recon={ x=0 y=0 }
+		signal_company={ x=0 y=1 }
+		atgm_support_unit={ x=0 y=2 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+		speznaz={ x=3 y=0 }
+	}
+}
+
+division_template = {
+	name = "Amphibious Battalion"
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		atgm_support_unit={ x=0 y=1 }
+		manpads_support_unit={ x=0 y=2 }
+		engineer={ x=0 y=3 }
+		mot_recon={ x=0 y=4 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+	}
+}
+
+
+units = {
+	division= {	
+		name = "1 Battalion"
+		location = 1568
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1 Brigade Garrison"
+		location = 3023
+		division_template = "Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "223 Armoured Battalion"
+		location = 1568
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_equipment_t72 = { owner = "NRG" creator = "RUS" amount = 40 } light_tank_equipment_0 = { owner = "NRG" creator = "USR" amount = 16 } }
+	}
+	division= {	
+		name = "26 Battalion"
+		location = 4877
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1 Brigade Garrison"
+		location = 4878
+		division_template = "Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "241 Reconnaissance Battalion"
+		location = 4952
+		division_template = "Recc Batalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 8 } }
+	}
+	division= {	
+		name = "3 Motorized Brigade Garrison"
+		location = 4953
+		division_template = "Motorized Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "73 Battalion"
+		location = 4953
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	
+	division= {	
+		name = "2 Mechanised Division Garrison"
+		location = 2593
+		division_template = "Motorized Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "22 Armoured Brigade Garrison"
+		location = 4950
+		division_template = "Motorized Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "22 Armoured Brigade"
+		location = 4950
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_equipment_type99 = { owner = "NRG" creator = "CHN" amount = 17 } light_tank_equipment_0 = { owner = "NRG" creator = "USR" amount = 16 } }
+	}
+	division= {	
+		name = "222 Armoured Brigade"
+		location = 4950
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "NRG" creator = "RUS" amount = 40 } light_tank_equipment_0 = { owner = "NRG" creator = "USR" amount = 16 } }
+	}
+	division= {	
+		name = "222 Battalion"
+		location = 646
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "244 Reconnaissance Battalion"
+		location = 1430
+		division_template = "Recc Batalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "NRG" creator = "USR" amount = 6 } }
+	}
+	division= {	
+		name = "19 Battalion"
+		location = 1980
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "195 Battalion"
+		location = 4946
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "222 Battalion"
+		location = 190
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3 Battalion"
+		location = 4951
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3 Battalion"
+		location = 4951
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	division= {	
+		name = "103 Battalion"
+		location = 4948
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "151 Task Force Battalion"
+		location = 4948
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "155 Task Force Battalion"
+		location = 4948
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "202 Tank Battalion"
+		location = 825
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "NRG" creator = "RUS" amount = 40 } light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		name = "21 Armoured Brigade Garrison"
+		location = 825
+		division_template = "Motorized Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "212 Tank Battalion"
+		location = 4952
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "NRG" creator = "RUS" amount = 20 } light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 16 } }
+	}
+	
+	
+	division= {	
+		name = "20 Mechanized Battalion"
+		location = 4952
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "213 Battalion"
+		location = 4952
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "231 Tank Battalion"
+		location = 4946
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "NRG" creator = "FRN" amount = 40 } light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		name = "232 Tank Battalion"
+		location = 2391
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "NRG" creator = "FRN" amount = 40 } light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		name = "232 Tank Battalion"
+		location = 2391
+		division_template = "Armour Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { medium_tank_equipment_legacy = { owner = "NRG" creator = "FRN" amount = 40 } light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		name = "234 Special Operations Battalion"
+		location = 2391
+		division_template = "Special Operation Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "243 Reconnaissance Battalion"
+		location = 627
+		division_template = "Recc Batalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 8 } }
+	}
+	division= {	
+		name = "27 Task Force Brigade"
+		location = 825
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "28 Task Force Brigade"
+		location = 627
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "29 Task Force Brigade"
+		location = 4953
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3 Armoured Division Garrison"
+		location = 2379
+		division_template = "Motorized Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Special Task Force"
+		location = 783
+		division_template = "Special Operation Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "146 Battalion"
+		location = 4947
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6 Battalion"
+		location = 4949
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5 Battalion"
+		location = 83
+		division_template = "Motorized Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2 Amphibious Brigade Garrison"
+		location = 1581
+		division_template = "Amphibious Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "29 Battalion"
+		location = 2300
+		division_template = "Amphibious Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "29 Battalion"
+		location = 1581
+		division_template = "Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division= {	
+		name = "111 Special Forces Battalion"
+		location = 1769
+		division_template = "Special Operation Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "81 Battalion"
+		location = 2391
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "242 Reconnaissance Battalion "
+		location = 4951
+		division_template = "Recc Batalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 8 } }
+	}
+	division= {	
+		name = "243 Reconnaissance Battalion "
+		location = 4946
+		division_template = "Recc Batalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "NRG" creator = "FRN" amount = 8 } }
+	}
+	division= {	
+		name = "81 Division Garrison"
+		location = 4950
+		division_template = "Brigade Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "9 Brigade"
+		location = 4946
+		division_template = "Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8 Task Force Division"
+		location = 1861
+		division_template = "Special Operation Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}

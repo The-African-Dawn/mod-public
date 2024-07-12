@@ -1,0 +1,870 @@
+﻿
+add_namespace = MLL
+
+country_event = { 
+	id = MLL.5
+	title = MLL.5.t
+	desc = MLL.5.desc
+	
+	picture = GFX_MLL_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = MLL.5.a
+		ai_chance = { factor = 5 }
+		set_global_flag = Mauritanie_Tensions_Started
+		set_variable = {
+			var = global.mauritanie_stress_points
+			value = 25
+		}
+		news_event = {id = MLL.2}
+	}
+}
+	
+news_event = { 
+	id = MLL.2
+	title = MLL.2.t
+	desc = MLL.2.desc
+	picture = GFX_MLL_2
+	is_triggered_only = yes
+	immediate = { add_threat = 1 }
+	major = yes
+	option = { 
+		name = MLL.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.3
+	title = MLL.3.t
+	desc = MLL.3.desc
+	picture = GFX_MLL_3
+	is_triggered_only = yes
+	immediate = { add_threat = 1 }
+	major = yes
+	option = { 
+		name = MLL.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.4
+	title = MLL.4.t
+	desc = MLL.4.desc
+	picture = GFX_MLL_4
+	is_triggered_only = yes
+	immediate = { add_threat = 1 }
+	major = yes
+	option = { 
+		name = MLL.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.6 
+	title = MLL.6.t
+	desc = MLL.6.desc
+	picture = GFX_MLL_6
+	is_triggered_only = yes
+	major = no
+	option = { 
+		name = MLL.6.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { 
+	id = MLL.7
+	title = MLL.7.t
+	desc = MLL.7.desc
+	picture = GFX_MLL_7
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = MLL.7.a
+		ai_chance = { factor = 100 }
+		add_named_threat = {
+			threat = 5
+			name = MLL_captured_guys_are_sentenced
+		}
+		add_political_power = 50
+		KOT = {
+			add_opinion_modifier = {
+				target = MLL
+				modifier = MLL_captured_soldiers
+			}
+		}
+		hidden_effect = { news_event =  { id = MLL.8 days = 2 } country_event =  { id = MLL.10 days = 3 }  }
+	}
+	option = { 
+		name = MLL.7.b
+		add_named_threat = {
+			threat = -5
+			name = MLL_captured_guys_are_free
+		}
+		add_stability = -0.05
+		KOT = {
+			add_opinion_modifier = {
+				target = MLL
+				modifier = MLL_captured_soldiers_free
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+news_event = { 
+	id = MLL.8 
+	title = MLL.8.t
+	desc = MLL.8.desc
+	picture = GFX_MLL_8
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = MLL.8.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.9 
+	title = MLL.9.t
+	desc = MLL.9.desc
+	picture = GFX_MLL_9
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = MLL.9.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+country_event = { 
+	id = MLL.10
+	title = MLL.10.t
+	desc = MLL.10.desc
+	picture = GFX_MLL_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = MLL.10.a
+		ai_chance = { factor = 100 }
+		add_named_threat = {
+			threat = -5
+			name = MLL_captured_guys_are_free
+		}
+		add_political_power = 50
+		KOT = {
+			remove_opinion_modifier = {
+				target = MLL
+				modifier = MLL_captured_soldiers
+			}
+			add_opinion_modifier = {
+				target = MLL
+				modifier = MLL_captured_soldiers_free
+			}
+			add_manpower = 46
+		}
+		TGG = {
+			add_opinion_modifier = {
+				target = MLL
+				modifier = MLL_captured_soldiers_free
+			}
+		}
+		hidden_effect = { news_event = { id = MLL.11 days = 6 } }
+	}
+	option = { 
+		name = MLL.10.b
+		add_political_power = -25
+		TGG = {
+			add_opinion_modifier = {
+				target = MLL
+				modifier = MLL_captured_soldiers
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+news_event = { 
+	id = MLL.11 
+	title = MLL.9.t
+	desc = MLL.11.desc
+	picture = GFX_MLL_9
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = MLL.9.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.12
+	title = MLL.12.t
+	desc = MLL.12.desc
+	picture = GFX_MLL_12
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = MLL.12.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.13
+	title = MLL.13.t
+	desc = MLL.13.desc
+	picture = GFX_MLL_13
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = MLL.13.a
+		ai_chance = { factor = 1 }
+		add_opinion_modifier = {
+			target = USR
+			modifier = MLL_cocacola
+		}
+		trigger = {
+			tag = MLL
+		}
+	}
+	option = { 
+		name = MLL.13.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { tag = MLL }
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.14
+	title = MLL.14.t
+	desc = MLL.14.desc
+	picture = GFX_MLL_14
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = MLL.14.a
+		ai_chance = { factor = 100 }
+		add_ideas = MLL_bank_sector_is_bad
+		unlock_decision_tooltip = MLL_unarrest_bank_leader
+	}
+}
+
+news_event = { 
+	id = MLL.15
+	title = MLL.15.t
+	desc = MLL.15.desc
+	picture = GFX_MLL_15
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = MLL.15.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MLL.16
+	title = MLL.16.t
+	desc = MLL.16.desc
+	picture = GFX_MLL_16
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MLL.16.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = {
+		name = MLL.16.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = {
+		name = MLL.16.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = {
+		name = MLL.16.d
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = pragmatism
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.17
+	title = MLL.17.t
+	desc = MLL.17.desc 
+	picture = GFX_MLL_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = MLL.17.a
+		add_threat = -3
+		AZW = {
+			remove_ideas = AZW_help_of_neighbours
+		}
+		diplomatic_relation = {
+			country = AZW
+			relation = military_access
+			active = no
+		}
+		diplomatic_relation = {
+			country = JNA
+			relation = military_access
+			active = no
+		}
+		add_opinion_modifier = {
+			target = AZW
+			modifier = unstable_alliance
+		}
+		add_opinion_modifier = {
+			target = JNA
+			modifier = unstable_alliance
+		}
+		add_political_power = -50
+		MLL = { country_event = { id = MLL.18 days = 1} }
+		ai_chance = { factor = 75 }
+	}
+	option = { 
+		name = MLL.17.b
+		add_threat = 3
+		add_opinion_modifier = {
+			target = MLL
+			modifier = MLL_MVR_denied_ask
+		}
+		MLL = {
+			add_opinion_modifier = {
+				target = MRV
+				modifier = MLL_MVR_denied_ask
+			}
+		}
+		MLL = { country_event = { id = MLL.19 days = 1} }
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = { 
+	id = MLL.18
+	title = MLL.18.t
+	desc = MLL.18.desc
+	picture = GFX_MLL_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = MLL.18.a
+		add_political_power = 25
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { 
+	id = MLL.19
+	title = MLL.19.t
+	desc = MLL.19.desc
+	picture = GFX_MLL_19
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = MLL.19.a
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 11
+				num_provinces = 1
+				on_win = MLL.21
+				on_lose = MLL.20
+			}	
+			defender = {
+				state = 166
+				num_provinces = 1
+			}
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = { 
+	id = MLL.20
+	title = MLL.20.t
+	desc = MLL.20.desc
+	picture = GFX_MLL_20
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MLL.20.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = {
+		name = MLL.20.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = {
+		name = MLL.20.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = {
+		name = MLL.20.d
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = pragmatism
+		}
+	}
+}
+
+news_event = { 
+	id = MLL.21
+	title = MLL.21.t
+	desc = MLL.21.desc
+	picture = GFX_MLL_21
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MLL.21.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = {
+		name = MLL.21.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = {
+		name = MLL.21.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = {
+		name = MLL.21.d
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = pragmatism
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.22
+	title = MLL.22.t
+	desc = MLL.22.desc
+	picture = GFX_MLL_22
+	trigger = {
+		tag = MLL
+		57 = {
+			is_fully_controlled_by = MLL
+		}
+		72 = {
+			is_fully_controlled_by = MLL
+		}
+		73 = {
+			is_fully_controlled_by = MLL
+		}
+		58 = {
+			is_fully_controlled_by = MLL
+		}
+		59 = {
+			is_fully_controlled_by = MLL
+		}
+		56 = {
+			is_fully_controlled_by = MLL
+		}
+		71 = {
+			is_fully_controlled_by = MLL
+		}
+		60 = {
+			is_fully_controlled_by = MLL
+		}
+		61 = {
+			is_fully_controlled_by = MLL
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = MLL.22.a
+		add_stability = -0.1
+
+		set_division_template_lock = {
+			division_template = "Ganda Koy"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Ganda Iso"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Gatia"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MPSA"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "FPA"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MAA-Plateforme"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MDP"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MSA"
+			is_locked = no
+		}
+		ai_chance = { factor = 15 }
+	}
+	option = {
+		name = MLL.22.b
+		every_state = {
+			limit = {
+				OR = {
+					state = 57
+					state = 72
+					state = 73
+					state = 58
+					state = 71
+					state = 56
+					state = 59
+					state = 60
+					state = 61
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = MLL_state_local_autonomy
+				days = 360
+			}
+		}
+
+		set_division_template_lock = {
+			division_template = "Ganda Koy"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Ganda Iso"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Gatia"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MPSA"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "FPA"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MAA-Plateforme"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MDP"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MSA"
+			is_locked = no
+		}
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = MLL.22.c
+		add_stability = 0.1
+		every_state = {
+			limit = {
+				OR = {
+					state = 57
+					state = 72
+					state = 73
+					state = 58
+					state = 71
+					state = 56
+					state = 59
+					state = 60
+					state = 61
+				}
+			}
+			WZA = {
+				transfer_state = PREV
+				set_capital = {state = 56}
+			}
+			remove_core_of = AZW
+			remove_core_of = JNA
+			add_core_of = WZA
+		}
+		MLL = {
+			MLL_El_Hadj_Gamou = {
+				set_nationality = WZA
+			}
+		}
+		WZA = {
+			add_country_leader_role = {
+				character = MLL_El_Hadj_Gamou
+				promote_leader = yes
+				country_leader = {
+					ideology = panafricanism_sub
+					expire = "3000.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+		puppet = WZA
+
+		set_division_template_lock = {
+			division_template = "Ganda Koy"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Ganda Iso"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Gatia"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MPSA"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "FPA"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MAA-Plateforme"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MDP"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "MSA"
+			is_locked = no
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = MLL.23
+	title = MLL.23.t
+	desc = MLL.23.desc
+	picture = GFX_MLL_23
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			retire_character = MLL_Oumar_Traore
+			news_event = { id = MLL.24 days = 2 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = MLL.23.a
+		add_stability = -0.02
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { 
+	id = MLL.24
+	title = MLL.24.t
+	desc = MLL.24.desc
+	picture = GFX_MLL_24
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MLL.24.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = { has_government = fundamentalism }
+		}
+	}
+	option = {
+		name = MLL.24.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+}
+
+news_event = { 
+	id = MLL.25
+	title = MLL.25.t
+	desc = MLL.25.desc
+	picture = GFX_MLL_25
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MLL.25.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.26
+	title = MLL.26.t
+	desc = MLL.26.desc
+	picture = GFX_MLL_26
+	is_triggered_only = yes
+	
+	option = {
+		name = MLL.26.a
+		add_stability = 0.01
+		add_political_power = 10
+		clr_country_flag = MLL_Maiga_Chogel_pension
+		custom_effect_tooltip = MLL_unlock_MLL_Maiga_Chogel
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.27
+	title = MLL.27.t
+	desc = MLL.27.desc
+	picture = GFX_MLL_27
+	is_triggered_only = yes
+	
+	option = {
+		name = MLL.27.a
+		add_stability = 0.03
+		add_political_power = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.28
+	title = MLL.28.t
+	desc = MLL.28.desc
+	picture = GFX_MLL_28
+	is_triggered_only = yes
+	
+	option = {
+		name = MLL.28.a
+		add_political_power = 5
+		add_ideas = MLL_kura_biometrics
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.29
+	title = MLL.29.t
+	desc = MLL.29.desc
+	picture = GFX_MLL_29
+	is_triggered_only = yes
+	
+	option = {
+		name = MLL.29.a
+		air_experience = 5
+		add_political_power = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { 
+	id = MLL.30
+	title = MLL.30.t
+	desc = MLL.30.desc
+	picture = GFX_MLL_30
+	is_triggered_only = yes
+	
+	option = {
+		name = MLL.30.a
+		add_political_power = -45
+		add_stability = 0.05
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

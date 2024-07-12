@@ -1,0 +1,15 @@
+characters = {
+	MRV_muhamed  = {
+		name = MRV_muhamed
+		portraits = {
+			civilian = { large = "gfx/leaders/MRV/Portrait_MRV_Muhammad_Uld.dds" }
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = { large = "gfx/leaders/MRV/Portrait_MRV_Muhammad_Uld.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+
+}

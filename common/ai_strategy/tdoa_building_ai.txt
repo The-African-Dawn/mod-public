@@ -1,0 +1,54 @@
+DOTM_military = {
+	enable = {
+		date > 2024.1.1
+		num_of_civilian_factories > 30
+	}
+
+	ai_strategy = {
+    type = building_target
+    id = arms_factory
+    value = 100
+		}
+			ai_strategy = {
+    type = building_target
+    id = synthetic_refinery
+    value = 20
+		}	
+#ai_strategy = {
+#    type = added_military_to_civilian_factory_ratio
+#    value = 100
+#}		
+}
+
+
+DOTM_railway = {
+	enable = {
+		date > 2022.1.1
+	}
+		ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 20
+		}
+		ai_strategy = {
+			type = building_target
+			id = infrastructure
+			value = 2
+		}
+	
+	ai_strategy = {
+		type = building_target
+		id = rail_way
+		value = 2
+		}
+		ai_strategy = {
+		type = building_target
+		id = military_base
+		value = 0
+		}
+	ai_strategy = {
+		type = building_target
+		id = nuclear_reactor
+		value = 0
+		}
+}

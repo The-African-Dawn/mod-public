@@ -1,0 +1,19 @@
+MLL_state_local_autonomy = {
+	enable = { always = yes }
+
+	icon = GFX_idea_MLL_autonomy_region
+	
+	disable_strategic_redeployment_for_controller = 1
+    local_resources = -0.3
+    recruitable_population_factor = -0.45
+}
+
+# ISS_house_of_terror = {
+# 	enable = { is_controlled_by = ISS }
+
+# 	icon = GFX_idea_MLL_autonomy_region
+	
+# 	disable_strategic_redeployment_for_controller = 1
+#     local_resources = -0.3
+#     recruitable_population_factor = -0.45
+# }

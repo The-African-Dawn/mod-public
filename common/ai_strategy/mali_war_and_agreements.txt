@@ -1,0 +1,61 @@
+convence_the_agreements_MLL = {
+	allowed = {
+		tag = MLL
+	}
+	enable = {
+		has_war_with = AZW
+	}
+	abort = {
+		NOT = { has_idea = MALI_CONFLICT_MLL_2015_convention }
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			is_controlled_by = AZW
+		}
+		ratio = 0.1
+		ordertype = front
+		execution_type = rush
+		manual_attack = no
+		execute_order = no
+	}
+}
+convence_the_agreements_AZW = {
+	allowed = {
+		tag = AZW
+	}
+	enable = {
+		has_war_with = MLL
+	}
+	abort = {
+		NOT = { has_idea = MALI_CONFLICT_AZW_2015_convention }
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			is_controlled_by = MLL
+		}
+		ratio = 0.8
+		ordertype = front
+		execution_type = rush
+		manual_attack = no
+		execute_order = no
+	}
+}
+attack_azawad_when_get_bonuses = {
+	allowed = {
+		tag = MLL
+	}
+	enable = {
+		has_idea = MLL_assault_on_azawad
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = AZW
+		value = 100
+	}
+}

@@ -1,0 +1,103 @@
+capital = 110
+set_technology = {
+		Rifle_pizods = 1
+		AK_tech = 1
+
+		handmade_artillery_tech = 1
+		howitzer_d30_tech = 1
+		tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1
+		
+		handmade_atgm_tech = 1
+		atgm_rpg7_tech = 1
+	
+		
+		handmade_manpads_tech = 1
+		manpads_strela_tech = 1
+		basic_train = 1
+		tech_specnaz = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	
+		tech_mrap = 1
+	tech_ural = 1
+	tech_ifv_1  = 1
+	tech_lav_1 = 1
+}
+set_convoys = 3
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+set_oob = "CHD_oob"
+set_air_oob = "CHD_air_oob"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = -0.67
+
+give_military_access = FRN
+give_military_access = USR
+
+set_variable = { CHD_big_tent_politics_political_power_factor = 0.05 }
+set_variable = { CHD_big_tent_politics_stability_factor = -0.05 }
+set_variable = { CHD_big_tent_politics_pragmatism_drift = 0.01 }
+set_variable = { CHD_big_tent_politics_panafricanism_drift = 0.01 }
+set_variable = { CHD_big_tent_politics_francocentrism_drift = 0.01 }
+add_dynamic_modifier = { modifier = CHD_big_tent_politics }
+
+set_variable = { CHD_national_transitional_council_stability_factor = -0.1 }
+set_variable = { CHD_national_transitional_council_political_power_factor = -0.2 }
+set_variable = { CHD_national_transitional_council_drift_defence_factor = 0.05 }
+set_variable = { CHD_national_transitional_council_improve_relations_maintain_cost_factor = 0.1 }
+set_variable = { CHD_national_transitional_council_party_popularity_stability_factor = 0.1 }
+
+recruit_character = CHD_Mahamat_Idriss
+# recruit_character = CHD_Dago_Yacouba #КТО ЭТО, ВЛАД?
+recruit_character = CHD_Yaya_Dillo
+recruit_character = CHD_Abderaman_Koulamallah
+recruit_character = CHD_Bireme_Hamid
+recruit_character = CHD_Tom_Erdimi
+recruit_character = CHD_Limane_Mahamat
+recruit_character = CHD_Tamir_Hamid_Nguilini
+recruit_character = CHD_Mamadou_Boukar_Gana
+recruit_character = CHD_Isha_Malua_Jamus
+recruit_character = CHD_Aziz_Mahamat_Saleh
+recruit_character = CHD_Ndolonodji_Alixe_Naimbaye
+recruit_character = CHD_Abakar_Abdelkarim_Daoud
+recruit_character = CHD_Ismael_Souleymane_Lony
+recruit_character = CHD_Amine_Ahmed_Idriss
+recruit_character = CHD_Ahmat_Fadoul_Makaye
+recruit_character = CHD_Ahmat_Dari_Bazine
+recruit_character = CHD_Yosko_Youssouf_Boy
+recruit_character = CHD_Ahmat_Goukouni_Mourali
+recruit_character = CHD_Heri_Herendji_Djaguid
+recruit_character = CHD_Youssouf_Oumar_Barh
+recruit_character = CHD_Guerdi_Abakar_Adoum
+
+set_politics = {
+	ruling_party = pragmatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+starting_train_buffer = 5
+
+set_popularities = {
+	pragmatism = 35
+	francocentrism = 29
+	panafricanism = 33
+	fundamentalism = 3
+}
+
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+	CHD_military_council
+	CHD_big_tent_politics
+	CHD_fighting_in_your_name
+	CHD_FACT_separatism
+	CHD_humanitarian_problems
+	CHD_Abakar_Abdelkarim_Daoud
+}

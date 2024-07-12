@@ -1,0 +1,13 @@
+
+animation = {
+	name = "vickers_attack_animation"
+	file = "vickers_attack.anim"
+}
+animation = {
+	name = "vickers_idle_animation"
+	file = "vickers_idle.anim"
+}
+animation = {
+	name = "vickers_move_animation"
+	file = "vickers_move.anim"
+}

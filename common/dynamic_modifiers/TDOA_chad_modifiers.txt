@@ -1,0 +1,23 @@
+CHD_big_tent_politics = {
+	enable = { always = yes }
+
+	icon = GFX_idea_CHD_big_tent_politics
+	
+	political_power_factor = CHD_big_tent_politics_political_power_factor
+	stability_factor = CHD_big_tent_politics_stability_factor
+	pragmatism_drift = CHD_big_tent_politics_pragmatism_drift
+	panafricanism_drift = CHD_big_tent_politics_panafricanism_drift
+	francocentrism_drift = CHD_big_tent_politics_francocentrism_drift
+}
+CHD_national_transitional_council = {
+	enable = { always = yes }
+
+	icon = GFX_idea_CHD_national_transitional_council
+	
+	stability_factor = CHD_national_transitional_council_stability_factor
+	political_power_factor = CHD_national_transitional_council_political_power_factor
+	drift_defence_factor = CHD_national_transitional_council_drift_defence_factor
+	improve_relations_maintain_cost_factor = CHD_national_transitional_council_improve_relations_maintain_cost_factor
+	party_popularity_stability_factor = CHD_national_transitional_council_party_popularity_stability_factor
+	resistance_target = CHD_national_transitional_council_resistance_target
+}

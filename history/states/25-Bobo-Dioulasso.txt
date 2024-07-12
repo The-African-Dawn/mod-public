@@ -1,0 +1,64 @@
+state = {
+	id = 25
+	name = "STATE_25"
+	history = {
+		owner = BRK
+		add_core_of = BRK
+		set_variable = {
+			amount_of_gold = 0.19
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			485
+			30
+		}
+		victory_points = {
+			1805
+			5
+		}
+		victory_points = {
+			4834
+			2
+		}
+		victory_points = {
+			3035
+			2
+		}
+		ISS = {
+			set_province_controller = 2304
+			set_province_controller = 182
+			set_province_controller = 4839
+			set_province_controller = 3039
+			set_province_controller = 4835
+			set_province_controller = 1599
+			set_province_controller = 4834
+		}
+	}
+	provinces = {
+		182
+		485
+		516
+		1009
+		1599
+		1805
+		2304
+		2326
+		3035
+		4834
+		4835
+		4839
+		4840
+		4849
+		4954
+		4997
+		4998
+	}
+	manpower = 3994143
+	buildings_max_level_factor = 1
+	state_category = rural
+	local_supplies = 0
+}

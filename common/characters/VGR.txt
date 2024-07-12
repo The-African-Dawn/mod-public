@@ -1,0 +1,28 @@
+characters = {
+	VGR_Simon_Ekpa = {
+		name = VGR_Simon_Ekpa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VGR/VGR_Simon_Ekpa.dds"
+				small = "gfx/leaders/VGR/VGR_Simon_Ekpa_advisor.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,65 @@
+characters = {
+	SLR_julius_ebola = {
+		name = SLR_julius_ebola
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLR/Portrait_SLR_Julius_Maada.dds"
+			}
+			army = {
+				large = "gfx/leaders/SLR/Portrait_SLR_Julius_Maada.dds"
+			}
+		}
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	SLR_Ernest_Bai_Koroma = {
+		name = SLR_Ernest_Bai_Koroma
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLR/SLR_Ernest_Bai_Koroma.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	SLR_Kellie_Hassan_Conteh = {
+		name = SLR_Kellie_Hassan_Conteh
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLR/Portrait_SLR_Kellie_Hassan_Conteh.dds"
+				small = "gfx/advisors/Portrait_SLR_Kellie_Hassan_Conteh.dds"
+			}
+			army = {
+				large = "gfx/leaders/SLR/Portrait_SLR_Kellie_Hassan_Conteh.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = kellie_hassan_conteh
+			ledger = army
+			allowed = {
+				original_tag = SLR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

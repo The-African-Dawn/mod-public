@@ -1,0 +1,37 @@
+﻿l_english:
+ DAC_no_create:0"African Corps Not Created"
+ disarmed_nation_mjr:0"Small Contingent"
+ volunteer_only_mjr:0"Limited Presence"
+ limited_conscription_mjr:0"Expanded Presence"
+ extensive_conscription_mjr:0"Full-Scale Presence"
+
+ civilian_economy_mjr:0"Weak Involvement"
+ low_economic_mobilisation_mjr:0"Limited Involvement"
+ partial_economic_mobilisation_mjr:0"Strong Involvement"
+ war_economy_mjr:0"Full-Scale Involvement"
+
+ extensive_conscription_fun:0"Global Jihad"
+ war_economy_fun:0"Shadow Economy"
+
+ SU:0"Sukhoi Design Bureau"
+ Lockheed_concern:0"Lockheed Martin"
+ dassault_concern:0"Dassault Group"
+ china_concern:0"Chengdu Aircraft Industry Group"
+
+ podpol_tank_production:0 "Underground Tank Production"
+ podpol_mat_production:0 "Underground Small Arms Production"
+ podpol_industry:0 "Underground Construction Workshops"
+ podpol_oil:0 "Underground Resource Extraction Companies"
+
+    TNS_state_of_emergency:"State of Emergency"
+    ALJ_gas_deposits:"Gas Deposits"
+    ALL_the_great_maghreb:"The Great Maghreb"
+    LBR_american_connections:"American Connections"
+    SLR_useless_wealth:"Useless Wealth"
+    SLR_energy_problem:"Energy Problem"
+    GVN_transitional_government:"Transitional Government"
+    GBI_interservice_conflict:"Interservice Conflict"
+    GMB_agricultural_effort:"Agricultural Effort"
+    LIV_ghost_of_the_past:"Ghost of the Past"
+    LIV_libyan_fire:"Libyan Fire"
+    MRV_high_alert:"Army on Alert"

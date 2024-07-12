@@ -1,0 +1,55 @@
+capital = 170
+set_oob = "_GENERIC_OOB"
+set_technology = {
+	Rifle_pizods = 1
+		AK_tech = 1
+		AK_tech_2 = 1
+		
+		handmade_artillery_tech = 1
+		howitzer_d30_tech = 1
+		howitzer_giatsint_tech = 1
+		
+		handmade_atgm_tech = 1
+		atgm_rpg7_tech = 1
+		atgm_metis_tech = 1
+		
+		handmade_manpads_tech = 1
+		manpads_strela_tech = 1
+		manpads_igla_tech = 1
+		basic_train = 1
+		tech_specnaz = 1
+}
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+set_convoys = 3
+starting_train_buffer = 5
+
+set_research_slots = 3
+set_stability = -0.93
+set_war_support = -0.67
+
+recruit_character = ALJ_Abdelmadjid_Tebbun
+
+add_ideas = { 
+ALJ_gas_deposits
+ALL_the_great_maghreb
+disarmed_nation
+civilian_economy
+}
+
+set_politics = {
+	ruling_party = pragmatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+set_popularities = {
+	pragmatism = 100
+}
+
+
+

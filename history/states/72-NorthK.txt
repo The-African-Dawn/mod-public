@@ -1,0 +1,19 @@
+
+state={
+	id=72
+	name="STATE_72"
+
+	history={
+				owner = JNA
+		add_core_of = JNA
+		add_core_of = MLL
+
+	}
+	state_category = rural
+	provinces={
+		1210 2177 2871 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

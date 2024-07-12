@@ -1,0 +1,38 @@
+
+add_namespace = ISS
+	
+country_event = { 
+	id = ISS.1
+	title = ISS.1.t
+	desc = ISS.1.desc
+	
+	picture = GFX_ISS_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = ISS.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {ISS = {
+            declare_war_on = {
+                target = ROOT
+                type = annex_everything
+            }
+        }}
+			random_controlled_state  = {
+				create_unit = {
+    division = "name = \"Artie\" division_template = \"Infantry Brigade\" start_manpower_factor = 0.3"
+    owner = ISS
+    count = 3
+    allow_spawning_on_enemy_provs = yes
+    country_score = {
+        base = 3
+        modifier = {
+            factor = 2
+            tag = ISS
+        }
+    }
+    id = 123
+		}}}
+	}
+}

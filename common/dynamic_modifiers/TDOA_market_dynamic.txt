@@ -1,0 +1,14 @@
+hidden_market_affirs_trigger = {
+	enable = { always = yes }
+
+	#icon = GFX_modifiers_sabotaged_resource ### УДАЛИТЬ ИКОНКУ ПЕРЕД РЕЛИЗОМ
+	# ПРИ УДАЛЕННОЙ ИКОНКЕ МОДИФАЕР ПРОПАДЕТ ИЗ СПИСКА НАЦДУХОВ И БУДЕТ ДЕЙСТВОВАТЬ 
+	# КАК БУДТО БЫ ВСЕ СДЕЛАНО БЕЗ КОСТЫЛЕЙ
+	
+	country_resource_oil = total_market_buying_1
+	country_resource_aluminium = total_market_buying_2
+	country_resource_rubber = total_market_buying_3
+	country_resource_tungsten = total_market_buying_4
+	country_resource_chromium = total_market_buying_6
+	country_resource_steel = total_market_buying_5
+}

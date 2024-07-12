@@ -1,0 +1,26 @@
+
+state={
+	id=183
+	name="STATE_183"
+	resources={
+		steel=3
+	}
+	history={
+		owner = TNS
+		add_core_of = TNS
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		380 467 1191 1388 1787 1899 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

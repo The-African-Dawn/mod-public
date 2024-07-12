@@ -1,0 +1,86 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_african_map_tab"
+		texturefile = "gfx/interface/africabattle/african_map_tab.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_country_status"
+		texturefile = "gfx/interface/africabattle/BRK_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_MLL_country_status"
+		texturefile = "gfx/interface/africabattle/MLL_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_NIG_country_status"
+		texturefile = "gfx/interface/africabattle/NIG_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_NRG_country_status"
+		texturefile = "gfx/interface/africabattle/NRG_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_BNN_country_status"
+		texturefile = "gfx/interface/africabattle/BNN_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_TGG_country_status"
+		texturefile = "gfx/interface/africabattle/TGG_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_GNN_country_status"
+		texturefile = "gfx/interface/africabattle/GNN_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KOT_country_status"
+		texturefile = "gfx/interface/africabattle/KOT_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_LBR_country_status"
+		texturefile = "gfx/interface/africabattle/LBR_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_GVN_country_status"
+		texturefile = "gfx/interface/africabattle/GVN_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_SLR_country_status"
+		texturefile = "gfx/interface/africabattle/SLR_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_GBI_country_status"
+		texturefile = "gfx/interface/africabattle/GBI_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_SNG_country_status"
+		texturefile = "gfx/interface/africabattle/SNG_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_MRV_country_status"
+		texturefile = "gfx/interface/africabattle/MRV_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_CHD_country_status"
+		texturefile = "gfx/interface/africabattle/CHD_status.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_KMR_country_status"
+		texturefile = "gfx/interface/africabattle/KMR_status.dds"
+		noOfFrames = 3
+	}
+}

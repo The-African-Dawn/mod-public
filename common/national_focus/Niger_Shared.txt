@@ -1,0 +1,1613 @@
+﻿shared_focus = {
+	id = NIG_too_many_problems
+	icon = GFX_goal_NIG_too_many_problems
+	cost = 5.8
+	x = 7
+	y = 0
+	bypass = {
+		has_government = panafricanism
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+			ideology = panafricanism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_nationwide_protests
+	icon = GFX_goal_NIG_nationwide_protests
+	cost = 5.8
+	relative_position_id = NIG_too_many_problems
+	prerequisite = {
+		focus = NIG_too_many_problems
+	}
+	
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+		has_government = panafricanism
+	}
+	completion_reward = {
+		add_political_power = 25
+		add_popularity = {
+			ideology = panafricanism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_rallies_against_american_presence
+	icon = GFX_goal_NIG_rallies_against_american_presence
+	cost = 5.8
+	relative_position_id = NIG_too_many_problems
+	prerequisite = {
+		focus = NIG_too_many_problems
+	}
+	bypass = {
+		has_government = panafricanism
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 25
+		add_popularity = {
+			ideology = panafricanism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_great_revolution
+	icon = GFX_goal_NIG_great_revolution
+	cost = 0.6
+	relative_position_id = NIG_nationwide_protests
+	prerequisite = {
+		focus = NIG_nationwide_protests
+	}
+	prerequisite = {
+		focus = NIG_rallies_against_american_presence
+	}
+	available = {
+		has_government = panafricanism
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NIG_local_instability_1
+			remove_idea = NIG_local_instability
+		}
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = NIG_face_of_judgement
+	icon = GFX_goal_NIG_face_of_judgement
+	cost = 2
+	relative_position_id = NIG_great_revolution
+	prerequisite = {
+		focus = NIG_great_revolution
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		news_event = NIG.2
+		add_popularity = {
+			ideology = panafricanism
+			popularity = 0.1
+		}
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = NIG_will_of_the_people
+	icon = GFX_goal_NIG_will_of_the_people
+	cost = 3
+	relative_position_id = NIG_great_revolution
+	prerequisite = {
+		focus = NIG_great_revolution
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_will_of_the_people_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_end_of_eumpm
+	icon = GFX_goal_NIG_end_of_eumpm
+	cost = 1.8
+	relative_position_id = NIG_will_of_the_people
+	prerequisite = {
+		focus = NIG_will_of_the_people
+	}
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NIG_eumpm_mission
+		hidden_effect = { news_event = NIG.5 }
+	}
+}
+
+shared_focus = {
+	id = NIG_tensions_with_benin
+	icon = GFX_goal_NIG_tensions_with_benin
+	cost = 5.8
+	relative_position_id = NIG_end_of_eumpm
+	prerequisite = {
+		focus = NIG_end_of_eumpm
+	}
+	bypass = {
+		has_war_with = BNN
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		news_event = NIG.6
+		add_political_power = 50
+		BNN = {
+			add_timed_idea = {idea = NIG_oil_trolling days = 270}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_cooperation_with_chad
+	icon = GFX_goal_NIG_cooperation_with_chad
+	cost = 5.8
+	relative_position_id = NIG_tensions_with_benin
+	prerequisite = {
+		focus = NIG_tensions_with_benin
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		CHD = { country_event = { id = NIG.7 days = 1 hours = 6 } }
+		custom_effect_tooltip = if_they_agree_CHD
+		event_option_tooltip = NIG.8.a
+	}
+}
+
+shared_focus = {
+	id = NIG_our_place_in_the_world_market
+	icon = GFX_goal_NIG_our_place_in_the_world_market
+	cost = 5.8
+	relative_position_id = NIG_tensions_with_benin
+	prerequisite = {
+		focus = NIG_tensions_with_benin
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_usage_of_export_and_import
+	}
+}
+
+shared_focus = {
+	id = NIG_strengthen_integration_with_sahel_partners
+	icon = GFX_goal_NIG_strengthen_integration_with_sahel_partners
+	cost = 5.8
+	relative_position_id = NIG_our_place_in_the_world_market
+	prerequisite = {
+		focus = NIG_our_place_in_the_world_market
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.03
+		every_country = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = NIG
+					tag = MRV
+					tag = CHD
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = BRK_sahel_economical_friendship
+			}
+			BRK = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = BRK_sahel_economical_friendship
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_invite_chinese_experts
+	icon = GFX_goal_NIG_invite_chinese_experts
+	cost = 5.8
+	relative_position_id = NIG_our_place_in_the_world_market
+	prerequisite = {
+		focus = NIG_our_place_in_the_world_market
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_chinese_experts
+		
+		add_to_variable = { african_chinese_favors = 1 }
+		custom_effect_tooltip = african_chinese_favors_1_tt
+	}
+}
+
+shared_focus = {
+	id = NIG_surrounded_by_opportunities
+	icon = GFX_goal_NIG_surrounded_by_opportunities
+	cost = 5.8
+	relative_position_id = NIG_invite_chinese_experts
+	prerequisite = {
+		focus = NIG_invite_chinese_experts
+	}
+	prerequisite = {
+		focus = NIG_strengthen_integration_with_sahel_partners
+	}
+	prerequisite = {
+		focus = NIG_cooperation_with_chad
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_surrounded_by_opportunities_idea
+	}
+}
+
+
+shared_focus = {
+	id = NIG_national_school_of_oil_and_gas
+	icon = GFX_goal_NIG_national_school_of_oil_and_gas
+	cost = 5.8
+	relative_position_id = NIG_face_of_judgement
+	prerequisite = {
+		focus = NIG_face_of_judgement
+	}
+	prerequisite = {
+		focus = NIG_will_of_the_people
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		65 = {
+			add_building_construction = {
+				type = university
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_solidarity_with_russia
+	icon = GFX_goal_NIG_solidarity_with_russia
+	cost = 5.8
+	relative_position_id = NIG_face_of_judgement
+	prerequisite = {
+		focus = NIG_face_of_judgement
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = RUS
+			modifier = MLL_international_ties
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = NIG
+				modifier = MLL_international_ties
+			}
+		}
+		add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+		
+	}
+}
+
+shared_focus = {
+	id = NIG_diplomatic_office
+	icon = GFX_goal_NIG_diplomatic_office
+	cost = 5.8
+	relative_position_id = NIG_solidarity_with_russia
+	prerequisite = {
+		focus = NIG_solidarity_with_russia
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_diplomatic_office_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_cooperation_in_education
+	icon = GFX_goal_NIG_cooperation_in_education
+	cost = 5.8
+	relative_position_id = NIG_diplomatic_office
+	prerequisite = {
+		focus = NIG_diplomatic_office
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NIG_low_finances_for_education
+	}
+}
+
+shared_focus = {
+	id = NIG_unity_and_solidarity
+	icon = GFX_goal_NIG_unity_and_solidarity
+	cost = 5.8
+	relative_position_id = NIG_diplomatic_office
+	prerequisite = {
+		focus = NIG_diplomatic_office
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NIG_local_instability_1
+	}
+}
+
+shared_focus = {
+	id = NIG_russian_strength
+	icon = GFX_goal_NIG_russian_strength
+	cost = 5.8
+	relative_position_id = NIG_unity_and_solidarity
+	prerequisite = {
+		focus = NIG_unity_and_solidarity
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 100
+		}
+		add_equipment_to_stockpile = {
+			type = ak_1
+			amount = 2000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = ATGM_equipment_9k111
+			amount = 100
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = howitzer_equipment_d30
+			amount = 10
+			producer = RUS
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = NIG_chinese_wealth
+	icon = GFX_goal_NIG_chinese_wealth
+	cost = 5.8
+	relative_position_id = NIG_unity_and_solidarity
+	prerequisite = {
+		focus = NIG_unity_and_solidarity
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_chinese_help
+	}
+}
+
+shared_focus = {
+	id = NIG_military_technical_cooperation
+	icon = GFX_goal_NIG_military_technical_cooperation
+	cost = 5.8
+	relative_position_id = NIG_cooperation_in_education
+	prerequisite = {
+		focus = NIG_cooperation_in_education
+	}
+	prerequisite = {
+		focus = NIG_russian_strength
+	}
+	prerequisite = {
+		focus = NIG_chinese_wealth
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_country_flag = RUS_friend
+		custom_effect_tooltip = BRK_RUS_Friend_tt
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 100
+		}
+		add_equipment_to_stockpile = {
+			type = ak_1
+			amount = 2000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = ATGM_equipment_9k111
+			amount = 100
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = howitzer_equipment_d30
+			amount = 10
+			producer = RUS
+		}
+		add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+		
+	}
+}
+
+shared_focus = {
+	id = NIG_anti_imperialist_action
+	icon = GFX_goal_NIG_anti_imperialist_action
+	cost = 5.8
+	relative_position_id = NIG_solidarity_with_russia
+	prerequisite = {
+		focus = NIG_solidarity_with_russia
+	}
+	prerequisite = {
+		focus = NIG_national_school_of_oil_and_gas
+	}
+	prerequisite = {
+		focus = NIG_end_of_eumpm
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_anti_imperialist_action_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_supply_friends_with_oil
+	icon = GFX_goal_NIG_supply_friends_with_oil
+	cost = 5.8
+	relative_position_id = NIG_anti_imperialist_action
+	prerequisite = {
+		focus = NIG_anti_imperialist_action
+	}
+	available = {
+		OR = {
+			is_in_faction_with = MLL
+			is_in_faction_with = BRK
+		}
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				BRK = { has_government = panafricanism }
+			}
+			BRK = { add_ideas = NIG_supply_friends_with_oil }
+		}
+		if = {
+			limit = {
+				MLL = { has_government = panafricanism }
+			}
+			MLL = { add_ideas = NIG_supply_friends_with_oil }
+		}
+		if = {
+			limit = {
+				GVN = { has_government = panafricanism }
+			}
+			GVN = { add_ideas = NIG_supply_friends_with_oil }
+		}
+		if = {
+			limit = {
+				CHD = { has_government = panafricanism }
+			}
+			CHD = { add_ideas = NIG_supply_friends_with_oil }
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_protect_our_natural_resources
+	icon = GFX_goal_NIG_protect_our_natural_resources
+	cost = 5.8
+	relative_position_id = NIG_supply_friends_with_oil
+	prerequisite = {
+		focus = NIG_supply_friends_with_oil
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_save_our_resources
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = NIG_onwards_to_prosperity
+	icon = GFX_goal_NIG_onwards_to_prosperity
+	cost = 5.8
+	relative_position_id = NIG_military_technical_cooperation
+	prerequisite = {
+		focus = NIG_military_technical_cooperation
+	}
+	prerequisite = {
+		focus = NIG_protect_our_natural_resources
+	}
+	prerequisite = {
+		focus = NIG_surrounded_by_opportunities
+	}
+	x = 4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NIG_onwards_to_prosperity_idea
+			remove_idea = NIG_surrounded_by_opportunities_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_inflation_out_of_control
+	icon = GFX_goal_NIG_inflation_out_of_control
+	cost = 2.8
+	x = 22
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NIG_construction_safety_measures
+	icon = GFX_goal_NIG_construction_safety_measures
+	cost = 5.8
+	relative_position_id = NIG_inflation_out_of_control
+	prerequisite = {
+		focus = NIG_inflation_out_of_control
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_construction_safety_measures_idea
+			days = 140
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_uranium_mines
+	icon = GFX_goal_NIG_uranium_mines
+	cost = 5.8
+	relative_position_id = NIG_construction_safety_measures
+	prerequisite = {
+		focus = NIG_construction_safety_measures
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NIG_uranium_mining_2
+			remove_idea = NIG_uranium_mining
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_nigerian_oil
+	icon = GFX_goal_NIG_nigerian_oil
+	cost = 5.8
+	relative_position_id = NIG_construction_safety_measures
+	prerequisite = {
+		focus = NIG_construction_safety_measures
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 4
+			state = 67
+		}
+		add_resource = {
+			type = oil
+			amount = 5
+			state = 68
+		}
+		add_resource = {
+			type = oil
+			amount = 6
+			state = 70
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_mining_reforms
+	icon = GFX_goal_NIG_mining_reforms
+	cost = 5.8
+	relative_position_id = NIG_uranium_mines
+	prerequisite = {
+		focus = NIG_uranium_mines
+	}
+	prerequisite = {
+		focus = NIG_nigerian_oil
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_resource = {
+			type = steel
+			amount = 2
+			state = 67
+		}
+		add_resource = {
+			type = tungsten
+			amount = 1
+			state = 67
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_redistribute_mining_rights
+	icon = GFX_goal_NIG_redistribute_mining_rights
+	cost = 5.8
+	relative_position_id = NIG_mining_reforms
+	prerequisite = {
+		focus = NIG_mining_reforms
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NIG_extreme_poverty
+			add_idea = NIG_extreme_poverty_2
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_expel_western_capital
+	icon = GFX_goal_NIG_expel_western_capital
+	cost = 5.8
+	relative_position_id = NIG_mining_reforms
+	prerequisite = {
+		focus = NIG_mining_reforms
+	}
+	x = -4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_filling_in_the_empty_space
+	icon = GFX_goal_NIG_filling_in_the_empty_space
+	cost = 5.8
+	relative_position_id = NIG_expel_western_capital
+	prerequisite = {
+		focus = NIG_expel_western_capital
+	}
+	prerequisite = {
+		focus = NIG_opening_private_schools
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_transport_infrastructure_development
+	icon = GFX_goal_NIG_transport_infrastructure_development
+	cost = 5.8
+	relative_position_id = NIG_filling_in_the_empty_space
+	prerequisite = {
+		focus = NIG_filling_in_the_empty_space
+	}
+	prerequisite = {
+		focus = NIG_inflation_under_control
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		65 = {
+			add_building_construction = {
+				type = hospital
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_energy_independence
+	icon = GFX_goal_NIG_energy_independence
+	cost = 5.8
+	relative_position_id = NIG_attract_eastern_investments
+	prerequisite = {
+		focus = NIG_attract_eastern_investments
+	}
+	prerequisite = {
+		focus = NIG_inflation_under_control
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.15
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = NIG_chinese_oil_contract
+	icon = GFX_goal_NIG_chinese_oil_contract
+	cost = 5.8
+	relative_position_id = NIG_mining_reforms
+	prerequisite = {
+		focus = NIG_mining_reforms
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_chinese_contractors_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_preferential_electricity_rates
+	icon = GFX_goal_NIG_preferential_electricity_rates
+	cost = 5.8
+	relative_position_id = NIG_mining_reforms
+	prerequisite = {
+		focus = NIG_mining_reforms
+	}
+	x = 4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_preferential_electricity_rates_idea
+			days = 360
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_attract_eastern_investments
+	icon = GFX_goal_NIG_attract_eastern_investments
+	cost = 5.8
+	relative_position_id = NIG_preferential_electricity_rates
+	prerequisite = {
+		focus = NIG_preferential_electricity_rates
+	}
+	prerequisite = {
+		focus = NIG_sahel_currency
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
+		add_ideas = BRK_russian_economic_group_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_social_instability
+	icon = GFX_goal_NIG_social_instability
+	cost = 5.8
+	relative_position_id = NIG_redistribute_mining_rights
+	prerequisite = {
+		focus = NIG_chinese_oil_contract
+	}
+	prerequisite = {
+		focus = NIG_redistribute_mining_rights
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NIG_extreme_poverty_2
+			add_idea = NIG_extreme_poverty_3
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_sahel_currency
+	icon = GFX_goal_NIG_sahel_currency
+	cost = 5.8
+	relative_position_id = NIG_social_instability
+	prerequisite = {
+		focus = NIG_social_instability
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NIG_extreme_poverty_3
+			add_idea = NIG_extreme_poverty_4
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_opening_private_schools
+	icon = GFX_goal_NIG_opening_private_schools
+	cost = 5.8
+	relative_position_id = NIG_social_instability
+	prerequisite = {
+		focus = NIG_social_instability
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		65 = {
+			add_building_construction = {
+				type = university
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_inflation_under_control
+	icon = GFX_goal_NIG_inflation_under_control
+	cost = 5.8
+	relative_position_id = NIG_opening_private_schools
+	prerequisite = {
+		focus = NIG_opening_private_schools
+	}
+	prerequisite = {
+		focus = NIG_sahel_currency
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NIG_extreme_poverty_5
+			remove_idea = NIG_extreme_poverty_4
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_paying_the_debts
+	icon = GFX_goal_NIG_paying_the_debts
+	cost = 5.8
+	relative_position_id = NIG_inflation_under_control
+	prerequisite = {
+		focus = NIG_inflation_under_control
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NIG_extreme_poverty_5
+	}
+}
+
+shared_focus = {
+	id = NIG_explosive_economic_growth
+	icon = GFX_goal_NIG_explosive_economic_growth
+	cost = 5.8
+	relative_position_id = NIG_paying_the_debts
+	prerequisite = {
+		focus = NIG_paying_the_debts
+	}
+	prerequisite = {
+		focus = NIG_transport_infrastructure_development
+	}
+	prerequisite = {
+		focus = NIG_energy_independence
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_explosive_economic_growth_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_fighting_crime
+	icon = GFX_goal_NIG_fighting_crime
+	cost = 5.8
+	x = 37
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = NIG_fighting_crime_idea
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_guarding_the_border
+	icon = GFX_goal_NIG_guarding_the_border
+	cost = 5.8
+	relative_position_id = NIG_fighting_crime
+	prerequisite = {
+		focus = NIG_fighting_crime
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_guarding_the_border_idea
+	}
+}
+
+shared_focus = {
+	id = NIG_strengthen_pipeline_protection
+	icon = GFX_goal_NIG_strengthen_pipeline_protection
+	cost = 5.8
+	relative_position_id = NIG_guarding_the_border
+	prerequisite = {
+		focus = NIG_guarding_the_border
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NIG_attacks_on_oil_pipelines
+	}
+}
+
+shared_focus = {
+	id = NIG_terrorist_footprints
+	icon = GFX_goal_NIG_terrorist_footprints
+	cost = 5.8
+	relative_position_id = NIG_strengthen_pipeline_protection
+	prerequisite = {
+		focus = NIG_strengthen_pipeline_protection
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = fundamentalism
+			popularity = -0.2
+		}
+		army_experience = 75
+	}
+}
+
+shared_focus = {
+	id = NIG_french_trail
+	icon = GFX_goal_NIG_french_trail
+	cost = 5.8
+	relative_position_id = NIG_terrorist_footprints
+	prerequisite = {
+		focus = NIG_terrorist_footprints
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		activate_mission_tooltip = niger_france_leaving_bases
+		set_global_flag = NIG_FRN_leave_mil_bases
+	}
+}
+
+shared_focus = {
+	id = NIG_sign_drone_contracts
+	icon = GFX_goal_NIG_sign_drone_contracts
+	cost = 5.8
+	relative_position_id = NIG_french_trail
+	prerequisite = {
+		focus = NIG_french_trail
+	}
+	prerequisite = {
+		focus = NIG_increase_secret_service_funding
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 75
+		add_equipment_to_stockpile = {
+			type = uav_airframe_0
+			producer = FRN
+			amount = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_benin_border_under_control
+	icon = GFX_goal_NIG_benin_border_under_control
+	cost = 5.8
+	relative_position_id = NIG_strengthen_pipeline_protection
+	prerequisite = {
+		focus = NIG_strengthen_pipeline_protection
+	}
+	available = { 
+		66 = { is_fully_controlled_by = NIG }
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 66
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border_country = BNN
+				}
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"Bataillon d'infanterie\" division_template = \"Bataillon d'infanterie\" start_experience_factor = 0 start_equipment_factor = 0.7" 
+				owner = ROOT
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_increase_secret_service_funding
+	icon = GFX_goal_NIG_increase_secret_service_funding
+	cost = 5.8
+	relative_position_id = NIG_benin_border_under_control
+	prerequisite = {
+		focus = NIG_benin_border_under_control
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+			name = "DGPC"
+			icon = GFX_intelligence_agency_logo_nig
+		}
+		add_stability = 0.02
+		add_war_support = 0.02
+	}
+}
+
+shared_focus = {
+	id = NIG_investigate_terrorist_attacks
+	icon = GFX_goal_NIG_investigate_terrorist_attacks
+	cost = 5.8
+	relative_position_id = NIG_fighting_crime
+	prerequisite = {
+		focus = NIG_fighting_crime
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_russian_intel_specialists
+	}
+}
+
+shared_focus = {
+	id = NIG_strategic_site_protection
+	icon = GFX_goal_NIG_strategic_site_protection
+	cost = 5.8
+	relative_position_id = NIG_investigate_terrorist_attacks
+	prerequisite = {
+		focus = NIG_investigate_terrorist_attacks
+	}
+	available = {
+		65 = { is_controlled_by = NIG }
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+		division_template = {
+			name = "Special Site Protection Unit"
+			priority = 2
+			regiments = {
+				speznaz = {
+					x = 0
+					y = 0
+				}
+				speznaz = {
+					x = 0
+					y = 1
+				}
+				speznaz = {
+					x = 0
+					y = 2
+				}
+				speznaz = {
+					x = 1
+					y = 0
+				}
+				speznaz = {
+					x = 1
+					y = 1
+				}
+				speznaz = {
+					x = 1
+					y = 2
+				}
+				speznaz = {
+					x = 2
+					y = 0
+				}
+				speznaz = {
+					x = 2
+					y = 1
+				}
+				speznaz = {
+					x = 2
+					y = 2
+				}
+			}
+		}
+		65 = {
+			create_unit = {
+				division = "name = \"Special Site Protection Unit\" division_template = \"Special Site Protection Unit\" start_experience_factor = 0.3"
+				owner = NIG
+				count = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_withdrawal_of_american_troops
+	icon = GFX_goal_NIG_withdrawal_of_american_troops
+	cost = 5.8
+	relative_position_id = NIG_fighting_crime
+	prerequisite = {
+		focus = NIG_fighting_crime
+	}
+	available = {
+		has_government = panafricanism
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		activate_mission_tooltip = niger_usa_leaving_bases
+		set_global_flag = NIG_USR_leave_mil_bases
+	}
+}
+
+shared_focus = {
+	id = NIG_russian_training
+	icon = GFX_goal_NIG_russian_training
+	cost = 5.8
+	relative_position_id = NIG_withdrawal_of_american_troops
+	prerequisite = {
+		focus = NIG_withdrawal_of_american_troops
+	}
+	available = {
+		has_completed_focus = NIG_end_of_eumpm
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_dynamic_modifier = {
+			modifier = Corpus_training_modifier
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_repurpose_american_bases
+	icon = GFX_goal_NIG_repurpose_american_bases
+	cost = 5.8
+	relative_position_id = NIG_russian_training
+	prerequisite = {
+		focus = NIG_russian_training
+	}
+	available = {
+		48 = {
+			is_fully_controlled_by = NIG
+		}
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		48 = {
+			remove_core_of = NIG
+			add_core_of = RUS
+		}
+		RUS = {
+			transfer_state = 48
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_hire_siryan_mercenaries
+	icon = GFX_goal_NIG_hire_siryan_mercenaries
+	cost = 5.8
+	relative_position_id = NIG_repurpose_american_bases
+	prerequisite = {
+		focus = NIG_repurpose_american_bases
+	}
+	available = {
+		65 = { is_controlled_by = NIG }
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		division_template = {
+			name = "Syrian Mercenaries"
+			division_cap = 3
+			override_model = NIG_light_infantry_opol_alt_0_entity
+			is_locked = yes
+			priority = 1
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				light_infantry_opol = {
+					x = 0
+					y = 1
+				}
+				light_infantry_opol = {
+					x = 0
+					y = 2
+				}
+				light_infantry_opol = {
+					x = 1
+					y = 0
+				}
+				light_infantry_opol = {
+					x = 1
+					y = 1
+				}
+				light_infantry_opol = {
+					x = 1
+					y = 2
+				}
+				light_infantry_opol = {
+					x = 2
+					y = 0
+				}
+				light_infantry_opol = {
+					x = 2
+					y = 1
+				}
+				light_infantry_opol = {
+					x = 2
+					y = 2
+				}
+			}
+		}
+		65 = {
+			create_unit = {
+				division = "name = \"Syrian Mercenaries\" division_template = \"Syrian Mercenaries\" start_experience_factor = 0.1"
+				owner = NIG
+				count = 3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_officer_training
+	icon = GFX_goal_NIG_officer_training
+	cost = 5.8
+	relative_position_id = NIG_hire_siryan_mercenaries
+	prerequisite = {
+		focus = NIG_hire_siryan_mercenaries
+	}
+	prerequisite = {
+		focus = NIG_eastern_advisors
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_unit_leader = { add_logistics = 1 add_skill_level = 1 }
+	}
+}
+
+shared_focus = {
+	id = NIG_african_corps
+	icon = GFX_goal_NIG_african_corps
+	cost = 5.8
+	relative_position_id = NIG_russian_training
+	prerequisite = {
+		focus = NIG_russian_training
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NIG_russian_specialists_in_army
+	}
+}
+
+shared_focus = {
+	id = NIG_eastern_advisors
+	icon = GFX_goal_NIG_eastern_advisors
+	cost = 5.8
+	relative_position_id = NIG_african_corps
+	prerequisite = {
+		focus = NIG_african_corps
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NIG_doesnt_have_needed_amount_of_professionals
+	}
+}

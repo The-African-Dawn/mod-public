@@ -1,0 +1,1354 @@
+﻿shared_focus = {
+	id = NRG_new_old_challenges
+	icon = GFX_goal_NRG_new_old_challenges
+	cost = 7.2
+	x = 6
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = { global.ecowas_unity_points = 10 }
+		set_global_flag = ECOWAS_choosing_major_started
+		set_global_flag = ecowas_unity_restoration_starts
+		custom_effect_tooltip = ecowas_unity_points_add_10
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = NRG_corruption_of_our_system
+	icon = GFX_goal_NRG_corruption_of_our_system
+	cost = 7.2
+	relative_position_id = NRG_new_old_challenges
+	prerequisite = {
+		focus = NRG_new_old_challenges
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_country_flag = Nigerian_Corruption_Started
+		custom_effect_tooltip = Nigerian_Corruption_Started_tt
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = NRG_damaged_not_broken
+	icon = GFX_goal_NRG_damaged_not_broken
+	cost = 7.2
+	relative_position_id = NRG_corruption_of_our_system
+	prerequisite = {
+		focus = NRG_corruption_of_our_system
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NRG_bound_by_crime
+	icon = GFX_goal_NRG_bound_by_crime
+	cost = 7.2
+	relative_position_id = NRG_corruption_of_our_system
+	prerequisite = {
+		focus = NRG_corruption_of_our_system
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NRG_lubricate_the_mechanism
+	icon = GFX_goal_NRG_lubricate_the_mechanism
+	cost = 7.2
+	relative_position_id = NRG_bound_by_crime
+	prerequisite = {
+		focus = NRG_bound_by_crime
+	}
+	prerequisite = {
+		focus = NRG_damaged_not_broken
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NRG_investigating_the_disappearance_of_journalists
+	icon = GFX_goal_NRG_investigating_the_disappearance_of_journalists
+	cost = 7.2
+	relative_position_id = NRG_lubricate_the_mechanism
+	prerequisite = {
+		focus = NRG_lubricate_the_mechanism
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NRG_budget_check
+	icon = GFX_goal_NRG_budget_check
+	cost = 7.2
+	relative_position_id = NRG_lubricate_the_mechanism
+	prerequisite = {
+		focus = NRG_lubricate_the_mechanism
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NRG_accountability_for_payments
+	icon = GFX_goal_NRG_accountability_for_payments
+	cost = 7.2
+	relative_position_id = NRG_investigating_the_disappearance_of_journalists
+	prerequisite = {
+		focus = NRG_investigating_the_disappearance_of_journalists
+	}
+	prerequisite = {
+		focus = NRG_budget_check
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = NRG_make_every_cent_count
+	icon = GFX_goal_NRG_make_every_cent_count
+	cost = 7.2
+	relative_position_id = NRG_accountability_for_payments
+	prerequisite = {
+		focus = NRG_accountability_for_payments
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 5
+			}
+		custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id = NRG_foolish_traitors
+	icon = GFX_goal_NRG_foolish_traitors
+	cost = 7.2
+	relative_position_id = NRG_new_old_challenges
+	prerequisite = {
+		focus = NRG_new_old_challenges
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_anti_sahel
+		every_country = {
+			limit = {
+				has_government = panafricanism
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = NRG_anti_sahel_policy
+			}
+			NRG = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = NRG_anti_sahel_policy
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_closing_the_borders
+	icon = GFX_goal_NRG_closing_the_borders
+	cost = 1
+	relative_position_id = NRG_foolish_traitors
+	prerequisite = {
+		focus = NRG_foolish_traitors
+	}
+	available = {
+		NOT = { has_war_with = NIG }
+		NIG = {
+			has_country_leader = {
+				character = NIG_Abdourahamane_Tchiani
+				ruling_only = yes
+			}
+		}
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = NIG
+			modifier = NRG_close_borders_with_niger
+		}
+		NIG = {
+			add_opinion_modifier = {
+				target = NRG
+				modifier = NRG_close_borders_with_niger
+			}
+		}
+		set_country_flag = closed_border_nrg_nig
+		add_stability = 0.03
+		add_threat = 3
+		NIG = {
+			add_stability = -0.05
+		}
+		unlock_decision_tooltip = open_borders_with_nig
+		news_event = NRG.8
+	}
+}
+
+shared_focus = {
+	id = NRG_dispel_the_doubts
+	icon = GFX_goal_NRG_dispel_the_doubts
+	cost = 7.2
+	relative_position_id = NRG_foolish_traitors
+	prerequisite = {
+		focus = NRG_foolish_traitors
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = { global.ecowas_unity_points = 25 }
+		custom_effect_tooltip = ecowas_unity_points_add_25
+		every_country = {
+			limit = {
+				is_in_faction_with = NRG
+			}
+			add_opinion_modifier = {
+				target = NRG
+				modifier = ECOWAS_unity
+			}
+			NRG = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = ECOWAS_unity
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_leader_of_the_free_africa
+	icon = GFX_goal_NRG_leader_of_the_free_africa
+	cost = 7.2
+	relative_position_id = NRG_closing_the_borders
+	prerequisite = {
+		focus = NRG_closing_the_borders
+	}
+	prerequisite = {
+		focus = NRG_dispel_the_doubts
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_leaders_of_free_africa
+	}
+}
+
+shared_focus = {
+	id = NRG_energy_problems
+	icon = GFX_goal_NRG_energy_problems
+	cost = 7.2
+	relative_position_id = NRG_leader_of_the_free_africa
+	prerequisite = {
+		focus = NRG_leader_of_the_free_africa
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = SLR_energy_problem
+	}
+}
+
+shared_focus = {
+	id = NRG_food_safety
+	icon = GFX_goal_NRG_food_safety
+	cost = 7.2
+	relative_position_id = NRG_leader_of_the_free_africa
+	prerequisite = {
+		focus = NRG_leader_of_the_free_africa
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_ideas = NRG_food_safety_idea
+	}
+}
+
+shared_focus = {
+	id = NRG_menace_in_the_shadows
+	icon = GFX_goal_NRG_menace_in_the_shadows
+	cost = 7.2
+	relative_position_id = NRG_new_old_challenges
+	prerequisite = {
+		focus = NRG_new_old_challenges
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NRG_black_axe_cult_1
+			remove_idea = NRG_black_axe_cult
+		}
+		
+	}
+}
+
+shared_focus = {
+	id = NRG_identify_the_cultists
+	icon = GFX_goal_NRG_identify_the_cultists
+	cost = 7.2
+	relative_position_id = NRG_menace_in_the_shadows
+	prerequisite = {
+		focus = NRG_menace_in_the_shadows
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+			name = "National Intelligence Agency"
+			icon = GFX_intelligence_agency_logo_nrg
+		}
+		#custom_effect_tooltip = will_be_possible_to_execute_NRG_identify_the_cultists
+		if = {
+			limit = { has_idea = NRG_black_axe_cult }
+			swap_ideas = {
+				add_idea = NRG_black_axe_cult_1
+				remove_idea = NRG_black_axe_cult
+			}
+			else_if = {
+				limit = { has_idea = NRG_black_axe_cult_1 }
+				swap_ideas = {
+					add_idea = NRG_black_axe_cult_2
+					remove_idea = NRG_black_axe_cult_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = NRG_black_axe_cult_2 }
+				swap_ideas = {
+					add_idea = NRG_black_axe_cult_3
+					remove_idea = NRG_black_axe_cult_2
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_hit_the_gangs
+	icon = GFX_goal_NRG_hit_the_gangs
+	cost = 7.2
+	relative_position_id = NRG_menace_in_the_shadows
+	prerequisite = {
+		focus = NRG_menace_in_the_shadows
+	}
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		if = {
+			limit = { has_idea = NRG_black_axe_cult }
+			swap_ideas = {
+				add_idea = NRG_black_axe_cult_1
+				remove_idea = NRG_black_axe_cult
+			}
+			else_if = {
+				limit = { has_idea = NRG_black_axe_cult_1 }
+				swap_ideas = {
+					add_idea = NRG_black_axe_cult_2
+					remove_idea = NRG_black_axe_cult_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = NRG_black_axe_cult_2 }
+				swap_ideas = {
+					add_idea = NRG_black_axe_cult_3
+					remove_idea = NRG_black_axe_cult_2
+				}
+			}
+		}
+		add_popularity = {
+			ideology = panafricanism
+			popularity = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_strike_their_bases
+	icon = GFX_goal_NRG_strike_their_bases
+	cost = 7.2
+	relative_position_id = NRG_identify_the_cultists
+	prerequisite = {
+		focus = NRG_identify_the_cultists
+	}
+	prerequisite = {
+		focus = NRG_hit_the_gangs
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NRG_black_axe_cult_4
+			remove_idea = NRG_black_axe_cult_3
+		}
+		add_ideas = NRG_fight_against_baddies
+		BHK = {
+			add_timed_idea = {
+				idea = NRG_broke_BHK_supply_ways
+				days = 50
+			}
+		}
+		#custom_effect_tooltip = will_be_possible_to_execute_NRG_strike_their_bases_1
+		#custom_effect_tooltip = will_be_possible_to_execute_NRG_strike_their_bases_2
+	}
+}
+
+shared_focus = {
+	id = NRG_breaking_oath_of_secrecy
+	icon = GFX_goal_NRG_breaking_oath_of_secrecy
+	cost = 7.2
+	relative_position_id = NRG_strike_their_bases
+	prerequisite = {
+		focus = NRG_strike_their_bases
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = 0.05
+		add_stability = 0.03
+		remove_ideas = NRG_oath_of_secrecy
+	}
+}
+
+shared_focus = {
+	id = NRG_crack_down_narco_cartels
+	icon = GFX_goal_NRG_crack_down_narco_cartels
+	cost = 7.2
+	relative_position_id = NRG_strike_their_bases
+	prerequisite = {
+		focus = NRG_strike_their_bases
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NRG_big_narcotraffic
+		news_event = NRG.7
+	}
+}
+
+shared_focus = {
+	id = NRG_an_end_to_haram
+	icon = GFX_goal_NRG_an_end_to_haram
+	cost = 7.2
+	relative_position_id = NRG_breaking_oath_of_secrecy
+	prerequisite = {
+		focus = NRG_breaking_oath_of_secrecy
+	}
+	prerequisite = {
+		focus = NRG_crack_down_narco_cartels
+	}
+	available = {
+		NOT = { country_exists = BHK }
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_country_flag = NRG_stopped_boko_haram_resistance
+		custom_effect_tooltip = NRG_an_end_to_haram_tt
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = NRG_defending_what_is_ours
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 7.2
+	relative_position_id = NRG_an_end_to_haram
+	prerequisite = {
+		focus = NRG_an_end_to_haram
+	}
+	available = {
+		has_war = no
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = NRG_islamic_north_and_christian_south_2
+			remove_idea = NRG_islamic_north_and_christian_south
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_industrial_effort
+	icon = GFX_goal_generic_production
+	x = 17
+	y = 0
+	cost = 7.2
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1
+			uses = 1
+			category = industry
+		}
+	}
+	ai_will_do = {
+		factor = 3
+	}
+}
+
+shared_focus = {
+	id = NIG_construction_effort
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = {
+		focus = NIG_industrial_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = -1
+	y = 1
+	relative_position_id = NIG_industrial_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_production_effort
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = NIG_industrial_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 1
+	y = 1
+	relative_position_id = NIG_industrial_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_construction_effort_2
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = {
+		focus = NIG_construction_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_construction_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_production_effort_2
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = NIG_production_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_production_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_infrastructure_effort
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = {
+		focus = NIG_construction_effort_2
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_construction_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_production_effort_3
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = NIG_production_effort_2
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_production_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_infrastructure_effort_2
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = {
+		focus = NIG_infrastructure_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_infrastructure_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_construction_effort_3
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = {
+		focus = NIG_infrastructure_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_INDUSTRY
+	}
+	x = 2
+	y = 1
+	relative_position_id = NIG_infrastructure_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_extra_tech_slot
+	icon = GFX_focus_research
+	prerequisite = {
+		focus = NIG_infrastructure_effort_2
+	}
+	prerequisite = {
+		focus = NIG_construction_effort_3
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 1
+	y = 1
+	relative_position_id = NIG_infrastructure_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = NIG_army_effort
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 25
+	y = 0
+	offset = {
+		x = -10
+		y = 0
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	cost = 7.2
+	available_if_capitulated = yes
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+		FOCUS_FILTER_ARMY_XP
+	}
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_equipment_effort
+	icon = GFX_goal_generic_small_arms
+	prerequisite = {
+		focus = NIG_army_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -1
+	y = 1
+	relative_position_id = NIG_army_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_motorization_effort
+	icon = GFX_goal_generic_army_motorized
+	prerequisite = {
+		focus = NIG_army_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	bypass = {
+		has_tech = motorised_infantry
+	}
+	x = 1
+	y = 1
+	relative_position_id = NIG_army_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = motorized_bonus
+			bonus = 3
+			technology = motorised_infantry
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_doctrine_effort
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {
+		focus = NIG_equipment_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+		FOCUS_FILTER_ARMY_XP
+	}
+	prerequisite = {
+		focus = NIG_motorization_effort
+	}
+	x = 0
+	y = 3
+	relative_position_id = NIG_army_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_equipment_effort_2
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = {
+		focus = NIG_doctrine_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = -2
+	y = 1
+	relative_position_id = NIG_doctrine_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+
+shared_focus = {
+	id = NIG_doctrine_effort_2
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = {
+		focus = NIG_doctrine_effort
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+		FOCUS_FILTER_ARMY_XP
+	}
+	x = 0
+	y = 2
+	relative_position_id = NIG_doctrine_effort
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		army_experience = 5
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_equipment_effort_3
+	icon = GFX_goal_generic_army_artillery2
+	prerequisite = {
+		focus = NIG_equipment_effort_2
+	}
+	search_filters = {
+		FOCUS_FILTER_RESEARCH
+	}
+	x = 0
+	y = 2
+	relative_position_id = NIG_equipment_effort_2
+	cost = 7.2
+	available_if_capitulated = yes
+	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			ahead_reduction = 2
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+
+shared_focus = {
+	id = NIG_fundamentalists_generic_focus
+	icon = GFX_goal_generic_demand_territory
+	x = 2
+	y = 0
+	allow_branch = {
+		has_government = fundamentalism
+	}
+	cost = 7.2
+	available_if_capitulated = yes
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_embrace_caliphate
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = NIG_fundamentalists_generic_focus
+	}
+	x = 1
+	y = 1
+	relative_position_id = NIG_fundamentalists_generic_focus
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_fundamentalists_caliphate_idea
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_sharia_right
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = NIG_fundamentalists_generic_focus
+	}
+	x = -1
+	y = 1
+	relative_position_id = NIG_fundamentalists_generic_focus
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_sharia_right_idea
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_spiritual_leadership
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = NIG_fundamentalists_sharia_right
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_fundamentalists_sharia_right
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_sharia_right_idea
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_islamic_life_state
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = NIG_fundamentalists_spiritual_leadership
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_fundamentalists_spiritual_leadership
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_islamic_state_of_life
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_islamic_economy
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = NIG_fundamentalists_islamic_life_state
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_fundamentalists_islamic_life_state
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_fundamentalists_islamic_economy_idea
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_mujaheeds
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = NIG_fundamentalists_embrace_caliphate
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_fundamentalists_embrace_caliphate
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_recruit_mujaheeds
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_jihad
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = NIG_fundamentalists_mujaheeds
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_fundamentalists_mujaheeds
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_fundamentalists_jihad_idea
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_islamic_youth
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = NIG_fundamentalists_jihad
+	}
+	x = 0
+	y = 1
+	relative_position_id = NIG_fundamentalists_jihad
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_islamic_youth
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_international_islamists
+	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	prerequisite = {
+		focus = NIG_fundamentalists_jihad
+	}
+	x = 2
+	y = 1
+	relative_position_id = NIG_fundamentalists_jihad
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_islamists_all_around_the_world
+			days = 1095
+		}
+	}
+}
+
+shared_focus = {
+	id = NIG_fundamentalists_defend_ummas
+	icon = GFX_goal_generic_national_unity
+	prerequisite = {
+		focus = NIG_fundamentalists_islamic_economy
+		focus = NIG_fundamentalists_islamic_youth
+		focus = NIG_fundamentalists_international_islamists
+	}
+	x = 1
+	y = 1
+	relative_position_id = NIG_fundamentalists_islamic_economy
+	cost = 7.2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 5
+	}
+	search_filters = {
+		FOCUS_FILTER_POLITICAL
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = NIG_fundamentalists_islamic_economy_idea
+			days = 1095
+		}
+	}
+}

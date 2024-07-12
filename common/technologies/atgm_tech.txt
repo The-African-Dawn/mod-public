@@ -1,0 +1,452 @@
+technologies = {
+
+	@YTIER0 = 0
+	@YTIER1 = 4
+	@YTIER2 = 10
+	@YTIER3 = 18
+	
+	@XBASE = 0
+	@XEAST1 = -2 
+	@XEAST2 = -3 
+	@XEAST3 = -1
+	@XWEST1 = 2
+	@XWEST2 = 1
+	@XWEST3 = 3
+	
+	
+	handmade_atgm_tech = {
+		
+		research_cost = 0 ### Выдается на старте 
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_handmade
+		}
+		
+		enable_subunits = {
+			atgm_support_unit
+		}
+		
+		path = {
+			leads_to_tech = atgm_rpg7_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = atgm_m72_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XBASE y = @YTIER0 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_rpg7_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_rpg7
+		}
+		
+		path = {
+			leads_to_tech = atgm_kornet_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = atgm_hj8_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XEAST1 y = @YTIER1 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_kornet_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_9k111
+		}
+		
+		path = {
+			leads_to_tech = atgm_metis_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XEAST2 y = @YTIER2 }
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_metis_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_9m133
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		dependencies = {
+			atgm_metis_tech = 1
+		}
+		
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XEAST2 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_hj8_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_hj8
+		}
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		path = {
+			leads_to_tech = atgm_hj12_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XEAST3 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_hj12_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_hj12
+		}
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XEAST3 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+		
+		dependencies = {
+			atgm_hj12_tech = 1
+		}
+	}
+	
+	atgm_m72_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_m72
+		}
+		
+		path = {
+			leads_to_tech = atgm_tow_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = atgm_milan_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XWEST1 y = @YTIER1 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_tow_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_tow
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+		path = {
+			leads_to_tech = atgm_javelin_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XWEST2 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_javelin_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_javelin
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+		dependencies = {
+			atgm_javelin_tech = 1
+		}
+				
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XWEST2 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_milan_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_milan
+		}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+		path = {
+			leads_to_tech = atgm_mpp_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XWEST3 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	atgm_mpp_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			ATGM_equipment_mmp
+		}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+		dependencies = {
+			atgm_mpp_tech = 1
+		}
+				
+		
+		folder = {
+			name = atgm_folder
+			position = { x = @XWEST3 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_upgrade_1 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = atgm_upgrade_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = atgm_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_upgrade_2 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = atgm_upgrade_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = atgm_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_upgrade_3 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = atgm_upgrade_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = atgm_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_upgrade_4 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = atgm_upgrade_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = atgm_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+	
+	atgm_upgrade_5 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		folder = {
+			name = atgm_folder
+			position = { x = 6 y = 16 }
+		}
+		
+		categories = {
+			artillery_technologies
+			atgm_technologies
+		}
+	}
+}

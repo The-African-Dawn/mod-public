@@ -1,0 +1,88 @@
+capital = 98
+set_technology = {
+	Rifle_pizods = 1
+	AK_tech = 1
+
+	handmade_artillery_tech = 1
+
+	handmade_atgm_tech = 1
+	atgm_rpg7_tech = 1
+	
+	handmade_manpads_tech = 1
+	basic_train = 1
+	ISIS_doctrine = 1
+	ISIS_doctrine_guerillas = 1
+	ISIS_doctrine_simbiosis = 1
+	ISIS_doctrine_diversion_tactics = 1
+	ISIS_doctrine_territorial_use = 1
+	ISIS_doctrine_mobile_attacks = 1
+	ISIS_doctrine_shadow_warfare = 1
+	ISIS_doctrine_mass_mobilisation = 1
+	ISIS_doctrine_terror_attacks = 1
+	
+}
+set_convoys = 3
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+
+set_oob = "ISS_oob"
+
+declare_war_on = {
+	target = BRK
+	type = annex_everything
+}
+declare_war_on = {
+	target = MLL
+	type = annex_everything
+}
+declare_war_on = {
+	target = NIG
+	type = annex_everything
+}
+declare_war_on = {
+	target = ALJ
+	type = annex_everything
+}
+declare_war_on = {
+	target = AZW
+	type = annex_everything
+}
+declare_war_on = {
+	target = JMA
+	type = annex_everything
+}
+declare_war_on = {
+	target = KOT
+	type = annex_everything
+}
+declare_war_on = {
+	target = BNN
+	type = annex_everything
+}
+add_ideas = {
+extensive_conscription_fun
+war_economy_fun
+	ISS_holy_jihad
+	ISS_improvised_explosives
+	ISS_fanatical_suicide_bombers
+}
+
+set_research_slots = 2
+set_stability = -0.93
+set_war_support = -0.67
+
+set_politics = {
+	ruling_party = fundamentalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = ISS_Abu_Huzeifa
+recruit_character = ISS_Abu_Zaid_al_Magribi
+
+set_popularities = {
+	fundamentalism = 100
+}

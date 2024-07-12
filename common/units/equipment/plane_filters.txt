@@ -1,0 +1,6 @@
+
+
+search_filters = {	
+	name = transport_planes
+	values = {transport_plane_equipment}
+}

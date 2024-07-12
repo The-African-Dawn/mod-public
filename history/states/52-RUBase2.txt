@@ -1,0 +1,21 @@
+state={
+	id=52
+	name="STATE_52"
+	provinces={
+		2627 
+	}
+	state_category = rural
+	history={
+		owner = RUS
+		add_core_of = RUS
+		victory_points = { 2627 5 }
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	local_supplies=15
+}

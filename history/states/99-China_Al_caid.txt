@@ -1,0 +1,23 @@
+
+state={
+	id=99
+	name="STATE_99"
+
+	history={
+		owner = CHN
+		add_core_of = CHN
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+
+	provinces={
+		4857 
+	}
+	state_category = metropolis
+	manpower=150
+	buildings_max_level_factor=1.000
+	local_supplies=15
+}

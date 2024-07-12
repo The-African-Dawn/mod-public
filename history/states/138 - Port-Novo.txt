@@ -1,0 +1,24 @@
+
+state={
+	id=138
+	name="STATE_138"
+
+	history={
+		owner = BNN
+		add_core_of = BNN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 1
+		}
+	}
+
+	provinces={
+		4874
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

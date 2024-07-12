@@ -1,0 +1,668 @@
+﻿shared_focus = {
+	id = FRN_operation_barkhan
+	icon = GFX_goal_FRN_operation_barkhan
+	cost = 0.2
+	x = 8
+	y = 0
+	available = {
+		date > 2022.10.9
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = disarmed_nation_mjr
+		add_ideas = civilian_economy_mjr
+	}
+}
+
+shared_focus = {
+	id = FRN_best_of_them_all
+	icon = GFX_goal_FRN_best_of_them_all
+	cost = 10
+	relative_position_id = FRN_operation_barkhan
+	prerequisite = {
+		focus = FRN_operation_barkhan
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_manpower = 100
+		division_template = {
+			name = "Légion étrangère"
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 0
+					y = 2
+				}
+				infantry = {
+					x = 1
+					y = 0
+				}
+				infantry = {
+					x = 1
+					y = 1
+				}
+				infantry = {
+					x = 1
+					y = 2
+				}
+				infantry = {
+					x = 2
+					y = 0
+				}
+				infantry = {
+					x = 2
+					y = 1
+				}
+				infantry = {
+					x = 3
+					y = 2
+				}
+			}
+			support = {
+				manpads_support_unit = {
+					x = 0
+					y = 0
+				}
+				atgm_support_unit = {
+					x = 0
+					y = 1
+				}
+				field_hospital = {
+					x = 0
+					y = 2
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Légion étrangère\" division_template = \"Légion étrangère\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = FRN
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_exchanging_experience
+	icon = GFX_goal_FRN_exchanging_experience
+	cost = 10
+	relative_position_id = FRN_operation_barkhan
+	prerequisite = {
+		focus = FRN_operation_barkhan
+	}
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			army_experience = 25
+		}
+		custom_effect_tooltip = france_new_legion_decisions
+	}
+}
+
+shared_focus = {
+	id = FRN_expand_the_training_program
+	icon = GFX_goal_FRN_expand_the_training_program
+	cost = 10
+	relative_position_id = FRN_exchanging_experience
+	prerequisite = {
+		focus = FRN_exchanging_experience
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+		add_command_power = 50
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			army_experience = 25
+			add_command_power = 50
+		}
+		custom_effect_tooltip = france_new_legion_decisions
+	}
+}
+
+shared_focus = {
+	id = FRN_our_best_soldiers
+	icon = GFX_goal_FRN_our_best_soldiers
+	cost = 10
+	relative_position_id = FRN_operation_barkhan
+	prerequisite = {
+		focus = FRN_operation_barkhan
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_manpower = 1000
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = FRN_and_greatest_equipment
+	icon = GFX_goal_FRN_and_greatest_equipment
+	cost = 10
+	relative_position_id = FRN_our_best_soldiers
+	prerequisite = {
+		focus = FRN_our_best_soldiers
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = 0.05
+		add_equipment_to_stockpile = {
+			type = FAMAS_2
+			amount = 250
+			producer = FRN
+		}
+		add_equipment_to_stockpile = {
+			type = spec_oborud_equipment_0
+			amount = 150
+			producer = FRN
+		}
+		add_equipment_to_stockpile = {
+			type = howitzer_equipment_trf1
+			amount = 100
+			producer = FRN
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_reinforcements_from_the_mainland
+	icon = GFX_goal_FRN_reinforcements_from_the_mainland
+	cost = 10
+	relative_position_id = FRN_best_of_them_all
+	prerequisite = {
+		focus = FRN_best_of_them_all
+	}
+	prerequisite = {
+		focus = FRN_our_best_soldiers
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = FRN_in_the_shadow_of_the_sun
+		add_ideas = volunteer_only_mjr
+		add_equipment_to_stockpile = {
+			type = cas_airframe_0_fr
+			amount = 15
+			producer = FRN
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_our_strong_influence
+	icon = GFX_goal_FRN_our_strong_influence
+	cost = 10
+	relative_position_id = FRN_reinforcements_from_the_mainland
+	prerequisite = {
+		focus = FRN_reinforcements_from_the_mainland
+	}
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_command_power = 50
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			add_war_support = 0.05
+			add_command_power = 15
+			add_to_variable = {
+				global.ecowas_choosing_points = 0.5
+			}
+			custom_effect_tooltip = ecowas_choosing_points_plus_05_good
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_our_old_ties
+	icon = GFX_goal_FRN_our_old_ties
+	cost = 10
+	relative_position_id = FRN_reinforcements_from_the_mainland
+	prerequisite = {
+		focus = FRN_reinforcements_from_the_mainland
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 150
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			add_political_power = 15
+			add_to_variable = {
+				global.ecowas_choosing_points = 0.5
+			}
+			custom_effect_tooltip = ecowas_choosing_points_plus_05_good
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_espionage_network
+	icon = GFX_goal_FRN_espionage_network
+	cost = 10
+	relative_position_id = FRN_reinforcements_from_the_mainland
+	prerequisite = {
+		focus = FRN_reinforcements_from_the_mainland
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_intelligence_agency = {
+			name = "Direction générale de la sécurité extérieure"
+			icon = GFX_intelligence_agency_logo_usr
+		}
+		upgrade_intelligence_agency = upgrade_crypto_strength
+		upgrade_intelligence_agency = upgrade_form_department
+		upgrade_intelligence_agency = upgrade_passive_defense
+		upgrade_intelligence_agency = upgrade_decryption_boost
+		upgrade_intelligence_agency = upgrade_commando_training
+	}
+}
+
+shared_focus = {
+	id = FRN_influencing_our_partners
+	icon = GFX_goal_FRN_influencing_our_partners
+	cost = 10
+	relative_position_id = FRN_espionage_network
+	prerequisite = {
+		focus = FRN_espionage_network
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			global.ecowas_choosing_points = 10
+		}
+		custom_effect_tooltip = ecowas_choosing_points_plus_10_good
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			add_political_power = 15
+		}
+		USR = {
+			add_political_power = -50
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_american_footprint
+	icon = GFX_goal_FRN_american_footprint
+	cost = 10
+	relative_position_id = FRN_espionage_network
+	prerequisite = {
+		focus = FRN_espionage_network
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			global.ecowas_choosing_points = 5
+		}
+		custom_effect_tooltip = ecowas_choosing_points_plus_5_good
+		USR = {
+			add_political_power = -50
+		}
+		USR = {
+			add_command_power_power = -50
+		}
+		USR = {
+			add_stability = -0.1
+		}
+		USR = {
+			add_war_support = -0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_within_our_grasp
+	icon = GFX_goal_FRN_within_our_grasp
+	cost = 10
+	relative_position_id = FRN_best_of_them_all
+	prerequisite = {
+		focus = FRN_best_of_them_all
+	}
+	prerequisite = {
+		focus = FRN_exchanging_experience
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = low_economic_mobilisation_mjr
+		add_political_power = 100
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_control_over_gold_mining
+	icon = GFX_goal_FRN_control_over_gold_mining
+	cost = 10
+	relative_position_id = FRN_within_our_grasp
+	prerequisite = {
+		focus = FRN_within_our_grasp
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 150
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_strengthen_the_banking_system
+	icon = GFX_goal_FRN_strengthen_the_banking_system
+	cost = 10
+	relative_position_id = FRN_within_our_grasp
+	prerequisite = {
+		focus = FRN_within_our_grasp
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.2
+		add_political_power = 150
+		add_command_power = 100
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			add_political_power = -15
+			add_stability = -0.02
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_aid_to_corporations
+	icon = GFX_goal_FRN_aid_to_corporations
+	cost = 10
+	relative_position_id = FRN_within_our_grasp
+	prerequisite = {
+		focus = FRN_within_our_grasp
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 200
+		add_command_power = 100
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRN_solid_mechanism
+	icon = GFX_goal_FRN_solid_mechanism
+	cost = 10
+	relative_position_id = FRN_aid_to_corporations
+	prerequisite = {
+		focus = FRN_aid_to_corporations
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = partial_economic_mobilisation_mjr
+	}
+}
+
+shared_focus = {
+	id = FRN_economic_benefit
+	icon = GFX_goal_FRN_economic_benefit
+	cost = 10
+	relative_position_id = FRN_aid_to_corporations
+	prerequisite = {
+		focus = FRN_aid_to_corporations
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = FRN_exhausting_bureaucracy
+		add_stability = 0.25
+		add_war_support = 0.25
+		add_command_power = 150
+		add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id = FRN_hand_of_foreign_legion
+	icon = GFX_goal_FRN_hand_of_foreign_legion
+	cost = 10
+	relative_position_id = FRN_influencing_our_partners
+	prerequisite = {
+		focus = FRN_influencing_our_partners
+	}
+	prerequisite = {
+		focus = FRN_solid_mechanism
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = FRN_indecisive_leadership
+		custom_effect_tooltip = france_new_legion_decisions
+		add_ideas = limited_conscription_mjr
+	}
+}
+
+shared_focus = {
+	id = FRN_enough_space_for_everyone
+	icon = GFX_goal_FRN_enough_space_for_everyone
+	cost = 10
+	relative_position_id = FRN_hand_of_foreign_legion
+	prerequisite = {
+		focus = FRN_hand_of_foreign_legion
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 150
+		add_stability = 0.15
+		add_ideas = war_economy_mjr
+	}
+}
+
+shared_focus = {
+	id = FRN_righteous_hammer
+	icon = GFX_goal_FRN_righteous_hammer
+	cost = 10
+	relative_position_id = FRN_hand_of_foreign_legion
+	prerequisite = {
+		focus = FRN_hand_of_foreign_legion
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		custom_effect_tooltip = france_new_legion_decisions
+		add_war_support = 0.15
+		add_ideas = extensive_conscription_mjr
+	}
+}
+
+shared_focus = {
+	id = FRN_operation_dipodidae
+	icon = GFX_goal_FRN_operation_dipodidae
+	cost = 5
+	x = 8
+	y = 10
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		OR = {
+			has_war_with = MLL
+			has_war_with = BRK
+			has_war_with = NIG
+		}
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = FRN_operation_dipodidae_idea
+			days = 90
+		}
+		add_ideas = extensive_conscription_mjr
+		add_ideas = war_economy_mjr
+	}
+}
+
+shared_focus = {
+	id = FRN_ruling_uncontested
+	icon = GFX_goal_FRN_ruling_uncontested
+	cost = 10
+	relative_position_id = FRN_operation_dipodidae
+	prerequisite = {
+		focus = FRN_operation_dipodidae
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_global_flag = ecowas_battle_win_fra
+		has_war = no
+		CHD = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		NIG = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		BRK = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		MLL = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		SNG = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+	}
+	completion_reward = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 187
+					state = 33
+					state = 35
+					state = 32
+					state = 30
+					state = 44
+					state = 36
+					state = 48
+					state = 49
+					state = 41
+					state = 37
+					state = 51
+				}
+			}
+			FRN = {
+				transfer_state = PREV
+			}
+			add_core_of = FRN
+		}
+	}
+}

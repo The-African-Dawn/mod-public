@@ -1,0 +1,9 @@
+
+animation = {
+	name = "btr60_move_animation"
+	file = "btr60_move.anim"
+}
+animation = {
+	name = "btr60_idle_animation"
+	file = "btr60_idle.anim"
+}

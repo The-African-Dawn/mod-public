@@ -1,0 +1,133 @@
+music = {
+	name = "baathist"
+	file = "baathist.ogg"
+}
+
+music = {
+	name = "maman"
+	file = "maman.ogg"
+}
+
+
+music = {
+	name = "les_vautours"
+	file = "les_vautours.ogg"
+}
+
+music = {
+	name = "ma_solitude"
+	file = "ma_solitude.ogg"
+}
+
+music = {
+	name = "aw_ye_douka_ke"
+	file = "aw_ye_douka_ke.ogg"
+}
+
+music = {
+	name = "anga_wan_mpasso"
+	file = "anga_wan_mpasso.ogg"
+}
+
+music = {
+	name = "tieba_lou_tounouna"
+	file = "tieba_lou_tounouna.ogg"
+}
+
+music = {
+	name = "jeunesse_wilila"
+	file = "jeunesse_wilila.ogg"
+}
+
+
+music = {
+	name = "a_son_magni"
+	file = "a_son_magni.ogg"
+}
+
+music = {
+	name = "mamadou"
+	file = "mamadou.ogg"
+}
+
+music = {
+	name = "m_paaga"
+	file = "m_paaga.ogg"
+}
+
+
+
+music = {
+	name = "ragga_de_ouaga"
+	file = "ragga_de_ouaga.ogg"
+}
+
+music = {
+	name = "burkina_faso"
+	file = "burkina_faso.ogg"
+}
+
+music = {
+	name = "yonre_ya_naaba"
+	file = "yonre_ya_naaba.ogg"
+}
+
+music = {
+	name = "zwa_songo"
+	file = "zwa_songo.ogg"
+}
+
+music = {
+	name = "deni"
+	file = "deni.ogg"
+}
+
+music = {
+	name = "kuma"
+	file = "kuma.ogg"
+}
+
+music = {
+	name = "woubri"
+	file = "woubri.ogg"
+}
+
+music = {
+	name = "djougou_malola"
+	file = "djougou_malola.ogg"
+}
+
+music = {
+	name = "m_ba_sida"
+	file = "m_ba_sida.ogg"
+}
+
+music = {
+	name = "zinga"
+	file = "zinga.ogg"
+}
+
+music = {
+	name = "kato_kato"
+	file = "kato_kato.ogg"
+}
+
+music = {
+	name = "m_biga"
+	file = "m_biga.ogg"
+}
+
+music = {
+	name = "m_podba"
+	file = "m_podba.ogg"
+}
+
+music = {
+	name = "la_guitare_de_tinga"
+	file = "la_guitare_de_tinga.ogg"
+}
+
+music = {
+	name = "reach_out"
+	file = "reach_out.ogg"
+}

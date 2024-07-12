@@ -1,0 +1,23 @@
+
+state={
+	id=182
+	name="STATE_182"
+
+	history={
+		owner = TNS
+		add_core_of = TNS
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		48 248 276 1503 1633 1766 2484 2613 2616 3535 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

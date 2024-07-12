@@ -1,0 +1,25 @@
+
+state={
+	id=128
+	name="STATE_128"
+
+	history={
+		owner = KMR
+		add_core_of = KMR
+		buildings = {
+			infrastructure = 1
+		}
+		BHK = {
+			set_province_controller = 200
+			set_province_controller = 3040
+
+		}
+	}
+	state_category = rural
+	provinces={
+		200 1708 3040 3067 3076 
+	}
+	manpower=643263
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

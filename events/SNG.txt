@@ -1,0 +1,39 @@
+﻿
+add_namespace = SNG
+
+country_event = { 
+	id = SNG.1
+	title = SNG.1.t
+	desc = SNG.1.desc
+	
+	is_triggered_only = yes
+	trigger = {
+		tag = SNG
+		date > 2024.1.1
+		date < 2025.1.1
+	}
+	
+	option = { 
+		name = SNG.1.a
+		set_politics = {
+			ruling_party = panafricanism
+			last_election = "2024.3.24"
+			election_frequency = 61
+			elections_allowed = yes
+		}
+		retire_character = SNG_Macky
+		hidden_effect = {
+			news_event = { id = political.34 hours = 1 }
+		}
+		ai_chance = { factor = 5 }
+	}
+	option = { 
+		name = SNG.1.b
+		retire_character = SNG_Macky
+		promote_character = SNG_Amadou_Ba
+		hidden_effect = {
+			news_event = { id = political.34 hours = 1 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}

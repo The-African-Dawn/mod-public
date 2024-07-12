@@ -1,0 +1,184 @@
+guiTypes = {
+	containerWindowType = {
+		name = "battle_for_afrika_rew"
+		size = { width = 535 height = 400 }
+		position = { x = 0 y = 0 }
+		moveable = no
+
+		containerWindowType = {
+			name = "africanmap_countries"
+			iconType = {
+				name ="african_map_mechanic"
+				spriteType = "GFX_african_map_tab"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_brk"
+				spriteType = "GFX_BRK_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_mll"
+				spriteType = "GFX_MLL_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_nig"
+				spriteType = "GFX_NIG_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_nrg"
+				spriteType = "GFX_NRG_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_bnn"
+				spriteType = "GFX_BNN_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_tgg"
+				spriteType = "GFX_TGG_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_gnn"
+				spriteType = "GFX_GNN_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_kot"
+				spriteType = "GFX_KOT_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_lbr"
+				spriteType = "GFX_LBR_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_gvn"
+				spriteType = "GFX_GVN_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_slr"
+				spriteType = "GFX_SLR_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_gbi"
+				spriteType = "GFX_GBI_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_sng"
+				spriteType = "GFX_GBI_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_mrv"
+				spriteType = "GFX_MRV_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_chd"
+				spriteType = "GFX_CHD_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="africa_status_kmr"
+				spriteType = "GFX_KMR_country_status"
+				position = { x= 15 y = 50 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+		}
+		#buttonType = {
+		#	name = "African_Battle_GUI_close_button"
+		#	quadTextureSprite = "GFX_closebutton"
+		#	position = { x = -50 y = 55 }
+		#	orientation = upper_right
+		#	shortcut = "ESCAPE"
+		#	pdx_tooltip = "test_localisation"
+		#}		
+
+		#containerWindowType = {
+		#	name = "possible_actions_list"
+		#	position = { x = 0 y = 350 } 
+		#	size = { width = 100%% height = 100%% }
+		#	background = {
+		#		name = "Background"
+		#		# spriteType ="GFX_tiled_plain_bg"
+		#		quadTextureSprite = "GFX_tiled_window_thin_border"
+		#	}
+		#	gridboxtype = {  
+		#		name = "possible_actions"
+		#		position = { x = -10 y = 20 }
+		#		size = { width = 98%% height = 100%% }
+		#		slotsize = { width = 500 height = 50 }
+		#		max_slots_vertical = 999 
+		#		max_slots_horizontal = 1
+		#	}
+		#}
+	}
+	#containerWindowType = {
+	#	name = "possible_action_entry"
+	#	position = { x = 10 y = 0 }	
+	#	size = { width = 510 height = 40 }
+	#
+	#	background = {
+	#		name = "Background" 
+	#		# spriteType ="GFX_tiled_plain_bg"
+	#		alwaystransparent = yes
+	#		quadTextureSprite = "GFX_tiled_window_small_small"
+	#	}
+	#	instantTextBoxType = {
+	#		name ="offer_name"
+	#		position = { x = 10 y = 10 }
+	#		font = "hoi_18mbs"
+	#		text = "[africabattle_action_ask]"
+	#		format = left
+	#		maxWidth = 350
+	#		maxHeight = 24
+	#		fixedsize = yes
+	#		alwaystransparent = yes
+	#	}
+	#	buttonType = {
+	#		name = "send_action"
+	#		position = {x=355 y=2}
+	#		spriteType = "GFX_button_148x34"
+	#		clicksound = click_scroll
+	#		pdx_tooltip = AFRICA_ACTION_SEND
+	#		buttonText = "[africabattle_action_button_name]"
+	#		buttonFont = "hoi_20bs"
+	#	}
+	#}
+
+
+
+
+
+
+
+
+
+	
+}

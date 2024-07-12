@@ -1,0 +1,62 @@
+burkina_faso_politics = {
+	prepare_for_elections = {
+		icon = GFX_decision_chita_investigation
+		fire_only_once = yes
+		visible = {
+			has_country_flag = BRK_traore_will_make_elections
+		}
+		days_remove = 60
+		remove_effect = { 
+			custom_effect_tooltip = BRK_will_be_ready_to_start_elect
+			set_country_flag = BRK_prepared_for_elections
+		}
+		complete_effect = { 
+			custom_effect_tooltip = BRK_prepare_for_elections_tt
+			
+			add_stability = 0.05
+			
+			hidden_effect = {
+				country_event = { id = BRK.17 days = 25 }
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 2024.06.01
+			}
+			modifier = {
+				add = 10
+				has_war = no
+			}
+		}
+		cost = 50
+	}
+	mark_elections_date = {
+		icon = GFX_decision_chita_investigation
+		fire_only_once = yes
+		days_re_enable = 10
+		visible = {
+			has_country_flag = BRK_traore_will_make_elections
+		}
+		available = {
+			has_country_flag = BRK_prepared_for_elections
+			has_completed_focus = BRK_our_new_constitution
+		}
+		days_remove = 60
+		remove_effect = { 
+			country_event = BRK.31
+		}
+		complete_effect = { 
+			
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 2024.06.01
+			}
+		}
+		cost = 150
+	}
+}

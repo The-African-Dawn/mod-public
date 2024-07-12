@@ -1,0 +1,1437 @@
+﻿shared_focus = {
+	#https://www.jeuneafrique.com/1384648/politique/mali-le-projet-de-nouvelle-constitution-renforce-les-pouvoirs-du-president/
+	id = MLL_firm_authority
+	icon = GFX_goal_MLL_firm_authority
+	cost = 5.8
+	x = 4
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 100
+		hidden_effect = {
+			news_event = {
+				id = MLL.6
+				days = 4
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_expansion_of_private_universities
+	icon = GFX_goal_MLL_expansion_of_private_universities
+	cost = 5.8
+	relative_position_id = MLL_firm_authority
+	prerequisite = {
+		focus = MLL_firm_authority
+	}
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		#add_ideas = MLL_priv_univer
+		64 = {
+			add_building_construction = {
+				type = university
+				level = 1
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = MLL_unlock_MLL_Bourema_Kansaye
+	}
+}
+
+shared_focus = {
+	id = MLL_expanding_international_ties
+	icon = GFX_goal_MLL_expanding_international_ties
+	cost = 5.8
+	relative_position_id = MLL_expansion_of_private_universities
+	prerequisite = {
+		focus = MLL_expansion_of_private_universities
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = RUS
+			modifier = MLL_international_ties
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = MLL
+				modifier = MLL_international_ties
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_fate_of_european_forces
+	icon = GFX_goal_MLL_fate_of_european_forces
+	cost = 5.8
+	relative_position_id = MLL_expanding_international_ties
+	prerequisite = {
+		focus = MLL_expanding_international_ties
+	}
+	prerequisite = {
+		focus = MLL_end_cigarette_smuggling
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = MLL_USR_leave_mil_bases
+		set_global_flag = MLL_FRN_leave_mil_bases
+		activate_mission_tooltip = mali_france_leaving_bases
+		activate_mission_tooltip = mali_usa_leaving_bases
+		add_opinion_modifier = {
+			target = FRN
+			modifier = BRK_anti_france_1
+		}
+		FRN = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_anti_france_1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_end_cigarette_smuggling
+	icon = GFX_goal_MLL_end_cigarette_smuggling
+	cost = 5.8
+	relative_position_id = MLL_expansion_of_private_universities
+	prerequisite = {
+		focus = MLL_expansion_of_private_universities
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = MLL_end_cigarette_smuggling_idea
+			days = 140
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_rescue_of_mali
+	icon = GFX_goal_MLL_rescue_of_mali
+	cost = 5.8
+	relative_position_id = MLL_firm_authority
+	prerequisite = {
+		focus = MLL_firm_authority
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = francocentrism
+			popularity = -0.05
+		}
+		add_political_power = 120
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = MLL_temporary_ban_on_political_parties 
+	icon = GFX_goal_MLL_temporary_ban_on_political_parties
+	cost = 5.8
+	relative_position_id = MLL_rescue_of_mali
+	prerequisite = {
+		focus = MLL_rescue_of_mali
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+		add_ideas = MLL_temp_ban_parties
+		hidden_effect = {
+			news_event = MLL.16
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_support_the_anti_colonial_movement
+	icon = GFX_goal_MLL_support_the_anti_colonial_movement
+	cost = 5.8
+	relative_position_id = MLL_temporary_ban_on_political_parties
+	prerequisite = {
+		focus = MLL_temporary_ban_on_political_parties
+	}
+	prerequisite = {
+		focus = MLL_expanding_international_ties
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_support_the_anti_colonial_movement_idea
+	}
+}
+
+shared_focus = {
+	id = MLL_contact_with_the_people
+	icon = GFX_goal_MLL_contact_with_the_people
+	cost = 5.8
+	relative_position_id = MLL_support_the_anti_colonial_movement
+	prerequisite = {
+		focus = MLL_support_the_anti_colonial_movement
+	}
+	prerequisite = {
+		focus = MLL_fate_of_european_forces
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = MLL_radicalist_propaganda
+		custom_effect_tooltip = MLL_unlock_MLL_Ismael_Wage
+	}
+}
+
+shared_focus = {
+	id = MLL_an_end_to_instability
+	icon = GFX_goal_MLL_an_end_to_instability
+	cost = 5.8
+	relative_position_id = MLL_remembering_the_past
+	prerequisite = {
+		focus = MLL_remembering_the_past
+	}
+	prerequisite = {
+		focus = MLL_contact_with_the_people
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_stable_regime
+		corruption_low = yes
+	}
+}
+
+shared_focus = {
+	id = MLL_lift_the_ban_on_political_parties
+	icon = GFX_goal_MLL_lift_the_ban_on_political_parties
+	cost = 5.8
+	relative_position_id = MLL_an_end_to_instability
+	prerequisite = {
+		focus = MLL_an_end_to_instability
+	}
+	prerequisite = {
+		focus = MLL_fate_of_european_forces
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = MLL_temp_ban_parties
+		add_stability = 0.1
+	}
+}
+
+# shared_focus = {
+# 	id = MLL_long_awaited_election
+# 	icon = GFX_goal_MLL_long_awaited_election
+# 	cost = 5.8
+# 	relative_position_id = MLL_lift_the_ban_on_political_parties
+# 	prerequisite = {
+# 		focus = MLL_lift_the_ban_on_political_parties
+# 	}
+# 	x = 0
+# 	y = 2
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# 	completion_reward = {
+# 		add_stability = 0.05
+# 		add_war_support = 0.1
+# 		add_political_power = 50
+# 		add_command_power = 50
+# 		add_manpower = 18127
+# 	}
+# }
+
+shared_focus = {
+	id = MLL_diplomatic_relations
+	icon = GFX_goal_MLL_diplomatic_relations
+	cost = 5.8
+	relative_position_id = MLL_firm_authority
+	prerequisite = {
+		focus = MLL_firm_authority
+	}
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_russian_help_in_goldmining
+		set_country_flag = RUS_friend
+		custom_effect_tooltip = BRK_RUS_Friend_tt
+				add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+	}
+}
+
+shared_focus = {
+	id = MLL_to_break_the_language_barrier
+	icon = GFX_goal_MLL_to_break_the_language_barrier
+	cost = 5.8
+	relative_position_id = MLL_diplomatic_relations
+	prerequisite = {
+		focus = MLL_diplomatic_relations
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+			target = GVN
+			modifier = BRK_embracing_relations_with_sahel
+		}
+		add_opinion_modifier = {
+			target = SNG
+			modifier = BRK_embracing_relations_with_sahel
+		}
+		SNG = {
+			add_opinion_modifier = {
+				target = GVN
+				modifier = BRK_embracing_relations_with_sahel
+			}
+			add_opinion_modifier = {
+				target = MLL
+				modifier = BRK_embracing_relations_with_sahel
+			}
+		}
+		GVN = {
+			add_opinion_modifier = {
+				target = MLL
+				modifier = BRK_embracing_relations_with_sahel
+			}
+			add_opinion_modifier = {
+				target = SNG
+				modifier = BRK_embracing_relations_with_sahel
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_remembering_the_past
+	icon = GFX_goal_MLL_remembering_the_past
+	cost = 5.8
+	relative_position_id = MLL_to_break_the_language_barrier
+	prerequisite = {
+		focus = MLL_to_break_the_language_barrier
+	}
+	prerequisite = {
+		focus = MLL_temporary_ban_on_political_parties
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_popularity = {
+			ideology = panafricanism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_exiting_ecovas
+	icon = GFX_goal_MLL_exiting_ecovas
+	cost = 5.8
+	relative_position_id = MLL_diplomatic_relations
+	prerequisite = {
+		focus = MLL_diplomatic_relations
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = MLL_ecowas_sanctions
+	}
+}
+
+shared_focus = {
+	id = MLL_accepting_our_friends
+	icon = GFX_goal_MLL_accepting_our_friends
+	cost = 5.8
+	relative_position_id = MLL_exiting_ecovas
+	prerequisite = {
+		focus = MLL_exiting_ecovas
+	}
+	prerequisite = {
+		focus = MLL_remembering_the_past
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+		set_country_flag = CHI_friend
+		custom_effect_tooltip = BRK_CHN_Friend_tt
+
+		
+		add_to_variable = { african_chinese_favors = 1 }
+		custom_effect_tooltip = african_chinese_favors_1_tt
+	}
+}
+
+shared_focus = {
+	id = MLL_protect_humanitarian_services
+	icon = GFX_goal_MLL_protect_humanitarian_services
+	cost = 5.8
+	relative_position_id = MLL_accepting_our_friends
+	prerequisite = {
+		focus = MLL_accepting_our_friends
+	}
+	prerequisite = {
+		focus = MLL_an_end_to_instability
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = MLL_control_secured
+	icon = GFX_goal_MLL_control_secured
+	cost = 5.8
+	x = 25
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = MLL_low_confidence_between_soldiers_and_officers_2
+			remove_idea = MLL_low_confidence_between_soldiers_and_officers
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_refit_western_bases
+	icon = GFX_goal_MLL_refit_western_bases
+	cost = 5.8
+	relative_position_id = MLL_control_secured
+	prerequisite = {
+		focus = MLL_control_secured
+	}
+	available = {
+		OR = {
+			32 = { is_controlled_by = MLL }
+			35 = { is_controlled_by = MLL }
+			44 = { is_controlled_by = MLL }
+		}
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		if = {
+			limit ={ 32 = { is_controlled_by = MLL } }
+			32 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit ={ 35 = { is_controlled_by = MLL } }
+			35 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit ={ 44 = { is_controlled_by = MLL } }
+			44 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_blocking_the_drug_traffic
+	icon = GFX_goal_MLL_blocking_the_drug_traffic
+	cost = 5.8
+	relative_position_id = MLL_refit_western_bases
+	prerequisite = {
+		focus = MLL_refit_western_bases
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 75
+		add_command_power = 75
+		remove_ideas = MLL_drug
+	}
+}
+
+shared_focus = {
+	id = MLL_increasing_our_military_potential
+	icon = GFX_goal_MLL_increasing_our_military_potential
+	cost = 5.8
+	relative_position_id = MLL_control_secured
+	prerequisite = {
+		focus = MLL_control_secured
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = MLL_increasing_our_military_potential_idea
+			days = 90
+		}
+		custom_effect_tooltip = MLL_unlock_MLL_Harouna_Samake
+	
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+				random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_russian_help_against_terrorism
+	icon = GFX_goal_MLL_russian_help_against_terrorism
+	cost = 5.8
+	relative_position_id = MLL_increasing_our_military_potential
+	prerequisite = {
+		focus = MLL_increasing_our_military_potential
+	}
+	available = {
+		has_country_flag = RUS_friend
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 100
+		}
+		add_equipment_to_stockpile = {
+			type = ak_1
+			amount = 2000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = ATGM_equipment_9k111
+			amount = 100
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = howitzer_equipment_d30
+			amount = 10
+			producer = RUS
+		}
+		add_dynamic_modifier = {
+			modifier = Corpus_training_modifier
+		}
+		add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+	}
+}
+
+shared_focus = {
+	id = MLL_turkish_birds
+	icon = GFX_goal_MLL_turkish_birds
+	cost = 5.8
+	relative_position_id = MLL_increasing_our_military_potential
+	prerequisite = {
+		focus = MLL_increasing_our_military_potential
+	}
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = uav_airframe_0
+			producer = FRN
+			amount = 5
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_final_showdown
+	icon = GFX_goal_MLL_final_showdown
+	cost = 5.8
+	relative_position_id = MLL_russian_help_against_terrorism
+	prerequisite = {
+		focus = MLL_russian_help_against_terrorism
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_final_showdown_idea
+	}
+}
+
+shared_focus = {
+	id = MLL_defending_our_land
+	icon = GFX_goal_MLL_defending_our_land
+	cost = 5.8
+	relative_position_id = MLL_final_showdown
+	prerequisite = {
+		focus = MLL_final_showdown
+	}
+	prerequisite = {
+		focus = MLL_blocking_the_drug_traffic
+	}
+	prerequisite = {
+		focus = MLL_foreign_provocateurs
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = MLL_low_confidence_between_soldiers_and_officers_2
+	}
+}
+
+shared_focus = {
+	id = MLL_our_long_standing_conflict
+	icon = GFX_goal_MLL_our_long_standing_conflict
+	cost = 5.8
+	relative_position_id = MLL_control_secured
+	prerequisite = {
+		focus = MLL_control_secured
+	}
+	available = {
+		NOT = {
+			has_idea = MALI_CONFLICT_MLL_2015_convention
+		}
+	}
+	bypass = {
+		NOT = {
+			has_war_with = AZW
+		}
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = MLL_assault_on_azawad
+			days = 90
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_vastness_of_sahara
+	icon = GFX_goal_MLL_vastness_of_sahara
+	cost = 5.8
+	relative_position_id = MLL_our_long_standing_conflict
+	prerequisite = {
+		focus = MLL_our_long_standing_conflict
+	}
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_sahara_vastness
+	}
+}
+
+shared_focus = {
+	id = MLL_tuareg_question
+	icon = GFX_goal_MLL_tuareg_question
+	cost = 5.8
+	relative_position_id = MLL_our_long_standing_conflict
+	prerequisite = {
+		focus = MLL_our_long_standing_conflict
+	}
+	available = {
+		has_war_with = AZW
+	}
+	bypass = {
+		NOT = { has_war_with = AZW}
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		64 = {
+			create_unit = {
+				division = "name = \"Tuareg Militia\" division_template = \"MAA-Plateforme\" start_manpower_factor = 1 start_equipment_factor = 1 start_experience_factor = 0.1"
+				owner = MLL
+				count = 3
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = MLL_foreign_provocateurs
+	icon = GFX_goal_MLL_foreign_provocateurs
+	cost = 5.8
+	relative_position_id = MLL_tuareg_question
+	prerequisite = {
+		focus = MLL_tuareg_question
+	}
+	available = {
+		OR = { has_war_with = AZW has_war_with = JNA }
+	}
+	bypass = {
+		OR = {
+			AND = {
+				NOT = { OR = { has_war_with = AZW has_war_with = JNA } }
+			}
+			AND = {
+				has_war_with = MRV
+			}
+		}
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_threat = 5
+		MRV = { country_event = { id = MLL.17 days = 1 } }
+	}
+}
+
+shared_focus = {
+	id = MLL_brics_help
+	icon = GFX_goal_MLL_brics_help
+	cost = 5.8
+	x = 16
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.025
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		if = {
+			limit = {
+				has_idea = MLL_extreme_poverty
+			}
+			swap_ideas = {
+				add_idea = MLL_extreme_poverty_1
+				remove_idea = MLL_extreme_poverty
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_1
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_2
+					remove_idea = MLL_extreme_poverty_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_2
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_3
+					remove_idea = MLL_extreme_poverty_2
+				}
+			}
+			else = {
+				remove_ideas = MLL_extreme_poverty_3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_grain_supplies
+	icon = GFX_goal_MLL_grain_supplies
+	cost = 5.8
+	relative_position_id = MLL_brics_help
+	prerequisite = {
+		focus = MLL_brics_help
+	}
+	prerequisite = {
+		focus = MLL_expanding_international_ties
+	}
+	available = {
+		date > 2023.07.01
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		add_timed_idea = {
+			idea = MLL_grain_supplies_from_russland
+			days = 175
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_build_the_railway
+	icon = GFX_goal_MLL_build_the_railway
+	cost = 5.8
+	relative_position_id = MLL_brics_help
+	prerequisite = {
+		focus = MLL_brics_help
+	}
+	prerequisite = {
+		focus = MLL_expanding_international_ties
+	}
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		build_railway = {
+			level = 5
+			build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+				modifier = {
+					tag = MLL
+					add = 99
+				}
+			}
+			fallback = yes
+			start_province = 1656
+			target_province = 1845
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_expand_the_education_system
+	icon = GFX_goal_MLL_expand_the_education_system
+	cost = 5.8
+	relative_position_id = MLL_build_the_railway
+	prerequisite = {
+		focus = MLL_build_the_railway
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_priv_univer
+		custom_effect_tooltip = MLL_unlock_MLL_Amadou_Sy_Savane
+	}
+}
+
+shared_focus = {
+	id = MLL_benefits_of_artificial_intelligence
+	icon = GFX_goal_MLL_benefits_of_artificial_intelligence
+	cost = 5.8
+	relative_position_id = MLL_expand_the_education_system
+	prerequisite = {
+		focus = MLL_expand_the_education_system
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 4
+			category = electronics
+		}
+		news_event = MLL.25
+	}
+}
+
+shared_focus = {
+	id = MLL_solve_problems_in_the_banking_sector
+	icon = GFX_goal_MLL_solve_problems_in_the_banking_sector
+	cost = 5.8
+	relative_position_id = MLL_benefits_of_artificial_intelligence
+	prerequisite = {
+		focus = MLL_benefits_of_artificial_intelligence
+	}
+	available = {
+		OR = {
+			has_idea = MLL_bank_sector_is_bad
+			has_idea = MLL_bank_sector_is_bad_2
+		}
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = MLL_bank_sector_is_bad
+			}
+			custom_effect_tooltip = MLL_solve_problems_in_the_banking_sector_tt
+			remove_ideas = MLL_bank_sector_is_bad
+			add_timed_idea = {
+				idea = MLL_bank_sector_is_bad_2
+				days = 360
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_bank_sector_is_bad_2
+				}
+				custom_effect_tooltip = MLL_solve_problems_in_the_banking_sector_tt_2
+				remove_ideas = MLL_bank_sector_is_bad_2
+				add_stability = 0.1
+				add_political_power = 75
+			}
+			else = {
+				custom_effect_tooltip = MLL_solve_problems_in_the_banking_sector_tt_3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = MLL_extreme_poverty
+			}
+			swap_ideas = {
+				add_idea = MLL_extreme_poverty_1
+				remove_idea = MLL_extreme_poverty
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_1
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_2
+					remove_idea = MLL_extreme_poverty_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_2
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_3
+					remove_idea = MLL_extreme_poverty_2
+				}
+			}
+			else = {
+				remove_ideas = MLL_extreme_poverty_3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_npp_preparations
+	icon = GFX_goal_MLL_npp_preparations
+	cost = 5.8
+	relative_position_id = MLL_brics_help
+	prerequisite = {
+		focus = MLL_brics_help
+	}
+	prerequisite = {
+		focus = MLL_expanding_international_ties
+	}
+	x = -1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		64 = {
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_that_lucky_old_sun
+	icon = GFX_goal_MLL_that_lucky_old_sun
+	cost = 5.8
+	relative_position_id = MLL_npp_preparations
+	prerequisite = {
+		focus = MLL_npp_preparations
+	}
+	prerequisite = {
+		focus = MLL_grain_supplies
+	}
+	prerequisite = {
+		focus = MLL_build_the_railway
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		64 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_golden_cotton
+	icon = GFX_goal_MLL_golden_cotton
+	cost = 5.8
+	relative_position_id = MLL_that_lucky_old_sun
+	prerequisite = {
+		focus = MLL_that_lucky_old_sun
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		64 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_flood_of_investitions
+	icon = GFX_goal_MLL_flood_of_investitions
+	cost = 5.8
+	relative_position_id = MLL_golden_cotton
+	prerequisite = {
+		focus = MLL_golden_cotton
+	}
+	prerequisite = {
+		focus = MLL_old_hand_behind_our_back
+	}
+	prerequisite = {
+		focus = MLL_solve_problems_in_the_banking_sector
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = BRK_usage_of_export_and_import
+	}
+}
+
+shared_focus = {
+	id = MLL_resource_exploration
+	icon = GFX_goal_MLL_resource_exploration
+	cost = 5.8
+	relative_position_id = MLL_flood_of_investitions
+	prerequisite = {
+		focus = MLL_flood_of_investitions
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_resource = {
+			type = steel
+			amount = 12
+			state = 11
+		}
+		11 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_expand_the_cotton_fields
+	icon = GFX_goal_MLL_expand_the_cotton_fields
+	cost = 5.8
+	relative_position_id = MLL_flood_of_investitions
+	prerequisite = {
+		focus = MLL_flood_of_investitions
+	}
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_lithium_mining
+	icon = GFX_goal_MLL_lithium_mining
+	cost = 5.8
+	relative_position_id = MLL_flood_of_investitions
+	prerequisite = {
+		focus = MLL_flood_of_investitions
+	}
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = MLL_rural_and_goldmining_economy_3
+			remove_idea = MLL_rural_and_goldmining_economy_2
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_growing_industry
+	icon = GFX_goal_MLL_growing_industry
+	cost = 5.8
+	relative_position_id = MLL_flood_of_investitions
+	prerequisite = {
+		focus = MLL_flood_of_investitions
+	}
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_golden_future
+	icon = GFX_goal_MLL_golden_future
+	cost = 5.8
+	relative_position_id = MLL_npp_preparations
+	prerequisite = {
+		focus = MLL_npp_preparations
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = MLL_rural_and_goldmining_economy_2
+			remove_idea = MLL_rural_and_goldmining_economy
+		}
+		if = {
+			limit = {
+				has_idea = MLL_extreme_poverty
+			}
+			swap_ideas = {
+				add_idea = MLL_extreme_poverty_1
+				remove_idea = MLL_extreme_poverty
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_1
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_2
+					remove_idea = MLL_extreme_poverty_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_2
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_3
+					remove_idea = MLL_extreme_poverty_2
+				}
+			}
+			else = {
+				remove_ideas = MLL_extreme_poverty_3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_reevaluate_the_franc
+	icon = GFX_goal_MLL_reevaluate_the_franc
+	cost = 5.8
+	relative_position_id = MLL_golden_future
+	prerequisite = {
+		focus = MLL_golden_future
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.03
+		add_political_power = 200
+		custom_effect_tooltip = MLL_unlock_MLL_Alusseni_Sanou
+	}
+}
+
+shared_focus = {
+	id = MLL_old_hand_behind_our_back
+	icon = GFX_goal_MLL_old_hand_behind_our_back
+	cost = 5.8
+	relative_position_id = MLL_reevaluate_the_franc
+	prerequisite = {
+		focus = MLL_reevaluate_the_franc
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 100
+		if = {
+			limit = {
+				has_idea = MLL_extreme_poverty
+			}
+			swap_ideas = {
+				add_idea = MLL_extreme_poverty_1
+				remove_idea = MLL_extreme_poverty
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_1
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_2
+					remove_idea = MLL_extreme_poverty_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = MLL_extreme_poverty_2
+				}
+				swap_ideas = {
+					add_idea = MLL_extreme_poverty_3
+					remove_idea = MLL_extreme_poverty_2
+				}
+			}
+			else = {
+				remove_ideas = MLL_extreme_poverty_3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = MLL_suppress_french_sprouts
+	icon = GFX_goal_MLL_suppress_french_sprouts
+	cost = 5.8
+	relative_position_id = MLL_exiting_ecovas
+	prerequisite = {
+		focus = MLL_exiting_ecovas
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = MLL_eradicating_western_influence
+	icon = GFX_goal_MLL_eradicating_western_influence
+	cost = 5.8
+	relative_position_id = MLL_suppress_french_sprouts
+	prerequisite = {
+		focus = MLL_suppress_french_sprouts
+	}
+	prerequisite = {
+		focus = MLL_accepting_our_friends
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = MLL_popular_panafricanist_government
+	}
+}
+

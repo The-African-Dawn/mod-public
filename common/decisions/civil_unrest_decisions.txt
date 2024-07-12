@@ -1,0 +1,139 @@
+#civil_unrest_sng_category = {
+#	#senegal_civil_unrest_deadline = {
+#	#	icon = GFX_decision_chita_investigation
+#	#	days_mission_timeout = 1
+#	#	is_good = no
+#	#	fire_only_once = yes
+#	#	available = {
+#	#	#	check_variable = {
+#	#	#		chita_detective_points > 99
+#	#	#	}
+#	#	}
+#	#	remove_trigger = {
+#	#	#	check_variable = {
+#	#	#		chita_detective_points > 99
+#	#	#	}
+#	#	}
+#	#	complete_effect = {
+#	#		start_civil_war = {
+#	#			ideology = panafricanism
+#	#			# Breakaway gets old ideology of ROOT
+#	#			size = 0.5
+#	#			keep_political_leader = yes
+#	#			keep_political_party_members = yes
+#	#		}
+#	#	}
+#	#	timeout_effect = {
+#	#		start_civil_war = {
+#	#			ideology = panafricanism
+#	#			# Breakaway gets old ideology of ROOT
+#	#			size = 0.5
+#	#			keep_political_leader = yes
+#	#			keep_political_party_members = yes
+#	#		}
+#	#	}
+#	#	ai_will_do = {
+#	#		base = 0
+#	#	}
+#	#}
+#}
+
+mali_separatism_agreements = {
+	break_2015_agreements = {
+		icon = battle_for_africa_ask_for_help
+		fire_only_once = yes
+		available = {
+			OR = {
+				MLL = { has_idea = MALI_CONFLICT_MLL_2015_convention }
+				AZW = { has_idea = MALI_CONFLICT_AZW_2015_convention }
+			}
+		}
+		visible = {
+			OR = {
+				MLL = { has_idea = MALI_CONFLICT_MLL_2015_convention }
+				AZW = { has_idea = MALI_CONFLICT_AZW_2015_convention }
+			}
+			country_exists = MLL
+			country_exists = AZW
+		}
+		complete_effect = {
+			MLL = {
+				remove_ideas = MALI_CONFLICT_MLL_2015_convention
+			}
+			AZW = {
+				remove_ideas = MALI_CONFLICT_AZW_2015_convention
+			}
+			news_event = {
+				id = MLL.1
+			}
+		}
+		ai_will_do = {
+			base = 0
+			#Pretty damn important
+			modifier = {
+				add = 900
+				AND = {
+					tag = MLL
+					date > 2024.01.27
+				}
+			}
+		}
+	}
+	peace_with_JNIM = {
+		icon = battle_for_africa_ask_for_help
+		fire_only_once = yes
+		allowed = {
+			tag = AZW
+		}
+		visible = {
+			has_war_with = JNA
+			has_war_with = MLL
+			country_exists = JNA
+		}
+		complete_effect = {
+			white_peace = JNA
+			set_truce = {
+				target = JNA
+				days = 360
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 900
+				NOT = {
+					has_idea = MALI_CONFLICT_MLL_2015_convention
+				}
+				surrender_progress > 0.25
+			}
+		}
+	}
+	militarize_mali_police = {
+		icon = battle_for_africa_ask_for_help
+		fire_only_once = yes
+		cost = 5
+		allowed = {
+			tag = MLL
+		}
+		available = {
+		}
+		complete_effect = {
+			add_ideas = low_economic_mobilisation
+			add_stability = 0.025
+			hidden_effect = {
+				news_event = MLL.12
+			}
+		}
+		ai_will_do = {
+			base = 0
+			#Pretty damn important x2
+			modifier = {
+				add = 900
+				AND = {
+					tag = MLL
+					date > 2022.10.7
+				}
+			}
+		}
+	}
+}

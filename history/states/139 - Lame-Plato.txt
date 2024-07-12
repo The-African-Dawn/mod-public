@@ -1,0 +1,35 @@
+
+state={
+	id=139
+	name="STATE_139"
+
+	history={
+		owner = TGG
+		add_core_of = TGG
+		victory_points = {
+			4879 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+
+		}
+		victory_points = {
+			5025 5
+		}		
+		victory_points = {
+			1587 3
+		}
+		
+	}
+
+	provinces={
+		1587 3136 4879 4880 4881 4882 4883 5025 5026 5028 
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

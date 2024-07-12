@@ -1,0 +1,20 @@
+technology_categories = {
+
+	artillery_technologies
+	atgm_technologies
+	manpads_technologies
+	howitzer_technologies 
+	industry_repair
+	industry_output
+	quality_control
+	cat_modern_armor
+}
+technology_folders = {
+	atgm_folder = {
+		ledger = army
+	}
+	manpads_folder = {
+		ledger = army
+	}
+	
+}

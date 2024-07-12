@@ -1,0 +1,39 @@
+
+state={
+	id=8
+	name="STATE_8"
+	resources={
+		tungsten=8
+		
+		oil = 10
+	}
+	history={
+		set_variable = { amount_of_gold = 0.18 }
+		owner = GVN
+		add_core_of = GVN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			4908 3 
+		}
+		victory_points = {
+			3070 3 
+		}
+		victory_points = {
+			2156 5 
+		}
+		
+	}
+
+	provinces={
+		166 768 1546 1621 1832 2156 3042 3057 3070 4902 4905 4906 4907 4908 
+	}
+	manpower=1100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

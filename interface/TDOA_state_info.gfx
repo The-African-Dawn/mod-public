@@ -1,0 +1,72 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_State_Info_background"
+		texturefile = "gfx/interface/state_info/background.dds"
+	}
+	spriteType = {
+		name = "GFX_info_exit_button"
+		texturefile = "gfx/interface/state_info/info_exit_button.dds"
+	}
+	spriteType = {
+		name = "GFX_State_Info_Tabs"
+		texturefile = "gfx/interface/state_info/info_tabs.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_State_Info_Tabs_Icon_1"
+		texturefile = "gfx/interface/state_info/info_tabs_icon_1.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_State_Info_Tabs_Icon_2"
+		texturefile = "gfx/interface/state_info/info_tabs_icon_2.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_State_Info_Tabs_Icon_3"
+		texturefile = "gfx/interface/state_info/info_tabs_icon_3.dds"
+		noofframes = 2
+	}
+
+	spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_NoContent"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Placate_NoContent.dds"
+	}
+	spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_BRK"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_BRK.dds"
+	}
+	spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_RUS"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_RUS.dds"
+	}
+	spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_CHD"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_CHD.dds"
+	}
+	spriteType = {
+		name = "GFX_TDOA_State_Info_Picture_LIV"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_LIV.dds"
+	}
+		spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_MLL"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_MLL.dds"
+	}
+	spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_NIG"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_NIG.dds"
+	}
+		spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_USR"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_USR.dds"
+	}
+		spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_FRN"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_FRN.dds"
+	}
+			spriteType = {
+		name = "GFX_TDOA_State_Info_Placate_NRG"
+		textureFile = "gfx/interface/state_info/TDOA_State_Info_Picture_NRG.dds"
+	}
+
+}

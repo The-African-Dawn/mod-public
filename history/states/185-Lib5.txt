@@ -1,0 +1,25 @@
+
+state={
+	id=185
+	name="STATE_185"
+	resources={
+		oil=20
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		164 173 621 805 907 1078 1536 2295 2720 2745 2749 2755 2759 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

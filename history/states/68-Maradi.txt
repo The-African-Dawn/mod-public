@@ -1,0 +1,31 @@
+
+state={
+	id=68
+	name="STATE_68"
+	resources={
+		steel=4
+		tungsten = 9
+	}
+	history={
+		set_variable = { amount_of_gold = 0.07 }
+		owner = NIG
+		add_core_of = NIG
+		victory_points = {
+			2439 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		
+		}
+	}
+
+	provinces={
+		375 1462 2439 2979 3002 
+	}
+	manpower=3402094	
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

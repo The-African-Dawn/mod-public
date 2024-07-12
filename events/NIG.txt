@@ -1,0 +1,490 @@
+﻿
+add_namespace = NIG
+	
+news_event = { 
+	id = NIG.1
+	title = NIG.1.t
+	desc = NIG.1.desc
+	picture = GFX_NIG_1
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.1.a
+		ai_chance = { factor = 1 }
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = NIG_Abdourahamane_Tchiani
+			promote_leader = yes
+			country_leader = {
+				ideology = panafricanism_sub
+				expire = "3000.1.1.1"
+				desc = NIG_Abdourahamane_Tchiani_desc
+				traits = {  }
+			}
+		}
+		set_politics = {
+			ruling_party = panafricanism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+			long_name = NIG_panafricanism_militaries_long
+			name = NIG_panafricanism_militaries
+		}
+		remove_ideas = NIG_disloyal_army
+		trigger = {
+			tag = NIG
+		}
+	}
+	option = { 
+		name = NIG.1.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { tag = NIG }
+		}
+	}
+}
+
+news_event = { 
+	id = NIG.2
+	title = NIG.2.t
+	desc = NIG.2.desc
+	picture = GFX_NIG_2
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.2.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = { 
+		name = NIG.2.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { has_government = panafricanism }
+		}
+	}
+}
+
+country_event = { 
+	id = NIG.3
+	title = NIG.3.t
+	desc = NIG.3.desc
+	picture = GFX_NIG_3
+	is_triggered_only = yes
+	
+	option = { 
+		name = NIG.3.a
+		add_ideas = NIG_eumpm_mission
+		hidden_effect = {
+			news_event = NIG.4
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = NIG.4
+	title = NIG.4.t
+	desc = NIG.4.desc
+	picture = GFX_NIG_4
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.4.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = { 
+		name = NIG.4.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { has_government = panafricanism }
+		}
+	}
+}
+
+news_event = { 
+	id = NIG.5
+	title = NIG.5.t
+	desc = NIG.5.desc
+	picture = GFX_NIG_5
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.5.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = FRN
+		}
+	}
+	option = { 
+		name = NIG.5.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { tag = FRN }
+		}
+	}
+}
+
+news_event = { 
+	id = NIG.6
+	title = NIG.6.t
+	desc = NIG.6.desc
+	picture = GFX_NIG_6
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.6.a
+		ai_chance = { factor = 1 }
+
+		trigger = {
+			tag = BNN
+		}
+	}
+	option = { 
+		name = NIG.6.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = NIG
+		}
+	}
+	option = { 
+		name = NIG.6.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { OR = { tag = BNN tag = NIG } }
+		}
+	}
+}
+
+country_event = { 
+	id = NIG.7
+	title = NIG.7.t
+	desc = NIG.7.desc
+	picture = GFX_NIG_7
+	is_triggered_only = yes
+	
+	option = { 
+		name = NIG.7.a
+		ai_chance = { factor = 100 }
+		add_opinion_modifier = {
+			target = NIG
+			modifier = CHD_NIG_agreed
+		}
+		NIG = {
+			add_opinion_modifier = {
+				target = CHD
+				modifier = CHD_NIG_agreed
+			}
+		}
+		add_timed_idea = {
+			idea = NIG_CHD_building_truboprovod
+			days = 180
+		}
+		add_ideas = CHD_NIG_truboprovod
+		NIG = { country_event = { id = NIG.8 days = 1 hours = 9 } }
+	}
+	option = { 
+		name = NIG.7.b
+		ai_chance = { factor = 0 }
+		add_political_power = -10
+		add_opinion_modifier = {
+			target = CHD
+			modifier = CHD_NIG_disagreed
+		}
+		CHD = {
+			add_opinion_modifier = {
+				target = NIG
+				modifier = CHD_NIG_disagreed
+			}
+		}
+		NIG = { country_event = { id = NIG.9 days = 1 hours = 9 } }
+	}
+}
+
+country_event = { 
+	id = NIG.8
+	title = NIG.8.t
+	desc = NIG.8.desc
+	picture = GFX_NIG_7
+	is_triggered_only = yes
+	
+	option = { 
+		name = NIG.8.a
+		add_ideas = NIG_CHD_truboprovod
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { 
+	id = NIG.9
+	title = NIG.9.t
+	desc = NIG.9.desc
+	picture = GFX_NIG_7
+	is_triggered_only = yes
+	
+	option = { 
+		name = NIG.9.a
+		add_political_power = -25
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = { 
+	id = NIG.10
+	title = NIG.10.t
+	desc = NIG.10.desc
+	picture = GFX_NIG_10
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.10.a
+		ai_chance = { factor = 1 }
+
+		trigger = {
+			OR = {
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = { 
+		name = NIG.10.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			OR = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+			}
+		}
+	}
+	option = { 
+		name = NIG.10.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = NIG.11
+	title = NIG.11.t
+	desc = NIG.11.desc
+	picture = GFX_NIG_11
+	is_triggered_only = yes
+	
+	option = { 
+		name = NIG.11.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+news_event = { 
+	id = NIG.12
+	title = NIG.12.t
+	desc = NIG.12.desc
+	picture = GFX_NIG_12
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.12.a
+		ai_chance = { factor = 1 }
+
+		trigger = {
+			OR = {
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = { 
+		name = NIG.12.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			OR = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+			}
+		}
+	}
+	option = { 
+		name = NIG.12.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+}
+
+news_event = { 
+	id = NIG.13
+	title = NIG.13.t
+	desc = NIG.13.desc
+	picture = GFX_NIG_13
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.13.a
+		ai_chance = { factor = 1 }
+
+		trigger = {
+			OR = {
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = { 
+		name = NIG.13.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			OR = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+			}
+		}
+	}
+	option = { 
+		name = NIG.13.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+}
+
+news_event = { 
+	id = NIG.14
+	title = NIG.14.t
+	desc = NIG.14.desc
+	picture = GFX_NIG_14
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.14.a
+		ai_chance = { factor = 1 }
+
+		trigger = {
+			OR = {
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = { 
+		name = NIG.14.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			OR = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+			}
+		}
+	}
+	option = { 
+		name = NIG.14.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+}
+
+
+news_event = { 
+	id = NIG.15
+	title = NIG.15.t
+	desc = NIG.15.desc
+	picture = GFX_NIG_15
+	is_triggered_only = yes
+	major = yes
+	
+	option = { 
+		name = NIG.15.a
+		ai_chance = { factor = 1 }
+		
+		trigger = {
+			OR = {
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+	option = { 
+		name = NIG.15.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			OR = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+			}
+		}
+	}
+	option = { 
+		name = NIG.15.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_government = panafricanism
+				is_in_faction_with = NIG
+				tag = NIG
+				has_government = francocentrism
+				is_in_faction_with = NRG
+				tag = NRG
+			}
+		}
+	}
+}

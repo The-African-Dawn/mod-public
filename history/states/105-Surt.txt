@@ -1,0 +1,35 @@
+
+state={
+	id=105
+	name="STATE_105"
+	resources={
+		steel=3
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		DLG = {
+			set_province_controller = 113
+			set_province_controller = 1157
+			set_province_controller = 2647
+			set_province_controller = 1422			
+			set_province_controller = 4977
+			set_province_controller = 4974
+
+		}
+
+	}
+
+	provinces={
+		113 319 422 604 630 1157 1422 1848 2175 2546 2647 4974 4975 4976 4977 4978 4980 4982 
+	}
+	manpower=1110000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

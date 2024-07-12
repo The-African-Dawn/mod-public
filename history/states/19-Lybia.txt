@@ -1,0 +1,25 @@
+
+state={
+	id=19
+	name="STATE_19"
+	resources={
+		oil=8 # was: 2
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		108 390 491 871 932 1530 1878 2731 2744 
+	}
+	manpower=88643
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

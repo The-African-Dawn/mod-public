@@ -1,0 +1,29 @@
+
+state={
+	id=145
+	name="STATE_145"
+
+	history={
+		set_variable = { amount_of_gold = 0.24 }
+		owner = KOT
+		add_core_of = KOT
+		victory_points = {
+			4895 50 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 1
+		}
+
+	}
+
+	provinces={
+		4895 
+	}
+	manpower=6430245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

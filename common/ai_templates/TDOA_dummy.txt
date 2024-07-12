@@ -1,0 +1,2128 @@
+garrison_generic = {
+	roles = { garrison suppression }
+	upgrade_prio = {
+		factor = 0
+		modifier = {
+			add = 5
+			ai_has_role_template = garrison
+		}
+	}
+	match_to_count = 0.5
+
+	megabad_garrison = {
+		reinforce_prio = 0
+		custom_icon = 15
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment < 400
+				}
+			}
+			modifier = {
+				factor = 0
+				has_equipment = {
+					infantry_equipment > 400
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment < 400
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment > 1000
+					}
+					is_major = yes
+					tag = BRK
+					tag = NRG
+					tag = MLL
+					tag = NIG
+					tag = SNG
+					tag = SLR
+					tag = CHD
+				}
+			}
+		}
+
+		target_width = 8
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #12 Combat Width
+				light_infantry_opol = 4 #
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+		}
+	}
+
+	normal_garrison = {
+		reinforce_prio = 0
+
+		upgrade_prio = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 400
+				}
+				has_equipment = {
+					infantry_equipment < 700
+				}
+			}
+			modifier = {
+				factor = 0
+				has_equipment = {
+					infantry_equipment > 700
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 400
+				}
+				has_equipment = {
+					infantry_equipment < 700
+				}
+			}
+			modifier = {
+				factor = 0
+				has_equipment = {
+					infantry_equipment > 700
+				}
+			}
+		}
+		target_width = 12.0
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = {
+				light_infantry_opol = 6
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+		}
+	}
+}
+
+light_infantry = {
+	roles = { infantry }
+	upgrade_prio = {
+		factor = 1
+		modifier = {
+			factor = 5
+			has_civil_war = yes
+		}
+		modifier = {
+			factor = 10
+			has_equipment = {
+				ATGM_equipment < 60
+			}
+		}
+	}
+	match_to_count = 0.6
+
+	militia_default = {
+		reinforce_prio = 0
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment < 10
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment > 9
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment < 10
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment > 9
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol = 9
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+		}
+
+	}
+	light_inf_bat = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				add = 1
+				num_of_military_factories < 5
+			}
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol = 9
+			}
+			support = {
+				atgm_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+			atgm_support_unit
+		}
+	}
+	militia_inf_bat_1 = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment < 10
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment < 10
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol = 9
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+			atgm_support_unit
+			howitzer_support_unit
+		}
+	}
+	militia_inf_bat_2 = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment < 10
+					}
+					has_equipment = {
+						howitzer_equipment < 10
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment < 10
+					}
+					has_equipment = {
+						howitzer_equipment < 10
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol = 9
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+				manpads_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+			atgm_support_unit
+			howitzer_support_unit
+			manpads_support_unit
+		}
+	}
+	militia_inf_bat_heavy = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_equipment = {
+					infantry_equipment > 1000
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 1000
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment < 10
+					}
+					has_equipment = {
+						howitzer_equipment < 10
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_equipment = {
+					infantry_equipment > 1000
+				}
+				has_equipment = {
+					ATGM_equipment > 9
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 1000
+					}
+					has_equipment = {
+						ATGM_equipment < 10
+					}
+					has_equipment = {
+						manpads_equipment < 10
+					}
+					has_equipment = {
+						howitzer_equipment < 10
+					}
+				}
+			}
+		}
+
+		target_width = 24
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol = 12
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+				manpads_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol
+			atgm_support_unit
+			howitzer_support_unit
+			manpads_support_unit
+		}
+	}
+}
+
+light_infantry_motorized = {
+	roles = { infantry motorized }
+	upgrade_prio = {
+		factor = 1
+		modifier = {
+			factor = 5
+			has_civil_war = yes
+		}
+		modifier = {
+			factor = 10
+			has_equipment = {
+				ATGM_equipment < 60
+			}
+			has_equipment = {
+				jeep_equipment > 100
+			}
+		}
+		modifier = {
+			factor = 0
+			has_equipment = {
+				jeep_equipment < 100
+			}
+		}
+	}
+	match_to_count = 0.6
+
+	militia_moto_default = {
+		reinforce_prio = 0
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 400
+				}
+				has_equipment = {
+					ATGM_equipment < 10
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					jeep_equipment > 100
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 400
+					}
+					has_equipment = {
+						ATGM_equipment > 9
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						jeep_equipment < 100
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 400
+				}
+				has_equipment = {
+					ATGM_equipment < 10
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					jeep_equipment > 100
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 400
+					}
+					has_equipment = {
+						ATGM_equipment > 9
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						jeep_equipment < 100
+					}
+				}
+			}
+		}
+
+		target_width = 12
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol_on_guntruck = 6
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol_on_guntruck
+		}
+	}
+	militia_moto_upgraded = {
+		reinforce_prio = 0
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment < 10
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					jeep_equipment > 180
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment > 9
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						jeep_equipment < 180
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 700
+				}
+				has_equipment = {
+					ATGM_equipment < 10
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					jeep_equipment > 180
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 700
+					}
+					has_equipment = {
+						ATGM_equipment > 9
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						jeep_equipment < 180
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				light_infantry_opol_on_guntruck = 9
+			}
+		}
+
+		allowed_types = {
+			light_infantry_opol_on_guntruck
+		}
+	}
+}
+
+specials_brigades = {
+	roles = { paratroopers mountaineers infantry }
+	upgrade_prio = {
+		factor = 1.2
+	}
+
+	match_to_count = 0.6
+
+	sf_gen = {
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						spec_oborud_equipment < 100
+					}
+					has_equipment = {
+						spec_oborud_equipment > 300
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 2
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						spec_oborud_equipment < 100
+					}
+					has_equipment = {
+						spec_oborud_equipment > 300
+					}
+				}
+			}
+		}
+
+		reinforce_prio = 2
+
+		target_width = 6
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = {
+				speznaz = 3
+			}
+		}
+
+		allowed_types = {
+			speznaz
+		}
+	}
+
+	special_forces_normal = {
+		upgrade_prio = {
+			factor = 4
+			modifier = {
+				factor = 0
+				has_equipment = {
+					spec_oborud_equipment < 360
+				}
+			}
+		}
+		production_prio = {
+			factor = 4
+			modifier = {
+				factor = 0
+				has_equipment = {
+					spec_oborud_equipment < 360
+				}
+			}
+		}
+
+		reinforce_prio = 2
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 60
+			match_value = 9000.0
+			regiments = {
+				speznaz = 9
+			}
+		}
+
+		allowed_types = {
+			speznaz
+		}
+	}
+}
+
+
+infantry = {
+	roles = { infantry }
+	upgrade_prio = {
+		factor = 3
+		modifier = {
+			factor = 5
+			has_civil_war = yes
+		}
+		modifier = {
+			factor = 10
+			has_equipment = {
+				ATGM_equipment > 60
+			}
+		}
+		modifier = {
+			factor = 0
+			has_equipment = {
+				ATGM_equipment < 30
+			}
+		}
+	}
+	match_to_count = 0.6
+
+	infantry_default = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 550
+				}
+				has_equipment = {
+					ATGM_equipment < 90
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 550
+					}
+					has_equipment = {
+						ATGM_equipment > 89
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 550
+				}
+				has_equipment = {
+					ATGM_equipment < 90
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 550
+					}
+					has_equipment = {
+						ATGM_equipment > 89
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+
+		target_width = 12
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry = 6
+			}
+		}
+
+		allowed_types = {
+			infantry
+		}
+
+	}
+	infantry_bigger = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 89
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 90
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 550
+				}
+				has_equipment = {
+					ATGM_equipment > 89
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 550
+					}
+					has_equipment = {
+						ATGM_equipment < 90
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry = 9
+			}
+		}
+
+		allowed_types = {
+			infantry
+		}
+	}
+	infantry_bigger_atgm = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry = 9
+			}
+			support = {
+				atgm_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			infantry
+			atgm_support_unit
+		}
+	}
+	infantry_bigger_art = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry = 9
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			infantry
+			atgm_support_unit
+			howitzer_support_unit
+		}
+	}
+	infantry_bigger_mega = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 80
+					}
+					has_equipment = {
+						manpads_equipment < 5
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 80
+					}
+					has_equipment = {
+						manpads_equipment < 5
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry = 9
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+				manpads_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			infantry
+			atgm_support_unit
+			howitzer_support_unit
+			manpads_support_unit
+		}
+	}
+}
+
+infantry_on_jeep = {
+	roles = { infantry_on_jeep }
+	upgrade_prio = {
+		factor = 1
+		modifier = {
+			factor = 5
+			has_civil_war = yes
+		}
+		modifier = {
+			factor = 10
+			has_equipment = {
+				ATGM_equipment > 60
+			}
+			has_equipment = {
+				mrap_equipment > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			has_equipment = {
+				ATGM_equipment < 30
+			}
+			has_equipment = {
+				mrap_equipment < 20
+			}
+		}
+	}
+	match_to_count = 0.6
+
+	mot_infantry_default = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 550
+				}
+				has_equipment = {
+					ATGM_equipment < 90
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					mrap_equipment > 20
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 550
+					}
+					has_equipment = {
+						ATGM_equipment > 89
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						mrap_equipment < 20
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 550
+				}
+				has_equipment = {
+					ATGM_equipment < 90
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					mrap_equipment > 20
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 550
+					}
+					has_equipment = {
+						ATGM_equipment > 89
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						mrap_equipment < 20
+					}
+				}
+			}
+		}
+
+		target_width = 12
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry_on_jeep = 6
+			}
+		}
+
+		allowed_types = {
+			infantry_on_jeep
+		}
+
+	}
+	mot_infantry_bigger = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 89
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					mrap_equipment > 20
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 90
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 550
+				}
+				has_equipment = {
+					ATGM_equipment > 89
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 550
+					}
+					has_equipment = {
+						ATGM_equipment < 90
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry_on_jeep = 9
+			}
+		}
+
+		allowed_types = {
+			infantry_on_jeep
+		}
+	}
+	mot_infantry_bigger_atgm = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment < 10
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment > 9
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry_on_jeep = 9
+			}
+			support = {
+				atgm_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			infantry_on_jeep
+			atgm_support_unit
+		}
+	}
+	mot_infantry_bigger_art = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment < 10
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 100
+					}
+					has_equipment = {
+						manpads_equipment > 9
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry_on_jeep = 9
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			infantry_on_jeep
+			atgm_support_unit
+			howitzer_support_unit
+		}
+	}
+	mot_infantry_bigger_mega = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 3
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 80
+					}
+					has_equipment = {
+						manpads_equipment < 5
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+		production_prio = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_civil_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_equipment = {
+					infantry_equipment > 800
+				}
+				has_equipment = {
+					ATGM_equipment > 99
+				}
+				has_equipment = {
+					manpads_equipment > 9
+				}
+				has_equipment = {
+					howitzer_equipment > 9
+				}
+				has_equipment = {
+					mrap_equipment > 30
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_equipment = {
+						infantry_equipment < 800
+					}
+					has_equipment = {
+						ATGM_equipment < 80
+					}
+					has_equipment = {
+						manpads_equipment < 5
+					}
+					has_equipment = {
+						howitzer_equipment < 5
+					}
+					has_equipment = {
+						mrap_equipment < 30
+					}
+				}
+			}
+		}
+
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 9000.0
+
+			regiments = { #15 CW
+				infantry_on_jeep = 9
+			}
+			support = {
+				atgm_support_unit = 1
+				howitzer_support_unit = 1
+				manpads_support_unit = 1
+			}
+		}
+
+		allowed_types = {
+			infantry_on_jeep
+			atgm_support_unit
+			howitzer_support_unit
+			manpads_support_unit
+		}
+	}
+}

@@ -1,0 +1,787 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_chita_small_custom_gui_opener"
+		texturefile = "gfx/interface/bottom_gui/chita_small_custom_gui_opener.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_decision_category_corruption"
+		texturefile = "gfx/interface/decisions/decision_category_corruption.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_category_chad_insurgency_banner"
+		texturefile = "gfx/interface/decisions/decision_category_chad_insurgency_banner.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_general_army_purposes"
+		texturefile = "gfx/interface/decisions/decision_category_general_army_purposes.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_decision_category_ecomag_choosing_decision"
+		texturefile = "gfx/interface/decisions/decision_category_ecomag_choosing_decision.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_tdoa_french_influence"
+		texturefile = "gfx/interface/decisions/decision_tdoa_french_influence.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_tdoa_american_influence"
+		texturefile = "gfx/interface/decisions/decision_tdoa_american_influence.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_african_ecowas_influence_choice_icon"
+		texturefile = "gfx/interface/decisions/african_ecowas_influence_choice_icon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_taking_motorised"
+		texturefile = "gfx/interface/decisions/decision_taking_motorised.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_corruption_investigation"
+		texturefile = "gfx/interface/decisions/decision_corruption_investigation.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_corruption_eradication"
+		texturefile = "gfx/interface/decisions/decision_corruption_eradication.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_corruption_grows"
+		texturefile = "gfx/interface/decisions/decision_corruption_grows.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_burkina_education"
+		texturefile = "gfx/interface/decisions/decision_burkina_education.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_burkina_mobilisation"
+		texturefile = "gfx/interface/decisions/decision_burkina_mobilisation.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_ecomag_choosing_decision_icon"
+		texturefile = "gfx/interface/decisions/decision_category_ecomag_choosing_decision_icon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_african_ecowas_influence_choice"
+		texturefile = "gfx/interface/decisions/african_ecowas_influence_choice.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Ecowas_Choosing_Side_GUI_Fon"
+		textureFile = "gfx/interface/ecowas_gui/Ecowas_Choosing_Side_GUI_Fon.dds"
+	}
+	progressbartype = {
+		name = "GFX_Ecowas_Choosing_Side_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/ecowas_gui/Novgorod_Stalinist_Party_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/ecowas_gui/Novgorod_Stalinist_Party_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 500
+			y = 344
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+
+	SpriteType = {
+		name = "GFX_exclusive_contract_decision"
+		texturefile = "gfx/interface/decisions/exclusive_contract_decision.dds"
+	}
+		
+	SpriteType = {
+		name = "GFX_decision_category_exclusive_contract"
+		texturefile = "gfx/interface/decisions/decision_category_exclusive_contract.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_favors_icon"
+		texturefile = "gfx/texticons/decision_favors_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_oil"
+		texturefile = "gfx/texticons/texticon_oil.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_small_arms"
+		texturefile = "gfx/texticons/texticon_small_arms.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_industry"
+		texturefile = "gfx/texticons/texticon_industry.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_army_exp"
+		texturefile = "gfx/texticons/texticon_tdoa_army_exp.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_uran_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_uran_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_gold_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_gold_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_diamond_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_diamond_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_oil_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_oil_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_tungsten_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_tungsten_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_rubber_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_rubber_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_aluminum_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_aluminum_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_chromium_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_chromium_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_texticon_tdoa_steel_icon"
+		texturefile = "gfx/texticons/texticon_tdoa_steel_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_buy_helicopters"
+		texturefile = "gfx/interface/decisions/decision_buy_helicopters.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_buy_drones"
+		texturefile = "gfx/interface/decisions/decision_buy_drones.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_mavritania_conflict"
+		texturefile = "gfx/interface/decisions/decision_category_mavritania_conflict.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_mavritania_conflict_icon"
+		texturefile = "gfx/interface/decisions/decision_category_mavritania_conflict_icon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_buy_helicopters"
+		texturefile = "gfx/interface/decisions/decision_buy_helicopters.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_buy_drones"
+		texturefile = "gfx/interface/decisions/decision_buy_drones.dds"
+	}
+	
+	
+		
+	spriteType = {
+		name = "GFX_Mauritanie_Tensions_GUI_Fon"
+		textureFile = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_Fon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Mauritanie_Tensions_GUI_map"
+		textureFile = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_map.dds"
+	}
+	
+
+	
+	SpriteType = {
+		name = "GFX_Mauritanie_Tensions_GUI_map_glow"
+		texturefile = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_map_glow.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_map_glow.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 4.0
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_map_glow.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 4.0
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = "GFX_Mauritanie_Tensions_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/mauritanie_gui/Mauritanie_Tensions_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 200
+			y = 344
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_increasing_tension"
+		texturefile = "gfx/interface/decisions/decision_increasing_tension.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_decreasing_tension"
+		texturefile = "gfx/interface/decisions/decision_decreasing_tension.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_time_of_change"
+		texturefile = "gfx/interface/decisions/decision_time_of_change.dds"
+	}
+	
+	
+	
+	SpriteType = {
+		name = "GFX_decision_category_ecowas_unity_decision_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_ecowas_unity_decision_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_ecowas_unity_decision_banner"
+		texturefile = "gfx/interface/decisions/decision_category_ecowas_unity_decision_banner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Ecowas_Unity_GUI_Fon"
+		textureFile = "gfx/interface/ecowas_unity_gui/Ecowas_Unity_GUI_Fon.dds"
+	}
+	progressbartype = {
+		name = "GFX_Ecowas_Unity_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/ecowas_unity_gui/Ecowas_Unity_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/ecowas_unity_gui/Ecowas_Unity_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 345
+			y = 344
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	
+	
+	
+	SpriteType = {
+		name = "GFX_decision_category_nigerian_corruption_decision_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_nigerian_corruption_decision_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_nigerian_corruption_decision_banner"
+		texturefile = "gfx/interface/decisions/decision_category_nigerian_corruption_decision_banner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Nigerian_Corruption_GUI_Fon"
+		textureFile = "gfx/interface/ecowas_unity_gui/Nigerian_Corruption_GUI_Fon.dds"
+	}
+	progressbartype = {
+		name = "GFX_Nigerian_Corruption_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/nigerian_corruption_gui/Nigerian_Corruption_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/nigerian_corruption_gui/Nigerian_Corruption_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 500
+			y = 258
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_decision_category_saharan_conflict_decision_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_saharan_conflict_decision_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_saharan_conflict_decision_banner"
+		texturefile = "gfx/interface/decisions/decision_category_saharan_conflict_decision_banner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Saharan_Conflict_GUI_Fon"
+		textureFile = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_Fon.dds"
+	}
+	spriteType = {
+		name = "GFX_Saharan_Conflict_GUI_map"
+		textureFile = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_map.dds"
+	}
+	progressbartype = {
+		name = "GFX_Saharan_Conflict_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 200
+			y = 344
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	SpriteType = {
+		name = "GFX_Saharan_Conflict_GUI_map_glow"
+		texturefile = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_map_glow.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_map_glow.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 4.0
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/saharan_conflict_gui/Saharan_Conflict_GUI_map_glow.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 4.0
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+		transparencecheck = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_corpus_training_decision_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_corpus_training_decision_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_corpus_training_decision_banner"
+		texturefile = "gfx/interface/decisions/decision_category_corpus_training_decision_banner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Corpus_Training_GUI_Fon"
+		textureFile = "gfx/interface/corpus_training_gui/Corpus_Training_GUI_Fon.dds"
+		 alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_Corpus_Training_GUI_Flag"
+		textureFile = "gfx/interface/corpus_training_gui/Corpus_Training_GUI_Flag.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Corpus_Training_GUI_Patch"
+		textureFile = "gfx/interface/corpus_training_gui/Corpus_Training_GUI_Patch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_corpus_chevron"
+		textureFile = "gfx/interface/decisions/decision_corpus_chevron.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_berets_training_decision_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_berets_training_decision_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_berets_training_decision_banner"
+		texturefile = "gfx/interface/decisions/decision_category_berets_training_decision_banner.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Berets_Training_GUI_Fon"
+		textureFile = "gfx/interface/berets_training_gui/Berets_Training_GUI_Fon.dds"
+		 alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_Berets_Training_GUI_Flag"
+		textureFile = "gfx/interface/berets_training_gui/Berets_Training_GUI_Flag.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Berets_Training_GUI_Patch"
+		textureFile = "gfx/interface/berets_training_gui/Berets_Training_GUI_Patch.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_green_berets"
+		textureFile = "gfx/interface/decisions/decision_green_berets.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_antiterror_tactics_decision_category_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_antiterror_tactics_decision_category_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_antiterror_tactics_decision_category_banner"
+		texturefile = "gfx/interface/decisions/decision_category_antiterror_tactics_decision_category_banner.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_stop_resistance_in_state"
+		texturefile = "gfx/interface/decisions/decision_stop_resistance_in_state.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_resistance_grow_in_states"
+		texturefile = "gfx/interface/decisions/decision_resistance_grow_in_states.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_chad_war_with_resistance_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_chad_war_with_resistance.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_antiterror_decisions_icon"
+		texturefile = "gfx/interface/decisions/decision_antiterror_decisions_icon.dds"
+	}
+		
+	SpriteType = {
+		name = "GFX_decision_make_resistance_lower"
+		texturefile = "gfx/interface/decisions/decision_make_resistance_lower.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_rebellion_of_fact"
+		texturefile = "gfx/interface/decisions/decision_rebellion_of_fact.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_category_chad_first_free_and_fair_eletions_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_chad_first_free_and_fair_eletions_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_first_election_happen"
+		texturefile = "gfx/interface/decisions/decision_first_election_happen.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_destroy_diallo"
+		texturefile = "gfx/interface/decisions/decision_destroy_diallo.dds"
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_decision_ak47_buy"
+		texturefile = "gfx/interface/decisions/decision_ak47_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_ak74_buy"
+		texturefile = "gfx/interface/decisions/decision_ak74_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_fagot_buy"
+		texturefile = "gfx/interface/decisions/decision_fagot_buy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_pt76_buy"
+		texturefile = "gfx/interface/decisions/decision_pt76_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_t55_buy"
+		texturefile = "gfx/interface/decisions/decision_t55_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_btr80_buy"
+		texturefile = "gfx/interface/decisions/decision_btr80_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_bmp1_buy"
+		texturefile = "gfx/interface/decisions/decision_bmp1_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_gaztigr_buy"
+		texturefile = "gfx/interface/decisions/decision_gaztigr_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_mi24_buy"
+		texturefile = "gfx/interface/decisions/decision_mi24_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_su25_buy"
+		texturefile = "gfx/interface/decisions/decision_su25_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_oil_buy"
+		texturefile = "gfx/interface/decisions/decision_oil_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_aluminium_buy"
+		texturefile = "gfx/interface/decisions/decision_aluminium_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_rubber_buy"
+		texturefile = "gfx/interface/decisions/decision_rubber_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_tungsten_buy"
+		texturefile = "gfx/interface/decisions/decision_tungsten_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_steel_buy"
+		texturefile = "gfx/interface/decisions/decision_steel_buy.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_chromium_buy"
+		texturefile = "gfx/interface/decisions/decision_chromium_buy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_Fon"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Fon.dds"
+	}
+	Progressbartype = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Bar_BG.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 486
+			y = 36
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_tug_of_war_gvinea_category_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_tug_of_war_gvinea_category_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_tug_of_war_senegal_category_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_tug_of_war_senegal_category_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_tug_of_war_bisau_category_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_tug_of_war_bisau_category_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_Ecowas_Flag"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Ecowas_Flag.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_Senegal_Flag"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Senegal_Flag.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_Sahel_Flag"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Sahel_Flag.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_tug_of_war_gvinea_timer"
+		textureFile = "gfx/interface/decisions/decision_tug_of_war_gvinea_timer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_tug_of_war_senegal_timer"
+		textureFile = "gfx/interface/decisions/decision_tug_of_war_senegal_timer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_tug_of_war_bisau_timer"
+		textureFile = "gfx/interface/decisions/decision_tug_of_war_bisau_timer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Gvinea_GUI_Fon"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Gvinea_GUI_Fon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_Gvinea_Flag"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Gvinea_Flag.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Bisau_GUI_Fon"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Bisau_GUI_Fon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Tug_Of_War_Senegal_GUI_Bisau_Flag"
+		textureFile = "gfx/interface/tug_of_war_senegal_gui/Tug_Of_War_Senegal_GUI_Bisau_Flag.dds"
+	}
+	
+		
+	SpriteType = {
+		name = "GFX_decision_category_great_war_begins_category_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_great_war_begins_category_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_great_war_begins_category_banner"
+		texturefile = "gfx/interface/decisions/decision_category_great_war_begins_category_banner.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_great_war_begins"
+		texturefile = "gfx/interface/decisions/decision_great_war_begins.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_fuel_supplies"
+		texturefile = "gfx/interface/decisions/decision_fuel_supplies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_humanitarian_aid"
+		texturefile = "gfx/interface/decisions/decision_humanitarian_aid.dds"
+	}
+		
+	SpriteType = {
+		name = "GFX_decision_political_pressure"
+		texturefile = "gfx/interface/decisions/decision_political_pressure.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_political_assistance"
+		texturefile = "gfx/interface/decisions/decision_political_assistance.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_sharing_experience"
+		texturefile = "gfx/interface/decisions/decision_sharing_experience.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_industrial_aid"
+		texturefile = "gfx/interface/decisions/decision_industrial_aid.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_reduction_of_trade_duties"
+		texturefile = "gfx/interface/decisions/decision_reduction_of_trade_duties.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_battle_for_africa_decision_category_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_battle_for_africa_decision_category_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_general_corruption_growth_banner"
+		texturefile = "gfx/interface/decisions/decision_category_general_corruption_growth_banner.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_battle_for_africa_ask_for_help"
+		texturefile = "gfx/interface/decisions/decision_battle_for_africa_ask_for_help.dds"
+	}
+		
+	SpriteType = {
+		name = "GFX_decision_support_niger"
+		texturefile = "gfx/interface/decisions/decision_support_niger.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_send_help_to_traore"
+		texturefile = "gfx/interface/decisions/decision_send_help_to_traore.dds"
+	}
+
+
+}

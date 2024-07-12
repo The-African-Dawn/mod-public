@@ -1,0 +1,99 @@
+capital = 86
+set_technology = {
+	tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1
+	Rifle_pizods = 1
+	AK_tech = 1
+	handmade_artillery_tech = 1
+	howitzer_d30_tech = 1
+	tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1
+	handmade_atgm_tech = 1
+	atgm_rpg7_tech = 1
+	handmade_manpads_tech = 1
+	manpads_strela_tech = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_logistics_company = 1
+	basic_train = 1
+	tech_specnaz = 1
+	
+	tech_mrap = 1
+	tech_ural = 1
+	tech_ifv_1  = 1
+	tech_lav_1 = 1
+}
+starting_train_buffer = 5
+
+set_convoys = 3
+set_oob = "NRG_oob"
+set_air_oob = "NRG_air_oob"
+
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+
+
+		
+add_ideas = {
+	volunteer_only
+	civilian_economy
+	NRG_black_axe_cult
+	NRG_disappearances_of_journalists
+	NRG_highly_dependent_on_oil_and_gas
+	NRG_islamic_north_and_christian_south
+	gulf_of_guinea_piracy
+	NRG_oath_of_secrecy
+	NRG_big_narcotraffic
+	SLR_energy_problem
+	NRG_stealing_of_oil_in_high_ranks
+	NRG_broken_mechanism
+}
+
+set_research_slots = 3
+set_stability = 0.70
+set_war_support = 0.45
+set_politics = {
+	ruling_party = pragmatism
+	last_election = "2019.2.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+give_military_access = USR
+
+recruit_character = NRG_Muhammadu_Buhari
+recruit_character = NRG_Bashir_Magashi
+recruit_character = NRG_Julius_Abure
+recruit_character = NRG_Atiku_Abubakar
+recruit_character = NRG_Bola_Tinubu
+recruit_character = NRG_Mohammed_Badaru_Abubakar
+recruit_character = NRG_Lucky_Irabor
+recruit_character = NRG_Taoreed_Lagbaja
+recruit_character = NRG_Christopher_Musa
+recruit_character = NRG_Alexander_Ogomudia
+recruit_character = NRG_WB_Etuk
+recruit_character = NRG_Hilary_Nzan
+recruit_character = NRG_Onyema_Nwachukwu
+recruit_character = NRG_JE_Osifo
+recruit_character = NRG_WM_Dangana
+recruit_character = NRG_Hassan_Abubakar
+recruit_character = NRG_Ali_Lamine_Zeine
+recruit_character = NRG_Saidu_Ahmed_Alkali
+
+create_faction = ECOMAG
+add_to_faction = SNG
+add_to_faction = GBI
+add_to_faction = SLR
+add_to_faction = LBR
+add_to_faction = KOT
+add_to_faction = GNN
+add_to_faction = TGG
+add_to_faction = BNN
+
+set_popularities = {
+	pragmatism = 53
+	francocentrism = 30
+	panafricanism = 17
+}

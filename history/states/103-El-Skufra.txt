@@ -1,0 +1,25 @@
+
+state={
+	id=103
+	name="STATE_103"
+	resources={
+		oil=17 # was: 2
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		43 221 990 1083 1119 1138 1333 1526 1550 1849 1937 2107 2341 2477 2738 2741 2760 2764 2765 2771 2776 2780 
+	}
+	manpower=78442
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

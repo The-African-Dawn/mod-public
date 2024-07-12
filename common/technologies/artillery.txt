@@ -1,0 +1,456 @@
+technologies = {
+
+	@YTIER0 = 0
+	@YTIER1 = 4
+	@YTIER2 = 10
+	@YTIER3 = 18
+	
+	@XBASE = 0
+	@XEAST1 = -2 
+	@XEAST2 = -3 
+	@XEAST3 = -1
+	@XWEST1 = 2
+	@XWEST2 = 1
+	@XWEST3 = 3
+	
+	
+	handmade_artillery_tech = {
+		
+		research_cost = 0 ### Выдается на старте 
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_handmade
+		}
+		
+		enable_subunits = {
+			howitzer_support_unit
+		}
+		
+		path = {
+			leads_to_tech = howitzer_d30_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = howitzer_m101_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XBASE y = @YTIER0 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	
+	howitzer_d30_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_d30
+		}
+		
+		path = {
+			leads_to_tech = howitzer_giatsint_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = howitzer_gc45_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XEAST1 y = @YTIER1 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	
+	howitzer_giatsint_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_giatsint
+		}
+		
+		path = {
+			leads_to_tech = howitzer_msta_tech
+			research_cost_coeff = 1
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XEAST2 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_msta_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_msta
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		
+		dependencies = {
+			howitzer_msta_tech = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XEAST2 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_gc45_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_gc45
+		}
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		path = {
+			leads_to_tech = howitzer_ah4_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XEAST3 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_ah4_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_ah4
+		}
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		dependencies = {
+			howitzer_ah4_tech = 1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XEAST3 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	
+	howitzer_m101_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_m101
+		}
+		
+		path = {
+			leads_to_tech = howitzer_m119_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = howitzer_m50_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XWEST1 y = @YTIER1 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_m119_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_m119
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+		path = {
+			leads_to_tech = howitzer_m777_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XWEST2 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_m777_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_m777
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+		dependencies = {
+			howitzer_m777_tech = 1
+		}
+				
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XWEST2 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_m50_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_m50
+		}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+		path = {
+			leads_to_tech = howitzer_trf1_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XWEST3 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	howitzer_trf1_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			howitzer_equipment_trf1
+		}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+		dependencies = {
+			howitzer_trf1_tech = 1
+		}
+				
+		
+		folder = {
+			name = artillery_folder
+			position = { x = @XWEST3 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			howitzer_technologies
+		}
+	}
+	
+	### Upgrades
+	
+	
+	
+	artillery_upgrade_1 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = artillery_upgrade_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		categories = {
+			artillery_technologies
+			
+		}
+	}
+	
+	artillery_upgrade_2 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = artillery_upgrade_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			artillery_technologies
+			
+		}
+	}
+	
+	artillery_upgrade_3 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = artillery_upgrade_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			artillery_technologies
+			
+		}
+	}
+	
+	artillery_upgrade_4 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = artillery_upgrade_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		categories = {
+			
+			artillery_technologies
+		}
+	}
+	
+	artillery_upgrade_5 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 16 }
+		}
+		
+		categories = {
+			
+			artillery_technologies
+		}
+	}
+}

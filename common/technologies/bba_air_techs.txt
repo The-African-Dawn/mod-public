@@ -1,0 +1,432 @@
+technologies = {
+	
+	
+	
+	plane_tech_mcs_1_ru = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			fighter_airframe_0_ru
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		dependencies = {
+			plane_tech_mcs_1_ru = 1
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		path = {
+			leads_to_tech = plane_tech_mcs_2_ru
+			research_cost_coeff = 1
+		}
+	}
+	plane_tech_mcs_2_ru = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			fighter_airframe_1_ru
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		dependencies = {
+			plane_tech_mcs_2_ru = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 0 }
+		}		
+	}
+	plane_tech_mcs_1_us = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			fighter_airframe_0_us
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 8 y = 0 }
+		}	
+		allow = {
+			has_country_flag = USR_friend
+		}
+		dependencies = {
+			plane_tech_mcs_1_us = 1
+		}
+		path = {
+			leads_to_tech = plane_tech_mcs_2_us
+			research_cost_coeff = 1
+		}
+	}
+	plane_tech_mcs_2_us = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			fighter_airframe_1_us
+		}
+		dependencies = {
+			plane_tech_mcs_2_us = 1
+		}	
+		allow = {
+			has_country_flag = USR_friend
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 12 y = 0 }
+		}		
+	}
+	plane_tech_mcs_1_fr = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			fighter_airframe_0_fr
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 16 y = 0 }
+		}
+		dependencies = {
+			plane_tech_mcs_1_fr = 1
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		path = {
+			leads_to_tech = plane_tech_mcs_2_fr
+			research_cost_coeff = 1
+		}
+	}
+	plane_tech_mcs_2_fr = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			fighter_airframe_1_fr
+		}
+		dependencies = {
+			plane_tech_mcs_2_fr = 1
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 20 y = 0 }
+		}		
+	}
+	
+	plane_tech_cas_0_ru = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			cas_airframe_0_ru
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		dependencies = {
+			plane_tech_cas_0_ru = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		path = {
+			leads_to_tech = plane_tech_cas_1_ru
+			research_cost_coeff = 1
+		}
+	}
+	plane_tech_cas_1_ru = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			cas_airframe_1_ru
+		}
+		dependencies = {
+			plane_tech_cas_1_ru = 1
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 2 }
+		}		
+	}
+	plane_tech_cas_0_us = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			cas_airframe_0_us
+		}
+		dependencies = {
+			plane_tech_cas_0_us = 1
+		}	
+		allow = {
+			has_country_flag = USR_friend
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 8 y = 2 }
+		}
+		
+		path = {
+			leads_to_tech = plane_tech_cas_1_us
+			research_cost_coeff = 1
+		}
+	}
+	plane_tech_cas_1_us = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			cas_airframe_1_us
+		}
+		dependencies = {
+			plane_tech_cas_1_us = 1
+		}	
+		allow = {
+			has_country_flag = USR_friend
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 12 y = 2 }
+		}		
+	}
+	plane_tech_cas_0_fr = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			cas_airframe_0_fr
+		}
+		dependencies = {
+			plane_tech_cas_0_fr = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 16 y = 2 }
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+		path = {
+			leads_to_tech = plane_tech_cas_1_fr
+			research_cost_coeff = 1
+		}
+	}
+	plane_tech_cas_1_fr = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			cas_airframe_1_fr
+		}
+		dependencies = {
+			plane_tech_cas_1_fr = 1
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 20 y = 2 }
+		}		
+	}
+	
+	plane_tech_transport = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			transport_plane_airframe_0
+		}
+		dependencies = {
+			plane_tech_transport = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+		
+	}
+	plane_tech_strateg = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			strategic_plane_airframe_0
+		}
+		
+		allow_branch = {
+			OR = {
+				original_tag = USR
+				original_tag = FRN
+				original_tag = RUS
+			}
+		}
+		
+		dependencies = {
+			plane_tech_strateg = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 4 }
+		}		
+	}
+	plane_tech_light = {
+		
+		research_cost = 4
+		start_year = 2000
+		
+		enable_equipments = {
+			light_cas_airframe_0
+		}
+		
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 8 }
+		}		
+	}
+		
+	heli_tech_transport = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			transport_helicopter_airframe_0
+		}
+		dependencies = {
+			heli_tech_transport = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		
+	}
+	heli_tech_attack_ru = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			attack_helicopter_airframe_0_ru
+		}
+		dependencies = {
+			heli_tech_attack_ru = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 6 }
+		}		
+	}
+	heli_tech_attack_us = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			attack_helicopter_airframe_0_us
+		}
+		dependencies = {
+			heli_tech_attack_us = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 8 y = 6 }
+		}		
+	}
+	heli_tech_attack_fr = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			attack_helicopter_airframe_0_fr
+		}
+		dependencies = {
+			heli_tech_attack_fr = 1
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 12 y = 6 }
+		}		
+	}
+	uav_tech_general = {
+		
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			uav_airframe_0
+		}
+		dependencies = {
+			uav_tech_general = 1
+		}
+		
+		allow_branch = {
+			OR = {
+				original_tag = USR
+				original_tag = FRN
+				original_tag = CHN
+				original_tag = RUS
+			}
+		}
+			
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}		
+	}
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=184
+	name="STATE_184"
+
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 2
+
+		}
+		set_demilitarized_zone = yes	
+	}
+
+	provinces={
+		51 97 120 352 409 773 826 832 985 997 1010 1065 1072 1080 1215 1256 1329 1409 1521 1539 1578 1637 1741 1954 2041 2248 2281 2331 2718 2747 2770 2779 2781 2782 2783 2791 2797 2802 2811 2815 2816 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+scripted_gui = {	
+	CHT_Murder_Investigation = {
+		context_type = player_context
+		window_name = "CHT_Murder_Investigation_GUI"
+		
+		visible = {
+			#always = no
+		}
+
+		effects = {
+			CHT_Murder_Investigation_GUI_Open_Button_click = {
+				set_country_flag = TDOA_State_Info_Screen_Visible
+			}
+			CHT_Murder_Investigation_GUI_close_button_click = {
+				clr_country_flag = CHT_Murder_Investigation_GUI_visible_flag
+			}
+		}
+
+		triggers = {
+		
+			
+		}
+
+			properties = {
+
+			}
+	}
+	
+	
+}

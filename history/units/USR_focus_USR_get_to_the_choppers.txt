@@ -1,0 +1,14 @@
+
+air_wings = {
+	29 = {
+		attack_helicopter_airframe_0_us =  { owner = "USR" creator = "USR" amount = 20 }
+		attack_helicopter_airframe_0_us =  { owner = "USR" creator = "USR" amount = 20 }
+	}
+	46 = {
+		transport_helicopter_airframe_0 =  { owner = "USR" creator = "USR" amount = 20 }
+	}
+	47 = {
+		attack_helicopter_airframe_0_us =  { owner = "USR" creator = "USR" amount = 20 }
+		transport_helicopter_airframe_0 =  { owner = "USR" creator = "USR" amount = 20 }
+	}
+}

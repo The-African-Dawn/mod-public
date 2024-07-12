@@ -1,0 +1,40 @@
+state={
+	id=58
+	name="STATE_58"
+	provinces={
+		31 524 972 1102 1188 1636 1641 1710 1845 1904 1927 1949 1997 2236 2260 2882 2904 2929 4828 
+	}
+	history={
+		victory_points = { 1845 10 }
+		victory_points = { 1710 2 }
+		victory_points = { 1102 1 }
+		
+		owner = MLL
+		add_core_of = MLL
+		add_core_of = AZW
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		
+		}
+		AZW = {
+			set_province_controller = 2904
+			set_province_controller = 2236
+			set_province_controller = 1641
+			set_province_controller = 2260
+			set_province_controller = 31
+			set_province_controller = 1949
+			set_province_controller = 1927
+		}		
+		ISS = {
+			set_province_controller = 1188
+			set_province_controller = 524
+			
+		}
+
+	}
+	state_category = rural
+	manpower=504120
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,13 @@
+
+animation = {
+	name = "greyhound_attack_animation"
+	file = "greyhound_attack.anim"
+}
+animation = {
+	name = "greyhound_idle_animation"
+	file = "greyhound_idle.anim"
+}
+animation = {
+	name = "greyhound_moving_animation"
+	file = "greyhound_moving.anim"
+}

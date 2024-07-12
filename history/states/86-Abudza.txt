@@ -1,0 +1,29 @@
+
+state={
+	id=86
+	name="STATE_86"
+
+	history={
+		owner = NRG
+			
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			fuel_silo = 2
+			synthetic_refinery = 1
+			air_base = 2
+		}
+		victory_points = {
+			4832 50
+		}
+	}
+state_category = metropolis
+	provinces={
+		4832
+	}
+	manpower=1406239
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

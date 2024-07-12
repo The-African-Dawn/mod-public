@@ -1,0 +1,13 @@
+
+animation = {
+	name = "abrams_attack_animation"
+	file = "abrams_attack.anim"
+}
+animation = {
+	name = "abrams_idle_animation"
+	file = "abrams_idle.anim"
+}
+animation = {
+	name = "abrams_move_animation"
+	file = "abrams_move.anim"
+}

@@ -1,0 +1,815 @@
+﻿shared_focus = {
+	id = RUS_forming_african_corps
+	icon = GFX_goal_RUS_forming_african_corps
+	cost = 68.8
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		hidden_effect = {
+			set_global_flag = RUS_created_africakorps
+			load_focus_tree = {
+				tree = RUS_corpus_tree
+				keep_completed = no
+			}
+		}
+		hidden_effect = {
+			news_event = RUS.1
+		}
+		news_event = RUS.2
+		add_ideas = civilian_economy_mjr
+		add_ideas = disarmed_nation_mjr
+		transfer_state = 187
+		187 = {
+			remove_core_of = BRK
+			add_core_of = RUS
+			add_building_construction = {
+				type = military_base
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_rising_our_flag
+	icon = GFX_goal_RUS_rising_our_flag
+	cost = 10
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		division_template = {
+			name = "Pekhota Afrikanskogo Korpusa"
+			regiments={
+				infantry={ x=0 y=0 }
+				infantry={ x=0 y=1 }
+				infantry={ x=0 y=2 }
+				infantry={ x=1 y=0 }
+				infantry={ x=1 y=1 }
+				infantry={ x=1 y=2 }
+				infantry={ x=2 y=0 }
+				infantry={ x=2 y=1 }
+				infantry={ x=3 y=2 }
+			}
+			support = {
+				manpads_support_unit={ x=0 y=0 }
+				atgm_support_unit ={ x=0 y=1 }
+				field_hospital={ x=0 y=2 }
+			}
+		}
+		30 = {
+			create_unit = {
+				division = "name = \"Pervaya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_fist_of_iron
+	icon = GFX_goal_RUS_fist_of_iron
+	cost = 10
+	relative_position_id = RUS_rising_our_flag
+	prerequisite = {
+		focus = RUS_rising_our_flag
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = ak_1
+			amount = 5000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = ATGM_equipment
+			amount = 500
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 500
+			producer = RUS
+		}
+		53 = {
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_reporting_on_duty
+	icon = GFX_goal_RUS_reporting_on_duty
+	cost = 10
+	relative_position_id = RUS_rising_our_flag
+	prerequisite = {
+		focus = RUS_rising_our_flag
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = RUS_genstaff_baffs
+		add_equipment_to_stockpile = {
+			type = toyota_jeep
+			amount = 500
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 250
+		}
+		unlock_decision_tooltip = RUS_mrap_buy
+		unlock_decision_tooltip = RUS_apc_buy
+		52 = {
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_marching_forward
+	icon = GFX_goal_RUS_marching_forward
+	cost = 10
+	relative_position_id = RUS_reporting_on_duty
+	prerequisite = {
+		focus = RUS_reporting_on_duty
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_manpower = 2500
+		add_ideas = RUS_the_strongest_ministry
+	}
+}
+
+shared_focus = {
+	id = RUS_war_against_terrorism
+	icon = GFX_goal_RUS_war_against_terrorism
+	cost = 10
+	relative_position_id = RUS_reporting_on_duty
+	prerequisite = {
+		focus = RUS_reporting_on_duty
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = RUS_antiterror_things
+	}
+}
+
+shared_focus = {
+	id = RUS_our_sun_shines_brighter
+	icon = GFX_goal_RUS_our_sun_shines_brighter
+	cost = 10
+	relative_position_id = RUS_marching_forward
+	prerequisite = {
+		focus = RUS_marching_forward
+	}
+	prerequisite = {
+		focus = RUS_war_against_terrorism
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = RUS_rising_sun
+	}
+}
+
+shared_focus = {
+	id = RUS_new_requests
+	icon = GFX_goal_RUS_new_requests
+	cost = 10
+	relative_position_id = RUS_our_sun_shines_brighter
+	prerequisite = {
+		focus = RUS_our_sun_shines_brighter
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = low_economic_mobilisation_mjr
+	}
+}
+
+shared_focus = {
+	id = RUS_flow_of_volunteers
+	icon = GFX_goal_RUS_flow_of_volunteers
+	cost = 10
+	relative_position_id = RUS_our_sun_shines_brighter
+	prerequisite = {
+		focus = RUS_our_sun_shines_brighter
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = volunteer_only_mjr
+		53 = {
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_expansion_of_operations
+	icon = GFX_goal_RUS_expansion_of_operations
+	cost = 10
+	relative_position_id = RUS_new_requests
+	prerequisite = {
+		focus = RUS_new_requests
+	}
+	prerequisite = {
+		focus = RUS_flow_of_volunteers
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = partial_economic_mobilisation_mjr
+
+	}
+}
+
+shared_focus = {
+	id = RUS_iron_machines
+	icon = GFX_goal_RUS_iron_machines
+	cost = 10
+	relative_position_id = RUS_expansion_of_operations
+	prerequisite = {
+		focus = RUS_expansion_of_operations
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		division_template = {
+			name = "Tankovaya Brigada"
+			support={
+				maintenance_company={ x=0 y=0 }
+				signal_company={ x=0 y=1 }
+				field_hospital={ x=0 y=2 }
+				atgm_support_unit={ x=0 y=3 }
+				howitzer_support_unit={ x=0 y=4 }
+			}
+			regiments={
+				medium_armor_unit={ x=0 y=0 }
+				medium_armor_unit={ x=0 y=1 }
+				medium_armor_unit={ x=0 y=2 }
+				medium_armor_unit={ x=0 y=3 }
+				medium_armor_unit={ x=1 y=0 }
+				medium_armor_unit={ x=1 y=1 }
+				medium_armor_unit={ x=1 y=2 }
+				medium_armor_unit={ x=1 y=3 }
+				medium_armor_unit={ x=2 y=0 }
+				medium_armor_unit={ x=2 y=1 }
+				medium_armor_unit={ x=2 y=2 }
+				medium_armor_unit={ x=2 y=3 }
+				infantry_on_bmp={ x=3 y=0 }
+				infantry_on_bmp={ x=3 y=1 }
+				infantry_on_btr={ x=3 y=2 }
+				infantry_on_btr={ x=3 y=3 }
+			}
+		}
+		30 = {
+			create_unit = {
+				division = "name = \"1ya Tankovaya Brigada\" division_template = \"Tankovaya Brigada\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+		}
+		unlock_decision_tooltip = RUS_tanks_buy
+		unlock_decision_tooltip = RUS_ifv_buy
+	}
+}
+
+shared_focus = {
+	id = RUS_death_from_above
+	icon = GFX_goal_RUS_death_from_above
+	cost = 10
+	relative_position_id = RUS_expansion_of_operations
+	prerequisite = {
+		focus = RUS_expansion_of_operations
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		unlock_decision_tooltip = RUS_ka52_helis
+		unlock_decision_tooltip = RUS_mi24_helis
+		unlock_decision_tooltip = RUS_transport_helis
+		hidden_effect = {
+			load_oob = "RUS_focus_armor"
+		}
+		custom_effect_tooltip = RUS_death_from_above_tt
+
+	}
+}
+
+shared_focus = {
+	id = RUS_tsars_of_the_skies
+	icon = GFX_goal_RUS_tsars_of_the_skies
+	cost = 10
+	relative_position_id = RUS_iron_machines
+	prerequisite = {
+		focus = RUS_iron_machines
+	}
+	prerequisite = {
+		focus = RUS_death_from_above
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		unlock_decision_tooltip = RUS_mig29_buy
+		unlock_decision_tooltip = RUS_su25_buy
+		hidden_effect = {
+			load_oob = "RUS_final_air"
+		}
+		custom_effect_tooltip = RUS_final_air_tt
+	}
+}
+
+shared_focus = {
+	id = RUS_establish_mutual_understanding
+	icon = GFX_goal_RUS_establish_mutual_understanding
+	cost = 10
+	relative_position_id = RUS_our_sun_shines_brighter
+	prerequisite = {
+		focus = RUS_our_sun_shines_brighter
+	}
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = MLL
+					is_in_faction_with = MLL
+				}
+			}
+			add_opinion_modifier = {
+				target = RUS
+				modifier = RUS_SAHEL_FRIENDS_HOOORAY
+			}
+			add_stability = 0.03
+
+			RUS = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = RUS_SAHEL_FRIENDS_HOOORAY
+				}
+			}
+		}
+		add_ideas = RUS_establish_mutual_understanding_idea
+	}
+}
+
+shared_focus = {
+	id = RUS_united_against_imperialism
+	icon = GFX_goal_RUS_united_against_imperialism
+	cost = 10
+	relative_position_id = RUS_establish_mutual_understanding
+	prerequisite = {
+		focus = RUS_establish_mutual_understanding
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+		every_country = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = RUS
+					is_in_faction_with = MLL
+				}
+			}
+			add_ideas = RUS_together_against_imperialism
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_african_initiative
+	icon = GFX_goal_RUS_african_initiative
+	cost = 10
+	relative_position_id = RUS_united_against_imperialism
+	prerequisite = {
+		focus = RUS_united_against_imperialism
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = RUS_african_initiative
+	}
+}
+
+shared_focus = {
+	id = RUS_hatred_of_terrorism
+	icon = GFX_goal_RUS_hatred_of_terrorism
+	cost = 10
+	relative_position_id = RUS_establish_mutual_understanding
+	prerequisite = {
+		focus = RUS_establish_mutual_understanding
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = MLL
+					tag = RUS
+					is_in_faction_with = MLL
+				}
+			}
+			add_ideas = RUS_russia_and_sahel_against_terror
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_eradicate_the_criminal_plague
+	icon = GFX_goal_RUS_eradicate_the_criminal_plague
+	cost = 10
+	relative_position_id = RUS_hatred_of_terrorism
+	prerequisite = {
+		focus = RUS_hatred_of_terrorism
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = MLL
+					is_in_faction_with = MLL
+				}
+			}
+			add_popularity = {
+				ideology = fundamentalism
+				popularity = -0.1
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_present_african_culture_to_the_world
+	icon = GFX_goal_RUS_present_african_culture_to_the_world
+	cost = 10
+	relative_position_id = RUS_african_initiative
+	prerequisite = {
+		focus = RUS_african_initiative
+	}
+	prerequisite = {
+		focus = RUS_eradicate_the_criminal_plague
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 250
+	}
+}
+
+shared_focus = {
+	id = RUS_our_immense_experience
+	icon = GFX_goal_RUS_our_immense_experience
+	cost = 10
+	relative_position_id = RUS_our_sun_shines_brighter
+	prerequisite = {
+		focus = RUS_our_sun_shines_brighter
+	}
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		unlock_decision_tooltip = corpus_ukrainian_experience
+		add_ideas = RUS_our_immense_experience_idea
+	}
+}
+
+shared_focus = {
+	id = RUS_expand_the_military_trainers_programme
+	icon = GFX_goal_RUS_expand_the_military_trainers_programme
+	cost = 10
+	relative_position_id = RUS_our_immense_experience
+	prerequisite = {
+		focus = RUS_our_immense_experience
+	}
+	prerequisite = {
+		focus = RUS_flow_of_volunteers
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = limited_conscription_mjr
+		53 = {
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+			create_unit = {
+				division = "name = \"Vtoraya rota\" division_template = \"Pekhota Afrikanskogo Korpusa\" start_experience_factor = 0.1 start_equipment_factor = 0.45"
+				owner = RUS
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_access_to_glonass
+	icon = GFX_goal_RUS_access_to_glonass
+	cost = 10
+	relative_position_id = RUS_expand_the_military_trainers_programme
+	prerequisite = {
+		focus = RUS_expand_the_military_trainers_programme
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = MLL
+					tag = MLL
+				}
+			}
+			add_ideas = RUS_access_to_glonass_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_expand_humanitarian_assistance_programmes
+	icon = GFX_goal_RUS_expand_humanitarian_assistance_programmes
+	cost = 10
+	relative_position_id = RUS_our_immense_experience
+	prerequisite = {
+		focus = RUS_our_immense_experience
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = MLL
+					tag = MLL
+				}
+			}
+			add_ideas = RUS_russian_humanitarian_aid
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_industrial_help
+	icon = GFX_goal_RUS_industrial_help
+	cost = 10
+	relative_position_id = RUS_expand_humanitarian_assistance_programmes
+	prerequisite = {
+		focus = RUS_expand_humanitarian_assistance_programmes
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = MLL
+					tag = MLL
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_forged_brotherhood
+	icon = GFX_goal_RUS_forged_brotherhood
+	cost = 10
+	relative_position_id = RUS_access_to_glonass
+	prerequisite = {
+		focus = RUS_access_to_glonass
+	}
+	prerequisite = {
+		focus = RUS_industrial_help
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = MLL
+					tag = MLL
+				}
+			}
+			add_ideas = RUS_brothers_with_russia
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_breaking_the_chains
+	icon = GFX_goal_RUS_breaking_the_chains
+	cost = 10
+	relative_position_id = RUS_forged_brotherhood
+	prerequisite = {
+		focus = RUS_forged_brotherhood
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = MLL
+					tag = MLL
+				}
+			}
+			add_stability = 0.05
+			add_war_support = 0.15
+		}
+		add_political_power = 120
+	}
+}
+
+shared_focus = {
+	id = RUS_elephant_of_freedom
+	icon = GFX_goal_RUS_elephant_of_freedom
+	cost = 5
+	x = 8
+	y = 10
+	available = {
+		OR = {
+			has_war_with = USR
+			has_war_with = FRN
+			has_war_with = NRG
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = RUS_elephant_of_freedom_idea
+			days = 180
+		}
+		add_ideas = extensive_conscription_mjr
+		add_ideas = war_economy_mjr
+	}
+}
+
+shared_focus = {
+	id = RUS_freedom_eternal
+	icon = GFX_goal_RUS_freedom_eternal
+	cost = 2
+	relative_position_id = RUS_elephant_of_freedom
+	prerequisite = {
+		focus = RUS_elephant_of_freedom
+	}
+	available = {
+		has_war = no
+		GNN = { is_in_faction_with = MLL }
+		BNN = { is_in_faction_with = MLL }
+		NRG = { is_in_faction_with = MLL }
+		KOT = { is_in_faction_with = MLL }
+		SNG = { is_in_faction_with = MLL }
+		CHD = { is_in_faction_with = MLL }
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 38
+					state = 51
+					state = 39
+					state = 40
+					state = 47
+					state = 191
+					state = 46
+					state = 28
+					state = 31
+					state = 43
+				}
+
+			}
+			RUS = {
+				transfer_state = PREV
+			}
+			add_core_of = RUS
+		}
+	}
+}

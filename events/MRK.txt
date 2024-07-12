@@ -1,0 +1,64 @@
+﻿add_namespace = MRK
+
+country_event = { 
+	id = MRK.1
+	title = MRK.1.t
+	desc = MRK.1.desc
+	
+	picture = GFX_MRK_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = MRK.1.a
+		ai_chance = { factor = 5 }
+		set_global_flag = Saharan_Tensions_Started
+		set_variable = {
+			var = global.saharan_stress_points
+			value = 25
+		}
+		news_event = {id = MRK.2}
+	}
+}
+	
+news_event = { 
+	id = MRK.2
+	title = MRK.2.t
+	desc = MRK.2.desc
+	picture = GFX_MRK_2
+	is_triggered_only = yes
+	immediate = { add_threat = 1 }
+	major = yes
+	option = { 
+		name = MRK.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MRK.3
+	title = MRK.3.t
+	desc = MRK.3.desc
+	picture = GFX_MRK_3
+	is_triggered_only = yes
+	immediate = { add_threat = 1 }
+	major = yes
+	option = { 
+		name = MRK.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = MRK.4
+	title = MRK.4.t
+	desc = MRK.4.desc
+	picture = GFX_MRK_4
+	is_triggered_only = yes
+	immediate = { add_threat = 1 }
+	major = yes
+	option = { 
+		name = MRK.4.a
+		ai_chance = { factor = 1 }
+	}
+}

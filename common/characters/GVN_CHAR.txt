@@ -1,0 +1,43 @@
+characters = {
+	GVN_Mamadi_Dumbuya = {
+		name = GVN_Mamadi_Dumbuya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GVN/Portrait_GVN_Mamadi_Dumbuya.dds"
+			}
+			army = {
+				large = "gfx/leaders/GVN/Portrait_GVN_Mamadi_Dumbuya.dds"
+			}
+		}
+		country_leader = {
+			desc = GVN_Mamadi_Dumbuya_DESC
+			ideology = panafricanism_sub
+			traits = {
+			}
+			expire = "3000.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = 8238
+		}
+	}
+	GVN_Sidya_Toure = {
+		name = GVN_Sidya_Toure
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GVN/GVN_Sidya_Toure.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=102
+	name="STATE_102"
+	resources={
+		oil=16
+		steel = 3
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+		victory_points = {
+			934 15 
+		}
+
+	}
+
+	provinces={
+		132 236 290 310 934 1123 1172 1205 1517 1714 2172 2237 2617 2619 2629 2636 2638 2646 4984 4987 4989 4991 
+	}
+	manpower=1110000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

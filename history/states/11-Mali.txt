@@ -1,0 +1,28 @@
+
+state={
+	id=11
+	name="STATE_11"
+	resources={
+		steel=20
+	}
+	history={
+		set_variable = { amount_of_gold = 0.73 }
+		victory_points = { 1244 2 }
+		victory_points = { 2396 5 }
+		victory_points = { 2491 2 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		owner = MLL
+		add_core_of = MLL
+
+	}
+	state_category = rural 
+	provinces={
+		144 169 189 337 555 584 618 1244 1942 2396 2491 2977 3011 
+	}
+	manpower=1996812
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

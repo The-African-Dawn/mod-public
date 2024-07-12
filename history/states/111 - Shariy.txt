@@ -1,0 +1,32 @@
+
+state={
+	id=111
+	name="STATE_111"
+	resources={
+		steel=1
+		aluminium = 3 
+		oil = 11
+	}
+	history={
+		owner = CHD
+		add_core_of = CHD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		
+		}
+		victory_points = {
+			3081 1
+		}
+		victory_points = {
+			777 3
+		}
+	}
+	state_category = rural
+	provinces={
+		232 777 1361 3061 3081 4861 
+	}
+	manpower=2369911
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

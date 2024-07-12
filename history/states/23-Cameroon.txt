@@ -1,0 +1,23 @@
+
+state={
+	id=23
+	name="STATE_23"
+	resources={
+		steel=5
+	}
+	history={
+		owner = KMR
+		add_core_of = KMR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	state_category = rural
+	provinces={
+		495 1056 1342 1608 1723 2523 3171 3190 
+	}
+	manpower=4484494
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

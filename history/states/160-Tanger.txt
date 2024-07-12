@@ -1,0 +1,26 @@
+
+state={
+	id=160
+	name="STATE_160"
+	resources={
+		steel=5
+	}
+	history={
+		owner = MRK
+		add_core_of = MRK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		140 2238 2611 
+	}
+	manpower=11092345
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

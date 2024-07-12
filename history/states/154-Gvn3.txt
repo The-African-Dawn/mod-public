@@ -1,0 +1,26 @@
+
+state={
+	id=154
+	name="STATE_154"
+
+	history={
+		set_variable = { amount_of_diamonds = 0.12 }
+		owner = GVN
+		add_core_of = GVN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4899 5 
+		}
+	}
+
+	provinces={
+		206 356 654 1168 1228 1408 2073 2080 3096 3104 4899 4900 
+	}
+	manpower=1164282
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

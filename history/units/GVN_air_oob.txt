@@ -1,0 +1,8 @@
+
+air_wings = {
+	151 = {
+		attack_helicopter_airframe_0_ru =  { owner = "GVN" creator = "RUS" amount = 4 }
+		transport_helicopter_airframe_0 =  { owner = "GVN" creator = "RUS" amount = 2 }
+		fighter_airframe_0_ru =  { owner = "GVN" creator = "RUS" amount = 3 }
+	}
+}

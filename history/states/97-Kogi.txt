@@ -1,0 +1,24 @@
+
+state={
+	id=97
+	name="STATE_97"
+
+	history={
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			3126 3 
+		}
+	}
+	state_category = town
+	provinces={
+		6 331 1104 1510 3107 3126 
+	}
+	manpower=11406239
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

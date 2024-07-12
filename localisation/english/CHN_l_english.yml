@@ -1,0 +1,19 @@
+﻿l_english:
+
+ #CHARACHTERS#
+ CHN_Liang_Yang: "Liang Yang"
+ CHN_Liang_Yang_desc: ""
+
+
+ #FOCUSES#
+ RUS_our_sun_shines_brighter: "Our Sun Shines Brighter"
+ RUS_our_sun_shines_brighter_desc: "The Endless War Continues"
+ 
+ #IDEAS#
+ RUS_memory_of_the_past: "Memory of the §sPast§!"
+ RUS_memory_of_the_past_desc: "The Soviet government did much to maintain stability in the African region. Numerous infrastructure projects have helped the countries of Africa and made life easier for ordinary citizens.\nThe African people remember this and trust us.\nThis will help us in our mission."
+ 
+ #EVENTS#
+ CHN.1.t:0 "Long-Awaited Aid"
+ CHN.1.desc:0 "Despite the fact that our troops now need all available weapons to win victory on the Ukrainian front, the Motherland does not forget about us either. The Ministry of Defense has allocated us additional supplies to maintain the combat capability of our mission. Ammunition, armored vehicles, personnel - everything we need has already been delivered to the territory of Africa, and we just have to distribute what we received to our bases."
+ CHN.1.a:0 "Thank you, Comrade Shoigu."

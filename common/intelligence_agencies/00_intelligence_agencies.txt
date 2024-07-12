@@ -1,0 +1,100 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_brk
+	names = { "Agence Nationale de Renseignement" }
+
+	available = { always = yes }
+	
+	default = { tag = BRK }
+	available = { original_tag = BRK }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_nrg
+	names = { "National Intelligence Agency" }
+
+	available = { always = yes }
+	
+	default = { tag = NRG }
+	available = { original_tag = NRG }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_usr
+	names = { "Central Intelligence Agency" }
+
+	available = { always = yes }
+	
+	default = { tag = USR }
+	available = { original_tag = USR }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_rus
+	names = { "Sluzhba Vneshney Razvedki" }
+
+	available = { always = yes }
+	
+	default = { tag = RUS }
+	available = { original_tag = RUS }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_nig
+	names = { "DGPC" }
+
+	available = { always = yes }
+	
+	default = { tag = NIG }
+	available = { original_tag = NIG }
+}
+
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_6
+	names = { "Arrow" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_7
+	names = { "Lion Head" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_8
+	names = { "Golden Eagle" }
+	
+	available = { always = yes }
+	
+	default = { always = yes } 
+}
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_generic_9
+	names = { "Hammer and Sickle" }
+	
+	available = { 
+		has_government = panafricanism
+	}
+	
+	default = { always = yes } 
+}
+
+

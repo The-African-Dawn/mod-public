@@ -1,0 +1,5 @@
+
+animation = {
+	name = "ah64_idle_animation"
+	file = "ah64_idle.anim"
+}

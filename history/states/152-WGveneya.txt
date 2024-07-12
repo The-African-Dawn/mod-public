@@ -1,0 +1,28 @@
+
+state={
+	id=152
+	name="STATE_152"
+
+	history={
+		owner = GVN
+		add_core_of = GVN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		victory_points = {
+			4904 15
+		}
+		
+	}
+
+	provinces={
+		403 1907 3056 4903 4904 4909 4912 
+	}
+	manpower=3164282
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

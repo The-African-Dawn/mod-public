@@ -1,0 +1,201 @@
+﻿l_english:
+
+#ECOWAS#
+ ecomag_choosing_sides_decision:0 "Step Into the Future"
+ ecomag_choosing_sides_decision_desc:0 "\n\n\n\n\n\n\nECOWAS stands on the edge of its most important choice. The modern world is changing incredibly rapidly, the situation is heating up, and every new event in recent times has become a threat to our stability, security, and development. To survive this storm, we need a strong support, but only time will tell who truly deserves to become our main ally."
+ ECOWAS_choosing_title:0 "[?global.ecowas_choosing_points]/100"
+ french_influence:0 "French Influence"
+ american_influence:0 "American Influence"
+ ask_for_french_investitions:0 "Request French Investments"
+ ask_for_american_investitions:0 "Request American Investments"
+ 
+ ecowas_unity_decision:0 "ECOWAS Unity"
+ ecowas_unity_decision_desc:0 "\n\n\n\n\n\n\nWorld events sober us up and make us change. Despite the long history of ECOWAS, many of its members doubt the unity of our union, and the increasing tensions with our northern neighbors have only exacerbated the problem.\nTo counter modern challenges, we need modern solutions. We must do everything to turn ECOWAS from a disparate gathering of countries into a single well-oiled mechanism."
+ ECOWAS_unity_title:0 "[?global.ecowas_unity_points]/100"
+ united_and_ready:0 "Demonstrate ECOWAS Unity"
+ overlook_ecowas:0 "Distance from ECOWAS"
+ 
+ nigerian_corruption_decision:0 "Corruption in Nigeria"
+ nigerian_corruption_decision_desc:0 "\n\n\n\n\n\n\nWorld events sober us up and make us change. Despite the long history of ECOWAS, many of its members doubt the unity of our union, and the increasing tensions with our northern neighbors have only exacerbated the problem.\nTo counter modern challenges, we need modern solutions. We must do everything to turn ECOWAS from a disparate gathering of countries into a single well-oiled mechanism."
+ nigerian_corruption_title:0 "[?nigerian_corruption_points]/100"
+ dive_deeper:0 "Dig Deeper"
+
+
+ 
+ 
+ exclusive_contract_decision:0 "Exclusive Contracts"
+ exclusive_contract_decision_desc:0 "\n\n\n\n\n\n\n\nOur government is establishing new connections, and gradually, very exclusive offers are becoming available to us. If we want to gain an advantage over our competitors, we must use the levers of influence available and insist on new deals.\n\n£decision_favors_icon Favors [RUS.GetFlag] Russia: [?african_russian_favors]\n£decision_favors_icon Favors [CHN.GetFlag] China: [?african_chinese_favors]\n£decision_favors_icon Favors [USR.GetFlag] America: [?african_american_favors]\n£decision_favors_icon Favors [FRN.GetFlag] France: [?african_french_favors]"
+ contract_trade_russian_transport_helicopter:0 "Contract: [RUS.GetFlag] Transport Helicopters"
+ contract_trade_russian_giazint:0 "Contract: [RUS.GetFlag] Artillery 'Giacint'"
+ contract_trade_russian_gaz_tiger:0 "Contract: [RUS.GetFlag] Armored Vehicles GAZ Tiger"
+ contract_trade_russian_t_62:0 "Contract: [RUS.GetFlag] Tanks T-62"
+ contract_trade_russian_mig_21:0 "Contract: [RUS.GetFlag] Fighters MiG-21"
+ contract_trade_russian_t_72:0 "Contract: [RUS.GetFlag] Tanks T-72"
+ contract_trade_russian_mig_29:0 "Contract: [RUS.GetFlag] Fighters MiG-29"
+ contract_trade_chinese_armored_car_mrap:0 "Contract: [CHN.GetFlag] Armored Vehicles CS/VP14"
+ contract_trade_chinese_gc_45:0 "Contract: [CHN.GetFlag] Artillery GC-45"
+ contract_trade_chinese_light_tanks:0 "Contract: [CHN.GetFlag] Light Tanks WMA-31"
+ contract_trade_chinese_helicopter_transport:0 "Contract: [CHN.GetFlag]Transport Helicopters"
+ contract_trade_chinese_drones:0 "Contract: [CHN.GetFlag] Drones Wing Loong"
+ contract_trade_chinese_j_7:0 "Contract: [CHN.GetFlag] Fighters J-7"
+ contract_trade_chinese_jf_17:0 "Contract: [CHN.GetFlag] Fighters JF-17"
+ contract_trade_american_helicopter_transport:0 "Contract: [USR.GetFlag] Transport Helicopters"
+ contract_trade_american_m_119:0 "Contract: [USR.GetFlag] Artillery M-119"
+ contract_trade_american_special_equipment:0 "Contract: [USR.GetFlag] Special Equipment"
+ contract_trade_american_embraer_supertucano:0 "Contract: [USR.GetFlag] Fighters Embraer SuperTucano"
+ contract_trade_american_viper:0 "Contract: [USR.GetFlag] Helicopters AH-1Z Viper"
+ contract_trade_american_f_16:0 "Contract: [USR.GetFlag] Fighters F-16"
+ contract_trade_french_hk_416:0 "Contract: [FRN.GetFlag] Rifles HK-416"
+ contract_trade_french_special_equipment:0 "Contract: [FRN.GetFlag] Special Equipment"
+ contract_trade_french_trf_1:0 "Contract: [FRN.GetFlag] Artillery TRF-1"
+ contract_trade_french_siai_marchetti:0 "Contract: [FRN.GetFlag] Fighters SIAI-Marchetti SF.260"
+ contract_trade_french_eurocopter_tiger:0 "Contract: [FRN.GetFlag] Helicopters Eurocopter Tiger"
+ contract_trade_french_mirage_f1:0 "Contract: [FRN.GetFlag] Fighters Dassault Mirage F1"
+ 
+ 
+ 
+  decision_cost_1_favors: "£decision_favors_icon §Y1§!"
+  decision_cost_1_favors_blocked: "£decision_favors_icon §R1§!"
+  decision_cost_2_favors: "£decision_favors_icon §Y2§!"
+  decision_cost_2_favors_blocked: "£decision_favors_icon §R2§!"
+  decision_cost_3_favors: "£decision_favors_icon §Y3§!"
+  decision_cost_3_favors_blocked: "£decision_favors_icon §R3§!"
+  
+ 
+ 
+ 
+ mavritania_conflict_decision:0 "Mauritanian Conflict"
+ mavritania_conflict_decision_desc:0 "\n\n\n\n\n\n\nTensions between [MRV.GetFlag] Mauritania and [MLL.GetFlag] Mali have been growing for a long time. Despite the interaction of the two countries in economic and diplomatic formats, mutual claims and border disputes are becoming more frequent.\nWe must make every effort to quell the conflict and resolve it peacefully, otherwise, military conflict between our countries will become inevitable."
+ Mauritanie_Tensions_Numbers:0 "[?global.mauritanie_stress_points]/100"
+ mauritanie_increase_the_tension:0 "Increase Tensions"
+ mauritanie_decrease_the_tension:0 "Lower Tensions"
+ mauritanie_time_of_change:0 "Time for Change"
+ mauritanie_time_of_change_mrv:0 "Time for Change"
+ mauritanie_war_has_come_decision:0 "War Has Come"
+ 
+ corpus_training_decision:0 "Breaking Chains"
+ corpus_training_decision_desc:0 "\n\n\n\n\n\n\nThe soldiers of the African Corps have arrived on African soil with a critical mission. We must help the peoples of Africa break free from the yoke of Western imperialist powers. We will do everything to defeat the terrorist infection and help our African comrades gain true freedom. The presence of the Russian group in the region should help our new allies - the Sahel countries.\n[BRK.GetFlag] Burkina Faso and [MLL.GetFlag] Mali [NIG.GetFlag] Niger - states that have only recently embarked on the path of true sovereignty. Our combat experience and the opportunity to learn from the best military instructors will be useful to these people and will definitely help them in the upcoming struggle." 
+ corpus_training_their_soldiers:0 "Train Their Soldiers"
+ corpus_analysing_the_tactics:0 "Analyze Tactics"
+ corpus_ukrainian_experience:0 "Consider Ukrainian Experience"
+ corpus_teaching_how_to_maintain_guns:0 "Teach Weapon Maintenance"
+ corpus_cooperative_missions:0 "Conduct Joint Operations"
+ corpus_anti_terrorist_operations:0 "Conduct Anti-Terrorist Operations"
+ corpus_special_forces_training:0 "Special Forces Training"
+ 
+ berets_training_decision:0 "Foreign Legion Fighters"
+ berets_training_decision_desc:0 "\n\n\n\n\n\n\nForeign Legion fighters have arrived on African soil with a critical mission. We must help local authorities maintain control of the country and suppress terrorist formations. The presence of the French group in the region should help our old allies - ECOWAS countries.\nAll these countries desperately need our help. Our combat experience and the opportunity to learn from the best military instructors will be useful to these people and will definitely help them in the upcoming struggle." 
+ berets_training_their_soldiers:0 "Train Their Soldiers"
+ berets_analysing_the_tactics:0 "Analyze Tactics"
+ berets_ukrainian_experience:0 "Consider Ukrainian Experience"
+ berets_teaching_how_to_maintain_guns:0 "Teach Weapon Maintenance"
+ berets_cooperative_missions:0 "Conduct Joint Operations"
+ berets_anti_terrorist_operations:0 "Conduct Anti-Terrorist Operations"
+ berets_special_forces_training:0 "Special Forces Training"
+ 
+ saharan_conflict_decision:0 "Saharan Conflict"
+ saharan_conflict_decision_desc:0 "\n\n\n\n\n\n\nTensions between [MRK.GetFlag] Morocco and [WSR.GetFlag] Western Sahara have been growing for a long time. Despite the interaction of the two countries in economic and diplomatic formats, mutual claims and border disputes are becoming more frequent.\nWe must make every effort to quell the conflict and resolve it peacefully, otherwise, military conflict between our countries will become inevitable."
+ Saharan_Tensions_Numbers:0 "[?global.saharan_stress_points]/100"
+ saharan_increase_the_tension:0 "Increase Tensions"
+ saharan_decrease_the_tension:0 "Lower Tensions"
+ saharan_time_of_change:0 "Time for Change"
+ saharan_time_of_change_mrv:0 "Time for Change"
+ saharan_war_has_come_decision:0 "War Has Come"
+ 
+ AFR_ineffective_antiterror_tactics:0 "Ineffective Anti-Terror Tactics"
+ AFR_ineffective_antiterror_tactics_desc:0 "The Endless War Continues"
+ 
+ exclusive_contract_decision:0 "Exclusive Contracts"
+ exclusive_contract_decision_desc:0 "\n\n\n\n\n\n\n\nOur government is establishing new connections, and gradually, very exclusive offers are becoming available to us. If we want to gain an advantage over our competitors, we must use the levers of influence available and insist on new deals.\n\nFavors [RUS.GetFlag] Russia: [?african_russian_favors]\nFavors [CHN.GetFlag] China: [?african_chinese_favors]\nFavors [USR.GetFlag] America: [?african_american_favors]\nFavors [FRN.GetFlag] France: [?african_french_favors]"
+ ask_for_american_drones:0 "Request American Drones"
+ ask_for_russian_helicopters:0 "Request Russian Helicopters"
+ ask_for_army_training_russia:0 "Request Joint Training With Russia"
+ 
+ antiterror_tactics_decision_category:0 "Anti-Terrorism Tactics"
+ antiterror_tactics_decision_category_desc:0 "\n\n\n\n\n\n\nTerrorists are plunging the continent into chaos. Our army was unprepared for battles against irregular bands, but now is the time for change.\n\nWe are simply obliged to train fighters to defeat the shameful members of terrorists and separatists. Otherwise, we will not stand." 
+ antiterror_training_their_soldiers:0 "Adapting to Asymmetric War"
+ antiterror_analysing_the_tactics:0 "Using Anti-Terrorism Units"
+ antiterror_ukrainian_experience:0 "Study Errors of Past Years"
+ antiterror_teaching_how_to_maintain_guns:0 "Applying New Tactics with Armored Columns"
+ antiterror_cooperative_missions:0 "Practice Barrage Fire"
+ 
+
+  
+
+  
+
+ 
+ tug_of_war_senegal_category:0 "The Fate of the Republic of Senegal [SNG.GetFlag]"
+ tug_of_war_senegal_civil_war_timer:0 "Fate Decided..."
+ tug_of_war_senegal_political_assistance:0 "Political Assistance"
+ tug_of_war_senegal_political_pressure:0 "Political Pressure"
+ tug_of_war_senegal_humanitarian_aid:0 "Humanitarian Aid"
+ tug_of_war_senegal_sharing_fuel_supplies:0 "Share Fuel Supplies"
+ tug_of_war_senegal_small_arms_supply:0 "Supply Small Arms"
+ tug_of_war_senegal_sharing_experience:0 "Share Experience"
+ tug_of_war_senegal_industrial_aid:0 "Industrial Aid"
+ tug_of_war_senegal_reduction_of_trade_duties:0 "Reduction of Trade Duties"
+ tdoa_humanitarian_aid_costs:0 "Humanitarian Aid Costs"
+ tdoa_reduction_of_trade_duties:0 "Reduction of Trade Duties"
+ 
+ tug_of_war_gvinea_category:0 "The Fate of the Republic of Guinea [GVN.GetFlag]"
+ tug_of_war_gvinea_civil_war_timer:0 "Fate Decided..."
+ tug_of_war_gvinea_political_assistance:0 "Political Assistance"
+ tug_of_war_gvinea_political_pressure:0 "Political Pressure"
+ tug_of_war_gvinea_humanitarian_aid:0 "Humanitarian Aid"
+ tug_of_war_gvinea_sharing_fuel_supplies:0 "Share Fuel Supplies"
+ tug_of_war_gvinea_small_arms_supply:0 "Supply Small Arms"
+ tug_of_war_gvinea_sharing_experience:0 "Share Experience"
+ tug_of_war_gvinea_industrial_aid:0 "Industrial Aid"
+ tug_of_war_gvinea_reduction_of_trade_duties:0 "Reduction of Trade Duties"
+ 
+ tug_of_war_bisau_category:0 "The Fate of Guinea-Bissau [GBI.GetFlag]"
+ tug_of_war_bisau_civil_war_timer:0 "Fate Decided..."
+ tug_of_war_bisau_political_assistance:0 "Political Assistance"
+ tug_of_war_bisau_political_pressure:0 "Political Pressure"
+ tug_of_war_bisau_humanitarian_aid:0 "Humanitarian Aid"
+ tug_of_war_bisau_sharing_fuel_supplies:0 "Share Fuel Supplies"
+ tug_of_war_bisau_small_arms_supply:0 "Supply Small Arms"
+ tug_of_war_bisau_sharing_experience:0 "Share Experience"
+ tug_of_war_bisau_industrial_aid:0 "Industrial Aid"
+ tug_of_war_bisau_reduction_of_trade_duties:0 "Reduction of Trade Duties"
+ 
+ SENEGAL_choosing_title:0 "The Fate of Senegal Is In Our Hands"
+ GVINEA_choosing_title_points:0 "[?global.tug_of_war_gvinea_choosing_points]/100"
+ SENEGAL_choosing_title_points:0 "[?global.tug_of_war_senegal_choosing_points]/100"
+ BISAU_choosing_title_points:0 "[?global.tug_of_war_bisau_choosing_points]/100"
+ 
+ great_war_begins_category:0 "The Great War"
+ great_war_begins_category_desc:0 " "
+ great_war_begins_ecowas_start:0 "§RCall of the Great War§!"
+ great_war_begins_sahel_start:0 "§RCall of the Liberation War§!"
+ you_will_start_terrible_war_tooltip:0 "§RYour decision will lead to irreparable consequences.§!"
+ you_will_start_terrible_war_off_tooltip:0 "§RThe roar of war calls us.§!"
+  
+ peace_with_JNIM:0 "Peace Agreement with JNIM"
+
+
+  decision_cost_50_army_xp: "£texticon_tdoa_army_exp  §Y50§!"
+  decision_cost_50_army_xp_blocked: "£texticon_tdoa_army_exp  §R50§!"
+  
+  decision_cost_50_command_power: "£command_power §Y50§!"
+  decision_cost_50_command_power_blocked: "£command_power §R50§!"
+  
+  decision_cost_25_p_25_c: "£pol_power §Y25§! £command_power §Y5§!"
+  decision_cost_25_p_25_c_blocked: "£pol_power §R25§! £command_power §R5§!"
+
+  decision_cost_50_p_15_c: "£pol_power §Y50§! £command_power §Y15§!"
+  decision_cost_50_p_15_c_blocked: "£pol_power §R50§! £command_power §R15§!"
+  
+  decision_cost_500_fuel: "£texticon_oil  §Y5000§!"
+  decision_cost_500_fuel_blocked: "£texticon_oil  §R5000§!"
+  
+  decision_cost_150_small_arms: "£texticon_small_arms  §Y150"
+  decision_cost_150_small_arms_blocked: "£texticon_small_arms  §R150§!"
+  
+  decision_cost_1_industry: "£texticon_industry  §Y1§!"
+  decision_cost_1_industry_blocked: "£texticon_industry  §R1§!"
+  
+  tug_of_war_senegal_plus_points:0 "§GWe will increase our influence on the §!§YRepublic of Senegal§![SNG.GetFlag]!"
+  tug_of_war_gvinea_plus_points:0 "§GWe will increase our influence on the §!§YRepublic of Guinea§![GVN.GetFlag]!"
+  tug_of_war_bisau_plus_points:0 "§GWe will increase our influence on §!§YGuinea-Bissau§![GBI.GetFlag]!"

@@ -1,0 +1,21 @@
+
+state={
+	id=129
+	name="STATE_129"
+
+	history={
+		owner = KMR
+		add_core_of = KMR
+		buildings = {
+			air_base=1
+			infrastructure = 1
+		}
+	}
+	state_category = rural
+	provinces={
+		859 1038 1531 2212 3099 3109 3119 
+	}
+	manpower=574363
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

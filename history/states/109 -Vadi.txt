@@ -1,0 +1,29 @@
+
+state={
+	id=109
+	name="STATE_109"
+	resources={
+		oil=7 # was: 2
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 1
+
+		}
+		DLG = {
+			set_province_controller = 197
+			set_province_controller = 326
+			set_province_controller = 75
+		}
+	}
+
+	provinces={
+		75 197 326 601 614 639 713 900 1249 1368 1391 1537 1589 1631 1811 2207 2333 2670 2672 2691 2704 4971 4972 4973 
+	}
+	manpower=475915
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

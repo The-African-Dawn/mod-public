@@ -1,0 +1,648 @@
+ideas = {
+
+	economy = {
+		law = yes
+		use_list_view = yes
+		
+		
+
+		civilian_economy = {
+			visible = {
+				NOT = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+				}
+				NOT = { has_government = fundamentalism }
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.35
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
+			}
+
+			
+
+			cancel_if_invalid = no
+		}
+
+		low_economic_mobilisation = {
+		
+					visible = {
+				NOT = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+				}
+				NOT = { has_government = fundamentalism }
+			}
+
+			available = {
+				has_war_support > 0.15
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.3
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				fuel_gain_factor = -0.25
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+
+		partial_economic_mobilisation = {
+		
+					visible = {
+				NOT = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+				}
+				NOT = { has_government = fundamentalism }
+			}
+
+			available = {
+				has_war_support > 0.25
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.25
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				fuel_gain_factor = -0.1
+			}
+
+			cancel_if_invalid = no
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+
+   			}
+		}
+
+		war_economy = {
+		
+					visible = {
+				NOT = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+				}
+				NOT = { has_government = fundamentalism }
+			}
+
+
+			available = {
+				has_war_support > 0.4
+				OR = {
+					has_government = fundamentalism
+					any_other_country = { 
+						has_wargoal_against = ROOT
+					}
+					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
+					AND = {
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = {
+								tag = ROOT
+								ratio > 0.4
+							}
+						}
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.2
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+			}
+
+			cancel_if_invalid = no
+			ai_will_do = {
+   				factor = 3
+
+				modifier = {
+					#High prio on production
+					factor = 20
+					manpower_per_military_factory >  1000
+				}
+
+				modifier = {
+					# If we CAN go for total mobilization and have enough manpower for it, skip war economy, it's only a waste of PP
+					factor = 0
+
+					manpower_per_military_factory > 15000
+					has_war = yes
+					has_war_support > 0.8
+					any_enemy_country = {
+						ic_ratio = {
+							tag = ROOT
+							ratio > 0.5
+						}
+					}
+				}
+
+				modifier = {
+					add = 1800
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
+				}
+   			}
+		}
+
+		tot_economic_mobilisation = {
+		
+					visible = {
+				NOT = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+				}
+				NOT = { has_government = fundamentalism }
+			}
+
+
+			available = {
+				has_war_support > 0.8
+				OR = {
+					has_government = fundamentalism
+					AND = {
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = {
+								tag = ROOT
+								ratio > 0.5
+							}
+						}
+					}
+				}
+			}
+			ai_will_do = {
+   				factor = 1
+
+				modifier = {
+					factor = 25
+					#Prio this if nation has a lot of manpower compared to MIC
+					manpower_per_military_factory > 15000
+				}
+
+				modifier = {
+					#Block  unless nation has a lot of manpower
+					factor = 0
+					manpower_per_military_factory <  10000
+				}
+
+
+				modifier = {
+					# never take this if we are on low conscription laws for safety
+					factor = 0
+					OR = {
+						has_idea = volunteer_only
+						has_idea = limited_conscription
+					}
+				}
+
+   			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				conscription = -0.03
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+			}
+
+			cancel_if_invalid = no
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	#####MAJORS######
+	
+			
+		african_corpus_nonexist_mjr = {
+		
+			visible = {
+				OR = {
+					tag = RUS
+				}
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+
+			cancel_if_invalid = no
+		}
+	
+	
+		civilian_economy_mjr = {
+			visible = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+
+			cost = 150
+			removal_cost = -1
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+			on_remove = {
+				add_offsite_building = { type = industrial_complex level = -2 }
+				add_offsite_building = { type = arms_factory level = -2 }
+			}
+			modifier = {
+				consumer_goods_expected_value = 0
+				max_fuel = 500
+				base_fuel_gain = 5
+				supply_consumption_factor = 0.1
+				country_resource_aluminium = 10 
+				country_resource_chromium = 10 
+				country_resource_oil = 10 
+				country_resource_rubber = 10 
+				country_resource_steel = 10 
+				country_resource_tungsten = 10 
+				
+			}
+
+		
+
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				base = 1000000
+   				factor = 100000
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support < 0.25
+					factor = 10000
+				}
+   			}
+		}
+		
+
+
+
+		low_economic_mobilisation_mjr = {
+		
+					visible = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = arms_factory level = 4 }
+			}
+			on_remove = {
+				add_offsite_building = { type = industrial_complex level = -4 }
+				add_offsite_building = { type = arms_factory level = -4 }
+			}
+			modifier = {
+				consumer_goods_expected_value = 0
+				max_fuel = 1000
+				base_fuel_gain = 10
+				production_factory_max_efficiency_factor = 0.05
+				supply_consumption_factor = 0.05
+				country_resource_aluminium = 20 
+				country_resource_chromium = 20 
+				country_resource_oil = 20 
+				country_resource_rubber = 20 
+				country_resource_steel = 20 
+				country_resource_tungsten = 20 
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+   			}
+		}
+
+		partial_economic_mobilisation_mjr = {
+		
+					visible = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 8 }
+				add_offsite_building = { type = arms_factory level = 6 }
+			}
+			on_remove = {
+				add_offsite_building = { type = industrial_complex level = -8 }
+				add_offsite_building = { type = arms_factory level = -6 }
+			}
+			modifier = {
+				consumer_goods_expected_value = 0
+				max_fuel = 2000
+				base_fuel_gain = 20
+				production_factory_max_efficiency_factor = 0.1
+				country_resource_aluminium = 30 
+				country_resource_chromium = 30 
+				country_resource_oil = 30 
+				country_resource_rubber = 30 
+				country_resource_steel = 30 
+				country_resource_tungsten = 30 
+			}
+
+			cancel_if_invalid = no
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 20
+
+					is_major = yes
+				}
+
+   			}
+		}
+
+		war_economy_mjr = {
+		
+					visible = {
+					OR = {
+						tag = USR
+						tag = RUS
+						tag = FRN 
+						tag = CHN
+					}
+			}
+
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			on_add = {
+				add_offsite_building = { type = industrial_complex level = 10 }
+				add_offsite_building = { type = arms_factory level = 8 }
+			}
+			on_remove = {
+				add_offsite_building = { type = industrial_complex level = -10 }
+				add_offsite_building = { type = arms_factory level = -8 }
+			}
+			modifier = {
+				consumer_goods_expected_value = 0
+				max_fuel = 3500
+				base_fuel_gain = 35
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15 
+				supply_consumption_factor = -0.1
+				country_resource_aluminium = 50 
+				country_resource_chromium = 50 
+				country_resource_oil = 50 
+				country_resource_rubber = 50 
+				country_resource_steel = 50 
+				country_resource_tungsten = 50 
+			}
+
+			cancel_if_invalid = no
+			ai_will_do = {
+   				factor = 3
+
+				modifier = {
+					#High prio on production
+					factor = 20
+					manpower_per_military_factory >  1000
+				}
+
+				modifier = {
+					# If we CAN go for total mobilization and have enough manpower for it, skip war economy, it's only a waste of PP
+					factor = 0
+
+					manpower_per_military_factory > 15000
+					has_war = yes
+					has_war_support > 0.8
+					any_enemy_country = {
+						ic_ratio = {
+							tag = ROOT
+							ratio > 0.5
+						}
+					}
+				}
+
+				modifier = {
+					add = 1800
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
+				}
+   			}
+		}
+		
+		
+		
+		
+		
+		
+		war_economy_fun = {
+		
+			visible = {
+				has_government = fundamentalism
+			}
+
+
+			available = {
+				has_war_support > -0.9
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 1.0
+				industrial_capacity_factory = -0.5
+				research_speed_factor = -0.2
+				base_fuel_gain = 25
+				max_fuel = 50
+				political_power_factor = 0.25
+				equipment_capture_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+			ai_will_do = {
+   				factor = 3
+
+				modifier = {
+					#High prio on production
+					factor = 20
+					manpower_per_military_factory >  1000
+				}
+
+				modifier = {
+					# If we CAN go for total mobilization and have enough manpower for it, skip war economy, it's only a waste of PP
+					factor = 0
+
+					manpower_per_military_factory > 15000
+					has_war = yes
+					has_war_support > 0.8
+					any_enemy_country = {
+						ic_ratio = {
+							tag = ROOT
+							ratio > 0.5
+						}
+					}
+				}
+
+				modifier = {
+					add = 1800
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
+				}
+   			}
+		}
+
+	}
+
+	trade_laws = {
+		law = yes
+		use_list_view = yes
+
+		closed_economy = {
+
+
+			available = {
+			}
+
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0
+			}
+
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   			}
+		}
+	}
+}

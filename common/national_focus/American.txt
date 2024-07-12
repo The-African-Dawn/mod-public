@@ -1,0 +1,14 @@
+﻿focus_tree = {
+	id = USR_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = USR_15_years_of_africom
+	shared_focus = USR_desert_resolve
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=85
+	name="STATE_85"
+	resources={
+		aluminium = 15 
+	}
+	history={
+		owner = BHK
+		victory_points = {
+			4863 5 
+		}
+		victory_points = {
+			3005 1
+		}
+		add_core_of = BHK
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	state_category = town
+	provinces={
+		62 241 1179 3005 3043 4863 
+	}
+	manpower=4500000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

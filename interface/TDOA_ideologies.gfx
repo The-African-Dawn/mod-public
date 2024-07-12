@@ -1,0 +1,68 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_faction_aes"
+		texturefile = "gfx/interface/ideologies/faction_aes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_faction_ecomog"
+		texturefile = "gfx/interface/ideologies/faction_ecomog.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_nato"
+		texturefile = "gfx/interface/ideologies/faction_nato.dds"
+	}
+
+	spriteType = {
+		name = "GFX_faction_csto"
+		texturefile = "gfx/interface/ideologies/faction_csto.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_faction_none"
+		texturefile = "gfx/interface/ideologies/faction_none.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_francocentrism_sub"
+		texturefile = "gfx/interface/ideologies/ideology_francocentrism_sub.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_panafricanism_sub"
+		texturefile = "gfx/interface/ideologies/ideology_panafricanism_sub.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_ideology_fundamentalism_sub"
+		texturefile = "gfx/interface/ideologies/ideology_fundamentalism_sub.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_pragmatism_sub"
+		texturefile = "gfx/interface/ideologies/ideology_pragmatism_sub.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_rus_pragmatism_sub"
+		texturefile = "gfx/interface/ideologies/ideology_rus_pragmatism_sub.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_usa_pragmatism_sub"
+		texturefile = "gfx/interface/ideologies/ideology_usa_pragmatism_sub.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_GEN_african_pride_idea"
+		texturefile = "gfx/interface/ideas/GEN_african_pride_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_GEN_political_isolation_idea"
+		texturefile = "gfx/interface/ideas/GEN_political_isolation_idea.dds"
+	}
+}

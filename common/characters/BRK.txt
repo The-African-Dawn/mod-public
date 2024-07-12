@@ -1,0 +1,649 @@
+characters = {
+	BRK_Ibrahim_Traore = {
+		name = BRK_Ibrahim_Traore
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/Ibrahim_Traore.dds"
+				small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRK/Ibrahim_Traore.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			desc = BRK_Ibrahim_Traore_desc
+			expire = "3000.1.1.1"
+		}
+		corps_commander = {
+			traits = {
+				commando
+				media_personality
+			}
+			visible = {
+				NOT = {
+					has_country_flag = BRK_Ibrahim_Traore_exile
+				}
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	BRK_Kassum_Kulibali = {
+		name = BRK_Kassum_Kulibali
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/Portrait_BRK_Kassum_Kulibali.dds"
+				small = "gfx/advisors/Portrait_BRK_Kassum_Kullibali.dds"
+			}
+			army = {
+				large = "gfx/leaders/BRK/Portrait_BRK_Kassum_Kulibali.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			visible = {
+				NOT = {
+					has_country_flag = BRK_Ibrahim_Traore_exile
+				}
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Kassum_Kulibali
+			visible = {
+				NOT = {
+					has_country_flag = BRK_Ibrahim_Traore_exile
+				}
+			}
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				hardened_officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Barthelemy_Simpore = {
+		name = BRK_Barthelemy_Simpore
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Barthelemy_Simpore.dds"
+				small = "gfx/leaders/BRK/BRK_Barthelemy_Simpore_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+			}
+			visible = {
+				NOT = {
+					has_country_flag = BRK_Ibrahim_Traore_exile
+				}
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Barthelemy_Simpore
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Abdoul_Aziz_Aouoba = {
+		name = BRK_Abdoul_Aziz_Aouoba
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Aziz.dds"
+				small = "gfx/leaders/BRK/BRK_Aziz_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+			}
+			visible = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRK_Luc_Hallade = {
+		name = BRK_Luc_Hallade
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/BRK/BRK_Luc_Hallade.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Luc_Hallade
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				french_ambassador
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	BRK_Seydou_Ouattara = {
+		name = BRK_Seydou_Ouattara
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/BRK_Seydou_Ouattara.dds"
+				small = "gfx/leaders/BRK/BRK_Seydou_Ouattara_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BRK_Seydou_Ouattara
+			allowed = {
+				original_tag = BRK
+			}
+			available = {
+				has_completed_focus = BRK_warriors_of_the_shadows
+			}
+			traits = {
+				BRK_leader_of_security
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Benewende_Stanislas_Sankara = {
+		name = BRK_Benewende_Stanislas_Sankara
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/BRK_Benewende_Stanislas_Sankara.dds"
+			}
+		}
+	}
+	BRK_Gilbert_Noel_Ouedraogo = {
+		name = BRK_Gilbert_Noel_Ouedraogo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/Gilbert_Noel_Ouedraogo.dds"
+			}
+		}
+	}
+	BRK_Apollinaire_Kyelem = {
+		name = BRK_Apollinaire_Kyelem
+		portraits = {
+			army = {
+				small = "gfx/leaders/BRK/BRK_Apollinaire_Kyelem_advisor.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Apollinaire_Kyelem
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				BRK_premier_minister
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Kader_Ouedraogo = {
+		name = BRK_Kader_Ouedraogo
+		portraits = {
+			army = {
+				small = "gfx/leaders/BRK/BRK_Kader_Ouedraogo.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = Kader_Ouedraogo
+			ledger = air
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				air_chief_all_weather_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Theophile_Nikiema = {
+		name = BRK_Theophile_Nikiema
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Theophile_Nikiema.dds"
+				small = "gfx/leaders/BRK/BRK_Theophile_Nikiema_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = Theophile_Nikiema
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Moussa_Diallo = {
+		name = BRK_Moussa_Diallo
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Moussa_Diallo.dds"
+				small = "gfx/leaders/BRK/BRK_Moussa_Diallo_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Moussa_Diallo
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Cheick_Hamza_Ouattara = {
+		name = BRK_Cheick_Hamza_Ouattara
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Cheick_Hamza_Ouattara.dds"
+				small = "gfx/leaders/BRK/BRK_Cheick_Hamza_Ouattara_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				urban_assault_specialist
+				gendarmerie_officer
+				commando
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Cheick_Hamza_Ouattara
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Cristopher_Maiga = {
+		name = BRK_Cristopher_Maiga
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Cristopher_Maiga.dds"
+				small = "gfx/leaders/BRK/BRK_Cristopher_Maiga_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				gendarmerie_officer
+				commando
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRK_Djass_anou_Romeo_Ouoba = {
+		name = BRK_Djass_anou_Romeo_Ouoba
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Djass_anou_Romeo_Ouoba.dds"
+				small = "gfx/leaders/BRK/BRK_Djass_anou_Romeo_Ouoba_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				urban_assault_specialist
+				trickster
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRK_David_Kabre = {
+		name = BRK_David_Kabre
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_David_Kabre.dds"
+				small = "gfx/leaders/BRK/BRK_David_Kabre_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = David_Kabre
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Boukare_Zoungrana = {
+		name = BRK_Boukare_Zoungrana
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Boukare_Zoungrana.dds"
+				small = "gfx/leaders/BRK/BRK_Boukare_Zoungrana_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				gendarmerie_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Boukare_Zoungrana
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				BRK_minister_of_territorial_control
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Yves_Didier_Bamouni = {
+		name = BRK_Yves_Didier_Bamouni
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/Yves_Didier_Bamouni.dds"
+				small = "gfx/leaders/BRK/Yves_Didier_Bamouni_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				politically_connected
+			}
+			visible = {
+				NOT = {
+					has_country_flag = BRK_Ibrahim_Traore_exile
+				}
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	BRK_Celestine_Simpore = {
+		name = BRK_Celestine_Simpore
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Celestine_Simpore.dds"
+				small = "gfx/leaders/BRK/BRK_Celestine_Simpore_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = Celestine_Simpore
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Evrard_Somda = {
+		name = BRK_Evrard_Somda
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Evrard_Somda.dds"
+				small = "gfx/leaders/BRK/BRK_Evrard_Somda_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				gendarmerie_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Evrard_Somda
+			ledger = army
+			allowed = {
+				original_tag = BRK
+			}
+			traits = {
+				BRK_gendarmerie_leader
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BRK_Niangao_Bapan = {
+		name = BRK_Niangao_Bapan
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Niangao_Bapan.dds"
+				small = "gfx/leaders/BRK/BRK_Niangao_Bapan_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				gendarmerie_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRK_Kouagri_Natama = {
+		name = BRK_Kouagri_Natama
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Kouagri_Natama.dds"
+				small = "gfx/leaders/BRK/BRK_Kouagri_Natama_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				gendarmerie_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRK_Azaria_Sorgho = {
+		name = BRK_Azaria_Sorgho
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Azaria_Sorgho.dds"
+				small = "gfx/leaders/BRK/BRK_Azaria_Sorgho_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	BRK_Roch_Christian_Kabore = {
+		name = BRK_Roch_Christian_Kabore
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/Rok_Kabore.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	BRK_Zephrin_Diabre = {
+		name = BRK_Zephrin_Diabre
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRK/Zephrin_Diabre.dds"
+			}
+		}
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	BRK_Sawadogo_Zitiba = {
+		name = BRK_Sawadogo_Zitiba
+		portraits = {
+			army = {
+				large = "gfx/leaders/BRK/BRK_Sawadogo_Zitiba.dds"
+				small = "gfx/leaders/BRK/BRK_Sawadogo_Zitiba_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_engineer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

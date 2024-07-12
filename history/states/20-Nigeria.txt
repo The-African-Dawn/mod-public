@@ -1,0 +1,28 @@
+
+state={
+	id=20
+	name="STATE_20"
+	resources={
+		oil = 7
+	}
+	history={
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			fuel_silo = 1
+			synthetic_refinery = 1
+		}
+		victory_points = {
+			646 3 
+		}
+	}
+	state_category = town
+	provinces={
+		242 646 2093 3153 
+	}
+	manpower=10000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

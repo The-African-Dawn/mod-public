@@ -1,0 +1,420 @@
+add_namespace = news_africa
+
+news_event = { # XX
+	id = news_africa.1 
+	title = news_africa.1.t
+	desc = news_africa.1.desc
+	picture = GFX_news_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.1.a
+	}
+}
+news_event = { # Мелони
+	id = news_africa.2
+	title = news_africa.2.t
+	desc = news_africa.2.desc
+	picture = GFX_news_2
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.2.a
+	}
+}
+
+news_event = { #ликуд жиды
+	id = news_africa.3
+	title = news_africa.3.t
+	desc = news_africa.3.desc
+	picture = GFX_news_3
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.3.a
+	}
+}
+
+news_event = { # 31 сами
+	id = news_africa.4
+	title = news_africa.4.t
+	desc = news_africa.4.desc
+	picture = GFX_news_4
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.4.a
+	}
+}
+
+news_event = { #тыграй
+	id = news_africa.5 
+	title = news_africa.5.t
+	desc = news_africa.5.desc
+	picture = GFX_news_5
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.5.a
+	}
+}
+
+news_event = { # воз
+	id = news_africa.6
+	title = news_africa.6.t
+	desc = news_africa.6.desc
+	picture = GFX_news_6
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.6.a
+	}
+}
+
+### 2023
+
+news_event = { # ХРВТ ШНГ
+	id = news_africa.7
+	title = news_africa.7.t
+	desc = news_africa.7.desc
+	picture = GFX_news_7
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.7.a
+	}
+}
+
+news_event = { # США и Китай достигли исторического соглашения о торгово-экономическом сотрудничестве.
+	id = news_africa.8
+	title = news_africa.8.t
+	desc = news_africa.8.desc
+	picture = GFX_news_8
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.8.a
+	}
+}
+
+news_event = { # парламентские и президентские выборы в Нигерии.
+	id = news_africa.9
+	title = news_africa.9.t
+	desc = news_africa.9.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.9.a
+	}
+}
+
+news_event = { # в Китае переизбрали Си Цзиньпина
+	id = news_africa.10
+	title = news_africa.10.t
+	desc = news_africa.10.desc
+	picture = GFX_news_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.10.a
+	}
+}
+
+news_event = { # Вступление Финляндии и Швеции в НАТО.
+	id = news_africa.11
+	title = news_africa.11.t
+	desc = news_africa.11.desc
+	picture = GFX_news_11
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.11.a
+	}
+}
+
+news_event = { # СБР ПОЯВИЛИСЬ НА СВЕТ
+	id = news_africa.12
+	title = news_africa.12.t
+	desc = news_africa.12.desc
+	picture = GFX_news_12
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.12.a
+	}
+}
+
+news_event = { # - Сирия повторно принята в Лигу Арабских государств после приостановки с 2011 года.
+	id = news_africa.13
+	title = news_africa.13.t
+	desc = news_africa.13.desc
+	picture = GFX_news_4
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.13.a
+	}
+}
+
+news_event = { # - - Результатом Ближневосточного мирного саммита в Женеве стало историческое мирное соглашение между Израилем и Палестиной, которое принесло надежду на длительную стабильность и процветание в регионе.
+	id = news_africa.14
+	title = news_africa.14.t
+	desc = news_africa.14.desc
+	picture = GFX_news_14
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.14.a
+	}
+}
+
+news_event = { # Второй Саммит и Экономический и гуманитарный форум Россия – Африка в Санкт-Петербурге.
+	id = news_africa.15
+	title = news_africa.15.t
+	desc = news_africa.15.desc
+	picture = GFX_news_15
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.15.a
+	}
+}
+
+news_event = { # Саммит БРИКС в ЮАР.
+	id = news_africa.16
+	title = news_africa.16.t
+	desc = news_africa.16.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.16.a
+	}
+}
+
+news_event = { # Военный переворот в Габоне.
+	id = news_africa.17
+	title = news_africa.17.t
+	desc = news_africa.17.desc
+	picture = GFX_news_17
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.17.a
+	}
+}
+
+news_event = { # - Африканский союз вступил в G20
+	id = news_africa.18
+	title = news_africa.18.t
+	desc = news_africa.18.desc
+	picture = GFX_news_18
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.18.a
+	}
+}
+
+news_event = { # - НКР ЁБНУЛСЯ
+	id = news_africa.19
+	title = news_africa.19.t
+	desc = news_africa.19.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.19.a
+	}
+}
+
+news_event = { # - Наводнение аль-аксы
+	id = news_africa.20
+	title = news_africa.20.t
+	desc = news_africa.20.desc
+	picture = GFX_news_20
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.20.a
+	}
+}
+news_event = { # - Полная блокада сектора Газа Израилем.
+	id = news_africa.21
+	title = news_africa.21.t
+	desc = news_africa.21.desc
+	picture = GFX_news_21
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.21.a
+	}
+}
+news_event = { # - гайанско-венесуэльский кризис.
+	id = news_africa.22
+	title = news_africa.22.t
+	desc = news_africa.22.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.22.a
+	}
+}
+news_event = { # - Ангола вышла из ОПЕК.
+	id = news_africa.23
+	title = news_africa.23.t
+	desc = news_africa.23.desc
+	picture = GFX_news_23
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.23.a
+	}
+}
+news_event = { # 30.12.2023 - ВСУ атаковали Белгород.
+	id = news_africa.24
+	title = news_africa.24.t
+	desc = news_africa.24.desc
+	picture = GFX_news_24
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.24.a
+	}
+}
+
+### 2024
+
+news_event = { #Вступление Египта, Ирана, ОАЭ, Саудовской Аравии и Эфиопии в состав БРИКС.
+	id = news_africa.25
+	title = news_africa.25.t
+	desc = news_africa.25.desc
+	picture = GFX_news_25
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.25.a
+	}
+}
+
+news_event = { # США и Великобритания нанесли серию авиаударов по Йемену.
+	id = news_africa.26
+	title = news_africa.26.t
+	desc = news_africa.26.desc
+	picture = GFX_news_26
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.26.a
+	}
+}
+
+news_event = { # - российские войска полностью взяла под контроль Авдеевку.
+	id = news_africa.27
+	title = news_africa.27.t
+	desc = news_africa.27.desc
+	picture = GFX_news_27
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.27.a
+	}
+}
+
+news_event = { # - - Вступление Швеции в НАТО.
+	id = news_africa.28
+	title = news_africa.28.t
+	desc = news_africa.28.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.28.a
+	}
+}
+
+news_event = { #В Зимбабве ввели новую валюту — Zimbabwe Gold.
+	id = news_africa.29
+	title = news_africa.29.t
+	desc = news_africa.29.desc
+	picture = GFX_news_29
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.29.a
+	}
+}
+
+news_event = { #Принятие резолюции о расширении прав Палестины в Генеральной Ассамблее ООН.
+	id = news_africa.30
+	title = news_africa.30.t
+	desc = news_africa.30.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.30.a
+	}
+}
+
+news_event = { #Начало многотысячного митинга в Ереване с требованиями отставки Никола Пашиняна.
+	id = news_africa.31
+	title = news_africa.31.t
+	desc = news_africa.31.desc
+	picture = GFX_ecowas_1
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.31.a
+	}
+}
+
+news_event = { #Покушение на премьера Словакии Роберта Фицо.
+	id = news_africa.32
+	title = news_africa.32.t
+	desc = news_africa.32.desc
+	picture = GFX_news_32
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.32.a
+	}
+}
+
+news_event = { #Погромы в заморской территории Франции - Новой Каледонии. Франция ввела войска.
+	id = news_africa.33
+	title = news_africa.33.t
+	desc = news_africa.33.desc
+	picture = GFX_news_33
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.33.a
+	}
+}
+
+news_event = { #ХV Международный экономический форум «Россия – Исламский мир: KazanForum».
+	id = news_africa.34
+	title = news_africa.34.t
+	desc = news_africa.34.desc
+	picture = GFX_news_34
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.34.a
+	}
+}
+
+news_event = { #В результате крушения вертолета погиб президент Ирана Эбрахим Раиси.
+	id = news_africa.35
+	title = news_africa.35.t
+	desc = news_africa.35.desc
+	picture = GFX_news_35
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = news_africa.35.a
+	}
+}

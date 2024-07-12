@@ -1,0 +1,58 @@
+Corpus_training_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+        has_government = francocentrism
+    }
+
+	icon = GFX_idea_RUS_corpus_training
+	
+	experience_gain_army = global.sahel_russian_training_daily_experience_gain
+	
+	army_org_factor = global.sahel_russian_training_org
+	max_planning_factor = global.sahel_russian_training_max_planning
+	offence = global.sahel_russian_training_offence
+	attrition = global.sahel_russian_training_equipment_capture
+	army_strength_factor = global.sahel_russian_training_strength_factor
+	special_forces_cap = global.sahel_russian_training_special_forces_cap
+}
+
+Berets_training_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+        has_government = panafricanism
+    }
+
+	icon = GFX_idea_FRN_berets_training
+	
+	experience_gain_army = global.ecowas_french_training_daily_experience_gain
+	
+	army_org_factor = global.ecowas_french_training_org
+	max_planning_factor = global.ecowas_french_training_max_planning
+	offence = global.ecowas_french_training_offence
+	attrition = global.ecowas_french_training_equipment_capture
+	army_strength_factor = global.ecowas_french_training_strength_factor
+	special_forces_cap = global.ecowas_french_training_special_forces_cap
+}
+
+ecowas_unity_ecowas_modifier = {
+	enable = { always = yes }
+	#remove_trigger = {
+	#	AND = {
+	#	has_government = panafricanism
+	#		OR = {
+	#			is_in_faction_with = MLL
+	#			is_in_faction_with = BRK
+	#		}	
+	#	}
+	#}
+
+	icon = GFX_idea_MLL_ecowas_sanctions
+	
+	production_speed_buildings_factor = global.ecowas_unity_modifier_stats
+	army_org_factor = global.ecowas_unity_modifier_stats
+	max_planning_factor = global.ecowas_unity_modifier_stats
+	experience_gain_army_factor = global.ecowas_unity_modifier_stats
+	army_strength_factor = global.ecowas_unity_modifier_stats
+	army_org_regain = global.ecowas_unity_modifier_stats
+	special_forces_cap = global.ecowas_unity_modifier_stats
+}

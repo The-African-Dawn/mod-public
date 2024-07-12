@@ -1,0 +1,21 @@
+state={
+	id=34
+	name="STATE_34"
+	provinces={
+		60 
+	}
+	state_category = rural
+	history={
+		owner = FRN
+		add_core_of = FRN
+		victory_points = { 60 5 }
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

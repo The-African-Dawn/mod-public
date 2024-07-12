@@ -1,0 +1,98 @@
+
+division_template = {
+	name = "Bataillon de chars"
+
+	support={
+	}
+	regiments={
+		medium_armor_unit={ x=0 y=0 }
+		medium_armor_unit={ x=0 y=1 }
+		medium_armor_unit={ x=0 y=2 }
+		medium_armor_unit={ x=0 y=3 }
+		light_armor_unit={ x=1 y=0 }
+		light_armor_unit={ x=1 y=1 }
+		light_armor_unit={ x=1 y=2 }
+		light_armor_unit={ x=1 y=3 }
+		infantry_on_btr={ x=2 y=0 }
+		infantry_on_btr={ x=2 y=1 }
+		infantry_on_btr={ x=2 y=2 }
+		infantry_on_btr={ x=2 y=3 }
+		infantry_on_btr={ x=2 y=4 }
+		infantry_on_btr={ x=3 y=0 }
+		infantry_on_btr={ x=3 y=1 }
+		infantry_on_btr={ x=3 y=2 }
+		infantry_on_btr={ x=3 y=3 }
+		infantry_on_btr={ x=3 y=4 }
+	}
+}
+
+division_template = {
+	name = "Bataillon d'infanterie"
+
+	support={
+		atgm_support_unit={ x=0 y=0 }
+		howitzer_support_unit={ x=0 y=1 }
+		manpads_support_unit={ x=0 y=2 }
+		engineer={ x=0 y=3 }
+	}
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+	}
+}
+
+division_template = {
+	name = "Bataillon de commandos"
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+	}
+}
+
+division_template = {
+	name = "Rangers"
+	support={
+		engineer={ x=0 y=0 }
+		recon={ x=0 y=1 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+	}
+}
+
+division_template = {
+	name = "Bataillon de commandos"
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+	}
+}
+
+units = {
+
+}
+
+instant_effect = {
+}

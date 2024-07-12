@@ -1,0 +1,276 @@
+scripted_gui = {
+	bm_script_gui = {
+		window_name = "blackmarket_tab_rew"
+		parent_window_token = trade_tab
+		context_type = player_context
+		visible = {
+			OR = {
+				has_government = fundamentalism
+				has_country_flag = international_blockade
+			}
+		}
+		triggers = {
+			bm_1_click_enabled = {
+				NOT = { has_country_flag = black_market_already_bought }
+				has_political_power > global.bm_cost_1
+			}
+			bm_2_click_enabled = {
+				NOT = { has_country_flag = black_market_already_bought }
+				has_political_power > global.bm_cost_2
+			}
+			bm_3_click_enabled = {
+				NOT = { has_country_flag = black_market_already_bought }
+				has_political_power > global.bm_cost_3
+			}
+		}
+		effects = {
+			bm_1_click = {
+				set_variable = { cost_invert = global.bm_cost_1 }
+				multiply_variable = { cost_invert = -1 }
+				add_political_power = cost_invert
+				set_country_flag = black_market_already_bought
+				set_variable = { black_market_selected_type = 0 }
+				country_event = { id = market.2 days = 14 }
+			}
+			bm_2_click = {
+				set_variable = { cost_invert = global.bm_cost_2 }
+				multiply_variable = { cost_invert = -1 }
+				add_political_power = cost_invert
+				set_variable = { black_market_selected_type = 1 }
+				country_event = { id = market.2 days = 14 }
+			}
+			bm_3_click = {
+				set_variable = { cost_invert = global.bm_cost_3 }
+				multiply_variable = { cost_invert = -1 }
+				add_political_power = cost_invert
+				set_variable = { black_market_selected_type = 2 }
+				country_event = { id = market.2 days = 14 }
+			}
+		}
+	}
+	market_script_gui = {
+		window_name = "market_tab_rew"
+		parent_window_token = trade_tab
+		context_type = player_context
+		visible = {
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = FRN
+					tag = USR
+					tag = CHN
+					has_government = fundamentalism
+					has_country_flag = international_blockade
+				}
+			}
+		}
+		effects = { 
+			sort_country_RUS_click = { 
+				set_variable = { market_tab_selected = 0 }
+				set_variable = { market_current_selected_frame_RUS = 2 }
+				set_variable = { market_current_selected_frame_USA = 0 }
+				set_variable = { market_current_selected_frame_FRA = 0 }
+			}
+			sort_country_USA_click = { 
+				set_variable = { market_tab_selected = 1 }
+				set_variable = { market_current_selected_frame_USA = 2 }
+				set_variable = { market_current_selected_frame_RUS = 0 }
+				set_variable = { market_current_selected_frame_FRA = 0 }
+			}
+			sort_country_FRA_click = {
+				set_variable = { market_tab_selected = 2 }
+				set_variable = { market_current_selected_frame_FRA = 2 }
+				set_variable = { market_current_selected_frame_RUS = 0 }
+				set_variable = { market_current_selected_frame_USA = 0 }
+			}
+			start_imports_market_click = {
+				set_variable = { popup_selected_offert = v }
+				set_variable = { open_modal_window_trade = 1 }
+				set_variable = { market_tab_selected_popup = var:market_tab_selected }
+				set_variable = { global.default_buying_amount_1 = v }
+				meta_effect = {
+					text = {
+						set_variable = { amountbuyingformodal = global.default_buying_amount_[ID] }
+						set_variable = { amountbuyingformodal10x = global.default_buying_amount_[ID] }
+						multiply_variable = { amountbuyingformodal10x = 10 }
+						set_variable = { amountbuyingformodalmaximum = global.default_buying_amount_[ID] }
+						multiply_variable = { amountbuyingformodalmaximum = 50 }
+						
+						set_variable = { costforbuymodal = global.country_[countryid]_costper1_[ID] }
+					}
+					ID = "[?v]"
+					countryid = "[?market_tab_selected]"
+				}
+				set_variable = { amount_selected_in_modal = 0 }
+				recalculate_modal_cost = yes
+			}
+			cancel_imports_click = {
+				meta_effect = {
+					text = {
+						set_variable = { total_market_buying_[ID] = 0 }
+						set_variable = { balance_to_take = amountofmonthlyspendingppmarket_[ID] }
+						multiply_variable = { balance_to_take = -1 } 
+						add_political_power = balance_to_take
+						set_variable = { amountofmonthlyspendingppmarket_[ID] = 0 }
+					}
+					strana = "[?market_tab_selected]"
+					ID = "[?v]"
+				}
+				recalculate_amount_of_spendings = yes
+			}
+		}
+		dynamic_lists = {
+			market_offers = {
+				array = global.market_offers
+				entry_container = market_offer_entry
+			}
+		}
+		properties = {
+			sort_country_RUS = {
+				frame = market_current_selected_frame_RUS
+			}
+			sort_country_USA = {
+				frame = market_current_selected_frame_USA
+			}
+			sort_country_FRA = {
+				frame = market_current_selected_frame_FRA
+			}
+			
+			icon_offer = { 
+				image = "[offer_script_icon]"
+			} 
+			
+			country_flag_RUS = {
+				image = "[RUS.GetFlag]"
+			}
+			country_flag_USA = {
+				image = "[USR.GetFlag]"
+			}
+			country_flag_FRA = {
+				image = "[FRN.GetFlag]"
+			}
+		}
+		triggers = {
+			cancel_imports_click_enabled = {
+				meta_trigger = { 
+					text = { 
+						check_variable = { total_market_buying_[ID] > 0 }
+						check_variable = { buying_[ID]_from = [strana] } 
+					} 
+					strana = "[?market_tab_selected]"
+					ID = "[?v]"
+				} 
+			}
+			start_imports_market_click_enabled = {
+				meta_trigger = { 
+					text = { 
+						NOT = { check_variable = { total_market_buying_[ID] > 0 } }
+						[TAGSTRANY] = {
+							has_opinion = {
+								target = ROOT
+								value > -50
+							}
+						}
+					} 
+					TAGSTRANY = "[offer_tags]"
+					ID = "[?v]"
+				} 
+				if = { limit = { check_variable = { v > 6 } } NOT = { has_country_flag = buyed_weapons_not_delivered } }
+				has_political_power > -50
+			}
+		}
+	}
+	market_popup = {
+		window_name = "market_buy_modal_window"
+		context_type = player_context
+		visible = {
+			check_variable = { open_modal_window_trade = 1 }
+		}
+		properties = {
+			country_flag_ROOT = {
+				image = "[ROOT.GetFlag]"
+			}
+			country_flag_trader = {
+				image = "[offer_tags_FLAG]"
+			}
+		}
+		triggers = {
+			buybuttonclick_click_enabled = {
+				check_variable = { costmodal > 0 }
+				has_political_power > var:costmodal
+			}
+		}
+		effects = { 
+			cancel_button_click = { 
+				set_variable = { open_modal_window_trade = 0 }
+			}
+			add_more_button_click = {
+				add_to_variable = {amount_selected_in_modal = amountbuyingformodal }
+				clamp_variable = {
+					var = amount_selected_in_modal
+					max = amountbuyingformodalmaximum
+				}
+				recalculate_modal_cost = yes
+			}
+			add_more_button_control_click = {
+				add_to_variable = {amount_selected_in_modal = amountbuyingformodal10x }
+				clamp_variable = {
+					var = amount_selected_in_modal
+					max = amountbuyingformodalmaximum
+				}
+				recalculate_modal_cost = yes
+			}
+			remove_more_button_click = {
+				subtract_from_variable = {amount_selected_in_modal = amountbuyingformodal }
+				clamp_variable = {
+					var = amount_selected_in_modal
+					min = 0
+				}
+				recalculate_modal_cost = yes
+			}
+			remove_more_button_control_click = {
+				subtract_from_variable = {amount_selected_in_modal = amountbuyingformodal10x }
+				clamp_variable = {
+					var = amount_selected_in_modal
+					min = 0
+				}
+				recalculate_modal_cost = yes
+			}
+			buybuttonclick_click = {
+				if = {
+					limit = {
+						check_variable = { popup_selected_offert > 6 }
+					}
+					set_variable = { costinvert = costmodal }
+					multiply_variable = { costinvert = -1 } 
+					add_political_power = costinvert
+					set_country_flag = buyed_weapons_not_delivered
+					
+					#
+					set_variable = { market_bought_old_market_tab_selected = market_tab_selected_popup }
+					set_variable = { market_bought_old_popup_selected_offert = popup_selected_offert }
+					set_variable = { market_bought_old_popup_selected_amount = amount_selected_in_modal }
+					
+					country_event = { id = market.1 days = 30 }
+					
+					set_variable = { open_modal_window_trade = 0 }
+					recalculate_amount_of_spendings = yes
+					else = {
+						meta_effect = {
+							text = {
+								set_variable = { amountofmonthlyspendingppmarket_[ID] = costmodal }
+								set_variable = { total_market_buying_[ID] = amount_selected_in_modal }
+								set_variable = { buying_[ID]_from = market_tab_selected_popup }
+							}
+							strana = "[?market_tab_selected_popup]"
+							ID = "[?popup_selected_offert]"
+						}
+
+						set_variable = { open_modal_window_trade = 0 }
+						recalculate_amount_of_spendings = yes
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=180
+	name="STATE_180"
+	resources={
+		oil=3
+	}
+	history={
+		owner = ALJ
+		add_core_of = ALJ
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		69 115 338 475 519 696 919 992 1468 1493 1597 1831 1909 1916 2101 2118 2184 2674 2677 2688 2698 2708 2736 2743 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

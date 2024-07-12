@@ -1,0 +1,27 @@
+
+air_wings = {
+	36 = {
+		fighter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 4 } 
+		attack_helicopter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 4 } 
+		transport_helicopter_airframe_0 = { owner = "FRN" creator = "FRN" amount = 4 } 
+	}
+	41 = {
+		uav_airframe_0 = { owner = "FRN" creator = "FRN" amount = 4 } 
+	}
+	28 = {
+		transport_helicopter_airframe_0 = { owner = "FRN" creator = "FRN" amount = 6 } 
+	}
+	28 = {
+		transport_helicopter_airframe_0 = { owner = "FRN" creator = "FRN" amount = 6 } 
+	}
+	32 = {
+		transport_helicopter_airframe_0 = { owner = "FRN" creator = "FRN" amount = 2 } 
+		attack_helicopter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 5 } 
+	}
+	40 = {
+		transport_plane_airframe_0 = { owner = "FRN" creator = "FRN" amount = 2 } 
+	}
+	41 = {
+		transport_plane_airframe_0 = { owner = "FRN" creator = "FRN" amount = 1 } 
+	}
+}

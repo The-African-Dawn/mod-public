@@ -1,0 +1,22 @@
+﻿l_english:
+l_english:0 "Abdul Hamid Dbeibah"
+l_english: "A businessman, politician, and former associate of Muammar Gaddafi, he was born in 1959 in the western city of Misrata, traditionally considered a stronghold of resistance against Gaddafi's regime. Early in his career, Dbeibah moved to Canada to earn an engineering degree from the University of Toronto. He returned to his hometown amid a construction boom, eventually catching the attention of Gaddafi's close allies.\nHis expertise soon earned him Gaddafi's trust, and in 2007 he was tasked with managing the state-owned Libyan Investment and Development Company (LIDCO), responsible for some of the country's largest public works projects.\nAfter Gaddafi's overthrow in 2011, Dbeibah founded the 'Libya Future' movement, although it did not actively participate in political life.\nOn February 5, 2021, Abdul Hamid Dbeibah was elected Prime Minister of Libya. This choice surprised many, given the construction magnate's close ties to Libya's former long-time ruler Muammar Gaddafi.\nIn September 2021, the Libyan House of Representatives expressed a vote of no confidence in Dbeibah's government. Since February 2022, his position has been contested, and several assassination attempts have been made. This has led to renewed clashes in the country.\nAccording to several media reports, Dbeibah is also said to have ties with the Turkish authorities and the Muslim Brotherhood (an international religious-political association banned in Russia)."
+
+ #FOCUSES#
+ LIV_general_mobilization: "General Mobilization"
+ LIV_general_mobilization_desc: "The Endless War Continues"
+
+
+ #IDEAS#
+ LIV_political_instability: "Political Instability"
+ LIV_political_instability_desc: ""
+ 
+ #TOOLTIP#
+ LIV_faso_military: "§gAs we have chosen a focus on army quality, we receive additional bonuses:§!"
+ political_instability_initiate_resistance:0 "§YAs long as this national spirit is in effect, we will face strong resistance from fundamentalists and other radicals in our territories§!"
+ 
+ #EVENTS#
+ LIV.1.t:0 "Victory of the Revolution"
+ LIV.1.desc:0 "Radiating a sense of a fresh beginning and hope, Burkina Faso today celebrates a historic event – the joyous overthrow of the past corrupt regime and the arrival of a new leader, perceived as the long-awaited hope for a better future. A wave of enthusiasm and support sweeps the people of the country, greeting the renewal with open arms.\n\nUnder the leadership of Ibrahim Traoré, our country enters a new era filled with optimism and the drive for positive change. This coup symbolizes not only the end of a long era of injustice and corruption but also an opportunity for our people to actively participate in building a just, prosperous society.\n\nThe bright future of our country is on the horizon, and the new leader in the person of Ibrahim Traoré inspires us to take bold steps and dream big. Let this chapter in Burkina Faso's history mark the beginning of a new era of prosperity, solidarity, and joy for all our citizens."
+ LIV.1.a:0 "It's Just the Beginning."
+ LIV.1.b:0 "Testing."

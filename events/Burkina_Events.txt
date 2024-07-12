@@ -1,0 +1,1391 @@
+add_namespace = BRK
+country_event = {
+	id = BRK.1
+	title = BRK.1.t
+	desc = BRK.1.desc
+	picture = GFX_BRK_1
+	is_triggered_only = yes
+	option = {
+		name = BRK.1.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_timed_idea = { idea = BRK_revolutionary_zeal days = 45 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = {
+	id = BRK.2
+	title = BRK.2.t
+	desc = BRK.2.desc
+	picture = GFX_BRK_2
+	is_triggered_only = yes
+	option = {
+		name = BRK.2.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = BRK.3
+	title = BRK.3.t
+	desc = BRK.3.desc
+	picture = GFX_BRK_1
+	is_triggered_only = yes
+	option = {
+		name = BRK.3.a
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_focus_on_effectiveness
+		set_country_flag = BRK_focus_on_effectiveness
+	}
+	option = {
+		name = BRK.3.b
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_focus_on_security
+		set_country_flag = BRK_focus_on_security
+	}
+}
+
+country_event = {
+	id = BRK.4
+	title = BRK.4.t
+	desc = BRK.4.desc
+	picture = GFX_BRK_1
+	is_triggered_only = yes
+	option = {
+		name = BRK.4.a
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_focus_on_mass_army
+	}
+	option = {
+		name = BRK.4.b
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_focus_on_professional_army
+	}
+}
+
+country_event = {
+	id = BRK.5
+	title = BRK.5.t
+	desc = BRK.5.desc
+	picture = GFX_BRK_1
+	is_triggered_only = yes
+	option = {
+		name = BRK.5.a
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_preemptive_strikes
+		custom_effect_tooltip = brk_5_a_tt
+	}
+	option = {
+		name = BRK.5.b
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_total_eradication
+		custom_effect_tooltip = brk_5_b_tt
+	}
+}
+
+news_event = {
+	id = BRK.6
+	title = BRK.6.t
+	desc = BRK.6.desc
+	picture = GFX_BRK_6
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = BRK.6.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = {
+		name = BRK.6.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = {
+		name = BRK.6.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = {
+		name = BRK.6.d
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = pragmatism
+		}
+	}
+}
+
+country_event = {
+	id = BRK.7
+	title = BRK.7.t
+	desc = BRK.7.desc
+	picture = GFX_BRK_1
+	is_triggered_only = yes
+	option = {
+		name = BRK.7.a
+		ai_chance = {
+			factor = 1
+		}
+		remove_ideas = BRK_fallen_government
+	}
+}
+
+country_event = {
+	id = BRK.8
+	title = BRK.8.t
+	desc = BRK.8.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.8.a
+		ai_chance = {
+			factor = 100
+		}
+		retire_character = BRK_Djass_anou_Romeo_Ouoba
+		retire_character = BRK_Cristopher_Maiga
+		retire_character = BRK_Cheick_Hamza_Ouattara
+		retire_character = BRK_Abdoul_Aziz_Aouoba
+		add_political_power = -100
+		set_country_flag = BRK_third_coup_detat_failed
+		custom_effect_tooltip = burkina_event_third_coup_tt
+		news_event = {
+			id = BRK.10
+			hours = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = BRK.11
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = BRK.8.b
+		hidden_effect = {
+			country_event = {
+				id = BRK.9
+				days = 7
+			}
+		}
+		custom_effect_tooltip = burkina_event_third_coup_alt_tt
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = BRK.9
+	title = BRK.9.t
+	desc = BRK.9.desc
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_country_leader_role = {
+				character = BRK_Cheick_Hamza_Ouattara
+				promote_leader = yes
+				country_leader = {
+					ideology = panafricanism_sub
+					expire = "3000.1.1.1"
+					traits = {
+					}
+				}
+			}
+			set_country_flag = BRK_Ibrahim_Traore_exile
+		}
+	}
+	option = {
+		name = BRK.9.a
+		ai_chance = {
+			factor = 1
+		}
+		effect_tooltip = {
+			retire_character = BRK_Barthelemy_Simpore
+			retire_character = BRK_Yves_Didier_Bamouni
+			retire_character = BRK_Kassum_Kulibali
+		}
+		news_event = {
+			id = BRK.12
+			hours = 1
+		}
+		add_ideas = BRK_fallen_government_2
+		set_country_flag = BRK_third_coup_success
+	}
+}
+
+news_event = {
+	id = BRK.10
+	title = BRK.10.t
+	desc = BRK.10.desc
+	major = no
+	picture = GFX_BRK_10
+	is_triggered_only = yes
+	option = {
+		name = BRK.10.a
+		ai_chance = {
+			factor = 1
+		}
+		add_stability = 0.03
+	}
+}
+
+news_event = {
+	id = BRK.11
+	title = BRK.11.t
+	desc = BRK.11.desc
+	major = yes
+	picture = GFX_BRK_11
+	is_triggered_only = yes
+	option = {
+		name = BRK.11.a
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = {
+		name = BRK.11.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = {
+		name = BRK.11.c
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = {
+		name = BRK.11.d
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			has_government = pragmatism
+		}
+	}
+}
+
+news_event = {
+	id = BRK.12
+	title = BRK.12.t
+	desc = BRK.12.desc
+	major = yes
+	picture = GFX_BRK_12
+	is_triggered_only = yes
+	option = {
+		name = BRK.12.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = BRK.13
+	title = BRK.13.t
+	desc = BRK.13.desc
+	immediate = {
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BRK_Cheick_Hamza_Ouattara
+				ideology = panafricanism_sub
+			}
+			set_party_name = {
+				ideology = panafricanism
+				long_name = BRK_panafricanism_party_sankara_long
+				name = BRK_panafricanism_party_sankara
+			}
+			set_politics = {
+				ruling_party = panafricanism
+				elections_allowed = yes
+				last_election = "2024.01.01"
+				election_frequency = 60
+			}
+			add_country_leader_role = {
+				character = BRK_Benewende_Stanislas_Sankara
+				promote_leader = yes
+				country_leader = {
+					ideology = panafricanism_sub
+					expire = "3000.1.1.1"
+					traits = {
+					}
+				}
+			}
+			hold_election = ROOT
+		}
+		set_country_flag = first_elections_happened
+	}
+	is_triggered_only = yes
+	option = {
+		name = BRK.13.b
+		ai_chance = {
+			factor = 1
+		}
+		set_politics = {
+			ruling_party = pragmatism
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 60
+		}
+	}
+	option = {
+		name = BRK.13.a
+		ai_chance = {
+			factor = 1
+		}
+		set_politics = {
+			ruling_party = francocentrism
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 60
+		}
+	}
+}
+
+country_event = {
+	id = BRK.14
+	title = BRK.14.t
+	desc = BRK.14.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.14.a
+		ai_chance = {
+			factor = 1
+		}
+		add_ideas = BRK_land_of_free_idea
+	}
+}
+
+news_event = {
+	id = BRK.15
+	title = BRK.15.t
+	desc = BRK.15.desc
+	is_triggered_only = yes
+	picture = GFX_BRK_15
+	option = {
+		name = BRK.15.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = BRK.16
+	title = BRK.16.t
+	desc = BRK.16.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.16.a
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = BRK_traore_will_make_elections
+		add_stability = 0.03
+		custom_effect_tooltip = BRK_event_16_a_tt
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BRK_Zephrin_Diabre
+				ideology = pragmatism_sub
+			}
+			set_party_name = {
+				ideology = pragmatism
+				long_name = BRK_pragmatism_adf_adr_long
+				name = BRK_pragmatism_adf_adr
+			}
+			add_country_leader_role = {
+				character = BRK_Gilbert_Noel_Ouedraogo
+				promote_leader = yes
+				country_leader = {
+					ideology = pragmatism_sub
+					expire = "3000.1.1.1"
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = BRK.16.b
+		ai_chance = {
+			factor = 0
+		}
+		add_country_leader_trait = the_new_sankara
+		add_stability = -0.03
+		custom_effect_tooltip = BRK_event_16_b_tt
+	}
+}
+
+country_event = {
+	id = BRK.17
+	title = BRK.17.t
+	desc = BRK.17.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.17.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = BRK.17.b
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = BRK_sankara_takes_the_way
+		add_popularity = {
+			ideology = panafricanism
+			popularity = -0.05
+		}
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = BRK.18
+	title = BRK.18.t
+	desc = BRK.18.desc
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = BRK.19
+			}
+		}
+	}
+	option = {
+		name = BRK.18.a
+		add_opinion_modifier = {
+			target = KOT
+			modifier = BRK_cote_d_ivour_incident
+		}
+		KOT = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_cote_d_ivour_incident
+			}
+		}
+		add_political_power = 100
+		custom_effect_tooltip = BRK18_A_TT
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BRK.18.b
+		add_opinion_modifier = {
+			target = KOT
+			modifier = BRK_cote_d_ivour_incident_2
+		}
+		KOT = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_cote_d_ivour_incident_2
+			}
+		}
+		KOT = {
+			country_event = {
+				id = BRK.20
+				hours = 2
+			}
+		}
+		custom_effect_tooltip = BRK18_B_TT
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+news_event = {
+	id = BRK.19
+	title = BRK.19.t
+	desc = BRK.19.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_BRK_19
+	option = {
+		name = BRK.19.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = BRK
+		}
+	}
+	option = {
+		name = BRK.19.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = KOT
+		}
+	}
+	option = {
+		name = BRK.19.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = KOT
+					tag = BRK
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRK.20
+	title = BRK.20.t
+	desc = BRK.20.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.20.a
+		ai_chance = {
+			factor = 70
+		}
+		BRK = {
+			country_event = BRK.22
+			hours = 1
+		}
+	}
+	option = {
+		name = BRK.20.b
+		ai_chance = {
+			factor = 30
+		}
+		BRK = {
+			country_event = BRK.21
+			hours = 1
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -100
+	}
+}
+
+country_event = {
+	id = BRK.21
+	title = BRK.21.t
+	desc = BRK.21.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.21.a
+		ai_chance = {
+			factor = 70
+		}
+		add_stability = 0.1
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = francocentrism
+			popularity = -0.1
+		}
+	}
+}
+
+country_event = {
+	id = BRK.22
+	title = BRK.22.t
+	desc = BRK.22.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.22.a
+		ai_chance = {
+			factor = 70
+		}
+		custom_effect_tooltip = BRK_22_A_TT
+		add_stability = -0.05
+	}
+	option = {
+		name = BRK.22.b
+		ai_chance = {
+			factor = 30
+		}
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 25
+				num_provinces = 1
+				on_win = BRK.23
+				on_lose = BRK.24
+			}
+			defender = {
+				state = 15
+				num_provinces = 1
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = GNN
+					tag = TGG
+					tag = KOT
+					tag = NRG
+					tag = LBR
+				}
+			}
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_cote_d_ivour_incident_3
+			}
+		}
+		custom_effect_tooltip = BRK_22_B_TT
+	}
+}
+
+news_event = {
+	id = BRK.23
+	title = BRK.23.t
+	desc = BRK.23.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_BRK_23
+	option = {
+		name = BRK.23.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = BRK
+		}
+	}
+	option = {
+		name = BRK.23.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = KOT
+		}
+	}
+	option = {
+		name = BRK.23.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = KOT
+					tag = BRK
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = BRK.24
+	title = BRK.24.t
+	desc = BRK.24.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_BRK_24
+	option = {
+		name = BRK.24.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = BRK
+		}
+	}
+	option = {
+		name = BRK.24.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = KOT
+		}
+	}
+	option = {
+		name = BRK.24.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = KOT
+					tag = BRK
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = BRK.25
+	title = BRK.25.t
+	desc = BRK.25.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_BRK_25
+	option = {
+		name = BRK.25.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = BRK
+		}
+	}
+	option = {
+		name = BRK.25.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = FRN
+		}
+	}
+	option = {
+		name = BRK.25.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRN
+					tag = BRK
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = BRK.26
+	title = BRK.26.t
+	desc = BRK.26.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_BRK_26
+	option = {
+		name = BRK.26.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = BRK
+		}
+	}
+	option = {
+		name = BRK.26.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			tag = FRN
+		}
+	}
+	option = {
+		name = BRK.26.c
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = FRN
+					tag = BRK
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRK.27
+	title = BRK.27.t
+	desc = BRK.27.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.27.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 50
+		custom_effect_tooltip = brk27_a_tt
+	}
+	option = {
+		name = BRK.27.b
+		ai_chance = {
+			factor = 0
+		}
+		set_country_flag = brk_give_bases_to_rus
+		custom_effect_tooltip = brk27_b_tt
+		add_opinion_modifier = {
+			target = RUS
+			modifier = BRK_gave_bases_to_russia
+		}
+		RUS = {
+			add_opinion_modifier = {
+				target = BRK
+				modifier = BRK_gave_bases_to_russia
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRK.28
+	title = BRK.28.t
+	desc = BRK.28.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.28.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.03
+	}
+	option = {
+		name = BRK.28.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.05
+		add_ideas = BRK_support_local_languages
+	}
+}
+
+news_event = {
+	id = BRK.29
+	title = BRK.29.t
+	desc = BRK.29.desc
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_BRK_29
+	option = {
+		name = BRK.29.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			OR = {
+				tag = BRK
+				is_in_faction_with = BRK
+			}
+		}
+	}
+	option = {
+		name = BRK.29.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = BRK
+					is_in_faction_with = BRK
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRK.30
+	title = {
+		text = brk.30.t.a
+		trigger = {
+			tag = MRV
+		}
+	}
+	title = {
+		text = brk.30.t.b
+		trigger = {
+			tag = CHD
+		}
+	}
+	desc = {
+		text = brk.30.desc.a
+		trigger = {
+			tag = MRV
+		}
+	}
+	desc = {
+		text = brk.30.desc.b
+		trigger = {
+			tag = CHD
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = BRK.30.a
+		ai_chance = {
+			factor = 100
+		}
+		BRK = {
+			add_to_faction = ROOT
+		}
+	}
+	option = {
+		name = BRK.30.b
+		ai_chance = {
+			factor = 0
+		}
+		add_opinion_modifier = {
+			target = BRK
+			modifier = disagreed_to_alliance_invite
+		}
+		BRK = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = disagreed_to_alliance_invite
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRK.31
+	title = BRK.31.t
+	desc = {
+		text = brk.31.desc.a
+		trigger = {
+			NOT = {
+				has_country_flag = BRK_sankara_takes_the_way
+			}
+		}
+	}
+	desc = {
+		text = brk.31.desc.b
+		trigger = {
+			has_country_flag = BRK_sankara_takes_the_way
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = BRK.31.a
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BRK_Ibrahim_Traore
+				ideology = panafricanism_sub
+			}
+			set_party_name = {
+				ideology = panafricanism
+				long_name = BRK_panafricanism_party_sankara_long
+				name = BRK_panafricanism_party_sankara
+			}
+			set_politics = {
+				ruling_party = panafricanism
+				elections_allowed = yes
+				last_election = "2020.01.01"
+				election_frequency = 60
+			}
+			add_country_leader_role = {
+				character = BRK_Benewende_Stanislas_Sankara
+				promote_leader = yes
+				country_leader = {
+					ideology = panafricanism_sub
+					expire = "3000.1.1.1"
+					traits = {
+					}
+				}
+			}
+			hold_election = ROOT
+			add_popularity = {
+				ideology = panafricanism
+				popularity = 0.1
+			}
+		}
+		trigger = {
+			has_country_flag = BRK_sankara_takes_the_way
+		}
+	}
+	option = {
+		name = BRK.31.b
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = panafricanism
+				elections_allowed = yes
+				last_election = "2020.01.01"
+				election_frequency = 60
+			}
+			hold_election = ROOT
+			add_popularity = {
+				ideology = panafricanism
+				popularity = 0.1
+			}
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = BRK_sankara_takes_the_way
+			}
+		}
+	}
+	option = {
+		name = BRK.31.c
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = BRK_Ibrahim_Traore
+				ideology = panafricanism_sub
+			}
+			set_party_name = {
+				ideology = panafricanism
+				long_name = BRK_panafricanism_pragmatism_party_long
+				name = BRK_panafricanism_pragmatism_party
+			}
+			set_politics = {
+				ruling_party = panafricanism
+				elections_allowed = yes
+				last_election = "2020.01.01"
+				election_frequency = 60
+			}
+			add_country_leader_role = {
+				character = BRK_Zephrin_Diabre
+				promote_leader = yes
+				country_leader = {
+					ideology = panafricanism_sub
+					expire = "3000.1.1.1"
+					traits = {
+					}
+				}
+			}
+			hold_election = ROOT
+			add_popularity = {
+				ideology = panafricanism
+				popularity = 0.1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRK.32
+	title = BRK.32.t
+	desc = BRK.32.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.32.a
+		ai_chance = {
+			factor = 100
+		}
+		add_stability = 0.025
+	}
+}
+
+country_event = {
+	id = BRK.33
+	title = BRK.33.t
+	desc = BRK.33.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.33.a
+		ai_chance = {
+			factor = 100
+		}
+		add_timed_idea = {
+			idea = BRK_milk_event_idea
+			days = 3
+		}
+	}
+}
+
+news_event = {
+	id = BRK.34
+	title = BRK.34.t
+	desc = BRK.34.desc
+	is_triggered_only = yes
+	picture = GFX_BRK_34
+	major = yes
+	option = {
+		name = BRK.34.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = BRK.35
+	title = BRK.35.t
+	desc = BRK.35.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.35.a
+		add_war_support = 0.03
+		add_political_power = 25
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = BRK.36
+	title = BRK.36.t
+	desc = BRK.36.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.36.a
+		add_stability = 0.005
+		add_manpower = 5
+		ISS = {
+			add_manpower = -5
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = BRK.37
+	title = BRK.37.t
+	desc = BRK.37.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.37.a
+		add_stability = 0.005
+		ISS = {
+			add_timed_idea = {
+				idea = BRK_broke_ISS_supply_ways
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = BRK.38
+	title = BRK.38.t
+	desc = BRK.38.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.38.a
+		add_stability = -0.005
+		add_political_power = -25
+		25 = {
+			add_manpower = -1
+		}
+		add_manpower = -3
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	# Траоре устраивает контр-переворот
+	id = BRK.39
+	title = BRK.39.t
+	desc = BRK.39.desc
+	is_triggered_only = yes
+	option = {
+		name = BRK.39.a
+		start_civil_war = {
+			ideology = panafricanism
+			states = {
+				27
+				98
+			}
+			size = 0.6
+			keep_all_characters = yes
+			PREV = {
+				BRK_Kassum_Kulibali = {
+					set_nationality = PREV.PREV
+				}
+				BRK_Barthelemy_Simpore = {
+					set_nationality = PREV.PREV
+				}
+				BRK_Yves_Didier_Bamouni = {
+					set_nationality = PREV.PREV
+				}
+				BRK_Ibrahim_Traore = {
+					set_nationality = PREV.PREV
+				}
+				BRK_Celestine_Simpore = {
+					set_nationality = PREV.PREV
+				}
+				BRK_David_Kabre = {
+					set_nationality = PREV.PREV
+				}
+				BRK_Moussa_Diallo = {
+					set_nationality = PREV.PREV
+				}
+				BRK_Theophile_Nikiema = {
+					set_nationality = PREV.PREV
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_in_array = {
+								possible_actions_country = 10
+							}
+						}
+					}
+					# 10-19 - РЕЗЕРВ ПОД ЗАПРОСЫ НА БОРЬБУ С ТЕРРОРОМ
+					add_to_array = {
+						possible_actions_country = 10
+					}
+					add_to_array = {
+						possible_actions_country = 11
+					}
+					add_to_array = {
+						possible_actions_country = 12
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_in_array = {
+							possible_actions_country = 10
+						}
+					}
+				}
+				# 10-19 - РЕЗЕРВ ПОД ЗАПРОСЫ НА БОРЬБУ С ТЕРРОРОМ
+				add_to_array = {
+					possible_actions_country = 10
+				}
+				add_to_array = {
+					possible_actions_country = 11
+				}
+				add_to_array = {
+					possible_actions_country = 12
+				}
+			}
+			promote_character = BRK_Ibrahim_Traore
+			remove_ideas = BRK_fallen_government_2
+			add_equipment_to_stockpile = {
+				type = ak_0
+				amount = var:BRK.amountofweapons_on_uprise
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = var:BRK.amountofsupply_on_uprise
+			}
+			unlock_brk_focuses = yes
+		}
+		hidden_effect = {
+			ISS = {
+				declare_war_on = {
+					target = BRK
+					type = annex_everything
+				}
+			}
+			news_event = BRK.40
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+news_event = {
+	id = BRK.40
+	title = BRK.40.t
+	desc = BRK.40.desc
+	is_triggered_only = yes
+	picture = GFX_BRK_23
+	option = {
+		name = BRK.40.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+news_event = {
+	id = BRK.41
+	title = BRK.41.t
+	desc = BRK.41.desc
+	is_triggered_only = yes
+	picture = GFX_BRK_34
+	option = {
+		name = BRK.41.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+news_event = {
+	id = BRK.42
+	title = BRK.42.t
+	desc = BRK.42.desc
+	is_triggered_only = yes
+	picture = GFX_BRK_26
+	option = {
+		name = BRK.42.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = BRK.43
+	title = BRK.43.t
+	desc = BRK.43.desc
+	picture = GFX_BRK_43
+	is_triggered_only = yes
+	option = {
+		name = BRK.43.a
+		add_political_power = 100
+		add_stability = 0.01
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

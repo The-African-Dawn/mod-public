@@ -1,0 +1,41 @@
+	
+BRK = "countries/BRK.txt" # Буркина-фасо
+CHD = "countries/CHD.txt" # Чад
+NIG = "countries/NIG.txt" # Нигер
+WSR = "countries/WSR.txt" # Западная сахара
+ALJ = "countries/ALJ.txt" # Алжир
+BNN = "countries/BNN.txt" # Бенин
+GMB = "countries/GMB.txt" # Гамбия	
+GNN = "countries/GNN.txt" # Гана	
+GVN = "countries/GVN.txt" # Гвинея	
+GBI = "countries/GBI.txt" # Гвинея-бисау	
+KMR = "countries/KMR.txt" # Камерун
+KOT = "countries/KOT.txt" # Кот-д’Ивуар
+LBR = "countries/LBR.txt" # Либерия
+LIV = "countries/LIV.txt" # Ливия
+MRV = "countries/MRV.txt" # Мавритания
+MLL = "countries/MLL.txt" # Мали 
+MRK = "countries/MRK.txt" # Морокко 
+NRG = "countries/NRG.txt" # Нигерия 
+SNG = "countries/SNG.txt" # Сенегал
+SLR = "countries/SLR.txt" # Сьерра-Леоне
+TGG = "countries/TGG.txt" # Того
+TNS = "countries/TNS.txt" # Тунис
+CRR = "countries/CRR.txt" # ЦАР
+ISS = "countries/ISS.txt" # ЦАР
+AZW = "countries/AZW.txt" # Азавад
+JNA = "countries/JNA.txt" # Азавад 2
+WZA = "countries/WZA.txt" # Азавад 3
+BHK = "countries/BHK.txt" # Боко-халяль
+CHN = "countries/CHN.txt" # Боко-халяль
+VGR = "countries/VGR.txt" # Республика Виаг ой Биафра
+
+BLK = "countries/BLK.txt" # Балака
+DLG = "countries/DLG.txt" # Ливия 2
+
+FCT = "countries/FCT.txt" # ЧАД 2 ФАКТ?!?!??!?!?!
+
+
+RUS = "countries/RUS.txt" # Россия
+FRN = "countries/FRN.txt" # Россия
+USR = "countries/USR.txt" # Россия

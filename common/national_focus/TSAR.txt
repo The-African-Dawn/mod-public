@@ -1,0 +1,36 @@
+﻿#focus_tree = {
+#	id = SECRET_PRIDNESTROVIE_focus
+#	
+#	country = {
+#		factor = 0
+#		
+#		modifier = {
+#			add = 10
+#			tag = CRR
+#		}
+#	}
+#	
+#	default = no
+#	
+#	continuous_focus_position = { x = -1150 y = 600 }
+#
+#	focus = {
+#		id = TSAR_PASHALKA
+#		icon = GFX_goal_NIG_too_many_problems
+#		cost = 5.8
+#		x = 7
+#		y = 0
+#		ai_will_do = {factor = 1}
+#			completion_reward = {
+#				add_stability = 0.05
+#				add_war_support = 0.1
+#				add_political_power = 50
+#				add_command_power = 50
+#				add_manpower = 18127
+#			}
+#    }
+#	ПОСХАЛКО
+#
+#}
+# 
+		

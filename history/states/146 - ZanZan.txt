@@ -1,0 +1,32 @@
+
+state={
+	id=146
+	name="STATE_146"
+	resources={
+		oil=12
+	}
+	history={
+		owner = KOT
+		add_core_of = KOT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			3091 2 
+		}
+		victory_points = {
+			3128 4 
+		}
+		
+	}
+
+	provinces={
+		278 563 1274 2499 2529 3091 3128 
+	}
+	manpower=6935245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

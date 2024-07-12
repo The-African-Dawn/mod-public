@@ -1,0 +1,13 @@
+
+animation = {
+	name = "t72b_attack_animation"
+	file = "t72b_attack.anim"
+}
+animation = {
+	name = "t72_idle_animation"
+	file = "t72_idle.anim"
+}
+animation = {
+	name = "t72_moving_animation"
+	file = "t72_moving.anim"
+}

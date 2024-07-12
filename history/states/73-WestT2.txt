@@ -1,0 +1,25 @@
+
+state={
+	id=73
+	name="STATE_73"
+
+	history={
+		owner = AZW
+		add_core_of = AZW
+		add_core_of = MLL
+		buildings = {
+			infrastructure = 1
+
+		}
+		MLL = {
+			set_province_controller = 378
+		}
+	}
+	state_category = rural
+	provinces={
+		146 163 219 281 369 378 531 581 771 838 1073 1132 1349 1585 1678 1894 2380 2787 2822 2828 2831 2895 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,2 @@
+# For minor countries where advisors are not defined
+# Generate them from a generic template

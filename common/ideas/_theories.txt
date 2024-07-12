@@ -1,0 +1,76 @@
+ideas = {
+
+	military_theory = {
+		use_list_view = yes
+
+		assymetric_gibrid_war = { 
+
+			allowed = {
+				always = yes
+			}
+			
+			cost = 200
+
+			modifier = {
+				#cat_mobile_warfare_cost_factor = -0.15
+				army_speed_factor = 0.1
+				terrain_penalty_reduction = 0.1
+				supply_factor = 0.25
+			}
+		}
+		terror_as_main_weapon = { 
+
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				has_government = fundamentalism
+			}
+
+			cost = 200
+
+			modifier = {
+				#cat_mobile_warfare_cost_factor = -0.15
+				army_org_regain = 0.2
+				resistance_growth_on_our_occupied_states = 0.2
+			}
+		}
+		deep_penetration_war = { 
+
+			allowed = {
+				always = yes
+			}
+
+			cost = 200
+
+			modifier = {
+				#cat_mobile_warfare_cost_factor = -0.15
+				army_attack_factor = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		webcentrated_operative_compability = { 
+
+			allowed = {
+				always = yes
+			}
+			
+			available = {
+				OR = {
+					has_country_flag = USR_friend
+					has_country_flag = FRN_friend
+				}
+			}
+
+			cost = 200
+
+			modifier = {
+				#cat_mobile_warfare_cost_factor = -0.15
+				recon_factor = 0.05
+				coordination_bonus = 0.05
+				initiative_factor = 0.05
+			}
+		}
+	}
+}

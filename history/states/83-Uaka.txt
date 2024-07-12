@@ -1,0 +1,35 @@
+
+state={
+	id=83
+	name="STATE_83"
+
+	history={
+		owner = BLK
+		add_core_of = CRR
+		add_core_of = BLK
+		victory_points = {
+			4930 5 
+		}
+		buildings = {
+			air_base=1
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		CRR = {
+			set_province_controller = 4943
+			set_province_controller = 4940
+			set_province_controller = 4939
+			set_province_controller = 4933
+			set_province_controller = 4930
+		}
+	}
+
+	provinces={
+		13 327 494 1593 2183 2386 3152 4930 4931 4933 4939 4940 4943 
+	}
+	manpower=131691
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+﻿focus_tree = {
+	id = LIV_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LIV
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = LIV_libyan_eagle
+	#shared_focus = LIV_stabilizing_the_economy
+	#shared_focus = LIV_eternal_conflict
+}

@@ -1,0 +1,642 @@
+technologies = {
+
+	@YTIER0 = 0
+	@YTIER1 = 4
+	@YTIER2 = 8
+	@YTIER3 = 12
+	
+	@XRUS = -3
+	@XCHI = -1
+	@XUSA = 1
+	@XEUR = 3
+	@XIFV = 5
+	@XLAV = 7
+	
+	
+	tech_light_tank_legacy = {
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			light_tank_equipment_0
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_light_armor
+			armor
+		}
+	}
+	tech_medium_tank_legacy = {
+		research_cost = 0
+		start_year = 2000
+		
+		enable_equipments = {
+			medium_tank_equipment_legacy
+		}
+		
+
+			
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_medium_armor
+			armor
+		}
+	}
+	tech_mrap = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			mrap_car_equipment
+		}
+		
+		
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 8 }
+		}
+		
+		categories = {
+			#cat_medium_armor
+			armor
+		}
+	}
+	tech_ural = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			toyota_jeep
+		}
+		
+
+			
+		folder = {
+			name = armour_folder
+			position = { x = -5 y = 12 }
+		}
+		
+		categories = {
+			#cat_medium_armor
+			armor
+		}
+	}
+	
+	tech_mbt_ru_1 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_t62
+		}
+		
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		path = {
+			leads_to_tech = tech_mbt_ru_2
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XRUS y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_ru_2 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_t72
+		}
+		
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		
+
+		path = {
+			leads_to_tech = tech_mbt_ru_3
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XRUS y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_ru_3 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_t90
+		}
+		
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		dependencies = {
+			tech_mbt_ru_3 = 1
+		}
+
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XRUS y = @YTIER2 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	
+	tech_mbt_ch_1 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_type69
+		}
+
+
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+
+		path = {
+			leads_to_tech = tech_mbt_ch_2
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XCHI y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_ch_2 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_type85
+		}
+
+
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+
+		path = {
+			leads_to_tech = tech_mbt_ch_3
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XCHI y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_ch_3 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_type99
+		}
+
+
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		dependencies = {
+			tech_mbt_ch_3 = 1
+		}
+		
+
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XCHI y = @YTIER2 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	
+	tech_mbt_us_1 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_m60
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+
+		path = {
+			leads_to_tech = tech_mbt_us_2
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XUSA y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_us_2 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_m1a1
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+
+		path = {
+			leads_to_tech = tech_mbt_us_3
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XUSA y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_us_3 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_m2a1
+		}
+		
+		allow = {
+			has_country_flag = USR_friend
+		}
+
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XUSA y = @YTIER2 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+		
+		dependencies = {
+			tech_mbt_us_3 = 1
+		}
+	}
+	
+	tech_mbt_eu_1 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_leopard1
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+
+		path = {
+			leads_to_tech = tech_mbt_eu_2
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XEUR y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_eu_2 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_leopard2a1
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+
+		path = {
+			leads_to_tech = tech_mbt_eu_3
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XEUR y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_mbt_eu_3 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			modern_tank_equipment_leopard2a4
+		}	
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XEUR y = @YTIER2 }
+		}
+		
+		dependencies = {
+			tech_mbt_eu_3 = 1
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+		
+	
+	
+	tech_lav_1 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			armored_support_vehicle_equipment_x_2
+		}
+		
+		
+		path = {
+			leads_to_tech = tech_lav_2
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XLAV y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_lav_2 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			armored_support_vehicle_equipment_x_3
+		}
+		
+		path = {
+			leads_to_tech = tech_lav_3
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XLAV y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_lav_3 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			armored_support_vehicle_equipment_x_4
+		}
+		
+		path = {
+			leads_to_tech = tech_lav_4
+			research_cost_coeff = 1
+		}
+		
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XLAV y = @YTIER2 }
+		}
+		
+		dependencies = {
+			tech_lav_3 = 1
+		}
+		
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_lav_4 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			armored_support_vehicle_equipment_x_5
+		}
+		
+		dependencies = {
+			tech_lav_4 = 1
+		}
+		
+		
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XLAV y = @YTIER3 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_ifv_1 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			infantry_armored_transport_equipment_x
+		}
+		
+		enable_subunits = {
+			mechanized_infantry
+		}
+		
+		path = {
+			leads_to_tech = tech_ifv_2
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XIFV y = @YTIER0 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_ifv_2 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			infantry_armored_transport_equipment_x_2
+		}
+		
+		
+		path = {
+			leads_to_tech = tech_ifv_3
+			research_cost_coeff = 1
+		}
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XIFV y = @YTIER1 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_ifv_3 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			infantry_armored_transport_equipment_x_3
+		}
+		
+		path = {
+			leads_to_tech = tech_ifv_4
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			tech_ifv_3 = 1
+		}
+		
+			
+		folder = {
+			name = armour_folder
+			position = { x = @XIFV y = @YTIER2 }
+		}
+		
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	tech_ifv_4 = {
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			infantry_armored_transport_equipment_x_4
+		}
+		
+		dependencies = {
+			tech_ifv_4 = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = @XIFV y = @YTIER3 }
+		}
+		
+		categories = {
+			cat_modern_armor
+			armor
+		}
+	}
+	
+}		
+		
+		
+			
+		
+		
+		
+		

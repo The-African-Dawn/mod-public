@@ -1,0 +1,39 @@
+characters = {
+	
+	USR_Michael_Woods = {
+		name = USR_Michael_Woods
+		portraits = {
+			civilian = { large = "gfx/leaders/USR/Portrait_USR_Michael_Woods.dds" }
+			army = { large = "gfx/leaders/USR/Portrait_USR_Michael_Woods.dds" }
+	    }
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	USR_Michael_Langley = {
+		name = USR_Michael_Langley
+		portraits = {
+			civilian = { large = "gfx/leaders/USR/Portrait_USR_Michael_Langley.dds" }
+			army = { large = "gfx/leaders/USR/Portrait_USR_Michael_Langley.dds" }
+	    }
+
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

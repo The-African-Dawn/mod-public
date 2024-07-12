@@ -1,0 +1,27 @@
+
+state={
+	id=155
+	name="STATE_155"
+
+	history={
+		owner = SNG
+		add_core_of = SNG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 1
+		}
+		victory_points = {
+			4918 50
+		}
+	}
+
+	provinces={
+		4918 
+	}
+	manpower=2164282
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

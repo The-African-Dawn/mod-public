@@ -1,0 +1,249 @@
+division_template = {
+	name = "Bataillon d'infanterie"
+
+	regiments = {
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=0 y=3 }
+		light_infantry_opol={ x=0 y=4 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=1 y=3 }
+		light_infantry_opol={ x=1 y=4 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+		light_infantry_opol={ x=2 y=3 }
+		light_infantry_opol={ x=2 y=4 }
+	}
+	support={
+		artillery={ x=0 y=0 }
+	}
+}
+division_template = {
+	name = "Compagnie d'infanterie mécanisée"
+
+	regiments = {
+		infantry_on_btr={ x=0 y=0 }
+		infantry_on_btr={ x=0 y=1 }
+		infantry_on_btr={ x=0 y=2 }
+		infantry_on_btr={ x=0 y=3 }
+		light_armor_unit={ x=0 y=4 }
+		infantry_on_btr={ x=1 y=0 }
+		infantry_on_btr={ x=1 y=1 }
+		infantry_on_btr={ x=1 y=2 }
+		infantry_on_btr={ x=1 y=3 }
+		light_armor_unit={ x=1 y=4 }
+		infantry_on_btr={ x=2 y=0 }
+		infantry_on_btr={ x=2 y=1 }
+		infantry_on_btr={ x=2 y=2 }
+		infantry_on_btr={ x=2 y=3 }
+		light_armor_unit={ x=2 y=4 }
+		infantry_on_jeep={ x=3 y=0 }
+		infantry_on_jeep={ x=3 y=1 }
+		infantry_on_jeep={ x=3 y=2 }
+		infantry_on_jeep={ x=3 y=3 }
+		light_armor_unit={ x=3 y=4 }
+	}
+	support={
+		howitzer_support_unit = {x=0 y=0}
+	}
+}
+division_template = {
+	name = "Compagnie de chars"
+
+	regiments = {
+		medium_armor_unit={ x=0 y=0 }
+		medium_armor_unit={ x=0 y=1 }
+		medium_armor_unit={ x=0 y=2 }
+		medium_armor_unit={ x=1 y=0 }
+		medium_armor_unit={ x=1 y=1 }
+		medium_armor_unit={ x=1 y=2 }
+		infantry_on_jeep={ x=2 y=0 }
+		infantry_on_jeep={ x=2 y=1 }
+		infantry_on_jeep={ x=2 y=2 }
+		infantry_on_jeep={ x=3 y=0 }
+		infantry_on_jeep={ x=3 y=1 }
+		infantry_on_jeep={ x=3 y=2 }
+		light_armor_unit={ x=0 y=3 }
+		light_armor_unit={ x=1 y=3 }
+	}
+	support={
+		howitzer_support_unit = {x=0 y=0}
+	}
+}
+division_template = {
+	name = "Compagnie d'infanterie des forces spéciales"
+
+	regiments = {
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=0 y=3 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=1 y=3 }
+	}
+	support={
+		howitzer_support_unit = {x=0 y=0}
+	}
+}
+
+units = {
+	division= {	
+		location = 3016
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 1592
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 2528
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 1378
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 1320
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 1367
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 983
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 112
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 2902
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	
+	
+	division= {	
+		location = 2837
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 252
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 234
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 795
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4864
+		division_template = "Compagnie d'infanterie des forces spéciales"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4864
+		division_template = "Compagnie d'infanterie des forces spéciales"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 4865
+		division_template = "Compagnie d'infanterie mécanisée"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "CHD" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		location = 4861
+		division_template = "Compagnie d'infanterie mécanisée"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "CHD" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		location = 4864
+		division_template = "Compagnie d'infanterie mécanisée"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "CHD" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		location = 3061
+		division_template = "Compagnie d'infanterie mécanisée"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "CHD" creator = "FRN" amount = 16 } }
+	}
+	division= {	
+		location = 4865
+		division_template = "Compagnie de chars"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "CHD" creator = "RUS" amount = 30 } light_tank_equipment_0 = { owner = "CHD" creator = "FRN" amount = 8 } }
+	}
+	division= {	
+		location = 4861
+		division_template = "Compagnie de chars"
+		start_experience_factor = 0.12
+		start_equipment_factor = 0.75
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "CHD" creator = "CHN" amount = 48 } light_tank_equipment_0 = { owner = "CHD" creator = "FRN" amount = 8 } }
+	}
+}
+
+instant_effect = {
+
+	add_equipment_to_stockpile = { 
+		amount = 12
+		type = modern_tank_equipment_type69
+		producer = CHN
+	}
+	add_equipment_to_stockpile = { 
+		amount = 138
+		type = light_tank_equipment_0
+		producer = FRN
+	}
+	add_equipment_to_stockpile = { 
+		amount = 20
+		type = light_tank_equipment_0
+		producer = USR
+	}
+}

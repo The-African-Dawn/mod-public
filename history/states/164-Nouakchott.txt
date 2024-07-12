@@ -1,0 +1,27 @@
+
+state={
+	id=164
+	name="STATE_164"
+
+	history={
+		owner = MRV
+		add_core_of = MRV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 1
+		}
+		victory_points = {
+			4927 50
+		}
+	}
+
+	provinces={
+		4927 
+	}
+	manpower=1944543
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

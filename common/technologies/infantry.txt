@@ -1,0 +1,1013 @@
+technologies = {
+	
+	
+	Rifle_pizods = {
+		enable_equipments = {
+			waterpipe_rifle
+		}
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		
+		
+		enable_subunits = {
+			infantry
+			infantry_on_btr
+			infantry_on_bmp
+			infantry_on_jeep
+			
+			light_infantry_opol
+			light_infantry_opol_on_guntruck
+		}
+		path = {
+			leads_to_tech = AK_tech
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = M16_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1812
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = -3 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	AK_tech = {
+		enable_equipments = {
+			ak_0
+		}
+
+		allow = {
+			NOT = {
+				OR = {
+					has_country_flag = USR_COUNTRY
+					has_country_flag = FRN_COUNTRY
+				}
+			}
+		}
+		
+		enable_subunits = {
+
+			
+		}
+		path = {
+			leads_to_tech = AK_tech_2
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = QBZ_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2
+		start_year = 1949
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	AK_tech_2 = {
+		enable_equipments = {
+			ak_1
+		}
+
+		
+		allow = {
+			has_country_flag = RUS_friend
+		}
+
+		path = {
+			leads_to_tech = AK_tech_3
+			research_cost_coeff = 1
+		}		
+
+
+
+		research_cost = 2
+		start_year = 1991
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	AK_tech_3 = {
+		enable_equipments = {
+			ak_2
+		}
+		allow = {
+			has_country_flag = RUS_COUNTRY
+		}
+		research_cost = 3
+		start_year = 2016
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 15 }
+		}
+		
+		dependencies = {
+			AK_tech_3 = 1
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	QBZ_tech = {
+		enable_equipments = {
+			qbz_0
+		}
+
+
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = QBZ_tech_2
+			research_cost_coeff = 1
+		}		
+
+
+
+		research_cost = 2
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	QBZ_tech_2 = {
+		enable_equipments = {
+			qbz_1
+		}
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		
+		enable_subunits = {
+		}
+		
+
+		allow = {
+			has_country_flag = CHN_COUNTRY
+		}
+		research_cost = 3
+		start_year = 2019
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 15 }
+		}
+		
+		dependencies = {
+			QBZ_tech_2 = 1
+		}
+
+
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	M16_tech = {
+		enable_equipments = {
+			M16_0
+		}
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		
+		enable_subunits = {
+		}
+
+		allow = {
+			NOT = {
+				has_country_flag = RUS_COUNTRY
+			}
+		}
+		
+		path = {
+			leads_to_tech = FAMAS_tech
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = M16_tech_2
+			research_cost_coeff = 1
+		}	
+
+		# path = {
+		# 	leads_to_tech = modern_camouflage_tech
+		# 	research_cost_coeff = 1
+		# }
+
+		research_cost = 2
+		start_year = 1964
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	M16_tech_2 = {
+		enable_equipments = {
+			M16_1
+		}
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		enable_subunits = {
+		}
+
+
+		path = {
+			leads_to_tech = M16_tech_3
+			research_cost_coeff = 1
+		}		
+
+
+		research_cost = 2
+		start_year = 1967
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	M16_tech_3 = {
+		enable_equipments = {
+			M16_2
+		}
+
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		
+		enable_subunits = {
+		}
+		
+		dependencies = {
+			M16_tech_3 = 1
+		}
+		
+		# path = {
+		# 	leads_to_tech = FAMAS_tech
+		# 	research_cost_coeff = 1
+		# }		
+		allow = {
+			has_country_flag = USR_COUNTRY
+		}
+		research_cost = 3
+		start_year = 2022
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 15 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FAMAS_tech = {
+		enable_equipments = {
+			FAMAS_1
+		}
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		enable_subunits = {
+		}
+		path = {
+			leads_to_tech = FAMAS_tech_2
+			research_cost_coeff = 1
+		}		
+
+
+
+		research_cost = 2
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+	FAMAS_tech_2 = {
+		enable_equipments = {
+			FAMAS_2
+		}
+
+
+		#enable_equipment_modules = {
+		#	tank_heavy_machine_gun
+		#	secondary_turret_hmg
+		#	additional_machine_guns
+		#}
+		
+		enable_subunits = {
+		}
+		
+		# path = {
+		# 	leads_to_tech = infantry_weapons1
+		# 	research_cost_coeff = 1
+		# }		
+		allow = {
+			has_country_flag = FRN_COUNTRY
+		}
+		
+		dependencies = {
+			FAMAS_tech_2 = 1
+		}
+		research_cost = 3
+		start_year = 2005
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 15 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	modern_armor_vest_tech = {
+
+		category_all_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+
+		path = {
+			leads_to_tech = modern_optics_tech
+			research_cost_coeff = 2
+		}
+		research_cost = 1.5
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = 11 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	modern_camouflage_tech = {
+
+		category_all_infantry = {
+			acclimatization_hot_climate_gain_factor = 0.1
+		}
+		cas_damage_reduction = 0.1
+		coordination_bonus = 0.05
+
+		# path = {
+		# 	leads_to_tech = mm_grenade_launchers_tech
+		# 	research_cost_coeff = 2
+		# }
+
+		path = {
+			leads_to_tech = modern_optics_tech
+			research_cost_coeff = 2
+		}
+		research_cost = 1.5
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = 9 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mm_grenade_launchers_tech = {
+		allow = {
+			or = {
+				has_tech = AK_tech_2
+				has_tech = M16_tech_2
+				has_tech = QBZ_tech
+				has_tech = FAMAS_tech
+			}
+		}
+		category_all_infantry = {
+			defense = 0.03
+			soft_attack = 0.03
+			supply_consumption = 0.01
+		}
+		path = {
+			leads_to_tech = upgraded_modern_vests
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 6 }
+		}
+		path = {
+			leads_to_tech = cumulative_grenade_launchers_tech
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cumulative_grenade_launchers_tech = {
+		allow = {
+			OR = {
+				has_tech = M16_tech_2
+				has_tech = QBZ_tech
+				has_tech = FAMAS_tech
+			}
+		}
+		category_all_infantry = {
+			ap_attack = 0.05
+		}
+
+
+		research_cost = 1
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = 12 y = 6 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	modern_optics_tech = {
+
+		category_all_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		path = {
+			leads_to_tech = mm_grenade_launchers_tech
+			research_cost_coeff = 1
+		}
+		allow = {
+			or = {
+				has_tech = AK_tech
+				has_tech = M16_tech
+			}
+		}
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pnv_1 = {
+		category_all_infantry = {
+			soft_attack = 0.02
+		}
+		land_night_attack = 0.03
+		allow = {
+			or = {
+				has_tech = AK_tech
+				has_tech = M16_tech
+			}
+		}
+		research_cost = 2
+		start_year = 1975
+		folder = {
+			name = infantry_folder
+			position = { x = -4 y = 17 }
+		}
+		path = {
+			leads_to_tech = pnv_2
+			research_cost_coeff = 1
+		}
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pnv_2 = {
+		allow = {
+			or = {
+				has_tech = AK_tech_2
+				has_tech = M16_tech_2
+				has_tech = QBZ_tech
+				has_tech = FAMAS_tech
+			}
+		}
+		land_night_attack = 0.03
+		path = {
+			leads_to_tech = pnv_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 17 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pnv_3 = {
+		land_night_attack = 0.06
+		allow = {
+			or = {
+				has_tech = AK_tech_3
+				has_tech = M16_tech_3
+				has_tech = QBZ_tech_2
+				has_tech = FAMAS_tech_2
+			}
+		}
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 17 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	upgraded_modern_vests = {
+
+		allow = {
+			or = {
+				has_tech = AK_tech_2
+				has_tech = M16_tech_2
+				has_tech = QBZ_tech
+				has_tech = FAMAS_tech
+			}
+		}
+		category_all_infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		experience_loss_factor = -0.1
+		path = {
+			leads_to_tech = modern_thermal_optics_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x =10 y = 9 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# usage_fpv_drones = {
+
+	# 	category_all_infantry = {
+	# 		breakthrough = 0.02
+	# 	}
+	# 	recon_factor_while_entrenched = 0.03
+	# 	recon_factor = 0.03
+
+	# 	research_cost = 1.5
+	# 	start_year = 1918
+	# 	folder = {
+	# 		name = infantry_folder
+	# 		position = { x = -1 y = 6 }
+	# 	}
+		
+	# 	categories = {
+	# 		infantry_weapons
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	use_gps_tech = {
+		allow = {
+			or = {
+				has_tech = AK_tech_3
+				has_tech = M16_tech_3
+				has_tech = QBZ_tech_2
+				has_tech = FAMAS_tech_2
+			}
+		}
+		recon_factor = 0.02
+		coordination_bonus = 0.05
+		initiative_factor = 0.1
+		max_planning_factor = 0.05
+
+		research_cost = 3
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 15 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	modern_thermal_optics_tech = {
+		allow = {
+			or = {
+				has_tech = AK_tech_3
+				has_tech = M16_tech_3
+				has_tech = QBZ_tech_2
+				has_tech = FAMAS_tech_2
+			}
+		}
+		category_all_infantry = {
+			soft_attack = 0.03
+		}
+		land_night_attack = 0.1
+		path = {
+			leads_to_tech = use_gps_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 3
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 13 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+
+
+
+
+	tech_specnaz = {
+		enable_equipments = {
+			spec_oborud_equipment_0
+		}
+
+		enable_subunits = {
+			speznaz
+		}
+		path = {
+			leads_to_tech = tech_multicam
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_pnv
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = -6 }
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+	tech_pnv = {
+
+		speznaz = {
+			breakthrough = 0.02
+			suppression = 0.2
+		}
+
+		path = {
+			leads_to_tech = tech_pnv_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_perev
+			research_cost_coeff = 2
+		}
+		research_cost = 2.5
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = -8 }
+		}
+		allow = {
+			has_tech = upgraded_modern_vests
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+	tech_perev = {
+		speznaz = {
+			max_organisation = 3
+		}
+
+		show_equipment_icon = yes
+		on_research_complete = {
+			add_ideas = Tech_perev_idea
+		}
+		research_cost = 3
+		start_year = 2000
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = -6 }
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+
+	tech_pnv_2 = {
+
+		path = {
+			leads_to_tech = tech_specnaz_69
+			research_cost_coeff = 1
+		}
+		speznaz = {
+			max_organisation = 5
+			breakthrough = 0.02
+			
+		}
+		research_cost = 2.5
+		start_year = 2000
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = -8 }
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+	tech_multicam = {
+
+		path = {
+			leads_to_tech = tech_perev
+			research_cost_coeff = 2
+		}
+		path = {
+			leads_to_tech = tech_multicam_2
+			research_cost_coeff = 1
+		}
+
+		speznaz = {
+			acclimatization_hot_climate_gain_factor = 0.1
+			defense = 0.05
+		}
+		research_cost = 2.5
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = -4 }
+		}
+
+		allow = {
+			has_tech = modern_camouflage_tech
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+	tech_multicam_2 = {
+
+		path = {
+			leads_to_tech = tech_specnaz_69
+			research_cost_coeff = 1
+		}
+		speznaz = {
+			acclimatization_hot_climate_gain_factor = 0.1
+			soft_attack = 0.02
+		}
+		
+		special_forces_min = 40
+		
+		research_cost = 2.5
+		start_year = 2000
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = -4 }
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+
+	tech_specnaz_69 = {
+
+		# path = {
+		# 	leads_to_tech = motorised_infantry
+		# 	research_cost_coeff = 1
+		# }
+		
+		special_forces_training_time_factor = -0.1
+		special_forces_cap = 0.10
+		
+		research_cost = 3
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = 9 y = -6 }
+		}
+		
+		categories = {
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+
+		}
+	}
+}

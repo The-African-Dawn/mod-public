@@ -1,0 +1,30 @@
+scripted_gui = {
+
+	bottom_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "bottom_gui"
+
+		visible = {
+
+		}
+
+		triggers = {
+
+		}
+
+		effects = {
+			chita_small_custom_gui_opener_click = {
+				if = {
+					limit = { has_country_flag = TDOA_State_Info_Screen_Visible }
+					clr_country_flag = TDOA_State_Info_Screen_Visible
+				}
+				else = { set_country_flag = TDOA_State_Info_Screen_Visible }
+			}
+		}
+
+		properties = {
+		
+		}
+	}
+}

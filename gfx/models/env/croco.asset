@@ -1,0 +1,5 @@
+
+animation = {
+	name = "croc_idle_anim"
+	file = "croc_idle.anim"
+}

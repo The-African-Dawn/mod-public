@@ -1,0 +1,18 @@
+characters = {
+
+	CHN_Liang_Yang = {
+		name = CHN_Liang_Yang
+		
+		portraits = {
+			civilian = { large = "gfx/leaders/CHN/Portrait_CHN_Liang_Yang.dds" }
+			army = { large = "gfx/leaders/CHN/Portrait_CHN_Liang_Yang.dds" }
+	    }
+		country_leader = {
+			ideology = сhina_pragmatism_sub
+			desc = CHN_Liang_Yang_desc
+			expire = "3000.1.1.1"
+		}
+
+	}
+
+}

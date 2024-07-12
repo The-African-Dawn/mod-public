@@ -1,0 +1,9 @@
+
+animation = {
+	name = "toyota_idle_animation"
+	file = "toyota_idle.anim"
+}
+animation = {
+	name = "toyota_move_animation"
+	file = "toyota_move.anim"
+}

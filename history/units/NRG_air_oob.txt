@@ -1,0 +1,11 @@
+
+air_wings = {
+	36 = {
+		fighter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 4 } 
+		attack_helicopter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 4 } 
+		transport_helicopter_airframe_0 = { owner = "FRN" creator = "FRN" amount = 4 } 
+	}
+	41 = {
+		uav_airframe_0 = { owner = "FRN" creator = "FRN" amount = 4 } 
+	}
+}

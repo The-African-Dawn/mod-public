@@ -1,0 +1,25 @@
+music_station = "african_drums_station"
+
+		
+	music = {
+	song = "This_Is_Africa"
+	chance = { factor = 1 }}
+	
+	music = {
+	song = "African"
+	chance = { factor = 1 }}
+	
+	music = {
+	song = "Africa"
+	chance = { factor = 1 }}
+	
+	music = {
+	song = "Safari"
+	chance = { factor = 1 }}
+	
+	music = {
+	song = "percussion"
+	chance = { factor = 1 }}
+	
+
+	

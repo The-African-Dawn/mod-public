@@ -1,0 +1,210 @@
+
+division_template = {
+	name = "Light Infantry Battalion"
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+
+	}
+}
+division_template = {
+	name = "Infantry battalion"
+	regiments={
+		infantry={ x=0 y=0 }
+		infantry={ x=0 y=1 }
+		infantry={ x=0 y=2 }
+		infantry={ x=1 y=0 }
+		infantry={ x=1 y=1 }
+		infantry={ x=1 y=2 }
+		infantry={ x=2 y=0 }
+		infantry={ x=2 y=1 }
+		infantry={ x=2 y=2 }
+	}
+}
+units = {
+	division= {	
+		name = "Infantry battalion"
+		location = 1183
+		division_template = "Infantry battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Infantry battalion"
+		location = 1183
+		division_template = "Infantry battalion"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Light Infantry Battalion"
+		location = 4931
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}	
+	division= {	
+		name = "Light Infantry Battalion"
+		location = 4931
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Light Infantry Battalion"
+		location = 4931
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Light Infantry Battalion"
+		location = 2183
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+		division= {	
+		name = "Light Infantry Battalion"
+		location = 1879
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 4934
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 4938
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 839
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 44
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 2231
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 2234
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 874
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 327
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+			division= {	
+		name = "Light Infantry Battalion"
+		location = 2228
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 3132
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 3132
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 343
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 258
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 3156
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 1575
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+					division= {	
+		name = "Light Infantry Battalion"
+		location = 258
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 3156
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+				division= {	
+		name = "Light Infantry Battalion"
+		location = 1575
+		division_template = "Light Infantry Battalion"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+}

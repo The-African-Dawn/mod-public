@@ -1,0 +1,13 @@
+
+animation = {
+	name = "wma301_attack_animation"
+	file = "wma301_attack.anim"
+}
+animation = {
+	name = "wma301_idle_animation"
+	file = "wma301_idle.anim"
+}
+animation = {
+	name = "wma301_move_animation"
+	file = "wma301_move.anim"
+}

@@ -1,0 +1,156 @@
+division_template = {
+	name = "Bataillon Interarmes"
+
+	support={
+		signal_company={ x=0 y=0 }
+	}
+	regiments={
+		infantry_on_bmp={ x=0 y=0 }
+		infantry_on_btr={ x=1 y=0 }
+		infantry_on_btr={ x=1 y=1 }
+		light_infantry_opol_on_guntruck={ x=2 y=0 }
+		light_infantry_opol_on_guntruck={ x=2 y=1 }
+		light_armor_unit={ x=3 y=0 }
+	}
+}
+division_template = {
+	name = "Presidential Guard"
+
+	support={
+		engineer={ x=0 y=0 }
+		signal_company={ x=0 y=1 }
+		howitzer_support_unit={ x=0 y=2 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+		light_armor_unit={ x=3 y=0 }
+	}
+}
+division_template = {
+	name = "Bataillon Commando Parachutiste"
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+	}
+}
+division_template = {
+	name = "Rapid Intervention Force"
+
+	regiments={
+		light_infantry_opol_on_guntruck={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+		light_infantry_opol_on_guntruck={ x=1 y=1 }
+		light_infantry_opol_on_guntruck={ x=1 y=2 }
+		light_infantry_opol_on_guntruck={ x=2 y=0 }
+		light_infantry_opol_on_guntruck={ x=2 y=1 }
+		light_infantry_opol_on_guntruck={ x=2 y=2 }
+		light_infantry_opol_on_guntruck={ x=3 y=0 }
+		light_infantry_opol_on_guntruck={ x=3 y=1 }
+		light_infantry_opol_on_guntruck={ x=3 y=2 }
+	}
+}
+division_template = {
+	name = "Groupement Blindé"
+
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		signal_company={ x=0 y=1 }
+		logistics_company={ x=0 y=2 }
+	}
+	regiments={
+		medium_armor_unit={ x=0 y=0 }
+		light_armor_unit={ x=0 y=1 }
+		light_armor_unit={ x=0 y=2 }
+		light_armor_unit={ x=1 y=0 }
+		light_armor_unit={ x=1 y=1 }
+		light_armor_unit={ x=1 y=2 }
+		light_armor_unit={ x=2 y=0 }
+		light_armor_unit={ x=2 y=1 }
+		light_armor_unit={ x=2 y=2 }
+		light_armor_unit={ x=3 y=0 }
+		light_armor_unit={ x=3 y=1 }
+	}
+}
+
+units = {
+	division= {	
+		location = 1596
+		name = "Rapid Intervention Force"
+		division_template = "Rapid Intervention Force"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 4879
+		name = "1 régiment para-commando"
+		division_template = "Bataillon Commando Parachutiste"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		location = 4879
+		name = "1 régiment de la Garde Présidentielle"
+		division_template = "Presidential Guard"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "TGG" creator = "FRN" amount = 4 } }
+	}
+	division= {	
+		location = 845
+		name = "1er Bataillon Interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "TGG" creator = "FRN" amount = 4 } }
+	}
+	division= {	
+		location = 4885
+		name = "2e Bataillon Interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "TGG" creator = "FRN" amount = 4 } }
+	}
+	division= {	
+		location = 4883
+		name = "3e Bataillon Interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "TGG" creator = "FRN" amount = 4 } }
+	}
+	division= {	
+		location = 3136
+		name = "4e Bataillon Interarmes"
+		division_template = "Bataillon Interarmes"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "TGG" creator = "FRN" amount = 2 } }
+	}
+	division= {	
+		location = 4879
+		name = "1er Groupement Blindé"
+		division_template = "Groupement Blindé"
+		start_experience_factor = 0.07
+		start_equipment_factor = 0.75
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "CHD" creator = "RUS" amount = 4 } light_tank_equipment_0 = { owner = "TGG" creator = "USR" amount = 36 } }
+	}
+}
+
+instant_effect = {
+}

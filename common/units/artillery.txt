@@ -1,0 +1,167 @@
+sub_units = {
+
+atgm_support_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+		affects_speed = no
+		priority = 0
+		ai_priority = 0
+		
+		active = no 
+		
+		transport = infantry_carrying_armored_vehicle
+		
+		group = support
+		
+		type = {
+			support
+			anti_tank
+		}
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+        }
+		
+		essential = {
+			ATGM_equipment
+		}
+		
+		need = {
+			ATGM_equipment = 10
+		}
+		
+		battalion_mult = {
+			category = category_all_infantry
+			hard_attack = 0.1
+			add = no
+		}
+		battalion_mult = {
+			category = category_all_infantry
+			ap_attack = 65
+			add = yes
+		}
+		
+		manpower = 50
+		max_strength = 0.2
+		training_time = 120
+		weight = 0.5
+		default_morale = 0.2
+		max_organisation = 5
+		combat_width = 0
+		supply_consumption = 0.1
+
+		can_be_parachuted = yes
+	}
+	
+	manpads_support_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+		affects_speed = no
+		priority = 0
+		ai_priority = 0
+		
+		active = no 
+		
+		transport = infantry_carrying_armored_vehicle
+		
+		group = support
+		
+		type = {
+			support
+			anti_tank
+		}
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+        }
+		
+		essential = {
+			manpads_equipment
+		}
+		
+		need = {
+			manpads_equipment = 10
+		}
+		
+		battalion_mult = {
+			category = category_all_infantry
+			air_attack = 0.2
+			add = no
+		}
+		
+		manpower = 50
+		max_strength = 0.2
+		training_time = 120
+		weight = 0.5
+		default_morale = 0.2
+		max_organisation = 5
+		combat_width = 0
+		supply_consumption = 0.1
+
+		can_be_parachuted = yes
+	}
+	
+	howitzer_support_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+		affects_speed = no
+		priority = 0
+		ai_priority = 0
+		
+		active = no 
+		
+		transport = infantry_carrying_armored_vehicle
+		
+		group = support
+		
+		type = {
+			support
+			anti_tank
+		}
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+        }
+		
+		essential = {
+			howitzer_equipment
+		}
+		
+		need = {
+			howitzer_equipment = 10
+		}
+		
+		battalion_mult = {
+			category = category_all_infantry
+			soft_attack = 0.1
+			add = no
+		}
+		
+		battalion_mult = {
+			category = category_all_infantry
+			breakthrough = 0.1
+			add = no
+		}
+		
+		manpower = 50
+		max_strength = 0.2
+		training_time = 120
+		weight = 0.5
+		default_morale = 0.2
+		max_organisation = 5
+		combat_width = 0
+		supply_consumption = 0.1
+
+		can_be_parachuted = yes	
+	}
+	
+}

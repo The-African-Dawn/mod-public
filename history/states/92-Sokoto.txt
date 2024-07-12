@@ -1,0 +1,25 @@
+
+state={
+	id=92
+	name="STATE_92"
+	resources={
+		oil = 5
+	}
+	history={
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3009 3 
+		}
+	}
+	state_category = town
+	provinces={
+		608 1006 1089 1152 3009 3023 3038 
+	}
+	manpower=12406239
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

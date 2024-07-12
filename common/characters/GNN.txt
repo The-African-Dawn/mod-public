@@ -1,0 +1,66 @@
+characters = {
+	GNN_HAHA_SKUF = {
+		name = GNN_HAHA_SKUF
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GNN/Portrait_GNN_Nana_Akufo.dds"
+			}
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = {
+				large = "gfx/leaders/GNN/Portrait_GNN_Nana_Akufo.dds"
+			}
+		}
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	GNN_Ivor_Kobina_Greenstreet = {
+		name = GNN_Ivor_Kobina_Greenstreet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GNN/GNN_Ivor_Kobina_Greenstreet.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	GNN_Dominic_Nitiwul = {
+		name = GNN_Dominic_Nitiwul
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GNN/Portrait_GNN_Dominic_Nitiwul.dds"
+				small = "gfx/advisors/Portrait_GNN_Dominic_Nitiwul.dds"
+			}
+			army = {
+				large = "gfx/leaders/GNN/Portrait_GNN_Dominic_Nitiwul.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = dominic_nitiwul
+			ledger = army
+			allowed = {
+				original_tag = GNN
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+
+state={
+	id=65
+	name="STATE_65"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = NIG
+		add_core_of = NIG
+		victory_points = {
+			2996 10 
+		}
+		victory_points = {
+			1744 2 
+		}
+		victory_points = {
+			669 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+
+		}
+		ISS = {
+			set_province_controller = 2958
+			set_province_controller = 669
+			set_province_controller = 316
+			set_province_controller = 5017
+			set_province_controller = 5019
+
+		}
+
+	}
+
+	provinces={
+		316 669 813 1442 1744 2276 2958 2994 2996 5010 5011 5012 5013 5016 5017 5018 5019 5020 5021 5022 5023 5024 
+	}
+	manpower=3749330
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

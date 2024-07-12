@@ -1,0 +1,1603 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+#####################################
+### emergency_factory_conversion ####
+#####################################
+
+#This is going to give misleading and ugly tooltips. Making it nice will take effort. TODO_WTT_CD make nice or ignore and remove comment. Easiest solution is just making a custom tooltip that says "5 civilian factories will be converted to military factories" and ignore telling the player the states where it will happen.
+
+calculate_amount_of_getting_pp = {
+	set_variable = { oil_selling = resource_produced@oil }
+	subtract_from_variable = { oil_selling = total_market_buying_1 }
+	multiply_variable = { oil_selling = 1 }
+	if = {
+		limit = {
+			check_variable = { oil_selling < 0 }
+		}
+		set_variable = { oil_selling = 0 }
+	}
+
+	set_variable = { aluminium_selling = resource_produced@aluminium }
+	subtract_from_variable = { aluminium_selling = total_market_buying_2 }
+	multiply_variable = { aluminium_selling = 0.4 }
+	if = {
+		limit = {
+			check_variable = { aluminium_selling < 0 }
+		}
+		set_variable = { aluminium_selling = 0 }
+	}
+
+	set_variable = { rubber_selling = resource_produced@rubber }
+	subtract_from_variable = { rubber_selling = total_market_buying_3 }
+	multiply_variable = { rubber_selling = 0.9 }
+	if = {
+		limit = {
+			check_variable = { rubber_selling < 0 }
+		}
+		set_variable = { rubber_selling = 0 }
+	}
+
+	set_variable = { tungsten_selling = resource_produced@tungsten }
+	subtract_from_variable = { tungsten_selling = total_market_buying_4 }
+	multiply_variable = { tungsten_selling = 0.6 }
+	if = {
+		limit = {
+			check_variable = { tungsten_selling < 0 }
+		}
+		set_variable = { tungsten_selling = 0 }
+	}
+
+	set_variable = { steel_selling = resource_produced@steel }
+	subtract_from_variable = { steel_selling = total_market_buying_5 }
+	multiply_variable = { steel_selling = 0.5 }
+	if = {
+		limit = {
+			check_variable = { steel_selling < 0 }
+		}
+		set_variable = { steel_selling = 0 }
+	}
+
+	set_variable = { chromium_selling = resource_produced@chromium }
+	subtract_from_variable = { chromium_selling = total_market_buying_6 }
+	multiply_variable = { chromium_selling = 0.9 }
+	if = {
+		limit = {
+			check_variable = { chromium_selling < 0 }
+		}
+		set_variable = { chromium_selling = 0 }
+	}
+
+	set_variable = { gold_selling = 0 }
+	every_controlled_state = {
+		limit = {
+			check_variable = { THIS.amount_of_gold > 0 }
+		}
+		add_to_variable = { PREV.gold_selling = THIS.amount_of_gold }
+	}
+	multiply_variable = { gold_selling = 3}
+
+	set_variable = { diamonds_selling = 0 }
+	every_controlled_state = {
+		limit = {
+			check_variable = { THIS.amount_of_diamonds > 0 }
+		}
+		add_to_variable = { PREV.diamonds_selling = THIS.amount_of_diamonds }
+	}
+	multiply_variable = { diamonds_selling = 6}
+
+	set_variable = { uran_selling = 0 }
+	every_controlled_state = {
+		limit = {
+			check_variable = { THIS.amount_of_uran > 0 }
+		}
+		add_to_variable = { PREV.uran_selling = THIS.amount_of_uran }
+	}
+	multiply_variable = { uran_selling = 5}
+
+	set_variable = { amountofmonthlygettingppmarket = 0 }
+	add_to_variable = { amountofmonthlygettingppmarket = oil_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = tungsten_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = rubber_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = chromium_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = aluminium_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = steel_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = gold_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = diamonds_selling }
+	add_to_variable = { amountofmonthlygettingppmarket = uran_selling }
+}
+
+fake_ai_market_pre_2025 = {
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment < 1000
+			}
+		}
+		set_country_flag = buyed_weapons_not_delivered
+		set_variable = { market_bought_old_market_tab_selected = 0 }
+		set_variable = { market_bought_old_popup_selected_offert = 7 }
+		set_variable = { market_bought_old_popup_selected_amount = 400 }
+		
+		add_political_power = -100
+		
+		country_event = { id = market.1 days = 14 }
+		
+		else_if = {
+			limit = {
+				has_equipment = {
+					ATGM_equipment < 100
+				}
+			}
+			set_country_flag = buyed_weapons_not_delivered
+			set_variable = { market_bought_old_market_tab_selected = 0 }
+			set_variable = { market_bought_old_popup_selected_offert = 9 }
+			set_variable = { market_bought_old_popup_selected_amount = 100 }
+			
+			add_political_power = -100
+			country_event = { id = market.1 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_equipment = {
+					mrap_equipment < 20
+				}
+				has_template_containing_unit = infantry_on_jeep
+			}
+			set_country_flag = buyed_weapons_not_delivered
+			
+			random_list = {
+				50 = {
+					set_variable = { market_bought_old_market_tab_selected = 0 }
+				}
+				50 = {
+					set_variable = { market_bought_old_market_tab_selected = 2 }
+				}
+			}
+			set_variable = { market_bought_old_popup_selected_offert = 14 }
+			set_variable = { market_bought_old_popup_selected_amount = 75 }
+			
+			add_political_power = -100
+			country_event = { id = market.1 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_equipment = {
+					light_tank_chassis < 20
+				}
+				has_template_containing_unit = light_armor_unit
+			}
+			set_country_flag = buyed_weapons_not_delivered
+			
+			random_list = {
+				50 = {
+					set_variable = { market_bought_old_market_tab_selected = 1 }
+				}
+				50 = {
+					set_variable = { market_bought_old_market_tab_selected = 2 }
+				}
+			}
+			set_variable = { market_bought_old_popup_selected_offert = 10 }
+			set_variable = { market_bought_old_popup_selected_amount = 20 }
+			
+			add_political_power = -80
+			country_event = { id = market.1 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_equipment = {
+					medium_tank_chassis < 10
+				}
+				has_template_containing_unit = medium_armor_unit
+			}
+			set_country_flag = buyed_weapons_not_delivered
+			market_bought_old_market_tab_selected = 0
+			set_variable = { market_bought_old_popup_selected_offert = 11 }
+			set_variable = { market_bought_old_popup_selected_amount = 8 }
+			
+			add_political_power = -42
+			country_event = { id = market.1 days = 14 }
+		}
+		else_if = {
+			limit = {
+				has_equipment = {
+					infantry_carrying_armored_vehicle < 30
+				}
+				has_template_containing_unit = infantry_on_btr
+			}
+			set_country_flag = buyed_weapons_not_delivered
+			market_bought_old_market_tab_selected = 0
+			set_variable = { market_bought_old_popup_selected_offert = 12 }
+			set_variable = { market_bought_old_popup_selected_amount = 20 }
+			
+			add_political_power = -90
+			country_event = { id = market.1 days = 14 }
+		}
+	}
+}
+
+fake_ai_market_preparing_for_war = {
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment < 2000
+			}
+		}
+		set_variable = { prep_fake_ai_infantry_equipment = 20 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				ATGM_equipment < 200
+			}
+		}
+		set_variable = { prep_fake_ai_ATGM_equipment = 10 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				mrap_equipment < 20
+			}
+			has_template_containing_unit = infantry_on_jeep
+		}
+		set_variable = { prep_fake_ai_mrap_equipment = 10 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				light_tank_chassis < 35
+			}
+			has_template_containing_unit = light_armor_unit
+		}
+		set_variable = { prep_fake_ai_light_tank_chassis = 7 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				medium_tank_chassis < 20
+			}
+			has_template_containing_unit = medium_armor_unit
+		}
+		set_variable = { prep_fake_ai_medium_tank_chassis = 5 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_carrying_armored_vehicle < 50
+			}
+			has_template_containing_unit = infantry_on_btr
+		}
+		set_variable = { prep_fake_infantry_carrying_armored_vehicle = 6 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				armored_support_vehicle_chassis < 20
+			}
+			has_template_containing_unit = infantry_on_bmp
+		}
+		set_variable = { prep_fake_armored_support_vehicle_chassis = 6 }
+	}
+
+	set_variable = { prep_fake_light_plane = 3 }
+	set_variable = { prep_fake_heavy_plane_plane = 3 }
+
+	random_list = {
+		var:prep_fake_ai_infantry_equipment = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = pragmatism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 7 }
+			set_variable = { market_bought_old_popup_selected_amount = 2000 }
+			
+			add_political_power = -200
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_ai_ATGM_equipment = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = pragmatism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 9 }
+			set_variable = { market_bought_old_popup_selected_amount = 200 }
+			
+			add_political_power = -150
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_ai_mrap_equipment = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = pragmatism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 14 }
+			set_variable = { market_bought_old_popup_selected_amount = 75 }
+			
+			add_political_power = -100
+			country_event = { id = market.1 days = 14 }
+		}
+	
+		var:prep_fake_ai_light_tank_chassis = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 1 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 10 }
+			set_variable = { market_bought_old_popup_selected_amount = 100 }
+			
+			add_political_power = -300
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_ai_medium_tank_chassis = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 11 }
+			set_variable = { market_bought_old_popup_selected_amount = 200 }
+			
+			add_political_power = -300
+			country_event = { id = market.1 days = 14 }
+		}
+	
+		var:prep_fake_infantry_carrying_armored_vehicle = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 12 }
+			set_variable = { market_bought_old_popup_selected_amount = 200 }
+			
+			add_political_power = -350
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_armored_support_vehicle_chassis = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 13 }
+			set_variable = { market_bought_old_popup_selected_amount = 99 }
+			
+			add_political_power = -300
+			country_event = { id = market.1 days = 14 }
+		}
+	
+		var:prep_fake_light_plane = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = francocentrism }
+				}
+				random_list = {
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 15 }
+			set_variable = { market_bought_old_popup_selected_amount = 5 }
+			
+			add_political_power = -317
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_heavy_plane_plane = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					OR = { has_government = panafricanism has_government = pragmatism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 15 }
+			set_variable = { market_bought_old_popup_selected_amount = 5 }
+			
+			add_political_power = -500
+			country_event = { id = market.1 days = 14 }
+		}
+	}
+}
+
+fake_ai_market_war = {
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment < 3000
+			}
+		}
+		set_variable = { prep_fake_ai_infantry_equipment = 35 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				ATGM_equipment < 200
+			}
+		}
+		set_variable = { prep_fake_ai_ATGM_equipment = 20 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				light_tank_chassis < 35
+			}
+			has_template_containing_unit = light_armor_unit
+		}
+		set_variable = { prep_fake_ai_light_tank_chassis = 10 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				medium_tank_chassis < 20
+			}
+			has_template_containing_unit = medium_armor_unit
+		}
+		set_variable = { prep_fake_ai_medium_tank_chassis = 10 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				mrap_equipment < 100
+			}
+			has_template_containing_unit = infantry_on_jeep
+		}
+		set_variable = { prep_fake_ai_mrap_equipment = 21 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_carrying_armored_vehicle < 50
+			}
+			has_template_containing_unit = infantry_on_btr
+		}
+		set_variable = { prep_fake_infantry_carrying_armored_vehicle = 10 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				armored_support_vehicle_chassis < 20
+			}
+			has_template_containing_unit = infantry_on_bmp
+		}
+		set_variable = { prep_fake_armored_support_vehicle_chassis = 10 }
+	}
+
+	set_variable = { prep_fake_light_plane = 2 }
+	set_variable = { prep_fake_heavy_plane_plane = 2 }
+
+	random_list = {
+		var:prep_fake_ai_infantry_equipment = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = pragmatism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 7 }
+			set_variable = { market_bought_old_popup_selected_amount = 2000 }
+			
+			add_political_power = -200
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_ai_ATGM_equipment = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = pragmatism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 9 }
+			set_variable = { market_bought_old_popup_selected_amount = 200 }
+			
+			add_political_power = -150
+			country_event = { id = market.1 days = 14 }
+		}
+		var:prep_fake_ai_mrap_equipment = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = pragmatism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 14 }
+			set_variable = { market_bought_old_popup_selected_amount = 100 }
+			
+			add_political_power = -100
+			country_event = { id = market.1 days = 14 }
+		}
+		var:prep_fake_ai_light_tank_chassis = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 1 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 10 }
+			set_variable = { market_bought_old_popup_selected_amount = 100 }
+			
+			add_political_power = -300
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_ai_medium_tank_chassis = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 11 }
+			set_variable = { market_bought_old_popup_selected_amount = 200 }
+			
+			add_political_power = -300
+			country_event = { id = market.1 days = 14 }
+		}
+	
+		var:prep_fake_infantry_carrying_armored_vehicle = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 12 }
+			set_variable = { market_bought_old_popup_selected_amount = 200 }
+			
+			add_political_power = -350
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_armored_support_vehicle_chassis = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = panafricanism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 13 }
+			set_variable = { market_bought_old_popup_selected_amount = 99 }
+			
+			add_political_power = -300
+			country_event = { id = market.1 days = 14 }
+		}
+	
+		var:prep_fake_light_plane = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					has_government = panafricanism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = { has_government = pragmatism has_government = francocentrism }
+				}
+				random_list = {
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 0 }
+					}
+					25 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 15 }
+			set_variable = { market_bought_old_popup_selected_amount = 5 }
+			
+			add_political_power = -317
+			country_event = { id = market.1 days = 14 }
+		}
+		
+		var:prep_fake_heavy_plane_plane = {
+			set_country_flag = buyed_weapons_not_delivered
+			if = {
+				limit = {
+					OR = { has_government = panafricanism has_government = pragmatism }
+				}
+				set_variable = { market_bought_old_market_tab_selected = 0 }
+			}
+			if = {
+				limit = {
+					has_government = francocentrism
+				}
+				random_list = {
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 1 }
+					}
+					50 = {
+						set_variable = { market_bought_old_market_tab_selected = 2 }
+					}
+				}
+			}
+			
+			set_variable = { market_bought_old_popup_selected_offert = 15 }
+			set_variable = { market_bought_old_popup_selected_amount = 5 }
+			
+			add_political_power = -500
+			country_event = { id = market.1 days = 14 }
+		}
+	}
+}
+
+fake_ai_black_market = {
+	set_variable = { fake_ai_weight_buy_inf = 1 }
+	set_variable = { fake_ai_weight_atgm = 1 }
+	set_variable = { fake_ai_weight_manpads = 1 }
+	set_variable = { fake_ai_weight_ignore = 16 }
+	
+	# just low
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment < 1000
+			}
+		}
+		multiply_variable = { fake_ai_weight_buy_inf = 4 }
+		divide_variable = { fake_ai_weight_ignore = 4 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				ATGM_equipment < 250
+			}
+			OR = { has_template_containing_unit = infantry has_template_containing_unit = infantry_on_btr has_template_containing_unit = infantry_on_jeep has_template_containing_unit = infantry_on_bmp has_template_containing_unit = atgm_support_unit } 
+		}
+		multiply_variable = { fake_ai_weight_atgm = 3 }
+		divide_variable = { fake_ai_weight_ignore = 2 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				manpads_equipment < 250
+			}
+			OR = { has_template_containing_unit = manpads_support_unit has_template_containing_unit = speznaz } 
+		}
+		multiply_variable = { fake_ai_weight_manpads = 2 }
+		divide_variable = { fake_ai_weight_ignore = 2 }
+	}
+	
+	# seriously low
+	if = {
+		limit = {
+			has_equipment = {
+				infantry_equipment < 1
+			}
+		}
+		multiply_variable = { fake_ai_weight_buy_inf = 100 }
+		multiply_variable = { fake_ai_weight_ignore = 0 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				ATGM_equipment < 1
+			}
+			OR = { has_template_containing_unit = infantry has_template_containing_unit = infantry_on_btr has_template_containing_unit = infantry_on_jeep has_template_containing_unit = infantry_on_bmp has_template_containing_unit = atgm_support_unit } 
+		}
+		multiply_variable = { fake_ai_weight_atgm = 40 }
+		multiply_variable = { fake_ai_weight_ignore = 0 }
+	}
+	if = {
+		limit = {
+			has_equipment = {
+				manpads_equipment < 1
+			}
+			OR = { has_template_containing_unit = manpads_support_unit has_template_containing_unit = speznaz } 
+		}
+		multiply_variable = { fake_ai_weight_manpads = 20 }
+		multiply_variable = { fake_ai_weight_ignore = 0 }
+	}
+	
+	## final check
+	
+	if = { 
+		limit = { 
+			has_political_power < var:global.bm_cost_1
+		} 
+		multiply_variable = { fake_ai_weight_buy_inf = 0 }
+	}
+	if = { 
+		limit = { 
+			has_equipment = {
+				infantry_equipment < 1
+			}
+		} 
+		set_variable = { fake_ai_weight_ignore = 120 }
+	}
+	
+	random_list = {
+		var:fake_ai_weight_buy_inf = {
+			set_variable = { cost_invert = global.bm_cost_1 }
+			multiply_variable = { cost_invert = -1 }
+			add_political_power = cost_invert
+			set_country_flag = black_market_already_bought
+			set_variable = { black_market_selected_type = 0 }
+			country_event = { id = market.2 days = 14 }
+			log = "AI LOG: [THIS.GetNameWithFlag] - fake_ai_weight_buy_inf [?fake_ai_weight_buy_inf]"
+		}
+		var:fake_ai_weight_atgm = {
+			set_variable = { cost_invert = global.bm_cost_2 }
+			multiply_variable = { cost_invert = -1 }
+			add_political_power = cost_invert
+			set_variable = { black_market_selected_type = 1 }
+			country_event = { id = market.2 days = 14 }
+			log = "AI LOG: [THIS.GetNameWithFlag] - fake_ai_weight_atgm [?fake_ai_weight_atgm]"
+		}
+		var:fake_ai_weight_manpads = {
+			set_variable = { cost_invert = global.bm_cost_3 }
+			multiply_variable = { cost_invert = -1 }
+			add_political_power = cost_invert
+			set_variable = { black_market_selected_type = 2 }
+			country_event = { id = market.2 days = 14 }
+			log = "AI LOG: [THIS.GetNameWithFlag] - fake_ai_weight_manpads [?fake_ai_weight_manpads]"
+		}
+		var:fake_ai_weight_ignore = {
+			log = "AI LOG: [THIS.GetNameWithFlag] - fake_ai_weight_ignore [?fake_ai_weight_ignore]"
+		}
+	}
+}
+
+replace_civ_with_arms_factories = {
+
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+#Country scope
+ROOT_inherit_current_scope_wars_effect = {
+	custom_effect_tooltip = ROOT_inherit_current_scope_wars_effect
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_defensive_war_with = PREV
+			}
+			ROOT = { declare_war_on = { target = PREV type = annex_everything } }
+		}
+		every_country = {
+			limit = {
+				has_offensive_war_with = PREV
+			}
+			declare_war_on = { target = ROOT type = annex_everything }
+		}
+	}
+}
+
+BRK_upgrade_educational_system = {
+	if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system
+		}
+		swap_ideas = {
+			add_idea = BRK_destroyed_education_system_1
+			remove_idea = BRK_destroyed_education_system
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system_1
+		}
+		swap_ideas = {
+			add_idea = BRK_destroyed_education_system_2
+			remove_idea = BRK_destroyed_education_system_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system_2
+		}
+		swap_ideas = {
+			add_idea = BRK_destroyed_education_system_3
+			remove_idea = BRK_destroyed_education_system_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system_3
+		}
+		swap_ideas = {
+			add_idea = BRK_destroyed_education_system_4
+			remove_idea = BRK_destroyed_education_system_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system_4
+		}
+		swap_ideas = {
+			add_idea = BRK_destroyed_education_system_5
+			remove_idea = BRK_destroyed_education_system_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system_5
+		}
+		swap_ideas = {
+			add_idea = BRK_destroyed_education_system_6
+			remove_idea = BRK_destroyed_education_system_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = BRK_destroyed_education_system_6
+		}
+		remove_ideas = BRK_destroyed_education_system_6
+		add_stability = 0.03
+		add_political_power = 100
+	}
+	else = {
+		add_political_power = 100
+	}
+}
+
+recalculate_modal_cost = {
+	set_variable = { costmodal = costforbuymodal }
+	multiply_variable = { costmodal = amount_selected_in_modal }
+}
+
+recalculate_amount_of_spendings = {
+	set_variable = { amountofmonthlyspendingppmarket = 0 }
+	add_to_variable = { amountofmonthlyspendingppmarket = amountofmonthlyspendingppmarket_1 } 
+	add_to_variable = { amountofmonthlyspendingppmarket = amountofmonthlyspendingppmarket_2 } 
+	add_to_variable = { amountofmonthlyspendingppmarket = amountofmonthlyspendingppmarket_3 } 
+	add_to_variable = { amountofmonthlyspendingppmarket = amountofmonthlyspendingppmarket_4 } 
+	add_to_variable = { amountofmonthlyspendingppmarket = amountofmonthlyspendingppmarket_5 } 
+	add_to_variable = { amountofmonthlyspendingppmarket = amountofmonthlyspendingppmarket_6 } 
+}
+
+unlock_brk_focuses = {
+	unlock_national_focus = BRK_luck_favors_the_bold
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_land_of_the_strong } }
+		unlock_national_focus = BRK_land_of_the_strong
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_fight_against_terror } }
+		unlock_national_focus = BRK_fight_against_terror
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_gathering_clouds } }
+		unlock_national_focus = BRK_gathering_clouds
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_will_for_freedom } }
+		unlock_national_focus = BRK_will_for_freedom
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_economical_struggle } }
+		unlock_national_focus = BRK_economical_struggle
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_photovoltaic_plant } }
+		unlock_national_focus = BRK_photovoltaic_plant
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_foreign_market } }
+		unlock_national_focus = BRK_foreign_market
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_sahel_cooperation } }
+		unlock_national_focus = BRK_sahel_cooperation
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_prohibit_artisanal_mining } }
+		unlock_national_focus = BRK_prohibit_artisanal_mining
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_russian_economic_group } }
+		unlock_national_focus = BRK_russian_economic_group
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_ecowas_cooperation } }
+		unlock_national_focus = BRK_ecowas_cooperation
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_work_for_the_good } }
+		unlock_national_focus = BRK_work_for_the_good
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_return_of_corporations } }
+		unlock_national_focus = BRK_return_of_corporations
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_ghana_railway } }
+		unlock_national_focus = BRK_ghana_railway
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_factories_construction } }
+		unlock_national_focus = BRK_factories_construction
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_african_farms } }
+		unlock_national_focus = BRK_african_farms
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_malaria_vaccination } }
+		unlock_national_focus = BRK_malaria_vaccination
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_western_science } }
+		unlock_national_focus = BRK_western_science
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_rebuilding_our_healthcare } }
+		unlock_national_focus = BRK_rebuilding_our_healthcare
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_russian_doctors } }
+		unlock_national_focus = BRK_russian_doctors
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_huge_investment } }
+		unlock_national_focus = BRK_huge_investment
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_eastern_giants } }
+		unlock_national_focus = BRK_eastern_giants
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_european_business } }
+		unlock_national_focus = BRK_european_business
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_encourage_mining } }
+		unlock_national_focus = BRK_encourage_mining
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_economic_growth } }
+		unlock_national_focus = BRK_economic_growth
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_expand_the_import } }
+		unlock_national_focus = BRK_expand_the_import
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_strengthen_the_local_market } }
+		unlock_national_focus = BRK_strengthen_the_local_market
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_general_mobilization } }
+		unlock_national_focus = BRK_general_mobilization
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_warriors_of_the_shadows } }
+		unlock_national_focus = BRK_warriors_of_the_shadows
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_national_space_program } }
+		unlock_national_focus = BRK_national_space_program
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_burkina_sat1 } }
+		unlock_national_focus = BRK_burkina_sat1
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_security_memorandum } }
+		unlock_national_focus = BRK_security_memorandum
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_our_alliance } }
+		unlock_national_focus = BRK_our_alliance
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_eyes_in_the_skies } }
+		unlock_national_focus = BRK_eyes_in_the_skies
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_security_measures } }
+		unlock_national_focus = BRK_security_measures
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_expand_the_gendarmerie } }
+		unlock_national_focus = BRK_expand_the_gendarmerie
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_culture_of_sport } }
+		unlock_national_focus = BRK_culture_of_sport
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_special_ops } }
+		unlock_national_focus = BRK_special_ops
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_cobra } }
+		unlock_national_focus = BRK_cobra
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_traditional_wrestling } }
+		unlock_national_focus = BRK_traditional_wrestling
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_sahel_forces } }
+		unlock_national_focus = BRK_sahel_forces
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_united_front } }
+		unlock_national_focus = BRK_united_front
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_experience_exchange } }
+		unlock_national_focus = BRK_experience_exchange
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_coordinated_actions } }
+		unlock_national_focus = BRK_coordinated_actions
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_suppress_the_separatists } }
+		unlock_national_focus = BRK_suppress_the_separatists
+	}
+	if = {
+		limit = {
+			BRK = { has_completed_focus = BRK_strike_the_demons_lair } }
+		unlock_national_focus = BRK_strike_the_demons_lair
+	}
+
+}
+
+corruption_grow = {
+	if = {
+		limit = {
+			has_idea = low_corruption
+		}
+		swap_ideas = {
+			add_idea = med_corruption
+			remove_idea = low_corruption
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = med_corruption
+		}
+		swap_ideas = {
+			add_idea = high_corruption
+			remove_idea = med_corruption
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = high_corruption
+		}
+		swap_ideas = {
+			add_idea = extr_corruption
+			remove_idea = high_corruption
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = extr_corruption
+		}
+		add_political_power = -50
+	}
+}
+
+corruption_low = {
+	if = {
+		limit = {
+			has_idea = extr_corruption
+		}
+		swap_ideas = {
+			add_idea = high_corruption
+			remove_idea = extr_corruption
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = high_corruption
+		}
+		swap_ideas = {
+			add_idea = med_corruption
+			remove_idea = high_corruption
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = med_corruption
+		}
+		swap_ideas = {
+			add_idea = low_corruption
+			remove_idea = med_corruption
+		}
+	}
+}

@@ -1,0 +1,14 @@
+characters = {
+	WSR_Bragim_Gali = {
+		name = WSR_Bragim_Gali
+		portraits = {
+			civilian = { large = "gfx/leaders/WSR/Portrait_WSR_Bragim_Gali.dds" }
+			army = { large = "gfx/leaders/WSR/Portrait_WSR_Bragim_Gali.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
+}

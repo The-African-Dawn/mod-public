@@ -1,0 +1,30 @@
+characters = {
+	BNN_Patric_Talon = {
+		name = BNN_Patric_Talon
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BNN/Portrait_BNN_Patric_Talon.dds"
+			}
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = {
+				large = "gfx/leaders/BNN/Portrait_BNN_Patric_Talon.dds"
+			}
+		}
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	BNN_Thomas_Boni_Yayi = {
+		name = BNN_Thomas_Boni_Yayi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BNN/BNN_Thomas_Boni_Yayi.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+}

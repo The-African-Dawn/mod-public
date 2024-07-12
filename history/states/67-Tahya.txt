@@ -1,0 +1,36 @@
+
+state={
+	id=67
+	name="STATE_67"
+	resources={
+		steel=3
+		tungsten = 10
+	}
+	history={
+		owner = NIG
+		add_core_of = NIG
+		victory_points = {
+			266 1 
+		}
+		victory_points = {
+			64 5
+		}
+		victory_points = {
+			2284 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+			
+	}
+
+	provinces={
+		64 266 325 1273 1288 1857 2015 2284 2943 2953 2971 
+	}
+	manpower=3328365	
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

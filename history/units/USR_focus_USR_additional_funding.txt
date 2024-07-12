@@ -1,0 +1,7 @@
+
+air_wings = {
+	29 = {
+		cas_airframe_1_us =  { owner = "USR" creator = "USR" amount = 10 }
+		fighter_airframe_1_us =  { owner = "USR" creator = "USR" amount = 5 }
+	}
+}

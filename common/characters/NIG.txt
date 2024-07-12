@@ -1,0 +1,502 @@
+characters = {
+	NIG_ahmed_baza = {
+		name = NIG_ahmed_baza
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NIG/Portrait_NIG_Ahmed_Baza.dds"
+			}
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = {
+				large = "gfx/leaders/NIG/Portrait_NIG_Ahmed_Baza.dds"
+			}
+		}
+		country_leader = {
+			ideology = usa_pragmatism_sub
+			desc = NIG_ahmed_baza_desc
+			expire = "3000.1.1.1"
+		}
+	}
+	NIG_Abdourahamane_Tchiani = {
+		name = NIG_Abdourahamane_Tchiani
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NIG/NIG_Abdourahamane_Tchiani.dds"
+			}
+		}
+	}
+	NIG_Mohamed_Toumba = {
+		name = NIG_Mohamed_Toumba
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/Mohamed_Toumba.dds"
+				small = "gfx/leaders/NIG/Mohamed_Toumba_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Mohamed_Toumba
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				NIG_minister_de_l_intereur
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Salifou_Mody = {
+		name = NIG_Salifou_Mody
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/Salifou_Mody.dds"
+				small = "gfx/leaders/NIG/Salifou_Mody_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Salifou_Mody
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				hardened_officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Moussa_Barmou = {
+		name = NIG_Moussa_Barmou
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/NIG_Moussa_Barmou.dds"
+				small = "gfx/leaders/NIG/NIG_Moussa_Barmou_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = NIG_Moussa_Barmou
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Abdou_Sidikou_Issa = {
+		name = NIG_Abdou_Sidikou_Issa
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/NIG_Abdou_Sidikou_Issa.dds"
+				small = "gfx/leaders/NIG/NIG_Abdou_Sidikou_Issa_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	NIG_Salifou_Wakasso = {
+		name = NIG_Salifou_Wakasso
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/NIG_Salifou_Wakasso.dds"
+				small = "gfx/leaders/NIG/NIG_Salifou_Wakasso_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = NIG_Salifou_Wakasso
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				BRK_gendarmerie_leader
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Oumarou_Namata_Gazama = {
+		name = NIG_Oumarou_Namata_Gazama
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/NIG_Oumarou_Namata_Gazama.dds"
+				small = "gfx/leaders/NIG/NIG_Oumarou_Namata_Gazama_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = NIG_Oumarou_Namata_Gazama
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Garba_Hakimi = {
+		name = NIG_Garba_Hakimi
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/NIG_Garba_Hakimi.dds"
+				small = "gfx/leaders/NIG/NIG_Garba_Hakimi_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Garba_Hakimi
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				NIG_minister_of_social
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Mahaman_Elhadj_Ousmane = {
+		name = NIG_Mahaman_Elhadj_Ousmane
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/NIG_Mahaman_Elhadj_Ousmane.dds"
+				small = "gfx/leaders/NIG/NIG_Mahaman_Elhadj_Ousmane_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Mahaman_Elhadj_Ousmane
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				NIG_agriculture_and_sheeps
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Mahamadou_Saidou = {
+		name = NIG_Mahamadou_Saidou
+		portraits = {
+			army = {
+				small = "gfx/leaders/NIG/Mahamadou_Saidou.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Mahamadou_Saidou
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				MLL_minister_of_high_education
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Elizabeth_Cherif = {
+		name = NIG_Elizabeth_Cherif
+		portraits = {
+			army = {
+				small = "gfx/leaders/NIG/Elizabeth_Cherif.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Elizabeth_Cherif
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				MLL_minister_of_national_education
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	Salissou_Mahaman_Salissou = {
+		name = Salissou_Mahaman_Salissou
+		portraits = {
+			army = {
+				small = "gfx/leaders/NIG/Salissou_Mahaman_Salissou.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = Salissou_Mahaman_Salissou
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				MLL_minister_of_infrastructure_and_transport
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Mahaman_Moustapha_Barke = {
+		name = NIG_Mahaman_Moustapha_Barke
+		portraits = {
+			army = {
+				small = "gfx/leaders/NIG/Mahaman_Moustapha_Barke.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Mahaman_Moustapha_Barke
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				CHD_minister_of_neft_and_other_resources
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Ahmat_Jidoud = {
+		name = NIG_Ahmat_Jidoud
+		portraits = {
+			army = {
+				small = "gfx/leaders/NIG/Ahmat_Jidoud.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NIG_Ahmat_Jidoud
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				MLL_minister_of_economy
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Abdoul_Kader_Amirou = {
+		name = NIG_Abdoul_Kader_Amirou
+		portraits = {
+			army = {
+				small = "gfx/leaders/NIG/Abdoul_Kader_Amirou.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NIG_Abdoul_Kader_Amirou
+			ledger = air
+			visible = {
+			}
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				air_close_air_support_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NIG_Maizama_Abdoulaye = {
+		name = NIG_Maizama_Abdoulaye
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/Maizama_Abdoulaye.dds"
+				small = "gfx/leaders/NIG/Maizama_Abdoulaye_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIG_Alkasum_Indatu = {
+		name = NIG_Alkasum_Indatu
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/Portrait_NIG_Alkasum_Indatu.dds"
+				small = "gfx/leaders/NIG/Portrait_NIG_Alkasum_Indatu_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NIG_Alkasum_Indatu
+			ledger = army
+			allowed = {
+				original_tag = NIG
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	NIG_Sidi_Ahmed = {
+		name = NIG_Sidi_Ahmed
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIG/Sidi_Ahmed.dds"
+				small = "gfx/leaders/NIG/Sidi_Ahmed_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

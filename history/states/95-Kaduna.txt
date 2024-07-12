@@ -1,0 +1,34 @@
+
+state={
+	id=95
+	name="STATE_95"
+
+	history={
+		victory_points = {
+			3060 4 
+		}
+		victory_points = {
+			1004 2 
+		}
+		owner = NRG
+		add_core_of = NRG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		BHK = {
+			set_province_controller = 3060
+
+		}
+
+	}
+
+	provinces={
+		740 783 949 1004 1818 1926 2379 3060 3064 3085 4947 4949 
+	}
+	manpower=21006239
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

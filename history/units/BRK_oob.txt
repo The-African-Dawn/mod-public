@@ -1,0 +1,341 @@
+
+division_template = {
+	name = "Régiment d'Infanterie"
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+	}
+	support={
+		recon={ x=0 y=0 }
+	}
+}
+division_template = {
+	name = "Régiment de Commandement"
+	priority = 2
+	regiments={
+		infantry={ x=0 y=0 }
+		infantry={ x=0 y=1 }
+		infantry={ x=0 y=2 }
+		infantry={ x=1 y=0 }
+		infantry={ x=1 y=1 }
+		infantry={ x=1 y=2 }
+		infantry={ x=2 y=0 }
+		infantry={ x=2 y=1 }
+		infantry={ x=2 y=2 }
+	}
+	support={
+		recon={ x=0 y=0 }
+		engineer={ x=0 y=1 }
+	}
+}
+division_template = {
+	name = "Regiment of Presidential Security"
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+	}
+}
+division_template = {
+	name = "Régiment de Parachutiste Commando"
+	priority = 2
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+	}
+	support={
+		atgm_support_unit={ x=0 y=0 }
+		recon={ x=0 y=1 }
+		engineer={ x=0 y=2 }
+	}
+}
+division_template = {
+	name = "Régiment Interarmes"
+
+	regiments={
+		infantry_on_btr={ x=0 y=0 }
+		infantry_on_btr={ x=0 y=1 }
+		infantry_on_btr={ x=0 y=2 }
+		light_armor_unit={ x=0 y=3 }
+		light_infantry_opol_on_guntruck={ x=1 y=0 }
+		light_infantry_opol_on_guntruck={ x=1 y=1 }
+		light_infantry_opol_on_guntruck={ x=1 y=2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Gendarmerie nationale burkinabè"
+
+	regiments={
+		light_infantry_opol_on_guntruck={ x=0 y=0 }
+		light_infantry_opol_on_guntruck={ x=0 y=1 }
+		light_infantry_opol_on_guntruck={ x=0 y=2 }
+		light_infantry_opol_on_guntruck={ x=0 y=3 }
+	}
+}
+division_template = {
+	name = "VDP"
+	priority = 0
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "10e Régiment de Commandement, d'Appui et de Soutien"
+		location = 294
+		division_template = "Régiment de Commandement"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "11e Régiment d'Infanterie"
+		location = 3030
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "12e Régiment d'Infanterie Commando"
+		location = 4845
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "20e Régiment de Commandement"
+		location = 4997
+		division_template = "Régiment de Commandement"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "25e Régiment de Parachutiste Commando"
+		location = 485
+		division_template = "Régiment de Parachutiste Commando"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "22e Régiment d'Infanterie Commando"
+		location = 2326
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "24e Régiment Interarmes"
+		location = 4849
+		division_template = "Régiment Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "23e Régiment d'Infanterie Commando"
+		location = 3035
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Regiment of Presidential Security"
+		location = 4846
+		division_template = "Regiment of Presidential Security"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "30e Régiment de Commandement et de Soutien"
+		location = 4847
+		division_template = "Régiment de Commandement"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "31e Régiment d'Infanterie Commando"
+		location = 4995
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "34e Régiment Interarme"
+		location = 557
+		division_template = "Régiment Interarmes"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 557
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4960
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4954
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4995
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4847
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 294
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 3030
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4845
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4848
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4848
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 476
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 476
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4996
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4996
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4840
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4840
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 3035
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4998
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 4849
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Volontaires pour la défense de la patrie"
+		location = 2326
+		division_template = "VDP"
+		start_experience_factor = 0.01
+		start_equipment_factor = 0.8
+	}
+
+}
+
+instant_effect = {
+
+	add_equipment_to_stockpile = { 
+		amount = 10
+		type = a_M8_Greyhound_equipment
+		producer = USR
+	}
+}

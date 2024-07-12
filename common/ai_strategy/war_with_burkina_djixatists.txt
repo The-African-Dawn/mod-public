@@ -1,0 +1,65 @@
+war_against_djixat_in_burkina_faso = {
+	allowed = {
+		OR = {
+			tag = MLL
+			tag = BRK
+			tag = NRG
+		}
+	}
+	enable = {
+		OR = {
+			tag = MLL
+			tag = BRK
+			tag = NRG
+		}
+		has_war_with = ISS
+		country_exists = ISS
+	}
+	abort = {
+		NOT = { country_exists = ISS }
+		date > 01.02.2023
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			is_controlled_by = ISS
+		}
+		ratio = 0.1
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
+		execute_order = yes
+	}
+}
+djixatists_war_against_governnment_forces = {
+	allowed = {
+		tag = ISS
+	}
+	enable = {
+		OR = { 
+			has_war_with = BRK
+			has_war_with = NRG
+			has_war_with = MLL
+		}
+	}
+	abort = {
+		NOT = { country_exists = NRG country_exists = BRK country_exists = MLL }
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				is_controlled_by = NRG
+				is_controlled_by = BRK
+				is_controlled_by = MLL
+			}
+		}
+		ratio = 0.1
+		ordertype = front
+		execution_type = careful
+		manual_attack = yes
+		execute_order = yes
+	}
+}

@@ -1,0 +1,540 @@
+tug_of_war_gvinea_category = {
+
+	tug_of_war_gvinea_civil_war_timer_gvinea_only = {
+		icon = GFX_decision_tug_of_war_gvinea_timer
+		days_mission_timeout = 600
+		is_good = no
+		fire_only_once = yes
+		priority = 100
+		activation = { has_global_flag = gvinea_political_conflict_started}
+		available = { always = no }
+		allowed = { tag = GVN }
+		timeout_effect = {
+		set_global_flag = gvinea_political_conflict_ended 
+		GVN = {hidden_effect = {leave_faction = yes}}
+			if = {
+				limit = {
+					check_variable = { global.tug_of_war_gvinea_choosing_points > 40 }
+					check_variable = { global.tug_of_war_gvinea_choosing_points < 60 }
+					tag = GVN
+				}
+				start_civil_war = {
+					ideology = francocentrism
+					size = 0.5
+					
+					keep_all_characters = yes
+					PREV = {
+						GVN_Mamadi_Dumbuya = {
+							set_nationality = PREV.PREV
+						}
+					}
+				}
+				news_event = ab.13
+					every_country = {
+						limit = {
+							OR = {
+								is_in_faction_with = NRG
+								tag = NRG
+							}
+						}
+						add_ai_strategy = {
+							type = send_volunteers_desire
+							id = PREV
+							value = 200
+						}
+					}
+				
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = MLL
+							is_in_faction_with = BRK
+							tag = BRK
+							tag = MLL
+						}
+					}
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = GVN
+						value = 200
+					}
+					
+				}
+
+			}
+			if = {
+				limit = {
+					check_variable = { global.tug_of_war_gvinea_choosing_points > 60 }
+				}
+				if = {limit = { NRG = { is_faction_leader = yes } } NRG = { add_to_faction = GVN } }
+				set_politics = {ruling_party = francocentrism}
+				news_event = ab.10
+			}
+			if = {
+				limit = {
+					check_variable = { global.tug_of_war_gvinea_choosing_points < 40 }
+				}
+				if = {limit = { BRK = { is_faction_leader = yes } } BRK = { add_to_faction = GVN } }
+				if = {limit = { MLL = { is_faction_leader = yes } } MLL = { add_to_faction = GVN } }
+			}
+		}
+		ai_will_do = {factor = 0}
+	}
+
+
+	tug_of_war_gvinea_civil_war_timer = {
+		icon = GFX_decision_tug_of_war_senegal_timer
+		days_mission_timeout = 600
+		is_good = no
+		fire_only_once = yes
+		priority = 100
+		activation = { has_global_flag = gvinea_political_conflict_started}
+		available = { always = no }
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { global.tug_of_war_gvinea_choosing_points > 40 }
+					check_variable = { global.tug_of_war_gvinea_choosing_points < 60 }
+				}
+				set_global_flag = gvinea_political_conflict_ended_civil_war
+			}
+			if = {
+				limit = {
+					check_variable = { global.tug_of_war_gvinea_choosing_points > 60 }
+				}
+				set_global_flag = gvinea_political_conflict_ended_ecowas_side
+			}
+			if = {
+				limit = {
+					check_variable = { global.tug_of_war_gvinea_choosing_points < 40 }
+				}
+				set_global_flag = gvinea_political_conflict_ended_sahel_side 
+			}
+		}
+		ai_will_do = {factor = 0}
+	}
+	
+	tug_of_war_gvinea_political_assistance = {
+		icon = GFX_decision_political_assistance
+		fire_only_once = no
+		days_remove = 90
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {add_political_power = 50 add_stability = 0.02}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 50
+	}
+	
+	tug_of_war_gvinea_political_pressure = {
+		icon = GFX_decision_political_pressure
+		fire_only_once = no
+		days_remove = 75
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		available = {
+			check_variable = {
+				command_power > 49
+			}
+		}
+		complete_effect = {
+		add_command_power = -50
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		GVN = {add_command_power = 50}
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 4 }
+		custom_cost_text = decision_cost_50_command_power
+	}
+	
+	tug_of_war_gvinea_humanitarian_aid = {
+		icon = GFX_decision_humanitarian_aid
+		fire_only_once = no
+		days_remove = 75
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		available = {
+			NOT = { has_idea = tdoa_humanitarian_aid_costs }
+		}
+		complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		add_timed_idea = { idea = tdoa_humanitarian_aid_costs days = 75 }
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		GVN = {add_political_power = 75 add_stability = 0.01}
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 25
+	}
+	
+	tug_of_war_gvinea_sharing_fuel_supplies = {
+		icon = GFX_decision_fuel_supplies
+		fire_only_once = no
+		days_remove = 120
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		check_variable = {
+			has_fuel > 4999
+		}
+		complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		add_fuel = -5000
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {add_fuel = 5000}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { has_fuel > 4999 }
+		custom_cost_text = decision_cost_500_fuel
+	}
+	
+	tug_of_war_gvinea_small_arms_supply = {
+		icon = GFX_decision_ak47_buy
+		fire_only_once = no
+		days_remove = 120
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		check_variable = {
+			has_equipment = {
+				infantry_equipment_0 > 149
+			}
+		}
+		complete_effect = { 
+			
+		}
+		complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		add_equipment_to_stockpile = { type = infantry_equipment amount = -150 producer = ROOT }
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {add_equipment_to_stockpile = { type = infantry_equipment amount = 150 producer = ROOT }}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = {has_equipment = { infantry_equipment > 149 } }
+		custom_cost_text = decision_cost_150_small_arms
+	}
+	
+	tug_of_war_gvinea_sharing_experience = {
+		icon = GFX_decision_sharing_experience
+		fire_only_once = no
+		days_remove = 120
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		available = {
+			check_variable = {
+				army_experience > 49
+			}
+		}
+		complete_effect = { 
+			hidden_effect = {army_experience = -50}
+		}
+				complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {army_experience = 50}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_50_army_xp
+	}
+	
+	tug_of_war_gvinea_industrial_aid = {
+		icon = GFX_decision_industrial_aid
+		fire_only_once = no
+		days_remove = 120
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		check_variable = {
+			num_of_civilian_factories > 0
+		}
+		modifier = {civilian_factory_use = 1}
+		complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {add_offsite_building = { type = industrial_complex level = 1 }}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {add_offsite_building = { type = industrial_complex level = -1 }}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { num_of_civilian_factories > 0 }
+		custom_cost_text = decision_cost_1_industry
+	}
+
+	tug_of_war_gvinea_reduction_of_trade_duties = {
+		icon = GFX_decision_political_assistance
+		fire_only_once = no
+		days_remove = 90
+		visible = { NOT = { tag = GVN } is_in_faction = yes}
+		available = {
+			 NOT = { has_idea = tdoa_reduction_of_trade_duties }
+		}
+		complete_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		add_timed_idea = { idea = tdoa_reduction_of_trade_duties days = 75 }
+		GVN = {add_offsite_building = { type = industrial_complex level = 1 }}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		remove_effect = { 
+		custom_effect_tooltip = tug_of_war_gvinea_plus_points
+		GVN = {add_political_power = 50}
+		GVN = {add_offsite_building = { type = industrial_complex level = -1 }}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.5 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = BRK
+					}
+				}
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = -1 }
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 50
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=4
+	name="STATE_4"
+	provinces={
+		923 2986 
+	}
+	state_category = rural
+	manpower=3000000
+	history={
+		owner = GMB
+		add_core_of = GMB
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+		}
+		victory_points = {
+			923 50
+		}
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

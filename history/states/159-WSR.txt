@@ -1,0 +1,27 @@
+
+state={
+	id=159
+	name="STATE_159"
+
+	history={
+		owner = WSR
+		add_core_of = MRK
+		add_core_of = WSR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			626 5
+		}
+	}
+
+	provinces={
+		391 626 1002 1077 1482 1775 2367 2734 2763 2817 4919 4920 4921 4922 4923 4924 4926 
+	}
+	manpower=267405
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

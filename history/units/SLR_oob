@@ -1,0 +1,25 @@
+division_template = {
+	name = "Infantry Batallion"
+
+	support={
+		atgm_support_unit={ x=0 y=0 }
+	}
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+	}
+}
+
+units = {
+
+}
+
+instant_effect = {
+
+}

@@ -1,0 +1,172 @@
+
+division_template = {
+	name = "Bataillon de chars"
+
+	support={
+	}
+	regiments={
+		medium_armor_unit={ x=0 y=0 }
+		medium_armor_unit={ x=0 y=1 }
+		medium_armor_unit={ x=0 y=2 }
+		medium_armor_unit={ x=0 y=3 }
+		light_armor_unit={ x=1 y=0 }
+		light_armor_unit={ x=1 y=1 }
+		light_armor_unit={ x=1 y=2 }
+		light_armor_unit={ x=1 y=3 }
+		infantry_on_btr={ x=2 y=0 }
+		infantry_on_btr={ x=2 y=1 }
+		infantry_on_btr={ x=2 y=2 }
+		infantry_on_btr={ x=2 y=3 }
+		infantry_on_btr={ x=2 y=4 }
+		infantry_on_btr={ x=3 y=0 }
+		infantry_on_btr={ x=3 y=1 }
+		infantry_on_btr={ x=3 y=2 }
+		infantry_on_btr={ x=3 y=3 }
+		infantry_on_btr={ x=3 y=4 }
+	}
+}
+
+division_template = {
+	name = "Bataillon d'infanterie"
+
+	support={
+		atgm_support_unit={ x=0 y=0 }
+		howitzer_support_unit={ x=0 y=1 }
+		manpads_support_unit={ x=0 y=2 }
+		engineer={ x=0 y=3 }
+	}
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+	}
+}
+
+division_template = {
+	name = "Bataillon de commandos"
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+	}
+}
+
+division_template = {
+	name = "Rangers"
+	support={
+		engineer={ x=0 y=0 }
+		recon={ x=0 y=1 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+	}
+}
+
+division_template = {
+	name = "Forces spéciales"
+
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1 Bataillon de chars"
+		location = 4909
+		division_template = "Bataillon de chars"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		force_equipment_variants = { modern_tank_equipment_type69 = { owner = "GVN" creator = "RUS" amount = 8 } light_tank_equipment_0 = { owner = "GVN" creator = "RUS" amount = 15 } }
+	}
+	division= {	
+		name = "1 Bataillon d'infanterie"
+		location = 1907
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2 Bataillon d'infanterie"
+		location = 2235
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3 Bataillon d'infanterie"
+		location = 349
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4 Bataillon d'infanterie"
+		location = 3104
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5 Bataillon d'infanterie"
+		location = 3096
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1 Forces spéciales"
+		location = 3079
+		division_template = "Forces spéciales"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1 Rangers"
+		location = 3070
+		division_template = "Rangers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1 Bataillon de commandos"
+		location = 3059
+		division_template = "Bataillon de commandos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = { 
+		amount = 30
+		type = medium_tank_equipment_legacy
+		producer = RUS
+	}
+	add_equipment_to_stockpile = { 
+		amount = 2
+		type = light_tank_equipment_0
+		producer = FRN
+	}
+}

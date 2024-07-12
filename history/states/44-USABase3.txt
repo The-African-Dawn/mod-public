@@ -1,0 +1,21 @@
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		4819 
+	}
+	state_category = rural
+	history={
+		owner = USR
+		add_core_of = USR
+		victory_points = { 4819 5 }
+		buildings = {
+			military_base = 1
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+	manpower=150
+	buildings_max_level_factor=1.000
+	local_supplies=15
+}

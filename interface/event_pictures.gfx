@@ -1,0 +1,503 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BRK_1"
+		texturefile = "gfx/event_pictures/BRK/BRK_1.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_2"
+		texturefile = "gfx/event_pictures/BRK/BRK_2.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_3"
+		texturefile = "gfx/event_pictures/BRK/BRK_3.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_6"
+		texturefile = "gfx/event_pictures/BRK/BRK_6.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_15"
+		texturefile = "gfx/event_pictures/BRK/BRK_15.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_4"
+		texturefile = "gfx/event_pictures/BRK/BRK_4.dds"
+	}
+	spriteType = {
+		name = "GFX_FRN_1"
+		texturefile = "gfx/event_pictures/FRN/FRN_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRN_2"
+		texturefile = "gfx/event_pictures/FRN/FRN_2.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_1"
+		texturefile = "gfx/event_pictures/RUS/RUS_1.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_2"
+		texturefile = "gfx/event_pictures/RUS/RUS_2.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_3"
+		texturefile = "gfx/event_pictures/RUS/RUS_3.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_6"
+		texturefile = "gfx/event_pictures/RUS/RUS_6.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_7"
+		texturefile = "gfx/event_pictures/RUS/RUS_7.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_8"
+		texturefile = "gfx/event_pictures/RUS/RUS_8.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_9"
+		texturefile = "gfx/event_pictures/RUS/RUS_9.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_1"
+		texturefile = "gfx/event_pictures/USA/USA_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_1"
+		texturefile = "gfx/event_pictures/USA/USA_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_2"
+		texturefile = "gfx/event_pictures/USA/USA_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_3"
+		texturefile = "gfx/event_pictures/USA/USA_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_4"
+		texturefile = "gfx/event_pictures/USA/USA_4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_5"
+		texturefile = "gfx/event_pictures/USA/USA_5.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_6"
+		texturefile = "gfx/event_pictures/USA/USA_6.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_7"
+		texturefile = "gfx/event_pictures/USA/USA_7.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_8"
+		texturefile = "gfx/event_pictures/USA/USA_8.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_9"
+		texturefile = "gfx/event_pictures/USA/USA_9.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_10"
+		texturefile = "gfx/event_pictures/USA/USA_10.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_11"
+		texturefile = "gfx/event_pictures/USA/USA_11.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_12"
+		texturefile = "gfx/event_pictures/USA/USA_12.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_13"
+		texturefile = "gfx/event_pictures/USA/USA_13.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_14"
+		texturefile = "gfx/event_pictures/USA/USA_14.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_15"
+		texturefile = "gfx/event_pictures/USA/USA_15.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_11"
+		texturefile = "gfx/event_pictures/BRK/BRK_11.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_10"
+		texturefile = "gfx/event_pictures/BRK/BRK_10.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_12"
+		texturefile = "gfx/event_pictures/BRK/BRK_12.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_19"
+		texturefile = "gfx/event_pictures/BRK/BRK_19.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_23"
+		texturefile = "gfx/event_pictures/BRK/BRK_23.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_24"
+		texturefile = "gfx/event_pictures/BRK/BRK_24.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_25"
+		texturefile = "gfx/event_pictures/BRK/BRK_25.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_26"
+		texturefile = "gfx/event_pictures/BRK/BRK_26.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_29"
+		texturefile = "gfx/event_pictures/BRK/BRK_29.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_34"
+		texturefile = "gfx/event_pictures/BRK/BRK_34.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_1"
+		texturefile = "gfx/event_pictures/NIG/NIG_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ecowas_1"
+		texturefile = "gfx/event_pictures/ecowas/ecowas_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ecowas_2"
+		texturefile = "gfx/event_pictures/ecowas/ecowas_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NRG_1"
+		texturefile = "gfx/event_pictures/NRG/NRG_1.dds"
+	}
+	spriteType = {
+		name = "GFX_NRG_2"
+		texturefile = "gfx/event_pictures/NRG/NRG_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NRG_3"
+		texturefile = "gfx/event_pictures/NRG/NRG_3.dds"
+	}
+	spriteType = {
+		name = "GFX_NRG_4"
+		texturefile = "gfx/event_pictures/NRG/NRG_4.dds"
+	}
+	spriteType = {
+		name = "GFX_NRG_5"
+		texturefile = "gfx/event_pictures/NRG/NRG_5.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_5"
+		texturefile = "gfx/event_pictures/MLL/MLL_5.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_2"
+		texturefile = "gfx/event_pictures/MLL/MLL_2.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_3"
+		texturefile = "gfx/event_pictures/MLL/MLL_3.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_4"
+		texturefile = "gfx/event_pictures/MLL/MLL_4.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_6"
+		texturefile = "gfx/event_pictures/MLL/MLL_6.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_8"
+		texturefile = "gfx/event_pictures/MLL/MLL_8.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_9"
+		texturefile = "gfx/event_pictures/MLL/MLL_9.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_12"
+		texturefile = "gfx/event_pictures/MLL/MLL_12.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_13"
+		texturefile = "gfx/event_pictures/MLL/MLL_13.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_14"
+		texturefile = "gfx/event_pictures/MLL/MLL_14.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_15"
+		texturefile = "gfx/event_pictures/MLL/MLL_15.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_16"
+		texturefile = "gfx/event_pictures/MLL/MLL_16.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_7"
+		texturefile = "gfx/event_pictures/MLL/MLL_7.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_10"
+		texturefile = "gfx/event_pictures/MLL/MLL_10.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_17"
+		texturefile = "gfx/event_pictures/MLL/MLL_17.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_18"
+		texturefile = "gfx/event_pictures/MLL/MLL_18.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_19"
+		texturefile = "gfx/event_pictures/MLL/MLL_19.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_20"
+		texturefile = "gfx/event_pictures/MLL/MLL_20.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_21"
+		texturefile = "gfx/event_pictures/MLL/MLL_21.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_22"
+		texturefile = "gfx/event_pictures/MLL/MLL_22.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_23"
+		texturefile = "gfx/event_pictures/MLL/MLL_23.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_24"
+		texturefile = "gfx/event_pictures/MLL/MLL_24.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_25"
+		texturefile = "gfx/event_pictures/MLL/MLL_25.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_26"
+		texturefile = "gfx/event_pictures/MLL/MLL_26.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_27"
+		texturefile = "gfx/event_pictures/MLL/MLL_27.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_28"
+		texturefile = "gfx/event_pictures/MLL/MLL_28.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_29"
+		texturefile = "gfx/event_pictures/MLL/MLL_29.dds"
+	}
+	spriteType = {
+		name = "GFX_MLL_30"
+		texturefile = "gfx/event_pictures/MLL/MLL_30.dds"
+	}
+	spriteType = {
+		name = "GFX_MRK_1"
+		texturefile = "gfx/event_pictures/MRK/MRK_1.dds"
+	}
+	spriteType = {
+		name = "GFX_MRK_2"
+		texturefile = "gfx/event_pictures/MRK/MRK_2.dds"
+	}
+	spriteType = {
+		name = "GFX_MRK_3"
+		texturefile = "gfx/event_pictures/MRK/MRK_3.dds"
+	}
+	spriteType = {
+		name = "GFX_MRK_4"
+		texturefile = "gfx/event_pictures/MRK/MRK_4.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_1"
+		texturefile = "gfx/event_pictures/CHD/chd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_2"
+		texturefile = "gfx/event_pictures/CHD/chd_2.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_3"
+		texturefile = "gfx/event_pictures/CHD/chd_3.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_4"
+		texturefile = "gfx/event_pictures/CHD/chd_4.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_5"
+		texturefile = "gfx/event_pictures/CHD/chd_5.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_6"
+		texturefile = "gfx/event_pictures/CHD/chd_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_CHD_7"
+		texturefile = "gfx/event_pictures/CHD/chd_7.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_8"
+		texturefile = "gfx/event_pictures/CHD/chd_8.dds"
+	}
+	spriteType = {
+		name = "GFX_CHD_9"
+		texturefile = "gfx/event_pictures/CHD/chd_9.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_2"
+		texturefile = "gfx/event_pictures/NIG/NIG_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_3"
+		texturefile = "gfx/event_pictures/NIG/NIG_3.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_4"
+		texturefile = "gfx/event_pictures/NIG/NIG_4.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_5"
+		texturefile = "gfx/event_pictures/NIG/NIG_5.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_6"
+		texturefile = "gfx/event_pictures/NIG/NIG_6.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_7"
+		texturefile = "gfx/event_pictures/NIG/NIG_7.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_10"
+		texturefile = "gfx/event_pictures/NIG/NIG_10.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_11"
+		texturefile = "gfx/event_pictures/NIG/NIG_11.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_12"
+		texturefile = "gfx/event_pictures/NIG/NIG_12.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_13"
+		texturefile = "gfx/event_pictures/NIG/NIG_13.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_14"
+		texturefile = "gfx/event_pictures/NIG/NIG_14.dds"
+	}
+	spriteType = {
+		name = "GFX_NIG_15"
+		texturefile = "gfx/event_pictures/NIG/NIG_15.dds"
+	}
+	spriteType = {
+		name = "GFX_BRK_43"
+		texturefile = "gfx/event_pictures/BRK/BRK_43.dds"
+	}
+	spriteType = {
+		name = "GFX_sahel_1"
+		texturefile = "gfx/event_pictures/sahel/sahel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_sahel_2"
+		texturefile = "gfx/event_pictures/sahel/sahel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_sahel_3"
+		texturefile = "gfx/event_pictures/sahel/sahel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_sahel_4"
+		texturefile = "gfx/event_pictures/sahel/sahel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_sahel_5"
+		texturefile = "gfx/event_pictures/sahel/sahel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_7"
+		texturefile = "gfx/event_pictures/ab/ab_7.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_8"
+		texturefile = "gfx/event_pictures/ab/ab_8.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_9"
+		texturefile = "gfx/event_pictures/ab/ab_9.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_10"
+		texturefile = "gfx/event_pictures/ab/ab_10.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_11"
+		texturefile = "gfx/event_pictures/ab/ab_11.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_12"
+		texturefile = "gfx/event_pictures/ab/ab_12.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_13"
+		texturefile = "gfx/event_pictures/ab/ab_13.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_14"
+		texturefile = "gfx/event_pictures/ab/ab_14.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_15"
+		texturefile = "gfx/event_pictures/ab/ab_15.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_16"
+		texturefile = "gfx/event_pictures/ab/ab_16.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_17"
+		texturefile = "gfx/event_pictures/ab/ab_17.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_18"
+		texturefile = "gfx/event_pictures/ab/ab_18.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_19"
+		texturefile = "gfx/event_pictures/ab/ab_19.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_20"
+		texturefile = "gfx/event_pictures/ab/ab_20.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_21"
+		texturefile = "gfx/event_pictures/ab/ab_21.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_22"
+		texturefile = "gfx/event_pictures/ab/ab_22.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_23"
+		texturefile = "gfx/event_pictures/ab/ab_23.dds"
+	}
+}

@@ -1,0 +1,561 @@
+﻿shared_focus = {
+	id = USR_15_years_of_africom
+	icon = GFX_goal_USR_15_years_of_africom
+	cost = 0.2
+	x = 8
+	y = 0
+	available = {
+		date > 2022.10.1
+	}
+	bypass = {
+		date > 2022.10.3
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.2
+	}
+}
+
+shared_focus = {
+	id = USR_old_world_blues
+	icon = GFX_goal_USR_old_world_blues
+	cost = 10
+	relative_position_id = USR_15_years_of_africom
+	prerequisite = {
+		focus = USR_15_years_of_africom
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.3
+	}
+}
+
+shared_focus = {
+	id = USR_sheriff_is_in_town
+	icon = GFX_goal_USR_sheriff_is_in_town
+	cost = 10
+	relative_position_id = USR_old_world_blues
+	prerequisite = {
+		focus = USR_old_world_blues
+	}
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.6
+	}
+}
+
+shared_focus = {
+	id = USR_light_of_freedom
+	icon = GFX_goal_USR_light_of_freedom
+	cost = 10
+	relative_position_id = USR_sheriff_is_in_town
+	prerequisite = {
+		focus = USR_sheriff_is_in_town
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = pragmatism
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USR_new_places_to_deploy
+	icon = GFX_goal_USR_new_places_to_deploy
+	cost = 10
+	relative_position_id = USR_light_of_freedom
+	prerequisite = {
+		focus = USR_light_of_freedom
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.8
+	}
+}
+
+shared_focus = {
+	id = USR_partners_in_benin
+	icon = GFX_goal_USR_partners_in_benin
+	cost = 10
+	relative_position_id = USR_new_places_to_deploy
+	prerequisite = {
+		focus = USR_new_places_to_deploy
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = USA_BNN_open_bases
+		activate_mission = usa_open_bases_in_bnn
+	}
+}
+
+shared_focus = {
+	id = USR_visiting_kotdevouir
+	icon = GFX_goal_USR_visiting_kotdevouir
+	cost = 10
+	relative_position_id = USR_new_places_to_deploy
+	prerequisite = {
+		focus = USR_new_places_to_deploy
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = USA_KOT_open_bases
+		activate_mission = usa_open_bases_in_kot
+	}
+}
+
+shared_focus = {
+	id = USR_base_in_mauritania
+	icon = GFX_goal_USR_base_in_mauritania
+	cost = 10
+	relative_position_id = USR_new_places_to_deploy
+	prerequisite = {
+		focus = USR_new_places_to_deploy
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = USA_MRV_open_bases
+		activate_mission = usa_open_bases_in_mrv
+	}
+}
+
+shared_focus = {
+	id = USR_our_army
+	icon = GFX_goal_USR_our_army
+	cost = 10
+	relative_position_id = USR_old_world_blues
+	prerequisite = {
+		focus = USR_old_world_blues
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = usr.9
+	}
+}
+
+shared_focus = {
+	id = USR_our_true_plans
+	icon = GFX_goal_USR_our_true_plans
+	cost = 10
+	relative_position_id = USR_old_world_blues
+	prerequisite = {
+		focus = USR_old_world_blues
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = { global.ecowas_choosing_points = -10 }
+		custom_effect_tooltip = ecowas_choosing_points_minus_10_good
+		create_intelligence_agency = {
+			name = "Central Intelligence Agency"
+			icon = GFX_intelligence_agency_logo_usr
+		}
+		upgrade_intelligence_agency = upgrade_crypto_strength
+		upgrade_intelligence_agency = upgrade_form_department
+		upgrade_intelligence_agency = upgrade_passive_defense
+		upgrade_intelligence_agency = upgrade_decryption_boost
+		upgrade_intelligence_agency = upgrade_commando_training
+	}
+}
+
+shared_focus = {
+	id = USR_letter_to_the_pentagon
+	icon = GFX_goal_USR_letter_to_the_pentagon
+	cost = 10
+	relative_position_id = USR_our_army
+	prerequisite = {
+		focus = USR_our_army
+	}
+	prerequisite = {
+		focus = USR_our_true_plans
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.10
+	}
+}
+
+shared_focus = {
+	id = USR_additional_funding
+	icon = GFX_goal_USR_additional_funding
+	cost = 10
+	relative_position_id = USR_letter_to_the_pentagon
+	prerequisite = {
+		focus = USR_letter_to_the_pentagon
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.11
+		add_ideas = limited_conscription_mjr
+		add_ideas = partial_economic_mobilisation_mjr
+	}
+}
+
+shared_focus = {
+	id = USR_big_iron
+	icon = GFX_goal_USR_big_iron
+	cost = 10
+	relative_position_id = USR_old_world_blues
+	prerequisite = {
+		focus = USR_old_world_blues
+	}
+	available = {
+		has_global_flag = RUS_created_africakorps
+		43 = { is_controlled_by = USR }
+	}
+	bypass = {
+		43 = { NOT = { is_controlled_by = USR } }
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.4
+	}
+}
+
+shared_focus = {
+	id = USR_paint_them_black
+	icon = GFX_goal_USR_paint_them_black
+	cost = 10
+	relative_position_id = USR_big_iron
+	prerequisite = {
+		focus = USR_big_iron
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	} 
+	completion_reward = {
+		country_event = USR.5
+		add_ideas = USR_paint_them_black_idea
+	}
+}
+
+
+shared_focus = {
+	id = USR_marine_corps_expansion
+	icon = GFX_goal_USR_marine_corps_expansion
+	cost = 10
+	relative_position_id = USR_paint_them_black
+	prerequisite = {
+		focus = USR_paint_them_black
+	}
+	prerequisite = {
+		focus = USR_letter_to_the_pentagon
+	}
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	} 
+	completion_reward = {
+		country_event = USR.12
+	}
+}
+
+shared_focus = {
+	id = USR_our_dearest_partners
+	icon = GFX_goal_USR_our_dearest_partners
+	cost = 10
+	relative_position_id = USR_paint_them_black
+	prerequisite = {
+		focus = USR_paint_them_black
+	}
+	available = {
+		NOT = {
+			has_global_flag = ecowas_battle_complete
+		}
+	}
+	bypass = {
+		NOT = {
+			has_global_flag = ecowas_battle_complete
+		}
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = { global.ecowas_choosing_points = -15 }
+		custom_effect_tooltip = ecowas_choosing_points_minus_15_good
+		add_political_power = 120
+		every_country = {
+			limit = {			
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			add_stability = 0.03
+		}
+	}
+}
+
+shared_focus = {
+	id = USR_masters_of_influence
+	icon = GFX_goal_USR_masters_of_influence
+	cost = 10
+	relative_position_id = USR_our_dearest_partners
+	prerequisite = {
+		focus = USR_our_dearest_partners
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = { global.ecowas_choosing_points = -15 }
+		custom_effect_tooltip = ecowas_choosing_points_minus_15_good
+		every_country = {
+			limit = {			
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			add_political_power = 50
+			add_stability = 0.01
+			add_war_support = 0.02
+		}
+	}
+}
+
+shared_focus = {
+	id = USR_world_policeman
+	icon = GFX_goal_USR_world_policeman
+	cost = 10
+	relative_position_id = USR_masters_of_influence
+	prerequisite = {
+		focus = USR_masters_of_influence
+	}
+	available = {
+		has_global_flag = ecowas_battle_win_usa
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {			
+				OR = {
+					tag = NRG
+					is_in_faction_with = NRG
+				}
+				OR = {
+					has_government = pragmatism
+					has_government = francocentrism
+				}
+			}
+			add_ideas = USR_help_because_we_won_battle_for_ecowas
+		}
+		country_event = USR.15
+	}
+}
+
+shared_focus = {
+	id = USR_rangers_of_justice
+	icon = GFX_goal_USR_rangers_of_justice
+	cost = 10
+	relative_position_id = USR_paint_them_black
+	prerequisite = {
+		focus = USR_paint_them_black
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.13
+	}
+}
+
+shared_focus = {
+	id = USR_get_to_the_choppers
+	icon = GFX_goal_USR_get_to_the_choppers
+	cost = 10
+	relative_position_id = USR_rangers_of_justice
+	prerequisite = {
+		focus = USR_rangers_of_justice
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = USR.14
+	}
+}
+
+shared_focus = {
+	id = USR_hand_of_freedom
+	icon = GFX_goal_USR_hand_of_freedom
+	cost = 10
+	relative_position_id = USR_additional_funding
+	prerequisite = {
+		focus = USR_base_in_mauritania 
+	}
+	prerequisite = {
+		focus = USR_additional_funding
+	}
+	prerequisite = {
+		focus = USR_get_to_the_choppers
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = USR_hand_of_freedom_idea
+	}
+}
+
+
+shared_focus = {
+	id = USR_desert_resolve
+	icon = GFX_goal_USR_desert_resolve
+	cost = 5
+	x = 8
+	y = 12
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		OR = {
+			has_war_with = MLL
+			has_war_with = BRK
+			has_war_with = NIG
+		}
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = USR_desert_resolve_idea
+			days = 90
+		}
+		add_ideas = extensive_conscription_mjr
+		add_ideas = war_economy_mjr
+	}
+}
+
+
+shared_focus = {
+	id = USR_eagles_triumph
+	icon = GFX_goal_USR_eagles_triumph
+	cost = 10
+	relative_position_id = USR_desert_resolve
+	prerequisite = {
+		focus = USR_desert_resolve
+	}
+	available = {
+		has_global_flag = ecowas_battle_win_usa
+		has_war = no
+		CHD = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		NIG = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		BRK = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		MLL = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+		SNG = { is_in_faction_with = NRG OR = { has_government = pragmatism has_government = francocentrism } }
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		every_state = {
+			limit = {
+				OR = {
+					state = 187
+					state = 33
+					state = 35
+					state = 32
+					state = 30
+					state = 44
+					state = 36
+					state = 48
+					state = 49
+					state = 41
+					state = 37
+					state = 51
+				}
+
+			}
+			USR = {
+				transfer_state = PREV
+			}
+			add_core_of = USR
+		}
+	}
+}

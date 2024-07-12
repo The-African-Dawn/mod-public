@@ -1,0 +1,32 @@
+
+state={
+	id=12
+	name="STATE_12"
+	resources={
+		oil=3
+	}
+	history={
+		owner = ALJ
+		add_core_of = ALJ
+			set_variable = { amount_of_uran = 0.09 } 
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		ISS = {
+			set_province_controller = 2835
+
+		}
+
+	}
+
+	provinces={
+		100 133 151 228 260 462 585 602 721 725 966 1042 1094 1229 1630 1747 1943 1960 2256 2450 2579 2767 2775 2796 2803 2806 2812 2818 2825 2829 2834 2835 2855 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

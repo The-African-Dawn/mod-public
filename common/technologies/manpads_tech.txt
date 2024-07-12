@@ -1,0 +1,431 @@
+technologies = {
+
+	@YTIER0 = 0
+	@YTIER1 = 4
+	@YTIER2 = 10
+	@YTIER3 = 18
+	
+	@XBASE = 0
+	@XEAST1 = -2 
+	@XEAST2 = -3 
+	@XEAST3 = -1
+	@XWEST1 = 2
+	@XWEST2 = 1
+	@XWEST3 = 3
+	
+	
+	handmade_manpads_tech = {
+		
+		research_cost = 0 ### Выдается на старте 
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_handmade
+		}
+		
+		enable_subunits = {
+			manpads_support_unit
+		}
+		
+		path = {
+			leads_to_tech = manpads_strela_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = manpads_redeye_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XBASE y = @YTIER0 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	
+	manpads_strela_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_strela
+		}
+		
+		path = {
+			leads_to_tech = manpads_igla_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = manpads_fn6_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XEAST1 y = @YTIER1 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	
+	manpads_igla_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_igla
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		path = {
+			leads_to_tech = manpads_verba_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XEAST2 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	manpads_verba_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_verba
+		}
+		allow = {
+			has_country_flag = RUS_friend
+		}
+		
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XEAST2 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	manpads_fn6_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_fn6
+		}
+		
+		path = {
+			leads_to_tech = manpads_qw3_tech
+			research_cost_coeff = 1
+		}
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XEAST3 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	manpads_qw3_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_qw3
+		}
+		allow = {
+			has_country_flag = CHI_friend
+		}
+		
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XEAST3 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	
+	manpads_redeye_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_redeye
+		}
+		
+		path = {
+			leads_to_tech = manpads_fim92_tech
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = manpads_mistral_tech
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XWEST1 y = @YTIER1 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	manpads_fim92_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_fim92
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+		
+		path = {
+			leads_to_tech = manpads_stinger_tech
+			research_cost_coeff = 1
+		}
+		
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XWEST2 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	manpads_stinger_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_stinger
+		}
+				
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XWEST2 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+		allow = {
+			has_country_flag = USR_friend
+		}
+	}
+	manpads_mistral_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_mistral
+		}
+		
+		path = {
+			leads_to_tech = manpads_mistral2_tech
+			research_cost_coeff = 1
+		}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+		
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XWEST3 y = @YTIER2 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	manpads_mistral2_tech = {
+		
+		research_cost = 2
+		start_year = 2000
+		
+		enable_equipments = {
+			manpads_equipment_mistral2
+		}
+		allow = {
+			has_country_flag = FRN_friend
+		}
+				
+		
+		folder = {
+			name = manpads_folder
+			position = { x = @XWEST3 y = @YTIER3 }
+		}
+		
+		categories = {
+			artillery_technologies
+			manpads_technologies
+		}
+	}
+	
+	manpads_upgrade_1 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = manpads_upgrade_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = manpads_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		categories = {
+			manpads_technologies
+			
+		}
+	}
+	
+	manpads_upgrade_2 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = manpads_upgrade_3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = manpads_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			manpads_technologies
+			
+		}
+	}
+	
+	manpads_upgrade_3 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = manpads_upgrade_4
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = manpads_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			manpads_technologies
+			
+		}
+	}
+	
+	manpads_upgrade_4 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = manpads_upgrade_5
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = manpads_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		categories = {
+			
+			manpads_technologies
+		}
+	}
+	
+	manpads_upgrade_5 = {
+		
+		research_cost = 1
+		start_year = 2000
+		
+		category_all_infantry = {
+			air_attack = 0.05
+		}
+		
+		folder = {
+			name = manpads_folder
+			position = { x = 6 y = 16 }
+		}
+		
+		categories = {
+			
+			manpads_technologies
+		}
+	}
+}

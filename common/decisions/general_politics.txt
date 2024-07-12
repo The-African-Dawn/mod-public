@@ -1,0 +1,620 @@
+general_army_purposes = {
+	seize_supply_cars = {
+		icon = GFX_decision_taking_motorised
+		fire_only_once = no
+		days_re_enable = 180
+		days_remove = 10
+		visible = {
+			has_equipment = {
+				train_equipment < 101
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 30
+			}
+		}
+		complete_effect = {
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				has_stability > 0.5
+				has_equipment = {
+					train_equipment < 50
+				}
+				has_war = yes
+			}
+		}
+		cost = 0
+	}
+	BRK_make_mobilisation = {
+		icon = GFX_decision_burkina_mobilisation
+		fire_only_once = yes
+		allowed = {
+			tag = BRK
+		}
+		visible = {
+			has_completed_focus = BRK_general_mobilization
+			has_government = panafricanism
+		}
+		available = {
+			has_war = yes
+		}
+		complete_effect = {
+			add_stability = -0.1
+			add_political_power = 120
+			add_ideas = limited_conscription
+			add_ideas = war_economy
+			news_event = BRK.34
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				date > "2023.04.12"
+			}
+		}
+		cost = 0
+	}
+}
+
+general_outer_politics = {
+	france_living_military_bases = {
+		activation = {
+			has_global_flag = BRK_FRN_leave_mil_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = BRK_FRN_leave_mil_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = BRK
+				tag = FRN
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = FRN
+				}
+				33 = {
+					teleport_armies = {
+						limit = {
+							tag = FRN
+						}
+						to_state = 28
+					}
+					remove_core_of = FRN
+				}
+			}
+			if = {
+				limit = {
+					tag = BRK
+				}
+				diplomatic_relation = {
+					country = FRN
+					relation = military_access
+					active = no
+				}
+				if = {
+					limit = {
+						has_country_flag = brk_give_bases_to_rus
+					}
+					RUS = {
+						transfer_state = 33
+					}
+					33 = {
+						add_core_of = RUS
+					}
+					else = {
+						transfer_state = 33
+						33 = {
+							add_core_of = BRK
+						}
+						add_equipment_to_stockpile = {
+							type = FAMAS_1
+							amount = 500
+							producer = FRN
+						}
+						add_equipment_to_stockpile = {
+							type = M16_0
+							amount = 500
+							producer = USR
+						}
+						add_equipment_to_stockpile = {
+							type = M16_0
+							amount = 500
+							producer = USR
+						}
+						add_equipment_to_stockpile = {
+							type = spec_oborud_equipment
+							amount = 500
+							producer = FRN
+						}
+						add_equipment_to_stockpile = {
+							type = ATGM_equipment_m72
+							amount = 500
+							producer = USR
+						}
+					}
+				}
+			}
+		}
+	}
+	MLL_unarrest_bank_leader = {
+		icon = battle_for_africa_ask_for_help
+		fire_only_once = yes
+		allowed = {
+			tag = MLL
+		}
+		cost = 50
+		priority = 100
+		visible = {
+			has_idea = MLL_bank_sector_is_bad
+		}
+		available = {
+			has_idea = MLL_bank_sector_is_bad
+		}
+		complete_effect = {
+			swap_ideas = {
+				add_idea = MLL_bank_sector_is_bad_2
+				remove_idea = MLL_bank_sector_is_bad
+			}
+			add_popularity = {
+				ideology = francocentrism
+				popularity = 0.1
+			}
+			hidden_effect = { news_event = MLL.15 }
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				date > "2024.06.10"
+			}
+		}
+	}
+	mali_france_leaving_bases = {
+		activation = {
+			has_global_flag = MLL_FRN_leave_mil_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = MLL_FRN_leave_mil_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = MLL
+				tag = FRN
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = FRN
+				}
+				35 = {
+					teleport_armies = {
+						limit = {
+							tag = FRN
+						}
+						to_state = 28
+					}
+					remove_core_of = FRN
+					add_core_of = MLL
+				}
+				32 = {
+					teleport_armies = {
+						limit = {
+							tag = FRN
+						}
+						to_state = 43
+					}
+					remove_core_of = FRN
+					add_core_of = MLL
+				}
+			}
+			if = {
+				limit = {
+					tag = MLL
+				}
+				transfer_state = 35
+				transfer_state = 32
+				add_equipment_to_stockpile = {
+					type = FAMAS_1
+					amount = 500
+					producer = FRN
+				}
+				add_equipment_to_stockpile = {
+					type = M16_0
+					amount = 500
+					producer = USR
+				}
+				add_equipment_to_stockpile = {
+					type = M16_0
+					amount = 500
+					producer = USR
+				}
+				add_equipment_to_stockpile = {
+					type = spec_oborud_equipment
+					amount = 500
+					producer = FRN
+				}
+				add_equipment_to_stockpile = {
+					type = ATGM_equipment_m72
+					amount = 500
+					producer = USR
+				}
+				diplomatic_relation = {
+					country = FRN
+					relation = military_access
+					active = no
+				}
+			}
+		}
+	}
+	mali_usa_leaving_bases = {
+		activation = {
+			has_global_flag = MLL_USR_leave_mil_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = MLL_USR_leave_mil_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = MLL
+				tag = USR
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = USR
+				}
+				44 = {
+					teleport_armies = {
+						limit = {
+							tag = USR
+						}
+						to_state = 43
+					}
+					remove_core_of = USR
+				}
+				add_core_of = MLL
+			}
+			if = {
+				limit = {
+					tag = MLL
+				}
+				transfer_state = 44
+				add_equipment_to_stockpile = {
+					type = M16_0
+					amount = 1000
+					producer = USR
+				}
+				add_equipment_to_stockpile = {
+					type = ATGM_equipment_m72
+					amount = 1000
+					producer = USR
+				}
+				diplomatic_relation = {
+					country = USR
+					relation = military_access
+					active = no
+				}
+			}
+		}
+	}
+	niger_usa_leaving_bases = {
+		activation = {
+			has_global_flag = NIG_USR_leave_mil_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = NIG_USR_leave_mil_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = NIG
+				tag = USR
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = USR
+				}
+				49 = {
+					teleport_armies = {
+						limit = {
+							tag = USR
+						}
+						to_state = 43
+					}
+					remove_core_of = USR
+					add_core_of = NIG
+				}
+			}
+			if = {
+				limit = {
+					tag = USR
+				}
+				48 = {
+					teleport_armies = {
+						limit = {
+							tag = USR
+						}
+						to_state = 43
+					}
+					remove_core_of = USR
+					add_core_of = NIG
+				}
+			}
+			if = {
+				limit = {
+					tag = NIG
+				}
+				transfer_state = 48
+				transfer_state = 49
+				add_equipment_to_stockpile = {
+					type = M16_0
+					amount = 1000
+					producer = USR
+				}
+				add_equipment_to_stockpile = {
+					type = ATGM_equipment_m72
+					amount = 1000
+					producer = USR
+				}
+				diplomatic_relation = {
+					country = USR
+					relation = military_access
+					active = no
+				}
+			}
+		}
+	}
+	niger_france_leaving_bases = {
+		activation = {
+			has_global_flag = NIG_FRN_leave_mil_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = NIG_FRN_leave_mil_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = NIG
+				tag = FRN
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = FRN
+				}
+				36 = {
+					teleport_armies = {
+						limit = {
+							tag = FRN
+						}
+						to_state = 28
+					}
+					remove_core_of = FRN
+					add_core_of = NIG
+				}
+				41 = {
+					teleport_armies = {
+						limit = {
+							tag = FRN
+						}
+						to_state = 32
+					}
+					remove_core_of = FRN
+					add_core_of = NIG
+				}
+			}
+			if = {
+				limit = {
+					tag = NIG
+				}
+				transfer_state = 36
+				transfer_state = 41
+				add_equipment_to_stockpile = {
+					type = FAMAS_1
+					amount = 500
+					producer = FRN
+				}
+				add_equipment_to_stockpile = {
+					type = M16_0
+					amount = 500
+					producer = USR
+				}
+				add_equipment_to_stockpile = {
+					type = M16_0
+					amount = 500
+					producer = USR
+				}
+				add_equipment_to_stockpile = {
+					type = spec_oborud_equipment
+					amount = 500
+					producer = FRN
+				}
+				add_equipment_to_stockpile = {
+					type = ATGM_equipment_m72
+					amount = 500
+					producer = USR
+				}
+				diplomatic_relation = {
+					country = FRN
+					relation = military_access
+					active = no
+				}
+			}
+		}
+	}
+	open_borders_with_nig = {
+		fire_only_once = yes
+		icon = battle_for_africa_ask_for_help
+		allowed = {
+			tag = NRG
+		}
+		available = {
+			NOT = {
+				has_war_with = NIG
+			}
+		}
+		visible = {
+			has_country_flag = closed_border_nrg_nig
+		}
+		icon = GFX_decision_corruption_eradication
+		complete_effect = {
+			clr_country_flag = closed_border_nrg_nig
+			remove_opinion_modifier = {
+				target = NIG
+				modifier = NRG_close_borders_with_niger
+			}
+			NIG = {
+				remove_opinion_modifier = {
+					target = NRG
+					modifier = NRG_close_borders_with_niger
+				}
+			}
+			add_threat = -3
+			news_event = NRG.8
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				date > 2024.03.13
+			}
+		}
+		cost = 0
+	}
+}
+
+general_corruption_growth = {
+	corruption_growth_fix = {
+		fire_only_once = no
+		visible = {
+			NOT = {
+				has_country_flag = fixed_corruption_for_some_time
+			}
+		}
+		icon = GFX_decision_corruption_eradication
+		complete_effect = {
+			set_country_flag = {
+				flag = fixed_corruption_for_some_time
+				days = 180
+				value = 1
+			}
+			custom_effect_tooltip = corruption_growth_fix_tt
+		}
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = -100
+				has_government = fundamentalism
+			}
+		}
+		cost = 50
+	}
+	corruption_make_lower = {
+		fire_only_once = no
+		visible = {
+			NOT = {
+				has_idea = low_corruption
+			}
+		}
+		icon = GFX_decision_corruption_investigation
+		days_re_enable = 180
+		days_remove = 10
+		available = {
+			has_country_flag = fixed_corruption_for_some_time
+		}
+		complete_effect = {
+			corruption_low = yes
+		}
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = -100
+				has_government = fundamentalism
+			}
+		}
+		cost = 100
+	}
+	corruption_grows_and_thats_a_problem = {
+		activation = {
+			NOT = {
+				has_country_flag = fixed_corruption_for_some_time
+			}
+		}
+		priority = 50
+		cancel_trigger = {
+			has_country_flag = fixed_corruption_for_some_time
+		}
+		available = {
+			has_country_flag = fixed_corruption_for_some_time
+		}
+		icon = GFX_decision_corruption_grows
+		is_good = no
+		days_mission_timeout = 360
+		timeout_effect = {
+			corruption_grow = yes
+		}
+	}
+
+}

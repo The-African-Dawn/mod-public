@@ -1,0 +1,578 @@
+characters = {
+	CHD_Mahamat_Idriss = {
+		name = CHD_Mahamat_Idriss
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHD/Portrait_CHD_Mahamat_Idriss_civ.dds"
+			}
+			#small = "gfx/leaders/CHD/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = {
+				large = "gfx/leaders/CHD/Portrait_CHD_Mahamat_Idriss.dds"
+			}
+		}
+		country_leader = {
+			ideology = pragmatism_sub
+			desc = CHD_Mahamat_Idriss_desc
+			expire = "3000.1.1.1"
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			desc = CHD_Mahamat_Idriss_desc
+			expire = "3000.1.1.1"
+		}
+		field_marshal = {
+			traits = {
+			}
+			visible = {
+				has_country_leader = {
+					character = CHD_Mahamat_Idriss
+					ruling_only = yes
+				}
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHD_Abakar_Abdelkarim_Daoud = {
+		name = CHD_Abakar_Abdelkarim_Daoud
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Abakar_Abdelkarim_Daoud.dds"
+				small = "gfx/leaders/CHD/Abakar_Abdelkarim_Daoud_advisor.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = CHD_Abakar_Abdelkarim_Daoud
+			ledger = army
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Ismael_Souleymane_Lony = {
+		name = CHD_Ismael_Souleymane_Lony
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Ismael_Souleymane_Lony.dds"
+				small = "gfx/leaders/CHD/Ismael_Souleymane_Lony_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHD_Ahmat_Dari_Bazine = {
+		name = CHD_Ahmat_Dari_Bazine
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Ahmat_Dari_Bazine.dds"
+				small = "gfx/leaders/CHD/Ahmat_Dari_Bazine_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	CHD_Ahmat_Fadoul_Makaye = {
+		name = CHD_Ahmat_Fadoul_Makaye
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Ahmat_Fadoul_Makaye.dds"
+				small = "gfx/leaders/CHD/Ahmat_Fadoul_Makaye_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	CHD_Yosko_Youssouf_Boy = {
+		name = CHD_Yosko_Youssouf_Boy
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Yosko_Youssouf_Boy.dds"
+				small = "gfx/leaders/CHD/Yosko_Youssouf_Boy_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHD_Ahmat_Goukouni_Mourali = {
+		name = CHD_Ahmat_Goukouni_Mourali
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Ahmat_Goukouni_Mourali.dds"
+				small = "gfx/leaders/CHD/Ahmat_Goukouni_Mourali_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHD_Ahmat_Goukouni_Mourali = {
+		name = CHD_Ahmat_Goukouni_Mourali
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Ahmat_Goukouni_Mourali.dds"
+				small = "gfx/leaders/CHD/Ahmat_Goukouni_Mourali_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHD_Ahmat_Goukouni_Mourali = {
+		name = CHD_Ahmat_Goukouni_Mourali
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Ahmat_Goukouni_Mourali.dds"
+				small = "gfx/leaders/CHD/Ahmat_Goukouni_Mourali_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHD_Youssouf_Oumar_Barh = {
+		name = CHD_Youssouf_Oumar_Barh
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Youssouf_Oumar_Barh.dds"
+				small = "gfx/leaders/CHD/Youssouf_Oumar_Barh_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = CHD_Abakar_Abdelkarim_Daoud
+			ledger = army
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Heri_Herendji_Djaguid = {
+		name = CHD_Heri_Herendji_Djaguid
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Heri_Herendji_Djaguid.dds"
+				small = "gfx/leaders/CHD/Heri_Herendji_Djaguid_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = CHD_Heri_Herendji_Djaguid
+			ledger = army
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				army_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Guerdi_Abakar_Adoum = {
+		name = CHD_Guerdi_Abakar_Adoum
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHD/Guerdi_Abakar_Adoum.dds"
+				small = "gfx/leaders/CHD/Guerdi_Abakar_Adoum_advisor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = CHD_Heri_Herendji_Djaguid
+			ledger = army
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				BRK_gendarmerie_leader
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Yaya_Dillo = {
+		name = CHD_Yaya_Dillo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHD/Yaya_Dillo.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	CHD_Dago_Yacouba = {
+		name = CHD_Dago_Yacouba
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHD/Portrait_CHD_Dago_Yacouba.dds"
+				small = "gfx/advisors/Portrait_CHD_Dago_Yacouba.dds"
+			}
+			army = {
+				large = "gfx/leaders/CHD/Portrait_CHD_Dago_Yacouba.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = dago_yacouba
+			ledger = army
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Abderaman_Koulamallah = {
+		name = CHD_Abderaman_Koulamallah
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/CHD/Abderaman_Koulamallah.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Abderaman_Koulamallah
+			allowed = {
+				original_tag = CHD
+			}
+			# available = {
+			# 	has_completed_focus = MLL_reevaluate_the_franc
+			# }
+			traits = {
+				CHD_minister_of_international_affairs
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Bireme_Hamid = {
+		name = CHD_Bireme_Hamid
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Bireme_Hamid.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Bireme_Hamid
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				MLL_minister_of_justice
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Tom_Erdimi = {
+		name = CHD_Tom_Erdimi
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Tom_Erdimi.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Tom_Erdimi
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				MLL_minister_of_high_education
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Limane_Mahamat = {
+		name = CHD_Limane_Mahamat
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Limane_Mahamat.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Limane_Mahamat
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				BRK_minister_of_territorial_control
+			}
+			available = {
+				has_completed_focus = CHD_ensure_security_at_the_streets
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Tamir_Hamid_Nguilini = {
+		name = CHD_Tamir_Hamid_Nguilini
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Tamir_Hamid_Nguilini.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Tamir_Hamid_Nguilini
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				MLL_minister_of_economy
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Mamadou_Boukar_Gana = {
+		name = CHD_Mamadou_Boukar_Gana
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Mamadou_Boukar_Gana.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Mamadou_Boukar_Gana
+			allowed = {
+				original_tag = CHD
+			}
+			available = {
+				has_completed_focus = CHD_spread_hafiz_schools
+			}
+			traits = {
+				MLL_minister_of_national_education
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Isha_Malua_Jamus = {
+		name = CHD_Isha_Malua_Jamus
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Isha_Malua_Jamus.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Isha_Malua_Jamus
+			allowed = {
+				original_tag = CHD
+			}
+			available = {
+				has_completed_focus = CHD_breaking_their_front
+			}
+			traits = {
+				hardened_officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Aziz_Mahamat_Saleh = {
+		name = CHD_Aziz_Mahamat_Saleh
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Aziz_Mahamat_Saleh.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Aziz_Mahamat_Saleh
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				MLL_minister_of_infrastructure_and_transport
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Ndolonodji_Alixe_Naimbaye = {
+		name = CHD_Ndolonodji_Alixe_Naimbaye
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Ndolonodji_Alixe_Naimbaye.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CHD_Ndolonodji_Alixe_Naimbaye
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				CHD_minister_of_neft_and_other_resources
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHD_Amine_Ahmed_Idriss = {
+		name = CHD_Amine_Ahmed_Idriss
+		portraits = {
+			army = {
+				small = "gfx/leaders/CHD/Amine_Ahmed_Idriss.dds.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = CHD_Amine_Ahmed_Idriss
+			ledger = air
+			allowed = {
+				original_tag = CHD
+			}
+			traits = {
+				air_chief_all_weather_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

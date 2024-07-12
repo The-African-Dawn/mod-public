@@ -1,0 +1,7 @@
+
+air_wings = {
+	5 = {
+		transport_helicopter_airframe_0 =  { owner = "GBI" creator = "RUS" amount = 2 }
+		fighter_airframe_0_ru = { owner = "GBI" creator = "RUS" amount = 6 } 
+	}
+}

@@ -1,0 +1,74 @@
+characters = {
+	LIV_Khalifa_Haftar = {
+		name = LIV_Khalifa_Haftar
+		portraits = {
+			civilian = { large = "gfx/leaders/LIV/Portrait_LIV_Khalifa_Haftar.dds" }
+			#small = "gfx/interface/advisors/Portrait_LIV_Khalifa_Haftar.dds"}
+			army = { large = "gfx/leaders/LIV/Portrait_LIV_Khalifa_Haftar.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			desc = LIV_Khalifa_Haftar_desc
+			expire = "3000.1.1.1"
+		}
+	}
+	
+	LIV_Abdul_Hamid_Dbeibah = {
+		name = LIV_Abdul_Hamid_Dbeibah
+		portraits = {
+			civilian = { large = "gfx/leaders/LIV/Portrait_LIV_Abdul_Hamid_Dbeibah.dds" }
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = { large = "gfx/leaders/LIV/Portrait_LIV_Abdul_Hamid_Dbeibah.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			desc = LIV_Abdul_Hamid_Dbeibah_desc
+			expire = "3000.1.1.1"
+		}
+	}
+
+	LIV_Muhammad_Unis = {
+		name = LIV_Muhammad_Unis
+		portraits = {
+			civilian = { large = "gfx/leaders/LIV/Portrait_LIV_Muhammad_Unis.dds" }
+			#small = "gfx/interface/advisors/Portrait_GVN_Grigory_Yavlinsky.dds"}
+			army = { large = "gfx/leaders/LIV/Portrait_LIV_Muhammad_Unis.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+
+		LIV_Salah_AL_Namrouch = {
+		name = LIV_Salah_AL_Namrouch
+		portraits = {
+			civilian = { large = "gfx/leaders/LIV/Portrait_LIV_Salah_AL_Namrouch.dds" 
+			small = "gfx/advisors/Portrait_LIV_Salah_AL_Namrouch.dds"}
+			army = { large = "gfx/leaders/LIV/Portrait_LIV_Salah_AL_Namrouch.dds" }
+	    }
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = salah_al_namrouch
+			ledger = army
+			allowed = {
+				original_tag = LIV
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

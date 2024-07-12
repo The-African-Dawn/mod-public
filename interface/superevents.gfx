@@ -1,0 +1,35 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_supereventsbg"
+		textureFile = "/gfx/superevents_gui/supereventsbg.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbg_test"
+		textureFile = "/gfx/superevents_gui/supereventsbg_test.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsbutton"
+		textureFile = "/gfx/superevents_gui/supereventsbutton.dds"
+	}
+	spriteType = {
+		name = "GFX_supereventsoverlay"
+		textureFile = "/gfx/superevents_gui/supereventsoverlay.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_supereventsshade"
+		texturefile = "gfx/superevents_gui/supereventsshade.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_superevents_frame"
+		texturefile = "gfx/superevents_gui/superevents_frame.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_superevents_great_african_war"
+		textureFile = "/gfx/superevents_gui/superevents_great_african_war.dds"
+	}
+	
+}

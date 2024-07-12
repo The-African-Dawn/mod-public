@@ -1,0 +1,28 @@
+
+state={
+	id=100
+	name="STATE_100"
+
+	history={
+		owner = DLG
+		add_core_of = DLG
+		add_core_of = LIV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+		}
+		victory_points = {
+			4872 15
+		}
+	}
+
+	provinces={
+		4872 
+	}
+	state_category = metropolis
+	manpower=1176000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

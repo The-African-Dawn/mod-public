@@ -1,0 +1,62 @@
+characters = {
+	GBI_Umaro = {
+		name = GBI_Umaro
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GBI/Portrait_GBI_Umaru_Moktar.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	GBI_Domingos_Simoes_Pereira = {
+		name = GBI_Domingos_Simoes_Pereira
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GBI/GBI_Domingos_Simoes_Pereira.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	GBI_Marciano_Silva_Barbeiro = {
+		name = GBI_Marciano_Silva_Barbeiro
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GBI/Portrait_GBI_Marciano_Silva_Barbeiro.dds"
+				small = "gfx/advisors/Portrait_GBI_Marciano_Silva_Barbeiro.dds"
+			}
+			army = {
+				large = "gfx/leaders/GBI/Portrait_GBI_Marciano_Silva_Barbeiro.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = marciano_silva_barbeiro
+			ledger = army
+			allowed = {
+				original_tag = GBI
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

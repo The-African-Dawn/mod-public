@@ -1,0 +1,148 @@
+division_template = {
+	name = "Bataillon de reconnaissance"
+
+	support={
+		signal_company={ x=0 y=0 }
+		logistics_company={ x=0 y=1 }
+	}
+	regiments={
+		light_armor_unit={ x=0 y=0 }
+		light_armor_unit={ x=0 y=1 }
+		light_armor_unit={ x=0 y=2 }
+		light_armor_unit={ x=1 y=0 }
+		light_armor_unit={ x=1 y=1 }
+	}
+}
+division_template = {
+	name = "Bataillon de commandos"
+
+	support={
+		field_hospital={ x=0 y=0 }
+		signal_company={ x=0 y=1 }
+	}
+	regiments={
+		speznaz={ x=0 y=0 }
+		speznaz={ x=0 y=1 }
+		speznaz={ x=0 y=2 }
+		speznaz={ x=1 y=0 }
+		speznaz={ x=1 y=1 }
+		speznaz={ x=1 y=2 }
+		speznaz={ x=2 y=0 }
+		speznaz={ x=2 y=1 }
+		speznaz={ x=2 y=2 }
+	}
+}
+division_template = {
+	name = "Bataillon d'infanterie"
+
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		engineer={ x=0 y=1 }
+		signal_company={ x=0 y=2 }
+		field_hospital={ x=0 y=3 }
+	}
+	regiments={
+		light_infantry_opol={ x=0 y=0 }
+		light_infantry_opol={ x=0 y=1 }
+		light_infantry_opol={ x=0 y=2 }
+		light_infantry_opol={ x=1 y=0 }
+		light_infantry_opol={ x=1 y=1 }
+		light_infantry_opol={ x=1 y=2 }
+		light_infantry_opol={ x=2 y=0 }
+		light_infantry_opol={ x=2 y=1 }
+		light_infantry_opol={ x=2 y=2 }
+		light_infantry_opol={ x=3 y=0 }
+	}
+}
+
+units = {
+	division= {	
+		location = 1097
+		division_template = "Bataillon de reconnaissance"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "SNG" creator = "CHN" amount = 18 } }
+	}
+	division= {	
+		location = 4917
+		division_template = "Bataillon de reconnaissance"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "SNG" creator = "FRN" amount = 20 } }
+	}
+	division= {	
+		location = 2925
+		division_template = "Bataillon de reconnaissance"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "SNG" creator = "FRN" amount = 20 } }
+	}
+	division= {	
+		location = 2966
+		division_template = "Bataillon de reconnaissance"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "SNG" creator = "FRN" amount = 20 } }
+	}
+	division= {	
+		location = 3013
+		division_template = "Bataillon de reconnaissance"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+		force_equipment_variants = { light_tank_equipment_0 = { owner = "SNG" creator = "FRN" amount = 20 } }
+	}
+	
+	division= {	
+		location = 4918
+		division_template = "Bataillon de commandos"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	
+	division= {	
+		location = 3007
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 1796
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 488
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 1598
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 2541
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division= {	
+		location = 2968
+		division_template = "Bataillon d'infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+
+}
+
+instant_effect = {
+
+	add_equipment_to_stockpile = { 
+		amount = 20
+		type = light_tank_equipment_0
+		producer = FRN
+	}
+}

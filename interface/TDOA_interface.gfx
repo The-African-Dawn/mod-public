@@ -1,0 +1,279 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_radio_africa_cover"
+		textureFile = "gfx/radio_africa_cover.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_radio_africa_drums_cover"
+		textureFile = "gfx/radio_africa_drums_cover.dds"
+		noOfFrames = 2
+	}
+	
+	SpriteType = {
+		name = "GFX_interface_flag_design_left"
+		texturefile = "gfx/interface/interface_flag_design_left.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_tdoa_interface_linii"
+		texturefile = "gfx/interface/tdoa_interface_linii.dds"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_tdoa_interface_linii_for_map"
+		texturefile = "gfx/interface/tdoa_interface_linii_for_map.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_frontend_bg_rain_anim"
+		texturefile = "gfx/interface/bg_rain_anim_background.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/bg_rain_anim_mask.dds"
+			animationtexturefile = "gfx/interface/bg_rain_anim1.dds"	 # <- the animated file
+			animationrotation = 180		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 5.5			# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "overlay"		#add, multiply, overlay
+			animationtype = "scrolling"		#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0 y = 0 }
+			animationtexturescale = { x = 0.3 y = 0.3 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/bg_rain_anim_mask.dds"
+			animationtexturefile = "gfx/interface/bg_rain_anim2.dds"	 # <- the animated file
+			animationrotation = 200	# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 4.5				# in seconds
+			animationdelay = 0.0			# in seconds
+			animationblendmode = "multiply"	   #add, multiply, overlay
+			animationtype = "scrolling"	  #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0 y = 0 }
+			animationtexturescale = { x = 0.3 y = 0.3 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_mll_alert_square"
+		texturefile = "gfx/interface/info_square/mll_alert_square.dds"
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_burkina_education"
+		texturefile = "gfx/interface/decisions/decision_category_burkina.dds"
+	}
+	SpriteType = {
+		name = "GFX_decision_category_pciture_burkina_education"
+		texturefile = "gfx/interface/decisions/decision_category_pciture_burkina_education.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_gendarmerie_officer"
+		texturefile = "gfx/interface/traits/trait_gendarmerie_officer.dds"
+	}			
+
+	
+																	    					SpriteType = {
+		name = "GFX_brk_alert_square"
+		texturefile = "gfx/interface/info_square/brk_alert_square.dds"
+		legacy_lazy_load = no
+	}
+																		    				SpriteType = {
+		name = "GFX_nig_alert_square"
+		texturefile = "gfx/interface/info_square/nig_alert_square.dds"
+		legacy_lazy_load = no
+	}
+																		    				SpriteType = {
+		name = "GFX_liv_alert_square"
+		texturefile = "gfx/interface/info_square/liv_alert_square.dds"
+		legacy_lazy_load = no
+	}
+																		    				SpriteType = {
+		name = "GFX_chd_alert_square"
+		texturefile = "gfx/interface/info_square/chd_alert_square.dds"
+		legacy_lazy_load = no
+	}
+	
+																		    				SpriteType = {
+		name = "GFX_mll_info_square"
+		texturefile = "gfx/interface/info_square/mll_info_square.dds"
+		legacy_lazy_load = no
+	}
+																	    					SpriteType = {
+		name = "GFX_brk_info_square"
+		texturefile = "gfx/interface/info_square/brk_info_square.dds"
+		legacy_lazy_load = no
+	}
+																		    				SpriteType = {
+		name = "GFX_nig_info_square"
+		texturefile = "gfx/interface/info_square/nig_info_square.dds"
+		legacy_lazy_load = no
+	}
+																		    				SpriteType = {
+		name = "GFX_liv_info_square"
+		texturefile = "gfx/interface/info_square/liv_info_square.dds"
+		legacy_lazy_load = no
+	}
+																			    				SpriteType = {
+		name = "GFX_chd_info_square"
+		texturefile = "gfx/interface/info_square/chd_info_square.dds"
+		legacy_lazy_load = no
+	}
+	
+																				    				SpriteType = {
+		name = "GFX_nrg_info_square"
+		texturefile = "gfx/interface/info_square/nrg_info_square.dds"
+		legacy_lazy_load = no
+	}
+	
+																				    				SpriteType = {
+		name = "GFX_rus_info_square"
+		texturefile = "gfx/interface/info_square/rus_info_square.dds"
+		legacy_lazy_load = no
+	}
+	
+																				    				SpriteType = {
+		name = "GFX_usr_info_square"
+		texturefile = "gfx/interface/info_square/usr_info_square.dds"
+		legacy_lazy_load = no
+	}
+	
+																				    				SpriteType = {
+		name = "GFX_frn_info_square"
+		texturefile = "gfx/interface/info_square/frn_info_square.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+			SpriteType = {
+		name = "GFX_russian_map_attention_square"
+		texturefile = "gfx/interface/russian_map_attention_square.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/russian_map_attention_square.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 3.75
+			animationdelay = 0.5
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/russian_map_attention_square.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 3.75
+			animationdelay = 0.5
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+		transparencecheck = yes
+	}
+	
+														    					SpriteType = {
+		name = "GFX_african_map_cover"
+		texturefile = "gfx/interface/african_map_cover.dds"
+		transparencecheck = yes
+	}
+
+	
+
+
+
+															    					SpriteType = {
+		name = "GFX_african_map_cover_neon_overlay"
+		texturefile = "gfx/interface/african_map_cover_neon_overlay.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/african_map_cover_neon_overlay.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 2.0
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/african_map_cover_neon_overlay.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 2.0
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+		transparencecheck = yes
+	}
+		
+		spriteType = {
+		name = "GFX_info_square_cover"
+		texturefile = "gfx/interface/info_square_cover.dds"
+		transparencecheck = yes
+	}
+	
+			spriteType = {
+		name = "GFX_event_option_entry_news_tdoa"
+		texturefile = "gfx/interface/event_option_entry_news_tdoa.dds"
+		transparencecheck = yes
+	}
+	
+				spriteType = {
+		name = "GFX_event_button_minimize_news_tdoa"
+		texturefile = "gfx/interface/event_button_minimize_news_tdoa.dds"
+		transparencecheck = yes
+	}
+	
+				spriteType = {
+		name = "GFX_radio_icon_tdoa"
+		texturefile = "gfx/interface/radio_icon_tdoa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_low_corruption"
+		texturefile = "gfx/interface/low_corruption.dds"
+	}
+	SpriteType = {
+		name = "GFX_med_corruption"
+		texturefile = "gfx/interface/med_corruption.dds"
+	}
+	SpriteType = {
+		name = "GFX_high_corruption"
+		texturefile = "gfx/interface/high_corruption.dds"
+	}
+	SpriteType = {
+		name = "GFX_extr_corruption"
+		texturefile = "gfx/interface/extr_corruption.dds"
+	}
+	textSpriteType = {
+		name = "GFX_tdoa_main_lobby_button"
+		textureFile = "gfx/interface/tdoa_main_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+}

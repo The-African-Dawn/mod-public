@@ -1,0 +1,27 @@
+
+state={
+	id=162
+	name="STATE_162"
+	resources={
+		chromium = 16
+		steel = 4
+	}
+	history={
+		owner = MRK
+		add_core_of = MRK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		92 482 794 863 918 954 1826 1844 2368 2614 2630 2635 2643 2651 2660 2664 
+	}
+	manpower=3935645
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,49 @@
+
+state={
+	id=26
+	name="STATE_26"
+	resources={
+		steel=12
+	}
+	history={
+		owner = ISS
+		add_core_of = ISS
+		add_core_of = BRK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			4851 5 
+		}
+		victory_points = {
+			3014 30 
+		}
+		victory_points = {
+			2982 5 
+		}
+		victory_points = {
+			1660 15 
+		}
+		victory_points = {
+			2247 3 
+		}
+		victory_points = {
+			1440 3 
+		}
+		victory_points = {
+			2978 3 
+		}
+
+	}
+
+	provinces={
+		836 1440 1660 1922 2247 2978 2982 2993 3012 3014 4850 4851 4852 4853 4854 4855 4856 4961 4962 4963 4965 4966 4967 
+	}
+	manpower=3855724
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

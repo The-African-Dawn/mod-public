@@ -1,0 +1,157 @@
+nigerian_corruption_decision = {
+
+	nigeria_cleansing_light = {
+		icon = GFX_decision_reduction_of_trade_duties
+		days_mission_timeout = 1460
+		is_good = no
+		fire_only_once = yes
+		priority = 50
+		activation = { has_country_flag = Nigerian_Corruption_Started}
+		available = { check_variable = { nigerian_corruption_points > 99 }}
+		#available = { has_country_flag = Nigerian_Corruption_Final_Push}
+		timeout_effect = {	
+			if = {limit = {check_variable = { nigerian_corruption_points > 75} tag = NRG} swap_ideas = { remove_idea = NRG_broken_mechanism add_idea = NRG_broken_mechanism_4 }}
+			else_if = {limit = {check_variable = { nigerian_corruption_points > 49} tag = NRG} swap_ideas = { remove_idea = NRG_broken_mechanism add_idea = NRG_broken_mechanism_3 }}
+			else_if = {limit = {check_variable = { nigerian_corruption_points > 24} tag = NRG} swap_ideas = { remove_idea = NRG_broken_mechanism add_idea = NRG_broken_mechanism_2 }}
+			else_if = {limit = {check_variable = { nigerian_corruption_points < 25} tag = NRG} swap_ideas = { remove_idea = NRG_broken_mechanism add_idea = NRG_broken_mechanism_1 }}
+		}
+		complete_effect = {
+			#country_event = {id = NRG.2}
+			remove_ideas = NRG_broken_mechanism
+		}
+		ai_will_do = {factor = 0}
+	}
+	
+		
+	#nigeria_final_push_decision = {
+	#	icon = GFX_decision_corruption_eradication
+	#	fire_only_once = yes
+	#	visible = {
+	#		 check_variable = { nigerian_corruption_points > 99 }
+	#	}
+	#	complete_effect = { 
+	#	#country_event = {id = NRG.1}
+	#	
+	#	}
+	#	ai_will_do = {base = 2}
+	#
+	#}
+
+	
+	nigeria_diving_deeper = {
+		icon = GFX_decision_corruption_eradication
+		fire_only_once = no
+		cost = 50
+		days_remove = 180
+		remove_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 1
+			}
+			custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}		
+		}
+		ai_will_do = {base = 2}
+
+	}
+	
+	
+	
+	nigerian_corruption_army_check = {
+		icon = GFX_decision_corruption_eradication
+		fire_only_once = yes
+		cost = 50
+		days_remove = 180
+		remove_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 1
+			}
+			custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}		
+		}
+		ai_will_do = {base = 2}
+
+	}
+
+
+	
+	nigerian_check_the_government = {
+		icon = GFX_decision_corruption_eradication
+		fire_only_once = yes
+		cost = 50
+		days_remove = 180
+		remove_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}
+			custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}		
+		}
+		ai_will_do = {base = 2}
+
+	}
+	
+	nigerian_check_the_police = {
+		icon = GFX_decision_corruption_eradication
+		fire_only_once = yes
+		cost = 50
+		days_remove = 180
+		remove_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}
+			custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}		
+		}
+		ai_will_do = {base = 2}
+
+	}
+	
+	nigerian_check_the_banks = {
+		icon = GFX_decision_corruption_eradication
+		fire_only_once = yes
+		cost = 50
+		days_remove = 180
+		remove_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}
+			custom_effect_tooltip = nigerian_corruption_detective_goes_deeper
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = nigerian_corruption_points
+				value = 2
+			}		
+		}
+		ai_will_do = {base = 2}
+
+	}
+	
+	
+
+}

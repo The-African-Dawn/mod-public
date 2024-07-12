@@ -1,0 +1,1215 @@
+battle_for_africa_decision = {
+	ask_for_help = {
+		allowed = {
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = USR
+					tag = FRN
+					tag = CHN
+				}
+			}
+		}
+		fire_only_once = no
+		target_root_trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_government = fundamentalism
+			}
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = USR
+					tag = FRN
+					tag = CHN
+				}
+				has_government = fundamentalism
+				has_country_flag = international_blockade
+			}
+		}
+		cost = 15
+		visible = {
+			NOT = {
+				has_country_flag = asked_help_180_timer
+			}
+			any_country = {
+				has_war_with = ROOT
+				has_government = fundamentalism
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = asked_help_180_timer
+			}
+		}
+		targets = {
+			RUS
+			USR
+			FRN
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > -20
+				}
+			}
+		}
+		icon = battle_for_africa_ask_for_help
+		complete_effect = {
+			set_country_flag = {
+				flag = asked_help_180_timer
+				days = 180
+				value = 1
+			}
+			custom_effect_tooltip = ask_for_help_tt
+			FROM = {
+				country_event = {
+					id = ab.1
+					days = 1
+					hours = 2
+					random_days = 2
+					random_hours = 10
+				}
+			}
+		}
+		ai_will_do = {
+			base = 20
+		}
+	}
+	NRG_start_talking_about_NIG = {
+		allowed = {
+			tag = NRG
+		}
+		fire_only_once = yes
+		priority = 100
+		target_root_trigger = {
+			OR = {
+				has_government = pragmatism
+				has_government = francocentrism
+			}
+			is_faction_leader = yes
+		}
+		cost = 0
+		visible = {
+			date < 2023.08.7
+		}
+		available = {
+			NIG = {
+				has_government = panafricanism
+			}
+		}
+		targets = {
+			NIG
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_government = panafricanism
+			}
+		}
+		icon = decision_support_niger
+		complete_effect = {
+			news_event = {
+				id = NIG.10
+				hours = 8
+			}
+			add_threat = 10
+			NIG = {
+				country_event = {
+					id = NIG.11
+					hours = 4
+				}
+			}
+			add_to_variable = { global.ecowas_unity_points = -10 }
+			custom_effect_tooltip = ecowas_unity_points_rem_10
+			set_global_flag = NIG_crisis
+			hidden_effect = {
+				news_event = {
+					id = NIG.14
+					days = 17
+					hours = 12
+				}
+				news_event = {
+					id = NIG.15
+					days = 36
+					hours = 18
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				date > 2023.07.26
+			}
+		}
+	}
+	support_niger = {
+		allowed = {
+			NOT = {
+				OR = {
+					tag = NRG
+					tag = NIG
+					tag = CHN
+					tag = RUS
+					tag = USR
+					tag = FRN
+				}
+			}
+		}
+		priority = 99
+		target_root_trigger = {
+			OR = {
+				has_government = panafricanism
+				AND = {
+					has_government = pragmatism
+					is_in_faction = no
+				}
+			}
+		}
+		cost = 15
+		visible = {
+			date < 2023.08.30
+			has_global_flag = NIG_crisis
+			NOT = {
+				has_country_flag = COUNTRY_DECIDED_NIG
+			}
+		}
+		fire_only_once = yes
+		available = {
+		}
+		targets = {
+			NIG
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_government = panafricanism
+			}
+		}
+		icon = decision_support_niger
+		complete_effect = {
+			give_guarantee = FROM
+			news_event = {
+				id = NIG.12
+				hours = 2
+				random_hours = 4
+			}
+			add_threat = 4
+			set_country_flag = COUNTRY_DECIDED_NIG
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				OR = {
+					tag = BRK
+					tag = MLL
+				}
+			}
+		}
+	}
+	support_intervention = {
+		allowed = {
+			NOT = {
+				OR = {
+					tag = NRG
+					tag = NIG
+					tag = RUS
+					tag = USR
+					tag = FRN
+				}
+			}
+		}
+		priority = 99
+		target_root_trigger = {
+			OR = {
+				has_government = francocentrism
+				has_government = pragmatism
+				is_in_faction_with = NRG
+				is_in_faction = no
+			}
+		}
+		cost = 15
+		visible = {
+			date < 2023.08.30
+			has_global_flag = NIG_crisis
+			NOT = {
+				has_country_flag = COUNTRY_DECIDED_NIG
+			}
+		}
+		fire_only_once = yes
+		available = {
+		}
+		targets = {
+			NIG
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_government = panafricanism
+			}
+		}
+		icon = decision_support_niger
+		complete_effect = {
+			news_event = {
+				id = NIG.13
+				hours = 2
+				random_hours = 6
+				random_days = 2
+				days = 1
+			}
+			if = {
+				limit = {
+					is_in_faction_with = NRG
+				}
+				add_to_variable = { global.ecowas_unity_points = 10 }
+				custom_effect_tooltip = ecowas_unity_points_add_10
+			}
+			add_threat = 4
+			set_country_flag = COUNTRY_DECIDED_NIG
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				OR = {
+					tag = SNG
+					tag = KOT
+					tag = GNN
+					tag = BNN
+				}
+			}
+		}
+	}
+	send_help_to_traore = {
+		cost = 15
+		visible = {
+			is_in_faction_with = MLL
+			BRK = {
+				has_civil_war = yes
+			}
+		}
+		available = {
+			BRK = {
+				has_civil_war = yes
+			}
+		}
+		cost = 50
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			every_country = {
+				limit = {
+					original_tag = BRK
+					has_government = panafricanism
+				}
+				add_equipment_to_stockpile = {
+					type = AK_1
+					amount = 200
+					producer = RUS
+				}
+			}
+		}
+		ai_will_do = {
+			base = 20
+		}
+	}
+
+	#
+	usa_open_bases_in_kot = {
+		activation = {
+			has_global_flag = USA_KOT_open_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = USA_KOT_open_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = KOT
+				tag = USR
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 360
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = USR
+				}
+				transfer_state = 190
+				190 = {
+					remove_core_of = KOT
+					add_core_of = USR
+					add_building_construction = {
+						type = military_base
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KOT
+				}
+				give_military_access = USR
+				add_political_power = 250
+				army_experience = 50
+			}
+		}
+	}
+	usa_open_bases_in_mrv = {
+		activation = {
+			has_global_flag = USA_MRV_open_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = USA_MRV_open_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = MRV
+				tag = USR
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 360
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = USR
+				}
+				transfer_state = 189
+				189 = {
+					remove_core_of = MRV
+					add_core_of = USR
+					add_building_construction = {
+						type = military_base
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = MRV
+				}
+				give_military_access = USR
+				add_political_power = 250
+				army_experience = 50
+			}
+		}
+	}
+	usa_open_bases_in_bnn = {
+		activation = {
+			has_global_flag = USA_BNN_open_bases
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_global_flag = USA_BNN_open_bases
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				tag = BNN
+				tag = USR
+			}
+		}
+		cancel_trigger = {
+		}
+		icon = battle_for_africa_ask_for_help
+		is_good = yes
+		days_mission_timeout = 360
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = USR
+				}
+				transfer_state = 191
+				191 = {
+					remove_core_of = MRV
+					add_core_of = USR
+					add_building_construction = {
+						type = military_base
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = BNN
+				}
+				give_military_access = USR
+				add_political_power = 250
+				army_experience = 50
+			}
+		}
+	}
+
+
+	## BUY THINGS MAJORS
+	RUS_buy_guns = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 500
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = AK_1
+				amount = 1000
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				has_equipment = {
+					infantry_equipment < 1000
+				}
+			}
+		}
+	}
+	RUS_buy_spec = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 550
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = spec_oborud_equipment
+				amount = 500
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					spec_oborud_equipment < 500
+				}
+			}
+		}
+	}
+	RUS_buy_addtitional_eq = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 550
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 350
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					support_equipment < 350
+				}
+			}
+		}
+	}
+	RUS_buy_atgm = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 650
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = ATGM_equipment
+				amount = 500
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					ATGM_equipment < 500
+				}
+			}
+		}
+	}
+	RUS_buy_manpads = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = manpads_equipment
+				amount = 500
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					manpads_equipment < 500
+				}
+			}
+		}
+	}
+	RUS_mrap_buy = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_reporting_on_duty
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = mrap_equipment
+				amount = 250
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					mrap_equipment < 250
+				}
+			}
+		}
+	}
+	RUS_apc_buy = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_reporting_on_duty
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_carrying_armored_vehicle
+				amount = 100
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					infantry_carrying_armored_vehicle < 100
+				}
+			}
+		}
+	}
+	RUS_ifv_buy = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_iron_machines
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = armored_support_vehicle_chassis
+				amount = 75
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					armored_support_vehicle_chassis < 75
+				}
+			}
+		}
+	}
+	RUS_tanks_buy = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_iron_machines
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis
+				amount = 25
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					medium_tank_chassis < 75
+				}
+			}
+		}
+	}
+	RUS_transport_helis = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_death_from_above
+		}
+		cost = 1000
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = transport_helicopter_airframe_0
+				amount = 10
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	RUS_mi24_helis = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_death_from_above
+		}
+		cost = 1000
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = attack_helicopter_airframe_0_ru
+				amount = 5
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	RUS_ka52_helis = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_death_from_above
+		}
+		cost = 1000
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = attack_helicopter_airframe_0_us
+				amount = 2
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	RUS_su25_buy = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_tsars_of_the_skies
+		}
+		cost = 1500
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = cas_airframe_0_ru
+				amount = 2
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	RUS_mig29_buy = {
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			NOT = { has_idea = DAC_no_create }
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = RUS_tsars_of_the_skies
+		}
+		cost = 1650
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_1_ru
+				amount = 2
+				producer = RUS
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+
+	## usr
+	USR_buy_guns = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 500
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = M16_1
+				amount = 1000
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 999
+				has_equipment = {
+					infantry_equipment < 1000
+				}
+			}
+		}
+	}
+	USR_buy_spec = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 550
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = spec_oborud_equipment
+				amount = 500
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					spec_oborud_equipment < 500
+				}
+			}
+		}
+	}
+	USR_buy_addtitional_eq = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 550
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 350
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					support_equipment < 350
+				}
+			}
+		}
+	}
+	USR_buy_atgm = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 650
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = ATGM_equipment
+				amount = 500
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					ATGM_equipment < 500
+				}
+			}
+		}
+	}
+	USR_buy_manpads = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = manpads_equipment
+				amount = 500
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					manpads_equipment < 500
+				}
+			}
+		}
+	}
+	USR_mrap_buy = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_old_world_blues
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = mrap_equipment
+				amount = 250
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					mrap_equipment < 250
+				}
+			}
+		}
+	}
+	USR_apc_buy = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_old_world_blues
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_carrying_armored_vehicle
+				amount = 100
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					infantry_carrying_armored_vehicle < 100
+				}
+			}
+		}
+	}
+	USR_ifv_buy = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_big_iron
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = armored_support_vehicle_chassis
+				amount = 75
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					armored_support_vehicle_chassis < 75
+				}
+			}
+		}
+	}
+	USR_tanks_buy = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_big_iron
+		}
+		cost = 750
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis
+				amount = 25
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 400
+				has_equipment = {
+					medium_tank_chassis < 75
+				}
+			}
+		}
+	}
+	USR_transport_helis = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_get_to_the_choppers
+		}
+		cost = 1000
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = transport_helicopter_airframe_0
+				amount = 10
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	USR_apache_helis = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_get_to_the_choppers
+		}
+		cost = 1000
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = attack_helicopter_airframe_0_us
+				amount = 2
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	USR_a10_buy = {
+		allowed = {
+			tag = USR
+		}
+	
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_hand_of_freedom
+		}
+		cost = 1500
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = cas_airframe_1_us
+				amount = 2
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	USR_f16_buy = {
+		allowed = {
+			tag = USR
+		}
+		fire_only_once = no
+		days_re_enable = 30
+		available = {
+			has_completed_focus = USR_hand_of_freedom
+		}
+		cost = 1650
+		icon = decision_send_help_to_traore
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_airframe_1_us
+				amount = 2
+				producer = USR
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

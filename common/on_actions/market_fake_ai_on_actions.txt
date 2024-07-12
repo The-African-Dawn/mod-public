@@ -1,0 +1,105 @@
+on_actions = {
+    
+	on_monthly = { #### black market
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { has_country_flag = black_market_already_bought }
+						OR = {
+							has_government = fundamentalism
+							has_country_flag = international_blockade
+						}
+						OR = {
+							has_equipment = {
+								infantry_equipment < 2000
+							}
+							AND = {
+								has_equipment = {
+									ATGM_equipment < 500
+								}
+								OR = { has_template_containing_unit = infantry has_template_containing_unit = infantry_on_btr has_template_containing_unit = infantry_on_jeep has_template_containing_unit = infantry_on_bmp has_template_containing_unit = atgm_support_unit } 
+							}
+							AND = {
+								OR = { has_template_containing_unit = manpads_support_unit has_template_containing_unit = speznaz } 
+								has_equipment = {
+									manpads_equipment < 500
+								}
+							}
+						}
+						has_political_power > var:global.bm_cost_2
+						is_ai = yes
+					}
+				}
+				fake_ai_black_market = yes
+			}
+		}
+	}
+	
+	on_weekly = { 
+		effect = {
+			if = {
+				limit = {
+					date < 2025.02.24
+					has_war = yes
+					is_ai = yes
+					NOT = { has_country_flag = buyed_weapons_not_delivered }
+					NOT = {
+						OR = {
+							tag = RUS
+							tag = FRN
+							tag = USR
+							tag = CHN
+							has_government = fundamentalism
+							has_country_flag = international_blockade
+						}
+					}
+					has_political_power > 80
+				}
+				fake_ai_market_pre_2025 = yes
+			}
+			if = {
+				limit = {
+					date > 2025.02.24
+					is_in_faction = yes
+					is_ai = yes
+					NOT = { has_country_flag = buyed_weapons_not_delivered }
+					has_war = no
+					NOT = {
+						OR = {
+							tag = RUS
+							tag = FRN
+							tag = USR
+							tag = CHN
+							has_government = fundamentalism
+							has_country_flag = international_blockade
+						}
+					}
+					has_political_power > 50
+				}
+				fake_ai_market_preparing_for_war = yes
+			}
+			if = {
+				limit = {
+					date > 2025.02.24
+					NOT = { has_country_flag = buyed_weapons_not_delivered }
+					has_war = yes
+					NOT = {
+						OR = {
+							tag = RUS
+							tag = FRN
+							tag = USR
+							tag = CHN
+							has_government = fundamentalism
+							has_country_flag = international_blockade
+						}
+					}
+					is_ai = yes
+					has_political_power > 50
+				}
+				fake_ai_market_war = yes
+			}
+
+		}
+	}
+}

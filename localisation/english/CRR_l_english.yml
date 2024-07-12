@@ -1,0 +1,26 @@
+﻿l_english:
+
+CRR_Francois_Yanguvonda:0 "François Bozizé Yangouvonda"
+CRR_Francois_Yanguvonda_desc: ""
+
+CRR_Faustin_Archange:0 "Faustin-Archange Touadéra"
+CRR_Faustin_Archange_desc: "Faustin-Archange Touadéra was born on 21 April 1957 in Bangui, French Equatorial Africa, to a chauffeur and a farmer. He was educated at the universities of Bangui and Abidjan, where he studied mathematics and received two doctorates.\nTouadéra began his career in education, teaching at the University of Bangui since 1987. From 2005 to 2008, he was the rector of this university. Touadéra is a knight of the Orders of Academic Palms of the Afro-Malagasy Council for Higher Education (2004) and France (2008). Officer of the Order of Merit of the CAR (2008), Commander of the Order of Academic Palms of the CAR (2012).\nOn 22 January 2008, President François Bozizé appointed Touadéra as Prime Minister of the Central African Republic.\nAfter the overthrow of the Bozizé regime in March 2013 by the Séléka group, bloody clashes began in the country. Touadéra and his family left the CAR and moved to France. He returned to his homeland after the election of Catherine Samba-Panza as interim president (20 January 2014).\nTaudéra was elected president twice, in 2016 and 2021.\nOn 28 January 2019, as a result of the signing of the Agreement on Peace and Reconciliation in the Central African Republic in Khartoum (Sudan), Touadéra founded the Order of Reconciliation of the Central African Republic, which is awarded to every citizen of the Central African Republic or a foreign citizen who has contributed to reconciliation and peacebuilding."
+
+ #FOCUSES#
+ LIV_general_mobilization: "General Mobilization"
+ LIV_general_mobilization_desc: "The Endless War Continues"
+
+
+ #IDEAS#
+ LIV_political_instability: "Political Instability"
+ LIV_political_instability_desc: ""
+ 
+ #TOOLTIP#
+ LIV_faso_military: "§gSince we chose to focus on the quality of the army, we get additional bonuses:§!"
+ political_instability_initiate_resistance:0 "§YWhile this national spirit is in effect, we'll be met with strong resistance from fundamentalists and other radicals in our territories§!"
+ 
+ #EVENTS#
+ LIV.1.t:0 "Victory of the Revolution"
+ LIV.1.desc:0 "Exuding a sense of a fresh start and hope, Burkina Faso today celebrates a historic event - the joyous overthrow of the previous rotten government and the arrival of a new leader, who is perceived as a long-awaited hope for a better future. A wave of enthusiasm and support is gripping the people of the country, greeting the renewal with open arms.\n\nUnder the leadership of Ibrahim Traoré, our country is entering a new era, filled with optimism and a desire for positive change. This coup symbolizes not only the end of a long era of injustice and corruption, but also an opportunity for our people to actively participate in building a just and prosperous society.\n\nA bright future for our country is on the horizon, and the new leader in the person of Ibrahim Traoré inspires us to take bold steps and dreams. May this page in the history of Burkina Faso be the beginning of a new era of prosperity, solidarity and joy for all our citizens."
+ LIV.1.a:0 "It's Only The Beginning."
+ LIV.1.b:0 "Testing."

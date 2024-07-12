@@ -1,0 +1,14 @@
+characters = {
+	ALJ_Abdelmadjid_Tebbun = {
+		name = ALJ_Abdelmadjid_Tebbun
+		portraits = {
+			civilian = { large = "gfx/leaders/ALJ/Portrait_ALJ_Abdelmadjid_Tebbun.dds" }
+			army = { large = "gfx/leaders/ALJ/Portrait_ALJ_Abdelmadjid_Tebbun.dds" }
+	    }
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
+}

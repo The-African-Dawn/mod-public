@@ -1,0 +1,35 @@
+
+state={
+	id=79
+	name="STATE_79"
+
+	history={
+		owner = CRR
+		add_core_of = CRR
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			2231 1
+		}
+		victory_points = {
+			3159 2
+		}
+		BLK = {
+			set_province_controller = 4938
+			set_province_controller = 2334
+			set_province_controller = 2231
+			set_province_controller = 44
+			set_province_controller = 839
+		}
+	}
+
+	provinces={
+		44 839 1021 1359 1661 2231 2334 3159 4937 4938 
+	}
+	manpower=631691
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

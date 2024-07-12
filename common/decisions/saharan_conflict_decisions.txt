@@ -1,0 +1,108 @@
+saharan_conflict_decision = {
+
+	sahara_time_of_change = {
+		icon = GFX_decision_time_of_change
+		days_mission_timeout = 725
+		is_good = no
+		fire_only_once = yes
+		allowed = { tag = MRK }
+		activation = { has_global_flag = Saharan_Tensions_Started}
+		available = { has_global_flag = Saharan_War_Inevitable}
+		timeout_effect = {	
+		add_stability = 0.1
+		clr_global_flag = Saharan_Tensions_Started
+		MRK = {news_event = {id = MRK.3}}
+		}
+		complete_effect = {
+			MRK = {
+				declare_war_on = {
+					target = WSR
+					type = annex_everything
+				}
+			}
+		MRK = {news_event = {id = MRK.4}}
+		clr_global_flag = Saharan_Tensions_Started 
+		}
+		ai_will_do = {factor = 0}
+	}
+	
+	sahara_time_of_change_wsr = {
+		icon = GFX_decision_time_of_change
+		days_mission_timeout = 725
+		is_good = no
+		fire_only_once = yes
+		allowed = { tag = WSR }
+		activation = { has_global_flag = Saharan_Tensions_Started}
+		available = { has_global_flag = Saharan_War_Inevitable}
+		timeout_effect = {	
+		add_stability = 0.1
+		clr_global_flag = Saharan_Tensions_Started
+		}
+		complete_effect = {
+		MRK = {
+				declare_war_on = {
+					target = WSR
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {factor = 0}
+	}
+	
+	sahara_war_has_come_decision = {
+		icon = GFX_decision_tdoa_french_influence
+		fire_only_once = yes
+		visible = {
+			check_variable = { global.saharan_stress_points > 99 }
+		}
+		complete_effect = { 
+			set_global_flag = Saharan_War_Inevitable
+		}
+		ai_will_do = {base = 2}
+
+	}
+	
+	sahara_increase_the_tension = {
+		icon = GFX_decision_increasing_tension
+		fire_only_once = no
+		days_re_enable = 10
+		visible = {
+		}
+		days_remove = 60
+		remove_effect = { 
+
+		}
+		complete_effect = { 
+		
+			add_to_variable = {
+				var = global.saharan_stress_points
+				value = 50
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 35
+	}
+	sahara_decrease_the_tension = {
+		icon = GFX_decision_decreasing_tension
+		fire_only_once = no
+		#days_re_enable = 10
+		visible = {
+			
+		}
+		days_remove = 60
+		remove_effect = { 
+
+		
+		}
+		complete_effect = { 
+			
+			subtract_from_variable = {
+				var = global.saharan_stress_points
+				value = 10
+			}
+		}
+		ai_will_do = {base = 2}
+		cost = 45
+	}
+
+}

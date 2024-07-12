@@ -1,0 +1,33 @@
+
+state={
+	id=136
+	name="STATE_136"
+
+	history={
+		owner = BNN
+		add_core_of = BNN
+		ISS = {
+			set_province_controller = 543
+			set_province_controller = 653
+
+		}
+		victory_points = {
+			653 1
+		}
+		victory_points = {
+			835 2
+		}
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		210 543 653 835 3052 4877 4878 
+	}
+	manpower=333333
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

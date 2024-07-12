@@ -1,0 +1,11 @@
+
+air_wings = {
+	110 = {
+		cas_airframe_0_ru =  { owner = "CHD" creator = "RUS" amount = 8 }
+		cas_airframe_0_ru =  { owner = "CHD" creator = "RUS" amount = 2 }
+		attack_helicopter_airframe_0_ru =  { owner = "CHD" creator = "RUS" amount = 2 }
+		transport_helicopter_airframe_0 =  { owner = "CHD" creator = "RUS" amount = 5 }
+		fighter_airframe_1_ru =  { owner = "CHD" creator = "RUS" amount = 1 }
+		light_cas_airframe_0 =  { owner = "CHD" creator = "FRN" amount = 1 }
+	}
+}

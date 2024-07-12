@@ -1,0 +1,44 @@
+scripted_gui = {
+  Ecowas_Unity_GUI = {
+    window_name = "Ecowas_Unity_GUI"
+    context_type = decision_category
+
+    visible = {
+			#has_country_flag = NOV_Stalinist_Division_Started
+		}
+
+    effects = {
+	
+    }
+	
+
+    triggers = {
+				
+    }
+
+    dynamic_lists = {
+	}
+
+    properties = {
+				Ecowas_Unity_GUI_ProgressBar = {
+				frame = global.ecowas_unity_points
+			}
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}

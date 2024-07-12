@@ -1,0 +1,35 @@
+capital = 124
+set_technology = {
+	Rifle_pizods = 1
+	AK_tech = 1
+}
+set_convoys = 3
+
+set_research_slots = 2
+set_stability = 0.00
+set_war_support = 0.3
+
+add_ideas = {
+	extensive_conscription_fun
+	war_economy_fun
+}
+starting_train_buffer = 5
+
+set_country_flag = international_blockade
+
+set_politics = {
+	ruling_party = panafricanism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+set_popularities = {
+	panafricanism = 100
+}
+
+recruit_character = FCT_Mahamat_Mahdi_Ali
+recruit_character = FCT_Rachid_Mahamat_Tahir

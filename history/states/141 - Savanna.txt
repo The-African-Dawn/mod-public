@@ -1,0 +1,33 @@
+
+state={
+	id=141
+	name="STATE_141"
+
+	history={
+		owner = GNN
+		add_core_of = GNN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		victory_points = {
+			2285 2 
+		}
+		victory_points = {
+			321 2 
+		}
+		victory_points = {
+			466 2 
+		}
+		
+	}
+
+	provinces={
+		321 466 1022 1090 1139 1738 2285 2518 
+	}
+	manpower=4010245
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

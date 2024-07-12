@@ -1,0 +1,34 @@
+
+state={
+	id=21
+	name="STATE_21"
+
+	history={
+		owner = NIG
+		add_core_of = NIG
+		victory_points = {
+			2911 3 
+		}
+		victory_points = {
+			1343 1 
+		}
+		victory_points = {
+			1896 1 
+		}
+		victory_points = {
+			1283 1 
+		}
+		buildings = {
+			infrastructure = 1
+			air_base=2
+		}
+		set_variable = { amount_of_uran = 0.54 }	
+	}
+	state_category = rural
+	provinces={
+		35 65 85 99 106 365 383 404 447 754 791 834 847 884 898 1012 1118 1124 1158 1174 1247 1283 1323 1343 1363 1393 1397 1473 1476 1487 1529 1557 1579 1652 1698 1768 1837 1870 1896 1897 1945 1995 2050 2180 2279 2372 2407 2453 2454 2505 2534 2559 2819 2848 2862 2865 2872 2873 2876 2885 2889 2893 2896 2911 2919 2931 2936 2938 
+	}
+	manpower=407620	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

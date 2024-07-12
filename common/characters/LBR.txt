@@ -1,0 +1,77 @@
+characters = {
+	LBR_gora = {
+		name = LBR_gora
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBR/Portrait_LBR_George_Vea.dds"
+			}
+			army = {
+				large = "gfx/leaders/LBR/Portrait_LBR_George_Vea.dds"
+			}
+		}
+		country_leader = {
+			ideology = pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	LBR_Yanqui_Zaza = {
+		name = LBR_Yanqui_Zaza
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBR/LBR_Yanqui_Zaza.dds"
+			}
+		}
+		country_leader = {
+			ideology = panafricanism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	LBR_Joseph_Boakai = {
+		name = LBR_Joseph_Boakai
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBR/LBR_Joseph_Boakai.dds"
+			}
+		}
+		country_leader = {
+			ideology = francocentrism_sub
+			expire = "3000.1.1.1"
+		}
+	}
+	LBR_Daniel_Ziankahn = {
+		name = LBR_Daniel_Ziankahn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBR/Portrait_LBR_Daniel_Ziankahn.dds"
+				small = "gfx/advisors/Portrait_LBR_Daniel_Ziankahn.dds"
+			}
+			army = {
+				large = "gfx/leaders/LBR/Portrait_LBR_Daniel_Ziankahn.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = daniel_ziankahn
+			ledger = army
+			allowed = {
+				original_tag = LBR
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

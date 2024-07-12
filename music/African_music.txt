@@ -1,0 +1,117 @@
+music_station = "african_dawn_station"
+
+		
+
+	
+
+	
+						music = {
+	song = "les_vautours"
+	chance = { factor = 1 }}
+	
+						music = {
+	song = "ma_solitude"
+	chance = { factor = 1 }}
+	
+							music = {
+	song = "aw_ye_douka_ke"
+	chance = { factor = 1 }}
+	
+								music = {
+	song = "anga_wan_mpasso"
+	chance = { factor = 1 }}
+	
+									music = {
+	song = "tieba_lou_tounouna"
+	chance = { factor = 1 }}
+	
+		
+										music = {
+	song = "jeunesse_wilila"
+	chance = { factor = 1 }}
+
+	
+											music = {
+	song = "a_son_magni"
+	chance = { factor = 1 }}
+	
+												music = {
+	song = "mamadou"
+	chance = { factor = 1 }}
+	
+								music = {
+	song = "maman"
+	chance = { factor = 1 }}
+	
+								music = {
+	song = "m_paaga"
+	chance = { factor = 1 }}
+
+
+	
+									music = {
+	song = "ragga_de_ouaga"
+	chance = { factor = 1 }}
+	
+										music = {
+	song = "burkina_faso"
+	chance = { factor = 1 }}
+	
+							music = {
+	song = "yonre_ya_naaba"
+	chance = { factor = 1 }}
+	
+								music = {
+	song = "zwa_songo"
+	chance = { factor = 1 }}
+	
+								music = {
+	song = "deni"
+	chance = { factor = 1 }}
+	
+									music = {
+	song = "kuma"
+	chance = { factor = 1 }}
+	
+								music = {
+	song = "woubri"
+	chance = { factor = 1 }}
+	
+									music = {
+	song = "djougou_malola"
+	chance = { factor = 1 }}
+	
+										music = {
+	song = "m_ba_sida"
+	chance = { factor = 1 }}
+	
+										music = {
+	song = "zinga"
+	chance = { factor = 1 }}
+	
+											music = {
+	song = "kato_kato"
+	chance = { factor = 1 }}
+	
+									music = {
+	song = "m_biga"
+	chance = { factor = 1 }}
+	
+										music = {
+	song = "m_podba"
+	chance = { factor = 1 }}
+	
+							music = {
+	song = "la_guitare_de_tinga"
+	chance = { factor = 1 }}
+	
+						music = {
+	song = "reach_out"
+	chance = { factor = 1 }}
+	
+							music = {
+	song = "baathist"
+	chance = { factor = 1 }}
+	
+
+	
