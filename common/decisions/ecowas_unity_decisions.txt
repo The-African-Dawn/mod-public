@@ -33,7 +33,7 @@ ecowas_unity_decision = {
 			}
 			
 		}
-		ai_will_do = {base = 2}
+		ai_will_do = {base = 3}
 		cost = 50
 	}
 	
@@ -74,7 +74,7 @@ ecowas_unity_decision = {
 		}
 
 
-		ai_will_do = {base = 1}
+		ai_will_do = {base = 2}
 		cost = 50
 	}
 }
