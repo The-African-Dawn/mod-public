@@ -303,7 +303,7 @@ country = {
 				industrial_capacity_factory = 0.05
 			}
 		}
-		GEN_ochko_barana_IDEA  ={
+		GEN_ob_IDEA  ={
 			name = GEN_fundamentalists_mujaheeds
 			picture = ISS_holy_jihad
 			allowed_civil_war = {

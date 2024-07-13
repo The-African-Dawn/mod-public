@@ -91,6 +91,7 @@ tug_of_war_gvinea_category = {
 		activation = { has_global_flag = gvinea_political_conflict_started}
 		available = { always = no }
 		timeout_effect = {
+			clr_global_flag = gvinea_political_conflict_started
 			if = {
 				limit = {
 					check_variable = { global.tug_of_war_gvinea_choosing_points > 40 }

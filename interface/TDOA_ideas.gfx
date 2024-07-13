@@ -1163,5 +1163,14 @@ spriteTypes = {
 		name = "GFX_idea_USR_interagency_conflict"
 		texturefile = "gfx/interface/ideas/USR/idea_USR_interagency_conflict.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_SAHEL_pan_african_zeal"
+		texturefile = "gfx/interface/ideas/SAHEL/SAHEL_pan_african_zeal.dds"
+	}
 
+	SpriteType = {
+		name = "GFX_idea_SAHEL_pan_african_riots"
+		texturefile = "gfx/interface/ideas/SAHEL/SAHEL_pan_african_riots.dds"
+	}
 }

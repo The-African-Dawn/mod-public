@@ -1217,6 +1217,12 @@ shared_focus = {
 	prerequisite = {
 		focus = NIG_terrorist_footprints
 	}
+	available = {
+		has_government = panafricanism
+	}
+	bypass = {
+		NOT = { 41 = { is_controlled_by = FRN } }
+	}
 	x = 1
 	y = 1
 	ai_will_do = {
@@ -1419,6 +1425,9 @@ shared_focus = {
 	}
 	available = {
 		has_government = panafricanism
+	}
+	bypass = {
+		NOT = { 48 = { is_controlled_by = USR } }
 	}
 	x = 2
 	y = 1

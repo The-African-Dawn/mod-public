@@ -156,8 +156,7 @@ ecomag_choosing_sides_decision = {
 				tag = USR
 				tag = NRG
 				is_in_faction_with = NRG
-				}
-				
+			}		
 	}
 	
 }
@@ -206,25 +205,22 @@ ecowas_unity_decision = {
 	priority = 1
 	visible_when_empty = yes
 	allowed = {
-				OR = {
-				tag = FRN
-				tag = USR
-				tag = NRG
-				is_in_faction_with = NRG
-			}
+		always = yes
 	}
 	visible = {
-		AND = {
-				OR = {
-				tag = FRN
-				tag = USR
+		OR = {
+			tag = FRN
+			tag = USR
+			AND = {
 				tag = NRG
-				is_in_faction_with = NRG
+				NOT = { has_government = panafricanism }
 			}
-			#has_global_flag = ecowas_unity_restoration_starts
+			AND = {
+				is_in_faction_with = NRG
+				NOT = { NRG = {has_government = panafricanism} }
+			}
 		}
 	}
-	
 }
 
 nigerian_corruption_decision = {

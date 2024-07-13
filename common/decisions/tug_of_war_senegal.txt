@@ -208,6 +208,7 @@ tug_of_war_senegal_category = {
 			}
 		}
 		timeout_effect = {
+			clr_global_flag = senegal_political_conflict_started
 			if = {
 				limit = {
 					check_variable = {

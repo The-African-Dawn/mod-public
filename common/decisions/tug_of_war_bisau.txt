@@ -84,6 +84,7 @@ tug_of_war_bisau_category = {
 		activation = { has_global_flag = bisau_political_conflict_started}
 		available = { always = no }
 		timeout_effect = {
+			clr_global_flag = bisau_political_conflict_started
 			if = {
 				limit = {
 					check_variable = { global.tug_of_war_bisau_choosing_points > 40 }

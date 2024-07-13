@@ -5,6 +5,20 @@ ecomag_choosing_sides_decision = {
 		is_good = no
 		fire_only_once = yes
 		#activation = { has_global_flag = ECOWAS_choosing_major_started}
+		visible = {
+			OR = {
+				tag = FRN
+				tag = USR
+				AND = {
+					tag = NRG
+					NOT = { has_government = panafricanism }
+				}
+				AND = {
+					is_in_faction_with = NRG
+					NOT = { NRG = {has_government = panafricanism} }
+				}
+			}	
+		}
 		available = { always = no }
 		timeout_effect = {	
 			if = {limit = {check_variable = { global.ecowas_choosing_points > 49} tag = NRG} news_event = {id = ecowas.1} clr_global_flag = ECOWAS_choosing_major_started set_global_flag = ecowas_battle_win_fra}

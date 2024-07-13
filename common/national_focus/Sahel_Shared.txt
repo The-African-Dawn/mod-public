@@ -27,7 +27,12 @@
 	}
 	available = {
 		OR = {
-			BRK = { NOT = { has_completed_focus = BRK_united_front has_government = panafricanism } }
+			BRK = {
+				NOT = {
+					has_completed_focus = BRK_united_front
+					has_government = panafricanism
+				}
+			}
 			date > 2023.10.30
 		}
 		NIG = {
@@ -64,12 +69,24 @@
 	completion_reward = {
 		if = {
 			limit = {
-				NOT = { 
-					is_in_faction_with MLL
+				BRK = {
+					has_country_flag = BRK_third_coup_success
+				}
+				NOT = {
+					tag = MLL
 				}
 			}
 			create_faction = AGS
-			MLL = { add_to_faction = NIG }
+			MLL = {
+				add_to_faction = NIG
+			}
+			else = {
+				BRK = {
+					create_faction = AGS
+					add_to_faction = MLL
+					add_to_faction = NIG
+				}
+			}
 		}
 	}
 }
@@ -158,13 +175,20 @@ joint_focus = {
 	cost = 7.2
 	available = {
 		SAHEL_basic_available_trigger = yes
-		NOT = { has_war_with = MRK }
+		NOT = {
+			has_war_with = MRK
+		}
 	}
 	joint_trigger = {
 		SAHEL_basic_joint_trigger = yes
 	}
 	completion_reward_joint_originator = {
-		MRK = { country_event = { id = sahel.3 days = 1 } }
+		MRK = {
+			country_event = {
+				id = sahel.3
+				days = 1
+			}
+		}
 	}
 	completion_reward = {
 		custom_effect_tooltip = if_they_agree
@@ -184,10 +208,17 @@ joint_focus = {
 	cost = 4.3
 	available = {
 		SAHEL_basic_available_trigger = yes
-		NOT = { has_war_with = TGG }
+		NOT = {
+			has_war_with = TGG
+		}
 	}
 	completion_reward_joint_originator = {
-		TGG = { country_event = { id = sahel.5 days = 1 } }
+		TGG = {
+			country_event = {
+				id = sahel.5
+				days = 1
+			}
+		}
 	}
 	joint_trigger = {
 		SAHEL_basic_joint_trigger = yes
@@ -246,7 +277,6 @@ joint_focus = {
 	}
 }
 
-
 joint_focus = {
 	id = SAHEL_dynamics_of_the_global_south
 	icon = GFX_goal_SAHEL_dynamics_of_the_global_south
@@ -284,7 +314,9 @@ joint_focus = {
 		has_war_with = NRG
 	}
 	available = {
-		NOT = { has_war_with = NRG }
+		NOT = {
+			has_war_with = NRG
+		}
 	}
 	x = -6
 	y = 3
@@ -329,7 +361,9 @@ joint_focus = {
 		SAHEL_basic_joint_trigger = yes
 	}
 	completion_reward = {
-		add_to_variable = { african_russian_favors = 2 }
+		add_to_variable = {
+			african_russian_favors = 2
+		}
 		custom_effect_tooltip = african_russian_favors_2_tt
 	}
 }
@@ -351,7 +385,9 @@ joint_focus = {
 		SAHEL_basic_joint_trigger = yes
 	}
 	completion_reward = {
-		add_to_variable = { african_chinese_favors = 2 }
+		add_to_variable = {
+			african_chinese_favors = 2
+		}
 		custom_effect_tooltip = african_chinese_favors_2_tt
 	}
 }

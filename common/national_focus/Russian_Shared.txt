@@ -777,12 +777,13 @@ shared_focus = {
 	}
 	available = {
 		has_war = no
-		GNN = { is_in_faction_with = MLL }
-		BNN = { is_in_faction_with = MLL }
-		NRG = { is_in_faction_with = MLL }
-		KOT = { is_in_faction_with = MLL }
-		SNG = { is_in_faction_with = MLL }
-		CHD = { is_in_faction_with = MLL }
+		GNN = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
+		BNN = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
+		NRG = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
+		KOT = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
+		SNG = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
+		CHD = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
+		BRK = { is_in_faction_with = MLL OR = { has_government = panafricanism has_government = pragmatism } }
 	}
 	x = 0
 	y = 2

@@ -2753,6 +2753,9 @@ shared_focus = {
 	prerequisite = {
 		focus = BRK_protect_the_churches
 	}
+	bypass = {
+		has_war_with = KOT
+	}
 	search_filters = {
 		FOCUS_FILTER_POLITICAL
 	}
@@ -2899,6 +2902,9 @@ shared_focus = {
 	}
 	search_filters = {
 		FOCUS_FILTER_POLITICAL
+	}
+	bypass = {
+		NOT = { 33 = { is_controlled_by = FRN } }
 	}
 	x = 0
 	y = 2

@@ -83,6 +83,9 @@ shared_focus = {
 	prerequisite = {
 		focus = MLL_end_cigarette_smuggling
 	}
+	bypass = {
+		NOT = { 44 = { is_controlled_by = USR } 35 = { is_controlled_by = FRN } }
+	}
 	x = 1
 	y = 1
 	ai_will_do = {

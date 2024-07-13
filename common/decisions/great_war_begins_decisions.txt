@@ -34,6 +34,32 @@ great_war_begins_category = {
 			}
 		}
 		remove_effect = {
+			hidden_effect = { 
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = NRG
+							tag = NRG
+						}
+					}
+					add_timed_idea = {
+						idea = SAHEL_pan_african_riots
+						days = 180
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = MLL
+							tag = MLL
+						}
+					}
+					add_timed_idea = {
+						idea = SAHEL_pan_african_zeal
+						days = 365
+					}
+				}
+			}
 			set_global_flag = great_war_begins_global_flag
 			FRN = {
 				news_event = {

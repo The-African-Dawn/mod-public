@@ -1,0 +1,40 @@
+CHD_join_faction = {
+	name = "Chad Friends"
+	desc = ""
+
+	allowed = {
+		original_tag = CHD
+	}
+	enable = {
+		is_historical_focus_on = yes
+
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		CHD_sahel_integration
+	}
+
+	focus_factors = {
+		CHD_socialist_traitors = 0.0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
