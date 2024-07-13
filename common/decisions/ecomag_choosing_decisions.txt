@@ -4,6 +4,9 @@ ecomag_choosing_sides_decision = {
 		days_mission_timeout = 800
 		is_good = no
 		fire_only_once = yes
+		available = {
+			always = no
+		}
 		allowed = {
 			is_in_faction_with = NRG
 		}
