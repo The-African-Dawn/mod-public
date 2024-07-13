@@ -1,0 +1,22 @@
+﻿l_french:
+l_french:0 "Abdul Hamid Dbeibah"
+l_french: "Homme d'affaires, homme politique et ancien associé de Mouammar Kadhafi, est né en 1959 dans la ville occidentale de Misrata, traditionnellement considérée comme un bastion de la résistance au régime Kadhafi. Au début de sa carrière, Dbeibah a déménagé au Canada pour obtenir un diplôme d'ingénieur à l'Université de Toronto. Il est retourné dans sa ville natale au plus fort d'un boom de la construction, où il a finalement attiré l'attention de proches associés de Kadhafi.\nSon expertise lui a rapidement valu la confiance de Kadhafi, qui l'a chargé en 2007 de diriger la Libyan Investment and Development Company (LIDCO), une société publique responsable de certains des plus grands projets de travaux publics du pays.\nAprès le renversement de Kadhafi en 2011, Dbeibah a fondé le mouvement Libye de l'avenir, mais il n'a joué aucun rôle actif dans la vie politique.\nLe 5 février 2021, Abdel Hamid Dbeibah a été élu Premier ministre de la Libye. Ce choix a surpris beaucoup de gens, étant donné les liens étroits du magnat de la construction avec l'ancien dirigeant de longue date de la Libye, Mouammar Kadhafi.\nEn septembre 2021, la Chambre des représentants libyenne a voté une motion de censure contre le gouvernement Dbeibah. Et depuis février 2022, son poste est contesté et plusieurs tentatives d'assassinat ont été commises contre lui. Cela a entraîné une reprise des affrontements dans le pays.\nSelon plusieurs médias, Dbeibah aurait également des liens avec les autorités turques et les Frères musulmans (une association religieuse et politique internationale interdite en Russie)."
+
+ #FOCUSES#
+ LIV_general_mobilization: "Mobilisation Générale"
+ LIV_general_mobilization_desc: "La Guerre Sans Fin Continue"
+
+
+ #IDEAS#
+ LIV_political_instability: "Instabilité Politique"
+ LIV_political_instability_desc: ""
+ 
+ #TOOLTIP#
+ LIV_faso_military: "§gComme nous avons choisi de nous concentrer sur la qualité de l'armée, nous obtenons des bonus supplémentaires :§!"
+ political_instability_initiate_resistance:0 "§YTant que cet esprit national est actif, nous rencontrerons une forte résistance de la part des fondamentalistes et autres radicaux sur nos territoires§!"
+ 
+ #EVENTS#
+ LIV.1.t:0 "La Révolution Triomphe"
+ LIV.1.desc:0 "Rayonnant d'un sentiment de renouveau et d'espoir, le Burkina Faso célèbre aujourd'hui un événement historique : le renversement joyeux de l'ancien pouvoir corrompu et l'arrivée d'un nouveau dirigeant perçu comme une lueur d'espoir pour un avenir meilleur. Une vague d'enthousiasme et de soutien déferle sur le peuple du pays, qui accueille le changement à bras ouverts.\n\nSous la direction d'Ibrahim Traoré, notre pays entre dans une nouvelle ère pleine d'optimisme et d'un désir de changement positif. Ce coup d'État symbolise non seulement la fin d'une longue période d'injustice et de corruption, mais aussi la possibilité pour notre peuple de participer activement à la construction d'une société juste et prospère.\n\nUn avenir radieux se profile à l'horizon pour notre pays, et le nouveau dirigeant, Ibrahim Traoré, nous inspire à faire preuve d'audace dans nos actions et nos rêves. Que cette page de l'histoire du Burkina Faso marque le début d'une nouvelle ère de prospérité, de solidarité et de joie pour tous nos citoyens."
+ LIV.1.a:0 "Ce N'est Que Le Début."
+ LIV.1.b:0 "On Teste."

@@ -56,6 +56,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_civilian_economy_mjr.dds"
 	}
 	
+	
+	SpriteType = {
+		name = "GFX_idea_RUS_access_to_glonass_idea"
+		texturefile = "gfx/interface/ideas/RUS/idea_RUS_access_to_glonass_idea.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_RUS_russian_humanitarian_aid"
+		texturefile = "gfx/interface/ideas/RUS/idea_RUS_russian_humanitarian_aid.dds"
+	}
+
+	
 	SpriteType = {
 		name = "GFX_idea_podpol_mat_production"
 		texturefile = "gfx/interface/ideas/podpol_mat_production.dds"

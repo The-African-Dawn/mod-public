@@ -1,0 +1,37 @@
+﻿l_french:
+ DAC_no_create:0"L'Afrika Korps n'est pas créé"
+ disarmed_nation_mjr:0"Petit contingent"
+ volunteer_only_mjr:0"Présence limitée"
+ limited_conscription_mjr:0"Présence étendue"
+ extensive_conscription_mjr:0"Présence à grande échelle"
+ 
+ civilian_economy_mjr:0"Faible implication"
+ low_economic_mobilisation_mjr:0"Implication limitée"
+ partial_economic_mobilisation_mjr:0"Forte implication"
+ war_economy_mjr:0"Implication totale"
+ 
+ extensive_conscription_fun:0"Jihad mondial"
+ war_economy_fun:0"Économie souterraine"
+
+ SU:0"Bureau de conception Sukhoi"
+ Lockheed_concern:0"Lockheed Martin"
+ dassault_concern:0"Groupe Dassault"
+ china_concern:0"Groupe industriel aéronautique de Chengdu"
+ 
+ podpol_tank_production:0 "Production clandestine de véhicules blindés"
+ podpol_mat_production:0 "Production clandestine d'armes légères"
+ podpol_industry:0 "Ateliers de construction clandestins"
+ podpol_oil:0 "Compagnies d'extraction de ressources clandestines"
+ 
+    TNS_state_of_emergency:"État d'urgence"
+    ALJ_gas_deposits:"Gisements de gaz"
+    ALL_the_great_maghreb:"Le Grand Maghreb"
+    LBR_american_connections:"Liens avec l'Amérique"
+    SLR_useless_wealth:"Richesse inutile"
+    SLR_energy_problem:"Problème énergétique"
+    GVN_transitional_government:"Gouvernement de transition"
+    GBI_interservice_conflict:"Conflit interservices"
+    GMB_agricultural_effort:"Efforts de développement agricole"
+    LIV_ghost_of_the_past:"Le fantôme du passé"
+    LIV_libyan_fire:"L'incendie libyen"
+    MRV_high_alert:"Armée en état d'alerte"

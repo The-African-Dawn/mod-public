@@ -1,0 +1,18 @@
+﻿l_french:
+  quantity_3_tt:0 "§YLe coût global de tous les £divisions Bataillons §! §Gdiminuera de 5% supplémentaires§! \n"
+  
+  
+  radar_0:0 "Traitement numérique du signal"
+  radar_0_desc:0 ""
+  radar_1:0 "Antennes réseau à commande de phase"
+  radar_1_desc:0 "
+  radar_2:0 "Traitement Doppler pulsé"
+  radar_2_desc:0 "
+  radar_3:0 "Matériel synthétique"
+  radar_3_desc:0 "
+  radar_4:0 "Émetteurs-récepteurs à large bande"
+  radar_4_desc:0 "
+  radar_5:0 "Agilité fréquentielle et multifréquence"
+  radar_5_desc:0 "
+  atgm_folder:0 "Missiles antichars"
+  manpads_folder:0 "Missiles anti-aériens"

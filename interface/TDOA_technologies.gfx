@@ -746,6 +746,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/armor/BMP2M.dds"
 	}
 	spriteType = {
+		name = "GFX_RUS_heli_tech_attack_us_medium"
+		texturefile = "gfx/interface/technologies/armor/ka52.dds"
+	}
+	spriteType = {
+		name = "GFX_USR_heli_tech_attack_fr_medium"
+		texturefile = "gfx/interface/technologies/armor/ah1z.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_RUS_tech_ifv_4_medium"
 		texturefile = "gfx/interface/technologies/armor/BTR82A_2.dds"
 	}

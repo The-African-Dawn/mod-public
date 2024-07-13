@@ -1,0 +1,27 @@
+﻿l_french:
+
+
+CRR_Francois_Yanguvonda:0 "François Bozizé Yangouvonda"
+CRR_Francois_Yanguvonda_desc: ""
+
+CRR_Faustin_Archange:0 "Faustin-Archange Touadéra"
+CRR_Faustin_Archange_desc: "Faustin-Archange Touadéra est né le 21 avril 1957 à Bangui, en Afrique équatoriale française, d'un père chauffeur et d'une mère agricultrice. Il a fait ses études dans les universités de Bangui et d'Abidjan, où il a étudié les mathématiques et obtenu deux doctorats.\nTouadéra a commencé sa carrière dans l'éducation, enseignant à l'université de Bangui à partir de 1987. De 2005 à 2008, il a été recteur de cette université. Touadéra est chevalier des ordres des palmes académiques du Conseil africain et malgache pour l'enseignement supérieur (2004) et de France (2008). Il est également officier de l'ordre du Mérite centrafricain (2008) et commandeur de l'ordre des Palmes académiques centrafricaines (2012).\nLe 22 janvier 2008, le président François Bozizé a nommé Touadéra Premier ministre de la République centrafricaine.\nAprès le renversement du régime Bozizé en mars 2013 par le groupe rebelle Seleka, des affrontements sanglants ont éclaté dans le pays. Touadéra et sa famille ont fui la RCA pour la France. Il est retourné dans son pays natal après l'élection de Catherine Samba-Panza à la présidence par intérim (20 janvier 2014).\nTouadéra a été élu président à deux reprises, en 2016 et 2021.\nLe 28 janvier 2019, à la suite de la signature de l'accord de paix et de réconciliation en République centrafricaine à Khartoum (Soudan), Touadéra a créé l'ordre de la réconciliation de la République centrafricaine, qui récompense tout citoyen centrafricain ou étranger ayant contribué à la réconciliation et à la restauration de la paix."
+
+ #FOCUSES#
+ LIV_general_mobilization: "Mobilisation générale"
+ LIV_general_mobilization_desc: "La guerre sans fin continue"
+
+
+ #IDEAS#
+ LIV_political_instability: "Instabilité politique"
+ LIV_political_instability_desc: ""
+ 
+ #TOOLTIP#
+ LIV_faso_military: "§gPuisque nous avons choisi de nous concentrer sur la qualité de l'armée, nous obtenons des bonus supplémentaires :§!"
+ political_instability_initiate_resistance:0 "§YTant que cet esprit national sera en vigueur, nous rencontrerons une forte résistance de la part des fondamentalistes et autres radicaux sur nos territoires§!"
+ 
+ #EVENTS#
+ LIV.1.t:0 "Victoire de la Révolution"
+ LIV.1.desc:0 "Irradiant un sentiment de renouveau et d'espoir, le Burkina Faso célèbre aujourd'hui un événement historique : le renversement joyeux de l'ancien pouvoir corrompu et l'arrivée d'un nouveau dirigeant, perçu comme l'espoir tant attendu d'un avenir meilleur. Une vague d'enthousiasme et de soutien déferle sur le peuple du pays, accueillant le renouveau à bras ouverts.\n\nSous la direction d'Ibrahim Traoré, notre pays entre dans une nouvelle ère, emplie d'optimisme et de désir de changements positifs. Ce coup d'État symbolise non seulement la fin d'une longue période d'injustice et de corruption, mais aussi la possibilité pour notre peuple de participer activement à la construction d'une société juste et prospère.\n\nL'avenir radieux de notre pays se profile à l'horizon, et le nouveau dirigeant, en la personne d'Ibrahim Traoré, nous inspire à faire preuve d'audace et à rêver grand. Que cette page de l'histoire du Burkina Faso marque le début d'une nouvelle ère de prospérité, de solidarité et de joie pour tous nos citoyens."
+ LIV.1.a:0 "Tout ne fait que commencer."
+ LIV.1.b:0 "On teste."

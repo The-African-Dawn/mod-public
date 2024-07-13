@@ -239,6 +239,8 @@ shared_focus = {
 		add_to_variable = {
 			BRK.BRK_army_unit_upkeep_attrition_factor = 0.05
 		}
+		add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
 		custom_effect_tooltip = BRK_modify_situation_in_army_alliance
 		set_country_flag = RUS_friend
 		custom_effect_tooltip = BRK_RUS_Friend_tt

@@ -724,6 +724,20 @@ news_event = {
 				give_military_access = FRN
 			}
 			NRG = { add_to_faction = FRN }
+			FRN = {
+				every_country = {
+					limit = {
+						is_in_faction_with = FRN
+					}
+					FRN = {
+						add_ai_strategy = {
+							type = force_defend_ally_borders
+							id = PREV
+							value = 200
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -811,6 +825,20 @@ news_event = {
 				give_military_access = USR
 			}
 			NRG = { add_to_faction = USR }
+			USR = {
+				every_country = {
+					limit = {
+						is_in_faction_with = USR
+					}
+					USR = {
+						add_ai_strategy = {
+							type = force_defend_ally_borders
+							id = PREV
+							value = 200
+						}
+					}
+				}
+			}
 		}
 	}
 	option = {
@@ -909,6 +937,20 @@ news_event = {
 					MLL = { is_faction_leader = yes }
 				}
 				MLL = { add_to_faction = RUS }
+			}
+			RUS = {
+				every_country = {
+					limit = {
+						is_in_faction_with = RUS
+					}
+					RUS = {
+						add_ai_strategy = {
+							type = force_defend_ally_borders
+							id = PREV
+							value = 200
+						}
+					}
+				}
 			}
 		}
 	}

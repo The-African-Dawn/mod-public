@@ -1,0 +1,17 @@
+﻿l_french:
+ #EVENTS#
+ MRK.1.t:0 "La Mauritanie mène des exercices militaires à la frontière avec le Mali"
+ MRK.1.desc:0 ""
+ MRK.1.a:0 "Ils cherchent les ennuis !"
+ 
+ MRK.2.t:0 "La tension monte à la frontière maroco-sahraouie !"
+ MRK.2.desc:0 "\n"
+ MRK.2.a:0 "Encore un point chaud"
+ 
+ MRK.3.t:0 "La tension retombe à la frontière maroco-sahraouie !"
+ MRK.3.desc:0 "Ici, l'événement concerne le fait que tout va bien, la détente."
+ MRK.3.a:0 "Ouaaaaaais !"
+ 
+ MRK.4.t:0 "Conflit militaire entre le Maroc et la République sahraouie !"
+ MRK.4.desc:0 "Ici, l'événement concerne le fait que tout va mal, la guerre."
+ MRK.4.a:0 "Nooooooooon !" 

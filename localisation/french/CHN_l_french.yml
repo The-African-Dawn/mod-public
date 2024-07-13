@@ -1,0 +1,21 @@
+﻿l_french:
+
+ #CHARACHTERS#
+ CHN_Liang_Yang: "Liang Yang"
+ CHN_Liang_Yang_desc: ""
+
+
+ #FOCUSES#
+ RUS_our_sun_shines_brighter: "Notre Soleil Brille Plus Fort"
+ RUS_our_sun_shines_brighter_desc: "La Guerre Sans Fin Continue"
+ 
+ #IDEAS#
+ RUS_memory_of_the_past: "Souvenir du §sPassé§!"
+ RUS_memory_of_the_past_desc: "Le pouvoir soviétique a beaucoup fait pour maintenir la stabilité dans la région africaine. De nombreux projets d'infrastructure ont aidé les pays africains et ont facilité la vie des citoyens ordinaires.\nLe peuple africain s'en souvient et nous fait confiance.\nCela nous aidera dans notre mission."
+ 
+ #EVENTS#
+ CHN.1.t:0 "L'Aide Attendue de Longue Date"
+ CHN.1.desc:0 "Bien que nos troupes aient actuellement besoin de toutes les armes disponibles pour remporter la victoire sur le front ukrainien, la Patrie ne nous oublie pas. Le ministère de la Défense nous a fourni un approvisionnement supplémentaire pour maintenir la capacité de combat de notre mission. Munitions, véhicules blindés, personnel - tout ce dont nous avions besoin a déjà été livré en Afrique, et il ne nous reste plus qu'à répartir ce que nous avons reçu sur nos bases."
+ CHN.1.a:0 "Merci, Camarade Choïgou."
+ 
+
