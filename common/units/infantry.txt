@@ -173,14 +173,14 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		
-		transport = jeep_equipment
+		transport = mrap_equipment
 		
 		supply_consumption = 0.6
 		
 	
 		need = {
 			infantry_equipment = 80
-			jeep_equipment = 8
+			mrap_equipment = 8
 			ATGM_equipment = 20
 		}
 	}
