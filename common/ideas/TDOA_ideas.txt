@@ -2923,5 +2923,29 @@ ideas = {
 				max_planning_factor = 0.15
 			}
 		}
+		
+		SAHEL_pan_african_zeal = {
+			picture = SAHEL_pan_african_zeal
+			name = SAHEL_pan_african_zeal
+			modifier = {
+				breakthrough_factor = 0.4
+				initiative_factor = 0.1
+				army_morale_factor = 0.2
+				army_org_factor = 0.2
+				supply_consumption_factor = -0.2
+				cas_damage_reduction = 0.4
+				army_defence_factor = 0.2
+			}
+		}
+		SAHEL_pan_african_riots = {
+			picture = SAHEL_pan_african_riots
+			name = SAHEL_pan_african_riots
+			modifier = {
+				panafricanism_drift = 0.1
+				industrial_capacity_factory = -0.4
+				war_support_factor = -0.2
+				stability_factor = -0.2
+			}
+		}
 	}
 }
