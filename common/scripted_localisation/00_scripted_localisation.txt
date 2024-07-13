@@ -1058,7 +1058,7 @@ defined_text = {
 				market_bought_old_popup_selected_offert = 12
 			}
 		}
-		localization_key = "armored_support_vehicle_equipment_x_3"
+		localization_key = "infantry_armored_transport_equipment_x_2"
 	}
 	text = {
 		trigger = {
@@ -1066,7 +1066,7 @@ defined_text = {
 				market_bought_old_popup_selected_offert = 13
 			}
 		}
-		localization_key = "infantry_armored_transport_equipment_x"
+		localization_key = "armored_support_vehicle_equipment_x_2"
 	}
 	text = {
 		trigger = {
@@ -1142,7 +1142,7 @@ defined_text = {
 				market_bought_old_popup_selected_offert = 12
 			}
 		}
-		localization_key = "armored_support_vehicle_equipment_x_3"
+		localization_key = "infantry_armored_transport_equipment_x_2"
 	}
 	text = {
 		trigger = {
@@ -1150,7 +1150,7 @@ defined_text = {
 				market_bought_old_popup_selected_offert = 13
 			}
 		}
-		localization_key = "infantry_armored_transport_equipment_x_3"
+		localization_key = "armored_support_vehicle_equipment_x_2"
 	}
 	text = {
 		trigger = {
@@ -1226,7 +1226,7 @@ defined_text = {
 				market_bought_old_popup_selected_offert = 12
 			}
 		}
-		localization_key = "armored_support_vehicle_equipment_x_3"
+		localization_key = "infantry_armored_transport_equipment_x_2"
 	}
 	text = {
 		trigger = {
@@ -1234,7 +1234,7 @@ defined_text = {
 				market_bought_old_popup_selected_offert = 13
 			}
 		}
-		localization_key = "infantry_armored_transport_equipment_x_2"
+		localization_key = "armored_support_vehicle_equipment_x_2"
 	}
 	text = {
 		trigger = {
