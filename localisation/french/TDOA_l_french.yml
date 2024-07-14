@@ -453,8 +453,14 @@
  PPSGETTING_TT:0 "Chaque mois, nous recevons §Y[?amountofmonthlygettingppmarket]§! £pol_power grâce à la vente de ressources.\n\nDétails :\n §Y[?oil_selling]§! - grâce à la vente de £texticon_tdoa_oil_icon pétrole\n §Y[?tungsten_selling]§! - grâce à la vente de £texticon_tdoa_tungsten_icon tungstène\n §Y[?rubber_selling]§! - grâce à la vente de £texticon_tdoa_rubber_icon caoutchouc\n §Y[?aluminum_selling]§! - grâce à la vente de £texticon_tdoa_aluminum_icon aluminium\n §Y[?chromium_selling]§! - grâce à la vente de £texticon_tdoa_chromium_icon chrome\n §Y[?steel_selling]§! - grâce à la vente de £texticon_tdoa_steel_icon acier\n §Y[?gold_selling]§! - grâce à la vente de £texticon_tdoa_gold_icon or \n §Y[?diamonds_selling]§! - grâce à la vente de £texticon_tdoa_diamond_icon diamants \n §Y[?uran_selling]§! - grâce à la vente de £texticon_tdoa_uran_icon uranium"
  
  SE_great_african_war_title:0 "La Grande Guerre Africaine"
- SE_great_african_war_body:0 ""Nous attendons notre liberté depuis trop longtemps. Nous ne pouvons plus attendre. Notre marche vers la liberté est irréversible. Nous ne devons pas laisser la peur se mettre en travers de notre chemin.\"\n — Nelson Mandela"
+ SE_great_african_war_body:0 "Nous attendons notre liberté depuis trop longtemps. Nous ne pouvons plus attendre. Notre marche vers la liberté est irréversible. Nous ne devons pas laisser la peur se mettre en travers de notre chemin.\n — Nelson Mandela"
  SE_great_african_war_remark:0 "Sable dans le sang"
+ SE_ags_victory_title:0 "Victoire de l'AoSS"
+ SE_ags_victory_body:0 "Nous devons apprendre à vivre à l'africaine. C'est la seule façon de vivre librement et honorablement\n — Thomas Sankara"
+ SE_ags_victory_remark:0 "Les vents de la liberté"
+ SE_ecowas_victory_title:0 "Victoire de la CEDEAO"
+ SE_ecowas_victory_body:0 "Nous vaincrons comme nous l'avons déjà fait à maintes reprises. Unissons-nous et rassemblons-nous autour de notre République, de ses institutions et de ses valeurs démocratiques et insistons sur le fait qu'avec l'aide de Dieu, nous sortirons victorieux de nos difficultés actuelles\n — Nana Akufo-Addo"
+ SE_ecowas_victory_remark:0 "Ensemble pour l'éternité"
  battle_for_africa_decision:0 "La Bataille pour l'Afrique"
  ask_for_help:0 "Demander de l'aide contre le terrorisme à l'État de §Y[FROM.GetNameWithFlag]§!"
  ask_for_help_tt:0 "Plus nos §Yrelations avec le pays qui recevra la demande sont bonnes§!, plus §Ynous avons de chances de recevoir une aide plus précieuse§!"
@@ -558,3 +564,5 @@
  FRN.2.desc:0 "La France a officiellement mis fin à son opération militaire Barkhane au Sahel, qui a duré près de dix ans. Le président français Emmanuel Macron a annoncé cette décision lors d'une conférence de presse, soulignant qu'elle avait été prise en raison de l'évolution des priorités stratégiques et de la nécessité de se concentrer sur d'autres régions.\n\nL'opération Barkhane a été lancée en 2014 dans le but de lutter contre les groupes terroristes dans la région du Sahel, notamment au Mali, au Niger et au Burkina Faso. Au cours de l'opération, les troupes françaises, en coopération avec les forces de sécurité locales, ont obtenu des succès significatifs dans la lutte contre les extrémistes, mais la situation dans la région reste instable.\n\nLe président Macron a déclaré que la France continuerait à soutenir les pays du Sahel dans leur lutte contre le terrorisme, mais que cela se ferait désormais dans le cadre d'efforts multilatéraux et avec la participation de partenaires internationaux. \"Nous n'abandonnons pas nos amis du Sahel, mais nous devons nous adapter aux nouveaux défis et aux nouvelles menaces\", a déclaré M. Macron."
  FRN.2.a:0 "Mais nous reviendrons"
  FRN.2.b:0 "Très bien"
+
+ AZW_help_of_neighbours:0 "Soutien des pays voisins"

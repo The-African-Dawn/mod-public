@@ -1,41 +1,62 @@
 
 division_template = {
-	name = "Garnison regiments"
-	regiments={
-		infantry={ x=0 y=0 }
-		infantry={ x=0 y=1 }
-	}
-	support = {
+	name = "Base Garrison"
+	support={
 		manpads_support_unit={ x=0 y=0 }
-		#atgm_support_unit ={ x=0 y=1 }
-		#howitzer_support_unit = {x=0 y=2}
+		engineer={ x=0 y=1 }
+		signal_company={ x=0 y=2 }
+		logistics_company={ x=0 y=3 }
+		field_hospital={ x=0 y=4 }
+	}
+	regiments={
+		infantry_on_jeep={ x=0 y=0 }
+		infantry_on_jeep={ x=0 y=1 }
+		infantry_on_jeep={ x=0 y=2 }
+		infantry_on_jeep={ x=1 y=0 }
+		infantry_on_jeep={ x=1 y=1 }
+		infantry_on_jeep={ x=1 y=2 }
 	}
 }
 division_template = {
-	name = "GIGN regiment"
+	name = "Marines"
+	support={
+		howitzer_support_unit={ x=0 y=0 }
+		atgm_support_unit={ x=0 y=1 }
+		signal_company={ x=0 y=2 }
+		field_hospital={ x=0 y=3 }
+		mot_recon={ x=0 y=4 }
+	}
 	regiments={
-		speznaz={ x=0 y=0 }
-		speznaz={ x=0 y=1 }
-		speznaz={ x=0 y=2 }
-		speznaz={ x=0 y=3 }
-		speznaz={ x=0 y=4 }
-
+		infantry_on_bmp={ x=0 y=0 }
+		infantry_on_bmp={ x=0 y=1 }
+		infantry_on_bmp={ x=0 y=2 }
+		infantry_on_bmp={ x=1 y=0 }
+		infantry_on_bmp={ x=1 y=1 }
+		infantry_on_bmp={ x=1 y=2 }
+		infantry_on_bmp={ x=2 y=0 }
+		infantry_on_bmp={ x=2 y=1 }
+		infantry_on_bmp={ x=2 y=2 }
 	}
 }
 division_template = {
 	name = "Mechanized Force regiment"
+	support={
+		manpads_support_unit={ x=0 y=0 }
+		armored_car_recon={ x=0 y=1 }
+		signal_company={ x=0 y=2 }
+		field_hospital={ x=0 y=3 }
+		logistics_company={ x=0 y=4 }
+	}
 	regiments={
 		infantry_on_bmp={ x=0 y=0 }
 		infantry_on_bmp={ x=0 y=1 }
-		infantry_on_btr={ x=0 y=2 }
-		infantry_on_btr={ x=0 y=3 }		
-		light_armor_unit={ x=1 y=0 }
-
-	}
-	support = {
-		manpads_support_unit={ x=0 y=0 }
-		#atgm_support_unit ={ x=0 y=1 }
-		#howitzer_support_unit = {x=0 y=2}
+		infantry_on_bmp={ x=0 y=2 }
+		infantry_on_btr={ x=1 y=0 }
+		infantry_on_btr={ x=1 y=1 }
+		infantry_on_btr={ x=1 y=2 }
+		infantry_on_btr={ x=2 y=0 }
+		infantry_on_btr={ x=2 y=1 }
+		infantry_on_btr={ x=2 y=2 }
 	}
 }
 
@@ -48,100 +69,86 @@ units = {
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "GIGN regiment 101"
-		location = 284
-		division_template = "GIGN regiment"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		name = "GIGN regiment NZD"
-		location = 1720
-		division_template = "GIGN regiment"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division= {	
-		name = "GIGN regiment PRN"
+		name = "Marines"
 		location = 1765
-		division_template = "GIGN regiment"
+		division_template = "Marines"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 1765
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 3178
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 2485
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 405
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 284
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 551
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 1994
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 60
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 15
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 		division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 2085
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
-			division= {	
-		name = "Garnison regiments"
+	division= {	
+		name = "Base Garrison"
 		location = 1720
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}

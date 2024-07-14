@@ -32,4 +32,14 @@ spriteTypes = {
 		textureFile = "/gfx/superevents_gui/superevents_great_african_war.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_superevents_ags_victory"
+		textureFile = "/gfx/superevents_gui/superevents_ags_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_superevents_ecowas_victory"
+		textureFile = "/gfx/superevents_gui/superevents_ecowas_victory.dds"
+	}
+	
 }

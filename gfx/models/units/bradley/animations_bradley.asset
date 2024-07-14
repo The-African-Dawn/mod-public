@@ -1,0 +1,13 @@
+
+animation = {
+	name = "bradley_attack_animation"
+	file = "bradley_attack.anim"
+}
+animation = {
+	name = "bradley_idle_animation"
+	file = "bradley_idle.anim"
+}
+animation = {
+	name = "bradley_move_animation"
+	file = "bradley_move.anim"
+}

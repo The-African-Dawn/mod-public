@@ -11,6 +11,8 @@ scripted_gui = {
 		superevents_button_click = {
 			clr_global_flag = SE_superevents_activate
 			clr_global_flag = SE_great_african_war
+			clr_global_flag = SE_ags_victory
+			clr_global_flag = SE_ecowas_victory
 		}
     }
 
@@ -21,6 +23,14 @@ scripted_gui = {
 
 		superevents_great_african_war_visible = {
 			has_global_flag = SE_great_african_war 
+		}
+		
+		superevents_ags_victory_visible = {
+			has_global_flag = SE_ags_victory
+		}
+		
+		superevents_ecowas_victory_visible = {
+			has_global_flag = SE_ecowas_victory
 		}
     }
 

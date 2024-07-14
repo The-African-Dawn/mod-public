@@ -1,6 +1,6 @@
 ﻿l_french:
- infantry_on_btr:"Infanterie sur BTR"
- infantry_on_bmp:"Infanterie sur BMP"
+ infantry_on_btr:"Infanterie sur APC"
+ infantry_on_bmp:"Infanterie sur VCI"
  infantry_on_jeep:"Infanterie en jeep"
  category_fb: "Aviation"
  light_infantry_opol:"Infanterie légère"

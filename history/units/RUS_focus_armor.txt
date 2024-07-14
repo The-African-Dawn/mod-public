@@ -5,6 +5,6 @@ air_wings = {
         transport_helicopter_airframe_0 =  { owner = "RUS" creator = "RUS" amount = 20 }
 		attack_helicopter_airframe_0_us =  { owner = "RUS" creator = "RUS" amount = 20 }
 		attack_helicopter_airframe_0_ru =  { owner = "RUS" creator = "RUS" amount = 20 }
-        attack_helicopter_airframe_0_ru =  { owner = "RUS" creator = "RUS" amount = 10 }
+        attack_helicopter_airframe_0_ru =  { owner = "RUS" creator = "RUS" amount = 20 }
 	}
 }

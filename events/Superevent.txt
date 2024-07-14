@@ -33,7 +33,43 @@ country_event = {
 	}
 	is_triggered_only = yes
 	hidden = yes
-	fire_only_once = yes
+	fire_only_once = no
+	option = {
+		name = superevents.0.a
+	}
+}
+
+country_event = {
+	id = superevents.002
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_ags_victory
+		play_song = ags_victory
+	}
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = no
+	option = {
+		name = superevents.0.a
+	}
+}
+
+country_event = {
+	id = superevents.003
+	title = superevents.0.t
+	desc = superevents.0.d
+	
+	immediate = {
+		set_global_flag = SE_superevents_activate
+		set_global_flag = SE_ecowas_victory
+		play_song = ecowas_victory
+	}
+	is_triggered_only = yes
+	hidden = yes
+	fire_only_once = no
 	option = {
 		name = superevents.0.a
 	}

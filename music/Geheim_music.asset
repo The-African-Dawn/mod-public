@@ -3,3 +3,11 @@ music = {
 	name = "great_african_war"
 	file = "great_african_war.ogg"
 }
+music = {
+	name = "ags_victory"
+	file = "ags_victory.ogg"
+}
+music = {
+	name = "ecowas_victory"
+	file = "ecowas_victory.ogg"
+}

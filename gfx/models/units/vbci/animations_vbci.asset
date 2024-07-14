@@ -1,0 +1,13 @@
+
+animation = {
+	name = "vbci_attack_animation"
+	file = "vbci_attack.anim"
+}
+animation = {
+	name = "vbci_idle_animation"
+	file = "vbci_idle.anim"
+}
+animation = {
+	name = "vbci_move_animation"
+	file = "vbci_move.anim"
+}

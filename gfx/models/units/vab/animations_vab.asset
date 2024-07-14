@@ -1,0 +1,9 @@
+
+animation = {
+	name = "vab_idle_animation"
+	file = "vab_idle.anim"
+}
+animation = {
+	name = "vab_move_animation"
+	file = "vab_move.anim"
+}

@@ -101,6 +101,14 @@ objectTypes = {
 		scale = 1
 	}
 	pdxmesh = {
+		name = "hmmwv_mesh"
+		file = "gfx/models/units/hmmwv/hmmwv.mesh"
+		
+		animation = { id = "idle"			type = "hmmwv_idle_animation" }
+		animation = { id = "move"			type = "hmmwv_move_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
 		name = "toyota_mesh"
 		file = "gfx/models/units/toyota/toyota.mesh"
 		
@@ -248,6 +256,49 @@ objectTypes = {
 		animation = { id = "idle"			type = "btr60_idle_animation" }
 		animation = { id = "move"			type = "btr60_move_animation" }
 		animation = { id = "attack"			type = "btr60_idle_animation" }
+		
+		scale = 1.1
+	}
+	# stryker
+	pdxmesh = {
+		name = "stryker_mesh"
+		file = "gfx/models/units/stryker/stryker.mesh"
+		
+		animation = { id = "idle"			type = "stryker_idle_animation" }
+		animation = { id = "move"			type = "stryker_move_animation" }
+		animation = { id = "attack"			type = "stryker_idle_animation" }
+		
+		scale = 1.1
+	}
+	# vab
+	pdxmesh = {
+		name = "vab_mesh"
+		file = "gfx/models/units/vab/vab.mesh"
+		
+		animation = { id = "idle"			type = "vab_idle_animation" }
+		animation = { id = "move"			type = "vab_move_animation" }
+		animation = { id = "attack"			type = "vab_idle_animation" }
+		
+		scale = 1.1
+	}
+	#bradla
+	pdxmesh = {
+		name = "bradley_mesh"
+		file = "gfx/models/units/bradley/bradley2.mesh"
+		
+		animation = { id = "idle"			type = "bradley_idle_animation" }
+		animation = { id = "move"			type = "bradley_move_animation" }
+		animation = { id = "attack"			type = "bradley_attack_animation" }
+		
+		scale = 1.1
+	}
+	pdxmesh = {
+		name = "vbci_mesh"
+		file = "gfx/models/units/vbci/vbci.mesh"
+		
+		animation = { id = "idle"			type = "vbci_idle_animation" }
+		animation = { id = "move"			type = "vbci_move_animation" }
+		animation = { id = "attack"			type = "vbci_attack_animation" }
 		
 		scale = 1.1
 	}

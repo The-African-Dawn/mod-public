@@ -1,0 +1,61 @@
+african_superevents_category = {
+	great_war_win_ags_side = {
+		icon = GFX_decision_category_battle_for_africa_decision_category_sprite
+		fire_only_once = yes
+		visible = {
+			has_war = no
+			NRG = { faction_leader = { has_government = panafricanism } }
+			BRK = { is_ally_with = NRG }
+			MLL = { is_ally_with = NRG }
+			NIG = { is_ally_with = NRG }
+			GBI = { is_ally_with = NRG }
+			GVN = { is_ally_with = NRG }
+			SNG = { is_ally_with = NRG }
+			SLR = { is_ally_with = NRG }
+			LBR = { is_ally_with = NRG }
+			KOT = { is_ally_with = NRG }
+			GNN = { is_ally_with = NRG }
+			TGG = { is_ally_with = NRG }
+			BNN = { is_ally_with = NRG }
+			CHD = { is_ally_with = NRG }
+		}
+		complete_effect = {
+				country_event = {
+					id = superevents.002
+				}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	great_war_win_ecowas_side = {
+		icon = GFX_decision_category_battle_for_africa_decision_category_sprite
+		fire_only_once = yes
+		visible = {
+			has_war = no
+			NRG = { faction_leader = { OR = { has_government = francocentrism has_government = pragmatism } } }
+			BRK = { is_ally_with = NRG }
+			MLL = { is_ally_with = NRG }
+			NIG = { is_ally_with = NRG }
+			GBI = { is_ally_with = NRG }
+			GVN = { is_ally_with = NRG }
+			SNG = { is_ally_with = NRG }
+			SLR = { is_ally_with = NRG }
+			LBR = { is_ally_with = NRG }
+			KOT = { is_ally_with = NRG }
+			GNN = { is_ally_with = NRG }
+			TGG = { is_ally_with = NRG }
+			BNN = { is_ally_with = NRG }
+			CHD = { is_ally_with = NRG }
+		}
+		complete_effect = {
+				country_event = {
+					id = superevents.003
+				}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

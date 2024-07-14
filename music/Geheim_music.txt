@@ -4,3 +4,11 @@ music_station = "geheim_station"
 	song = "great_african_war"
 	chance = { factor = 0 }}
 	
+	music = {
+	song = "ags_victory"
+	chance = { factor = 0 }}
+	
+	music = {
+	song = "ecowas_victory"
+	chance = { factor = 0 }}
+	

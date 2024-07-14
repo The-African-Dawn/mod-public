@@ -1,64 +1,69 @@
 
 division_template = {
-	name = "Garnison regiments"
-	regiments={
-		infantry={ x=0 y=0 }
-		infantry={ x=0 y=1 }
-		infantry={ x=0 y=2 }
-	}
-	support = {
+	name = "Base Garrison"
+	support={
 		manpads_support_unit={ x=0 y=0 }
-		#atgm_support_unit ={ x=0 y=1 }
-		#howitzer_support_unit = {x=0 y=2}
+		atgm_support_unit={ x=0 y=1 }
+		engineer={ x=0 y=2 }
+		field_hospital={ x=0 y=3 }
+		signal_company={ x=0 y=4 }
+	}
+	regiments={
+		infantry_on_jeep={ x=0 y=0 }
+		infantry_on_jeep={ x=0 y=1 }
+		infantry_on_jeep={ x=0 y=2 }
+		infantry_on_jeep={ x=1 y=0 }
+		infantry_on_jeep={ x=1 y=1 }
+		infantry_on_jeep={ x=1 y=2 }
 	}
 }
 units = {
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 2048
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 2983
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 2934
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 2901
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 933
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 1814
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Garnison regiments"
+		name = "Base Garrison"
 		location = 4818
-		division_template = "Garnison regiments"
+		division_template = "Base Garrison"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
