@@ -62,3 +62,5 @@
  jeep_equipment:0 "Véhicules tout-terrain non blindés"
  mrap_equipment:0 "Véhicules tout-terrain blindés"
  international_blockade:0 "Blocus"
+ BM_RAILWAY_GUN_BOMBARD: "Mise à feu de systèmes de missiles tactiques"
+ BM_RAILWAY_GUN_BOMBARD_DESC: "Les systèmes de missiles tactiques situés à proximité fournissent maintenant un appui-feu, travaillant sur l'infanterie retranchée et les positions fortifiées."

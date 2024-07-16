@@ -62,3 +62,5 @@
  jeep_equipment: "Unarmored Utility Vehicles"
  mrap_equipment: "Armored Utility Vehicles"
  international_blockade: "Blockade"
+ BM_RAILWAY_GUN_BOMBARD: "Firing tactical missile systems"
+ BM_RAILWAY_GUN_BOMBARD_DESC: "Nearby tactical missile systems are now providing fire support, working on entrenched infantry and fortified positions."

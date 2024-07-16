@@ -53,7 +53,7 @@ on_actions = {
 			}
 		}
 	}
-	on_capitulation_immediate = {
+	on_capitulation = {
 		effect = {
 			if = {
 				limit = {
@@ -71,6 +71,12 @@ on_actions = {
 				limit = {
 					FROM = { is_in_faction = yes NOT = { has_government = fundamentalism } }
 					ROOT = { is_in_faction = yes NOT = { has_government = fundamentalism } }
+				}
+				random_country = { 
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					set_faction_leader = yes
 				}
 				FROM = {
 					annex_country = {
