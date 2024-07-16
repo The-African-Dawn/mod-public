@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 5
 
-		build_cost_ic = 2
+		build_cost_ic = 7
 		resources = {
 			#oil = 1
 			rubber = 1
@@ -88,7 +88,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 5
 
-		build_cost_ic = 2
+		build_cost_ic = 18
 		resources = {
 			#oil = 1
 			rubber = 1
@@ -96,7 +96,6 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
-		supply_truck = yes
 	}
 	
 	
@@ -109,8 +108,4 @@ equipments = {
 		visual_level = 0
 		
 	}
-	
-	
-	
-	
 }

@@ -1,4 +1,42 @@
 on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = part_of_great_war
+					has_war = no
+					any_country = {
+						is_in_faction_with = ROOT
+						any_controlled_state = {
+							NOT = { is_controlled_by = ROOT }
+							is_core_of = ROOT
+							NOT = { is_core_of = PREV }
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = ROOT
+						any_controlled_state = {
+							NOT = { is_controlled_by = ROOT }
+							is_core_of = ROOT
+							NOT = { is_core_of = PREV }
+						}
+					}
+					every_controlled_state = { 
+						limit = {
+							NOT = { is_controlled_by = ROOT }
+							is_core_of = ROOT
+							NOT = { is_core_of = PREV }
+						}
+						transfer_state_to = ROOT
+						set_state_owner_to = ROOT
+						set_state_controller_to = ROOT
+					}
+				}
+			}
+		}
+	}
 	on_capitulation_immediate = {
 		effect = {
 			if = {
@@ -63,7 +101,13 @@ on_actions = {
 						ROOT = { leave_faction = yes }
 						FROM = {
 							white_peace = ROOT
-							
+							every_country = {
+								limit = { is_in_faction = yes } 
+								set_truce = {
+									target = ROOT
+									days = 0
+								}
+							}
 							if = {
 								limit = {
 									ROOT = {
@@ -373,6 +417,7 @@ on_actions = {
 								transfer_state = 88
 								88 = {
 									add_core_of = VGR
+									remove_core_of = NRG
 								}
 							}
 							FROM = {
