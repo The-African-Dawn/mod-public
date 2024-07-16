@@ -186,3 +186,5 @@ CHD_find_jobs_for_our_people:0 "Trouver du travail pour nos citoyens"
  chd.9.a:0 "C'est une provocation flagrante !"
  chd.9.b:0 "C'est excellent !"
  chd.9.c:0 "Tout cela mène à une guerre majeure"
+
+ CHD_fight_ter:0 "Guerre contre le terrorisme"

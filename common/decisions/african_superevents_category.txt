@@ -18,14 +18,16 @@ african_superevents_category = {
 			TGG = { is_ally_with = NRG }
 			BNN = { is_ally_with = NRG }
 			CHD = { is_ally_with = NRG }
+			NOT = { has_global_flag = ags_superevent_total_victory}
 		}
 		complete_effect = {
 				country_event = {
 					id = superevents.002
 				}
+				set_global_flag = ags_superevent_total_victory
 		}
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 	
@@ -48,14 +50,16 @@ african_superevents_category = {
 			TGG = { is_ally_with = NRG }
 			BNN = { is_ally_with = NRG }
 			CHD = { is_ally_with = NRG }
+			NOT = { has_global_flag = ecowas_superevent_total_victory}
 		}
 		complete_effect = {
 				country_event = {
 					id = superevents.003
 				}
+				set_global_flag = ecowas_superevent_total_victory
 		}
 		ai_will_do = {
-			base = 0
+			base = 1
 		}
 	}
 }

@@ -273,17 +273,17 @@ news_event = { # - Ангола вышла из ОПЕК.
 		name = news_africa.23.a
 	}
 }
-news_event = { # 30.12.2023 - ВСУ атаковали Белгород.
-	id = news_africa.24
-	title = news_africa.24.t
-	desc = news_africa.24.desc
-	picture = GFX_news_24
-	is_triggered_only = yes
-	major = yes
-	option = { 
-		name = news_africa.24.a
-	}
-}
+#news_event = { # 30.12.2023 - ВСУ атаковали Белгород.
+#	id = news_africa.24
+#	title = news_africa.24.t
+#	desc = news_africa.24.desc
+#	picture = GFX_news_24
+#	is_triggered_only = yes
+#	major = yes
+#	option = { 
+#		name = news_africa.24.a
+#	}
+#}
 
 ### 2024
 
@@ -311,17 +311,17 @@ news_event = { # США и Великобритания нанесли сери�
 	}
 }
 
-news_event = { # - российские войска полностью взяла под контроль Авдеевку.
-	id = news_africa.27
-	title = news_africa.27.t
-	desc = news_africa.27.desc
-	picture = GFX_news_27
-	is_triggered_only = yes
-	major = yes
-	option = { 
-		name = news_africa.27.a
-	}
-}
+#news_event = { # - российские войска полностью взяла под контроль Авдеевку.
+#	id = news_africa.27
+#	title = news_africa.27.t
+#	desc = news_africa.27.desc
+#	picture = GFX_news_27
+#	is_triggered_only = yes
+#	major = yes
+#	option = { 
+#		name = news_africa.27.a
+#	}
+#}
 
 news_event = { # - - Вступление Швеции в НАТО.
 	id = news_africa.28

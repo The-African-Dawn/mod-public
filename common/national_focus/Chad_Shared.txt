@@ -61,6 +61,7 @@ shared_focus = {
 			add_idea = CHD_FACT_separatism_1
 			remove_idea = CHD_FACT_separatism
 		}
+		add_war_support = 0.05
 	}
 }
 
@@ -113,6 +114,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		country_event = chd.1
+		add_war_support = 0.03
 	}
 }
 
@@ -138,6 +140,7 @@ shared_focus = {
 		add_to_variable = {
 			CHD_big_tent_politics_francocentrism_drift = 0.01
 		}
+		add_war_support = 0.02
 	}
 }
 
@@ -244,6 +247,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_stability = 0.1
+		add_war_support = 0.05
 		custom_effect_tooltip = CHD_unlock_CHD_Limane_Mahamat
 	}
 }
@@ -491,6 +495,7 @@ shared_focus = {
 			popularity = -0.2
 		}
 		add_stability = 0.1
+		add_war_support = 0.1
 	}
 }
 
@@ -516,6 +521,7 @@ shared_focus = {
 			add_resistance = -10
 		}
 		add_stability = 0.1
+		add_war_support = 0.05
 	}
 }
 
@@ -692,6 +698,7 @@ shared_focus = {
 			idea = CHD_making_army_bigger
 			days = 360
 		}
+		add_war_support = 0.05
 	}
 }
 
@@ -1182,6 +1189,7 @@ shared_focus = {
 			remove_idea = CHD_FACT_separatism_2
 		}
 		custom_effect_tooltip = CHD_unlock_CHD_Isha_Malua_Jamus
+		add_war_support = 0.05
 	}
 }
 
@@ -1239,6 +1247,12 @@ shared_focus = {
 	prerequisite = {
 		focus = CHD_patrolling_libyan_border
 	}
+	available = {
+		OR = {
+			country_exists = BHK
+			country_exists = ISS
+		}
+	}
 	x = 1
 	y = 2
 	ai_will_do = {
@@ -1246,6 +1260,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_ideas = CHD_fight_ter
+		add_war_support = 0.05
 	}
 }
 
@@ -1290,6 +1305,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_war_support = 0.05
 		division_template = {
 			name = "Nomadic Guard"
 			priority = 0
@@ -1359,6 +1375,7 @@ shared_focus = {
 				owner = CHD
 			}
 		}
+		add_war_support = 0.05
 	}
 }
 
@@ -1378,5 +1395,6 @@ shared_focus = {
 	completion_reward = {
 		add_command_power = 100
 		add_ideas = CHD_loyal_army
+		add_war_support = 0.1
 	}
 }

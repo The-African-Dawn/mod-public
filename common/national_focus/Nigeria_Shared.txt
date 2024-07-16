@@ -545,6 +545,21 @@ shared_focus = {
 		add_war_support = 0.05
 		add_stability = 0.03
 		remove_ideas = NRG_oath_of_secrecy
+		if = {
+			limit = {
+				has_idea = NRG_black_axe_cult_4
+			}
+			swap_ideas = {
+				add_idea = NRG_black_axe_cult_5
+				remove_idea = NRG_black_axe_cult_4
+			}
+			else = {
+				swap_ideas = {
+					add_idea = NRG_black_axe_cult_6
+					remove_idea = NRG_black_axe_cult_5
+				}
+			}
+		}
 	}
 }
 
@@ -564,6 +579,21 @@ shared_focus = {
 	completion_reward = {
 		remove_ideas = NRG_big_narcotraffic
 		news_event = NRG.7
+		if = {
+			limit = {
+				has_idea = NRG_black_axe_cult_4
+			}
+			swap_ideas = {
+				add_idea = NRG_black_axe_cult_5
+				remove_idea = NRG_black_axe_cult_4
+			}
+			else = {
+				swap_ideas = {
+					add_idea = NRG_black_axe_cult_6
+					remove_idea = NRG_black_axe_cult_5
+				}
+			}
+		}
 	}
 }
 
@@ -614,6 +644,7 @@ shared_focus = {
 			add_idea = NRG_islamic_north_and_christian_south_2
 			remove_idea = NRG_islamic_north_and_christian_south
 		}
+		remove_ideas = NRG_black_axe_cult_6
 	}
 }
 

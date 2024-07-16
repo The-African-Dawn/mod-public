@@ -386,3 +386,20 @@ majors_ai_thing = {
 		value = 200
 	}
 }
+
+NRG_save_your_own_territory = {
+	allowed = {
+		tag = NRG
+	}
+	enable = {
+		date > 2025.01.01
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = spare_unit_factor
+		value = -300
+	}
+}

@@ -1,11 +1,17 @@
-
 air_wings = {
-	36 = {
-		fighter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 4 } 
-		attack_helicopter_airframe_0_fr = { owner = "FRN" creator = "FRN" amount = 4 } 
-		transport_helicopter_airframe_0 = { owner = "FRN" creator = "FRN" amount = 4 } 
-	}
-	41 = {
-		uav_airframe_0 = { owner = "FRN" creator = "FRN" amount = 4 } 
+	86 = {
+		fighter_airframe_0_ru = { owner = "NRG" creator = "CHN" amount = 9 } 
+		fighter_airframe_1_ru = { owner = "NRG" creator = "CHN" amount = 3 } 
+		light_cas_airframe_0 = { owner = "NRG" creator = "FRN" amount = 20 } 
+		light_cas_airframe_0 = { owner = "NRG" creator = "FRN" amount = 4 } 
+		light_cas_airframe_0 = { owner = "NRG" creator = "USR" amount = 12 } 
+		light_cas_airframe_0 = { owner = "NRG" creator = "RUS" amount = 10 } 
+		attack_helicopter_airframe_0_ru =  { owner = "NRG" creator = "RUS" amount = 15 }
+		attack_helicopter_airframe_0_fr =  { owner = "NRG" creator = "FRN" amount = 2 }
+		transport_helicopter_airframe_0 =  { owner = "NRG" creator = "RUS" amount = 6 }
+		transport_helicopter_airframe_0 =  { owner = "NRG" creator = "FRN" amount = 5 }
+		uav_airframe_0 =  { owner = "NRG" creator = "CHN" amount = 5 }
+		uav_airframe_0 =  { owner = "NRG" creator = "CHN" amount = 3 }
+		uav_airframe_0 =  { owner = "NRG" creator = "CHN" amount = 4 }
 	}
 }

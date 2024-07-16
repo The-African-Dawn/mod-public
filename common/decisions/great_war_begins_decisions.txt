@@ -25,12 +25,21 @@ great_war_begins_category = {
 			custom_effect_tooltip = you_will_start_terrible_war_tooltip
 			set_global_flag = great_war_begins
 			news_event = {
-				id = ab.16
-				random_days = 60
+				id = NRG.4
+				days = 30
+				random_days = 30
 			}
-			news_event = {
-				id = ab.17
-				random_days = 60
+			FRN = {
+				news_event = {
+					id = ab.16
+					random_days = 60
+				}
+			}
+			USR = {
+				news_event = {
+					id = ab.17
+					random_days = 60
+				}
 			}
 		}
 		remove_effect = {
@@ -44,7 +53,7 @@ great_war_begins_category = {
 					}
 					add_timed_idea = {
 						idea = SAHEL_pan_african_riots
-						days = 180
+						days = 90
 					}
 				}
 				every_country = {
@@ -60,7 +69,7 @@ great_war_begins_category = {
 					}
 				}
 			}
-			set_global_flag = great_war_begins_global_flag
+			set_global_flag = great_war_begins
 			FRN = {
 				news_event = {
 					id = ab.18
@@ -232,6 +241,17 @@ great_war_begins_category = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = NRG
+						tag = NRG
+						tag = MLL
+					}
+				}
+				set_country_flag = part_of_great_war
+			}
 		}
 		ai_will_do = {
 			base = 0
@@ -247,17 +267,14 @@ great_war_begins_category = {
 		fire_only_once = yes
 		days_remove = 90
 		war_with_on_remove = NRG
-		war_with_on_remove = BNN
-		war_with_on_remove = TGG
-		war_with_on_remove = GNN
 		war_with_on_remove = KOT
-		war_with_on_remove = LBR
-		war_with_on_remove = SLR
+		war_with_on_remove = TGG
+		war_with_on_remove = BNN
 		visible = {
 			is_faction_leader = yes
 			OR = {
-				tag = BRK
 				tag = MLL
+				tag = BRK
 			}
 			NOT = {
 				has_global_flag = great_war_begins
@@ -266,13 +283,13 @@ great_war_begins_category = {
 		available = {
 			date > 2027.1.1
 			is_faction_leader = yes
-						NOT = {
+			NOT = {
 				has_global_flag = great_war_begins
 			}
 		}
 		complete_effect = {
 			custom_effect_tooltip = you_will_start_terrible_war_tooltip
-			set_global_flag = great_war_begins_global_flag
+			set_global_flag = great_war_begins
 			news_event = {
 				id = NRG.4
 				days = 30
@@ -292,7 +309,33 @@ great_war_begins_category = {
 			}
 		}
 		remove_effect = {
-			custom_effect_tooltip = you_will_start_terrible_war_off_tooltip
+			hidden_effect = { 
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = NRG
+							tag = NRG
+						}
+					}
+					add_timed_idea = {
+						idea = SAHEL_pan_african_riots
+						days = 90
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							is_in_faction_with = MLL
+							tag = MLL
+						}
+					}
+					add_timed_idea = {
+						idea = SAHEL_pan_african_zeal
+						days = 365
+					}
+				}
+			}
+			set_global_flag = great_war_begins
 			FRN = {
 				news_event = {
 					id = ab.18
@@ -314,13 +357,19 @@ great_war_begins_category = {
 					random_days = 2
 				}
 			}
+			every_country = {
+				add_ai_strategy = {
+					type = ignore_army_incompetence
+					value = 100
+				}
+			}
+			custom_effect_tooltip = you_will_start_terrible_war_off_tooltip
 			hidden_effect = {
 				declare_war_on = {
 					target = NRG
-					type = topple_government
+					type = puppet_wargoal_focus
 				}
 			}
-			#hidden_effect = {play_song = "great_african_war"}
 			hidden_effect = {
 				country_event = {
 					id = superevents.001
@@ -452,11 +501,22 @@ great_war_begins_category = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = MLL
+						is_in_faction_with = NRG
+						tag = NRG
+						tag = MLL
+					}
+				}
+				set_country_flag = part_of_great_war
+			}
 		}
 		ai_will_do = {
 			base = 0
 			modifier = {
-				date > 2027.3.13
+				date > 2027.3.3
 				add = 100
 				factor = 100
 			}
