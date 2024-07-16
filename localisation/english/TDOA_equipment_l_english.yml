@@ -1,6 +1,7 @@
 ﻿l_english:
-    OTRK_equipment_1:"OTRK"
-    OTRK_equipment_arch:"OTRK"
+    OTRK_equipment_1:"Operative-tactical missile complex"
+    OTRK_equipment_arch:"Operative-tactical missile complex"
+    OTRK_equipment_arch_desc:"Operative-tactical missile complex"
     RUS_OTRK_equipment_1:0 "9K720 Iskander"
     RUS_OTRK_equipment_1_short:0 "Iskander"
     FRN_OTRK_equipment_1:0 "M270 ATACMS"

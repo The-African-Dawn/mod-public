@@ -1345,7 +1345,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1910
+		start_year = 1970
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1918 }
@@ -1395,7 +1395,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1980
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1939 }
@@ -1434,10 +1434,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 2000
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 0 }
+			position = { x = 3 y = 0 }
 		}
 		
 		categories = {
