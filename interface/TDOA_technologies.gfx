@@ -754,6 +754,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/armor/ah1z.dds"
 	}
 	
+	
+	
+	spriteType = {
+		name = "GFX_OTRK_tech_1_medium"
+		texturefile = "gfx/interface/technologies/otrk/KROPKA.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_OTRK_tech_1_medium"
+		texturefile = "gfx/interface/technologies/otrk/ISKANDER.dds"
+	}
+	spriteType = {
+		name = "GFX_USR_OTRK_tech_1_medium"
+		texturefile = "gfx/interface/technologies/otrk/M270.dds"
+	}
+	spriteType = {
+		name = "GFX_FRN_OTRK_tech_1_medium"
+		texturefile = "gfx/interface/technologies/otrk/M270FRN.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_RUS_tech_ifv_4_medium"
 		texturefile = "gfx/interface/technologies/armor/BTR82A_2.dds"

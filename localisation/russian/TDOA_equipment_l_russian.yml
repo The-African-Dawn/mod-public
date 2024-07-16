@@ -1,5 +1,14 @@
 ﻿l_russian:
 
+    OTRK_equipment_1:"ОТРК"
+    OTRK_equipment_arch:"ОТРК"
+    RUS_OTRK_equipment_1:0 "9К720 Искандер"
+    RUS_OTRK_equipment_1_short:0 "Искандер"
+    FRN_OTRK_equipment_1:0 "M270 ATACMS"
+    FRN_OTRK_equipment_1_short:0 "M270 ATACMS"
+    USR_OTRK_equipment_1:0 "M270 ATACMS"
+    USR_OTRK_equipment_1_short:0 "M270 ATACMS"
+
     ATGM_equipment:0 "РПГ и ПТРК"
     ATGM_equipment_handmade:0 "Кустарный РПГ"
     ATGM_equipment_handmade_short:0 "Кустарный РПГ"

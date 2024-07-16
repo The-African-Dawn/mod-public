@@ -34,7 +34,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 20
+		maximum_speed = 18
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -89,7 +89,7 @@ equipments = {
 		is_convertable = yes
 		
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 8
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -144,7 +144,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 10
 		reliability = 1.0
 
 		#Defensive Abilities
@@ -173,7 +173,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 13
+		maximum_speed = 11
 		reliability = 1.1
 
 		#Defensive Abilities
@@ -202,7 +202,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 13
+		maximum_speed = 11
 		reliability = 1.2
 
 		#Defensive Abilities
@@ -232,7 +232,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 10
+		maximum_speed = 8
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -261,7 +261,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 10
 		reliability = 0.9
 
 		#Defensive Abilities
@@ -290,7 +290,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 10
 		reliability = 1
 
 		#Defensive Abilities
@@ -321,7 +321,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 15
+		maximum_speed = 10
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -350,7 +350,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 18
+		maximum_speed = 10
 		reliability = 0.9
 
 		#Defensive Abilities
@@ -379,7 +379,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 20
+		maximum_speed = 10
 		reliability = 1.2
 
 		#Defensive Abilities
@@ -408,7 +408,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 10
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -437,7 +437,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 13
+		maximum_speed = 10
 		reliability = 0.9
 
 		#Defensive Abilities
@@ -466,7 +466,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 13
+		maximum_speed = 10
 		reliability = 1
 
 		#Defensive Abilities
@@ -522,7 +522,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 20
+		maximum_speed = 14
 		reliability = 0.8
 
 		#Defensive Abilities

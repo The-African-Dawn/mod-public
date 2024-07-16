@@ -1,7 +1,12 @@
+JPN	= {
+	color = rgb { 219 219 219 }
+	color_ui = rgb { 219 219 219 }
+}
 AZW	= {
 	color = rgb { 20 41 0 }
 	color_ui = rgb { 20 41 0 }
 }
+
 WZA	= {
 	color = rgb { 204 204 235  }
 	color_ui = rgb { 204 204 235 }

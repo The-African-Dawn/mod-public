@@ -1,4 +1,12 @@
 ﻿l_english:
+    OTRK_equipment_1:"OTRK"
+    OTRK_equipment_arch:"OTRK"
+    RUS_OTRK_equipment_1:0 "9K720 Iskander"
+    RUS_OTRK_equipment_1_short:0 "Iskander"
+    FRN_OTRK_equipment_1:0 "M270 ATACMS"
+    FRN_OTRK_equipment_1_short:0 "M270 ATACMS"
+    USR_OTRK_equipment_1:0 "M270 ATACMS"
+    USR_OTRK_equipment_1_short:0 "M270 ATACMS"
 
     ATGM_equipment:0 "RPG and ATGM"
     ATGM_equipment_handmade:0 "Handmade RPG"

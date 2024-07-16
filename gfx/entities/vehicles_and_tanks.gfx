@@ -352,4 +352,11 @@ objectTypes = {
 		file = "gfx/models/units/mig21/mig21.mesh"
 		animation = { id = "idle" type = "fighter_default_idle_animation" }
 	}
+	pdxmesh = {
+		name = "iskander_mesh"
+		file = "gfx/models/units/iskander/iskander.mesh"
+		animation = { id = "idle" type = "iskander_idle_animation" }
+		animation = { id = "attack" type = "iskander_attack_animation" }
+		animation = { id = "move" type = "iskander_move_animation" }
+	}
 }

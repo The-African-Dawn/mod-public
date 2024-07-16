@@ -83,6 +83,8 @@ set_technology = {
 	manpads_upgrade_1 = 1
 	manpads_upgrade_2 = 1
 	manpads_upgrade_3 = 1
+	
+	OTRK_tech_1 = 1
 }
 add_manpower = 5000
 set_convoys = 3

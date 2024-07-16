@@ -65,4 +65,50 @@ equipments = {
 			steel = 2
 		}
 	}
+
+
+
+
+
+
+
+	OTRK_equipment_arch = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_artillery_equipment		
+		type = railway_gun
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+
+		#Misc Abilities
+		reliability = 0.8
+		maximum_speed = 5
+
+		#Offensive Abilities
+		railway_gun_attack = 50
+		
+		manpower = 10
+
+		lend_lease_cost = 30
+	}
+
+	OTRK_equipment_1 = {
+		year = 1934
+
+		archetype = OTRK_equipment_arch
+		priority = 50
+		visual_level = 0
+		active = no
+
+		build_cost_ic = 1000
+		resources = {
+			steel = 4
+			tungsten = 2
+			chromium = 2
+		}		
+	}
 }

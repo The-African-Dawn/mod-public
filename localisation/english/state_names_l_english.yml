@@ -79,7 +79,7 @@
  STATE_98:0 "Ouagadougou"
 
  STATE_33:0 "Camp Bila Zagre"
- 
+ STATE_183:0 "Tabarka"
  STATE_100:0 "Tripoli"
  STATE_101:0 "Benghazi"
  STATE_102:0 "Cyrenaica"
@@ -90,7 +90,7 @@
  STATE_107:0 "Al-Margab"
  STATE_108:0 "Al-Nuqat al-Khums"
  STATE_109:0 "Wadi al-Hayat-Wadi al-Shati"
- 
+ STATE_192:0 "Japan Self-Defense Force Base Djibouti"
  STATE_110:0 "N'djamena"
  STATE_111:0 "Chari-Baguirmi"
  STATE_112:0 "Eastern Mayo-Kebbi"

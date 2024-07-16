@@ -1,0 +1,125 @@
+capital = 192
+set_technology = {
+	Rifle_pizods = 1
+	M16_tech = 1
+	M16_tech_2 = 1
+	M16_tech_3 = 1
+	M8_Greyhound_TECH = 1
+	
+	
+	handmade_artillery_tech = 1
+	howitzer_m101_tech = 1
+	howitzer_m119_tech = 1
+	howitzer_m777_tech = 1
+	
+	handmade_atgm_tech = 1
+	atgm_m72_tech = 1
+	atgm_tow_tech = 1
+	atgm_javelin_tech = 1
+	
+	handmade_manpads_tech = 1
+	manpads_redeye_tech = 1
+	manpads_fim92_tech = 1
+	manpads_stinger_tech = 1
+	basic_train = 1
+	tech_specnaz = 1
+	tech_light_tank_legacy = 1
+	tech_medium_tank_legacy = 1	
+	
+	plane_tech_mcs_1_us= 1
+	plane_tech_mcs_2_us= 1
+	plane_tech_cas_0_us= 1
+	plane_tech_cas_1_us= 1
+	heli_tech_attack_us= 1
+	heli_tech_attack_fr = 1
+	uav_tech_general = 1
+	
+	plane_tech_transport = 1
+	plane_tech_strateg = 1
+	heli_tech_transport = 1
+	uav_tech_general = 1
+	
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+		tech_mrap = 1
+	tech_ural = 1
+	
+	tech_mbt_us_1 = 1
+	tech_mbt_us_2 = 1
+	tech_mbt_us_3 = 1
+	
+	tech_ifv_1 = 1
+	tech_ifv_2 = 1
+	tech_ifv_3 = 1
+	tech_ifv_4 = 1
+	
+	tech_lav_1 = 1
+	tech_lav_2 = 1
+	tech_lav_3 = 1
+	tech_lav_4 = 1
+	
+	plane_tech_light = 1
+	
+	modern_camouflage_tech = 1
+	modern_armor_vest_tech = 1
+	modern_optics_tech = 1 
+	mm_grenade_launchers_tech = 1
+	cumulative_grenade_launchers_tech = 1
+	upgraded_modern_vests = 1 
+	wartime_train = 1 
+	
+	artillery_upgrade_1 = 1
+	artillery_upgrade_2 = 1
+	artillery_upgrade_3 = 1
+	
+	atgm_upgrade_1 = 1
+	atgm_upgrade_2 = 1
+	atgm_upgrade_3 = 1
+	
+	manpads_upgrade_1 = 1
+	manpads_upgrade_2 = 1
+	manpads_upgrade_3 = 1
+	
+	OTRK_tech_1 = 1
+}
+add_equipment_to_stockpile = {
+    type = toyota_jeep
+    amount = 600
+}
+
+add_manpower = 6000
+
+set_convoys = 3
+
+set_country_flag = USR_COUNTRY
+set_country_flag = USR_friend
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+
+set_politics = {
+	ruling_party = pragmatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+add_ideas = {
+disarmed_nation_mjr
+low_corruption
+}
+
+set_popularities = {
+	pragmatism = 100
+}
+
+

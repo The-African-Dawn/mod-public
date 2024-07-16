@@ -87,6 +87,16 @@ set_technology = {
 	manpads_upgrade_1 = 1
 	manpads_upgrade_2 = 1
 	manpads_upgrade_3 = 1
+	
+	millitary_electronics = 1
+	millitary_electronics_2 = 1
+	millitary_electronics_3 = 1
+	
+	construction_tech_0 = 1
+	production_tech_1 = 1
+	production_tech_2 = 1
+	
+	OTRK_tech_1 = 1
 }
 
 add_manpower = 7000

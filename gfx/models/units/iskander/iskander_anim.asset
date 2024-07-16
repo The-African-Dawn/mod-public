@@ -1,0 +1,16 @@
+
+
+	animation = {
+		name = "iskander_idle_animation"
+		file = "iskander_idle.anim"
+	}
+	
+	animation = {
+		name = "iskander_move_animation"
+		file = "iskander_move.anim"
+	}
+	
+	animation = {
+		name = "iskander_attack_animation"
+		file = "iskander_attack.anim"
+	}

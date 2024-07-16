@@ -32,6 +32,7 @@ VGR = "countries/VGR.txt" # Республика Виаг ой Биафра
 
 BLK = "countries/BLK.txt" # Балака
 DLG = "countries/DLG.txt" # Ливия 2
+JPN = "countries/JPN.txt" # Япония?!?!?!?!?!
 
 FCT = "countries/FCT.txt" # ЧАД 2 ФАКТ?!?!??!?!?!
 
