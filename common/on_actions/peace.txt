@@ -69,8 +69,194 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					ROOT = { tag = RUS }
+				}
+				every_country = {
+					limit = {
+						has_war_with = RUS
+					}
+					white_peace = RUS
+				}
+				leave_faction = yes
+				if = {
+					limit = {
+						187 = { is_owned_by = RUS } 
+					}
+					BRK = { transfer_state = 187 } 
+					187 = { add_core_of = BRK }
+				}
+				if = {
+					limit = {
+						33 = { is_owned_by = RUS } 
+					}
+					BRK = { transfer_state = 33 } 
+					33 = { add_core_of = BRK }
+				}
+				if = {
+					limit = {
+						48 = { is_owned_by = RUS } 
+					}
+					NIG = { transfer_state = 48 } 
+					48 = { add_core_of = NIG }
+				}
+				if = {
+					limit = {
+						30 = { is_owned_by = RUS } 
+					}
+					MLL = { transfer_state = 30 } 
+					30 = { add_core_of = MLL }
+				}
+				if = {
+					limit = {
+						36 = { is_owned_by = RUS } 
+					}
+					NIG = { transfer_state = 36 } 
+					36 = { add_core_of = NIG }
+				}
+				RUS = { set_country_flag = peace_calculated_1 }
+				add_ideas = { disarmed_nation_mjr civilian_economy_mjr  }
+				RUS = { news_event = ab.23 }
+			}
+			if = {
+				limit = {
+					ROOT = { tag = USR }
+				}
+				every_country = {
+					limit = {
+						has_war_with = USR
+					}
+					white_peace = USR
+				}
+				leave_faction = yes
+				if = {
+					limit = {
+						43 = { is_owned_by = USR } 
+					}
+					SNG = { transfer_state = 43 } 
+					43 = { add_core_of = SNG }
+				}
+				if = {
+					limit = {
+						47 = { is_owned_by = USR } 
+					}
+					NRG = { transfer_state = 47 } 
+					47 = { add_core_of = NRG }
+				}
+				if = {
+					limit = {
+						46 = { is_owned_by = USR } 
+					}
+					GNN = { transfer_state = 46 } 
+					46 = { add_core_of = GNN }
+				}
+				if = {
+					limit = {
+						191 = { is_owned_by = USR } 
+					}
+					BNN = { transfer_state = 191 } 
+					191 = { add_core_of = BNN }
+				}
+				if = {
+					limit = {
+						190 = { is_owned_by = USR } 
+					}
+					KOT = { transfer_state = 190 } 
+					190 = { add_core_of = KOT }
+				}
+				if = {
+					limit = {
+						48 = { is_owned_by = USR } 
+					}
+					NIG = { transfer_state = 48 } 
+					48 = { add_core_of = NIG }
+				}
+				if = {
+					limit = {
+						49 = { is_owned_by = USR } 
+					}
+					NIG = { transfer_state = 49 } 
+					49 = { add_core_of = NIG }
+				}
+				if = {
+					limit = {
+						51 = { is_owned_by = USR } 
+					}
+					CHD = { transfer_state = 51 } 
+					51 = { add_core_of = CHD }
+				}
+				if = {
+					limit = {
+						44 = { is_owned_by = USR } 
+					}
+					MLL = { transfer_state = 44 } 
+					44 = { add_core_of = MLL }
+				}
+				USR = { set_country_flag = peace_calculated_1 }
+				add_ideas = { disarmed_nation_mjr civilian_economy_mjr  }
+				USR = { news_event = ab.21 }
+			}
+			if = {
+				limit = {
+					ROOT = { tag = FRN }
+				}
+				every_country = {
+					limit = {
+						has_war_with = FRN
+					}
+					white_peace = FRN
+				}
+				leave_faction = yes
+				if = {
+					limit = {
+						28 = { is_owned_by = FRN } 
+					}
+					KOT = { transfer_state = 28 } 
+					28 = { add_core_of = KOT }
+				}
+				if = {
+					limit = {
+						31 = { is_owned_by = FRN } 
+					}
+					SNG = { transfer_state = 31 }
+					31 = { add_core_of = SNG } 
+				}
+				if = {
+					limit = {
+						33 = { is_owned_by = FRN } 
+					}
+					BRK = { transfer_state = 33 } 
+					33 = { add_core_of = BRK } 
+				}
+				
+				if = {
+					limit = {
+						38 = { is_owned_by = FRN } 
+					}
+					CHD = { transfer_state = 38 } 
+					38 = { add_core_of = CHD } 
+				}
+				if = {
+					limit = {
+						39 = { is_owned_by = FRN } 
+					}
+					CHD = { transfer_state = 39 } 
+					39 = { add_core_of = CHD } 
+				}
+				if = {
+					limit = {
+						40 = { is_owned_by = FRN } 
+					}
+					CHD = { transfer_state = 40 } 
+					40 = { add_core_of = CHD } 
+				}
+				FRN = { set_country_flag = peace_calculated_1 }
+				add_ideas = { disarmed_nation_mjr civilian_economy_mjr  }
+				FRN = { news_event = ab.22 }
+			}
+			if = {
+				limit = {
 					FROM = { is_in_faction = yes NOT = { has_government = fundamentalism } }
-					ROOT = { is_in_faction = yes NOT = { has_government = fundamentalism } }
+					ROOT = { is_in_faction = yes NOT = { has_government = fundamentalism } NOT = { tag = RUS tag = USR tag = FRN	} }
 				}
 				random_country = { 
 					limit = {
@@ -97,389 +283,6 @@ on_actions = {
 					}
 				}
 			}
-
-	# 		if = {
-	# 			limit = {
-	# 				ROOT = {
-	# 					OR = {
-	# 						has_government = panafricanism
-	# 						has_government = pragmatism
-	# 						has_government = francocentrism
-	# 					}
-	# 					is_in_faction = yes
-	# 				}
-	# 				FROM = {
-	# 					OR = {
-	# 						has_government = francocentrism
-	# 						has_government = pragmatism
-	# 						has_government = panafricanism
-	# 					}
-	# 					is_in_faction = yes
-	# 				}
-	# 			}
-	# 			if = {
-	# 				limit = {
-	# 					ROOT = { has_civil_war = yes }
-	# 					any_country = {
-	# 						OR = { is_in_faction_with = FROM tag = FROM }
-	# 						civilwar_target = ROOT
-	# 					}
-	# 				}
-	# 				every_country = {
-	# 					limit = {
-	# 						OR = { is_in_faction_with = FROM tag = FROM }
-	# 						civilwar_target = ROOT
-	# 					}
-	# 					annex_country = {
-	# 						target = ROOT
-	# 						transfer_troops = no
-	# 					}
-	# 				}
-	# 				else = {
-	# 					if = {
-	# 						limit = {
-	# 							ROOT = { is_faction_leader = yes }
-	# 							random_country = {  
-	# 								limit = { is_in_faction_with = ROOT }
-	# 								set_faction_leader = yes
-	# 							}
-	# 						}
-	# 					}
-	# 					ROOT = { leave_faction = yes }
-	# 					FROM = {
-	# 						white_peace = ROOT
-	# 						every_country = {
-	# 							limit = { is_in_faction = yes } 
-	# 							set_truce = {
-	# 								target = ROOT
-	# 								days = 0
-	# 							}
-	# 						}
-	# 						if = {
-	# 							limit = {
-	# 								ROOT = {
-	# 									NOT = {
-	# 										tag = FRN
-	# 										tag = RUS
-	# 										tag = USR
-	# 									}
-	# 								}
-	# 							}
-	# 							puppet = ROOT
-	# 							end_puppet = ROOT
-	# 						}
-		
-	# 					}
-	# 					if = {
-	# 						limit = {
-	# 							ROOT = {
-	# 								tag = RUS
-	# 							}
-	# 						}
-	# 						if = {
-	# 							limit = {
-	# 								NOT = {
-	# 									187 = { is_controlled_by = RUS }
-	# 									33 = { is_controlled_by = RUS }
-	# 									30 = { is_controlled_by = RUS }
-	# 									48 = { is_controlled_by = RUS }
-	# 									36 = { is_controlled_by = RUS }
-	# 								}
-	# 								RUS = {
-	# 									has_war = yes
-	# 									NOT = { has_country_flag = peace_calculated_1 }
-	# 								}
-	# 							}
-	# 							every_country = {
-	# 								limit = {
-	# 									has_war_with = RUS
-	# 								}
-	# 								white_peace = RUS
-	# 							}
-	# 							leave_faction = yes
-	# 							if = {
-	# 								limit = {
-	# 									187 = { is_owned_by = RUS } 
-	# 								}
-	# 								BRK = { transfer_state = 187 } 
-	# 								187 = { add_core_of = BRK }
-	# 							}
-	# 							if = {
-	# 								limit = {
-	# 									33 = { is_owned_by = RUS } 
-	# 								}
-	# 								BRK = { transfer_state = 33 } 
-	# 								33 = { add_core_of = BRK }
-	# 							}
-	# 							if = {
-	# 								limit = {
-	# 									48 = { is_owned_by = RUS } 
-	# 								}
-	# 								NIG = { transfer_state = 48 } 
-	# 								48 = { add_core_of = NIG }
-	# 							}
-	# 							if = {
-	# 								limit = {
-	# 									30 = { is_owned_by = RUS } 
-	# 								}
-	# 								MLL = { transfer_state = 30 } 
-	# 								30 = { add_core_of = MLL }
-	# 							}
-	# 							if = {
-	# 								limit = {
-	# 									36 = { is_owned_by = RUS } 
-	# 								}
-	# 								NIG = { transfer_state = 36 } 
-	# 								36 = { add_core_of = NIG }
-	# 							}
-	# 							RUS = { set_country_flag = peace_calculated_1 }
-	# 							add_ideas = { disarmed_nation_mjr civilian_economy_mjr  }
-	# 							RUS = { news_event = ab.23 }
-	# 						}
-	# 						else_if = {
-	# 							limit = {
-	# 								ROOT = {
-	# 									tag = USR
-	# 								}
-	# 							}
-	# 							if = {
-	# 								limit = {
-	# 									NOT = {
-	# 										43 = { is_controlled_by = USR }
-	# 										47 = { is_controlled_by = USR }
-	# 										46 = { is_controlled_by = USR }
-	# 										191 = { is_controlled_by = USR }
-	# 										190 = { is_controlled_by = USR }
-	# 										51 = { is_controlled_by = USR }
-	# 										48 = { is_controlled_by = USR }
-	# 										49 = { is_controlled_by = USR }
-	# 										44 = { is_controlled_by = USR }
-	# 									}
-	# 									USR = {
-	# 										has_war = yes
-	# 										NOT = { has_country_flag = peace_calculated_1 }
-	# 									}
-	# 								}
-	# 								every_country = {
-	# 									limit = {
-	# 										has_war_with = USR
-	# 									}
-	# 									white_peace = USR
-	# 								}
-	# 								leave_faction = yes
-	# 								if = {
-	# 									limit = {
-	# 										43 = { is_owned_by = USR } 
-	# 									}
-	# 									SNG = { transfer_state = 43 } 
-	# 									43 = { add_core_of = SNG }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										47 = { is_owned_by = USR } 
-	# 									}
-	# 									NRG = { transfer_state = 47 } 
-	# 									47 = { add_core_of = NRG }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										46 = { is_owned_by = USR } 
-	# 									}
-	# 									GNN = { transfer_state = 46 } 
-	# 									46 = { add_core_of = GNN }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										191 = { is_owned_by = USR } 
-	# 									}
-	# 									BNN = { transfer_state = 191 } 
-	# 									191 = { add_core_of = BNN }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										190 = { is_owned_by = USR } 
-	# 									}
-	# 									KOT = { transfer_state = 190 } 
-	# 									190 = { add_core_of = KOT }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										48 = { is_owned_by = USR } 
-	# 									}
-	# 									NIG = { transfer_state = 48 } 
-	# 									48 = { add_core_of = NIG }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										49 = { is_owned_by = USR } 
-	# 									}
-	# 									NIG = { transfer_state = 49 } 
-	# 									49 = { add_core_of = NIG }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										51 = { is_owned_by = USR } 
-	# 									}
-	# 									CHD = { transfer_state = 51 } 
-	# 									51 = { add_core_of = CHD }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										44 = { is_owned_by = USR } 
-	# 									}
-	# 									MLL = { transfer_state = 44 } 
-	# 									44 = { add_core_of = MLL }
-	# 								}
-	# 								USR = { set_country_flag = peace_calculated_1 }
-	# 								add_ideas = { disarmed_nation_mjr civilian_economy_mjr  }
-	# 								USR = { news_event = ab.21 }
-	# 							}
-	# 						}
-	# 						else_if = {
-	# 							limit = {
-	# 								ROOT = { tag = FRN }
-	# 							}
-	# 							if = {
-	# 								limit = {
-	# 									NOT = {
-	# 										31 = { is_controlled_by = FRN }
-	# 										28 = { is_controlled_by = FRN }
-	# 										33 = { is_controlled_by = FRN }
-											
-	# 										38 = { is_controlled_by = FRN }
-	# 										39 = { is_controlled_by = FRN }
-	# 										40 = { is_controlled_by = FRN }
-	# 									}
-	# 									FRN = {
-	# 										has_war = yes
-	# 										NOT = { has_country_flag = peace_calculated_1 }
-	# 									}
-	# 								}
-	# 								every_country = {
-	# 									limit = {
-	# 										has_war_with = FRN
-	# 									}
-	# 									white_peace = FRN
-	# 								}
-	# 								leave_faction = yes
-	# 								if = {
-	# 									limit = {
-	# 										28 = { is_owned_by = FRN } 
-	# 									}
-	# 									KOT = { transfer_state = 28 } 
-	# 									28 = { add_core_of = KOT }
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										31 = { is_owned_by = FRN } 
-	# 									}
-	# 									SNG = { transfer_state = 31 }
-	# 									31 = { add_core_of = SNG } 
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										33 = { is_owned_by = FRN } 
-	# 									}
-	# 									BRK = { transfer_state = 33 } 
-	# 									33 = { add_core_of = BRK } 
-	# 								}
-									
-	# 								if = {
-	# 									limit = {
-	# 										38 = { is_owned_by = FRN } 
-	# 									}
-	# 									CHD = { transfer_state = 38 } 
-	# 									38 = { add_core_of = CHD } 
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										39 = { is_owned_by = FRN } 
-	# 									}
-	# 									CHD = { transfer_state = 39 } 
-	# 									39 = { add_core_of = CHD } 
-	# 								}
-	# 								if = {
-	# 									limit = {
-	# 										40 = { is_owned_by = FRN } 
-	# 									}
-	# 									CHD = { transfer_state = 40 } 
-	# 									40 = { add_core_of = CHD } 
-	# 								}
-	# 								FRN = { set_country_flag = peace_calculated_1 }
-	# 								add_ideas = { disarmed_nation_mjr civilian_economy_mjr  }
-	# 								FRN = { news_event = ab.22 }
-	# 							}
-	# 						}
-	# 					}
-		
-	# 					every_country = {
-	# 						limit = {
-	# 							OR = {
-	# 								is_in_faction_with = FROM
-	# 								is_puppet_of = FROM
-	# 								tag = FROM
-	# 							}
-	# 							ROOT = {
-	# 								NOT = {
-	# 									tag = FRN
-	# 									tag = RUS
-	# 									tag = USR
-	# 								}
-	# 							}
-	# 						}
-	# 						every_state = {
-	# 							limit = {
-	# 								is_owned_by = ROOT
-	# 								is_core_of = PREV
-	# 							}
-	# 							transfer_state_to = PREV
-	# 						}
-	# 					}
-	# 					every_country = {
-	# 						limit = {
-	# 							OR = {
-	# 								is_in_faction_with = FROM
-	# 								AND = { tag = FROM is_faction_leader = yes }
-	# 							}
-	# 							ROOT = {
-	# 								NOT = {
-	# 									tag = FRN
-	# 									tag = RUS
-	# 									tag = USR
-	# 								}
-	# 							}
-	# 						}
-	# 						add_to_faction = ROOT
-	# 					}
-	# 					if = {
-	# 						limit = {
-	# 							ROOT = {
-	# 								tag = NRG
-	# 							}
-	# 							88 = {
-	# 								is_owned_by = NRG
-	# 							}
-	# 						}
-	# 						VGR = {
-	# 							transfer_state = 88
-	# 							88 = {
-	# 								add_core_of = VGR
-	# 								remove_core_of = NRG
-	# 							}
-	# 						}
-	# 						FROM = {
-	# 							puppet = VGR
-	# 						}
-	# 					}
-	# 					ROOT = {
-	# 						every_owned_state = { 
-	# 							transfer_state_to = ROOT
-	# 							set_state_controller_to = ROOT
-	# 						}
-	# 					}
-	# 				}
-	# 			}
-	# 		}
 		}
 	}
 	on_daily = {

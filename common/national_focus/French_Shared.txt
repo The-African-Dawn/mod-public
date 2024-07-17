@@ -587,6 +587,11 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_railway_gun = {
+			equipment = OTRK_equipment_1
+			name = M270
+			location = 1765
+		}
 		custom_effect_tooltip = france_new_legion_decisions
 		add_war_support = 0.15
 		add_ideas = extensive_conscription_mjr

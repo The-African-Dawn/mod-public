@@ -755,6 +755,14 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
+		hidden_effect = {
+			load_focus_tree = {
+				tree = CHD_expanding_tree
+				keep_completed = yes
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+		country_event = RUS.4
 		custom_effect_tooltip = CHD_modify_CHD_big_tent_politics_CHD_sahel_integration
 		add_to_variable = {
 			CHD_big_tent_politics_panafricanism_drift = 0.05

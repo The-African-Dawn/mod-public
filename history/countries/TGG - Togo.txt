@@ -25,6 +25,9 @@ add_equipment_to_stockpile = {
     type = toyota_jeep
     amount = 600
 }
+
+give_military_access = BRK
+
 set_convoys = 3
 
 set_research_slots = 2

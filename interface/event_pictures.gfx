@@ -44,6 +44,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/RUS/RUS_3.dds"
 	}
 	spriteType = {
+		name = "GFX_RUS_4"
+		texturefile = "gfx/event_pictures/RUS/RUS_4.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_5"
+		texturefile = "gfx/event_pictures/RUS/RUS_5.dds"
+	}
+	spriteType = {
 		name = "GFX_RUS_6"
 		texturefile = "gfx/event_pictures/RUS/RUS_6.dds"
 	}

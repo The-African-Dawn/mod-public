@@ -267,6 +267,11 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_railway_gun = {
+			equipment = OTRK_equipment_1
+			name = M270
+			location = 933
+		}
 		country_event = USR.4
 	}
 }

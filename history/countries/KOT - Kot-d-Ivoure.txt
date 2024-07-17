@@ -24,6 +24,7 @@ add_equipment_to_stockpile = {
     amount = 600
 }
 give_military_access = FRN
+give_military_access = BRK
 
 set_convoys = 3
 set_research_slots = 2

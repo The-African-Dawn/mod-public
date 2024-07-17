@@ -30,6 +30,9 @@ set_war_support = 0.34
 set_oob = "BNN_oob"
 recruit_character = BNN_Patric_Talon
 recruit_character = BNN_Thomas_Boni_Yayi
+
+give_military_access = BRK
+
 add_ideas = {
 	gulf_of_guinea_piracy
 	disarmed_nation

@@ -64,3 +64,9 @@
  international_blockade:0 "Blocus"
  BM_RAILWAY_GUN_BOMBARD: "Mise à feu de systèmes de missiles tactiques"
  BM_RAILWAY_GUN_BOMBARD_DESC: "Les systèmes de missiles tactiques situés à proximité fournissent maintenant un appui-feu, travaillant sur l'infanterie retranchée et les positions fortifiées."
+ RAILWAY_GUN_CLICK_TO_ASSIGN:0 "§GClick§! pour affecter les systèmes de missiles tactiques sélectionnés à l'armée"
+ RAILWAY_GUN_CLICK_TO_SELECT_ASSIGNED:0 "§GClick§! pour sélectionner les systèmes de missiles tactiques affectés à l'armée"
+ RAILWAY_GUN_ASSIGNED:1 "§GSystèmes de missiles tactiques assignés§!"
+ UNASSIGNED_RAILWAY_GUNS_DESCRIPTION:0 "§GCliquez droit§! sur le portrait d'un commandant pour affecter des systèmes de missiles tactiques à une armée, ou cliquez sur le bouton §GAssign to Army§! situé en haut du portrait du commandant.
+ RAILWAY_GUN_ASSIGNED_MANUAL_ORDER_TITLE:0 "Désaffecter les systèmes de missiles tactiques de l'armée ?"
+ RAILWAY_GUN_ASSIGNED_MANUAL_ORDER_DESC:0 "Vous êtes sur le point de désaffecter ce système de missile tactique de l'armée. Cela supprimera ses commandes actuelles. Êtes-vous sûr ?"

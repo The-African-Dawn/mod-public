@@ -84,6 +84,8 @@ set_variable = { BRK_army_conscription_factor = -0.5 }
 add_dynamic_modifier = { modifier = BRK_situation_in_army }
 
 give_military_access = FRN
+give_military_access = MLL
+give_military_access = NIG
 
 set_research_slots = 3
 set_stability = 0.6

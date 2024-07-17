@@ -20,6 +20,7 @@ add_equipment_to_stockpile = {
 }
 
 give_military_access = USR
+give_military_access = BRK
 
 set_convoys = 3
 set_research_slots = 2

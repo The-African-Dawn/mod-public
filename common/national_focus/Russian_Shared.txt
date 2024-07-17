@@ -18,6 +18,9 @@
 		hidden_effect = {
 			news_event = RUS.1
 		}
+		hidden_effect = {
+			news_event = RUS.5
+		}
 		news_event = RUS.2
 		add_ideas = civilian_economy_mjr
 		add_ideas = disarmed_nation_mjr
@@ -297,6 +300,11 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_railway_gun = {
+			equipment = OTRK_equipment_1
+			name = Iskander
+			location = 247
+		}
 		division_template = {
 			name = "Tankovaya Brigada"
 			support={

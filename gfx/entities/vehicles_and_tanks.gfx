@@ -359,4 +359,11 @@ objectTypes = {
 		animation = { id = "attack" type = "iskander_attack_animation" }
 		animation = { id = "move" type = "iskander_move_animation" }
 	}
+	pdxmesh = {
+		name = "m270_mesh"
+		file = "gfx/models/units/m270/m270.mesh"
+		animation = { id = "idle" type = "m270_idle_animation" }
+		animation = { id = "attack" type = "m270_attack_animation" }
+		animation = { id = "move" type = "m270_move_animation" }
+	}
 }

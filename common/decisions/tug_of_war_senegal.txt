@@ -259,7 +259,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -287,7 +287,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -332,7 +332,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -359,7 +359,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -408,7 +408,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -436,7 +436,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -479,7 +479,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -506,7 +506,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -560,7 +560,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -591,7 +591,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -645,7 +645,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -672,7 +672,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -726,7 +726,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -756,7 +756,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -811,7 +811,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {
@@ -844,7 +844,7 @@ tug_of_war_senegal_category = {
 				}
 				add_to_variable = {
 					var = global.tug_of_war_senegal_choosing_points
-					value = 0.5
+					value = 0.75
 				}
 			}
 			if = {

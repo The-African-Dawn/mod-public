@@ -70,6 +70,7 @@ set_popularities = {
 
 give_military_access = FRN
 give_military_access = USR
+give_military_access = BRK
 
 add_ideas = {
 	disarmed_nation

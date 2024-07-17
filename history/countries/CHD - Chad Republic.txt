@@ -39,6 +39,7 @@ set_war_support = -0.67
 
 give_military_access = FRN
 give_military_access = USR
+give_military_access = RUS
 
 set_variable = { CHD_big_tent_politics_political_power_factor = 0.05 }
 set_variable = { CHD_big_tent_politics_stability_factor = -0.05 }

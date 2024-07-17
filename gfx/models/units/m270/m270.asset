@@ -1,0 +1,16 @@
+
+
+	animation = {
+		name = "m270_idle_animation"
+		file = "m270_idle.anim"
+	}
+	
+	animation = {
+		name = "m270_move_animation"
+		file = "m270_move.anim"
+	}
+	
+	animation = {
+		name = "m270_attack_animation"
+		file = "m270_attack.anim"
+	}

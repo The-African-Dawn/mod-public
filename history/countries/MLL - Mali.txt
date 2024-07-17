@@ -39,6 +39,7 @@ set_war_support = 0.5
 give_military_access = FRN
 give_military_access = USR
 give_military_access = RUS
+give_military_access = BRK
 
 set_politics = {
 	ruling_party = panafricanism

@@ -244,9 +244,9 @@ shared_focus = {
 		custom_effect_tooltip = BRK_modify_situation_in_army_alliance
 		set_country_flag = RUS_friend
 		custom_effect_tooltip = BRK_RUS_Friend_tt
-		add_dynamic_modifier = {
-			modifier = Corpus_training_modifier
-		}
+		#add_dynamic_modifier = {
+		#	modifier = Corpus_training_modifier
+		#}
 		add_equipment_to_stockpile = {
 			type = ak_2
 			amount = 1000

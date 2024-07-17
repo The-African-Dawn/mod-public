@@ -10,9 +10,6 @@
 	default = no
 	continuous_focus_position = { x = -1000 y = 1000 }
 	shared_focus = CHD_form_national_transitional_coucil
-	shared_focus = CHD_avoiding_the_humanitarian_catastrophe
-	shared_focus = CHD_breaking_their_front
-
 }
 
 focus_tree = {
@@ -27,6 +24,5 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = -1000 y = 1000 }
 	shared_focus = CHD_form_national_transitional_coucil
-
 	shared_focus = SAHEL_sahel_cooperation
 }

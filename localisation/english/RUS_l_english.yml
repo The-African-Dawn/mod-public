@@ -98,9 +98,14 @@
  RUS.3.a:0 "Ukraine has the right to such actions"
  RUS.3.b:0 "A terrible crime"
 
- rus.4.t:0 "Russian advisers"
- rus.4.desc:0 "Today the first group of military advisers from Russia arrived in [ROOT.GetName].\n\nThey will help us with the development of the army, and will also jointly plan new military operations with us."
- rus.4.a:0 "It is very good!"
+ RUS.4.t:0 "Russian advisors"
+ RUS.4.desc:0 "Today, the first group of military advisors from Russia arrived in [ROOT.GetName]. They will help us with the development of the army, and will also work with us to plan new military operations."
+ RUS.4.a:0 "That's very good!"
+ 
+ RUS.5.t:0 "The Sun of Freedom"
+ RUS.5.desc:0 "It's time.\nAfter years of preparation, we can return to the African continent. The African Corps is formed to help our friendly countries rid themselves of terrorism forever and to protect themselves in the event of a large-scale conflict in the region."
+ RUS.5.a:0 "This will help our African friends!"
+ 
  RUS_genstaff_baffs:0 "Supply established"
  RUS_antiterror_things:0 "Syrian Experience"
  RUS_rising_sun:0 "Rising Sun"

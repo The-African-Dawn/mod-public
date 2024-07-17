@@ -13,6 +13,7 @@ great_war_begins_category = {
 			NOT = {
 				has_global_flag = great_war_begins
 			}
+			date > 2027.1.1
 		}
 		available = {
 			date > 2027.1.1
@@ -279,6 +280,7 @@ great_war_begins_category = {
 			NOT = {
 				has_global_flag = great_war_begins
 			}
+			date > 2027.1.1
 		}
 		available = {
 			date > 2027.1.1
