@@ -189,6 +189,9 @@
   decision_cost_500_fuel: "£texticon_oil  §Y5000§!"
   decision_cost_500_fuel_blocked: "£texticon_oil  §R5000§!"
   
+  decision_cost_25000_fuel: "£texticon_oil  §Y25000§!"
+  decision_cost_25000_fuel_blocked: "£texticon_oil  §R25000§!"
+  
   decision_cost_150_small_arms: "£texticon_small_arms  §Y150"
   decision_cost_150_small_arms_blocked: "£texticon_small_arms  §R150§!"
   
@@ -198,3 +201,9 @@
   tug_of_war_senegal_plus_points:0 "§GNous allons renforcer notre influence sur §!§Yla République du Sénégal§![SNG.GetFlag]!"
   tug_of_war_gvinea_plus_points:0 "§GNous allons renforcer notre influence sur §!§Yla République de Guinée§![GVN.GetFlag]!"
   tug_of_war_bisau_plus_points:0 "§GNous allons renforcer notre influence sur §!§Yla Guinée-Bissau§![GBI.GetFlag]!"
+  
+ eastern_companies_contract_decisions:0 "Contrats avec des entreprises russes"
+ eastern_companies_contract_decisions_desc:0 "\n\n\n\n\n\nDe nouvelles opportunités s'ouvrent à nous.\nLes entreprises russes sont extrêmement intéressées par la coopération avec notre pays et sont prêtes à démontrer leurs capacités dans la pratique!"
+ contract_with_rosatom:0 "Le contrat avec [RUS.GetFlag]Rosatom"
+ contract_with_gazprom:0 "Le contrat avec [RUS.GetFlag]Gazprom"
+ contract_with_lucoil:0 "Le contrat avec [RUS.GetFlag]Lukoil"

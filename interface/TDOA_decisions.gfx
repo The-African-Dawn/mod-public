@@ -782,6 +782,30 @@ spriteTypes = {
 		name = "GFX_decision_send_help_to_traore"
 		texturefile = "gfx/interface/decisions/decision_send_help_to_traore.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_eastern_companies_contract_decisions_sprite"
+		texturefile = "gfx/interface/decisions/decision_category_eastern_companies_contract_decisions_sprite.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_category_eastern_companies_contract_decisions_banner"
+		texturefile = "gfx/interface/decisions/decision_category_eastern_companies_contract_decisions_banner.dds"
+	}
 
+	SpriteType = {
+		name = "GFX_decision_rosatom_contract"
+		texturefile = "gfx/interface/decisions/decision_rosatom_contract.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_gazprom_contract"
+		texturefile = "gfx/interface/decisions/decision_gazprom_contract.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_decision_lucoil_contract"
+		texturefile = "gfx/interface/decisions/decision_lucoil_contract.dds"
+	}
 
 }

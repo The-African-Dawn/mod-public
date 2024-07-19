@@ -79,6 +79,31 @@ country_event = {
 		add_dynamic_modifier = {
 			modifier = Corpus_training_modifier
 		}
+		add_equipment_to_stockpile = {
+			type = ak_1
+			amount = 2000
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = ATGM_equipment_rpg7
+			amount = 200
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 300
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = spec_oborud_equipment_0
+			amount = 200
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment_1
+			amount = 20
+			producer = RUS
+		}
 	}
 }
 

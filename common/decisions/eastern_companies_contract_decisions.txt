@@ -1,0 +1,103 @@
+eastern_companies_contract_decisions = {
+
+	contract_with_rosatom = {
+		icon = GFX_decision_rosatom_contract
+		fire_only_once = yes
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				african_russian_favors > 0
+			}
+		}
+		visible = {
+			#check_variable = {
+			#	african_russian_favors > 0
+			#}
+		}
+		days_remove = 1095
+		remove_effect = { 
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		complete_effect = { 
+			subtract_from_variable = {
+				var = african_russian_favors
+				value = 1
+			}
+
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { command_power > 0 }
+		custom_cost_text = decision_cost_1_favors
+	}
+	
+	contract_with_gazprom = {
+		icon = GFX_decision_gazprom_contract
+		fire_only_once = yes
+		days_re_enable = 10
+		available = { 
+			check_variable = {
+				num_of_civilian_factories > 0
+			}
+		}
+		days_remove = 100
+		modifier = {civilian_factory_use = 1}
+		remove_effect = { 
+			add_political_power = 15
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { num_of_civilian_factories > 0 }
+		custom_cost_text = decision_cost_1_industry
+	}
+	
+	contract_with_lucoil = {
+		icon = GFX_decision_lucoil_contract
+		fire_only_once = yes
+		days_re_enable = 10
+		#available = { 
+		#	check_variable = {
+		#		has_fuel > 24999
+		#	}
+		#}
+		days_remove = 100
+		remove_effect = { 
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		complete_effect = { 
+			add_fuel = -25000
+		}
+		ai_will_do = {base = 2}
+		custom_cost_trigger = { has_fuel > 24999 }
+		custom_cost_text = decision_cost_25000_fuel
+	}
+	
+}

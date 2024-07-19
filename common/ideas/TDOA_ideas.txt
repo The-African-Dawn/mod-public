@@ -995,6 +995,101 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		SLR_energy_problem_1 = {
+			picture = SLR_energy_problem
+			name = SLR_energy_problem
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.10
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		NRG_fintech_idea = {
+			name = NRG_fintech
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		NRG_energy_problem_0 = {
+			picture = SLR_energy_problem
+			name = SLR_energy_problem
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.3
+				production_speed_buildings_factor = -0.2
+				stability_factor = -0.2
+			}
+		}
+		NRG_financial_reforms_idea = {
+			name = NRG_financial_reforms
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				civilian_factory_use = -1
+				consumer_goods_expected_value = -0.1
+			}
+		}
+		NRG_social_programmes_idea = {
+			name = NRG_social_programmes
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		NRG_ecowas_free_trade_zone = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_cost = -0.3
+			}
+		}
+		NRG_cooperation_with_emirates_idea = {
+			name = NRG_cooperation_with_emirates
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_oil_factor = 0.15
+				base_fuel_gain_factor = 0.15
+				max_fuel_factor = 0.3 
+			}
+		}
+		NRG_digital_economy_idea = {
+			name = NRG_digital_economy
+			modifier = {
+				consumer_goods_factor = -0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		NRG_energy_problem = {
+			picture = SLR_energy_problem
+			name = SLR_energy_problem
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.2
+				production_speed_buildings_factor = -0.2
+				stability_factor = -0.15
+			}
+		}
 		NRG_food_safety_idea = {
 			picture = NRG_food_safety_idea
 			name = NRG_food_safety
@@ -2298,7 +2393,7 @@ ideas = {
 				political_power_cost = 1
 			}
 		}
-				
+		
 		NRG_broken_mechanism = {
 			picture = NRG_broken_mechanism
 			name = NRG_broken_mechanism
@@ -2379,7 +2474,25 @@ ideas = {
 				consumer_goods_factor = 0.02
 			}
 		}
-		
+		###
+
+		NRG_high_level_of_unemployment = {
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		NRG_tax_reform_idea = {
+			name = NRG_tax_reform
+			modifier = {
+				stability_weekly = 0.002
+				production_speed_industrial_complex_factor = 0.12
+			}
+		}
+
+		###
 		NRG_fight_against_baddies = {
 			picture = NRG_fight_against_baddies
 			targeted_modifier = {
@@ -2947,5 +3060,15 @@ ideas = {
 				stability_factor = -0.2
 			}
 		}
+		
+		ALL_volunteer_corps = {
+			picture = SAHEL_pan_african_zeal
+			name = ALL_volunteer_corps
+			modifier = {
+				send_volunteer_size = 2
+			}
+		}
+		
+		
 	}
 }

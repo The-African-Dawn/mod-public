@@ -46,9 +46,10 @@ add_ideas = {
 	gulf_of_guinea_piracy
 	NRG_oath_of_secrecy
 	NRG_big_narcotraffic
-	SLR_energy_problem
+	NRG_energy_problem_0
 	NRG_stealing_of_oil_in_high_ranks
 	NRG_broken_mechanism
+	NRG_high_level_of_unemployment
 }
 
 set_research_slots = 3

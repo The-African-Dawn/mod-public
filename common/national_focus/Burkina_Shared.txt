@@ -1033,6 +1033,7 @@ shared_focus = {
 			category = industry
 		}
 		add_ideas = BRK_russian_economic_group_idea
+		set_country_flag = russian_economic_group_achieved
 
 		add_to_variable = { african_russian_favors = 1 }
 		custom_effect_tooltip = african_russian_favors_1_tt

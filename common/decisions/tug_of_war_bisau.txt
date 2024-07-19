@@ -19,40 +19,84 @@ tug_of_war_bisau_category = {
 					tag = GBI
 				}
 				news_event = ab.15
-				start_civil_war = {
-					ideology = panafricanism
-					size = 0.5
+				if = {
+					limit = {
+						NOT = {
+							has_government = panafricanism
+						}
+					}
+					start_civil_war = {
+						ideology = panafricanism
+						size = 0.5
+						
+						set_variable = {
+							global.gbi_war_tag = THIS
+						}
+						every_country = {
+								limit = {
+									OR = {
+										is_in_faction_with = MLL
+										tag = MLL
+									}
+								}
+								add_ai_strategy = {
+									type = send_volunteers_desire
+									id = PREV
+									value = 200
+								}
+						}
+					}
 
-				}
-				
-									
 					every_country = {
 						limit = {
 							OR = {
-								is_in_faction_with = MLL
-								tag = MLL
+								is_in_faction_with = NRG
+								tag = NRG
 							}
 						}
 						add_ai_strategy = {
 							type = send_volunteers_desire
-							id = PREV
+							id = GBI
 							value = 200
 						}
 					}
-				
-				every_country = {
-					limit = {
-						OR = {
-							is_in_faction_with = NRG
-							tag = NRG
+					else = {
+						start_civil_war = {
+							ideology = francocentrism
+							size = 0.5
+							
+							set_variable = {
+								global.gbi_war_tag = THIS
+							}
+							every_country = {
+								limit = {
+
+									OR = {
+										is_in_faction_with = NRG
+										tag = NRG
+									}
+								}
+								add_ai_strategy = {
+									type = send_volunteers_desire
+									id = PREV
+									value = 200
+								}
+							}
+						}
+						every_country = {
+							limit = {
+								OR = {
+									is_in_faction_with = MLL
+									tag = MLL
+								}
+							}
+							add_ai_strategy = {
+								type = send_volunteers_desire
+								id = GBI
+								value = 200
+							}
 						}
 					}
-					add_ai_strategy = {
-						type = send_volunteers_desire
-						id = GBI
-						value = 200
-					}
-					
 				}
 
 			}
@@ -119,7 +163,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -138,7 +182,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -171,7 +215,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -190,7 +234,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -222,7 +266,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -241,7 +285,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -272,7 +316,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -291,7 +335,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -329,7 +373,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -349,7 +393,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -386,7 +430,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -406,7 +450,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -440,7 +484,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -460,7 +504,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -494,7 +538,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -515,7 +559,7 @@ tug_of_war_bisau_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_bisau_choosing_points value = 0.7 }
 			}
 			
 			if = {

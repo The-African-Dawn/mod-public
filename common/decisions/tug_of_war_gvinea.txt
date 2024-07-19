@@ -18,18 +18,37 @@ tug_of_war_gvinea_category = {
 					check_variable = { global.tug_of_war_gvinea_choosing_points < 60 }
 					tag = GVN
 				}
-				start_civil_war = {
-					ideology = francocentrism
-					size = 0.5
-					
-					keep_all_characters = yes
-					PREV = {
-						GVN_Mamadi_Dumbuya = {
-							set_nationality = PREV.PREV
+				news_event = ab.13
+				if = {
+					limit = {
+						NOT = {
+							has_government = panafricanism
 						}
 					}
-				}
-				news_event = ab.13
+					start_civil_war = {
+						ideology = panafricanism
+						size = 0.5
+						
+						keep_all_characters = yes
+
+						set_variable = {
+							global.gvn_war_tag = THIS
+						}
+						every_country = {
+							limit = {
+								OR = {
+									is_in_faction_with = MLL
+									tag = MLL
+								}
+							}
+							add_ai_strategy = {
+								type = send_volunteers_desire
+								id = PREV
+								value = 200
+							}
+						}
+					}
+
 					every_country = {
 						limit = {
 							OR = {
@@ -39,26 +58,51 @@ tug_of_war_gvinea_category = {
 						}
 						add_ai_strategy = {
 							type = send_volunteers_desire
-							id = PREV
+							id = GVN
 							value = 200
 						}
 					}
-				
-				every_country = {
-					limit = {
-						OR = {
-							is_in_faction_with = MLL
-							is_in_faction_with = BRK
-							tag = BRK
-							tag = MLL
+					else = {
+						start_civil_war = {
+							ideology = francocentrism
+							size = 0.5
+							PREV = {
+								GVN_Mamadi_Dumbuya = {
+									set_nationality = PREV.PREV
+								}
+							}
+							set_variable = {
+								global.gvn_war_tag = THIS
+							}
+							every_country = {
+								limit = {
+
+									OR = {
+										is_in_faction_with = NRG
+										tag = NRG
+									}
+								}
+								add_ai_strategy = {
+									type = send_volunteers_desire
+									id = PREV
+									value = 200
+								}
+							}
+						}
+						every_country = {
+							limit = {
+								OR = {
+									is_in_faction_with = MLL
+									tag = MLL
+								}
+							}
+							add_ai_strategy = {
+								type = send_volunteers_desire
+								id = GVN
+								value = 200
+							}
 						}
 					}
-					add_ai_strategy = {
-						type = send_volunteers_desire
-						id = GVN
-						value = 200
-					}
-					
 				}
 
 			}
@@ -126,7 +170,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -145,7 +189,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -178,7 +222,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -197,7 +241,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -229,7 +273,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -248,7 +292,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -279,7 +323,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			if = {
 				limit = {
@@ -298,7 +342,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -336,7 +380,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -356,7 +400,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -393,7 +437,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -413,7 +457,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -447,7 +491,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -467,7 +511,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -501,7 +545,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {
@@ -522,7 +566,7 @@ tug_of_war_gvinea_category = {
 				limit = {
 					is_in_faction_with = NRG
 				}
-				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.75 }
+				add_to_variable = { var = global.tug_of_war_gvinea_choosing_points value = 0.7 }
 			}
 			
 			if = {

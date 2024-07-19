@@ -214,6 +214,11 @@ news_event = {
 	picture = GFX_ab_7
 	option = {
 		set_global_flag = gvinea_political_conflict_started
+		hidden_effect = {
+			BRK = { add_ideas = ALL_volunteer_corps }
+			MLL = { add_ideas = ALL_volunteer_corps }
+			NIG = { add_ideas = ALL_volunteer_corps }
+		}
 		name = ab.7.a
 		ai_chance = {
 			base = 1

@@ -434,3 +434,23 @@ battle_for_africa_decision = {
 	visible = {
 	}
 }
+
+eastern_companies_contract_decisions = {
+	icon = GFX_decision_category_eastern_companies_contract_decisions_sprite
+	picture = GFX_decision_category_eastern_companies_contract_decisions_banner
+	priority = 2
+	#visible_when_empty = yes
+	allowed = {
+		NOT = {
+			OR = {
+				tag = FRN
+				tag = USR
+				tag = RUS
+				tag = CHN
+			}
+		}
+	}
+	visible = {
+	has_country_flag = russian_economic_group_achieved
+	}
+}
