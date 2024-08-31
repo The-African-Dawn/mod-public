@@ -135,6 +135,11 @@ ideologies = {
 			can_be_randomly_selected = no
 			}
 			
+			rus_pragmatism_vagner_sub = {
+			  color = { 55 55 55 } # Optional - if dont has, subideology has color of ideology.
+				can_be_randomly_selected = no
+			}
+			
 			usa_pragmatism_sub = {
 			color = { 30 30 60 } 
 			can_be_randomly_selected = no

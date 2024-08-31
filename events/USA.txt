@@ -337,6 +337,7 @@ country_event = {
 		name = USR.12.a
 		division_template={
 			name="USMC"
+			override_model = USR_btr_alt_0_entity
 			support={
 				mot_recon={ x=0 y=0 }
 				howitzer_support_unit={ x=0 y=1 }
@@ -458,5 +459,31 @@ country_event = {
 		name = USR.15.a
 		add_political_power = 25
 		ai_chance = { factor = 5 }
+	}
+}
+
+news_event = { 
+	id = USR.16
+	title = USR.16.t
+	desc = USR.16.desc
+	picture = GFX_USA_16
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = USR.16.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { 
+	id = USR.17
+	title = USR.17.t
+	desc = USR.17.desc
+	picture = GFX_USA_17
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = USR.17.a
+		ai_chance = { factor = 1 }
 	}
 }

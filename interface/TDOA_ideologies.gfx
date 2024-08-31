@@ -65,4 +65,10 @@ spriteTypes = {
 		name = "GFX_idea_GEN_political_isolation_idea"
 		texturefile = "gfx/interface/ideas/GEN_political_isolation_idea.dds"
 	}
+	
+		spriteType = {
+		name = "GFX_ideology_rus_pragmatism_vagner_sub"
+		texturefile = "gfx/interface/ideologies/ideology_rus_pragmatism_vagner_sub.dds"
+	}
+	
 }

@@ -9,7 +9,7 @@
 
  #FOCUSES#
  RUS_rising_our_flag: "Hisser le drapeau"
- RUS_rising_our_flag_desc: "Dans le contexte actuel, où chaque action contribue à la politique mondiale, le Corps africain de la Fédération de Russie représente un nouveau vecteur d'interaction. Il ne symbolise pas seulement le « hissage du drapeau », mais constitue également une étape pratique dans la recherche de points stratégiques pour le déploiement, ce qui renforce les positions et le soutien dans la région.\n\nLe Corps ouvre la porte aux entrepreneurs russes désireux de servir et d'appliquer leur professionnalisme dans un contexte international. C'est le début de la formation de cadres prêts à contribuer au maintien de la stabilité et de la paix, reflétant le désir de la Russie d'un partenariat constructif et du respect de la souveraineté des États.\n\nCe pas souligne l'aspiration de la Russie à établir des relations équitables et à soutenir les pays africains dans leur développement et leur autodétermination."
+ RUS_rising_our_flag_desc: "Dans le contexte actuel, où chaque action contribue à la politique mondiale, le Corps africain de la Fédération de Russie représente un nouveau vecteur d'interaction. Il ne symbolise pas seulement le " hissage du drapeau ", mais constitue également une étape pratique dans la recherche de points stratégiques pour le déploiement, ce qui renforce les positions et le soutien dans la région.\n\nLe Corps ouvre la porte aux entrepreneurs russes désireux de servir et d'appliquer leur professionnalisme dans un contexte international. C'est le début de la formation de cadres prêts à contribuer au maintien de la stabilité et de la paix, reflétant le désir de la Russie d'un partenariat constructif et du respect de la souveraineté des États.\n\nCe pas souligne l'aspiration de la Russie à établir des relations équitables et à soutenir les pays africains dans leur développement et leur autodétermination."
  RUS_fist_of_iron: "Poing de fer"
  RUS_fist_of_iron_desc: "Le commandement du Corps africain de la Fédération de Russie, conscient de l'importance et de l'ampleur de ses tâches, vise à obtenir des armes conformes aux normes élevées d'efficacité et de fiabilité. L'équipement des soldats visera à atteindre l'efficacité opérationnelle, la protection et l'avantage stratégique dans diverses conditions de combat."
  RUS_reporting_on_duty: "Se présenter au QG"
@@ -25,7 +25,7 @@
  RUS_united_against_imperialism: "Unis contre l'impérialisme"
  RUS_united_against_imperialism_desc: "Le Corps africain, nouvelle force dans la région, entame des négociations avec les États du Sahel afin d'obtenir leur soutien dans la lutte contre le néocolonialisme. Ces discussions visent à former un front uni qui contribuera à protéger la souveraineté et l'indépendance des peuples africains, à résister aux pressions extérieures et à aspirer à l'autodétermination sans ingérence extérieure."
  RUS_african_initiative: "Initiative africaine"
- RUS_african_initiative_desc: "« Initiative africaine » est une agence de presse russe qui couvre les événements sur le continent africain. Son objectif est de promouvoir une meilleure compréhension mutuelle entre les Russes et les Africains.  Ils informent le public russe des nombreuses opportunités qui s'offrent à la Russie en Afrique, des habitants du continent, de l'héritage néocolonial contre lequel les pays africains luttent depuis des décennies, et des activités des militaires, des hommes d'affaires, des médecins et des journalistes russes sur le continent."
+ RUS_african_initiative_desc: "" Initiative africaine " est une agence de presse russe qui couvre les événements sur le continent africain. Son objectif est de promouvoir une meilleure compréhension mutuelle entre les Russes et les Africains.  Ils informent le public russe des nombreuses opportunités qui s'offrent à la Russie en Afrique, des habitants du continent, de l'héritage néocolonial contre lequel les pays africains luttent depuis des décennies, et des activités des militaires, des hommes d'affaires, des médecins et des journalistes russes sur le continent."
  RUS_our_immense_experience: "Notre vaste expérience"
  RUS_our_immense_experience_desc: "La Russie participe au conflit ukrainien depuis un certain temps déjà, ce qui lui a permis d'acquérir une expérience de la guerre moderne. Nous pouvons utiliser cette expérience pour former les soldats du corps lui-même ainsi que pour conseiller les pays alliés."
  
@@ -86,11 +86,11 @@
  
  #EVENTS#
  RUS.1.t:0 "Formation du Corps africain!"
- RUS.1.desc:0 "La Russie a terminé la formation du Corps africain. Selon les experts, le Corps africain est soit déjà en cours de déploiement, soit en train de préparer des plans de déploiement au Burkina Faso, en Libye, au Mali, en République centrafricaine et au Niger. La nouvelle structure sera directement subordonnée au ministère de la Défense. Le corps formé ne ressemble pas aux entreprises de sécurité occidentales et asiatiques qui opèrent en Afrique depuis 30 ans, il ne semble pas s'agir de gardes ou d'instructeurs, mais d'un « produit unique » capable de mener des opérations militaires.\n\nLa coopération avec l'URSS, puis avec la Russie, dans le domaine de la sécurité a eu un effet positif majeur pour les pays africains. Il semblerait que la Fédération de Russie ait décidé de ne pas abandonner cet héritage mutuellement bénéfique."
+ RUS.1.desc:0 "La Russie a terminé la formation du Corps africain. Selon les experts, le Corps africain est soit déjà en cours de déploiement, soit en train de préparer des plans de déploiement au Burkina Faso, en Libye, au Mali, en République centrafricaine et au Niger. La nouvelle structure sera directement subordonnée au ministère de la Défense. Le corps formé ne ressemble pas aux entreprises de sécurité occidentales et asiatiques qui opèrent en Afrique depuis 30 ans, il ne semble pas s'agir de gardes ou d'instructeurs, mais d'un " produit unique " capable de mener des opérations militaires.\n\nLa coopération avec l'URSS, puis avec la Russie, dans le domaine de la sécurité a eu un effet positif majeur pour les pays africains. Il semblerait que la Fédération de Russie ait décidé de ne pas abandonner cet héritage mutuellement bénéfique."
  RUS.1.a:0 "Un nouvel acteur dans la région"
  
  RUS.2.t:0 "Formation du Corps africain!"
- RUS.2.desc:0 "La Russie a terminé la formation du Corps africain. Selon les experts, le Corps africain est soit déjà en cours de déploiement, soit en train de préparer des plans de déploiement au Burkina Faso, en Libye, au Mali, en République centrafricaine et au Niger. La nouvelle structure sera directement subordonnée au ministère de la Défense. Le corps formé ne ressemble pas aux entreprises de sécurité occidentales et asiatiques qui opèrent en Afrique depuis 30 ans, il ne semble pas s'agir de gardes ou d'instructeurs, mais d'un « produit unique » capable de mener des opérations militaires.\n\nLa coopération avec l'URSS, puis avec la Russie, dans le domaine de la sécurité a eu un effet positif majeur pour les pays africains. Il semblerait que la Fédération de Russie ait décidé de ne pas abandonner cet héritage mutuellement bénéfique."
+ RUS.2.desc:0 "La Russie a terminé la formation du Corps africain. Selon les experts, le Corps africain est soit déjà en cours de déploiement, soit en train de préparer des plans de déploiement au Burkina Faso, en Libye, au Mali, en République centrafricaine et au Niger. La nouvelle structure sera directement subordonnée au ministère de la Défense. Le corps formé ne ressemble pas aux entreprises de sécurité occidentales et asiatiques qui opèrent en Afrique depuis 30 ans, il ne semble pas s'agir de gardes ou d'instructeurs, mais d'un " produit unique " capable de mener des opérations militaires.\n\nLa coopération avec l'URSS, puis avec la Russie, dans le domaine de la sécurité a eu un effet positif majeur pour les pays africains. Il semblerait que la Fédération de Russie ait décidé de ne pas abandonner cet héritage mutuellement bénéfique."
  RUS.2.a:0 "Un nouvel acteur dans la région"
  
  RUS.3.t:0 "Les forces armées ukrainiennes ont attaqué Belgorod"
@@ -135,3 +135,70 @@
  RUS_forming_african_corps:0 "Formation du Corps africain"
  RUS_forming_african_corps_desc:0 ""
  RUS_russian_humanitarian_aid:0 "Aide humanitaire russe"
+ 
+ 
+ 
+ 
+   RUS_Evgeny_Prigozhin : " Yevgeny Prigozhin "
+ RUS_Evgeny_Prigozhin_desc : " Evgeny Viktorovich Prigozhin est né le 1er juin 1961 à Leningrad.\NEn 1977, il est diplômé de l'internat sportif n° 62 (aujourd'hui école de réserve olympique n° 1 de Saint-Pétersbourg). Dans les années 1990, Evgeny Prigozhin devient entrepreneur dans le domaine de la restauration et du commerce. Il crée une chaîne de hot-dogs à Saint-Pétersbourg, dirige la chaîne de supermarchés " Contrast " et ouvre plusieurs restaurants. En 1996, il a créé la société de restauration Concord Catering. Par la suite, il a été directeur et copropriétaire de la chaîne de restauration rapide " Blin ! Donalt's ", des sociétés “Concord M LLC”, “Concord Management and Consulting LLC” et d'autres. En 2019-2023, il a été président du conseil d'administration du groupe de médias Patriot (édition en ligne de l'agence de presse fédérale Narodnye Novosti). \Evgeny Prigozhin a été décoré de l'Ordre de l'amitié (2008) et du " Mérite pour la patrie " IV degré (2014), de la médaille de l'Ordre " Mérite pour la patrie " II degré (2004).En 2014, Evgeny Prigozhin a fondé la société militaire privée " Wagner ", qui a notamment travaillé dans les pays d'Afrique (RCA, Mali, Libye, Soudan). Officiellement, l'homme d'affaires ne confirme le lien avec PMC qu'en 2022.\NDepuis 2016, des sanctions ont été imposées à Evgeny Prigozhin par les États-Unis, en 2020 - l'Union européenne et le Royaume-Uni.\NFin octobre 2022, l'homme d'affaires annonce la création du " Centre PMC Wagner " à Saint-Pétersbourg, qui " pourra faire travailler des spécialistes dans le domaine de la défense et de la technologie de l'information afin d'améliorer la capacité de défense de la Russie ".\NDepuis 2022, PMC " Wagner " a participé à une opération militaire spéciale en Ukraine. Il a notamment participé à la prise d'assaut des villes de Soledar et d'Artemovsk. "
+
+
+ #FOCUSES#
+ RUS_black_continent : " Continent noir "
+ RUS_black_continent_desc : " La guerre sans fin continue "
+ RUS_et_une_armée_noire : " Et l'armée noire "
+ RUS_and_a_black_army_desc : " La guerre sans fin continue "
+ RUS_reinforcements_from_the_motherland : " Renforts de la patrie "
+ RUS_reinforcements_from_the_motherland_desc : " La guerre sans fin continue "
+  RUS_call_of_africa : " L'appel de l'Afrique ".
+ RUS_call_of_africa_desc : " La guerre sans fin continue ".
+ RUS_echo_of_terror : " L'écho de la terreur ".
+ RUS_echo_of_terror_desc : " La guerre sans fin continue ".
+ RUS_midnight_cry : " Cri de minuit ".
+ RUS_midnight_cry_desc : " La guerre sans fin continue ".
+ RUS_crushing_the_bastards : " Écraser les terroristes ".
+ RUS_crushing_the_bastards_desc : " La guerre sans fin continue ".
+ RUS_expand_the_tourist_program : " Élargir le 'programme touristique' "
+ RUS_expand_the_tourist_program_desc : " La guerre sans fin continue ".
+ RUS_african_spires : " Spires africaines ".
+ RUS_african_spires_desc : " La guerre sans fin continue ".
+ RUS_brotherhood_of_lead : " La confrérie du plomb ".
+ RUS_brotherhood_of_lead_desc : " La guerre sans fin continue ".
+ RUS_political_strategists : " Technologues politiques lettrés ".
+ RUS_political_strategists_desc : " La guerre sans fin continue "
+ RUS_art_of_deal : " L'art de la négociation ".
+ RUS_art_of_deal_desc : " La guerre sans fin continue "
+ RUS_agitation_campaign : " La campagne ".
+ RUS_agitation_campaign_desc : " La guerre sans fin continue ".
+ RUS_freedom_to_african_people : " Liberté pour les peuples d'Afrique ".
+ RUS_freedom_to_african_people_desc : " La guerre sans fin continue ".
+ RUS_death_to_western_imperialism : " Mort à l'impérialisme occidental ".
+ RUS_death_to_western_imperialism_desc : " La guerre sans fin continue ".
+ RUS_came_saw_won : " Came. Vu. Conquis ".
+ RUS_came_saw_won_desc : " La guerre sans fin continue ".
+ 
+ RUS_notre_dernière_expérience : " Notre expérience récente "
+ RUS_notre_dernière_expérience_desc : " La guerre sans fin continue ".
+ 
+ RUS_best_weapons_you_can_buy : " Les meilleures armes que vous pouvez acheter ".
+ RUS_best_weapons_you_can_buy_desc : " La guerre sans fin continue ".
+ 
+ RUS_best_training_you_can_get : " La meilleure formation possible ".
+ RUS_best_training_you_can_get_desc : " La guerre sans fin continue ".
+ 
+ 
+ RUS_notre_sun_shines_brighter : " Notre soleil brille plus fort ".
+ RUS_notre_soleil_brille_plus_desc : " La guerre sans fin continue. "
+ 
+  RUS_freedom_to_african_people_tt:0 " §YLa mécanique permettant de provoquer des soulèvements dans les pays de la CEDEAO sera disponible ! ".
+ RUS_death_to_western_imperialism_tt:0 " §Vous pourrez provoquer des attaques sur les bases françaises et américaines§ ! ".
+ RUS_reinforcements_from_the_motherland_tt:0 " $africa_battle_new_action_possible$\n -§Y $action_get_russian_manpower$ § ! ".
+ 
+  RUS.6.t:0 " Changement d'ère. "
+ RUS.6.desc:0 " Les récentes nouvelles ont été un coup dur pour nous tous. Pour de nombreux soldats, Evgeny Prigozhin n'était pas seulement un chef, mais aussi un mentor, un frère. Avec la disparition de notre fondateur, nous perdons le noyau qui nous a permis de rester unis toutes ces années, et nous devrons agir de manière décisive pour survivre. Les communications avec le reste de notre organisation ont été coupées et les lignes d'approvisionnement sont menacées. Le Conseil des commandants du PMC Wagner assumera temporairement les responsabilités de direction jusqu'à ce que nous puissions faire face aux conséquences de cette situation.
+ RUS.6.a:0 " Au revoir, oncle Evgueni. "
+ RUS.7.t:0 " L'avion de Prigozhin s'écrase. "
+ RUS.7.desc:0 " Un avion d'affaires Embraer s'est écrasé près du village de Kuzhenkino dans la région de Tver. Selon l'armée de l'air russe, Yevgeny Prigozhin figurait sur la liste des passagers. Le ministère des situations d'urgence a indiqué que les 10 personnes à bord ont été tuées. L'avion s'est écrasé près du village de Kuzhenkino et a " brûlé complètement ". Selon certains rapports, le crash a été accompagné de deux explosions dans le ciel. Les médias écrivent que les corps des fondateurs de PMC-Wagner, Eugene Prigozhin et Vasily Utkin, ont été retrouvés et identifiés. Toutefois, il ne sera possible de confirmer ou d'infirmer cette affirmation qu'après l'identification des restes et les conclusions des pathologistes.nAvec les informations sur la mort du fondateur de PMC-Wagner, Eugeni Prigozhin, les mercenaires de la société militaire privée ont commencé à se préparer à quitter la Biélorussie. Après l'accident d'avion, le conseil d'administration de PMC-Wagner se réunit d'urgence. "
+ RUS.7.a:0 " Dieu vous préserve de vivre à l'ère du changement.... "
+ 
+ RUS_artem_lebedev:0 " Artem Lebedev "

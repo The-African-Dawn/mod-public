@@ -125,3 +125,79 @@ country_event = {
 	}
 }
 
+
+
+
+country_event = { 
+	id = RUS.6
+	title = RUS.6.t
+	desc = RUS.6.desc
+	
+	picture = GFX_RUS_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = RUS.6.a
+		ai_chance = { factor = 5 }
+		retire_ideology_leader = pragmatism
+		remove_ideas = RUS_best_in_hell
+		RUS = {load_focus_tree = { tree = RUS_initial_tree keep_completed = no }}
+		custom_effect_tooltip = focus_tree_changes
+	}
+}
+
+
+
+
+news_event = { 
+	id = RUS.7
+	title = RUS.7.t
+	desc = RUS.7.desc
+	picture = GFX_RUS_7
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = RUS.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = panafricanism
+		}
+	}
+	option = { 
+		name = RUS.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = francocentrism
+		}
+	}
+	option = { 
+		name = RUS.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_government = fundamentalism
+		}
+	}
+	option = { 
+		name = RUS.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = pragmatism_sub
+		}
+	}
+	option = { 
+		name = RUS.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			OR = { has_country_leader_ideology = rus_pragmatism_sub  has_country_leader_ideology = rus_pragmatism_vagner_sub } 
+		}
+	}
+	option = { 
+		name = RUS.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_leader_ideology = usa_pragmatism_sub
+		}
+	}
+}
+

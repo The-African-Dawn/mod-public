@@ -179,9 +179,9 @@ country_event = {
 	
 	option = { 
 		name = NRG.11.a
-		set_country_flag = NRG_Bashir_Magashi
+		set_country_flag = NRG_Bashir_Magashi_resined
 		retire_character = NRG_Bashir_Magashi
-		remove_ideas = NRG_stealing_of_oil_in_high_ranks
+		
 		ai_chance = { factor = 5 }
 	}
 } 

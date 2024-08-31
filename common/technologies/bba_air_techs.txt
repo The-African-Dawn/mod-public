@@ -418,6 +418,7 @@ technologies = {
 				original_tag = FRN
 				original_tag = CHN
 				original_tag = RUS
+				original_tag = NRG
 			}
 		}
 			

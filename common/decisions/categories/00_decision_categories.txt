@@ -266,6 +266,7 @@ corpus_training_decision = {
 		tag = RUS
 	}
 	visible = {
+		has_country_flag = RUS_CORPUS_TRAINING_ON
 	}
 }
 
@@ -452,5 +453,25 @@ eastern_companies_contract_decisions = {
 	}
 	visible = {
 	has_country_flag = russian_economic_group_achieved
+	}
+}
+
+mali_building_reactor_decisions = {
+	icon = GFX_decision_category_mali_building_reactor_decisions_sprite
+	picture = GFX_decision_category_mali_building_reactor_decisions_banner
+	priority = 2
+	#visible_when_empty = yes
+	allowed = {
+		NOT = {
+			OR = {
+				tag = FRN
+				tag = USR
+				tag = RUS
+				tag = CHN
+			}
+		}
+	}
+	visible = {
+	has_country_flag = mali_building_reactor_achieved
 	}
 }

@@ -251,3 +251,13 @@
  MLL_bank_sector_is_bad_2:0 "Последствия забастовки"
  MLL_benefits_of_artificial_intelligence:0 "Преимущества искусственного интеллекта"
  MLL_benefits_of_artificial_intelligence_desc:0 "RobotsMali, действующая под эгидой Министерства образования, высшего образования и научных исследований, должна заняться развитием ИИ для улучшения жизни граждан."
+ 
+ MLL_solving_electricity_problems:0 "Решить Проблемы С Электричеством"
+ MLL_solving_electricity_problems_desc:0 "Прищло время исправить ситуацию с электричеством в нашей стране."
+ mali_new_projects_tooltip:0 "В наших решениях появятся новые доступные проекты!"
+ mali_building_reactor_decisions:0 "Наш Собственный Реактор"
+ mali_building_reactor_decisions_desc:0 " "
+ mll_training_the_specialists:0 "Подготовить Специалистов"
+ mll_build_a_foundation:0 "Выстроить Фундамент"
+ mll_finishing_the_project:0 "Закончить Проект"
+ MLL_energy_problem:0 "Проблемы С Энергетикой"

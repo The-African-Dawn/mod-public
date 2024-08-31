@@ -1,13 +1,488 @@
 ﻿shared_focus = {
+		id = RUS_black_continent
+		icon = GFX_goal_RUS_black_continent
+		cost = 4.3
+		x = 7
+		y = 0
+		ai_will_do = {factor = 100}
+		completion_reward = {
+			add_timed_idea = {
+    idea = RUS_fighter_of_the_black_continent
+    days = 365
+} 
+				RUS = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = BRK
+						value = 200
+					}
+					
+				}
+				
+				RUS = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = MLL
+						value = 200
+					}
+					
+				}
+				
+				RUS = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = NIG
+						value = 200
+					}
+					
+				}
+				
+				FRN = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = NRG
+						value = 200
+					}
+					
+				}
+				
+				USR = {
+					add_ai_strategy = {
+						type = send_volunteers_desire
+						id = NRG
+						value = 200
+					}
+					
+				}
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_and_a_black_army
+		icon = GFX_goal_RUS_and_a_black_army
+		cost = 4.3
+		x = 9
+		y = 0
+		ai_will_do = {factor = 1}
+		completion_reward = {
+						add_timed_idea = {
+    idea = RUS_black_army_soldiers
+    days = 365
+} 
+
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_reinforcements_from_the_motherland
+		icon = GFX_goal_RUS_reinforcements_from_the_motherland
+		cost = 4.3
+		relative_position_id = RUS_black_continent
+		prerequisite = {focus = RUS_black_continent}
+		prerequisite = {focus = RUS_and_a_black_army}
+		x = 1
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			add_manpower = 1500
+			custom_effect_tooltip = RUS_reinforcements_from_the_motherland_tt
+			add_to_array = {
+				possible_actions_country = 20
+			}
+			hidden_effect = {
+					division_template = {
+					name = "Batalion SpecNazhacheniya"
+					regiments={
+						speznaz={ x=0 y=0 }
+						speznaz={ x=0 y=1 }
+						speznaz={ x=0 y=2 }
+						speznaz={ x=0 y=3 }
+						speznaz={ x=1 y=0 }
+						speznaz={ x=1 y=1 }
+						speznaz={ x=1 y=2 }
+					}
+						support = {
+							engineer={ x=0 y=0 }
+							logistics_company ={ x=0 y=1 }
+							#howitzer_support_unit = {x=0 y=2}
+						}
+					}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Batalion SpecNazhacheniya\" division_template = \"Batalion SpecNazhacheniya\" start_experience_factor = 0.3 start_equipment_factor = 1" 
+						owner = ROOT
+						count = 2
+						allow_spawning_on_enemy_provs = yes
+					}
+				}	
+			}
+		}
+    }
+	
+
+	
+	shared_focus = {
+		id = RUS_call_of_africa
+		icon = GFX_goal_RUS_call_of_africa
+		cost = 4.3
+		relative_position_id = RUS_reinforcements_from_the_motherland
+		prerequisite = {focus = RUS_reinforcements_from_the_motherland}
+		x = -4
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+								add_timed_idea = {
+    idea = RUS_the_call_of_africa
+    days = 365
+}  
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_echo_of_terror
+		icon = GFX_goal_RUS_echo_of_terror
+		cost = 4.3
+		relative_position_id = RUS_reinforcements_from_the_motherland
+		prerequisite = {focus = RUS_reinforcements_from_the_motherland}
+		x = 0
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+											add_timed_idea = {
+    idea = RUS_against_baddies_1
+    days = 365
+}  
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_midnight_cry
+		icon = GFX_goal_RUS_midnight_cry
+		cost = 4.3
+		relative_position_id = RUS_echo_of_terror
+		prerequisite = {focus = RUS_echo_of_terror}
+		x = -1
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = ak_0
+				amount = 10000
+			}
+			add_equipment_to_stockpile = {
+				type = ATGM_equipment_rpg7
+				amount = 1000
+			}
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_crushing_the_bastards
+		icon = GFX_goal_RUS_crushing_the_bastards
+		cost = 4.3
+		relative_position_id = RUS_echo_of_terror
+		prerequisite = {focus = RUS_echo_of_terror}
+		x = 1
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.1
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_expand_the_tourist_program
+		icon = GFX_goal_RUS_expand_the_tourist_program
+		cost = 4.3
+		relative_position_id = RUS_call_of_africa
+		prerequisite = {focus = RUS_call_of_africa}
+		x = -1
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.1
+		}
+    }
+
+	
+	shared_focus = {
+		id = RUS_african_spires
+		icon = GFX_goal_RUS_african_spires
+		cost = 4.3
+		relative_position_id = RUS_expand_the_tourist_program
+		prerequisite = {focus = RUS_expand_the_tourist_program}
+		x = 2
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Sluzhba Vneshney Razvedki"
+				icon = GFX_intelligence_agency_logo_rus
+			}
+		}
+    }
+		
+	shared_focus = {
+		id = RUS_best_training_you_can_get
+		icon = GFX_goal_RUS_best_training_you_can_get
+		cost = 4.3
+		relative_position_id = RUS_african_spires
+		prerequisite = {focus = RUS_african_spires}
+		x = -1
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			army_experience = 100
+			unlock_decision_category_tooltip = wagner_training_decision
+			custom_effect_tooltip = RUS_wagner_help_for_trainings
+			every_country  = {
+				limit = {
+					check_variable = { africa_status = 2 }
+				}
+				add_timed_idea = {
+					idea = SAHEL_pan_african_zeal
+					days = 14
+				}
+			}
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_brotherhood_of_lead
+		icon = GFX_goal_RUS_brotherhood_of_lead
+		cost = 4.3
+		relative_position_id = RUS_expand_the_tourist_program
+		prerequisite = {focus = RUS_expand_the_tourist_program}
+		x = -1
+		y = 3
+		ai_will_do = {factor = 1}
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.1
+			#add_ideas = RUS_brotherhood_of_svinyi
+			unlock_decision_tooltip = wagner_special_forces_training
+		}
+    }
+	
+	
+	
+	shared_focus = {
+		id = RUS_political_strategists
+		icon = GFX_goal_RUS_political_strategists
+		cost = 4.3
+		relative_position_id = RUS_reinforcements_from_the_motherland
+		prerequisite = {focus = RUS_reinforcements_from_the_motherland}
+		x = 4
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			add_political_power = 50
+			add_command_power = 50
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_art_of_deal
+		icon = GFX_goal_RUS_art_of_deal
+		cost = 4.3
+		relative_position_id = RUS_political_strategists
+		prerequisite = {focus = RUS_political_strategists}
+		x = 1
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			add_political_power = 150
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_agitation_campaign
+		icon = GFX_goal_RUS_agitation_campaign
+		cost = 4.3
+		relative_position_id = RUS_art_of_deal
+		prerequisite = {focus = RUS_art_of_deal}
+		x = -2
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			add_manpower = 5000
+			add_command_power = 50
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_best_weapons_you_can_buy
+		icon = GFX_goal_RUS_best_weapons_you_can_buy
+		cost = 4.3
+		relative_position_id = RUS_agitation_campaign
+		prerequisite = {focus = RUS_agitation_campaign}
+		x = 1
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = spec_oborud_equipment
+				amount = 240
+			}
+			add_equipment_to_stockpile = {
+				type = ak_2
+				amount = 40
+			}
+			add_equipment_to_stockpile = {
+				type = ak_1
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = ak_0
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = ak_1
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = ATGM_equipment_9k111
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = manpads_equipment_igla
+				amount = 200
+			}
+
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_our_latest_experience
+		icon = GFX_goal_RUS_our_latest_experience
+		cost = 4.3
+		relative_position_id = RUS_art_of_deal
+		prerequisite = {focus = RUS_art_of_deal}
+		x = 1
+		y = 3
+		ai_will_do = {factor = 1}
+		completion_reward = {
+		add_political_power = 150
+		add_war_support = 0.1
+						add_timed_idea = {
+    idea = RUS_experience_of_ukraine
+    days = 365
+}  
+			unlock_decision_tooltip = wagner_ukrainian_experience
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_freedom_to_african_people
+		icon = GFX_goal_RUS_freedom_to_african_people
+		cost = 4.3
+		relative_position_id = RUS_brotherhood_of_lead
+		prerequisite = {focus = RUS_brotherhood_of_lead}
+		prerequisite = {focus = RUS_our_latest_experience}
+		prerequisite = {focus = RUS_midnight_cry}
+		prerequisite = {focus = RUS_crushing_the_bastards}
+		x = 5
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			custom_effect_tooltip = RUS_freedom_to_african_people_tt
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_death_to_western_imperialism
+		icon = GFX_goal_RUS_death_to_western_imperialism
+		cost = 4.3
+		relative_position_id = RUS_brotherhood_of_lead
+		prerequisite = {focus = RUS_brotherhood_of_lead}
+		prerequisite = {focus = RUS_our_latest_experience}
+		prerequisite = {focus = RUS_midnight_cry}
+		prerequisite = {focus = RUS_crushing_the_bastards}
+		x = 7
+		y = 1
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			custom_effect_tooltip = RUS_death_to_western_imperialism_tt
+		}
+    }
+	
+	shared_focus = {
+		id = RUS_came_saw_won
+		icon = GFX_goal_RUS_came_saw_won
+		cost = 4.3
+		relative_position_id = RUS_freedom_to_african_people
+		prerequisite = {focus = RUS_freedom_to_african_people}
+		prerequisite = {focus = RUS_death_to_western_imperialism}
+		x = 1
+		y = 2
+		ai_will_do = {factor = 1}
+		completion_reward = {
+			effect_tooltip = {
+				news_event = RUS.13372287878
+			}
+		}
+    }
+	
+	
+	
+	
+	
+	
+		shared_focus = {
+		id = RUS_it_is_not_the_end
+		icon = GFX_goal_RUS_it_is_not_the_end
+		cost = 10.0
+		x = 8
+		y = 0
+		ai_will_do = {factor = 1}
+			completion_reward = {
+				hidden_effect = {load_focus_tree = { tree = RUS_korpus_second_starting_tree keep_completed = yes }}
+				custom_effect_tooltip = focus_tree_changes
+			}
+    }
+	
+			shared_focus = {
+		id = RUS_just_a_change_of_management
+		icon = GFX_goal_RUS_just_a_change_of_management
+		cost = 10.0
+		x = 8
+		y = 2
+		ai_will_do = {factor = 1}
+			completion_reward = {
+				retire_ideology_leader = pragmatism
+				hidden_effect = {load_focus_tree = { tree = RUS_korpus_expanding_tree keep_completed = yes }}
+				custom_effect_tooltip = focus_tree_changes
+			}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shared_focus = {
 	id = RUS_forming_african_corps
 	icon = GFX_goal_RUS_forming_african_corps
-	cost = 68.8
+	cost = 1
 	x = 8
 	y = 0
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
+		set_country_flag = RUS_CORPUS_TRAINING_ON
 		hidden_effect = {
 			set_global_flag = RUS_created_africakorps
 			load_focus_tree = {
@@ -22,8 +497,8 @@
 			news_event = RUS.5
 		}
 		news_event = RUS.2
-		add_ideas = civilian_economy_mjr
-		add_ideas = disarmed_nation_mjr
+		#add_ideas = civilian_economy_mjr
+		#add_ideas = disarmed_nation_mjr
 		transfer_state = 187
 		187 = {
 			remove_core_of = BRK

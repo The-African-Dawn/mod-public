@@ -1059,13 +1059,45 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		64 = {
-			add_building_construction = {
-				type = nuclear_reactor
-				level = 1
-				instant_build = yes
-			}
-		}
+	set_country_flag = russian_economic_group_achieved
+	custom_effect_tooltip = mali_new_projects_tooltip
+	add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+		#64 = {
+		#	add_building_construction = {
+		#		type = nuclear_reactor
+		#		level = 1
+		#		instant_build = yes
+		#	}
+		#}
+	}
+}
+
+shared_focus = {
+	id = MLL_solving_electricity_problems
+	icon = GFX_goal_MLL_solving_electricity_problems
+	cost = 5.8
+	relative_position_id = MLL_npp_preparations
+	prerequisite = {
+		focus = MLL_npp_preparations
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	set_country_flag = mali_building_reactor_achieved
+	custom_effect_tooltip = mali_new_projects_tooltip
+	add_to_variable = { african_russian_favors = 1 }
+		custom_effect_tooltip = african_russian_favors_1_tt
+		#64 = {
+		#	add_building_construction = {
+		#		type = nuclear_reactor
+		#		level = 1
+		#		instant_build = yes
+		#	}
+		#}
 	}
 }
 

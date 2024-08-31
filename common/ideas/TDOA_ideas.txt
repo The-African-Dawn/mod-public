@@ -736,6 +736,18 @@ ideas = {
 				refit_speed = 0.1
 			}
 		}
+		MLL_energy_problem = {
+			picture = SLR_energy_problem
+			name = SLR_energy_problem
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.15
+			}
+		}
 		FRN_indecisive_leadership = {
 			picture = idea_FRN_indecisive_leadership
 			allowed_civil_war = {
@@ -793,31 +805,31 @@ ideas = {
 				panafricanism_acceptance = 100
 			}
 		}
-		# RUS_memory_of_the_past = {
-		# 	picture = idea_RUS_memory_of_the_past
-		# 	allowed_civil_war = {
-		# 		always = yes
-		# 	}
-		# 	modifier = {
-		# 		send_volunteer_divisions_required = -1
-		# 		send_volunteers_tension = -1
-		# 		send_volunteer_size = 100
-		# 	}
-		# }
+		 RUS_memory_of_the_past = {
+		 	picture = idea_RUS_memory_of_the_past
+		 	allowed_civil_war = {
+		 		always = yes
+		 	}
+		 	modifier = {
+		 		political_power_gain = 0.05
+				opinion_gain_monthly_factor = 0.1
+				panafricanism_acceptance = 25
+		 	}
+		 }
 		RUS_rising_sun = {
 			picture = idea_RUS_rising_sun
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
+				#send_volunteer_divisions_required = -1
+				#send_volunteers_tension = -1
 				air_range_factor = 0.1
-				political_power_gain = 1
+				political_power_gain = 0.1
 			}
 		}
 		RUS_the_strongest_ministry = {
-			picture = idea_RUS_the_strongest_ministry
+			picture = idea_RUS_memory_of_the_past
 			allowed_civil_war = {
 				always = yes
 			}
@@ -827,7 +839,7 @@ ideas = {
 			}
 		}
 		RUS_fighter_of_the_black_continent = {
-			picture = idea_RUS_the_strongest_ministry
+			picture = SAHEL_confederation
 			allowed_civil_war = {
 				always = yes
 			}
@@ -837,7 +849,7 @@ ideas = {
 			}
 		}
 		RUS_black_army_soldiers = {
-			picture = idea_RUS_the_strongest_ministry
+			picture = SAHEL_confederation
 			allowed_civil_war = {
 				always = yes
 			}
@@ -847,7 +859,7 @@ ideas = {
 			}
 		}
 		RUS_the_call_of_africa = {
-			picture = idea_RUS_the_strongest_ministry
+			picture = SAHEL_confederation
 			allowed_civil_war = {
 				always = yes
 			}
@@ -857,7 +869,7 @@ ideas = {
 			}
 		}
 		RUS_the_call_of_africa_2 = {
-			picture = RUS_the_call_of_africa
+			picture = SAHEL_confederation
 			name = RUS_the_call_of_africa
 			allowed_civil_war = {
 				always = yes
@@ -869,7 +881,7 @@ ideas = {
 		}
 
 		RUS_brotherhood_of_svinyi = {
-			picture = RUS_the_call_of_africa
+			picture = SAHEL_confederation
 			name = RUS_brotherhood_of_lead
 			allowed_civil_war = {
 				always = yes
@@ -880,7 +892,7 @@ ideas = {
 			}
 		}
 		RUS_experience_of_ukraine = {
-			picture = RUS_the_call_of_africa
+			picture = SAHEL_confederation
 			name = RUS_our_latest_experience
 			allowed_civil_war = {
 				always = yes
@@ -890,7 +902,7 @@ ideas = {
 			}
 		}
 		RUS_against_baddies_1 = {
-			picture = RUS_the_call_of_africa
+			picture = SAHEL_confederation
 			name = RUS_against_baddies
 			allowed_civil_war = {
 				always = yes
@@ -902,7 +914,7 @@ ideas = {
 			}
 		}
 		RUS_against_baddies_2 = {
-			picture = RUS_the_call_of_africa
+			picture = SAHEL_confederation
 			name = RUS_against_baddies
 			allowed_civil_war = {
 				always = yes
@@ -1004,6 +1016,55 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = 0.10
 				production_speed_buildings_factor = -0.05
+			}
+		}
+		NRG_army_reorganisation = {
+			name = NRG_reorganize_army
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				add_ideas = NRG_professional_army
+			}
+			modifier = {
+				training_time_army_factor = -0.3
+				special_forces_training_time_factor = -0.15
+				max_training = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		NRG_army_digitalization_idea = {
+			name = NRG_army_digitalization
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recon_factor = 0.1
+				max_planning_factor = 0.15
+			}
+		}
+		NRG_professional_army = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				air_superiority_bonus_in_combat = 0.05
+				army_strength_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		NRG_army_purges = {
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = -0.15
+				army_morale_factor = -0.15
+				breakthrough_factor = -0.15
+				breakthrough_factor = -0.15
+				max_command_power_mult = -0.3
 			}
 		}
 		NRG_fintech_idea = {
@@ -3066,6 +3127,18 @@ ideas = {
 			name = ALL_volunteer_corps
 			modifier = {
 				send_volunteer_size = 2
+			}
+		}
+		
+		RUS_best_in_hell = {
+			picture = idea_RUS_exhausting_bureaucracy
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				defence = 0.1
+				offence = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 		

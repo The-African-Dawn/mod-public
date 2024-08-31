@@ -1,5 +1,32 @@
 characters = {
+		
+	RUS_Evgeny_Prigozhin = {
+		name = RUS_Evgeny_Prigozhin
+		
+		portraits = {
+			civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Evgeny_Prigozhin_start.dds" }
+			army = { large = "gfx/leaders/RUS/Portrait_RUS_Evgeny_Prigozhin_start.dds" }
+	    }
+		country_leader = {
+			ideology = rus_pragmatism_vagner_sub
+			desc = RUS_Evgeny_Prigozhin_desc
+			expire = "3000.1.1.1"
+		}
+
+	}
 	
+	RUS_Council_Of_Officers = {
+		name = RUS_Council_Of_Officers
+		portraits = {
+			civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_Of_Officers.dds" }
+			army = { large = "gfx/leaders/RUS/Portrait_RUS_Council_Of_Officers.dds" }
+	    }
+		country_leader = {
+			ideology = rus_pragmatism_sub
+			expire = "3000.1.1.1"
+		}
+
+	}
 
 	RUS_General_Afkurov = {
 		name = RUS_General_Afkurov
@@ -27,76 +54,28 @@ characters = {
 
 	}
 	
-	RUS_Artyom_Kureev = {
-		name = RUS_Artyom_Kureev
+	RUS_artem_lebedev = {
+		name = RUS_artem_lebedev
 		portraits = {
 			army = {
-				small = "gfx/leaders/RUS/Portrait_RUS_Artyom_Kureev_advisor.dds"
+				large = "gfx/leaders/RUS/Portrait_RUS_artem_lebedev.dds"
+				small = "gfx/leaders/RUS/Portrait_RUS_artem_lebedev.dds"
 			}
-	    }
-		advisor = {
-			slot = political_advisor
-			idea_token = RUS_Artyom_Kureev
-			allowed = {
-				original_tag = RUS
-			}
+		}
+		corps_commander = {
 			traits = {
-				RUS_editor_in_chief
+				commando
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
+			visible = {
 			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	
-	RUS_Anna_Zamaraeva = {
-		name = RUS_Anna_Zamaraeva
-		portraits = {
-			army = {
-				small = "gfx/leaders/RUS/Portrait_RUS_Anna_Zamaraeva_advisor.dds"
-			}
-	    }
-		advisor = {
-			slot = political_advisor
-			idea_token = RUS_Anna_Zamaraeva
-			allowed = {
-				original_tag = RUS
-			}
-			traits = {
-				RUS_correspondent
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	
-	RUS_Alena_GPT_advisor = {
-		name = RUS_Alena_GPT_advisor
-		portraits = {
-			army = {
-				small = "gfx/leaders/RUS/Portrait_RUS_Alena_GPT_advisor.dds"
-			}
-	    }
-		advisor = {
-			slot = political_advisor
-			idea_token = RUS_Alena_GPT_advisor
-			allowed = {
-				original_tag = RUS
-			}
-			available = {
-				has_completed_focus = freedom_to_african_people
-			}
-			traits = {
-				RUS_artificial_intelligence
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+
 
 }

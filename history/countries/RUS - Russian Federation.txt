@@ -101,6 +101,10 @@ set_technology = {
 
 add_manpower = 7000
 
+add_ideas = RUS_best_in_hell
+add_ideas = RUS_memory_of_the_past
+add_ideas = RUS_rising_sun
+
 set_oob = "_rus_oob"
 
 set_convoys = 3
@@ -109,19 +113,19 @@ set_research_slots = 3
 set_stability = 1
 set_war_support = 1
 
-
+recruit_character = RUS_Evgeny_Prigozhin
+#recruit_character = RUS_Council_Of_Officers
 recruit_character = RUS_General_Afkurov
 recruit_character = RUS_General_Chernyshev
-#recruit_character = RUS_Artyom_Kureev
-#recruit_character = RUS_Anna_Zamaraeva
-#recruit_character = RUS_Alena_GPT_advisor
+recruit_character = RUS_artem_lebedev
+
 
 set_country_flag = RUS_COUNTRY
 set_country_flag = RUS_friend
 
 add_ideas = {
-	african_corpus_nonexist_mjr
-	DAC_no_create
+	civilian_economy_mjr
+	disarmed_nation_mjr
 
 	low_corruption
 }

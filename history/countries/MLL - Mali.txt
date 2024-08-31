@@ -98,6 +98,7 @@ add_ideas = {
 	MLL_low_confidence_between_soldiers_and_officers
 	MLL_Oumar_Traore
 	MLL_drug
+	MLL_energy_problem
 }
 
 set_popularities = {

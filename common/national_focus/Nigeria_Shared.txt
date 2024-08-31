@@ -336,57 +336,25 @@ shared_focus = {
 	}
 }
 
-shared_focus = {
-	id = NRG_energy_problems
-	icon = GFX_goal_NRG_energy_problems
-	cost = 7.2
-	relative_position_id = NRG_leader_of_the_free_africa
-	prerequisite = {
-		focus = NRG_leader_of_the_free_africa
-	}
-	x = -1
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		remove_ideas = SLR_energy_problem
-	}
-}
+# shared_focus = {
+# 	id = NRG_energy_problems
+# 	icon = GFX_goal_NRG_energy_problems
+# 	cost = 7.2
+# 	relative_position_id = NRG_leader_of_the_free_africa
+# 	prerequisite = {
+# 		focus = NRG_leader_of_the_free_africa
+# 	}
+# 	x = -1
+# 	y = 2
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# 	completion_reward = {
+# 		remove_ideas = SLR_energy_problem
+# 	}
+# }
 
-shared_focus = {
-	id = NRG_food_safety
-	icon = GFX_goal_NRG_food_safety
-	cost = 7.2
-	relative_position_id = NRG_leader_of_the_free_africa
-	prerequisite = {
-		focus = NRG_leader_of_the_free_africa
-	}
-	x = 1
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		random_owned_controlled_state = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 1
-		}
-		random_owned_controlled_state = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 1
-		}
-		add_ideas = NRG_food_safety_idea
-	}
-}
+
 
 shared_focus = {
 	id = NRG_menace_in_the_shadows
@@ -649,737 +617,801 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = NIG_industrial_effort
-	icon = GFX_goal_generic_production
-	x = 17
+	id = NRG_tax_reform
+	icon = GFX_goal_NRG_corruption_of_our_system
+	cost = 4.4
+	x = 20
 	y = 0
-	cost = 7.2
-	completion_reward = {
-		add_tech_bonus = {
-			name = industrial_bonus
-			bonus = 1
-			uses = 1
-			category = industry
-		}
-	}
 	ai_will_do = {
-		factor = 3
-	}
-}
-
-shared_focus = {
-	id = NIG_construction_effort
-	icon = GFX_goal_generic_construct_civ_factory
-	prerequisite = {
-		focus = NIG_industrial_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = -1
-	y = 1
-	relative_position_id = NIG_industrial_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 2
+		factor = 1
 	}
 	completion_reward = {
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
+		add_timed_idea = {
+			idea = NRG_tax_reform_idea
+			days = 360
 		}
 	}
 }
 
 shared_focus = {
-	id = NIG_production_effort
-	icon = GFX_goal_generic_construct_mil_factory
+	id = NRG_private_investments_in_energy
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_tax_reform
 	prerequisite = {
-		focus = NIG_industrial_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 1
-	y = 1
-	relative_position_id = NIG_industrial_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 2
-	}
-	completion_reward = {
-		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_construction_effort_2
-	icon = GFX_goal_generic_construct_civ_factory
-	prerequisite = {
-		focus = NIG_construction_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_construction_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 2
-	}
-	completion_reward = {
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_production_effort_2
-	icon = GFX_goal_generic_construct_mil_factory
-	prerequisite = {
-		focus = NIG_production_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_production_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 2
-	}
-	completion_reward = {
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_infrastructure_effort
-	icon = GFX_goal_generic_construct_infrastructure
-	prerequisite = {
-		focus = NIG_construction_effort_2
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_construction_effort_2
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		random_owned_controlled_state = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_owned_controlled_state = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_production_effort_3
-	icon = GFX_goal_generic_construct_mil_factory
-	prerequisite = {
-		focus = NIG_production_effort_2
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_production_effort_2
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 2
-	}
-	completion_reward = {
-		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_infrastructure_effort_2
-	icon = GFX_goal_generic_construct_infrastructure
-	prerequisite = {
-		focus = NIG_infrastructure_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_infrastructure_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		random_owned_controlled_state = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_owned_controlled_state = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_construction_effort_3
-	icon = GFX_goal_generic_construct_civ_factory
-	prerequisite = {
-		focus = NIG_infrastructure_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_INDUSTRY
-	}
-	x = 2
-	y = 1
-	relative_position_id = NIG_infrastructure_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 2
-	}
-	completion_reward = {
-		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_extra_tech_slot
-	icon = GFX_focus_research
-	prerequisite = {
-		focus = NIG_infrastructure_effort_2
-	}
-	prerequisite = {
-		focus = NIG_construction_effort_3
-	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-	}
-	x = 1
-	y = 1
-	relative_position_id = NIG_infrastructure_effort_2
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		add_research_slot = 1
-	}
-}
-
-shared_focus = {
-	id = NIG_army_effort
-	icon = GFX_goal_generic_allies_build_infantry
-	x = 25
-	y = 0
-	offset = {
-		x = -10
-		y = 0
-		trigger = {
-			has_government = fundamentalism
-		}
-	}
-	cost = 7.2
-	available_if_capitulated = yes
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-		FOCUS_FILTER_ARMY_XP
-	}
-	completion_reward = {
-		army_experience = 5
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_equipment_effort
-	icon = GFX_goal_generic_small_arms
-	prerequisite = {
-		focus = NIG_army_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-	}
-	x = -1
-	y = 1
-	relative_position_id = NIG_army_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		add_tech_bonus = {
-			name = infantry_artillery_bonus
-			bonus = 1
-			uses = 1
-			category = infantry_weapons
-			category = artillery
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_motorization_effort
-	icon = GFX_goal_generic_army_motorized
-	prerequisite = {
-		focus = NIG_army_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-	}
-	bypass = {
-		has_tech = motorised_infantry
-	}
-	x = 1
-	y = 1
-	relative_position_id = NIG_army_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		add_tech_bonus = {
-			name = motorized_bonus
-			bonus = 3
-			technology = motorised_infantry
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_doctrine_effort
-	icon = GFX_goal_generic_army_doctrines
-	prerequisite = {
-		focus = NIG_equipment_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-		FOCUS_FILTER_ARMY_XP
-	}
-	prerequisite = {
-		focus = NIG_motorization_effort
-	}
-	x = 0
-	y = 3
-	relative_position_id = NIG_army_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		army_experience = 5
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_equipment_effort_2
-	icon = GFX_goal_generic_army_artillery
-	prerequisite = {
-		focus = NIG_doctrine_effort
-	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
+		focus = NRG_tax_reform
 	}
 	x = -2
 	y = 1
-	relative_position_id = NIG_doctrine_effort
-	cost = 7.2
-	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
 	completion_reward = {
-		add_tech_bonus = {
-			name = infantry_artillery_bonus
-			bonus = 1
-			uses = 1
-			category = infantry_weapons
-			category = artillery
+		if = {
+			limit = {
+				has_idea = NRG_energy_problem_0
+			}
+			swap_ideas = {
+				add_idea = NRG_energy_problem
+				remove_idea = NRG_energy_problem_0
+			}
+			else = {
+				swap_ideas = {
+					add_idea = SLR_energy_problem
+					remove_idea = NRG_energy_problem
+				}
+			}
 		}
 	}
 }
 
-
 shared_focus = {
-	id = NIG_doctrine_effort_2
-	icon = GFX_goal_generic_army_doctrines
+	id = NRG_renewable_energy
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_tax_reform
 	prerequisite = {
-		focus = NIG_doctrine_effort
+		focus = NRG_tax_reform
 	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-		FOCUS_FILTER_ARMY_XP
-	}
-	x = 0
-	y = 2
-	relative_position_id = NIG_doctrine_effort
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		army_experience = 5
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_equipment_effort_3
-	icon = GFX_goal_generic_army_artillery2
-	prerequisite = {
-		focus = NIG_equipment_effort_2
-	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
-	}
-	x = 0
-	y = 2
-	relative_position_id = NIG_equipment_effort_2
-	cost = 7.2
-	available_if_capitulated = yes
-	completion_reward = {
-		add_tech_bonus = {
-			name = infantry_artillery_bonus
-			ahead_reduction = 2
-			uses = 1
-			category = infantry_weapons
-			category = artillery
-		}
-	}
-}
-
-
-shared_focus = {
-	id = NIG_fundamentalists_generic_focus
-	icon = GFX_goal_generic_demand_territory
 	x = 2
-	y = 0
-	allow_branch = {
-		has_government = fundamentalism
-	}
-	cost = 7.2
-	available_if_capitulated = yes
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
 	completion_reward = {
-		add_political_power = 120
+		if = {
+			limit = {
+				has_idea = NRG_energy_problem_0
+			}
+			swap_ideas = {
+				add_idea = NRG_energy_problem
+				remove_idea = NRG_energy_problem_0
+			}
+			else = {
+				swap_ideas = {
+					add_idea = SLR_energy_problem
+					remove_idea = NRG_energy_problem
+				}
+			}
+		}
 	}
 }
 
 shared_focus = {
-	id = NIG_fundamentalists_embrace_caliphate
-	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	id = NRG_financial_reforms
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_renewable_energy
 	prerequisite = {
-		focus = NIG_fundamentalists_generic_focus
+		focus = NRG_renewable_energy
+	}
+	prerequisite = {
+		focus = NRG_private_investments_in_energy
+	}
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_financial_reforms_idea
+	}
+}
+
+shared_focus = {
+	id = NRG_social_programmes
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_financial_reforms
+	prerequisite = {
+		focus = NRG_financial_reforms
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_social_programmes_idea
+	}
+}
+
+shared_focus = {
+	id = NRG_more_export_to_ecowas
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_financial_reforms
+	prerequisite = {
+		focus = NRG_financial_reforms
 	}
 	x = 1
 	y = 1
-	relative_position_id = NIG_fundamentalists_generic_focus
-	cost = 7.2
-	available_if_capitulated = yes
 	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
+		factor = 1
 	}
 	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_fundamentalists_caliphate_idea
-			days = 1095
+		add_ideas = NRG_ecowas_free_trade_zone
+	}
+}
+
+shared_focus = {
+	id = NRG_development_of_infrastructure
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_renewable_energy
+	prerequisite = {
+		focus = NRG_renewable_energy
+	}
+	prerequisite = {
+		focus = NRG_private_investments_in_energy
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		build_railway = {
+			level = 3
+			start_province = 4832
+			target_province = 646
+		}
+		build_railway = {
+			level = 3
+			start_province = 3009
+			target_province = 2552
+		}
+		88 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		87 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		86 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
 		}
 	}
 }
 
 shared_focus = {
-	id = NIG_fundamentalists_sharia_right
-	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
+	id = NRG_open_dangote_refinery
+	icon = GFX_goal_NRG_defending_what_is_ours
+	cost = 4.4
+	relative_position_id = NRG_development_of_infrastructure
 	prerequisite = {
-		focus = NIG_fundamentalists_generic_focus
+		focus = NRG_development_of_infrastructure
 	}
 	x = -1
 	y = 1
-	relative_position_id = NIG_fundamentalists_generic_focus
-	cost = 7.2
-	available_if_capitulated = yes
 	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
+		factor = 1
 	}
 	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_sharia_right_idea
-			days = 1095
+		96 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_resource = {
+			type = oil
+			amount = 6
+			state = 96
 		}
 	}
 }
 
 shared_focus = {
-	id = NIG_fundamentalists_spiritual_leadership
-	icon = GFX_goal_generic_national_unity
+	id = NRG_food_safety
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_development_of_infrastructure
 	prerequisite = {
-		focus = NIG_fundamentalists_sharia_right
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_fundamentalists_sharia_right
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_sharia_right_idea
-			days = 1095
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_fundamentalists_islamic_life_state
-	icon = GFX_goal_generic_national_unity
-	prerequisite = {
-		focus = NIG_fundamentalists_spiritual_leadership
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_fundamentalists_spiritual_leadership
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_islamic_state_of_life
-			days = 1095
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_fundamentalists_islamic_economy
-	icon = GFX_goal_generic_national_unity
-	prerequisite = {
-		focus = NIG_fundamentalists_islamic_life_state
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_fundamentalists_islamic_life_state
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_fundamentalists_islamic_economy_idea
-			days = 1095
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_fundamentalists_mujaheeds
-	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
-	prerequisite = {
-		focus = NIG_fundamentalists_embrace_caliphate
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_fundamentalists_embrace_caliphate
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_recruit_mujaheeds
-			days = 1095
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_fundamentalists_jihad
-	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
-	prerequisite = {
-		focus = NIG_fundamentalists_mujaheeds
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_fundamentalists_mujaheeds
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_fundamentalists_jihad_idea
-			days = 1095
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_fundamentalists_islamic_youth
-	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
-	prerequisite = {
-		focus = NIG_fundamentalists_jihad
-	}
-	x = 0
-	y = 1
-	relative_position_id = NIG_fundamentalists_jihad
-	cost = 7.2
-	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_islamic_youth
-			days = 1095
-		}
-	}
-}
-
-shared_focus = {
-	id = NIG_fundamentalists_international_islamists
-	icon = GFX_goal_generic_national_unity	#icon = GFX_goal_tripartite_pact
-	prerequisite = {
-		focus = NIG_fundamentalists_jihad
+		focus = NRG_development_of_infrastructure
 	}
 	x = 2
 	y = 1
-	relative_position_id = NIG_fundamentalists_jihad
-	cost = 7.2
-	available_if_capitulated = yes
 	ai_will_do = {
-		factor = 5
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
+		factor = 1
 	}
 	completion_reward = {
-		add_timed_idea = {
-			idea = NIG_islamists_all_around_the_world
-			days = 1095
+		add_ideas = NRG_food_safety_idea
+	}
+}
+
+shared_focus = {
+	id = NRG_hydrogen_energy
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_open_dangote_refinery
+	prerequisite = {
+		focus = NRG_more_export_to_ecowas
+	}
+	prerequisite = {
+		focus = NRG_social_programmes
+	}
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			add_idea = SLR_energy_problem_1
+			remove_idea = SLR_energy_problem
 		}
 	}
 }
 
 shared_focus = {
-	id = NIG_fundamentalists_defend_ummas
-	icon = GFX_goal_generic_national_unity
+	id = NRG_digital_economy
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_open_dangote_refinery
 	prerequisite = {
-		focus = NIG_fundamentalists_islamic_economy
-		focus = NIG_fundamentalists_islamic_youth
-		focus = NIG_fundamentalists_international_islamists
+		focus = NRG_open_dangote_refinery
 	}
-	x = 1
+	prerequisite = {
+		focus = NRG_more_export_to_ecowas
+	}
+	x = -1
 	y = 1
-	relative_position_id = NIG_fundamentalists_islamic_economy
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_digital_economy_idea
+	}
+}
+
+shared_focus = {
+	id = NRG_cooperation_with_emirates
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_open_dangote_refinery
+	prerequisite = {
+		focus = NRG_open_dangote_refinery
+	}
+	prerequisite = {
+		focus = NRG_food_safety
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_cooperation_with_emirates_idea
+	}
+}
+
+
+shared_focus = {
+	id = NRG_fixing_energy
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_cooperation_with_emirates
+	prerequisite = {
+		focus = NRG_hydrogen_energy
+	}
+	prerequisite = {
+		focus = NRG_digital_economy
+	}
+	prerequisite = {
+		focus = NRG_cooperation_with_emirates
+	}
+	x = -6
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = SLR_energy_problem_1
+	}
+}
+
+shared_focus = {
+	id = NRG_fintech
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_cooperation_with_emirates
+	prerequisite = {
+		focus = NRG_hydrogen_energy
+	}
+	prerequisite = {
+		focus = NRG_digital_economy
+	}
+	prerequisite = {
+		focus = NRG_cooperation_with_emirates
+	}
+	x = -4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_fintech_idea
+	}
+}
+
+
+shared_focus = {
+	id = NRG_support_startups
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_cooperation_with_emirates
+	prerequisite = {
+		focus = NRG_hydrogen_energy
+	}
+	prerequisite = {
+		focus = NRG_digital_economy
+	}
+	prerequisite = {
+		focus = NRG_cooperation_with_emirates
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_light_industries
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_open_dangote_refinery
+	prerequisite = {
+		focus = NRG_food_safety
+	}
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_joint_operations_against_piracy
+	icon = GFX_goal_generic_allies_build_infantry
+	x = 37
+	y = 0
 	cost = 7.2
 	available_if_capitulated = yes
-	ai_will_do = {
-		factor = 5
+	completion_reward = {
+		remove_ideas = gulf_of_guinea_piracy
 	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
+}
+
+shared_focus = {
+	id = NRG_reorganize_army
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_joint_operations_against_piracy
+	prerequisite = {
+		focus = NRG_joint_operations_against_piracy
+	}
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_army_reorganisation
+	}
+}
+
+shared_focus = {
+	id = NRG_purge_corrupted_army_commanders
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_reorganize_army
+	prerequisite = {
+		focus = NRG_reorganize_army
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
 	completion_reward = {
 		add_timed_idea = {
-			idea = NIG_fundamentalists_islamic_economy_idea
-			days = 1095
+			idea = NRG_army_purges
+			days = 270
+		}
+		custom_effect_tooltip = NRG_purge_corrupted_army_commanders_tt
+		show_ideas_tooltip = NRG_professional_army
+	}
+}
+
+
+shared_focus = {
+	id = NRG_changes_in_high_command
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_reorganize_army
+	prerequisite = {
+		focus = NRG_reorganize_army
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = NRG_stealing_of_oil_in_high_ranks
+	}
+}
+
+shared_focus = {
+	id = NRG_usa_help_to_us
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_joint_operations_against_piracy
+	prerequisite = {
+		focus = NRG_joint_operations_against_piracy
+	}
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+		add_equipment_to_stockpile = {
+			type = M16_1
+			amount = 500
+			producer = USR
+		}
+	}
+}
+shared_focus = {
+	id = NRG_fra_help_to_us
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_joint_operations_against_piracy
+	prerequisite = {
+		focus = NRG_joint_operations_against_piracy
+	}
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+		add_equipment_to_stockpile = {
+			type = famas_1
+			amount = 500
+			producer = FRN
+		}
+	}
+}
+shared_focus = {
+	id = NRG_army_digitalization
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_usa_help_to_us
+	prerequisite = {
+		focus = NRG_fra_help_to_us
+	}
+	prerequisite = {
+		focus = NRG_usa_help_to_us
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = NRG_army_digitalization_idea
+	}
+}
+shared_focus = {
+	id = NRG_own_uav_programme
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_army_digitalization
+	prerequisite = {
+		focus = NRG_army_digitalization
+	}
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_technology = {
+			uav_tech_general = 1 
+		}
+	}
+}
+shared_focus = {
+	id = NRG_light_cas_production
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_army_digitalization
+	prerequisite = {
+		focus = NRG_army_digitalization
+	}
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_technology = {
+			plane_tech_light = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_enhance_border_with_niger
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_usa_help_to_us
+	prerequisite = {
+		focus = NRG_fra_help_to_us
+	}
+	prerequisite = {
+		focus = NRG_usa_help_to_us
+	}
+	available = {
+		90 = { is_fully_controlled_by = NRG }
+		94 = { is_fully_controlled_by = NRG }
+	}
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		94 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+		90 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_technical_cooperation_with_fra
+	icon = GFX_goal_NRG_food_safety
+	cost = 7.2
+	relative_position_id = NRG_enhance_border_with_niger
+	prerequisite = {
+		focus = NRG_enhance_border_with_niger
+	}
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+		set_country_flag = FRN_friend
+		custom_effect_tooltip = NRG_FRN_friend_tt
+	}
+}
+
+shared_focus = {
+	id = NRG_technical_cooperation_with_usa
+	icon = GFX_goal_NRG_food_safety
+	cost = 7.2
+	relative_position_id = NRG_enhance_border_with_niger
+	prerequisite = {
+		focus = NRG_enhance_border_with_niger
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+		set_country_flag = USR_friend
+		custom_effect_tooltip = NRG_USR_friend_tt
+	}
+}
+
+
+shared_focus = {
+	id = NRG_sttep_more_soldiers
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_enhance_border_with_niger
+	prerequisite = {
+		focus = NRG_enhance_border_with_niger
+	}
+	available = {
+		has_war = yes
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		division_template={
+			name="STTEP PMC"
+			override_model = NRG_motorized_alt_0_entity
+			support={
+				atgm_support_unit={ x=0 y=0 }
+				manpads_support_unit={ x=0 y=1 }
+				logistics_company={ x=0 y=2 }
+				engineer={ x=0 y=3 }
+			}
+			regiments={
+				infantry_on_jeep={ x=0 y=0 }
+				infantry_on_jeep={ x=0 y=1 }
+				infantry_on_jeep={ x=0 y=2 }
+				infantry_on_jeep={ x=1 y=0 }
+				infantry_on_jeep={ x=1 y=1 }
+				infantry_on_jeep={ x=1 y=2 }
+				infantry_on_jeep={ x=2 y=0 }
+				infantry_on_jeep={ x=2 y=1 }
+				infantry_on_jeep={ x=2 y=2 }
+				infantry_on_jeep={ x=3 y=0 }
+				infantry_on_jeep={ x=3 y=1 }
+				infantry_on_jeep={ x=3 y=2 }
+			}
+		}
+		86 = {
+			create_unit = {
+				division = "name = \"STTEP PMC\" division_template = \"STTEP PMC\" start_experience_factor = 0.5"
+				owner = NRG
+				count = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NRG_four_step_more_soldiers
+	icon = GFX_goal_NRG_food_safety
+	cost = 4.4
+	relative_position_id = NRG_sttep_more_soldiers
+	prerequisite = {
+		focus = NRG_sttep_more_soldiers
+	}
+	available = {
+		has_war = yes
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		division_template={
+			name="Four Troop PMC"
+			support={
+				atgm_support_unit={ x=0 y=0 }
+				manpads_support_unit={ x=0 y=1 }
+				logistics_company={ x=0 y=2 }
+			}
+			regiments={
+				speznaz={ x=0 y=0 }
+				speznaz={ x=0 y=1 }
+				speznaz={ x=0 y=2 }
+				speznaz={ x=1 y=0 }
+				speznaz={ x=1 y=1 }
+				speznaz={ x=1 y=2 }
+				speznaz={ x=2 y=0 }
+				speznaz={ x=2 y=1 }
+				speznaz={ x=2 y=2 }
+			}
+		}
+		86 = {
+			create_unit = {
+				division = "name = \"Four-Troop\" division_template = \"Four Troop PMC\" start_experience_factor = 0.5"
+				owner = NRG
+				count = 1
+			}
 		}
 	}
 }

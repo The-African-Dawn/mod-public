@@ -132,6 +132,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/USA/USA_15.dds"
 	}
 	spriteType = {
+		name = "GFX_USA_16"
+		texturefile = "gfx/event_pictures/USA/USA_16.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_17"
+		texturefile = "gfx/event_pictures/USA/USA_17.dds"
+	}
+	spriteType = {
 		name = "GFX_BRK_11"
 		texturefile = "gfx/event_pictures/BRK/BRK_11.dds"
 	}

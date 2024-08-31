@@ -1584,6 +1584,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/MLL/MLL_expand_the_education_system.dds"			
 	}
 	
+				SpriteType = {
+	name = "GFX_goal_MLL_solving_electricity_problems"
+	texturefile = "gfx/interface/goals/MLL/MLL_solving_electricity_problems.dds"			
+	}
+	
 ###################################
 #    #####    #####     #   #     #
 #    #        #   #     ##  #     #

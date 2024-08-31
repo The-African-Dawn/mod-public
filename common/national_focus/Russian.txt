@@ -1,4 +1,35 @@
 ﻿focus_tree = {
+	id = RUS_wagner_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = RUS_and_a_black_army
+	shared_focus = RUS_black_continent
+}
+
+focus_tree = {
+	id = RUS_corpus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 9
+			tag = RUS
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -1000 y = 1000 }
+	shared_focus = RUS_rising_our_flag
+	shared_focus = RUS_elephant_of_freedom
+}
+
+
+focus_tree = {
 	id = RUS_initial_tree
 	country = {
 		factor = 0

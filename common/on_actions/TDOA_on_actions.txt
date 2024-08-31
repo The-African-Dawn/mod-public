@@ -236,7 +236,8 @@ on_actions = {
 				news_event = { id = ab.9 days = 960 }
 			}
 			RUS = {
-			
+				country_event = { id = RUS.6 days = 328 }
+				news_event = { id = RUS.7 days = 328 }
 			}
 			MLL = {
 				news_event = { id = MLL.5 hours = 6 days = 585 }
@@ -273,6 +274,8 @@ on_actions = {
 			USR = {
 				news_event = { id = USR.1 hours = 11 }
 				news_event = { id = USR.7 days = 19 hours = 16}
+				news_event = { id = USR.16 days = 622}
+				news_event = { id = USR.17 days = 737}
 			}
 			MLL = {
 				country_event = { id = MLL.7 days = 89 hours = 10 }
